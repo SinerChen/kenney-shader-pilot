@@ -1,0 +1,161 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA04_L1",
+  "chain_id": "SA04",
+  "level": 1,
+  "level_name": "单效果／算法实现",
+  "core_question": "这个模块本身是否正确？",
+  "title": "深度重建与完整投影贴花",
+  "goal": "贴花是否真的基于表面重建和投影体裁剪，而非屏幕上的装饰图？",
+  "requirement": "贴花是否真的基于表面重建和投影体裁剪，而非屏幕上的装饰图？",
+  "requirements": [
+    "按 SH018 选定变体执行真实深度/材料 pass、逆投影与世界/局部变换、六面裁剪、朝向过滤、mip 采样和材料后照明。",
+    "读取真实最近深度与 primitive identity；背景/背面和投影体外不能收到贴花。",
+    "贴花法线、粗糙度等先进入材料再受光，不能把完成照明的图像上直接叠弹孔算作实现。",
+    "接受原契约的精度与硬边界限制，单独保留边界歧义诊断；不以截图接近代替数值数据。"
+  ],
+  "criteria": [
+    "深度、世界/局部位置、UV 和 primitive ID 与独立 ray-triangle 参照匹配。",
+    "体积和朝向裁剪符合契约；临界 float32 分类按已有限制独立报告。",
+    "材料变化进入后续照明，深度和几何保持。",
+    "使用完整 mip；错误原子拒绝；暂停/reset 符合契约。"
+  ],
+  "parent_task": null,
+  "input_code": "empty_effect_entry_on_existing_scene",
+  "base_scene": "projects/fps/pilot/F01.tscn",
+  "project": "projects/fps/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA04",
+  "algorithms": [
+    "SH018"
+  ],
+  "source_scenario_ids": [
+    "B13",
+    "B08"
+  ],
+  "primary_algorithms": [
+    "SH018"
+  ],
+  "fixed_supporting_algorithms": [],
+  "primary_evidence": "独立数值 OJ、性质测试、原场景子集",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "最近一次有效命中的 TargetA 或 TargetB 上朝向正确、位于投影体内的实际可见表面",
+  "protected_targets": "TargetC、Cover、墙/地、目标背面、其他共享材质实例、武器视口与 HUD；全部原命中/生命值/碰撞逻辑",
+  "scene_purpose": "玩家能判断最近一次命中发生在哪个目标和位置，同时保留遮挡、瞄准与原射击流程。",
+  "impact_path": [
+    "原射线命中与独立 hit_surface 输入",
+    "target_id/局部锚点/目标变换",
+    "当前深度重建和投影体裁剪",
+    "受体法线/材料修改后照明",
+    "最近一次命中反馈",
+    "遮挡、原伤害和瞄准流程"
+  ],
+  "scope": "一次只保留一个活动贴花，寿命 2 秒；不要求多贴花排序、透明受体、蒙皮目标或完整 deferred renderer。",
+  "prompt": "tasks/SA04_L1/prompt.md",
+  "evaluation_cases": "tasks/SA04_L1/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA04_L1/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA04_L1/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA04_L1/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa04",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "numeric_checks"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原靶场拆出 TargetA 和地面，保留原靶标网格、材质、光照和观察相机；验证表面投影。",
+    "L2: 保留 TargetA、TargetB、Cover、地面与射击控制，观察移动受体、命中、遮挡和寿命。",
+    "L3: 使用原完整靶场，保留全部靶标、掩体、墙地、角色、武器、准星、碰撞和射击流程。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "FPS 靶场",
+    "kind": "fps",
+    "level": 1,
+    "scope": "scene_subset",
+    "description": "从原靶场拆出 TargetA 和地面，保留原靶标网格、材质、光照和观察相机；验证表面投影。",
+    "source_entry": "pilot/F01.tscn",
+    "targets": [
+      "World/TargetA",
+      "World/TargetB"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": {
+      "position": [
+        -1,
+        4,
+        3
+      ],
+      "look_at": [
+        -4,
+        2,
+        -3
+      ]
+    },
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

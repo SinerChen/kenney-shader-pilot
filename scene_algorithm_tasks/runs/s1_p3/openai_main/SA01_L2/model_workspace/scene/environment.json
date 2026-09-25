@@ -1,0 +1,31 @@
+{
+  "host": "existing_project",
+  "name": "草地",
+  "kind": "grass",
+  "level": 2,
+  "scope": "interaction_subset",
+  "description": "扩大为路径附近的三排草，使用原风参数、玩家回放和阴影，观察风动与压草的组合。",
+  "source_entry": "scenes/GrassPatch.tscn",
+  "targets": [
+    "GrassCards_0",
+    "GrassCards_1",
+    "GrassCards_2",
+    "GrassCards_3"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      5,
+      4,
+      6
+    ],
+    "look_at": [
+      0,
+      0.4,
+      0
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

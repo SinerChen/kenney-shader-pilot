@@ -1,0 +1,318 @@
+{
+  "P01": {
+    "id": "P01",
+    "kit": "platformer",
+    "title": "材质收集庭院",
+    "title_en": "Material Courtyard",
+    "category": "材质与表面",
+    "tags": [
+      "g2s1",
+      "g2s4",
+      "g7s1"
+    ],
+    "focus": "同场景材质差异、收集反馈与状态联动",
+    "targets": [
+      "MaterialA",
+      "MaterialB",
+      "MaterialC",
+      "CollectibleA",
+      "CollectibleB",
+      "Gate"
+    ],
+    "events": [
+      {
+        "frame": 30,
+        "name": "focus",
+        "payload": {
+          "target": "MaterialA"
+        }
+      },
+      {
+        "frame": 60,
+        "name": "collect",
+        "payload": {
+          "target": "CollectibleA",
+          "count": 1
+        }
+      },
+      {
+        "frame": 100,
+        "name": "collect",
+        "payload": {
+          "target": "CollectibleB",
+          "count": 2
+        }
+      },
+      {
+        "frame": 140,
+        "name": "unlock",
+        "payload": {
+          "target": "Gate"
+        }
+      }
+    ],
+    "event_names": [
+      "focus",
+      "collect",
+      "unlock"
+    ]
+  },
+  "P02": {
+    "id": "P02",
+    "kit": "platformer",
+    "title": "水面跳台",
+    "title_en": "Water Crossing",
+    "category": "自然与环境",
+    "tags": [
+      "g1s3",
+      "g3s4"
+    ],
+    "focus": "水面运动、局部涟漪与岸边组合",
+    "targets": [
+      "Water",
+      "BridgeA",
+      "BridgeB",
+      "Obstacle"
+    ],
+    "events": [
+      {
+        "frame": 30,
+        "name": "splash",
+        "payload": {
+          "position": [
+            0,
+            0.22,
+            1
+          ],
+          "strength": 0.6
+        }
+      },
+      {
+        "frame": 70,
+        "name": "splash",
+        "payload": {
+          "position": [
+            -2,
+            0.22,
+            -1
+          ],
+          "strength": 1.0
+        }
+      },
+      {
+        "frame": 110,
+        "name": "rain",
+        "payload": {
+          "intensity": 0.8
+        }
+      },
+      {
+        "frame": 150,
+        "name": "rain",
+        "payload": {
+          "intensity": 0.0
+        }
+      }
+    ],
+    "event_names": [
+      "splash",
+      "rain"
+    ]
+  },
+  "P03": {
+    "id": "P03",
+    "kit": "platformer",
+    "title": "风动草地",
+    "title_en": "Wind Garden",
+    "category": "几何与动态模拟",
+    "tags": [
+      "g6s1",
+      "g1s5"
+    ],
+    "focus": "锚定顶点形变、方向控制与局部交互",
+    "targets": [
+      "GrassField",
+      "Flag",
+      "InteractionMarker"
+    ],
+    "events": [
+      {
+        "frame": 30,
+        "name": "wind",
+        "payload": {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "strength": 0.6
+        }
+      },
+      {
+        "frame": 75,
+        "name": "wind",
+        "payload": {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "strength": 1.0
+        }
+      },
+      {
+        "frame": 110,
+        "name": "bend",
+        "payload": {
+          "position": [
+            0,
+            0.55,
+            0
+          ],
+          "radius": 2.0
+        }
+      },
+      {
+        "frame": 150,
+        "name": "wind",
+        "payload": {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "strength": 0.0
+        }
+      }
+    ],
+    "event_names": [
+      "wind",
+      "bend"
+    ]
+  },
+  "F01": {
+    "id": "F01",
+    "kit": "fps",
+    "title": "靶场命中反馈",
+    "title_en": "Reactive Target Range",
+    "category": "风格化与特效",
+    "tags": [
+      "g4s4",
+      "g5s7",
+      "g7s3"
+    ],
+    "focus": "目标描边、命中消融与遮挡一致性",
+    "targets": [
+      "TargetA",
+      "TargetB",
+      "TargetC",
+      "Cover"
+    ],
+    "events": [
+      {
+        "frame": 25,
+        "name": "select",
+        "payload": {
+          "target": "TargetA"
+        }
+      },
+      {
+        "frame": 55,
+        "name": "hit",
+        "payload": {
+          "target": "TargetA",
+          "amount": 35,
+          "health": 0.65
+        }
+      },
+      {
+        "frame": 95,
+        "name": "hit",
+        "payload": {
+          "target": "TargetB",
+          "amount": 80,
+          "health": 0.2
+        }
+      },
+      {
+        "frame": 135,
+        "name": "destroy",
+        "payload": {
+          "target": "TargetB"
+        }
+      },
+      {
+        "frame": 160,
+        "name": "select",
+        "payload": {
+          "target": "TargetC"
+        }
+      }
+    ],
+    "event_names": [
+      "select",
+      "hit",
+      "destroy"
+    ]
+  },
+  "F02": {
+    "id": "F02",
+    "kit": "fps",
+    "title": "能量走廊",
+    "title_en": "Energy Corridor",
+    "category": "光照与光学",
+    "tags": [
+      "g3s6",
+      "g3s7",
+      "g4s6"
+    ],
+    "focus": "能量发光、供能切换与受遮挡的光照组合",
+    "targets": [
+      "Emitter",
+      "BeamVolume",
+      "Occluder",
+      "Panel"
+    ],
+    "events": [
+      {
+        "frame": 30,
+        "name": "power",
+        "payload": {
+          "value": 0.8
+        }
+      },
+      {
+        "frame": 70,
+        "name": "power",
+        "payload": {
+          "value": 0.2
+        }
+      },
+      {
+        "frame": 105,
+        "name": "scan",
+        "payload": {
+          "enabled": true
+        }
+      },
+      {
+        "frame": 145,
+        "name": "power",
+        "payload": {
+          "value": 0.0
+        }
+      },
+      {
+        "frame": 170,
+        "name": "scan",
+        "payload": {
+          "enabled": false
+        }
+      }
+    ],
+    "event_names": [
+      "power",
+      "scan"
+    ]
+  }
+}

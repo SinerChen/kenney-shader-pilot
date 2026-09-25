@@ -1,0 +1,260 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://pilot/pilot.gd" id="host"]
+[ext_resource type="Environment" path="res://scenes/main-environment.tres" id="env"]
+[ext_resource type="PackedScene" path="res://objects/player.tscn" id="player"]
+[ext_resource type="Script" path="res://effects/P03/effect.gd" id="effect"]
+[ext_resource type="Script" path="res://scripts/view.gd" id="view"]
+[ext_resource type="PackedScene" path="res://objects/platform_grass_large_round.tscn" id="model5"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model6"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model7"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model8"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model9"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model10"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model11"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model12"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model13"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model14"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model15"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model16"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model17"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model18"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model19"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model20"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model21"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model22"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model23"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model24"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model25"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model26"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model27"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model28"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model29"]
+[ext_resource type="PackedScene" path="res://models/grass.glb" id="model30"]
+[ext_resource type="PackedScene" path="res://models/flag.glb" id="model31"]
+
+[sub_resource type="StandardMaterial3D" id="box0mat"]
+albedo_color = Color(0.13, 0.21, 0.28, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box0mesh"]
+size = Vector3(18, 0.8, 17)
+material = SubResource("box0mat")
+
+[sub_resource type="BoxShape3D" id="box0shape"]
+size = Vector3(18, 0.8, 17)
+
+[sub_resource type="StandardMaterial3D" id="plane3mat"]
+albedo_color = Color(0.8, 0.28, 0.19, 1)
+cull_mode = 2
+roughness = 0.6
+
+[sub_resource type="PlaneMesh" id="plane3mesh"]
+size = Vector2(2.0, 1.4)
+subdivide_width = 64
+subdivide_depth = 64
+material = SubResource("plane3mat")
+
+[sub_resource type="StandardMaterial3D" id="box5mat"]
+albedo_color = Color(0.9, 0.67, 0.24, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box5mesh"]
+size = Vector3(0.4, 0.1, 0.4)
+material = SubResource("box5mat")
+
+[node name="Pilot" type="Node3D"]
+script = ExtResource("host")
+scene_id = "P03"
+kit = "platformer"
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = ExtResource("env")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, -30, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="World" type="Node3D" parent="."]
+
+
+[node name="Observer" type="Camera3D" parent="."]
+position = Vector3(15, 13, 19)
+fov = 48.0
+current = true
+
+[node name="EffectAdapter" type="Node" parent="."]
+script = ExtResource("effect")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+
+[node name="Instructions" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 15.0
+theme_override_font_sizes/font_size = 17
+
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 575.0
+theme_override_font_sizes/font_size = 16
+
+[node name="EffectHUD" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Crosshair" type="TextureRect" parent="HUD"]
+offset_left = 463.0
+offset_top = 303.0
+offset_right = 497.0
+offset_bottom = 337.0
+expand_mode = 1
+mouse_filter = 2
+visible = false
+
+[node name="Player" parent="." node_paths=PackedStringArray("view") groups=["player"] instance=ExtResource("player")]
+position = Vector3(0, 1.0, 5)
+view = NodePath("../View")
+
+[node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
+rotation_degrees = Vector3(-25, 40, 0)
+script = ExtResource("view")
+target = NodePath("../Player")
+
+[node name="Camera" type="Camera3D" parent="View"]
+position = Vector3(0, 0, 10)
+fov = 40.0
+
+[node name="Foundation" type="MeshInstance3D" parent="World"]
+position = Vector3(0, -0.4, -1)
+mesh = SubResource("box0mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Foundation"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Foundation/Body"]
+shape = SubResource("box0shape")
+
+[node name="Garden" parent="World" instance=ExtResource("model5")]
+position = Vector3(0, 0, -1)
+scale = Vector3(2.7, 1, 2.7)
+
+[node name="GrassField" type="Node3D" parent="World" groups=["effect_target"]]
+
+
+[node name="Grass_0_0" parent="World/GrassField" instance=ExtResource("model6")]
+position = Vector3(-4, 0.55, -5)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_0_2" parent="World/GrassField" instance=ExtResource("model7")]
+position = Vector3(-4, 0.55, -3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_0_4" parent="World/GrassField" instance=ExtResource("model8")]
+position = Vector3(-4, 0.55, -1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_0_6" parent="World/GrassField" instance=ExtResource("model9")]
+position = Vector3(-4, 0.55, 1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_0_8" parent="World/GrassField" instance=ExtResource("model10")]
+position = Vector3(-4, 0.55, 3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_2_0" parent="World/GrassField" instance=ExtResource("model11")]
+position = Vector3(-2, 0.55, -5)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_2_2" parent="World/GrassField" instance=ExtResource("model12")]
+position = Vector3(-2, 0.55, -3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_2_4" parent="World/GrassField" instance=ExtResource("model13")]
+position = Vector3(-2, 0.55, -1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_2_6" parent="World/GrassField" instance=ExtResource("model14")]
+position = Vector3(-2, 0.55, 1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_2_8" parent="World/GrassField" instance=ExtResource("model15")]
+position = Vector3(-2, 0.55, 3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_4_0" parent="World/GrassField" instance=ExtResource("model16")]
+position = Vector3(0, 0.55, -5)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_4_2" parent="World/GrassField" instance=ExtResource("model17")]
+position = Vector3(0, 0.55, -3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_4_4" parent="World/GrassField" instance=ExtResource("model18")]
+position = Vector3(0, 0.55, -1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_4_6" parent="World/GrassField" instance=ExtResource("model19")]
+position = Vector3(0, 0.55, 1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_4_8" parent="World/GrassField" instance=ExtResource("model20")]
+position = Vector3(0, 0.55, 3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_6_0" parent="World/GrassField" instance=ExtResource("model21")]
+position = Vector3(2, 0.55, -5)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_6_2" parent="World/GrassField" instance=ExtResource("model22")]
+position = Vector3(2, 0.55, -3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_6_4" parent="World/GrassField" instance=ExtResource("model23")]
+position = Vector3(2, 0.55, -1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_6_6" parent="World/GrassField" instance=ExtResource("model24")]
+position = Vector3(2, 0.55, 1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_6_8" parent="World/GrassField" instance=ExtResource("model25")]
+position = Vector3(2, 0.55, 3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_8_0" parent="World/GrassField" instance=ExtResource("model26")]
+position = Vector3(4, 0.55, -5)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_8_2" parent="World/GrassField" instance=ExtResource("model27")]
+position = Vector3(4, 0.55, -3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_8_4" parent="World/GrassField" instance=ExtResource("model28")]
+position = Vector3(4, 0.55, -1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_8_6" parent="World/GrassField" instance=ExtResource("model29")]
+position = Vector3(4, 0.55, 1)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="Grass_8_8" parent="World/GrassField" instance=ExtResource("model30")]
+position = Vector3(4, 0.55, 3)
+scale = Vector3(2.2, 2.2, 2.2)
+
+[node name="FlagPole" parent="World" instance=ExtResource("model31")]
+position = Vector3(4, 0.5, -4)
+scale = Vector3(3, 3, 3)
+
+[node name="Flag" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(4, 3, -4)
+mesh = SubResource("plane3mesh")
+rotation_degrees = Vector3(90, 0, 0)
+
+[node name="InteractionMarker" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(0, 0.6, 0)
+mesh = SubResource("box5mesh")

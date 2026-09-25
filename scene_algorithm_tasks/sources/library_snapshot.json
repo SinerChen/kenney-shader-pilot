@@ -1,0 +1,224 @@
+{
+  "library_root": "../godot_algorithm_catalog",
+  "progress_updated": "2026-09-24T18:56:56.944416+08:00",
+  "source_document_sha256": "0a38b7c2b1bd7b38044cd6cedec371dacffe74692dcd17a2a18bae7c73b05cb1",
+  "algorithms": [
+    {
+      "id": "SH018",
+      "name": "投影贴花重建 / Projective / deferred decal mapping",
+      "library_validation_passed": true,
+      "cases": 118,
+      "passed_cases": 118,
+      "revision": null,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH018.json",
+          "sha256": "f7da839139a7bde574efbce784e8b8b2219837fd10a42676bf7e12d61c748312"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH018/algorithm.gd",
+          "sha256": "05055f42da1765fa65202d3f1d960d23d575f6ece8193a1c597de82c978db047"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH018/README.md",
+          "sha256": "9825082ac50a18f8fb8200a8615a33191eaec5f23e2564113780fa1e5e329e04"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH018/cases.json",
+          "sha256": "837c6456333283949257b4f955f1c814652ba0ed43f4bfbd17b73fcc239bf5f1"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH018/validation.json",
+          "sha256": "a5793029c6bc8155604d8ea9725e2725ba2491820d01ad7ee0b088fd28df5763"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH023",
+      "name": "高度驱动材质混合 / Height-based material blending",
+      "library_validation_passed": true,
+      "cases": 76,
+      "passed_cases": 76,
+      "revision": null,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH023.json",
+          "sha256": "953c159e842abf9ccc5c00b2a801f0c3b36f52fafdba46ac17e6404a0df04f0d"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH023/algorithm.gd",
+          "sha256": "f2b963d22d6c617fa9aed25c4f36e39b71460360ff20ef0b32f055207fdb02f2"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH023/README.md",
+          "sha256": "dce0e27c7c8314a9d46cdddf5e0a40501798cc28a5407f40fdb7a8ee70b40331"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH023/cases.json",
+          "sha256": "18584136bafd2e786738591cfb623b5c47bb8db2d7f4852308afaca7f225f610"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH023/validation.json",
+          "sha256": "ca99505d49288d95c4f5f5089298ac86ff0175e74417e7709ef086f7ab169610"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH043",
+      "name": "重定向法线混合 / Reoriented Normal Mapping (RNM)",
+      "library_validation_passed": true,
+      "cases": 74,
+      "passed_cases": 74,
+      "revision": null,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH043.json",
+          "sha256": "6e60a1025a03ccc9faa7778cae3b4611574c0427aa038de0543d7a291ba53280"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH043/algorithm.gd",
+          "sha256": "9ea0c3a78fc0a6f341d39217f493e9d6de7a3662b85fa175bac757c466cf572a"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH043/README.md",
+          "sha256": "da884a909b0ddb1e26de15bf930adbd602033fb65d90be937975d33e951c122f"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH043/cases.json",
+          "sha256": "d1b5d14e1af6fa5397ab1faf712a4c79b246b03256912c76f5bef8817073366a"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH043/validation.json",
+          "sha256": "a8d320669827bcde3442cacc5915a131686b8aeb3666bc6d6fb4786a6a74f8ef"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH179",
+      "name": "指数高度雾积分 / Exponential height-fog integration",
+      "library_validation_passed": true,
+      "cases": 70,
+      "passed_cases": 70,
+      "revision": null,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH179.json",
+          "sha256": "abca2c70fb9d5554213fcd0e4e3c11ddb6a4aa347dddb53c46f7c0a56309d5e6"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH179/algorithm.gd",
+          "sha256": "d3de96bcac66293534979719f5c28abd9ada43178489d24cb9b2c95ec64c3cf7"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH179/README.md",
+          "sha256": "d7ce3bdfc607197d6fcd591197a24d1a3102c7b3678caeb1129f34dd9e50ad95"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH179/cases.json",
+          "sha256": "b496fe48e43ce284ff393e93424bb944b33dea5730012bd985e3848588687208"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH179/validation.json",
+          "sha256": "0119ec6ceff2b6935301dc9aaf28f1963d2e430d0fc958084792a02b055e1834"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH185",
+      "name": "Gerstner海浪 / Gerstner waves",
+      "library_validation_passed": true,
+      "cases": 79,
+      "passed_cases": 79,
+      "revision": 1,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH185.json",
+          "sha256": "2d8d791bf9c98585fd5fe0acc53f9422eb5c64224ae1ee286e6d93dce1d84026"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH185/algorithm.gd",
+          "sha256": "3d6bfd7bfd442bdcb4e53f68115cbd5ef3a7692c97b5be2060716b74bf176b4e"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH185/README.md",
+          "sha256": "f54bb6d2558c0c3ce7315e98b352da9a2c704e6ee6679022e613f69752729fef"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH185/cases.json",
+          "sha256": "b81b4962d0035829d126845e773e7b0836b7fac00fcec5060cc605dc130bbde9"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH185/validation.json",
+          "sha256": "b7c5e1ec87ff0384ad4600662def4c95d3ee6d18b7a4a23343a4afb1e044c539"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH192",
+      "name": "泡沫历史演化 / Foam accumulation and decay",
+      "library_validation_passed": true,
+      "cases": 76,
+      "passed_cases": 76,
+      "revision": 1,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH192.json",
+          "sha256": "c5db0bc824eed204456f4ce0be8616dd209317c6653ab6cbc8a4ae01498ed4b6"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH192/algorithm.gd",
+          "sha256": "bc29335da36b5eb405cbedcf02fac2b3e73a5a14c56e1dc44e046fd3c3ed8743"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH192/README.md",
+          "sha256": "2b687a7e02fc4b4695718de95eff2a26cfa744e77ff1c9443aabec204679db09"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH192/cases.json",
+          "sha256": "5a34956cf7b433b4d842350256ffa48c28de76bb629713a4f8d56081c7835a58"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH192/validation.json",
+          "sha256": "00f97598258805cc684d4e750cf4bbe3d87b4ff5a558a131fb2d4bb4345f7980"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    },
+    {
+      "id": "SH234",
+      "name": "交互草压弯场 / Interaction-field vegetation bending",
+      "library_validation_passed": true,
+      "cases": 71,
+      "passed_cases": 71,
+      "revision": 1,
+      "files": [
+        {
+          "path": "../godot_algorithm_catalog/contracts/SH234.json",
+          "sha256": "d8229c4b299fb28cc9cea8d1d15da2fa1b6f21dd6c262e662e8f512f2c7a4448"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH234/algorithm.gd",
+          "sha256": "e4a2ba5944e1109e180930128484da1fb5c5cf0da787d7f1a7ed37ab2992b54a"
+        },
+        {
+          "path": "../godot_algorithm_catalog/godot/algorithms/SH234/README.md",
+          "sha256": "55a659f144b1c061e4a36481213448202ddfd468c1626c04ef7565684f39364c"
+        },
+        {
+          "path": "../godot_algorithm_catalog/tests/SH234/cases.json",
+          "sha256": "575c2bf353e89891c42e18b9dfc0a53317f958dad6be12769406fb19607faaa5"
+        },
+        {
+          "path": "../godot_algorithm_catalog/verification/SH234/validation.json",
+          "sha256": "8201b3087b323c785ef0a5faab09db2328c9db42c308a9d02cb3782cedd3d1b6"
+        }
+      ],
+      "claim": "既有隔离算法验证记录；不是本题候选或新场景验收结果"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "execution_ok": true,
+  "errors": [],
+  "warnings": [],
+  "cases": [
+    {
+      "elapsed": 1.0,
+      "frames": [
+        1,
+        30,
+        60
+      ],
+      "name": "target",
+      "steps": 60
+    }
+  ],
+  "renderer": "forward_plus",
+  "visual_quality": "not_independently_evaluated"
+}

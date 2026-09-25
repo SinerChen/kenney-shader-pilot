@@ -1,0 +1,120 @@
+{
+  "dt_seconds": 0.016666666666666666,
+  "steps": 180,
+  "record_after_steps": [
+    1,
+    30,
+    60,
+    180
+  ],
+  "viewport": [
+    128,
+    128
+  ],
+  "camera": {
+    "eye": [
+      0,
+      0,
+      4
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ],
+    "fov_degrees": 60,
+    "near": 0.1,
+    "far": 20
+  },
+  "surface": {
+    "vertices": [
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        0
+      ]
+    ],
+    "triangles": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ]
+    ],
+    "albedo_linear": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "projector": {
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      0.5,
+      0.5,
+      0.2
+    ],
+    "cos_reject": 0.2,
+    "cos_full": 0.8,
+    "albedo_linear": [
+      0.15,
+      0.03,
+      0.01
+    ],
+    "opacity": 0.8
+  },
+  "hit": {
+    "event_id": 1,
+    "target": "target_a",
+    "time_s": 0,
+    "local_position": [
+      0,
+      0,
+      0
+    ],
+    "local_normal": [
+      0,
+      0,
+      1
+    ]
+  },
+  "lifetime_s": 2,
+  "allowed_targets": [
+    "target_a",
+    "target_b"
+  ]
+}

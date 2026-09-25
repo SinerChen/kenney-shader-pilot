@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "both_entries_play": true,
+  "native_mp4": [
+    {
+      "duration": 4,
+      "width": 1280,
+      "height": 720,
+      "url": "http://127.0.0.1:8771/runs/s1_p3/openai_astra/SA01_L1/presentation/versions/7ba7005f671742ff_143229/effect.mp4",
+      "loop": true
+    },
+    {
+      "duration": 4,
+      "width": 1280,
+      "height": 720,
+      "url": "http://127.0.0.1:8770/scene_algorithm_tasks/runs/s1_p3/openai_astra/SA01_L1/presentation/versions/7ba7005f671742ff_143229/effect.mp4",
+      "loop": true
+    }
+  ],
+  "default_opens_available_final_video": true,
+  "seek": true,
+  "slow_motion": true,
+  "http_range": true,
+  "refresh_keeps_player": true,
+  "queued_empty_state": true,
+  "mobile_no_overflow": true,
+  "browser_errors": [],
+  "model_api_calls": 0
+}

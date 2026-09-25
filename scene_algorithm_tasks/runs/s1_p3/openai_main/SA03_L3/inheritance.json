@@ -1,0 +1,7 @@
+{
+  "parent": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\scene_algorithm_tasks\\runs\\s1_p3\\openai_main\\SA03_L2",
+  "files": {
+    "four_layer_height_blend.gdshader": "3c75a0396f985022e7507c652e8bb0c71b871be1e1db3763911e171a8aec5591",
+    "main.gd": "6910e6cff2a13cf433f2d66fbb00d4e52a339a29fe435ac2a107091ae16ea86a"
+  }
+}

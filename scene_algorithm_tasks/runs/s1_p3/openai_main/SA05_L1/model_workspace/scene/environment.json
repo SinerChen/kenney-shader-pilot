@@ -1,0 +1,19 @@
+{
+  "host": "existing_project",
+  "name": "森林",
+  "kind": "forest",
+  "level": 1,
+  "scope": "scene_subset",
+  "description": "从原森林拆出地形及原视点附近的岩石，保留原空间坐标、天空、云、光照和自由相机；观察高度雾。",
+  "source_entry": "Main.tscn",
+  "targets": [
+    "Main Terrain",
+    "Decorations-Forest",
+    "Groundcover"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

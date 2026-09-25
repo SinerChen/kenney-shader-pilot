@@ -1,0 +1,39 @@
+{
+  "task_id": "SA05_L2",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA05_L2_world_height",
+      "intervention": "保持密度场固定，相机上下移动并回到原位；记录同一世界地标。",
+      "expected": "每次 T 对应当前两个端点的积分，回原位恢复；雾层不跟随相机平移。",
+      "evidence": "相机/表面世界坐标、tau/T 和相机路径视频。",
+      "typical_failure": "把相机局部 Y 当世界高度或使用旧相机矩阵。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L2_occlusion",
+      "intervention": "观察前景叶片/其透明空隙/后方岩石，移动相机改变重叠。",
+      "expected": "三种射线使用实际各自深度，空隙无矩形雾片，前后遮挡一致。",
+      "evidence": "深度、Alpha coverage、对象 ID、T 诊断。",
+      "typical_failure": "草片空白挡雾、雾绕过叶面或穿透前景。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L2_linear_once",
+      "intervention": "在冻结 HDR 灰阶/彩色样本上设置 T=.25/.5/.75，改变曝光仅作诊断。",
+      "expected": "tone map 前合成数值正确，曝光不参与积分且候选雾仅合成一次。",
+      "evidence": "线性输入/输出、pass 顺序、原雾开关快照。",
+      "typical_failure": "sRGB 混色、双重雾或先 tone map 再合成。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L2_ablation",
+      "intervention": "rho=0、falloff=0 与正常高度雾三组；冻结光照/云时间。",
+      "expected": "rho=0 恢复共同基线，falloff=0 是距离均匀介质；sky/UI 不变。",
+      "evidence": "三组颜色和透射数据、匹配连续帧。",
+      "typical_failure": "雾关后留灰层或为通过检查同步改灯光。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

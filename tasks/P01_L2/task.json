@@ -1,0 +1,19 @@
+{
+  "id": "P01_L2",
+  "scene_id": "P01",
+  "kit": "platformer",
+  "level": 2,
+  "title": "收集与聚焦交互",
+  "requirement": "保留 L1。focus 事件只高亮指定对象；collect 使对应收集物局部溶解消失，并更新计数。重复事件不重复计数，未指定对象保持原状。",
+  "criteria": [
+    "保留 L1 材质差异",
+    "事件只影响指定对象",
+    "溶解连续且完成后正确隐藏",
+    "重复收集不会累计两次"
+  ],
+  "parent_task": "P01_L1",
+  "base_scene": "projects/platformer/pilot/P01.tscn",
+  "editable_directory": "projects/platformer/effects/P01",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

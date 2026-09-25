@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {
+      "id": "inspect_host",
+      "goal": "检查现有入口、固定输入和场景宿主，确认可复用行为与接口。",
+      "expected": "明确 effect/main.gd 的 configure/step/sample 约定及场景调用方式。",
+      "counterexample": "入口缺失或接口与题面不符，无法直接接入。",
+      "status": "passed",
+      "observations": [],
+      "summary": "确认宿主实例化原 MainScene，目标节点为 Level Geometry/Ground/Ground。",
+      "limitations": "无。"
+    },
+    {
+      "id": "implement_mixing",
+      "goal": "实现四层共同最高值、transition 竞争量、归一化权重及属性混合。",
+      "expected": "固定输入得到稳定的四权重、线性颜色、粗糙度/金属度/高度和基础法线。",
+      "counterexample": "权重不归一、出现负值，或未按 height×control 竞争。",
+      "status": "passed",
+      "observations": [{"output_directory":"observations/render_20260925_025622_a66f8cf2","screenshot":"frame_0001.png","view":"perspective position [-3,5,8], look_at [-3,0,0]","frames":[1],"result":"sample 权重约 [0.1935493,0.8064496,0.0000011,0]，和为 1。"}],
+      "summary": "按共同最高 height×control、transition 下限、竞争量加 epsilon 后乘 control、分母下限实现。",
+      "limitations": "无。"
+    },
+    {
+      "id": "implement_normals",
+      "goal": "实现基础法线归一化以及 detail_enabled 时的 RNM 细节法线组合。",
+      "expected": "关闭细节时 final_normal_ts 等于 base_normal_ts，相消时回退到 Z 轴。",
+      "counterexample": "法线未归一化、细节关闭仍改变结果，或相消产生零向量。",
+      "status": "passed",
+      "observations": [{"output_directory":"observations/render_20260925_025622_a66f8cf2","screenshot":"frame_0001.png","view":"perspective position [-3,5,8], look_at [-3,0,0]","frames":[1],"result":"固定输入中 base_normal_ts 与 final_normal_ts 均为 [0,0,1]。"}],
+      "summary": "实现安全归一化、零向量回退与 RNM。",
+      "limitations": "固定输入不覆盖非平坦细节法线分支。"
+    },
+    {
+      "id": "scene_apply",
+      "goal": "将实现接入 Ground 路面场景，保留原网格、材质、光照和相机并输出可观察效果。",
+      "expected": "scene/main.tscn 可运行，路面显示连续的四层材质混合。",
+      "counterexample": "场景无法启动、路面消失或材质效果未应用。",
+      "status": "passed",
+      "observations": [{"output_directory":"observations/render_20260925_030053_e982888d","screenshot":"frame_0060.png","view":"perspective position [-3,5,8], look_at [-3,0,0]","frames":[60],"result":"保留原 cobble 纹理细节；湿区连续较暗并有低粗糙高光，石缝和高度连续参与竞争；无运行或 shader 错误。"}],
+      "summary": "空间 shader 应用于 Ground；固定原纹理充当局部高度细节，世界空间低频遮罩形成湿区。",
+      "limitations": "同一覆盖材质用于裁剪后的全部 Ground 子网格，人孔盖也继承路面着色。"
+    },
+    {
+      "id": "validate_complete",
+      "goal": "用固定输入渲染并复查完整效果、数值输出和既有行为。",
+      "expected": "observations 中有截图与 samples.json，数值和视觉结果符合算法及输出字段顺序。",
+      "counterexample": "渲染报错、样本字段缺失或观察到算法偏差。",
+      "status": "passed",
+      "observations": [{"output_directory":"observations/render_20260925_030053_e982888d","screenshot":"frame_0060.png","view":"perspective position [-3,5,8], look_at [-3,0,0]","frames":[60],"result":"samples.json 含全部五个要求字段；albedo=[0.2887097,0.2667742,0.2429032]，RMH=[0.3564525,0,0.7999994]，两法线均为单位 Z；画面稳定且无编译错误。"}],
+      "summary": "完整固定输入数值和目标场景视觉均通过复查。",
+      "limitations": "Godot 退出报告少量资源仍在使用，为宿主关闭诊断，不影响捕获和样本。"
+    }
+  ]
+}

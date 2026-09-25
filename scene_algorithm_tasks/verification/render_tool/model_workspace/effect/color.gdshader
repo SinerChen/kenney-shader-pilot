@@ -1,0 +1,1 @@
+shader_type spatial; render_mode unshaded; uniform float elapsed = 0.0; void fragment(){ALBEDO=vec3(0.85,0.22+0.12*sin(elapsed),0.04);}

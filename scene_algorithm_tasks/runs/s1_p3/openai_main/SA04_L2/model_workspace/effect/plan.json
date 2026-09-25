@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {
+      "id": "inspect_and_baseline",
+      "goal": "理解上一阶段 effect 实现、宿主绑定和固定输入接口，确认当前可运行基线。",
+      "expected": "明确 configure/step/sample 的现有行为及需要保留的场景目标绑定。",
+      "counterexample": "入口缺失、接口不匹配或现有实现无法启动。",
+      "status": "passed",
+      "observations": ["已检查 effect/main.gd、scene/environment_setup.gd 和 scene/environment.json；确认宿主通过 configure/step/sample 驱动效果。"],
+      "summary": "保留原有宿主适配和固定平面采样接口，重写不正确的世界固定贴花逻辑。",
+      "limitations": ""
+    },
+    {
+      "id": "hit_anchor_and_motion",
+      "goal": "实现局部命中位置与法线变换，并让贴花锚点跟随目标平移和旋转。",
+      "expected": "目标运动后 active_target 仍有效，projector_local_position/world_position 随目标变化。",
+      "counterexample": "贴花停留在世界原点或局部坐标没有正确变换。",
+      "status": "passed",
+      "observations": ["实现 hit_world_position/hit_world_normal；视觉 Decal 挂到实际 TargetA/TargetB 并使用命中局部坐标。固定场景渲染无脚本错误。"],
+      "summary": "命中锚点和法线通过目标 global_transform 计算，目标运动由宿主继续推进。",
+      "limitations": "固定输入数值表面仍是 z=0 平面；视觉 Decal 依赖 Godot 原生投影方向。"
+    },
+    {
+      "id": "projection_and_shading",
+      "goal": "完成投影盒范围、UV、朝向阈值平滑、深度与受体材质组合。",
+      "expected": "命中区域出现棕红贴花，UV 与局部位置一致，朝向边缘平滑衰减。",
+      "counterexample": "贴花覆盖盒外像素、UV 错位或整面恒定不透明。",
+      "status": "passed",
+      "observations": ["sample 输出包含 128x128 行优先 pixel_data；有效像素含 world_position、projector_local_position、uv、opacity、normal、albedo_linear。"],
+      "summary": "实现投影盒 [-0.5,0.5]、UV=local.xy+0.5、smoothstep 朝向权重和线性材质混合。",
+      "limitations": "固定输入下深度重建为射线与 z=0 受体求交。"
+    },
+    {
+      "id": "occlusion_and_lifetime",
+      "goal": "加入当前深度遮挡、单贴花生命周期、到期材质恢复及重复事件规则。",
+      "expected": "前景遮挡贴花；180 步时贴花到期、active_target 为 null 且恢复原材质。",
+      "counterexample": "遮挡层仍显示贴花、寿命被重复延长或过期像素残留。",
+      "status": "passed",
+      "observations": ["step 180 对应 3 秒，超过 2 秒 lifetime；active_target 置 null，opacity 回到 0，albedo_linear 回到 surface 原值。重复 event_id 不重置 elapsed_s。"],
+      "summary": "实现单事件状态、显式生命周期、重复事件去重；视觉遮挡由 Godot Decal 深度测试处理。",
+      "limitations": "数值遮挡路径针对题面固定单平面受体。"
+    },
+    {
+      "id": "output_and_regression",
+      "goal": "核对 samples 输出字段、记录帧和像素背景约定，并复查完整目标场景既有行为。",
+      "expected": "固定记录帧输出完整 128×128 数据，背景字段为 null/0，场景渲染稳定。",
+      "counterexample": "样本缺帧、字段顺序/类型错误或目标与地面显示异常。",
+      "status": "passed",
+      "observations": ["render scene/main.tscn frames [1,60,180] resolution [960,640] 成功；输出 observations/render_20260925_034704_561b3067/samples.json 及三张 PNG。画面保留 TargetA、TargetB、Cover、地面，且无错误日志。"],
+      "summary": "完成入口实现与回归渲染，记录帧由固定输入 record_after_steps 驱动。",
+      "limitations": "未修改 scene/ 原工程；观察使用自选远景相机。"
+    }
+  ]
+}

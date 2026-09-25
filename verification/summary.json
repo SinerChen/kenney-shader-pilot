@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-23T19:15:10.112450+08:00",
+  "scenes": 5,
+  "prepared_tasks": 15,
+  "rendered_scenes": 5,
+  "screenshots": 20,
+  "total_render_steps": 900,
+  "engine": "Godot 4.6.1",
+  "renderer": "forward_plus",
+  "model_tasks_run": 0,
+  "model_api_calls": 0,
+  "stage": "baseline_preparation",
+  "scope": "Imports, target names, event delivery, 180 steps, reset, and actual 960x640 GPU captures. No shader-task correctness scores."
+}

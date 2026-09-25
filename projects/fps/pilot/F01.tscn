@@ -1,0 +1,190 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://pilot/pilot.gd" id="host"]
+[ext_resource type="Environment" path="res://scenes/main-environment.tres" id="env"]
+[ext_resource type="PackedScene" path="res://objects/player.tscn" id="player"]
+[ext_resource type="Script" path="res://effects/F01/effect.gd" id="effect"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model4"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model5"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model6"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model7"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model8"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model9"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model10"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model11"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model12"]
+[ext_resource type="Script" path="res://pilot/hit_target.gd" id="hit"]
+[ext_resource type="PackedScene" path="res://models/enemy-flying.glb" id="model14"]
+[ext_resource type="PackedScene" path="res://models/enemy-flying.glb" id="model15"]
+[ext_resource type="PackedScene" path="res://models/enemy-flying.glb" id="model16"]
+
+[sub_resource type="StandardMaterial3D" id="box0mat"]
+albedo_color = Color(0.13, 0.21, 0.28, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box0mesh"]
+size = Vector3(18, 0.8, 17)
+material = SubResource("box0mat")
+
+[sub_resource type="BoxShape3D" id="box0shape"]
+size = Vector3(18, 0.8, 17)
+
+[sub_resource type="SphereShape3D" id="hitshape"]
+radius = 1.0
+
+[sub_resource type="StandardMaterial3D" id="box4mat"]
+albedo_color = Color(0.22, 0.3, 0.39, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box4mesh"]
+size = Vector3(2, 2, 0.5)
+material = SubResource("box4mat")
+
+[sub_resource type="BoxShape3D" id="box4shape"]
+size = Vector3(2, 2, 0.5)
+
+[node name="Pilot" type="Node3D"]
+script = ExtResource("host")
+scene_id = "F01"
+kit = "fps"
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = ExtResource("env")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, -30, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="World" type="Node3D" parent="."]
+
+
+[node name="Observer" type="Camera3D" parent="."]
+position = Vector3(15, 13, 19)
+fov = 48.0
+current = true
+
+[node name="EffectAdapter" type="Node" parent="."]
+script = ExtResource("effect")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+
+[node name="Instructions" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 15.0
+theme_override_font_sizes/font_size = 17
+
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 575.0
+theme_override_font_sizes/font_size = 16
+
+[node name="EffectHUD" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Crosshair" type="TextureRect" parent="HUD"]
+offset_left = 463.0
+offset_top = 303.0
+offset_right = 497.0
+offset_bottom = 337.0
+expand_mode = 1
+mouse_filter = 2
+visible = false
+
+[node name="Player" parent="." node_paths=PackedStringArray("crosshair") groups=["player"] instance=ExtResource("player")]
+position = Vector3(0, 1.0, 5)
+crosshair = NodePath("../HUD/Crosshair")
+
+[node name="Foundation" type="MeshInstance3D" parent="World"]
+position = Vector3(0, -0.4, -1)
+mesh = SubResource("box0mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Foundation"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Foundation/Body"]
+shape = SubResource("box0shape")
+
+[node name="Wall_-6_-5" parent="World" instance=ExtResource("model4")]
+position = Vector3(-6, 0, -5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_-6_0" parent="World" instance=ExtResource("model5")]
+position = Vector3(-6, 0, 0)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_-6_5" parent="World" instance=ExtResource("model6")]
+position = Vector3(-6, 0, 5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_-5" parent="World" instance=ExtResource("model7")]
+position = Vector3(6, 0, -5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_0" parent="World" instance=ExtResource("model8")]
+position = Vector3(6, 0, 0)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_5" parent="World" instance=ExtResource("model9")]
+position = Vector3(6, 0, 5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Platform-4" parent="World" instance=ExtResource("model10")]
+position = Vector3(-4, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="Platform0" parent="World" instance=ExtResource("model11")]
+position = Vector3(0, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="Platform4" parent="World" instance=ExtResource("model12")]
+position = Vector3(4, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="TargetA" type="StaticBody3D" parent="World" groups=["effect_target"]]
+position = Vector3(-4, 2, -3)
+script = ExtResource("hit")
+
+[node name="Model" parent="World/TargetA" instance=ExtResource("model14")]
+position = Vector3(0, 0, 0)
+scale = Vector3(2, 2, 2)
+
+[node name="Collision" type="CollisionShape3D" parent="World/TargetA"]
+shape = SubResource("hitshape")
+
+[node name="TargetB" type="StaticBody3D" parent="World" groups=["effect_target"]]
+position = Vector3(0, 2, -3)
+script = ExtResource("hit")
+
+[node name="Model" parent="World/TargetB" instance=ExtResource("model15")]
+position = Vector3(0, 0, 0)
+scale = Vector3(2, 2, 2)
+
+[node name="Collision" type="CollisionShape3D" parent="World/TargetB"]
+shape = SubResource("hitshape")
+
+[node name="TargetC" type="StaticBody3D" parent="World" groups=["effect_target"]]
+position = Vector3(4, 2, -3)
+script = ExtResource("hit")
+
+[node name="Model" parent="World/TargetC" instance=ExtResource("model16")]
+position = Vector3(0, 0, 0)
+scale = Vector3(2, 2, 2)
+
+[node name="Collision" type="CollisionShape3D" parent="World/TargetC"]
+shape = SubResource("hitshape")
+
+[node name="Cover" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(2, 1, 0)
+mesh = SubResource("box4mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Cover"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Cover/Body"]
+shape = SubResource("box4shape")

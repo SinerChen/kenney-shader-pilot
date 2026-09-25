@@ -1,0 +1,39 @@
+{
+  "task_id": "SA05_L3",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA05_L3_coverage",
+      "intervention": "固定低/高两条相机路径，逐类检查地形、树干、岩石及裁切植被。",
+      "expected": "每个必要类别使用正确表面段；不存在未接入的完全清晰孤岛或漏网 shader。",
+      "evidence": "类别/对象/材质覆盖表、T 图及全景视频。",
+      "typical_failure": "只有地形有雾，树和草因不同材质完全漏掉。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L3_protected",
+      "intervention": "以匹配相机/时间进行候选开关 A/B，检查 sky、云、UI 和资源绑定。",
+      "expected": "保护路径不受候选雾污染，场景几何/分布不变；无双重雾。",
+      "evidence": "sky/UI mask、对象计数、材质与环境差异报告。",
+      "typical_failure": "全屏灰色覆盖天空/UI，或删除远树代替雾。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L3_purpose",
+      "intervention": "沿原自由相机路径观察冻结的近景石块、地面边界、草叶和远景地标；用低/正常密度各跑一次。",
+      "expected": "近景关键对象仍可指出边界/类别，远近层次增强；缺失任何关键对象可读性不得由氛围分抵消。",
+      "evidence": "关键对象 ROI、完整视野视频和逐对象人工 rubric。",
+      "typical_failure": "雾数学正确但白墙遮蔽主要景观，原查看用途被破坏。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L3_reset_scene",
+      "intervention": "上下移动相机、改变雾量、关闭/reset 后回原相机。",
+      "expected": "恢复共同基线和原相机控制，无陈旧深度/环境参数残留。",
+      "evidence": "相机/环境/资源快照与完整画面对照。",
+      "typical_failure": "恢复仅重置一张纹理，环境和其他材质持续被改。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

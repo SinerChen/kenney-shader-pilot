@@ -1,0 +1,19 @@
+{
+  "id": "P01_L1",
+  "scene_id": "P01",
+  "kit": "platformer",
+  "level": 1,
+  "title": "单一材质效果",
+  "requirement": "为 MaterialA/B/C 分别实现可辨别的粗糙金属、哑光塑料和带虹彩边缘的材质，保留原模型结构。相机移动时高光随表面与视角变化。",
+  "criteria": [
+    "三种材质视觉上可区分",
+    "保留纹理关联与表面朝向",
+    "移动视角后高光不固定在屏幕",
+    "其他平台和角色材质不被误改"
+  ],
+  "parent_task": null,
+  "base_scene": "projects/platformer/pilot/P01.tscn",
+  "editable_directory": "projects/platformer/effects/P01",
+  "status": "prepared_not_run",
+  "carry_forward": "clean_baseline"
+}

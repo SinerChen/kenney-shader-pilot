@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "1dc3a43fbd2aecf4fd11c93e3338d00fca52b50365cba6273059aad28bec0d46"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "db88cf4f17fd7bae32010eda4bb871a252aaa2fc59f5f224cc1a8ee5331c7b95"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "da7e545450a91d37743ee3fcbd1812b64c4b4a395866be03c8bdd3c48e26d7d0"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "5fa6710c7f06c2d46ce28157699bff688e9a621e2f25ec6408f83c7f91d7fae6"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "8ff4b6a3437b637a1de2ce08066233aa302f3f242265975bbadc3ae204d6418e"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "d35455faa364328e801ee35b36b71c27c8a35288bee685626ca03b8fb77e4784"
+    }
+  ],
+  "driver_sha256": "2c24c90c1cde9b902ce480be84e84d94f4247db6f9d95a6d0f3c89d6a9813eac"
+}

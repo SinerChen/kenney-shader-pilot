@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {
+      "id": "inspect_existing",
+      "goal": "理解上一阶段 effect 入口、现有材质绑定和场景可用接口，确认需要保留的行为。",
+      "expected": "明确 configure/step/sample 的现状及目标街道区域的场景标识或可用替代方案。",
+      "counterexample": "入口文件缺失、现有实现无法运行，或无法找到任何可用于区域限定的场景信息。",
+      "status": "passed",
+      "observations": ["effect/main.gd 已有确定性 sample、RNM 和 Ground 查找；environment.json 指向 Level Geometry/Ground/Ground。"],
+      "summary": "保留 configure/step/sample 接口和原场景实例；修正材质绑定范围。",
+      "limitations": "无。"
+    },
+    {
+      "id": "compute_layer_blend",
+      "goal": "实现固定输入的四层高度竞争混合，输出权重、线性颜色和材质标量。",
+      "expected": "权重非负且和为 1，结果遵循最高 height×control 与 transition 规则，并避免重复乘 wetness。",
+      "counterexample": "权重和不为 1、出现负值，或湿润参数被再次缩放导致固定样例数值错误。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_031647_5ec42569/samples.json：weights=[0.1935492889,0.8064496358,0.0000010753,0]，和为 1；albedo=[0.2887097001,0.2667742074,0.2429032028]；RMH=[0.3564524853,0,0.7999993548]。"],
+      "summary": "CPU 与 shader 均采用题定竞争、epsilon 和归一化规则，control 不再乘 wetness。",
+      "limitations": "浮点输出受 Godot 单精度向量混色影响。"
+    },
+    {
+      "id": "normal_rnm",
+      "goal": "实现混合后基础切线法线归一化及可选细节法线的 RNM 组合。",
+      "expected": "固定细节法线开启时 final_normal_ts 为单位 RNM 结果，关闭时与 base_normal_ts 完全一致。",
+      "counterexample": "相消法线未回退到 [0,0,1]、输出不归一，或关闭细节仍改变基础法线。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_031647_5ec42569/samples.json：base=[0,0,1]，final=[0.3000000119,0,0.9539391994]，长度约 1。"],
+      "summary": "安全归一化和 RNM 已实现，关闭细节直接保留 base。",
+      "limitations": "关闭分支由代码复查。"
+    },
+    {
+      "id": "scene_wet_binding",
+      "goal": "将湿润材质绑定到场景固定高度图和区域遮罩，仅覆盖室外石路目标表面并保留其他材质与功能。",
+      "expected": "道路湿润区域出现材质变化且完整覆盖，路脊、门口、人行区、室内和道具不被改写，通行边界清晰。",
+      "counterexample": "湿润效果泄漏到非道路对象、道路出现未覆盖干斑，或场景碰撞/日夜/相机行为被破坏。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_031958_3f59e323/frame_0060.png，position=[-1.8,1.6,6.9] look_at=[-2,0,2] frame=60：深色湿石路完整覆盖中央道路；浅色路脊、人行道、门口、桌椅、招牌、角色、灯柱及井盖保持独立外观，边界清楚。"],
+      "summary": "利用 Ground 作者材质 Pavement_Cobblestone_Wet.tres 作为精确区域遮罩，只替换匹配的 mesh surface slot；不递归覆盖整个 Ground。",
+      "limitations": "湿路区域边界沿原资产作者划分，未引入额外外部遮罩资源。"
+    },
+    {
+      "id": "integrate_regression",
+      "goal": "在完整 Bistro 场景入口运行固定输入，复查数值输出、渲染效果及既有行为。",
+      "expected": "samples.json 字段顺序和结构符合要求，目标道路可辨识且无明显编译或运行错误。",
+      "counterexample": "sample 缺字段或顺序错误、渲染失败、日志有未处理错误，或既有场景功能明显回归。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_031958_3f59e323/samples.json：两帧字段按 weights、albedo_linear、roughness_metallic_height、base_normal_ts、final_normal_ts 输出且数值稳定；render errors=[]，完整场景 geometry 1201 保持不变。"],
+      "summary": "完成固定输入数值、目标道路选择性湿润及完整场景回归观察。",
+      "limitations": "引擎退出时仍报告资源释放诊断 warning（1 resource），不影响渲染或 sample；视觉检查使用自选街道近景。"
+    }
+  ]
+}

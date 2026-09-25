@@ -1,0 +1,182 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "observation_directory": "observations/render_20260925_034214_38b89437",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      120,
+      180
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        -1.0,
+        4.0,
+        3.0
+      ],
+      "look_at": [
+        -4.0,
+        2.0,
+        -3.0
+      ],
+      "fov_degrees": 50.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.376,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 4.379,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.428571432828903,
+            -0.28571429848671,
+            -0.857142865657806
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -1.0,
+            4.0,
+            3.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.127775311470032,
+            0.958314836025238,
+            -0.255550622940063
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.428571432828903,
+            -0.28571429848671,
+            -0.857142865657806
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -1.0,
+            4.0,
+            3.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.127775311470032,
+            0.958314836025238,
+            -0.255550622940063
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 640,
+        "image": "frame_0120.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.428571432828903,
+            -0.28571429848671,
+            -0.857142865657806
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -1.0,
+            4.0,
+            3.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.127775311470032,
+            0.958314836025238,
+            -0.255550622940063
+          ]
+        },
+        "elapsed_s": 3.0,
+        "frame": 180,
+        "height": 640,
+        "image": "frame_0180.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 6
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 24
+      },
+      "host": "existing_project",
+      "level": 1.0,
+      "scope": "scene_subset",
+      "source_host_modified": false,
+      "targets": [
+        "World/TargetA",
+        "World/TargetB"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 180,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_034214_38b89437/samples.json"
+}

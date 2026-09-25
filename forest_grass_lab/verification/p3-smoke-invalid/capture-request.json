@@ -1,0 +1,15 @@
+{
+  "level": 1,
+  "cases": [
+    {
+      "name": "target",
+      "params": {
+        "camera": "overview"
+      },
+      "frames": [
+        1
+      ],
+      "schedule": []
+    }
+  ]
+}

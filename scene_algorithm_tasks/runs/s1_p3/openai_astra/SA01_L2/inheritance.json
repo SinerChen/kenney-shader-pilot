@@ -1,0 +1,9 @@
+{
+  "parent": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\scene_algorithm_tasks\\runs\\s1_p3\\openai_astra\\SA01_L1",
+  "files": {
+    "grass.gdshader": "975cd7a7942da3b11d1621f4c5de68c2b10734acc33329131eb8b902da8dc8b3",
+    "grass_geometry.gd": "e9723b54e86c03f8c8f9209bcf252a6da8eb10cab9598870477d76a39699e776",
+    "interaction_field.gd": "d638e889f6291be00a0a0ee6aac85475a530cb71db772834300f515e6bdbb155",
+    "main.gd": "6e6bf3cd228c5c564ee092c453d29f2f34db6ab39afe8a9b3326edeccb2d2b83"
+  }
+}

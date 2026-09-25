@@ -1,0 +1,217 @@
+{
+  "status": "passed",
+  "checked": 26,
+  "model_api_calls": 0,
+  "final_candidates_unchanged": 26,
+  "frozen_inputs_unchanged": 125,
+  "videos": {
+    "openai_astra/SA01_L1": {
+      "sha256": "1f45e47c87599115b6e32477bb452ab94c9e1cb7394980825e752585cb4a9618",
+      "decoded_frames": 120,
+      "distinct_frames": 112,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA01_L2": {
+      "sha256": "3f4e6d97687154a471c7bb38139f64379e87604b2e436ba2ce1a812aa8bc8b8a",
+      "decoded_frames": 120,
+      "distinct_frames": 120,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA01_L3": {
+      "sha256": "faa1b3e03896a7cd65825b1e24d274e054dad2c33e75951eb7e113fa1c91f830",
+      "decoded_frames": 120,
+      "distinct_frames": 120,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA02_L1": {
+      "sha256": "9ddfcc452bf689e5d635136c4192c0022827ccf8b8607cd7ee6c29e3e584a6e5",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA02_L2": {
+      "sha256": "c7b5e7cf03091a5b6c934416ce185a5d88138faa4d451658384a7c76d99dbdba",
+      "decoded_frames": 90,
+      "distinct_frames": 62,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA02_L3": {
+      "sha256": "d4a9f51a49bde160a36a26b4ed11053052810a898d73f27402bbb49c2650d8a4",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA03_L1": {
+      "sha256": "3e9c0f8c83d8f41e75629d75bb8668a68c55048c90fe4057839446b0f5c8008c",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA03_L2": {
+      "sha256": "8eebd80bb8158e4fbb5fac1becb5f9c4ff79653d5235c058835fe48095e9c361",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA03_L3": {
+      "sha256": "f033cfe6a7a44a1d1ec81e2012c8f1029fc153171422240bbe5165387631daf8",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA04_L1": {
+      "sha256": "4dcf6aa4ecf5034fcb8549d8c82d25d23024da881113125f0bda1e074af9e3f6",
+      "decoded_frames": 90,
+      "distinct_frames": 73,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA04_L2": {
+      "sha256": "500d05c57bfff97651db5e812c354c17ef13bae3df93458079caccf553d1936d",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA04_L3": {
+      "sha256": "f12b6c02517b09ea4c10185936bde7ed6e7f9a6ff262018de38939ae4eddf44a",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA05_L1": {
+      "sha256": "271885c0d0ef635ae3977ec0b6a66b6f26a33dcc7cb4bf7e8755a3a9a036151a",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA05_L2": {
+      "sha256": "2e891ce33ecf68829f7e7a7608eff3856fe3950f24400744fb5ad4372741605c",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_astra/SA05_L3": {
+      "sha256": "755e2eb725848e3053c8d4e9e083fa1e0cec7821bf4ffffa01d2c1702a5b306b",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA01_L1": {
+      "sha256": "ba4ea046d3915039004d70619c679126593bc82f968d565e51bf2d457d0ff676",
+      "decoded_frames": 120,
+      "distinct_frames": 118,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA01_L2": {
+      "sha256": "0e5ef4ba47c7666e874852e04c9caec453c88152d4a532cc094b4f315a4e4421",
+      "decoded_frames": 120,
+      "distinct_frames": 120,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA01_L3": {
+      "sha256": "939549810204e3da71cd61f999edcef38e8e0d873f78bf857aa3082c991775ad",
+      "decoded_frames": 120,
+      "distinct_frames": 120,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA02_L1": {
+      "sha256": "1c61b945c30a4e1e5a004e0f3a4616287ab51ee286915e79d0db882fada7f796",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA02_L2": {
+      "sha256": "9637d73ceda8a914181f38c918e797a7c01721dde6584ebea3fa165d1339da63",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA02_L3": {
+      "sha256": "ab22b1286d8e4459fd9ccebc23b0c919abc929ed3b254555b94da32fa40f9ea4",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA03_L1": {
+      "sha256": "370859bde9a0ba02af71d406764e50bd392ed34fb830a73019fba55fc19c7699",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA03_L2": {
+      "sha256": "9f64b23a41470f20a9875a5bdef2d37149554f6f11bde84e395be56ba8b596c7",
+      "decoded_frames": 180,
+      "distinct_frames": 180,
+      "duration_seconds": 6.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA04_L1": {
+      "sha256": "2806863ea699c45ca9a65c236dba9bb16247b77bb037022e667bd60d735d4a9f",
+      "decoded_frames": 90,
+      "distinct_frames": 56,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA04_L2": {
+      "sha256": "21eef6ae71427ef37e5fd9b85a9101a970d6d20d7f87dbf5da54f5c34e971ba4",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    },
+    "openai_main/SA04_L3": {
+      "sha256": "e2ab6a61df830840d9bd1bdafaf43d4872de05cbcaea713536bd455586eaecdf",
+      "decoded_frames": 90,
+      "distinct_frames": 90,
+      "duration_seconds": 3.0,
+      "fps": 30.0,
+      "candidate_matches": true
+    }
+  }
+}

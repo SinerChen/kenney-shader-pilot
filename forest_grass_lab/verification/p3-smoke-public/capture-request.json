@@ -1,0 +1,137 @@
+{
+  "level": 3,
+  "cases": [
+    {
+      "name": "wind_default",
+      "params": {
+        "camera": "overview",
+        "wind_strength": 0.22,
+        "wind_speed": 1.6,
+        "wind_direction": [
+          1,
+          0.35
+        ]
+      },
+      "frames": [
+        1,
+        120,
+        240
+      ],
+      "events": [],
+      "animation": false
+    },
+    {
+      "name": "wind_off",
+      "params": {
+        "camera": "roots",
+        "wind_strength": 0
+      },
+      "frames": [
+        1,
+        60,
+        120
+      ],
+      "events": [],
+      "animation": false
+    },
+    {
+      "name": "strong_crosswind",
+      "params": {
+        "camera": "roots",
+        "wind_strength": 0.4,
+        "wind_direction": [
+          -0.3,
+          1
+        ]
+      },
+      "frames": [
+        1,
+        120,
+        240
+      ],
+      "events": [],
+      "animation": false
+    },
+    {
+      "name": "player_pass_recover",
+      "params": {
+        "camera": "top"
+      },
+      "frames": [
+        225,
+        420,
+        660
+      ],
+      "events": [],
+      "animation": true
+    },
+    {
+      "name": "player_without_wind",
+      "params": {
+        "camera": "top",
+        "wind_strength": 0
+      },
+      "frames": [
+        225,
+        420,
+        660
+      ],
+      "events": [],
+      "animation": false
+    },
+    {
+      "name": "reverse_and_pause",
+      "params": {
+        "camera": "top"
+      },
+      "frames": [
+        225,
+        420,
+        720
+      ],
+      "events": [
+        {
+          "time": 0,
+          "player_position": [
+            -2,
+            0,
+            0.7
+          ]
+        },
+        {
+          "time": 3,
+          "player_position": [
+            2,
+            0,
+            0.7
+          ]
+        },
+        {
+          "time": 5,
+          "player_position": [
+            2,
+            0,
+            0.7
+          ]
+        },
+        {
+          "time": 8,
+          "player_position": [
+            -2,
+            0,
+            0.7
+          ]
+        },
+        {
+          "time": 9,
+          "player_position": [
+            -4,
+            0,
+            0.7
+          ]
+        }
+      ],
+      "animation": false
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA02_L1",
+  "chain_id": "SA02",
+  "level": 1,
+  "level_name": "单效果／算法实现",
+  "core_question": "这个模块本身是否正确？",
+  "title": "完整 Gerstner 波面",
+  "goal": "位移、切向和法线是否符合波模型，而非只让水纹滚动？",
+  "requirement": "位移、切向和法线是否符合波模型，而非只让水纹滚动？",
+  "requirements": [
+    "按 SH185 契约输出水平/垂直位移、两个完整切向、世界法线、速度、Jacobian 和退化状态。",
+    "方向需要按契约归一化；矩阵变换与负行列式时的几何朝向不能省略。",
+    "原场景子集 显示真实 GPU 输出，不能以法线贴图或平面 UV 平移代替几何位移。",
+    "保留合法折叠输入并报告状态；场景演示的非折叠参数预设不能替代 L1 极端输入验收。"
+  ],
+  "criteria": [
+    "位置、切向、速度和法线均在 SH185 既定误差界内。",
+    "平面极限、传播方向和方向归一化均正确。",
+    "世界位置和切向一致，法线方向按契约处理。",
+    "如实返回 J、normal_valid 和 orientation；dt=0 无推进；reset 回到初始时间。"
+  ],
+  "parent_task": null,
+  "input_code": "empty_effect_entry_on_existing_scene",
+  "base_scene": "realistic/projects/water/example/boujie_water_shader/water_shader_examples.tscn",
+  "project": "realistic/projects/water/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA02",
+  "algorithms": [
+    "SH185",
+    "SH192"
+  ],
+  "source_scenario_ids": [
+    "G02",
+    "G13",
+    "P02"
+  ],
+  "primary_algorithms": [
+    "SH185"
+  ],
+  "fixed_supporting_algorithms": [],
+  "primary_evidence": "独立数值 OJ、性质测试、原场景子集",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "DeepOcean 的海面网格及其各 LOD 表面；同一 q 参数上的波形、法线和泡沫",
+  "protected_targets": "OceanFloor、岸上/展示台几何、IceCube、ObsidianCube、OutsetOceanSphere、DeepOceanSphere 对照样本、HUD 和原相机控制",
+  "scene_purpose": "在保留原材质展览与相机游览功能的条件下，海面波峰及泡沫随同一波形运动。",
+  "impact_path": [
+    "显式波参数与 elapsed",
+    "P(q,t)、完整切向和法线",
+    "水平位移场 D(q,t)",
+    "J 与泡沫历史 F(q)",
+    "同一 q 对应的显示位置 P(q,t)",
+    "完整海面 LOD 与独立展示材质"
+  ],
+  "scope": "只做参数附着的波峰泡沫；不要求泡沫流体平流、岸边浪花、反射/折射新算法或水下切换重写。",
+  "prompt": "tasks/SA02_L1/prompt.md",
+  "evaluation_cases": "tasks/SA02_L1/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA02_L1/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA02_L1/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA02_L1/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa02",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "numeric_checks"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原海面展示中拆出 DeepOcean 的中心网格，用原网格生成器设置 8 米、64 格子区域，保留原水材质、光照和相机；只实现波面。",
+    "L2: 保留中心及相邻 LOD 网格、海床，观察波面与泡沫的时空关系；隐藏无关展示物。",
+    "L3: 使用原完整海面展示，保留全部海面 LOD、海床、地形、独立材质样品、HUD 和相机控制。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "海面",
+    "kind": "water",
+    "level": 1,
+    "scope": "scene_subset",
+    "description": "从原海面展示中拆出 DeepOcean 的中心网格，用原网格生成器设置 8 米、64 格子区域，保留原水材质、光照和相机；只实现波面。",
+    "source_entry": "example/boujie_water_shader/water_shader_examples.tscn",
+    "targets": [
+      "DeepOcean"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": {
+      "position": [
+        6,
+        4,
+        8
+      ],
+      "look_at": [
+        0,
+        0,
+        0
+      ]
+    },
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

@@ -1,0 +1,152 @@
+{
+  "experiment": "scene_algorithm_tasks_s1_p3_three_tools_v1",
+  "status": "awaiting_user_prompt_review",
+  "api_enabled": false,
+  "model_api_calls": 0,
+  "prompt_review_approved": false,
+  "mode": "S1",
+  "variant": "P3",
+  "p3_implementation": "plan_json_via_read_write_render",
+  "model_order": [
+    "openai_astra",
+    "openai_main",
+    "claude_main",
+    "kimi_retry_128k"
+  ],
+  "models": [
+    {
+      "alias": "openai_astra",
+      "provider": "openai",
+      "model": "gpt-6-astra",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.shubiaobiao.cn/v1",
+      "max_output_tokens": 16384,
+      "timeout_seconds": 600,
+      "transport_retries": 0,
+      "parameters": {},
+      "responses_replay": "visible",
+      "supports_images": true,
+      "image_detail": "high"
+    },
+    {
+      "alias": "openai_main",
+      "provider": "openai",
+      "model": "gpt-5.6-sol",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.shubiaobiao.cn/v1",
+      "max_output_tokens": 16384,
+      "timeout_seconds": 600,
+      "transport_retries": 0,
+      "parameters": {},
+      "responses_replay": "visible",
+      "supports_images": true,
+      "image_detail": "high"
+    },
+    {
+      "alias": "claude_main",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "base_url": "https://api.shubiaobiao.cn/v1",
+      "max_output_tokens": 16384,
+      "timeout_seconds": 600,
+      "transport_retries": 0,
+      "parameters": {},
+      "supports_images": true
+    },
+    {
+      "alias": "kimi_retry_128k",
+      "provider": "openai_chat",
+      "model": "kimi-k3",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.shubiaobiao.cn/v1",
+      "max_output_tokens": 131072,
+      "max_tokens_field": "max_completion_tokens",
+      "parallel_tool_calls": null,
+      "timeout_seconds": 1800,
+      "transport_retries": 0,
+      "supports_images": true,
+      "parameters": {
+        "reasoning_effort": "max"
+      },
+      "stream": true
+    }
+  ],
+  "task_order": [
+    "SA01_L1",
+    "SA01_L2",
+    "SA01_L3",
+    "SA02_L1",
+    "SA02_L2",
+    "SA02_L3",
+    "SA03_L1",
+    "SA03_L2",
+    "SA03_L3",
+    "SA04_L1",
+    "SA04_L2",
+    "SA04_L3",
+    "SA05_L1",
+    "SA05_L2",
+    "SA05_L3"
+  ],
+  "scheduling": {
+    "strategy": "model_then_group_then_level",
+    "max_active_tasks": 1,
+    "max_inflight_model_requests": 1,
+    "max_inflight_renders": 1,
+    "advance_during_retry": false
+  },
+  "budget_per_task": {
+    "requests": 80,
+    "render_calls": 80,
+    "failed_attempts_count": true,
+    "auto_increase": false,
+    "expose_to_model": false
+  },
+  "budget_exhaustion": {
+    "action": "end_current_task",
+    "trigger": "any_limit_reached",
+    "finish_inflight_operation": true,
+    "allow_new_operations": false,
+    "preserve_candidate_and_observations": true,
+    "host_status": "budget_exhausted",
+    "notify_model": false,
+    "request_final_response": false,
+    "continue_serial_queue": true
+  },
+  "retry": {
+    "wait_seconds": 300,
+    "preserve_history_and_candidate": true,
+    "auth_config_environment_errors": "pause_queue"
+  },
+  "inheritance": {
+    "same_model_and_group_only": true,
+    "files": "effect/",
+    "exclude": [
+      "plan.json"
+    ],
+    "fresh_conversation_per_level": true,
+    "inherit_observations": false,
+    "inherit_scores": false,
+    "on_budget_stop": "inherit_actual_candidate_with_incomplete_status"
+  },
+  "model_input": {
+    "system": "experiment/P3.md",
+    "user": "tasks/<task_id>/prompt.md",
+    "tools": "model_tools.json",
+    "automatic_attachments": []
+  },
+  "run_directory": "runs/s1_p3/<alias>/<task_id>/model_workspace/",
+  "source_models": "forest_grass_lab/experiment/models.json",
+  "runtime_ready": false,
+  "environment_policy": "existing_hosts_L1_subset_L2_as_needed_L3_full",
+  "environment_ready": true,
+  "required_before_launch": [
+    "user_prompt_review",
+    "three_tool_p3_state_machine",
+    "host_budget_termination",
+    "provider_image_feedback",
+    "local_runtime_preflight",
+    "reviewed_input_hash_check"
+  ]
+}

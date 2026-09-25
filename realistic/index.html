@@ -1,0 +1,214 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Godot · 扩展场景库</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101724;color:#e7eef9;font:15px/1.7 system-ui,"Microsoft YaHei",sans-serif}header,main,footer{max-width:1440px;margin:auto;padding:28px 32px}header{padding-top:45px}h1{font-size:36px;line-height:1.3;margin:10px 0}h2{font-size:25px;margin:6px 0}.eyebrow{color:#8eb7d3;font-size:12px;letter-spacing:1px}p{color:#c1cfe0}a{color:#9bd3fd;text-decoration:none}a:hover{text-decoration:underline}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}.intro{max-width:850px}.notice{border-left:3px solid #77cbbb;padding:14px 20px;background:#1b3538;border-radius:6px;color:#c2e2df}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.scene{background:#192638;border:1px solid #30425c;border-radius:14px;overflow:hidden;scroll-margin-top:20px}.scene img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0a111b}.body{padding:25px}.muted{font-size:13px;color:#99abc2}.badge{display:inline-block;background:#254540;color:#b6e1cd;border-radius:20px;padding:4px 12px;font-size:12px}dl{font-size:13px}dt{color:#91b3d4;margin-top:14px}dd{margin:3px 0;color:#c6d3e4}code{font:13px Consolas,monospace;color:#d8e8ff}summary{cursor:pointer;color:#9eb4d1;margin-top:18px;font-size:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.6 Consolas,monospace;background:#101a29;padding:15px;max-height:400px;overflow:auto}footer{color:#93a9c4;font-size:12px}.stats{display:flex;gap:35px;margin:20px 0}.stats strong{font-size:28px;color:#eef6ff}.stats span{font-size:13px;color:#99aec6;margin-left:8px}@media(max-width:850px){.grid{grid-template-columns:1fr}header,main,footer{padding:24px 18px}h1{font-size:29px}}
+</style></head><body><header><div class="eyebrow">GODOT SCENE LIBRARY / ENVIRONMENTS & SHADERS</div><h1>从建筑与森林，到海面与材质。</h1><p class="intro">5 个独立 Godot 工程，复用 D 盘上的 4.6.1 编辑器。下方是本机实际运行截图；动态场景通过本地启动文件打开。</p><nav><a href="../index.html">← Kenney 五场景与 15 个任务</a><a href="README.md">安装与兼容说明</a><a href="catalog.json">场景清单</a><a href="sources.json">下载来源</a><a href="#bistro">Bistro</a><a href="#sponza">Sponza</a><a href="#forest">Open Forest Benchmark</a><a href="#tps">Official TPS Demo</a><a href="#water">Boujie Water Shader</a></nav><div class="stats"><div><strong>5</strong><span>扩展工程</span></div><div><strong>10</strong><span>场景检查截图</span></div><div><strong>0</strong><span>模型实验</span></div></div><div class="notice">这些是场景底座，尚未扩展为新的三级评测任务。现有 Kenney 的 5 场景 / 15 任务继续保留。页面图片是静态检查截图，实时交互请双击对应 .cmd；浏览器不会直接执行本地程序。</div></header><main><div class="grid"><article id="bistro" class="scene"><a href="verification/bistro/frame_120.png" target="_blank"><img src="verification/bistro/frame_120.png" alt="Bistro 本机实际渲染截图" loading="lazy"></a>
+<div class="body"><div class="eyebrow">R01 · 写实街区 / 室内外光照</div><h2>Bistro</h2>
+<p>餐馆、石板路、街灯、玻璃和大量街道道具。原项目提供日夜切换、人物行走、自由飞行与动态物体。</p><p class="muted">适合后续设计材质粗糙度、玻璃、湿地反射、日夜变化和多光源任务。</p><div class="badge">已实际渲染 120 帧 · Godot 4.6.1</div>
+<dl><dt>运行场景</dt><dd>在上一级项目目录双击 <code>Bistro.cmd</code></dd><dt>编辑工程</dt><dd>双击 <code>Edit_Bistro.cmd</code></dd><dt>操作</dt><dd>WASD 移动；Shift 冲刺；空格跳跃；V 切换第一/第三人称；~ 自由穿行；H 显示/隐藏面板；Esc 释放鼠标。</dd><dt>兼容情况</dt><dd>画面完成 120 帧渲染。原项目同时启用 FSR2/TAA，引擎自动关闭重复 TAA；检查退出时仍有资源释放提示。导入时 Bent_Quad.mtl 缺失，场景已正常显示。</dd><dt>许可</dt><dd>代码 MIT；大部分资产 CC BY 4.0；音乐 CC BY 3.0；部分音效 CC BY-NC 4.0。具体以 ATTRIBUTION 为准。</dd></dl>
+<nav><a href="https://github.com/Jamsers/Bistro-Demo-Tweaked" target="_blank" rel="noopener">原仓库 ↗</a><a href="projects/bistro/ATTRIBUTION">许可 / 署名</a><a href="verification/bistro/capture.json">渲染报告</a><a href="verification/bistro/capture.log">运行日志</a><a href="verification/bistro/frame_030.png" target="_blank">第 30 帧</a></nav>
+<details><summary>展开导入与运行检查记录</summary><pre>{
+  &quot;import&quot;: {
+    &quot;scene_id&quot;: &quot;bistro&quot;,
+    &quot;mode&quot;: &quot;import&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T15:57:53.195539+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 138.19,
+    &quot;errors&quot;: [
+      &quot;ERROR: Couldn&#x27;t open MTL file &#x27;res://Meshes/Bent_Quad.mtl&#x27;, it may not exist or not be readable.&quot;
+    ],
+    &quot;warnings&quot;: [
+      &quot;WARNING: Ignoring unsupported header information in HDR: GAMMA=1.&quot;,
+      &quot;WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0.&quot;
+    ],
+    &quot;log&quot;: &quot;verification/bistro/import.log&quot;
+  },
+  &quot;render&quot;: {
+    &quot;scene_id&quot;: &quot;bistro&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:04:27.980600+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 24.43,
+    &quot;errors&quot;: [
+      &quot;ERROR: 4 resources still in use at exit (run with --verbose for details).&quot;
+    ],
+    &quot;warnings&quot;: [
+      &quot;WARNING: FSR 2 or MetalFX Temporal is not compatible with TAA. Disabling TAA internally.&quot;,
+      &quot;WARNING: ObjectDB instances leaked at exit (run with --verbose for details).&quot;
+    ],
+    &quot;log&quot;: &quot;verification/bistro/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  }
+}</pre></details></div></article>
+<article id="sponza" class="scene"><a href="verification/sponza/frame_120.png" target="_blank"><img src="verification/sponza/frame_120.png" alt="Sponza 本机实际渲染截图" loading="lazy"></a>
+<div class="body"><div class="eyebrow">R02 · 写实建筑 / 材质与间接光</div><h2>Sponza</h2>
+<p>拱廊、石柱、布幔与中庭。可以切换画质预设并自由移动镜头，适合观察遮挡、材质和明暗关系。</p><p class="muted">适合后续设计 AO、间接光、接触阴影、反射与材质分离任务。</p><div class="badge">已实际渲染 120 帧 · Godot 4.6.1</div>
+<dl><dt>运行场景</dt><dd>在上一级项目目录双击 <code>Sponza.cmd</code></dd><dt>编辑工程</dt><dd>双击 <code>Edit_Sponza.cmd</code></dd><dt>操作</dt><dd>首次进入选择画质并点击 OK；WASD 移动；空格上升、Shift 下降；右键加速；滚轮调速；Esc 设置；F10 释放鼠标。</dd><dt>兼容情况</dt><dd>使用单线程资源导入后正常加载，运行日志无错误。首次 Collada 导入有多边形和空节点名称提示；截图关闭欢迎面板，保留默认 High 预设。</dd><dt>许可</dt><dd>代码 MIT；Crytek Sponza 资产按上游说明为 public domain；Noto Sans 字体 SIL OFL 1.1。</dd></dl>
+<nav><a href="https://github.com/Calinou/godot-sponza" target="_blank" rel="noopener">原仓库 ↗</a><a href="projects/sponza/LICENSE.md">许可 / 署名</a><a href="verification/sponza/capture.json">渲染报告</a><a href="verification/sponza/capture.log">运行日志</a><a href="verification/sponza/frame_030.png" target="_blank">第 30 帧</a></nav>
+<details><summary>展开导入与运行检查记录</summary><pre>{
+  &quot;import&quot;: {
+    &quot;scene_id&quot;: &quot;sponza&quot;,
+    &quot;mode&quot;: &quot;import&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T15:54:58.238851+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 7.23,
+    &quot;errors&quot;: [
+      &quot;ERROR: Condition \&quot;p_name.is_empty()\&quot; is true.&quot;
+    ],
+    &quot;warnings&quot;: [
+      &quot;WARNING: Primitive type \&quot;polygons\&quot; is not well supported (concave shapes may fail). To ensure that the geometry is properly imported, please re-export using \&quot;triangles\&quot; or \&quot;polylist\&quot;.&quot;
+    ],
+    &quot;log&quot;: &quot;verification/sponza/import.log&quot;
+  },
+  &quot;render&quot;: {
+    &quot;scene_id&quot;: &quot;sponza&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:07:46.305412+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 6.19,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/sponza/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  }
+}</pre></details></div></article>
+<article id="forest" class="scene"><a href="verification/forest/frame_120.png" target="_blank"><img src="verification/forest/frame_120.png" alt="Open Forest Benchmark 本机实际渲染截图" loading="lazy"></a>
+<div class="body"><div class="eyebrow">R03 · 自然环境 / 植被与大气</div><h2>Open Forest Benchmark</h2>
+<p>森林、地形、石块、草木和体积云。保留原有树木、风动材质、地表与已生成的植被分布。</p><p class="muted">适合后续设计植被风动、地表混合、雾、云与交互扰动任务。</p><p><a href="forest-dew.html">叶面露珠试作：近景、环境反射与风动对比 →</a></p><p><a href="../forest_grass_lab/index.html">草地小场景：L1 风动 → L2 固定草根 → L3 玩家压草（待审核）→</a></p><div class="badge">已实际渲染 120 帧 · Godot 4.6.1</div>
+<dl><dt>运行场景</dt><dd>在上一级项目目录双击 <code>Forest.cmd</code></dd><dt>编辑工程</dt><dd>双击 <code>Edit_Forest.cmd</code></dd><dt>操作</dt><dd>按住右键转动视角；WASD 移动；Q/E 下降/上升；Shift 加速；R 恢复原始镜头；Esc 释放鼠标。自由相机不带碰撞。</dd><dt>兼容情况</dt><dd>上游没有附带 groundcover 编辑器插件。本地解除该插件引用，完整保留 15,869 个节点和 3,709 个 MultiMesh 节点，并加入自由相机。不能用缺失插件重新散布植被；旧网格格式/资源 UID 提示不影响当前画面。</dd><dt>许可</dt><dd>仓库 MIT；外部模型与贴图来源见 Asset Credits.txt，保留原有署名文件。</dd></dl>
+<nav><a href="https://github.com/Rytelier/Godot-4-forest-benchmark" target="_blank" rel="noopener">原仓库 ↗</a><a href="projects/forest/Asset Credits.txt">许可 / 署名</a><a href="verification/forest/capture.json">渲染报告</a><a href="verification/forest/capture.log">运行日志</a><a href="verification/forest/frame_030.png" target="_blank">第 30 帧</a></nav>
+<details><summary>展开导入与运行检查记录</summary><pre>{
+  &quot;import&quot;: {
+    &quot;scene_id&quot;: &quot;forest&quot;,
+    &quot;mode&quot;: &quot;import&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:02:10.529497+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 18.85,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [
+      &quot;WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png&quot;,
+      &quot;WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png&quot;,
+      &quot;WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png&quot;,
+      &quot;WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded.&quot;
+    ],
+    &quot;log&quot;: &quot;verification/forest/import.log&quot;
+  },
+  &quot;render&quot;: {
+    &quot;scene_id&quot;: &quot;forest&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:02:43.380719+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 22.05,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [
+      &quot;WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png&quot;,
+      &quot;WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png&quot;,
+      &quot;WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png&quot;,
+      &quot;WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.&quot;,
+      &quot;WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded.&quot;
+    ],
+    &quot;log&quot;: &quot;verification/forest/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  }
+}</pre></details></div></article>
+<article id="tps" class="scene"><a href="verification/tps/frame_120.png" target="_blank"><img src="verification/tps/frame_120.png" alt="Official TPS Demo 本机实际渲染截图" loading="lazy"></a>
+<div class="body"><div class="eyebrow">R04 · 科幻工业场景 / 动态交互</div><h2>Official TPS Demo</h2>
+<p>官方第三人称射击演示：工业空间、角色、机器人、武器、发光体与动态光照。风格为科幻 PBR，并非现实地点扫描。</p><p class="muted">适合后续设计命中反馈、溶解、护盾、动态阴影与多效果组合任务。</p><div class="badge">已实际渲染 120 帧 · Godot 4.6.1</div>
+<dl><dt>运行场景</dt><dd>在上一级项目目录双击 <code>TPS.cmd</code></dd><dt>编辑工程</dt><dd>双击 <code>Edit_TPS.cmd</code></dd><dt>操作</dt><dd>主菜单点击 Play；WASD 移动；鼠标转动视角；空格跳跃；右键瞄准后左键射击；Esc 返回菜单；F11 全屏。</dd><dt>兼容情况</dt><dd>当前上游 master 标注 4.7；本地隐藏 4.7 专属的 Nearest 3D 缩放选项，以兼容 4.6.1。关卡完成 120 帧渲染；菜单另外检查。首次导入仍有重复动画名、旧纹理引用及空网格提示。</dd><dt>许可</dt><dd>代码 MIT；资产与音乐 CC BY 3.0；材质来源与作者见 LICENSE.md。</dd></dl>
+<nav><a href="https://github.com/godotengine/tps-demo" target="_blank" rel="noopener">原仓库 ↗</a><a href="projects/tps/LICENSE.md">许可 / 署名</a><a href="verification/tps/capture.json">渲染报告</a><a href="verification/tps/capture.log">运行日志</a><a href="verification/tps/frame_030.png" target="_blank">第 30 帧</a></nav>
+<details><summary>展开导入与运行检查记录</summary><pre>{
+  &quot;import&quot;: {
+    &quot;scene_id&quot;: &quot;tps&quot;,
+    &quot;mode&quot;: &quot;import&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:00:06.099089+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 32.19,
+    &quot;errors&quot;: [
+      &quot;ERROR: Animation name \&quot;Cannon_Charge\&quot; already exists in library.&quot;,
+      &quot;ERROR: Failed loading resource: res://door/model/doorsimple_d.png.&quot;,
+      &quot;ERROR: Condition \&quot;surfaces.is_empty()\&quot; is true. Returning: Ref&lt;ArrayMesh&gt;()&quot;
+    ],
+    &quot;warnings&quot;: [
+      &quot;WARNING: Ignoring unsupported header information in HDR: GAMMA=1.&quot;,
+      &quot;WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0.&quot;
+    ],
+    &quot;log&quot;: &quot;verification/tps/import.log&quot;
+  },
+  &quot;render&quot;: {
+    &quot;scene_id&quot;: &quot;tps&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:02:04.810126+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 37.24,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/tps/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  },
+  &quot;menu&quot;: {
+    &quot;scene_id&quot;: &quot;tps&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:05:25.001917+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 13.24,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/tps/menu/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  },
+  &quot;menu_to_gameplay&quot;: {
+    &quot;scene_id&quot;: &quot;tps&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:11:04.373303+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 28.63,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/tps/play/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  }
+}</pre></details></div></article>
+<article id="water" class="scene"><a href="verification/water/frame_120.png" target="_blank"><img src="verification/water/frame_120.png" alt="Boujie Water Shader 本机实际渲染截图" loading="lazy"></a>
+<div class="body"><div class="eyebrow">R05 · 水体与透明材质 / Shader 示例</div><h2>Boujie Water Shader</h2>
+<p>海面及材质展示场景，包含 Gerstner 波浪、海面泡沫、岸边泡沫、折射、深度雾，以及冰与黑曜石等材质示例。海面网格包含 LOD 并跟随相机。</p><p class="muted">适合后续设计波浪、泡沫、折射、水下过渡及相机移动时的连续性任务。</p><div class="badge">已实际渲染 120 帧 · Godot 4.6.1</div>
+<dl><dt>运行场景</dt><dd>在上一级项目目录双击 <code>Water.cmd</code></dd><dt>编辑工程</dt><dd>双击 <code>Edit_Water.cmd</code></dd><dt>操作</dt><dd>方向键移动；鼠标转动视角；Enter 或空格捕获/释放鼠标；Tab 显示/隐藏帮助；Page Up / Page Down 调整远裁剪距离；Esc 退出。</dd><dt>兼容情况</dt><dd>官方 ZIP 通过 export-ignore 排除了 project.godot，已从同一官方 main 分支补齐。核心 Shader 与示例保持原样，完成 120 帧渲染且运行无错误、无警告。首次 OBJ 导入提示 mountains.mtl、subdivcube.mtl 缺失，记录保留。</dd><dt>许可</dt><dd>MIT；Zach Bernal 与贡献者。原始水面 Shader 作者 Tom Langwaldt 等来源署名保留在插件 README 中。</dd></dl>
+<nav><a href="https://github.com/Chrisknyfe/boujie_water_shader" target="_blank" rel="noopener">原仓库 ↗</a><a href="projects/water/addons/boujie_water_shader/LICENSE.md">许可 / 署名</a><a href="verification/water/capture.json">渲染报告</a><a href="verification/water/capture.log">运行日志</a><a href="verification/water/frame_030.png" target="_blank">第 30 帧</a></nav>
+<details><summary>展开导入与运行检查记录</summary><pre>{
+  &quot;import&quot;: {
+    &quot;scene_id&quot;: &quot;water&quot;,
+    &quot;mode&quot;: &quot;import&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:16:09.034490+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 7.51,
+    &quot;errors&quot;: [
+      &quot;ERROR: Couldn&#x27;t open MTL file &#x27;res://example/boujie_water_shader/mountains.mtl&#x27;, it may not exist or not be readable.&quot;,
+      &quot;ERROR: Couldn&#x27;t open MTL file &#x27;res://example/boujie_water_shader/subdivcube.mtl&#x27;, it may not exist or not be readable.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/water/import.log&quot;
+  },
+  &quot;render&quot;: {
+    &quot;scene_id&quot;: &quot;water&quot;,
+    &quot;mode&quot;: &quot;capture&quot;,
+    &quot;checked_at&quot;: &quot;2026-09-23T16:20:10.520557+08:00&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;elapsed_seconds&quot;: 7.76,
+    &quot;errors&quot;: [],
+    &quot;warnings&quot;: [],
+    &quot;log&quot;: &quot;verification/water/capture.log&quot;,
+    &quot;capture_completed&quot;: true
+  }
+}</pre></details></div></article></div></main><footer>原始下载 ZIP 保存在 realistic/downloads/；工作工程保存在 realistic/projects/。兼容性改动有单独记录，作者署名与许可证随项目保留。截图中的 FPS 不是标准化性能评测结果。</footer></body></html>

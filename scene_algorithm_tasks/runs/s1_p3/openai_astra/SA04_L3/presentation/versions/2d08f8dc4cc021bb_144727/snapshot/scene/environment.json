@@ -1,0 +1,18 @@
+{
+  "host": "existing_project",
+  "name": "FPS 靶场",
+  "kind": "fps",
+  "level": 3,
+  "scope": "full_scene",
+  "description": "使用原完整靶场，保留全部靶标、掩体、墙地、角色、武器、准星、碰撞和射击流程。",
+  "source_entry": "pilot/F01.tscn",
+  "targets": [
+    "World/TargetA",
+    "World/TargetB"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

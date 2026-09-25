@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": "specification_structure_and_local_evidence_only",
+  "chains": 5,
+  "tasks": 15,
+  "cases": 60,
+  "local_links_checked": 113,
+  "algorithms": 7,
+  "godot_started": false,
+  "shader_compilation_tested": false,
+  "scene_integration_tested": false,
+  "model_api_calls": 0,
+  "runtime_ready": false,
+  "environment_ready": true,
+  "scene_environments": 15,
+  "model_prompt_only": true,
+  "tools": [
+    "read",
+    "write",
+    "render"
+  ],
+  "evaluator_cases_model_visible": false
+}

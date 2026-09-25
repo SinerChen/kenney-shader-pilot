@@ -1,0 +1,5 @@
+# Preserve exact experiment bytes so recorded SHA-256 hashes remain valid.
+* -text
+*.png binary
+*.jpg binary
+*.mp4 binary

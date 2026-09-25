@@ -1,0 +1,17 @@
+{
+  "scene_id": "tps",
+  "mode": "import",
+  "checked_at": "2026-09-23T16:00:06.099089+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 32.19,
+  "errors": [
+    "ERROR: Animation name \"Cannon_Charge\" already exists in library.",
+    "ERROR: Failed loading resource: res://door/model/doorsimple_d.png.",
+    "ERROR: Condition \"surfaces.is_empty()\" is true. Returning: Ref<ArrayMesh>()"
+  ],
+  "warnings": [
+    "WARNING: Ignoring unsupported header information in HDR: GAMMA=1.",
+    "WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0."
+  ],
+  "log": "verification/tps/import.log"
+}

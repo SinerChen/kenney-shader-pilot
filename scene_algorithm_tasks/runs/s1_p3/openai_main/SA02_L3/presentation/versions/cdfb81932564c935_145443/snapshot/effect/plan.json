@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {
+      "id": "inspect_baseline",
+      "goal": "检查上一阶段 effect 实现、完整场景结构与固定输入接口，确认可复用行为和海面 LOD 材质绑定点。",
+      "expected": "明确 effect/main.gd 的数值采样流程、目标近中远海面节点以及必须保留的展览与控制节点。",
+      "counterexample": "入口脚本或完整场景缺失，或现有实现与宿主接口不兼容且无法定位绑定节点。",
+      "status": "passed",
+      "observations": ["确认 scene/main.tscn 实例化原完整 water_shader_examples；DeepOcean 是 5 级 LOD Ocean，海床是其直接子节点，材质样品、地形、HUD、相机均在目标之外。"],
+      "summary": "保留数值基线，视觉仅绑定 DeepOcean 自动生成的后代网格。",
+      "limitations": "Ocean 网格由扩展类运行时生成，采用节点类型递归绑定。"
+    },
+    {
+      "id": "numeric_wave_core",
+      "goal": "实现并核对固定世界坐标 Gerstner 波位置、单位法线与周期中央差分 Jacobian。",
+      "expected": "四个记录帧均输出 64×64 行优先数组，时间、相位、位移、法线和 Jacobian 符合题面公式。",
+      "counterexample": "数组尺寸或顺序错误、每步多次推进、边界差分不周期连续，或法线未归一化。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_023604_e8346abf/samples.json 含 1、60、120、180 帧完整 samples；固定 1/60 秒推进，位置和单位法线按行优先输出，水平位移使用周期中央差分。"],
+      "summary": "修正法线切向量的高度导数为 k*a*cos(theta)，并使用实际 step dt 且每步仅推进一次。",
+      "limitations": "数值采用 Godot 单精度浮点。"
+    },
+    {
+      "id": "foam_attachment",
+      "goal": "实现参数附着泡沫的指数衰减、压缩源增长、限制范围与关闭分支。",
+      "expected": "泡沫随同一 q 的变形位置移动，在压缩区域逐步积累且所有值保持在 [0,1]。",
+      "counterexample": "泡沫按屏幕或欧拉世界格漂移、更新次序错误、关闭时非零或出现越界值。",
+      "status": "passed",
+      "observations": ["samples 第 1 帧出现由 J<1 产生的小量泡沫；更新式为 old*exp(-decay*dt)+grow*dt*max(threshold-J,0)，随后 clamp；视觉纹理以 q 周期采样。"],
+      "summary": "泡沫历史保存在参数网格并上传 R32F 周期纹理，关闭分支强制清零。",
+      "limitations": "视觉纹理在线性过滤下平滑，数值输出仍保留原网格值。"
+    },
+    {
+      "id": "lod_visual_binding",
+      "goal": "将同一世界坐标波形与泡沫视觉绑定到目标近、中、远海面 LOD，同时不替换独立材质样品和非海面展览。",
+      "expected": "完整海面各距离网格呈现连续波峰与泡沫，LOD 接缝和相机移动时无明显相位跳变，其他展品仍保持原材质。",
+      "counterexample": "仅单个海面生效、LOD 间波形错位、展示球被误改材质，或海床/地形/天空/UI 消失。",
+      "status": "passed",
+      "observations": ["observations/render_20260925_024336_eaf3a7c8 在帧 1→180 使用移动相机横跨展区和海面；近中远 Ocean 网格均显示动态波形，世界相位在移动时连续；样品球/方块、展台、天空及 HUD 保持原外观。"],
+      "summary": "共享 ShaderMaterial 绑定 DeepOcean 运行时 LOD 网格，顶点先转世界坐标求相位与位移，再逆变换回局部。",
+      "limitations": "远距离高频波在截图中会有一定栅格摩尔纹。"
+    },
+    {
+      "id": "integration_validation",
+      "goal": "在 scene/main.tscn 完整目标场景中验证数值输出、动态外观、相机游览和既有展览行为并完成回归修复。",
+      "expected": "记录帧样本字段完整，概览及移动视角下全海面连续动态，海床、地形、展台、天空、HUD、样品与相机控制均保留。",
+      "counterexample": "运行报错、samples 缺失或不合规格、海面覆盖不完整、相机运动暴露接缝，或任一既有主要场景元素退化。",
+      "status": "passed",
+      "observations": ["最终移动相机渲染 observations/render_20260925_024336_eaf3a7c8 无错误或警告；俯视全景 observations/render_20260925_024747_8abfe7c5/frame_0180.png 显示完整海面覆盖和四个独立材质样品，geometry_before/after 均为 109。"],
+      "summary": "完整 L3 场景通过 180 步运行、四记录帧、移动视角和俯视覆盖复查；原场景几何数量与展览结构未被删除。",
+      "limitations": "原 HUD 会覆盖画面左上角；远海高频细纹可能产生屏幕采样混叠。"
+    }
+  ]
+}

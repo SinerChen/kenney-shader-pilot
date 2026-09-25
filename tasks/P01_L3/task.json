@@ -1,0 +1,19 @@
+{
+  "id": "P01_L3",
+  "scene_id": "P01",
+  "kit": "platformer",
+  "level": 3,
+  "title": "材质、门与界面组合",
+  "requirement": "保留 L1/L2。两次独立收集后，unlock 驱动 Gate 的能量材质启动，同时显示同步的进度与解锁状态；切换观察视角和 reset 后状态仍一致。",
+  "criteria": [
+    "前两级效果继续有效",
+    "门与收集进度共享一致状态",
+    "界面和三维效果不重复叠亮",
+    "reset 恢复初始材质和计数"
+  ],
+  "parent_task": "P01_L2",
+  "base_scene": "projects/platformer/pilot/P01.tscn",
+  "editable_directory": "projects/platformer/effects/P01",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

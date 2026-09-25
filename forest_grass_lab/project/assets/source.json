@@ -1,0 +1,12 @@
+{
+  "source_project": "Rytelier/Godot-4-forest-benchmark",
+  "source_local": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\realistic\\projects\\forest",
+  "original_asset": "https://polyhaven.com/a/grass_medium_01",
+  "cards": 4,
+  "original_vertices_per_card": 4,
+  "height_segments": 18,
+  "width_segments": 4,
+  "preparation": "Use original card UVs and texture; flatten each bottom edge to ground, scale 4x, subdivide by bilinear interpolation; UV2.y stores normalized root-to-tip position.",
+  "retained_originals": "source_archive/source/*.glb (outside runtime project)",
+  "model_api_calls": 0
+}

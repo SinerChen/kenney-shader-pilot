@@ -1,0 +1,13 @@
+{
+  "captures": [],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "initialization": "one paused draw; shader global TIME may include initialization time",
+  "process_frames": 60,
+  "renderer": "forward_plus",
+  "scene": "scene/main.tscn",
+  "step_mode": "manual_preview_step",
+  "visual_quality": "not_scored"
+}

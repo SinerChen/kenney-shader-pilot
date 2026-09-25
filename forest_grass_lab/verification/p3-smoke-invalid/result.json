@@ -1,0 +1,20 @@
+{
+  "execution_ok": false,
+  "errors": [
+    "SHADER ERROR: Unknown identifier in expression: 'BAD_SHADER_SYNTAX'.",
+    "ERROR: Shader compilation failed."
+  ],
+  "warnings": [],
+  "cases": [
+    {
+      "elapsed": 0.0166666666666667,
+      "frames": [
+        1
+      ],
+      "name": "target",
+      "steps": 1
+    }
+  ],
+  "renderer": "forward_plus",
+  "visual_quality": "not_independently_evaluated"
+}

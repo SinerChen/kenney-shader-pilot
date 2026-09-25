@@ -1,0 +1,39 @@
+{
+  "task_id": "SA03_L3",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA03_L3_coverage",
+      "intervention": "遍历湿区 surface/region，改变 wetness 并移动镜头至原画面外的街段。",
+      "expected": "清单内必要低洼湿区均有对应材料响应；不依赖固定视角。",
+      "evidence": "surface 覆盖矩阵、mask 叠图、街段全景。",
+      "typical_failure": "只修改一张材质或遗漏第二个道路 surface。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L3_protected",
+      "intervention": "选择低高度但属于门口/室内/道具的负样本，湿度从 0 到 1。",
+      "expected": "对象/区域准入先于材质高度判断；这些样本保持基线。",
+      "evidence": "负样本列表、材质参数哈希和匹配截图。",
+      "typical_failure": "按全局高度让桌面、室内和干区一起变湿。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L3_shared_resource",
+      "intervention": "对照候选开关与原资源使用者，分别在日景和夜景观察。",
+      "expected": "只改变目标 surface 的实例材质；灯具、玻璃和道具不受污染。",
+      "evidence": "material resource 使用者清单、绑定差异、日夜 A/B。",
+      "typical_failure": "共享资源串改，或改变整个环境来强化湿地。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L3_purpose",
+      "intervention": "使用原角色沿固定路线经过路口和入口；再关闭效果/reset。",
+      "expected": "入口、地面边界与石材细节可辨，原通行/碰撞/日夜操作可用；关闭后恢复。",
+      "evidence": "操作视频、关键对象截图及状态回归记录。",
+      "typical_failure": "地面过亮成一片、入口不可读，或为了遮错改变路线/碰撞。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

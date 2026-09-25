@@ -1,0 +1,226 @@
+{
+  "ok": false,
+  "errors": [
+    "SCRIPT ERROR: Parse Error: Cannot infer the type of \"result\" variable because the value doesn't have a set type.",
+    "ERROR: Failed to load script \"res://effect/main.gd\" with error \"Parse error\".",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'step' in base 'Nil'.",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'sample' in base 'Nil'."
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_221803_388d8815",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60,
+      120,
+      240
+    ],
+    "resolution": [
+      800,
+      600
+    ],
+    "camera": {
+      "position": [
+        6.6,
+        5.0,
+        7.5
+      ],
+      "look_at": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "fov_degrees": 48.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.397,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 4.445,
+      "errors": [
+        "SCRIPT ERROR: Parse Error: Cannot infer the type of \"result\" variable because the value doesn't have a set type.",
+        "ERROR: Failed to load script \"res://effect/main.gd\" with error \"Parse error\".",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'step' in base 'Nil'.",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'sample' in base 'Nil'."
+      ],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.600347340106964,
+            -0.445712476968765,
+            -0.664020657539368
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            6.59999990463257,
+            5.0,
+            7.5
+          ],
+          "projection": 0,
+          "up": [
+            -0.298915803432465,
+            0.89517617225647,
+            -0.330619066953659
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 600,
+        "image": "frame_0001.png",
+        "width": 800
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.600347340106964,
+            -0.445712476968765,
+            -0.664020657539368
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            6.59999990463257,
+            5.0,
+            7.5
+          ],
+          "projection": 0,
+          "up": [
+            -0.298915803432465,
+            0.89517617225647,
+            -0.330619066953659
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 600,
+        "image": "frame_0060.png",
+        "width": 800
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.600347340106964,
+            -0.445712476968765,
+            -0.664020657539368
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            6.59999990463257,
+            5.0,
+            7.5
+          ],
+          "projection": 0,
+          "up": [
+            -0.298915803432465,
+            0.89517617225647,
+            -0.330619066953659
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 600,
+        "image": "frame_0120.png",
+        "width": 800
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.600347340106964,
+            -0.445712476968765,
+            -0.664020657539368
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            6.59999990463257,
+            5.0,
+            7.5
+          ],
+          "projection": 0,
+          "up": [
+            -0.298915803432465,
+            0.89517617225647,
+            -0.330619066953659
+          ]
+        },
+        "elapsed_s": 4.0,
+        "frame": 240,
+        "height": 600,
+        "image": "frame_0240.png",
+        "width": 800
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 30,
+        "visible_geometry": 30
+      },
+      "geometry_before": {
+        "multimesh_instances": 335,
+        "visible_geometry": 30
+      },
+      "host": "existing_project",
+      "level": 1.0,
+      "scope": "scene_subset",
+      "source_host_modified": false,
+      "targets": [
+        "GrassCards_0",
+        "GrassCards_1",
+        "GrassCards_2",
+        "GrassCards_3"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 240,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260924_221803_388d8815/samples.json"
+}

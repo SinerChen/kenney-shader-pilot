@@ -1,0 +1,96 @@
+{
+  "checked": 15,
+  "passed": 15,
+  "model_api_calls": 0,
+  "source_host_files_unchanged": true,
+  "scope": "environment_startup_only_not_algorithm_correctness",
+  "results": [
+    {
+      "task_id": "SA01_L1",
+      "ok": true,
+      "record": "SA01_L1.json"
+    },
+    {
+      "task_id": "SA01_L2",
+      "ok": true,
+      "record": "SA01_L2.json"
+    },
+    {
+      "task_id": "SA01_L3",
+      "ok": true,
+      "record": "SA01_L3.json"
+    },
+    {
+      "task_id": "SA02_L1",
+      "ok": true,
+      "record": "SA02_L1.json"
+    },
+    {
+      "task_id": "SA02_L2",
+      "ok": true,
+      "record": "SA02_L2.json"
+    },
+    {
+      "task_id": "SA02_L3",
+      "ok": true,
+      "record": "SA02_L3.json"
+    },
+    {
+      "task_id": "SA03_L1",
+      "ok": true,
+      "record": "SA03_L1.json"
+    },
+    {
+      "task_id": "SA03_L2",
+      "ok": true,
+      "record": "SA03_L2.json"
+    },
+    {
+      "task_id": "SA03_L3",
+      "ok": true,
+      "record": "SA03_L3.json"
+    },
+    {
+      "task_id": "SA04_L1",
+      "ok": true,
+      "record": "SA04_L1.json"
+    },
+    {
+      "task_id": "SA04_L2",
+      "ok": true,
+      "record": "SA04_L2.json"
+    },
+    {
+      "task_id": "SA04_L3",
+      "ok": true,
+      "record": "SA04_L3.json"
+    },
+    {
+      "task_id": "SA05_L1",
+      "ok": true,
+      "record": "SA05_L1.json"
+    },
+    {
+      "task_id": "SA05_L2",
+      "ok": true,
+      "record": "SA05_L2.json"
+    },
+    {
+      "task_id": "SA05_L3",
+      "ok": true,
+      "record": "SA05_L3.json"
+    }
+  ],
+  "shutdown_diagnostics": {
+    "SA03_L1": [
+      "ERROR: 17 resources still in use at exit (run with --verbose for details)."
+    ],
+    "SA03_L2": [
+      "ERROR: 17 resources still in use at exit (run with --verbose for details)."
+    ],
+    "SA03_L3": [
+      "ERROR: 17 resources still in use at exit (run with --verbose for details)."
+    ]
+  },
+  "all_full_scene_geometry_preserved": true
+}

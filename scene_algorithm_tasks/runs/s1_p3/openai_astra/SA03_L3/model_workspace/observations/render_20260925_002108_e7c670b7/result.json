@@ -1,0 +1,161 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "WARNING: FSR 2 or MetalFX Temporal is not compatible with TAA. Disabling TAA internally.",
+    "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+    "ERROR: 4 resources still in use at exit (run with --verbose for details)."
+  ],
+  "observation_directory": "observations/render_20260925_002108_e7c670b7",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60
+    ],
+    "resolution": [
+      1100,
+      750
+    ],
+    "camera": {
+      "position": [
+        -13.0,
+        1.4,
+        3.0
+      ],
+      "look_at": [
+        -5.0,
+        0.2,
+        1.0
+      ],
+      "fov_degrees": 60.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 10.833,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 16.335,
+      "errors": [],
+      "warnings": [
+        "WARNING: FSR 2 or MetalFX Temporal is not compatible with TAA. Disabling TAA internally.",
+        "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+        "ERROR: 4 resources still in use at exit (run with --verbose for details)."
+      ],
+      "shutdown_diagnostics": [
+        "ERROR: 4 resources still in use at exit (run with --verbose for details)."
+      ]
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            0.960030734539032,
+            -0.144004613161087,
+            -0.240007653832436
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -13.0,
+            1.39999997615814,
+            3.0
+          ],
+          "projection": 0,
+          "up": [
+            0.139704987406731,
+            0.989576995372772,
+            -0.0349262431263924
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 750,
+        "image": "frame_0001.png",
+        "width": 1100
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            0.960030734539032,
+            -0.144004613161087,
+            -0.240007653832436
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -13.0,
+            1.39999997615814,
+            3.0
+          ],
+          "projection": 0,
+          "up": [
+            0.139704987406731,
+            0.989576995372772,
+            -0.0349262431263924
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 750,
+        "image": "frame_0060.png",
+        "width": 1100
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1201
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1201
+      },
+      "host": "existing_project",
+      "level": 3.0,
+      "scope": "full_scene",
+      "source_host_modified": false,
+      "targets": [
+        "Level Geometry/Ground/Ground"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 60,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_002108_e7c670b7/samples.json"
+}

@@ -1,0 +1,88 @@
+{
+  "ok": false,
+  "errors": [
+    "SHADER ERROR: Expected constant, function, uniform or varying.",
+    "ERROR: Shader compilation failed."
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_213015_2cfa6397",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1
+    ],
+    "resolution": [
+      128,
+      128
+    ],
+    "camera": null,
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.591,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 1.389,
+      "errors": [
+        "SHADER ERROR: Expected constant, function, uniform or varying.",
+        "ERROR: Shader compilation failed."
+      ],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 4000.0,
+          "forward": [
+            -0.581914365291595,
+            -0.363696485757828,
+            -0.7273930311203
+          ],
+          "fov_degrees": 75.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 1.0,
+          "position": [
+            4.0,
+            3.0,
+            5.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.227199360728264,
+            0.931517541408539,
+            -0.283999234437943
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 128,
+        "image": "frame_0001.png",
+        "width": 128
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 1,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "manual_preview_step",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored"
+}

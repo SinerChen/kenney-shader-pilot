@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://scenes/GrassPatch.tscn" id="1"]
+[node name="L2_AnchoredWind" instance=ExtResource("1")]
+level = 2

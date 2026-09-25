@@ -1,0 +1,150 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA04_L3",
+  "chain_id": "SA04",
+  "level": 3,
+  "level_name": "场景影响与设计作用",
+  "core_question": "影响了该影响的内容，保留了该保留的内容吗？",
+  "title": "有效命中覆盖与射击流程保留",
+  "goal": "反馈是否只出现在应接收命中的表面，且不改变射击和遮挡用途？",
+  "requirement": "反馈是否只出现在应接收命中的表面，且不改变射击和遮挡用途？",
+  "requirements": [
+    "对 TargetA/B 的已标记可见 surface/锚点全面检查；禁止只支持其中一个模型实例或一个正面角度。",
+    "TargetC、Cover、墙地、目标背面和武器视口是负对照；共享材质不能传播命中效果。",
+    "视觉适配不改变原生命值、damage 次数、碰撞层、射线或 HUD；非法受体事件被忽略且不伪造成有效命中。",
+    "保留完整场景的瞄准、掩体遮挡与重复射击；玩家能指出最近一次命中的目标和位置。"
+  ],
+  "criteria": [
+    "全部允许锚点有局部反馈，无漏 surface；最近命中位置可辨。",
+    "负对象不显示贴花；不允许的事件不替换当前有效贴花或改变原健康状态。",
+    "伤害次数、生命值和阻挡关系相同；准星、武器显示与控制可用。",
+    "到期/重置只清候选贴花，原资源绑定正确且数量不增长。"
+  ],
+  "parent_task": "SA04_L2",
+  "input_code": "same_model_previous_submission_may_repair",
+  "base_scene": "projects/fps/pilot/F01.tscn",
+  "project": "projects/fps/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA04",
+  "algorithms": [
+    "SH018"
+  ],
+  "source_scenario_ids": [
+    "B13",
+    "B08"
+  ],
+  "primary_algorithms": [
+    "SH018"
+  ],
+  "fixed_supporting_algorithms": [],
+  "primary_evidence": "关键对象/资源检查、影响路径测试、完整场景感知",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "最近一次有效命中的 TargetA 或 TargetB 上朝向正确、位于投影体内的实际可见表面",
+  "protected_targets": "TargetC、Cover、墙/地、目标背面、其他共享材质实例、武器视口与 HUD；全部原命中/生命值/碰撞逻辑",
+  "scene_purpose": "玩家能判断最近一次命中发生在哪个目标和位置，同时保留遮挡、瞄准与原射击流程。",
+  "impact_path": [
+    "原射线命中与独立 hit_surface 输入",
+    "target_id/局部锚点/目标变换",
+    "当前深度重建和投影体裁剪",
+    "受体法线/材料修改后照明",
+    "最近一次命中反馈",
+    "遮挡、原伤害和瞄准流程"
+  ],
+  "scope": "一次只保留一个活动贴花，寿命 2 秒；不要求多贴花排序、透明受体、蒙皮目标或完整 deferred renderer。",
+  "prompt": "tasks/SA04_L3/prompt.md",
+  "evaluation_cases": "tasks/SA04_L3/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA04_L3/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA04_L3/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA04_L3/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa04",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "coverage_preservation_and_scene_purpose"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原靶场拆出 TargetA 和地面，保留原靶标网格、材质、光照和观察相机；验证表面投影。",
+    "L2: 保留 TargetA、TargetB、Cover、地面与射击控制，观察移动受体、命中、遮挡和寿命。",
+    "L3: 使用原完整靶场，保留全部靶标、掩体、墙地、角色、武器、准星、碰撞和射击流程。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "FPS 靶场",
+    "kind": "fps",
+    "level": 3,
+    "scope": "full_scene",
+    "description": "使用原完整靶场，保留全部靶标、掩体、墙地、角色、武器、准星、碰撞和射击流程。",
+    "source_entry": "pilot/F01.tscn",
+    "targets": [
+      "World/TargetA",
+      "World/TargetB"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": null,
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

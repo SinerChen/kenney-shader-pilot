@@ -1,0 +1,64 @@
+[
+  {
+    "id": "bistro",
+    "name": "Bistro",
+    "repository": "https://github.com/Jamsers/Bistro-Demo-Tweaked",
+    "branch": "main",
+    "archive_url": "https://codeload.github.com/Jamsers/Bistro-Demo-Tweaked/zip/refs/heads/main",
+    "archive_bytes": 625137656,
+    "downloaded_at": "2026-09-23T15:54:33.994348+08:00",
+    "directory": "projects/bistro",
+    "archive": "downloads/bistro.zip"
+  },
+  {
+    "id": "sponza",
+    "name": "Sponza",
+    "repository": "https://github.com/Calinou/godot-sponza",
+    "branch": "master",
+    "archive_url": "https://codeload.github.com/Calinou/godot-sponza/zip/refs/heads/master",
+    "archive_bytes": 129878340,
+    "downloaded_at": "2026-09-23T15:52:14.389401+08:00",
+    "directory": "projects/sponza",
+    "archive": "downloads/sponza.zip"
+  },
+  {
+    "id": "forest",
+    "name": "Open Forest Benchmark",
+    "repository": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+    "branch": "main",
+    "archive_url": "https://codeload.github.com/Rytelier/Godot-4-forest-benchmark/zip/refs/heads/main",
+    "archive_bytes": 690641991,
+    "downloaded_at": "2026-09-23T15:55:16.386488+08:00",
+    "directory": "projects/forest",
+    "archive": "downloads/forest.zip"
+  },
+  {
+    "id": "tps",
+    "name": "Official TPS Demo",
+    "repository": "https://github.com/godotengine/tps-demo",
+    "branch": "master",
+    "archive_url": "https://codeload.github.com/godotengine/tps-demo/zip/refs/heads/master",
+    "archive_bytes": 368517408,
+    "downloaded_at": "2026-09-23T15:55:59.063601+08:00",
+    "directory": "projects/tps",
+    "archive": "downloads/tps.zip"
+  },
+  {
+    "id": "water",
+    "name": "Boujie Water Shader",
+    "repository": "https://github.com/Chrisknyfe/boujie_water_shader",
+    "branch": "main",
+    "archive_url": "https://codeload.github.com/Chrisknyfe/boujie_water_shader/zip/refs/heads/main",
+    "archive_bytes": 10572695,
+    "downloaded_at": "2026-09-23T16:16:01.332506+08:00",
+    "directory": "projects/water",
+    "archive": "downloads/water.zip",
+    "supplemental_sources": [
+      {
+        "url": "https://raw.githubusercontent.com/Chrisknyfe/boujie_water_shader/main/project.godot",
+        "file": "downloads/water-project.godot",
+        "reason": "Excluded from upstream ZIP by export-ignore."
+      }
+    ]
+  }
+]

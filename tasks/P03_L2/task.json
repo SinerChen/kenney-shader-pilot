@@ -1,0 +1,19 @@
+{
+  "id": "P03_L2",
+  "scene_id": "P03",
+  "kit": "platformer",
+  "level": 2,
+  "title": "风向和局部避让",
+  "requirement": "保留 L1。wind 改变世界空间风向与强度，bend 使事件位置附近植被局部弯曲并恢复。强度为零时稳定回到静止状态。",
+  "criteria": [
+    "保留 L1 锚定",
+    "风向切换对应世界坐标",
+    "局部影响有空间范围",
+    "风停和局部影响结束后可恢复"
+  ],
+  "parent_task": "P03_L1",
+  "base_scene": "projects/platformer/pilot/P03.tscn",
+  "editable_directory": "projects/platformer/effects/P03",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

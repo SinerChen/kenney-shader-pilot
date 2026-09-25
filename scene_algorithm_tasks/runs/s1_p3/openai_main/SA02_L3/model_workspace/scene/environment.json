@@ -1,0 +1,17 @@
+{
+  "host": "existing_project",
+  "name": "海面",
+  "kind": "water",
+  "level": 3,
+  "scope": "full_scene",
+  "description": "使用原完整海面展示，保留全部海面 LOD、海床、地形、独立材质样品、HUD 和相机控制。",
+  "source_entry": "example/boujie_water_shader/water_shader_examples.tscn",
+  "targets": [
+    "DeepOcean"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://scenes/GrassPatch.tscn" id="source"]
+[node name="TaskScene" instance=ExtResource("source")]
+level = 3

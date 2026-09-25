@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "scene/fixture.gd",
+      "sha256": "bc7bde2e44eeea19c80705f9183563cdcc4270040a2a7b325ceed247b9f524e8"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "3c1ed536892821b5a09f6616310244dd309637ceac220e5682ff3d18faac9ceb"
+    },
+    {
+      "path": "effect/color.gdshader",
+      "sha256": "e591660c6828e12b8700c5210ca52af6926c4439625f7c31bca12b4ab31e2662"
+    },
+    {
+      "path": "effect/preview.gd",
+      "sha256": "fbf34414c77cff9704ed79ea7db87a9c491517bc97b7a2d3343a610f586a32dc"
+    },
+    {
+      "path": "effect/preview.tscn",
+      "sha256": "e7a10f9b7b81a98db676e83856469e3850c68c55e8a7a6d62776a8b886391f4d"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "8ea64355ae53008f1d3cd50cb3e562f63de110474ab21b8df7a162dd1960434b"
+    }
+  ],
+  "input_sha256": "8ea64355ae53008f1d3cd50cb3e562f63de110474ab21b8df7a162dd1960434b"
+}

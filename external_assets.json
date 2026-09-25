@@ -1,0 +1,2355 @@
+{
+  "format_version": 1,
+  "sources": [
+    {
+      "id": "bistro",
+      "url": "https://codeload.github.com/Jamsers/Bistro-Demo-Tweaked/zip/refs/heads/main",
+      "archive": "realistic/downloads/bistro.zip",
+      "archive_sha256": "6a291614d6862edb27a4b0bdc15e7e8aaeb99237483e76c8131b88ba326547e8",
+      "assets": [
+        {
+          "path": "realistic/projects/bistro/Audio/daymusic.ogg",
+          "member": "Bistro-Demo-Tweaked-main/Audio/daymusic.ogg",
+          "bytes": 2202991,
+          "sha256": "eb59950d9a51e9084d83df2b702f88b6f279d8da8301a71b5f8da6ab3a2839bb"
+        },
+        {
+          "path": "realistic/projects/bistro/Audio/foliage_rustling.wav",
+          "member": "Bistro-Demo-Tweaked-main/Audio/foliage_rustling.wav",
+          "bytes": 3267136,
+          "sha256": "b465cc741d83c73a63c534fab31fe32df95cf745f0a807903b45ec6fcfb792ef"
+        },
+        {
+          "path": "realistic/projects/bistro/Audio/night_bg.ogg",
+          "member": "Bistro-Demo-Tweaked-main/Audio/night_bg.ogg",
+          "bytes": 3795913,
+          "sha256": "d4e0d92531c5733dfd05cf20abc9945108064a361b05434c5fd41e85cf71e6e9"
+        },
+        {
+          "path": "realistic/projects/bistro/Audio/nightmusic.ogg",
+          "member": "Bistro-Demo-Tweaked-main/Audio/nightmusic.ogg",
+          "bytes": 2081434,
+          "sha256": "648eb56077977af44a9225d5ac77f9038fb860fcfa0fa932fdbb91e6284cee4b"
+        },
+        {
+          "path": "realistic/projects/bistro/Godot-Human-For-Scale/Assets/godot-3d-mannequin/mannequiny-0.3.0.bin",
+          "member": "Bistro-Demo-Tweaked-main/Godot-Human-For-Scale/Assets/godot-3d-mannequin/mannequiny-0.3.0.bin",
+          "bytes": 1260980,
+          "sha256": "c45822678523ad63080031fdb5bd7cb840ed94275eaf901ee709bdfe6f8454d0"
+        },
+        {
+          "path": "realistic/projects/bistro/Godot-Human-For-Scale/Assets/godot-3d-mannequin/Textures/mannequiny-0.3.0_Todo_BaseColor.png",
+          "member": "Bistro-Demo-Tweaked-main/Godot-Human-For-Scale/Assets/godot-3d-mannequin/Textures/mannequiny-0.3.0_Todo_BaseColor.png",
+          "bytes": 1583851,
+          "sha256": "ceae5b81ce802db5ad419e616e6c23655447c2f8f813f0c8bc5736239859002d"
+        },
+        {
+          "path": "realistic/projects/bistro/Godot-Human-For-Scale/Assets/godot-3d-mannequin/Textures/mannequiny-0.3.0_Todo_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Godot-Human-For-Scale/Assets/godot-3d-mannequin/Textures/mannequiny-0.3.0_Todo_Normal.png",
+          "bytes": 1539210,
+          "sha256": "9be19e13de1b87b26ea319a53d885df8afcb12e4b5d9fab7879b38fefa9b9182"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Ground_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Ground_ColOcc.glb",
+          "bytes": 1197316,
+          "sha256": "776d21bc0983f6ce3c7dcea1c55f8035d2be56d5af4bed42bc6f1e2b600e950a"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section01/S1B1_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section01/S1B1_ColOcc.glb",
+          "bytes": 3190868,
+          "sha256": "9a79b0eb1a14a5dc97be97f624d58e0cb25da8c7436a410872f7965b4813c9cd"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section01/S1B4_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section01/S1B4_ColOcc.glb",
+          "bytes": 1182520,
+          "sha256": "d50c6ce64659ef5a2c90793358cba4ff237857399051e0a694cca868b837bc50"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section01/S1Details_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section01/S1Details_ColOcc.glb",
+          "bytes": 3076332,
+          "sha256": "ed8b28dc738e3df02769837852a9ee18af4128327f777554b80da49100a504a6"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section02/S2B1_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section02/S2B1_ColOcc.glb",
+          "bytes": 1206728,
+          "sha256": "2d1906a3d8344ba73300e3839aeeec7e0a053214689d1166d64983e95b5be799"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section02/S2B3_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section02/S2B3_ColOcc.glb",
+          "bytes": 3615616,
+          "sha256": "6b284834c1d7e524007adfcb5d17e46e0a38a1aa5b127bcaff37fbaeb1516e2f"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section03/S3B1_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section03/S3B1_ColOcc.glb",
+          "bytes": 1202584,
+          "sha256": "c557c3069c9418666a26353404dd754926b7fde0c54b008295363173d7426d47"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section03/S3B2_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section03/S3B2_ColOcc.glb",
+          "bytes": 3628840,
+          "sha256": "42ad6f5c7160ea73fbde72f4ac8b556808ed8e608ebfced68cc2cef1b6ab495b"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section04/S4B1_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section04/S4B1_ColOcc.glb",
+          "bytes": 1938744,
+          "sha256": "d595e5aeb76bda9054a746d97153ecbe78f60e57db483aa3e6df35ad69ff27eb"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section04/S4B2_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section04/S4B2_ColOcc.glb",
+          "bytes": 1232800,
+          "sha256": "c77d0fedd337fa7542f9c5cfbaa622f607cd96bc955e7163a4d11f24b0e5369b"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section04/S4B3_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section04/S4B3_ColOcc.glb",
+          "bytes": 1545232,
+          "sha256": "b59b6ddbac70b32b8f6f2c1e591133b9ae8d82c138fb9c860b619eb5c08af7fd"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/CollisionOcclusion/Section05/S5B1_ColOcc.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/CollisionOcclusion/Section05/S5B1_ColOcc.glb",
+          "bytes": 3561412,
+          "sha256": "50844620de97bd041bd4e45251bd6b2502f7235c8c1f50816cc42ac94dcfd0bb"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Ground.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Ground.glb",
+          "bytes": 2211000,
+          "sha256": "e5770ddc696bbb2af9178a9fa8d8ffdfdf8f459c925e4c151995c23445d28dd2"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1B1.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1B1.glb",
+          "bytes": 7185648,
+          "sha256": "d4d1951cd486413a8bfe2829a681934d03cba1fe27816b722cbafcd20585e81a"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1B2.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1B2.glb",
+          "bytes": 1189864,
+          "sha256": "3cdb190d2f974c87d1c4c9ba91ac67089009eae81316862c2d74dea509337595"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1B3.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1B3.glb",
+          "bytes": 2491984,
+          "sha256": "7cfc9a88022acd5344775074a0e259b994b7909e6c2456324323bc858c456078"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1B4.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1B4.glb",
+          "bytes": 3267176,
+          "sha256": "2820f941368bec82e4f02e8d0e9eff72ce7069f0a7c39314f32abb5e86fa94a3"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1Details.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1Details.glb",
+          "bytes": 10375708,
+          "sha256": "e6c5815de8c546b1ba9423f2b2befe9d906ac936d34150c76bf1fed1df58ccdf"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1Lamps.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1Lamps.glb",
+          "bytes": 1950232,
+          "sha256": "3ccaaca80ce575b5db86c8097e7fb3418fd6e885e4188c5238e842821b190041"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section01/S1Lamps_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section01/S1Lamps_Props.glb",
+          "bytes": 8771268,
+          "sha256": "e7ffcf0df7dc291d51ce26a6c31f4c252a723b4cb120a1493cbca2907ff62914"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/BistroProps.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/BistroProps.glb",
+          "bytes": 3110308,
+          "sha256": "1c140fb202fdbd5e1326a42b8bdf1c5dfb7e88926d67a4bf2b849512d269c605"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/BistroProps_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/BistroProps_Props.glb",
+          "bytes": 6427916,
+          "sha256": "74753abf0214ad76fb29941be8ef5a8139703562f8b213d93b5bf72a424c209f"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2B1.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2B1.glb",
+          "bytes": 3121388,
+          "sha256": "5297ce3fd246621a180114a22bbfe9336fcf712476dff6e5b6f157b501a2510d"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2B2.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2B2.glb",
+          "bytes": 2078912,
+          "sha256": "c8e8913dac69a9eb7d14e20bbf33e6885459bb1da88c5a20e330f0f69188446d"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2B3.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2B3.glb",
+          "bytes": 9996488,
+          "sha256": "d7fa3dae5e4079a0bdeabdbdb38831748f1ebcc056eb0d8678766f8d281448a2"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2Ivy.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2Ivy.glb",
+          "bytes": 5655152,
+          "sha256": "00c9e1f53ff3523ceb0d1d100d3c9db7d9b8a21841ffdbe3df8c6b72ea138a4c"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2Lamps.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2Lamps.glb",
+          "bytes": 1560212,
+          "sha256": "4137500650a406ed471179c6eb873e18b2c4947071f3bd309b3a78d18fa58a05"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section02/S2Lamps_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section02/S2Lamps_Props.glb",
+          "bytes": 7005020,
+          "sha256": "a368cd6f9163550324cbb19b22cd6273c9c0a141598843eb7d6e68b0c0d97500"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section03/S3B1.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section03/S3B1.glb",
+          "bytes": 3461164,
+          "sha256": "ce7c8b37a15ba6972b49062bfa24bfe02c9f7408ef52c54d690f41f22133bfed"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section03/S3B2.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section03/S3B2.glb",
+          "bytes": 8301812,
+          "sha256": "f1205891eb218218a7aeb7c42ca4392011cce45aabf4394c27c54c8a48b27667"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section03/S3B3.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section03/S3B3.glb",
+          "bytes": 2359024,
+          "sha256": "02aba97bb27b36ad52e70c941de1b1155e0a3bdbb3de017249b1c719edf763dd"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section03/S3B4.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section03/S3B4.glb",
+          "bytes": 1414908,
+          "sha256": "e28c56f4d8cf714d2f0710dc174550ba655ccbeebf1658c27c2c3bc0eda49bab"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section03/S3Lamps_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section03/S3Lamps_Props.glb",
+          "bytes": 1754500,
+          "sha256": "8361de47100744a2998d5681b386214e4ba6369fcd472c64b4693c17c08fd81e"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section04/S4B1.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section04/S4B1.glb",
+          "bytes": 4932968,
+          "sha256": "547b40234bef0b17a465803c0cbde96dac2c791128afcad46fa46df2d533fd5f"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section04/S4B2.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section04/S4B2.glb",
+          "bytes": 3932708,
+          "sha256": "a700d65f06c3fee2bcf4449cdf937deec8fa12190dc7746a8d1f32baa4effb59"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section04/S4B3.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section04/S4B3.glb",
+          "bytes": 4346592,
+          "sha256": "5c495c934521d706e3725b86e73069ccefd76c275f1ca238e8696d00118166c8"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section05/S5B1.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section05/S5B1.glb",
+          "bytes": 17262596,
+          "sha256": "992a9449fc6bd3ebebaed1938f467e49c541a154c1737713d6d49d3183846dd4"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section05/S5B1_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section05/S5B1_Props.glb",
+          "bytes": 2340396,
+          "sha256": "d33c2b59998c61f4f14441bfedaffcc9a32d79c5cad17ca529d6dab51a6060b5"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section05/S5B2.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section05/S5B2.glb",
+          "bytes": 2344124,
+          "sha256": "a0a33a29c89bf3eba9bc728d4e2876e58252975bc9b029c7958c1f3dc8f77aa3"
+        },
+        {
+          "path": "realistic/projects/bistro/Meshes/Section05/S5Lamps_Props.glb",
+          "member": "Bistro-Demo-Tweaked-main/Meshes/Section05/S5Lamps_Props.glb",
+          "bytes": 1754472,
+          "sha256": "84ed8f0b7d1894ee45c6523d7e4a019b4ae954474917e618793a36a14fea5460"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/Awnings_Hotel_Fabric_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/Awnings_Hotel_Fabric_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "53c338e10a0d42c5531da0f2e7aec11135b7f4828de0fb7bd21c9497684e007a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/Awnings_Hotel_Fabric_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/Awnings_Hotel_Fabric_Normal.png",
+          "bytes": 4798187,
+          "sha256": "753002eea8f1c4f89e82d6a392bf04778abd05b2612b7024cbf3bda188776423"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Awning_Beams_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Awning_Beams_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "8e89886c19da69450a542716d0297967b76f7268113379c6cf961294cd9f3488"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Awning_Beams_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Awning_Beams_Normal.png",
+          "bytes": 1416202,
+          "sha256": "4802813d4bf4e06c9d195041c00040604156a4da1083397689964cf5cc4773c8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Awning_Fabric_Cyan_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Awning_Fabric_Cyan_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "ba75593b0fc3c449b840960354ca58bdca2842d0af449e817e812d035e7d3aa7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Awning_Fabric_Red_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Awning_Fabric_Red_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "54e501044e5c6f38cf9428891a4519063e656fc385331d8de297cdddfb0241cc"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Curtains_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Curtains_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "3df6a4f1c9cf53ca5442829fbdeb2fc7c9e6e0651969e11533b5e088c9dbdee4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Fabric/MASTER_Curtains_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Fabric/MASTER_Curtains_Normal.png",
+          "bytes": 2630300,
+          "sha256": "6181a5878109b2b4764aa80e8430f455701d77e3b85286871c388683f9aeb1ac"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Glass/MASTER_Frosted_Glass_Normal.tga",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Glass/MASTER_Frosted_Glass_Normal.tga",
+          "bytes": 11619306,
+          "sha256": "03b67a682c6bf6e886e1b45b2878254d8b555d2c837da3509b96fdb03fdf237f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Glass/MASTER_Glass_Exterior_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Glass/MASTER_Glass_Exterior_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "dfccede154fb2be457ac4b852e105a55627a2f86640d44c342fca2601b230050"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Glass/MASTER_Glass_Exterior_Roughness.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Glass/MASTER_Glass_Exterior_Roughness.png",
+          "bytes": 1077352,
+          "sha256": "c430692f78bb7f0f748fd687bd15df0597fb824ea19f1c73c3652f38bcdd7dfe"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Brick_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Brick_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "165d955839fa4dacad0547cc8825f449871d0d23d0ee1b561ba4d100db1e9560"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Brick_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Brick_BLENDSHADER_Normal.png",
+          "bytes": 9531894,
+          "sha256": "b7ca2522931d0f3b9709f3d8ac21db163001ceebe0446c8522beb3c0276f024a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_02_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_02_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "208513d2da15d5a945f489fba10267aa15d324739ae360d18bbf156270e14334"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_02_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_02_Normal.png",
+          "bytes": 9158064,
+          "sha256": "9de890ced930d34a288f4309c0bc2a1a0c2a0cfdf4072cfc7ac11e6e70898803"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Big_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Big_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "74ddd68ec80947972f5a8639e721a18c304d1d595e5fc6efa37ad56b0e90b877"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Big_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Big_BLENDSHADER_Normal.png",
+          "bytes": 8109946,
+          "sha256": "88c04e9e9b3d498e83a81c62fa98b1eec69fcbaf4076272e052759c7cfb86824"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Small_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Small_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "d32c9026641b89bafb57e85d9fbceb3860d214c834a2e89a72f0b68de73f8842"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Small_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Small_BLENDSHADER_Normal.png",
+          "bytes": 7753644,
+          "sha256": "66bb0468d47305036c120dba0c6e484e8a97dc60a291ec71c02b65c095c5839b"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Wet_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Wet_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "a903cc94409acacb742c274dacd50455c9ebae042b1e7eecc2c7c4f9a1149eb8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Cobblestone_Wet_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Cobblestone_Wet_BLENDSHADER_Normal.png",
+          "bytes": 5771963,
+          "sha256": "4d38fe0449993eb1b2b4a9bc1f70928f92db5e351bf21ac89e02b9ab7a95cbd8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Curbstones_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Curbstones_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "74d55e379548aefed2c47667642a144cae98ee661e21ca4da474a2b16eac4316"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Curbstones_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Curbstones_Normal.png",
+          "bytes": 5891714,
+          "sha256": "5f79fcc71ceb380e617b5e973c45a00b911a53ea8283bf67b68564a70b42c844"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Ground_Wet_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Ground_Wet_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "b134c53cc5a9c4d3ddf3c37ff115ac6addd6fff42fa032ddb49c1fcd1807aeb7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Ground_Wet_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Ground_Wet_Normal.png",
+          "bytes": 8479239,
+          "sha256": "460a5d3de8e639049a785782b53f934992ce80ae297cf255c001caa1ca324da5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Manhole_Cover_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Manhole_Cover_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "2200eea9c2421be2d8a1a4cf95e255647f2e527f47b895150e8cff98bbe819af"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Ground/Pavement_Manhole_Cover_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Ground/Pavement_Manhole_Cover_Normal.png",
+          "bytes": 7202685,
+          "sha256": "9a7e5b677614b9bf97a41c90ad1e77e398fbae8cd5f1993d5542d54428143d96"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Height/Pavement_Cobblestone_Wet_BLENDSHADER_Height_height.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Height/Pavement_Cobblestone_Wet_BLENDSHADER_Height_height.png",
+          "bytes": 1961843,
+          "sha256": "b5a074453461f918f491da0d3ff1505727b2be0848473e6e1d2b9f8b2c206665"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/LanternEmissive_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/LanternEmissive_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "277a3af8587e2eda5b9d48c9dca77fb667d6f4fbcb3d0e20e7d5cbab77b6104f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/LanternEmissive_Emissive.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/LanternEmissive_Emissive.dds",
+          "bytes": 2796344,
+          "sha256": "c673e5e8987a900ba4bec81233e9b92986de1894575b5081ee6e948eced31fa5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/LanternEmissive_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/LanternEmissive_Normal.png",
+          "bytes": 3117506,
+          "sha256": "f1f20522c7664d3c7f7b6b76028ef6ab5aa3b0d0bdfc4e4a8fb6aeaf8ee22ca5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/MASTER_Focus_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/MASTER_Focus_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "0946507946c8ece00987311ba3ca5c05ad5d7f9dc380d432aab09bb9928cc7da"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Spotlight_Glass_Emissive_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Spotlight_Glass_Emissive_Normal.png",
+          "bytes": 3279876,
+          "sha256": "bc2eebb9a0dbeebc6b589a6ea1cd1d7ae359e0ec58bb9b1203520eb94e41eedd"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Streetlight_Chains_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Streetlight_Chains_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "9fe641fe2fb45c473e6477fff39af6bb7d92f39b562df73ba11f97664859a564"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Streetlight_Metal_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Streetlight_Metal_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "352da936fc056cdad0229b62fe50f6e65e765c9436b04b27cc259afe8a68249d"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Streetlight_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Streetlight_Metal_Normal.png",
+          "bytes": 5631546,
+          "sha256": "5976b5e40b3f217a9f8602abdae06e94cfc4ee8308831c365ef58b6eb4270a92"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Stringlights_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Stringlights_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "967779dc659dc10f8d3bae88016dbbc06b1ecca62e60a3b09c1a13c8223a7aa7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Lights/Stringlights_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Lights/Stringlights_Normal.png",
+          "bytes": 1326984,
+          "sha256": "ccff3572ebbea391a095ff561ff20bb1f1c6fcce883b252804ed5ceec05aaeb5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Antenna_Metal_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Antenna_Metal_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "9a4c4c5df383253cc0ca2df1a805d51ac224e69c620a2d045d9176ecfb7513fc"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Antenna_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Antenna_Metal_Normal.png",
+          "bytes": 1831105,
+          "sha256": "5a89332c9c06f8d072c8f885fdd85f9cd106e530008748a660c566ba6affe24b"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Banner_Metal_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Banner_Metal_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "7dd4c1dbd4e649278a9329d082acb74f7322692016435dd472fb67f44c11d0dd"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Banner_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Banner_Metal_Normal.png",
+          "bytes": 1457901,
+          "sha256": "88556db3c01c66fc68c69e61af494d7af0280aead280eeddc368ec3e36bbfa28"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Bollards_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Bollards_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "75b1f4deb8682ef189641311b6290515ae7b5a619bfbfd624841e9f214305643"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Bollards_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Bollards_Normal.png",
+          "bytes": 2432754,
+          "sha256": "ef2544e246e63827d408139432316e88d42fded3d81f458b521eafeb577d39dd"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/ElectricBox_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/ElectricBox_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "34bc32682d4c43e16f590b75b904ce9ecfb2fb32049d22742e76ce421a216b76"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/ElectricBox_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/ElectricBox_Normal.png",
+          "bytes": 1561283,
+          "sha256": "fe1d8c07b67c5615b0b4970847e14b49fb5476299e210b2f86c8c3cbfe88ca3e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Black_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Black_Metal_Normal.png",
+          "bytes": 7609135,
+          "sha256": "d98c526355bf535668d7e8d3a38bdf564a34ad9600875f0a87c171a0b5a572e4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Bronze_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Bronze_BLENDSHADER_Normal.png",
+          "bytes": 1831105,
+          "sha256": "5a89332c9c06f8d072c8f885fdd85f9cd106e530008748a660c566ba6affe24b"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Forge_Metal_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Forge_Metal_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "21c5eaee1de278ce4e170aad152e33a1b94ef563b40dc2f9156a3525ff87dc4e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Forge_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Forge_Metal_Normal.png",
+          "bytes": 1738058,
+          "sha256": "6b9b046d2ed040fb458d6bc755a64b733f1c8d03161b16d4e31bb77499ba7661"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Metal_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Metal_Normal.png",
+          "bytes": 1457901,
+          "sha256": "88556db3c01c66fc68c69e61af494d7af0280aead280eeddc368ec3e36bbfa28"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/MASTER_Rollup_Door_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/MASTER_Rollup_Door_Normal.png",
+          "bytes": 3745890,
+          "sha256": "e8f599dc5f4fac4458be6e8f4835c317aab736a086f609209484c5aa211e33fd"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Paris_StreetPivot_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Paris_StreetPivot_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "21eeda828f8b98292550947cd1c3aee0f6a16bc42c2960190f217473b7647954"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Paris_StreetPivot_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Paris_StreetPivot_Normal.png",
+          "bytes": 1323825,
+          "sha256": "a1e45761fb23da6bb0078b1ce23175d7cbec9fc1b423dba0bd21ddfbaa5b5a3e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Paris_TrafficSign_A_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Paris_TrafficSign_A_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "035d0cba28f7e00705ba6d0dc87f9616ac58fa441f13a2ecc72b4e2ea27af73f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Paris_TrafficSign_A_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Paris_TrafficSign_A_Normal.png",
+          "bytes": 1269826,
+          "sha256": "10221159be78e5187a82c785f93992ebbce535977f4b355b64c6ac0ace0a0a4d"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Paris_TrafficSign_A_Specular.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Paris_TrafficSign_A_Specular.dds",
+          "bytes": 2796344,
+          "sha256": "3d5cea824f35e0f23c15c32542d3cbd64f3b844f3ee05980b9ebeda2f5fb7dfa"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Sidewalkbarrier_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Sidewalkbarrier_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "4b4a5c7e6019f12eb1209ff23585d2ab4d3338a1a90ee16e212412abcd46d581"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Metal/Sidewalkbarrier_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Metal/Sidewalkbarrier_Normal.png",
+          "bytes": 2825951,
+          "sha256": "adc7485bdaf65896d1ba459e393f37923410c0ad3e13fb473f65029107e587d6"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Ashtray_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Ashtray_Normal.png",
+          "bytes": 1180603,
+          "sha256": "d1aea8acabdec50e4cd47061048cbec81d6f6b251b7cca195c171ee69dca450f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Bistro_Sign_Main_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Bistro_Sign_Main_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6743e9d7ca489d6bf80333654603d779c6832d32ffe684c0a823def410be6b62"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Bistro_Sign_Main_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Bistro_Sign_Main_Normal.png",
+          "bytes": 1512236,
+          "sha256": "e49f0e184358bfc8870f4b7ec43c8c068c9932d44d0874453bbca8a6f0e5b641"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Book_Covers_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Book_Covers_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "eee940a71fdf5be4e6c0084eb82c77a44ea7d79a36257a2427ccdbbb5d4ccf91"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Boulangerie_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Boulangerie_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "71fc9e3d91671d915d7755754bd620c27f357c8863d864f90c400e8f6a75f67d"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Building_Details_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Building_Details_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "d1c82e3a07d252975a92cdc2ae2bd869368f0b0e1c7ecb3cd297d2dd4d422fab"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Building_Details_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Building_Details_Normal.png",
+          "bytes": 4480208,
+          "sha256": "c71fc3667638e064c0af819251f97518fa29b86687cccff9e077472ce409da49"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Focus_Ornament_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Focus_Ornament_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "461d5a27ddfd038c175224c4f323bb6bc0acaac756651347a2968b88fed6a779"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Focus_Ornament_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Focus_Ornament_Normal.png",
+          "bytes": 2822682,
+          "sha256": "6da0c896e213b3c8f506e0c58db7f5e652462f1d70c502ef64f5f3d29463894f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Plastic_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Plastic_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "14e7cbe36842148cebef72566a0cd77ec28ea0d05fc5ed956288c53b105f4c66"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Plastic_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Plastic_Normal.png",
+          "bytes": 7609135,
+          "sha256": "d98c526355bf535668d7e8d3a38bdf564a34ad9600875f0a87c171a0b5a572e4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Room_Interior_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Room_Interior_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "160d56ce44e5f3ca169240f21a70460a13a61b801a9f5cb9a11345071d2a1f57"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Side_Letters_BaseColor.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Side_Letters_BaseColor.png",
+          "bytes": 1348169,
+          "sha256": "689d2ed00619f1b91581ee9072b1c51e977a231605c13fa5442b7f20605d35c0"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MASTER_Side_Letters_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MASTER_Side_Letters_Normal.png",
+          "bytes": 1945681,
+          "sha256": "e219d4798e30d1e433eb0b3b84c37c63dc725683c280f98f1c02b9f7e39c095a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MenuSign_01_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MenuSign_01_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6d96f351bdbf7f1c562c81d5d5e508a6dc603ddb54dad5b647bb836778c51c15"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MenuSign_01_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MenuSign_01_Normal.png",
+          "bytes": 2042884,
+          "sha256": "8b38023e575cc1e1d0129e05391de344d93e6ec7a50f1c2f126e258ac18e096a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MenuSign_02_Mesh_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MenuSign_02_Mesh_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6a44a78cc22f2bb800e6deb5c69e6bdb7acf9cf18a3fcdfe8b96f9218ef04518"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/MenuSign_02_Mesh_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/MenuSign_02_Mesh_Normal.png",
+          "bytes": 1192075,
+          "sha256": "4ffd42584ce65460543957f00953d651fed522c5965b66f12a9a76ddee7f52a2"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/NapkinHolder_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/NapkinHolder_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "eee1f733eeba84e1859afda8f79fc0d9608171326a01f0d124a43e520492a13e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Paris_LiquorBottle_01_Caps_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Paris_LiquorBottle_01_Caps_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "c9df82e7c23d8f7b24e80592188aacc7c45e8f1dab5efca384301d2c0c5e1af8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Paris_LiquorBottle_01_Caps_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Paris_LiquorBottle_01_Caps_Normal.png",
+          "bytes": 1221568,
+          "sha256": "4f2db1ad16ca53f345e2a1262ee68b682f8a49b4a198765b541b5e7efe2d985c"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Paris_StreetSign_01_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Paris_StreetSign_01_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "ac95efbedd0ccd26cf28ef54c3c124feb4a32539e54f7d6fe2d87a68a56ea6c8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Paris_StreetSign_01_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Paris_StreetSign_01_Normal.png",
+          "bytes": 2859081,
+          "sha256": "43679ac1ac1218bfa2835aea5dc6f885073ceb379ebfd59aca1202ffaeee54a5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Bakery_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Bakery_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "fcb006f076ed8cae4e557275811f49ffa147ed44337495d0b61e5ed427ece55f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Book_Store_Emissive_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Book_Store_Emissive_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "160aeb81d150a2c16f0319c756ff8c08481ce2300fad8f2d8186cd5f0507b1d8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Book_Store_Emissive_Emissive.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Book_Store_Emissive_Emissive.dds",
+          "bytes": 2796344,
+          "sha256": "160aeb81d150a2c16f0319c756ff8c08481ce2300fad8f2d8186cd5f0507b1d8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Pharmacy_Emissive_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Pharmacy_Emissive_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "1d4be8ffa461c968b575df11d93bb2ca152ab9747474dcfcdb014ebefb6c732b"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Pharmacy_Emissive_Emissive.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Pharmacy_Emissive_Emissive.dds",
+          "bytes": 2796344,
+          "sha256": "0a4784027c206c34bce33279051fb552d3e50b7417c5040e3fe65893f524bf5e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Shopsign_Ties_Shop_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Shopsign_Ties_Shop_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "4fad890c10ad97fa0073350f8f69c66a97bba15f188c58d6dea5fbc9124f2632"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Trashcan_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Trashcan_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "923e7802f6b90afd6751398d02433d7a0bd3b8d4a6619b5ae528b6334d4328c2"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Trashcan_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Trashcan_Normal.png",
+          "bytes": 1987776,
+          "sha256": "e840aed072b1ae1bceab2f71b280dc4299a6d820f954add997114a0441ee84ff"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Vespa_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Vespa_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "b611a2afbab2825e5fb7f8c2554333247aecff8e2d1b5acfaa3117dd3a133265"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Vespa_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Vespa_Normal.png",
+          "bytes": 3522846,
+          "sha256": "03caaeb2617a677e316ee570991694b91a77c2550e583c9ac5ebad97fc120858"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Vespa_Odometer_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Vespa_Odometer_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "7919b0063a3e944144bf818d8c26c2eda93dfdc805e85c78a274e948ef6f1132"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Miscellaneous/Vespa_Specular.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Miscellaneous/Vespa_Specular.dds",
+          "bytes": 2796344,
+          "sha256": "707d492b7247bcde022a3016ddede72b8b7a520141aef191b42981484aeaadf0"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Bux_Hedges46_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Bux_Hedges46_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "c18fe165eb4b1b1afe07a7db0c7b6795907a3f2930e90b0b265f171050e0f4ca"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Bux_Hedges46_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Bux_Hedges46_Normal.png",
+          "bytes": 7554243,
+          "sha256": "aed4055de60f3caf0ee5edaf189b21fc64e457869cc77a52910503e7ccd8ff95"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Flowers_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Flowers_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "7141dac55a901f4cdf5ebccac8a8e7bf1e4fab02525653951f7974c074debe7f"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Flowers_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Flowers_Normal.png",
+          "bytes": 3070299,
+          "sha256": "f88274a8363e19dfe67164f03720af45399aa11d64aa514b9bd3a0dd928bf3e2"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Ivy_branches_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Ivy_branches_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "acd0885cba3f06c24c94387d5976c57cc5456d1545f6422d97dae4e32c77efc4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Ivy_branches_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Ivy_branches_Normal.png",
+          "bytes": 5165970,
+          "sha256": "7537adfab3e2884173f4cfae7a7c4095345f51233fc44370f72784caa83b35a3"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Ivy_leaf_a_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Ivy_leaf_a_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "7aa9da8a0157168553d49c225ce0f990073cd7cb614fc715a05a2789ac32fb56"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Ivy_leaf_a_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Ivy_leaf_a_Normal.png",
+          "bytes": 2276140,
+          "sha256": "04fc5fe612cfe394c4641ac764fbd29e87d9f4c6023e387e73ac0d1cf77dd10e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Leaves_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Leaves_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "220e88463938a2f5e2d0c8ac0492410c56a43e627bb959e5cd76fe0eca018eac"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Linde_Tree_Large_Green_Leaves_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Linde_Tree_Large_Green_Leaves_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "b8c02d24abc1da1dd321458e5442e7ead1eb55f2a21a16ef41b57c94260f9405"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Linde_Tree_Large_Orange_Leaves_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Linde_Tree_Large_Orange_Leaves_BaseColor.dds",
+          "bytes": 5592560,
+          "sha256": "391db874c954b7e5e3c97db138b1fa8bea7e37920155b4f88c711e66c6c098e6"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Linde_Tree_Large_Trunk_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Linde_Tree_Large_Trunk_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "d1cc632017fea4896bf1541cff534fa53d6a139bee36338a1b82fb91e6f6f5ad"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Linde_Tree_Large_Trunk_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Linde_Tree_Large_Trunk_Normal.png",
+          "bytes": 8854321,
+          "sha256": "5ed72c8de555f0d6c177473be22e2ae4e2fdf22c4f13a5ecd39bfb12c0c204bf"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Paris_Flowers_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Paris_Flowers_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "e188a6eeb73babfb40fee8e6c7bad77f6b724941a54a326ef13140fa81daa92c"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Paris_Flowers_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Paris_Flowers_Normal.png",
+          "bytes": 2805746,
+          "sha256": "2d00e670434359c0b8a34d935e10dee3cd8f238c4f469021a4a68d62b8bb4070"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Foliage_Trunk_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Foliage_Trunk_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "67352616aba249b730e70beda508b20f877c38cf19ab16ffd47082bed5a19300"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Pavement_Ground_Wet_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Pavement_Ground_Wet_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "b134c53cc5a9c4d3ddf3c37ff115ac6addd6fff42fa032ddb49c1fcd1807aeb7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Nature/Pavement_Ground_Wet_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Nature/Pavement_Ground_Wet_Normal.png",
+          "bytes": 8479239,
+          "sha256": "460a5d3de8e639049a785782b53f934992ce80ae297cf255c001caa1ca324da5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Metal_01_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Metal_01_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "f285c5265fac25463c23cd020468e35e444ae307f3220a6b028acfb3f6ccbc02"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Metal_01_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Metal_01_Normal.png",
+          "bytes": 4281465,
+          "sha256": "4253205d130be5cd83b3461f52d0448d9bc30c30949cadbf469981a14adb5597"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Shingle_Green_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Shingle_Green_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "2800682d1d3b1ae25143dcfb004485522110b8ef2e56ea446daa388b0ba16460"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Shingle_Green_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Shingle_Green_Normal.png",
+          "bytes": 4062806,
+          "sha256": "937d0b5c5d92b205d16e95929f971d7ef6a7a6cfb231a99589e3546c060f2cf7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Shingle_Grey_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Shingle_Grey_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "18378c454d003de4e95b55526d28079ad6cb5537ae1fbf08a3de2e45b2c14bdc"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Roofing/MASTER_Roofing_Shingle_Grey_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Roofing/MASTER_Roofing_Shingle_Grey_Normal.png",
+          "bytes": 8345864,
+          "sha256": "049007e6adaf498ba0dd1b391e958abdf99c49cbc24660597f6a36318b97d1d8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Skies/san_giuseppe_bridge_4k.hdr",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Skies/san_giuseppe_bridge_4k.hdr",
+          "bytes": 23695717,
+          "sha256": "5eb82f21bced3f7e901774083cfee1a05fd2bcf22f56ff699f3171c1eec65a50"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Skies/SkyOnlyHDRI002_4K-HDR.exr",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Skies/SkyOnlyHDRI002_4K-HDR.exr",
+          "bytes": 9840461,
+          "sha256": "d3189d16e4a9cf49d40850ca21c886d57997b832ce3f61ecd1244fb9b6e12264"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Balcony_Concrete_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Balcony_Concrete_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "179edb3da3781868942df79e187d8224cd238011375498534a10597de1cae5a1"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Balcony_Concrete_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Balcony_Concrete_Normal.png",
+          "bytes": 2866293,
+          "sha256": "cbaa2e37063b54bbce84f42c6a410b78741764cc89eee57aa8e2ff303cf6aa0c"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Balcony_Ornaments_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Balcony_Ornaments_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "77720dd887212f10b451c7feb73a994a804fd43fdf7ef1298bbac9937d03ef93"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Balcony_Ornaments_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Balcony_Ornaments_Normal.png",
+          "bytes": 6097896,
+          "sha256": "38a65aad70bb2a6011e97077b93ca96c5e137ff19549f164e6abd634b38fa9aa"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Concrete2_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Concrete2_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6394eae366db6979de5c0190542d1b48d8aaf090ad3008164c3d599705c36a65"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Concrete2_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Concrete2_Normal.png",
+          "bytes": 3233016,
+          "sha256": "348e92a4378f038099a181171a3c2e9c36ca3b0d7ce880c69f31d72c1611b8f7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Large_Beige_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Large_Beige_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "880efd79fdbe8c091f3aeb403da68f95a3dd165ab2c5caa10e59fb3ef2b20b82"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Large_Beige_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Large_Beige_BLENDSHADER_Normal.png",
+          "bytes": 8820912,
+          "sha256": "d7ab07cf3a03cae91e4ed6e043f1b3773ada056a6702610d0f628cc08bef5dd0"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Large_White_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Large_White_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "2962e5cefc4622e1add61c1de440b131cf32908cb52ee0905a36969d35b85f2d"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Large_White_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Large_White_Normal.png",
+          "bytes": 2935734,
+          "sha256": "4434f10a187c85947abda19b3cac7467a4e478df5c668fce621c99f797e12da9"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Small_Red_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Small_Red_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "3bd53e224c10215e0bd424b2b960a9ef486cdee3b2892773a44a34d3f59cac08"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Small_Red_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Small_Red_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6105c6511cb09f300b05b1e499095c85a65b95524060632524b0b99c89742738"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Small_Red_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Small_Red_BLENDSHADER_Normal.png",
+          "bytes": 7111799,
+          "sha256": "3eedefc075aa606551c87bcf374f49d1a6ac8eed3d9a2ce5ad8846c4aed219be"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Brick_Small_Red_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Brick_Small_Red_Normal.png",
+          "bytes": 7227077,
+          "sha256": "a2e922e6855334183f74f0e6947261b0a8eddd4dd4b712e5206e7d1d4eae03d0"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete1_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete1_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6528ef375405e1b1f48852a7afc8a683fd1a49027887a55d820e70e8170fddea"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete1_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete1_Normal.png",
+          "bytes": 1643342,
+          "sha256": "30c51766db1ca659441ef9be8c865b956fe12d368d1618728cfa9987aef3323e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "e25548c6f1af25237cfecc14cb63b8ecd8887578b03efe0d8fb901f41bcec2d1"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Grooved_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Grooved_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "cb02b5a2ac35fa8456a47f5170ddb29eef06cbc944f2c27c9d7c8e4b30ff9eb1"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Grooved_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Grooved_Normal.png",
+          "bytes": 7225134,
+          "sha256": "e587d6dfae525debcd33c1978994a702701bc2e63bcddeab72907991f10bd6c3"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Normal.png",
+          "bytes": 6936118,
+          "sha256": "7ac0d3702a4270e5ab28d27b7f666882287a665dc284e1d8df3dcab0c7d84b32"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Plaster1_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Plaster1_BLENDSHADER_Normal.png",
+          "bytes": 6936118,
+          "sha256": "7ac0d3702a4270e5ab28d27b7f666882287a665dc284e1d8df3dcab0c7d84b32"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Plaster_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Plaster_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "86b9a40f862ae672bdd8749b567a2b54aa4a17a1a8789fb511c5e95e248efae4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Plaster_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Plaster_Normal.png",
+          "bytes": 5266327,
+          "sha256": "ede70a196f3d68e21844ab16040af9595422d274a4cf2303ba7c65a43e1009ca"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Smooth_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Smooth_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "6394eae366db6979de5c0190542d1b48d8aaf090ad3008164c3d599705c36a65"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Smooth_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Smooth_BLENDSHADER_Normal.png",
+          "bytes": 3233016,
+          "sha256": "348e92a4378f038099a181171a3c2e9c36ca3b0d7ce880c69f31d72c1611b8f7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_White_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_White_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "7261d60a5bc01b68c7c467c022493c75f6f29dad29987f57630e50df322c7839"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_White_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_White_Normal.png",
+          "bytes": 6936118,
+          "sha256": "7ac0d3702a4270e5ab28d27b7f666882287a665dc284e1d8df3dcab0c7d84b32"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Yellow_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Yellow_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "f9653100409d76cdaafd0d0f3754b42cb2519fdb080a1898dd0d29a7ebb88859"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Concrete_Yellow_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Concrete_Yellow_Normal.png",
+          "bytes": 6936118,
+          "sha256": "7ac0d3702a4270e5ab28d27b7f666882287a665dc284e1d8df3dcab0c7d84b32"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Details_Dark_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Details_Dark_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "d1c82e3a07d252975a92cdc2ae2bd869368f0b0e1c7ecb3cd297d2dd4d422fab"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Details_Dark_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Details_Dark_Normal.png",
+          "bytes": 4480208,
+          "sha256": "c71fc3667638e064c0af819251f97518fa29b86687cccff9e077472ce409da49"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/MASTER_Trim_Cornice_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/MASTER_Trim_Cornice_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "b269d2ef0e60fce9d2f414ba667598f77168b5e8ea0414a5e973e200e1035f44"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Plantpots_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Plantpots_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "18f289ca5e8e4dc111a6f5d8711f3cb891305cad556ce3d3a84945edd0d7560d"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Plantpots_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Plantpots_Normal.png",
+          "bytes": 5378101,
+          "sha256": "00711670ac57a1329884cc21e63c00feb2cb9f9006c9be0a74d9a0f6b312cea9"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Plaster_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Plaster_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "a2bd0599a1748f5caf623764fd26cc7afbdec57b0a619f739cd8c0bf8efb90a8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Stone/Plaster_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Stone/Plaster_Normal.png",
+          "bytes": 9292325,
+          "sha256": "3f8a75d2fbab1226c96cca75b14f0aafc46e102e60233a68852115da6b4b8f6e"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Balcony_Green_Wood_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Balcony_Green_Wood_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "1b0f87d8ac0e5e3f1b573447285ba1fa3dc022228b93ea0433d72f06891122c1"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Balcony_Trims_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Balcony_Trims_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "8d42cc67f9acb506fd76124c61fcba6a959e9461f57a6a335bcc03b4973f44ad"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Balcony_Trims_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Balcony_Trims_Normal.png",
+          "bytes": 4927094,
+          "sha256": "156698e8e0ce2395788abb1e6b8fe55c045b6b082dae667d350c8aec866cb0c8"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Bistro_Main_Door_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Bistro_Main_Door_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "9867510c22c0adaef3c84cf371369f3ba697271ec35f372c2012d007fa61e64c"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Bistro_Main_Door_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Bistro_Main_Door_Normal.png",
+          "bytes": 3183663,
+          "sha256": "c643e83d9ae1948750d1d4a5930487565ce8cbc70b7268bb4344ee6f400ce3e2"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Bistro_Main_Door_Specular.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Bistro_Main_Door_Specular.dds",
+          "bytes": 2796344,
+          "sha256": "98e846b14204960488ed06dfd7b06c30c8d0dde05df4e69f5b1dd96e801cd4ec"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Doors_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Doors_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "9c47e159df0af111e71dd248cc9d7d96d64f7bddc3b326d054d1ef7285e9b5b4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Doors_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Doors_Normal.png",
+          "bytes": 1783357,
+          "sha256": "0c785ef9f53a7117bfc5983fbced4cc003eee330b8f87c0dbe28f34a29aeb4ce"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Brown_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Brown_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "b0ca7303b7e82911844ad65f140c7fa70640357ec13619220713745faec36776"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_Cyan_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_Cyan_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "f87f6f4f7f9b585a540dadbc45bbed560d7c9299eefeed929eda0ff7de5af9c7"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_Cyan_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_Cyan_Normal.png",
+          "bytes": 1945681,
+          "sha256": "e219d4798e30d1e433eb0b3b84c37c63dc725683c280f98f1c02b9f7e39c095a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_Green_BLENDSHADER_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_Green_BLENDSHADER_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "e1c21f1075df65a6a295cb293881d1da3d4dad9cbc4f6bd23a17c6c39b38decd"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_Green_BLENDSHADER_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_Green_BLENDSHADER_Normal.png",
+          "bytes": 1945681,
+          "sha256": "e219d4798e30d1e433eb0b3b84c37c63dc725683c280f98f1c02b9f7e39c095a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_White_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_White_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "08243aeb8298fca283d14f85de122d2fc8d6b62597956144b951b690b93320a5"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/MASTER_Wood_Painted_White_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/MASTER_Wood_Painted_White_Normal.png",
+          "bytes": 1945681,
+          "sha256": "e219d4798e30d1e433eb0b3b84c37c63dc725683c280f98f1c02b9f7e39c095a"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Paris_Chair_01_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Paris_Chair_01_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "071397327e2052956c1a2f120788d14a4b33f372ec3a79f320f0ccfb058bea37"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Paris_Chair_01_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Paris_Chair_01_Normal.png",
+          "bytes": 3181504,
+          "sha256": "7d806586a840290f2f71412b351ef2b5726c206c998d0c5662499ab75cb2a093"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Paris_Table_Terrace_BaseColor.dds",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Paris_Table_Terrace_BaseColor.dds",
+          "bytes": 2796344,
+          "sha256": "2d69ce8a3f2016c0718a31381e1caab0cf7a04a9331f10f05ea7f2aa32673bf4"
+        },
+        {
+          "path": "realistic/projects/bistro/Textures/Wood/Paris_Table_Terrace_Normal.png",
+          "member": "Bistro-Demo-Tweaked-main/Textures/Wood/Paris_Table_Terrace_Normal.png",
+          "bytes": 4010423,
+          "sha256": "b3ebab488069dcffcb08732b5ed9a77476cd9b2970a1e8e336962709bcda3646"
+        }
+      ]
+    },
+    {
+      "id": "sponza",
+      "url": "https://codeload.github.com/Calinou/godot-sponza/zip/refs/heads/master",
+      "archive": "realistic/downloads/sponza.zip",
+      "archive_sha256": "18855f901a451f53f2d6875066e8c8a702d9bed9d578e2aafbd6a650688221ad",
+      "assets": [
+        {
+          "path": "realistic/projects/sponza/scenes/sponza.exr",
+          "member": "godot-sponza-master/scenes/sponza.exr",
+          "bytes": 15235726,
+          "sha256": "7db9296e817758a565123d0f70ce8a88d9178abad14f80799fe823c870a410ab"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/Sponza.dae",
+          "member": "godot-sponza-master/sponza/Sponza.dae",
+          "bytes": 33034608,
+          "sha256": "d844c96f6731d2abe5227523e53b2cfb20dfb4ff47c6827c371b5ad106efe180"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/background.tga",
+          "member": "godot-sponza-master/sponza/textures/background.tga",
+          "bytes": 3145772,
+          "sha256": "8e62f5e6c69430bdefbd1e5f61a0f27aa95cd9e564aeaf2c64d73df09f8f0e83"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/background_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/background_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "41f9bdbfc6e527a09452fcd1e199a0b47264935ccbbd72c0f3f5d9cd936d7fff"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/chain_texture.tga",
+          "member": "godot-sponza-master/sponza/textures/chain_texture.tga",
+          "bytes": 1048620,
+          "sha256": "e04fd407ae53adcc7d63396b6eae30e9e54f1b5ab002a5b517c06193971a1f56"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/lion.tga",
+          "member": "godot-sponza-master/sponza/textures/lion.tga",
+          "bytes": 3145772,
+          "sha256": "06229b562eac660362bf540b9c202e43952c289fa7d4e2db0dfe259e0832d002"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/lion2_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/lion2_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "54e0795a2fc98e970ef2063e3f3e0e268b9b2c5810ccbd961a8ddff829b1e6d4"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/lion_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/lion_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "89ead9196131b1df9fc229be1c65e4e295d59fbbea57fa76de47452639af4083"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/spnza_bricks_a_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/spnza_bricks_a_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "5d23ee674e04279cdc6a3eeea3005fb69c5d4c31eb1406a68d584b2538ffca06"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/spnza_bricks_a_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/spnza_bricks_a_diff.tga",
+          "bytes": 3145772,
+          "sha256": "3ecb29bfc09df89efd8acd5243067e2421c08843066d75f08be340f365f8dc7f"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/spnza_bricks_a_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/spnza_bricks_a_spec.tga",
+          "bytes": 1048620,
+          "sha256": "9bb42c00877abd3f6f6bc30dd0bf082d883668588453d7ad7aa58be51e26c5bb"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_arch_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_arch_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "c05b53c90bda4d6b570b8796424434a7540469c5bd99a7f70b3829f14268bda7"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_arch_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_arch_diff.tga",
+          "bytes": 3145772,
+          "sha256": "878105dd0acdd0fdfadae0b394e5d245692c25ed62ebcd4a129768901ab09546"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_arch_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_arch_spec.tga",
+          "bytes": 3145772,
+          "sha256": "c6f4cc1d840a1d3ce46b1172abf2d02c1bcb76d37ce1c3283078f024de4a1b18"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_ceiling_a_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_ceiling_a_diff.tga",
+          "bytes": 3145772,
+          "sha256": "c1b4105e8c4d8f4f90f380a77cd3235a764b8a8d8017e6aa4c94d7acb65cf4dd"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_ceiling_a_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_ceiling_a_spec.tga",
+          "bytes": 3145772,
+          "sha256": "2a9b4cc0755c211f5ea026250ad0bd77c5995815453e9f3d8441221e2589748c"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_a_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_a_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "ed7fbcf8429e8f31817df015d6c5f2aa7fe327c6d3dd83514228f0839428a0aa"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_a_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_a_diff.tga",
+          "bytes": 3145772,
+          "sha256": "bed2aa34a8600c0b33d40dbf68e497acb5cc85943b914f2cb32d33594910db86"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_a_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_a_spec.tga",
+          "bytes": 3145772,
+          "sha256": "747c38068aadf3431e407aadc3e968189fd3c9952e067012dbfc58dcde2112de"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_b_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_b_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "12d9b5b799bdcbf472731b2011a999d6be6ebd1ade9b80ed8ed4b5eb2c25735b"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_b_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_b_diff.tga",
+          "bytes": 3145772,
+          "sha256": "96754107a435960e6402c93d186a4db1da00f06d8f5b63b5049f7b6693ac0ba3"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_b_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_b_spec.tga",
+          "bytes": 3145772,
+          "sha256": "ce290443506b5245e8086386135044ab611dfb7796f12a3588b42c216265dbba"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_c_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_c_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "97d46197ac63af3c5570ba8162a0a1c84421a46a63781a7f873e6e4b59cba397"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_c_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_c_diff.tga",
+          "bytes": 3145772,
+          "sha256": "25057287f03ec7af9e03deccbb578a7c6fce7ec861625b1006a1a5279e64e4be"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_column_c_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_column_c_spec.tga",
+          "bytes": 3145772,
+          "sha256": "748603d38fba29f9e66be94f07b2d68dc3fff52f342eadb64c497397318bf320"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_curtain_blue_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_curtain_blue_diff.tga",
+          "bytes": 12582956,
+          "sha256": "a8ec042a8c3d83a9da8170fdfc1f9d6566a474859c6c88f289a6daec30524112"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_curtain_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_curtain_diff.tga",
+          "bytes": 12582956,
+          "sha256": "bd979e212ec84ae8df8b3e3b77dfeb4d12c07a469ee19b3b628cbce502524ede"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_curtain_green_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_curtain_green_diff.tga",
+          "bytes": 12582956,
+          "sha256": "e9ef35f06ac675bf0f85e8fcf516b22c90e5218d032c4a7947ecfeec4b6becdb"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_details_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_details_diff.tga",
+          "bytes": 3145772,
+          "sha256": "3ed79e9c6360cd72c7a5f6048fe84983b6aee0c0966e0a63a3765905bc46fda2"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_details_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_details_spec.tga",
+          "bytes": 3145772,
+          "sha256": "0e9c0af47af3270af17a102d3acef90d66e0300232ee7ca39826b770e40f3d3b"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_fabric_blue_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_fabric_blue_diff.tga",
+          "bytes": 3145772,
+          "sha256": "30c22a697dd2bb0ce25f18dc3ff82a0cf7b36ac2458914efa746474924fbe370"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_fabric_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_fabric_diff.tga",
+          "bytes": 3145772,
+          "sha256": "af9be9d8f09f2399fc25b42eb65877f4329439cbf88643e10175997de278a831"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_fabric_green_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_fabric_green_diff.tga",
+          "bytes": 3145772,
+          "sha256": "b3664389c001f79809a9da36dbd64162564987d88f5744ae05b91c056b8a0eb7"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_fabric_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_fabric_spec.tga",
+          "bytes": 3145772,
+          "sha256": "b15ba1b2cf35748e8cb1df9f92055775a721f368f8ba0bf76867081ee15b8ee0"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_flagpole_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_flagpole_diff.tga",
+          "bytes": 3145772,
+          "sha256": "0852fd9b176d4ca5e8afe20901de44acd9180552648d81406b93e217f37562bb"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_flagpole_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_flagpole_spec.tga",
+          "bytes": 3145772,
+          "sha256": "439144751118ec3405facda7e26e02a089529a45e56b1e82a780e88db59be25d"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_floor_a_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_floor_a_diff.tga",
+          "bytes": 3145772,
+          "sha256": "08a953cd9083577f284911e5450cc81ac3abcc25fd2ca7485e28f6ec65e83797"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_floor_a_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_floor_a_spec.tga",
+          "bytes": 3145772,
+          "sha256": "7770d42a7bdd443535c5fe603181a12ad8fa10e1491a2367735b2802a6af5e4c"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_roof_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_roof_diff.tga",
+          "bytes": 3145772,
+          "sha256": "d42bd726aa8d4a04272eace08beea677c45bb010b08923c341564e1dc96eb521"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/sponza_thorn_diff.tga",
+          "member": "godot-sponza-master/sponza/textures/sponza_thorn_diff.tga",
+          "bytes": 1048620,
+          "sha256": "8d6adff5e58ec63a0f2b170f7cf042965be41363b923decdf1d82ea96bd06022"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "9d670db318be1ea35d7cf7cdc77fd20b7cba0e17a9122294151d877d4132743b"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_dif.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_dif.tga",
+          "bytes": 3145772,
+          "sha256": "d8c8a66cf47379ab6bf14373c17302116fbc81d52fcf479e2e911b90086eaaab"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_hanging.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_hanging.tga",
+          "bytes": 3145772,
+          "sha256": "dbd7094291c824f9907652f463878abd14090da424ae7b2b99bb896275528a8c"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_plant.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_plant.tga",
+          "bytes": 4194348,
+          "sha256": "a3defcc7bfb5cc2d9a13ccfe55c4f9b4774b7dc9046d6872cd2557e6e269846c"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_plant_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_plant_spec.tga",
+          "bytes": 3145772,
+          "sha256": "ccc42d7bdca52633d45de9798597e300d61138e7927991e5825c853917e555e0"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_round.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_round.tga",
+          "bytes": 3145772,
+          "sha256": "becf2130c4ec5fc071b743626b064ae7346c3c9654e8ca9233c332d26fb2d32a"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_round_ddn.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_round_ddn.tga",
+          "bytes": 3145772,
+          "sha256": "0534ce1000a5c21e81c8af2d145e3ff1dba08cef7a4e34063819979a52939574"
+        },
+        {
+          "path": "realistic/projects/sponza/sponza/textures/vase_round_spec.tga",
+          "member": "godot-sponza-master/sponza/textures/vase_round_spec.tga",
+          "bytes": 3145772,
+          "sha256": "6c21ccdaa0e954e3fd87235dd1555306439575efd8b796e5aeb61e7e76899d00"
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "url": "https://codeload.github.com/Rytelier/Godot-4-forest-benchmark/zip/refs/heads/main",
+      "archive": "realistic/downloads/forest.zip",
+      "archive_sha256": "432944e493165fafd051c281c712fde12b7bdbf8650681cf6e3222fde2b4254f",
+      "assets": [
+        {
+          "path": "realistic/projects/forest/Meshes/Main Terrain.glb",
+          "member": "Godot-4-forest-benchmark-main/Meshes/Main Terrain.glb",
+          "bytes": 15190720,
+          "sha256": "c45cb16c72ed6bd439861deb466f0f0bdcefefb10212b0a31c2d5fd24aabc2b1"
+        },
+        {
+          "path": "realistic/projects/forest/Meshes/Trees/Tree big 1.glb",
+          "member": "Godot-4-forest-benchmark-main/Meshes/Trees/Tree big 1.glb",
+          "bytes": 1277556,
+          "sha256": "ed4d44fb59491e227e2363b14906df000bfa3fc4d965bccf0c23b2df30254ac6"
+        },
+        {
+          "path": "realistic/projects/forest/Screenshots/1.jpg",
+          "member": "Godot-4-forest-benchmark-main/Screenshots/1.jpg",
+          "bytes": 1750448,
+          "sha256": "b08284630d84c4b84511af938c18e3a6311be3a965c297fce08fe2d2353155ad"
+        },
+        {
+          "path": "realistic/projects/forest/Shaders/Sky/perlworlnoise.tga",
+          "member": "Godot-4-forest-benchmark-main/Shaders/Sky/perlworlnoise.tga",
+          "bytes": 8405011,
+          "sha256": "966040f5deee085a189c513c59c660ca0318a7247ed41c25a3e7950ca9c14b21"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/fern_02_diff_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/fern_02_diff_4k.png",
+          "bytes": 9034171,
+          "sha256": "4042dc835bdbc589ba3276d8a8ae0fb85f9fe1b64a028a7ae85542198e4e401f"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/fern_02_nor_gl_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/fern_02_nor_gl_4k.png",
+          "bytes": 12129603,
+          "sha256": "9ed46b7a0b2e3f9be4f9ada9f6907adc58ac6571e6ed0afd572e5fa38b1ff515"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/fern_02_rough_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/fern_02_rough_4k.png",
+          "bytes": 3298847,
+          "sha256": "717ac1e709ac4f859c4e2b680a33533f055a5095263857376a9ff877311275ac"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/Grass_BaseColor.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/Grass_BaseColor.png",
+          "bytes": 5488818,
+          "sha256": "b2d3dd921cf8ee437b122b042f8e3bd177f5d110840d699b5ba5f56d75c25f49"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/Grass_Dry_BaseColor.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/Grass_Dry_BaseColor.png",
+          "bytes": 4070326,
+          "sha256": "54f8ffe8b55e0a2d3fbdac83eea8a23521ef55a67f8839df5134a658fe4a1788"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/Grass_Normal.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/Grass_Normal.png",
+          "bytes": 3028739,
+          "sha256": "35837d87b717f386eb9cfec9ae26ce21ba40ba3d7f314751afc693772e1f8e13"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Plants/Grass_ORM.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Plants/Grass_ORM.png",
+          "bytes": 4102413,
+          "sha256": "a758ae10681f2542aa086a6640cfdf6b81b08d915d34203d7bddaa0e1792ba57"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Rocks/rock_moss_set_01_diff_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Rocks/rock_moss_set_01_diff_4k.jpg",
+          "bytes": 2530683,
+          "sha256": "4e817cf019ed58454773beeea2e45066860267fffc9fc32b46c9dd883c56a730"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg",
+          "bytes": 3168973,
+          "sha256": "0abdb7876a3215e4428656e020ca3955c698e3fc932c64976ddb6e12deba066b"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Rocks/rock_moss_set_02_diff_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Rocks/rock_moss_set_02_diff_4k.jpg",
+          "bytes": 2893305,
+          "sha256": "c605c4b3d2cdf92eb4a4b65d825b7ec27d6e6e138a77849de50948bc485710be"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg",
+          "bytes": 3597653,
+          "sha256": "db381487b6b52dce6bd73235dd1d943d0da1b75791714b1a3686bf08eaedf4b1"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Rocks/rock_moss_set_02_rough_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Rocks/rock_moss_set_02_rough_4k.jpg",
+          "bytes": 1663773,
+          "sha256": "3abc61dd81678c44dd277d7fd0415629ce1a83ee429a44c7e7530ea8a86ef2f3"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain1_color.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain1_color.jpg",
+          "bytes": 97638287,
+          "sha256": "f1891d6ed494ad6eb684bda54f05bbf08cce29392f48235796f76c4bb5d5e870"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain1_normal.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain1_normal.jpg",
+          "bytes": 47288401,
+          "sha256": "32aa52e47ce0348f1a877b61ba0cdddd6c0d6fa9fc4e975420dc9370ea6a9b0c"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain1_ormh.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain1_ormh.png",
+          "bytes": 69479806,
+          "sha256": "ca985e1440aef883229a2cba8b2eee3ae89a6980be6b60a5be37cb12e5764855"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain2_color.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain2_color.jpg",
+          "bytes": 59238726,
+          "sha256": "cc4a795da51c181f5ca953ecd45eedcb7256ffabd9347493ff8f3499a475b904"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain2_normal.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain2_normal.jpg",
+          "bytes": 71527883,
+          "sha256": "fbaaae681a40cafa32b6a891aba1cd9d66d5796078184fb61d2a6082456bd359"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Terrain/terrain2_ormh.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Terrain/terrain2_ormh.png",
+          "bytes": 42064285,
+          "sha256": "4e9b24aa2ebaaeab03b0d1cbba5146b650f4399c86c0eb040a0b7440fe0171d8"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_01_arm_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_01_arm_4k.jpg",
+          "bytes": 3385623,
+          "sha256": "dfaf929a6799b423cd879be927cf4358b9db2dcac9bff988591db4fac604d29f"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_01_diff_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_01_diff_4k.jpg",
+          "bytes": 8193578,
+          "sha256": "545d3c48d3ad237d9fbb7eeaf7e5251cbf9520840e37e28e4e325d833c34bc0b"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_01_nor_gl_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_01_nor_gl_4k.png",
+          "bytes": 34864313,
+          "sha256": "d2d3ac9d3c0004baa56215b5e389e749a6a646115a1e30f69a3bf26474c31427"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_02_arm_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_02_arm_4k.jpg",
+          "bytes": 3075636,
+          "sha256": "92d71c187b1f87dd034d130867c5ab08973afafafeb1be513bf675357edce3ff"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_02_diff_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_02_diff_4k.jpg",
+          "bytes": 7259413,
+          "sha256": "6c8a25592af62af9630091d5153f5dbabe3a8e8863dc03724a3027a7b3036c39"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/bark_brown_02_nor_gl_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/bark_brown_02_nor_gl_4k.png",
+          "bytes": 34689257,
+          "sha256": "5eae378ba255a7d676b280223e8440b2d5abc1b7b41680e1f16978f546c5df61"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/dry_branches_medium_01_arm_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/dry_branches_medium_01_arm_4k.jpg",
+          "bytes": 10553391,
+          "sha256": "6d9a9621cecb84e5e24968761d417cbd49c2a62415cb331648a1457859d6022f"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/dry_branches_medium_01_diff_4k.jpg",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/dry_branches_medium_01_diff_4k.jpg",
+          "bytes": 10185598,
+          "sha256": "41ae8a25a683a853af95fd64e737040899b1172bf016627b88ea905b9ec9d593"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/dry_branches_medium_01_nor_gl_4k.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/dry_branches_medium_01_nor_gl_4k.png",
+          "bytes": 72440639,
+          "sha256": "cd30a7944af475292cd05ceb5032b165e7c7e1a69810f9d2f4edfbfdaadeaf34"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_BaseColor.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_BaseColor.png",
+          "bytes": 3962245,
+          "sha256": "7b1dcfcb86ed4fa8970f10450f4911f362c2d1413ea51c5a946dfcad0c988a8d"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_LOD_BaseColor.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_LOD_BaseColor.png",
+          "bytes": 1600332,
+          "sha256": "4ddb22bcd73488cc484003fb19f5ce55aaf6519fe19bcef3e0df3b6a12d5f2a5"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_LOD_Normal.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_LOD_Normal.png",
+          "bytes": 1578583,
+          "sha256": "585d8e8ff4940d04becce95e907f52fe79663b88fc40b7b72b39bb465b1dee03"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_LOD_orm.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_LOD_orm.png",
+          "bytes": 1227794,
+          "sha256": "31a4ef80fb278f8c5336cf2888df9ef1ac3a29d094f5695fda53842e9ac024a3"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_Normal.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_Normal.png",
+          "bytes": 2304194,
+          "sha256": "0746732803a36df1bef73692492c06444331df976179793f1b7381b7995296af"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_Branch_orm.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_Branch_orm.png",
+          "bytes": 3506698,
+          "sha256": "e7279871870c85fa9e7b45ece59b98e5c27df71c48f22744c21ef168fc22fff7"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_LOD_BaseColor.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_LOD_BaseColor.png",
+          "bytes": 5159388,
+          "sha256": "bc374abed48d2a3e8f19afb145fe41a9639fab723bb32609d29b92c043b55a83"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_LOD_Normal.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_LOD_Normal.png",
+          "bytes": 5353395,
+          "sha256": "a164f831fe156a15ab63d57997d8ba9fcfb20e4f4056bcc6762a0c19de196e8d"
+        },
+        {
+          "path": "realistic/projects/forest/Textures/Trees/Tree_LOD_orm.png",
+          "member": "Godot-4-forest-benchmark-main/Textures/Trees/Tree_LOD_orm.png",
+          "bytes": 4994036,
+          "sha256": "5299604a05ab90dac332f620cb896fcbd877d6ea9056038ccb819b62f43ac4fa"
+        }
+      ]
+    },
+    {
+      "id": "tps",
+      "url": "https://codeload.github.com/godotengine/tps-demo/zip/refs/heads/master",
+      "archive": "realistic/downloads/tps.zip",
+      "archive_sha256": "e3a738e1483d3246a3933635a0e7eb60207cfc858a818032e7ae6afcd586a7bb",
+      "assets": [
+        {
+          "path": "realistic/projects/tps/door/model/door.blend",
+          "member": "tps-demo-master/door/model/door.blend",
+          "bytes": 2210103,
+          "sha256": "c2e48876fc7c51d5ebb9bb2a20d31e1c1b06befd9536eb0cb6e93a62dbc64603"
+        },
+        {
+          "path": "realistic/projects/tps/door/model/door.dae",
+          "member": "tps-demo-master/door/model/door.dae",
+          "bytes": 6416448,
+          "sha256": "b796bcc46c31fb6a7c4c237308ad160b338a3a89288c231965c3916599513086"
+        },
+        {
+          "path": "realistic/projects/tps/door/textures/door_albedo.png",
+          "member": "tps-demo-master/door/textures/door_albedo.png",
+          "bytes": 2353473,
+          "sha256": "ccc3522773a36b1227a8b7ddee2474e553a01d6ca3c7beb365419fdbca051687"
+        },
+        {
+          "path": "realistic/projects/tps/door/textures/door_normal.png",
+          "member": "tps-demo-master/door/textures/door_normal.png",
+          "bytes": 2758206,
+          "sha256": "b79912758f178b939153caad58ea9a0cb13da9cbb418d21e284355cfef9be09d"
+        },
+        {
+          "path": "realistic/projects/tps/door/textures/door_orm.png",
+          "member": "tps-demo-master/door/textures/door_orm.png",
+          "bytes": 3112019,
+          "sha256": "803d8ec5b0d8db84ec87dc16fe1f3d0738de9e1bf100ca22d931e4f3b81eccde"
+        },
+        {
+          "path": "realistic/projects/tps/enemies/red_robot/model/red_robot.blend",
+          "member": "tps-demo-master/enemies/red_robot/model/red_robot.blend",
+          "bytes": 1111222,
+          "sha256": "e0e477af118724d71826dbbec1735ffedbeff27ea24c329f1ed2aebb65c00a74"
+        },
+        {
+          "path": "realistic/projects/tps/enemies/red_robot/model/red_robot.glb",
+          "member": "tps-demo-master/enemies/red_robot/model/red_robot.glb",
+          "bytes": 5805848,
+          "sha256": "f8e52f99e51f11eef0873b09c82c45db663bb9a36c4747a124230b6fbf8e2f0d"
+        },
+        {
+          "path": "realistic/projects/tps/enemies/red_robot/textures/red_robot_albedo.png",
+          "member": "tps-demo-master/enemies/red_robot/textures/red_robot_albedo.png",
+          "bytes": 4092092,
+          "sha256": "3e96b620bacc404d2484ff2c0e045afb1dc985e52d441965546ad5aea28da9f4"
+        },
+        {
+          "path": "realistic/projects/tps/enemies/red_robot/textures/red_robot_normal.png",
+          "member": "tps-demo-master/enemies/red_robot/textures/red_robot_normal.png",
+          "bytes": 3942412,
+          "sha256": "9a48f9f49aaf6fc8c78636c8e59b9ced71cd82e72ec87925c2c1897ba9bd0887"
+        },
+        {
+          "path": "realistic/projects/tps/enemies/red_robot/textures/red_robot_orm.png",
+          "member": "tps-demo-master/enemies/red_robot/textures/red_robot_orm.png",
+          "bytes": 5139588,
+          "sha256": "7d32c485c827b812aa81cd05d1e90e7913278adfac803454f62844981778df74"
+        },
+        {
+          "path": "realistic/projects/tps/level/forklift/flying_forklift.blend",
+          "member": "tps-demo-master/level/forklift/flying_forklift.blend",
+          "bytes": 1458296,
+          "sha256": "317e036adeb401ed097bb8933d4c35fe67cec10408b0a6fb9fb0ad92d5d0f493"
+        },
+        {
+          "path": "realistic/projects/tps/level/forklift/flying_forklift.glb",
+          "member": "tps-demo-master/level/forklift/flying_forklift.glb",
+          "bytes": 4583888,
+          "sha256": "981a25d3b53a27137d53b4a745bd9d610bd2a3ba1ea54d81878014e2b17d4cd3"
+        },
+        {
+          "path": "realistic/projects/tps/level/forklift/flying_forklift_albedo.png",
+          "member": "tps-demo-master/level/forklift/flying_forklift_albedo.png",
+          "bytes": 2673990,
+          "sha256": "aaa796b5a18ab6cf2f2ecd432b3f82467ee619b42ead94871e620e3576623d36"
+        },
+        {
+          "path": "realistic/projects/tps/level/forklift/flying_forklift_normal.png",
+          "member": "tps-demo-master/level/forklift/flying_forklift_normal.png",
+          "bytes": 1574008,
+          "sha256": "e101e668ba558020dd22df98dbba9df815c25444578e34467ac4fad09f02d646"
+        },
+        {
+          "path": "realistic/projects/tps/level/forklift/flying_forklift_orm.png",
+          "member": "tps-demo-master/level/forklift/flying_forklift_orm.png",
+          "bytes": 3789866,
+          "sha256": "aedd20298f22898a2a95edd3de311965ac0016d126e83292c3004a0d560db66d"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/giprobe_data.res",
+          "member": "tps-demo-master/level/geometry/giprobe_data.res",
+          "bytes": 40544349,
+          "sha256": "0d568934cb1cc8f8216dc6609f11f70950e428f4f0181c87a2e6d2648f0c287c"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/core.blend",
+          "member": "tps-demo-master/level/geometry/models/core.blend",
+          "bytes": 5139229,
+          "sha256": "ee5836922e6c46acf3f11215fd5b1b875ad522cb02d906a74988f02c3bd5f294"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/core.glb",
+          "member": "tps-demo-master/level/geometry/models/core.glb",
+          "bytes": 12067436,
+          "sha256": "91ce7ccb0443aed8af7ee9e8d961272deb679caf1d748cfb6212753b2d884ca0"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/props.blend",
+          "member": "tps-demo-master/level/geometry/models/props.blend",
+          "bytes": 9874066,
+          "sha256": "7139d4e3c24aedff7a9b0335a6ad98bac1f310fb2aff706ef4885ab84ff4e38b"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/props.glb",
+          "member": "tps-demo-master/level/geometry/models/props.glb",
+          "bytes": 22223384,
+          "sha256": "4c94cb094c0d84df3cc7d9201d3b59188760c837668afce0446b747c2f40693e"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/structure.blend",
+          "member": "tps-demo-master/level/geometry/models/structure.blend",
+          "bytes": 12224665,
+          "sha256": "f487c966074664b60442e75391fbad07834d558429a18180842e1a8bb11a1462"
+        },
+        {
+          "path": "realistic/projects/tps/level/geometry/models/structure.glb",
+          "member": "tps-demo-master/level/geometry/models/structure.glb",
+          "bytes": 29053360,
+          "sha256": "ad8d8a886668e3795cc4cb6cac837fc511521b0a1388acfaa7012ae6d410d4aa"
+        },
+        {
+          "path": "realistic/projects/tps/level/level.exr",
+          "member": "tps-demo-master/level/level.exr",
+          "bytes": 57240718,
+          "sha256": "5125e525a8aef44c5ef36115af89eed02a8ba07dda5c98744ae574646fc7e08e"
+        },
+        {
+          "path": "realistic/projects/tps/level/level.GPUParticlesCollisionSDF3D_data.exr",
+          "member": "tps-demo-master/level/level.GPUParticlesCollisionSDF3D_data.exr",
+          "bytes": 9276170,
+          "sha256": "4ec5b28cf5cbcbb6055c3fc20f04b9bd5dd439e27d23762ea164f61c39d2bf1c"
+        },
+        {
+          "path": "realistic/projects/tps/level/level.lmbake",
+          "member": "tps-demo-master/level/level.lmbake",
+          "bytes": 2281648,
+          "sha256": "1ddd1456f3d8ad9f86d86f487190a669dd08ef48dd434eb10f4e3961bf1040b3"
+        },
+        {
+          "path": "realistic/projects/tps/level/level_music.ogg",
+          "member": "tps-demo-master/level/level_music.ogg",
+          "bytes": 1176046,
+          "sha256": "0b94fbd7f9c338fe9ec940ca745f210e85bff6e3e5dd5596397e6fa8e58d957a"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/car/scificar_albedo.png",
+          "member": "tps-demo-master/level/textures/car/scificar_albedo.png",
+          "bytes": 2689295,
+          "sha256": "c8dc5ee7bc0f43b74f7f464d0166ac32ea4b61978b2e9b630e3cecbf399c8a7f"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/car/scificar_normal.png",
+          "member": "tps-demo-master/level/textures/car/scificar_normal.png",
+          "bytes": 1146269,
+          "sha256": "c6c735465d17014c492881980a8e47d1db45db5d0618d599255b791c4abe2931"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/car/scificar_orm.png",
+          "member": "tps-demo-master/level/textures/car/scificar_orm.png",
+          "bytes": 5027177,
+          "sha256": "5dd623f4bd1617fb21f554ef5df3aea5704baad12c055a96ae8fcb77c542d218"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/container1_orm.png",
+          "member": "tps-demo-master/level/textures/props/container1_orm.png",
+          "bytes": 1329784,
+          "sha256": "b28364ee9375ce6c16bdd9daa1568f4279e1a29e258c5b44cc226741566a42a5"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/container2_orm.png",
+          "member": "tps-demo-master/level/textures/props/container2_orm.png",
+          "bytes": 1275848,
+          "sha256": "8e57728a666f28db0752a3054bb19dc890c4db7c40b2e15a16280ee21c9046ae"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/container3_orm.png",
+          "member": "tps-demo-master/level/textures/props/container3_orm.png",
+          "bytes": 1108194,
+          "sha256": "f7e1e31ba4700296999b43d78f490f40b797c993e815ff8263d1008da43a9fb8"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_albedo.png",
+          "member": "tps-demo-master/level/textures/props/door_albedo.png",
+          "bytes": 1870362,
+          "sha256": "9a0c01eb298424fb5671c608e42c421f3a65cb2ba65174ed70f3624cccdd7217"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_normal.png",
+          "member": "tps-demo-master/level/textures/props/door_normal.png",
+          "bytes": 2437409,
+          "sha256": "e4cd8848128724aa682a138bf02304c96690767a20905f91e932e322e01d8431"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_orm.png",
+          "member": "tps-demo-master/level/textures/props/door_orm.png",
+          "bytes": 3082991,
+          "sha256": "6a28e1e7665d212e851a40f9aa55170a597683bd7a715b8968a2d4e12320fc66"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_reactor_albedo.png",
+          "member": "tps-demo-master/level/textures/props/door_reactor_albedo.png",
+          "bytes": 4181618,
+          "sha256": "948afe966059e3f4589c27c8813c7b4122d5693ed3bdba8819c609bf715d3383"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_reactor_normal.png",
+          "member": "tps-demo-master/level/textures/props/door_reactor_normal.png",
+          "bytes": 3604975,
+          "sha256": "a02fde689aee54f7c11bb8a2b010fad0ae1e4159ced5defc94ea72d4382bf73f"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/door_reactor_orm.png",
+          "member": "tps-demo-master/level/textures/props/door_reactor_orm.png",
+          "bytes": 4377224,
+          "sha256": "148eebf52251b74fc9715804da4e13982f591a6ce45843d49615ecf87e71defe"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/mid_cargo_box_albedo.png",
+          "member": "tps-demo-master/level/textures/props/mid_cargo_box_albedo.png",
+          "bytes": 2383427,
+          "sha256": "62dd09b0f01ecaa643b768e0e4bded5c6223a3398548fa9bc0481030409a0894"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/mid_cargo_box_normal.png",
+          "member": "tps-demo-master/level/textures/props/mid_cargo_box_normal.png",
+          "bytes": 2115625,
+          "sha256": "a692d09b905a9d55e4acc9382df130ef271576bb12e6ba7b13f94e323eeed5bb"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/props/mid_cargo_box_orm.png",
+          "member": "tps-demo-master/level/textures/props/mid_cargo_box_orm.png",
+          "bytes": 4203392,
+          "sha256": "0c1124b91cdb9f84e84bfc59629142454c96acba5dacd482c32db1718a0f1529"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/column_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/column_albedo.png",
+          "bytes": 3493812,
+          "sha256": "65a9c2d88859ae158e8dc37e30613a0f639aba2d7b57e007fb6c0462b504e658"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/column_orm.png",
+          "member": "tps-demo-master/level/textures/structure/column_orm.png",
+          "bytes": 9314516,
+          "sha256": "a8cdaf11e9783a1c6a8054cf5451e81ba45738881191644469bb651f04097b33"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/reactor_emitter_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/reactor_emitter_albedo.png",
+          "bytes": 1140465,
+          "sha256": "f6a85e25337d4ae1db0011d2c9c2e6ce677e8f824021096f44efd7c2017196dc"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/reactor_emitter_normal.png",
+          "member": "tps-demo-master/level/textures/structure/reactor_emitter_normal.png",
+          "bytes": 1875646,
+          "sha256": "3603ee0b7a1dc0a254532063765bfea2f401e75af74c72a67bc0bcdaadd2cad2"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/reactor_emitter_orm.png",
+          "member": "tps-demo-master/level/textures/structure/reactor_emitter_orm.png",
+          "bytes": 4544896,
+          "sha256": "45d5cc34f68b57b80d9d5251c748a11d8af2bbfbb1663bbab19fee332c571923"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/set_asphalt_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/set_asphalt_albedo.png",
+          "bytes": 8970195,
+          "sha256": "28e740404045a324fc5829d6de799c1c9bd49e14d39c0d44fcab666438eb3425"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/set_asphalt_normal.png",
+          "member": "tps-demo-master/level/textures/structure/set_asphalt_normal.png",
+          "bytes": 16913266,
+          "sha256": "98d304e6974f841cfd65f81ab5a75c63c197482bac5b16190c3cc96246d91b90"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/set_asphalt_orm.png",
+          "member": "tps-demo-master/level/textures/structure/set_asphalt_orm.png",
+          "bytes": 17175694,
+          "sha256": "6a46d035e739460704c0c9f57df6c29428df1c602490468d2d54d523c4db3411"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/tile_anti_slip_metal_normal.png",
+          "member": "tps-demo-master/level/textures/structure/tile_anti_slip_metal_normal.png",
+          "bytes": 1753155,
+          "sha256": "bc01e2d3fb28ee007eeaa308441136d77a45527b850cd335748402f0dcd21f9b"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/tile_rivet_panels_orm.png",
+          "member": "tps-demo-master/level/textures/structure/tile_rivet_panels_orm.png",
+          "bytes": 3813291,
+          "sha256": "3a11ad024d0c83cb1c4346198269abc8051232a97c13a9d341a29e7df4993c3c"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/tile_scifi_floor_panel_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/tile_scifi_floor_panel_albedo.png",
+          "bytes": 1765770,
+          "sha256": "a02f11f5728d99dcc5bece78c14d228075bb1486a097864000496b5239ffe194"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/train_texture_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/train_texture_albedo.png",
+          "bytes": 9493373,
+          "sha256": "4ad72ba29ff1b8e232096a646fc8b32d22d5c417dce2b3d00a85f231e8ea646e"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/train_texture_normal.png",
+          "member": "tps-demo-master/level/textures/structure/train_texture_normal.png",
+          "bytes": 5687764,
+          "sha256": "0f729068677228a69fbbe22b2b9bf61627723ad953c883dd23177cd129e77540"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/train_texture_orm.png",
+          "member": "tps-demo-master/level/textures/structure/train_texture_orm.png",
+          "bytes": 13209369,
+          "sha256": "c52572a6983dd3c1610a91e1cd579ea9903e16f32377e060c97b37cf286a388a"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_emission_lights_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/trim_emission_lights_albedo.png",
+          "bytes": 1142295,
+          "sha256": "3fb74120f7649aa086c37a6ffc02cd7d54b49769df1a409ff77c49cface963dc"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_emission_lights_orm.png",
+          "member": "tps-demo-master/level/textures/structure/trim_emission_lights_orm.png",
+          "bytes": 1379667,
+          "sha256": "91b53916d0086a8f69903e319ecb1566376cec1470b878541b62d55535aaf301"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_misc_1_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/trim_misc_1_albedo.png",
+          "bytes": 2363298,
+          "sha256": "ec179d706aec2c9771d3fe2be2616ab9aa0492892f449beae8efd79ee59bd898"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_misc_1_normal.png",
+          "member": "tps-demo-master/level/textures/structure/trim_misc_1_normal.png",
+          "bytes": 2040326,
+          "sha256": "57a13308e82402f2a414ebee8588742664097091ef43f880e2d96dc2dec59445"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_misc_1_orm.png",
+          "member": "tps-demo-master/level/textures/structure/trim_misc_1_orm.png",
+          "bytes": 1814844,
+          "sha256": "c5df67998ba6357c44f1f197e261c2d5b44e36506f33f03bc8ceef8e974e42d3"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_misc_2_albedo.png",
+          "member": "tps-demo-master/level/textures/structure/trim_misc_2_albedo.png",
+          "bytes": 1593782,
+          "sha256": "2ce65abc35ce8b8d4c74182ec9835fe000bcaaf8f60229c781a8a89a6e816f95"
+        },
+        {
+          "path": "realistic/projects/tps/level/textures/structure/trim_misc_2_orm.png",
+          "member": "tps-demo-master/level/textures/structure/trim_misc_2_orm.png",
+          "bytes": 4409743,
+          "sha256": "23566ea668d7f524c12ce8e7c122bfa12ddda179b577d057c0f5ca5bfeba7516"
+        },
+        {
+          "path": "realistic/projects/tps/menu/menu_intro_music.ogg",
+          "member": "tps-demo-master/menu/menu_intro_music.ogg",
+          "bytes": 1425355,
+          "sha256": "2f849dde9b3b0b2e8dc4616f57c467649de449042ac0b2e55c56378ce05e19ac"
+        },
+        {
+          "path": "realistic/projects/tps/player/model/player.blend",
+          "member": "tps-demo-master/player/model/player.blend",
+          "bytes": 5097437,
+          "sha256": "32f51953f277194d7f9c96d3358fde0b07eb32e3ff63ab9159beee216152218e"
+        },
+        {
+          "path": "realistic/projects/tps/player/model/player.glb",
+          "member": "tps-demo-master/player/model/player.glb",
+          "bytes": 23844032,
+          "sha256": "16b783ec2e19245d034326d401796b9bd2635de75f4e38917854316abeee4f9c"
+        },
+        {
+          "path": "realistic/projects/tps/player/textures/player_robot_albedo.png",
+          "member": "tps-demo-master/player/textures/player_robot_albedo.png",
+          "bytes": 1127472,
+          "sha256": "1a3e77bc611c7378557a90300204107d8d7c624c765e54022699e6f1a2359b2d"
+        },
+        {
+          "path": "realistic/projects/tps/player/textures/player_robot_normal.png",
+          "member": "tps-demo-master/player/textures/player_robot_normal.png",
+          "bytes": 1429561,
+          "sha256": "aafc4ad4f93caa0f0cfc607bda0c5eee2389c89696c176cb14f48df963927465"
+        },
+        {
+          "path": "realistic/projects/tps/player/textures/player_robot_orm.png",
+          "member": "tps-demo-master/player/textures/player_robot_orm.png",
+          "bytes": 4080059,
+          "sha256": "16be14ffcf728fa4168d110c3eb7438bc28de7f15dc22757020bfccdef086a08"
+        },
+        {
+          "path": "realistic/projects/tps/screenshots/screenshot.webp",
+          "member": "tps-demo-master/screenshots/screenshot.webp",
+          "bytes": 2207184,
+          "sha256": "e25b6b6a0921bd9ec006dfd0c38cf7086af83347d3a62fd5c7a725b3321e2fc7"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "url": "https://codeload.github.com/Chrisknyfe/boujie_water_shader/zip/refs/heads/main",
+      "archive": "realistic/downloads/water.zip",
+      "archive_sha256": "cf0841112b6a2cc435cf88683874bf47dfc57c02077c165d6131f4694cb33bed",
+      "assets": [
+        {
+          "path": "realistic/projects/water/addons/boujie_water_shader/screenshots/Godot_v4.1.1-stable_win64_I1T9HnuYMS.png",
+          "member": "boujie_water_shader-main/addons/boujie_water_shader/screenshots/Godot_v4.1.1-stable_win64_I1T9HnuYMS.png",
+          "bytes": 1275785,
+          "sha256": "6a6cd7ed5ba09cabe71e0ad971f6d392ec2415f5f757364430dffb6a10f1dcea"
+        },
+        {
+          "path": "realistic/projects/water/example/boujie_water_shader/obelisk/diffuse.tga",
+          "member": "boujie_water_shader-main/example/boujie_water_shader/obelisk/diffuse.tga",
+          "bytes": 12582956,
+          "sha256": "d0c3c5197862cd6124dfdf3b12389262987940826fb9bcc65be10c834f319d02"
+        },
+        {
+          "path": "realistic/projects/water/example/boujie_water_shader/obelisk/normal.tga",
+          "member": "boujie_water_shader-main/example/boujie_water_shader/obelisk/normal.tga",
+          "bytes": 16777260,
+          "sha256": "e9a1aefce8b86be6ed4f18ac9f131e9644f6795fa52074ce814584f079e4219b"
+        },
+        {
+          "path": "realistic/projects/water/example/boujie_water_shader/obelisk/specular.tga",
+          "member": "boujie_water_shader-main/example/boujie_water_shader/obelisk/specular.tga",
+          "bytes": 12582956,
+          "sha256": "6d20fc198da855c69aad37fd7c2e532c3449e64802ac7792cfe27f2105dd406d"
+        },
+        {
+          "path": "realistic/projects/water/example/boujie_water_shader/pedestal/MetalPlates_Diffuse.tga",
+          "member": "boujie_water_shader-main/example/boujie_water_shader/pedestal/MetalPlates_Diffuse.tga",
+          "bytes": 3145772,
+          "sha256": "88f86e60b03d89f0925a834ff02ab840127a08a82f53fe4d5f31d763766ca03d"
+        },
+        {
+          "path": "realistic/projects/water/example/boujie_water_shader/pedestal/MetalPlates_Normal_03.tga",
+          "member": "boujie_water_shader-main/example/boujie_water_shader/pedestal/MetalPlates_Normal_03.tga",
+          "bytes": 3145772,
+          "sha256": "4faebfc86d6787b0402a348e4dd480bcff00cd855b3c112987e3c09197c60b69"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scene_id": "water",
+  "mode": "import",
+  "checked_at": "2026-09-23T16:16:09.034490+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 7.51,
+  "errors": [
+    "ERROR: Couldn't open MTL file 'res://example/boujie_water_shader/mountains.mtl', it may not exist or not be readable.",
+    "ERROR: Couldn't open MTL file 'res://example/boujie_water_shader/subdivcube.mtl', it may not exist or not be readable."
+  ],
+  "warnings": [],
+  "log": "verification/water/import.log"
+}

@@ -1,0 +1,27 @@
+{
+  "downloaded_at": "2026-09-23T13:43:45.009731+08:00",
+  "note": "Kenney main-branch archives are retained locally; rebuild uses these saved snapshots, not a new download.",
+  "sources": [
+    {
+      "name": "platformer",
+      "url": "https://codeload.github.com/KenneyNL/Starter-Kit-3D-Platformer/zip/refs/heads/main",
+      "archive": "downloads\\platformer.zip",
+      "bytes": 4557168,
+      "directory": "upstream/platformer"
+    },
+    {
+      "name": "fps",
+      "url": "https://codeload.github.com/KenneyNL/Starter-Kit-FPS/zip/refs/heads/main",
+      "archive": "downloads\\fps.zip",
+      "bytes": 4575348,
+      "directory": "upstream/fps"
+    },
+    {
+      "name": "godot-4.6.1",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.1-stable/Godot_v4.6.1-stable_win64.exe.zip",
+      "archive": "downloads\\godot-4.6.1.zip",
+      "bytes": 79805408,
+      "directory": "tools/godot"
+    }
+  ]
+}

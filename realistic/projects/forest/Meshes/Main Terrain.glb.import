@@ -1,0 +1,72 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c0k2bktwsmoov"
+path="res://.godot/imported/Main Terrain.glb-e8e4059e9a01481bae2cbe4bd321fe6f.scn"
+
+[deps]
+
+source_file="res://Meshes/Main Terrain.glb"
+dest_files=["res://.godot/imported/Main Terrain.glb-e8e4059e9a01481bae2cbe4bd321fe6f.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"River": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/River.tres",
+"use_external/path": "uid://b5v5vunf3v7r3"
+},
+"Terrain": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Terrain 1.tres",
+"use_external/path": "uid://c7aj0l63pmw5h"
+},
+"Terrain.001": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Terrain 1.tres",
+"use_external/path": "uid://c7aj0l63pmw5h"
+}
+},
+"meshes": {
+"Main Terrain_Plane090": {
+"generate/lightmap_uv": 2,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": false,
+"save_to_file/make_streamable": "",
+"save_to_file/path": ""
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

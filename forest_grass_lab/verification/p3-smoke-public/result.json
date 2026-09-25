@@ -1,0 +1,69 @@
+{
+  "execution_ok": true,
+  "errors": [],
+  "warnings": [],
+  "cases": [
+    {
+      "elapsed": 3.99999999999999,
+      "frames": [
+        1,
+        120,
+        240
+      ],
+      "name": "wind_default",
+      "steps": 240
+    },
+    {
+      "elapsed": 2.0,
+      "frames": [
+        1,
+        60,
+        120
+      ],
+      "name": "wind_off",
+      "steps": 120
+    },
+    {
+      "elapsed": 3.99999999999999,
+      "frames": [
+        1,
+        120,
+        240
+      ],
+      "name": "strong_crosswind",
+      "steps": 240
+    },
+    {
+      "elapsed": 11.0000000000001,
+      "frames": [
+        225,
+        420,
+        660
+      ],
+      "name": "player_pass_recover",
+      "steps": 660
+    },
+    {
+      "elapsed": 11.0000000000001,
+      "frames": [
+        225,
+        420,
+        660
+      ],
+      "name": "player_without_wind",
+      "steps": 660
+    },
+    {
+      "elapsed": 12.0000000000002,
+      "frames": [
+        225,
+        420,
+        720
+      ],
+      "name": "reverse_and_pause",
+      "steps": 720
+    }
+  ],
+  "renderer": "forward_plus",
+  "visual_quality": "not_independently_evaluated"
+}

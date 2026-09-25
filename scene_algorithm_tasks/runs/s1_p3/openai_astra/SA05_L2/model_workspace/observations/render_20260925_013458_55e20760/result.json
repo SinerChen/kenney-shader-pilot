@@ -1,0 +1,280 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+    "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+    "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+    "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded.",
+    "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+    "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+    "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+    "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+  ],
+  "observation_directory": "observations/render_20260925_013458_55e20760",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60,
+      120
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        42.0,
+        -5.2,
+        19.0
+      ],
+      "look_at": [
+        40.4,
+        -6.1,
+        16.6
+      ],
+      "fov_degrees": 65.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [
+      {
+        "frame": 1,
+        "position": [
+          42,
+          -5.2,
+          19
+        ],
+        "look_at": [
+          40.4,
+          -6.1,
+          16.6
+        ]
+      },
+      {
+        "frame": 60,
+        "position": [
+          44,
+          -3,
+          23
+        ],
+        "look_at": [
+          39,
+          -4,
+          12
+        ]
+      },
+      {
+        "frame": 120,
+        "position": [
+          44,
+          1,
+          23
+        ],
+        "look_at": [
+          39,
+          -4,
+          12
+        ]
+      }
+    ],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 9.412,
+      "errors": [],
+      "warnings": [
+        "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+        "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+        "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+        "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+      ],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 11.632,
+      "errors": [],
+      "warnings": [
+        "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+        "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+        "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+        "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+        "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+      ],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.52952241897583,
+            -0.297856688499451,
+            -0.794284224510193
+          ],
+          "fov_degrees": 65.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            42.0,
+            -5.19999980926514,
+            19.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.165221065282822,
+            0.954610645771027,
+            -0.247831806540489
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.412393063306808,
+            -0.0824786126613617,
+            -0.907264709472656
+          ],
+          "fov_degrees": 65.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            44.0,
+            -3.0,
+            23.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.0341298915445805,
+            0.996592819690704,
+            -0.0750857666134834
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 640,
+        "image": "frame_0060.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.382359534502029,
+            -0.382359653711319,
+            -0.841191053390503
+          ],
+          "fov_degrees": 65.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            44.0,
+            1.0,
+            23.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.158221527934074,
+            0.924013614654541,
+            -0.34808737039566
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 640,
+        "image": "frame_0120.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 66,
+        "visible_geometry": 256
+      },
+      "geometry_before": {
+        "multimesh_instances": 143758,
+        "visible_geometry": 23113
+      },
+      "host": "existing_project",
+      "level": 2.0,
+      "nearest_groundcover_distance": 39.7927284240723,
+      "plant_focus": [
+        40.4259986877441,
+        -6.32499980926514,
+        16.5909996032715
+      ],
+      "scope": "interaction_subset",
+      "source_host_modified": false,
+      "targets": [
+        "Main Terrain",
+        "Decorations-Forest",
+        "Groundcover"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 120,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_013458_55e20760/samples.json"
+}

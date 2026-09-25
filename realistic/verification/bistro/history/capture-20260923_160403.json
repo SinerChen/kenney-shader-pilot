@@ -1,0 +1,16 @@
+{
+  "scene_id": "bistro",
+  "mode": "capture",
+  "checked_at": "2026-09-23T15:59:24.354653+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 37.46,
+  "errors": [
+    "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+  ],
+  "warnings": [
+    "WARNING: FSR 3D resolution scaling is not designed for downsampling. Falling back to bilinear 3D resolution scaling.",
+    "WARNING: ObjectDB instances leaked at exit (run with --verbose for details)."
+  ],
+  "log": "verification/bistro/capture.log",
+  "capture_completed": true
+}

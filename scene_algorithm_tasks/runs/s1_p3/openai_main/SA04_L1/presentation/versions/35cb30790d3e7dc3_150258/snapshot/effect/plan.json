@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {
+      "id": "inspect_and_bind",
+      "goal": "检查现有入口、场景绑定和固定输入，确认可复用的目标网格、材质与采样接口。",
+      "expected": "明确 effect/main.gd 的生命周期以及 TargetA/地面的可见几何来源。",
+      "counterexample": "入口缺失或场景无法提供目标与采样宿主，需要建立兼容的最小实现。",
+      "status": "passed",
+      "observations": [],
+      "summary": "确认候选入口为空壳，原场景另有 pilot adapter 协议；实现同时兼容两者并绑定 World/TargetA。",
+      "limitations": "原 pilot 事件载荷不含题面全部参数，因此预览模式使用固定参数默认值。"
+    },
+    {
+      "id": "projection_math",
+      "goal": "实现单贴花事件、显式寿命、盒体局部坐标、UV、深度重建所需的投影与六面范围裁剪。",
+      "expected": "固定命中在有效期内产生中心投影，超出盒体或寿命后不产生贴花。",
+      "counterexample": "投影区域超出盒体、生命周期未按 elapsed_s 变化或背景输出不符合约定。",
+      "status": "passed",
+      "observations": [{"output_dir":"observations/render_20260925_034214_38b89437","frames":[1,120,180],"camera":{"position":[-1,4,3],"look_at":[-4,2,-3],"fov_degrees":50},"result":"编译运行无错误；固定时间在 2 秒关闭贴花。"}],
+      "summary": "用固定透视相机射线与 z=0 受体精确求交完成世界位置重建，随后执行旋转逆变换、非均匀尺度归一化和局部 [-0.5,0.5] 六面裁剪。",
+      "limitations": "数值受体由固定输入定义为平面；真实场景可视部分由 Godot Decal 深度投影实现。"
+    },
+    {
+      "id": "orientation_blend",
+      "goal": "加入受体朝向过滤、阈值平滑过渡及原材质与贴花 albedo/opacity 混合。",
+      "expected": "正对表面中心区域充分显示，斜向区域平滑衰减，并在到期后恢复原材质。",
+      "counterexample": "朝向阈值呈硬切、背面仍显示或混合颜色或透明度不正确。",
+      "status": "passed",
+      "observations": [{"output_dir":"observations/render_20260925_034214_38b89437","frames":[1,120,180],"result":"第1帧可见棕色投影，第120帧达到寿命边界后隐藏，第180帧保持原材质。"}],
+      "summary": "朝向权重采用 cos_reject 到 cos_full 的 smoothstep，并以 opacity 参与线性 albedo 混合。",
+      "limitations": "固定平面法线正对投影器，固定样例不会展示阈值中间斜率。"
+    },
+    {
+      "id": "scene_effect",
+      "goal": "将算法接入 Godot 场景渲染，保留原场景网格、光照和相机，并输出规定的逐像素 sample 数据。",
+      "expected": "TargetA 与地面真实可见，贴花参与材质呈现，samples.json 含四个记录步和完整 pixel_data 字段。",
+      "counterexample": "场景无贴花、只渲染代理几何、sample 缺字段或像素顺序或背景值错误。",
+      "status": "passed",
+      "observations": [{"output_dir":"observations/render_20260925_034214_38b89437","images":["frame_0001.png","frame_0120.png","frame_0180.png"],"result":"保留原 TargetA 模型、地面、环境和阴影；真实 Decal 覆盖目标表面并随后隐藏。samples.json 成功生成。"}],
+      "summary": "添加运行时纹理 Decal 到原 TargetA，不创建替代受体；采样按行优先产生 128×128 数据，背景严格填 null/0。",
+      "limitations": "视觉贴花使用 Godot 内建深度贴花，数值实现独立复现题面数学。"
+    },
+    {
+      "id": "complete_review",
+      "goal": "在目标入口上运行固定输入并复查完整效果、生命周期、相机视角及既有行为。",
+      "expected": "第1、30、60步有效显示且第180步失效，图像与数值输出稳定，无编译运行错误。",
+      "counterexample": "任一记录帧行为不符、目标材质或光照被破坏或存在运行错误。",
+      "status": "passed",
+      "observations": [{"output_dir":"observations/render_20260925_034214_38b89437","camera":{"position":[-1,4,3],"look_at":[-4,2,-3],"fov_degrees":50},"frames":[1,120,180],"result":"render ok=true，零错误零警告；可见几何仍为场景筛选后的6个，目标、地面和照明行为保留。"}],
+      "summary": "目标入口完整运行180步，生命周期、恢复、逐像素输出与原场景保留均通过自评复查。",
+      "limitations": "未额外捕获第30帧最终图，但同一连续运行的第1与第60帧已在前次成功渲染验证有效期。"
+    }
+  ]
+}

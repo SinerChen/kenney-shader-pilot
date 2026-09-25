@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "837c2dda42ba72265670e1a0986c5e11db633c9836e1d55eaea6af09d3a09011"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "db88cf4f17fd7bae32010eda4bb871a252aaa2fc59f5f224cc1a8ee5331c7b95"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "578e38ef665c40cc4df9a2fad75ac821a932da545ceaf74090c82adf41ec75a5"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "f07ecc7a7df1b7a2690f27c5e29e3c69b21595269c41a2b42747c45490bed11a"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "0a0d4dcc90b883cbabef40307bcaa923c2086b2e559254473644860eaab13647"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "0c87fb7f55aeb42137854d513cf84ddce96f9640c753f43545ffb0f1fd64b7b6"
+    }
+  ],
+  "input_sha256": "0c87fb7f55aeb42137854d513cf84ddce96f9640c753f43545ffb0f1fd64b7b6"
+}

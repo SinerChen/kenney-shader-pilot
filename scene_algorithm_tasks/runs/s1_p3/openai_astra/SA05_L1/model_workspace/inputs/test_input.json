@@ -1,0 +1,66 @@
+{
+  "reference_height_m": 0,
+  "density_per_m": 0.01,
+  "height_falloff_per_m": 0.15,
+  "fog_color_linear": [
+    0.65,
+    0.72,
+    0.78
+  ],
+  "rays": [
+    {
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        10,
+        0,
+        0
+      ],
+      "background_linear": [
+        0.2,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "start": [
+        0,
+        0,
+        0
+      ],
+      "end": [
+        8,
+        6,
+        0
+      ],
+      "background_linear": [
+        0.2,
+        0.4,
+        0.1
+      ]
+    },
+    {
+      "start": [
+        0,
+        6,
+        0
+      ],
+      "end": [
+        8,
+        0,
+        0
+      ],
+      "background_linear": [
+        0.2,
+        0.4,
+        0.1
+      ]
+    }
+  ],
+  "camera": "forest_overview",
+  "preserve_sky": true,
+  "preserve_ui": true
+}

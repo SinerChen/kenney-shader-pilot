@@ -1,0 +1,39 @@
+{
+  "task_id": "SA01_L2",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA01_L2_factorial",
+      "intervention": "固定时间/轨迹，运行风关交互关、仅风、仅交互、二者都开四组。",
+      "expected": "单模块结果可复现；两模块都开时均有贡献，风关不抹掉交互历史。",
+      "evidence": "四组字段/顶点差值与同步短视频。",
+      "typical_failure": "某模块覆盖另一模块或两个开关共享错误状态。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L2_attachment",
+      "intervention": "固定交互者与时间，切换 overview/roots/top；检查多个不同朝向实例。",
+      "expected": "场和世界顶点不变，实例不串位；根部仍在各自原位置。",
+      "evidence": "相机矩阵、实例 ID、顶点读回。",
+      "typical_failure": "屏幕空间压草，或用 atlas UV 代替草高。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L2_shadow",
+      "intervention": "保持光源固定推进 3 秒，再暂停；观察草尖与地面阴影。",
+      "expected": "阴影对应同一时刻变形；暂停后两者停止且无静止直立草的残影。",
+      "evidence": "可见 pass/shadow pass 的时间与几何诊断、连续帧。",
+      "typical_failure": "只修改可见 pass，阴影不动或滞后一帧。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L2_history",
+      "intervention": "前行、短暂停留、反向、移除交互者；风向保持不变。",
+      "expected": "历史持续衰减，新轨迹连续叠加；set_interactors 不导致全场 reset。",
+      "evidence": "输入记录、场序列和去除交互后的风动片段。",
+      "typical_failure": "每帧 configure 清历史，或初始坐标被重复加速度。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

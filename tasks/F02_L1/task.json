@@ -1,0 +1,19 @@
+{
+  "id": "F02_L1",
+  "scene_id": "F02",
+  "kit": "fps",
+  "level": 1,
+  "title": "基础能量材质",
+  "requirement": "为 Emitter 和 Panel 实现空间上连续的能量发光纹理，保留表面结构与明暗层次，画面不能整体过曝。",
+  "criteria": [
+    "发光限制于指定载体",
+    "纹理具有空间连续性",
+    "基础结构仍可辨识",
+    "亮部不过度覆盖其他内容"
+  ],
+  "parent_task": null,
+  "base_scene": "projects/fps/pilot/F02.tscn",
+  "editable_directory": "projects/fps/effects/F02",
+  "status": "prepared_not_run",
+  "carry_forward": "clean_baseline"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA04_L2",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA04_L2_anchor",
+      "intervention": "命中 A，冻结逻辑时间，平移并旋转 A，再移动相机。",
+      "expected": "贴花世界位置随目标变换，局部位置不变；相机单独移动不改锚点。",
+      "evidence": "事件局部坐标、投影变换和连续视角视频。",
+      "typical_failure": "命中后漂在原世界位置或贴在屏幕上。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L2_occlusion",
+      "intervention": "贴花有效期内将 Cover 放到相机和 A 之间，再移开。",
+      "expected": "贴花被前景遮住且不画在 Cover 上；移开后回到 A 的原位置。",
+      "evidence": "当前深度/receiver ID、遮挡前中后帧。",
+      "typical_failure": "穿透遮挡或把弹孔转移到遮挡物。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L2_events",
+      "intervention": "A 事件后 0.4秒命中 B；再次发送 B 的相同 event_id。",
+      "expected": "活动受体从 A 切到 B，A 清除；重复 ID 不延长 B 的两秒寿命。",
+      "evidence": "事件 ID、active slot、target_id 与寿命日志。",
+      "typical_failure": "串目标、重复计时或出现未声明的多个贴花。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L2_lighting",
+      "intervention": "保持命中和时间，分别改变相机、灯光和贴花 opacity。",
+      "expected": "位置/深度不变，贴花随表面受光；opacity=0 恢复原材料。",
+      "evidence": "材料通道与受光 A/B，原伤害状态日志。",
+      "typical_failure": "屏幕装饰不受光或视觉事件再次造成伤害。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

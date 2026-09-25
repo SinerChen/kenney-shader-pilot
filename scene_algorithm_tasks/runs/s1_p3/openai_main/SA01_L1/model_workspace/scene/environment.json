@@ -1,0 +1,31 @@
+{
+  "host": "existing_project",
+  "name": "草地",
+  "kind": "grass",
+  "level": 1,
+  "scope": "scene_subset",
+  "description": "从原草地拆出通行路径附近的一排草，保留原草片网格、地面、玩家、光照和相机；关闭风动。",
+  "source_entry": "scenes/GrassPatch.tscn",
+  "targets": [
+    "GrassCards_0",
+    "GrassCards_1",
+    "GrassCards_2",
+    "GrassCards_3"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      4,
+      3,
+      5
+    ],
+    "look_at": [
+      0,
+      0.4,
+      0
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

@@ -1,0 +1,244 @@
+{
+  "ok": false,
+  "errors": [
+    "SHADER ERROR: Unknown identifier in expression: 'INV_MODEL_MATRIX'.",
+    "ERROR: Shader compilation failed."
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260925_024043_3c3d4102",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60,
+      120,
+      180
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        40.0,
+        22.0,
+        55.0
+      ],
+      "look_at": [
+        0.0,
+        0.0,
+        -35.0
+      ],
+      "fov_degrees": 60.0,
+      "far": 3000.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05
+    },
+    "camera_track": [
+      {
+        "frame": 1,
+        "position": [
+          40,
+          22,
+          55
+        ],
+        "look_at": [
+          0,
+          0,
+          -35
+        ]
+      },
+      {
+        "frame": 180,
+        "position": [
+          -80,
+          32,
+          -110
+        ],
+        "look_at": [
+          -30,
+          0,
+          -220
+        ]
+      }
+    ],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.749,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 6.617,
+      "errors": [
+        "SHADER ERROR: Unknown identifier in expression: 'INV_MODEL_MATRIX'.",
+        "ERROR: Shader compilation failed."
+      ],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 3000.0,
+          "forward": [
+            -0.396369993686676,
+            -0.218003496527672,
+            -0.891832530498505
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            40.0,
+            22.0,
+            55.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.0885396078228951,
+            0.975947976112366,
+            -0.199214115738869
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 3000.0,
+          "forward": [
+            -0.10295756906271,
+            -0.251995593309402,
+            -0.962235927581787
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            0.446926116943359,
+            25.2960891723633,
+            0.614524841308594
+          ],
+          "projection": 0,
+          "up": [
+            -0.0268100555986166,
+            0.96772837638855,
+            -0.250565350055695
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 640,
+        "image": "frame_0060.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 3000.0,
+          "forward": [
+            0.181924775242805,
+            -0.262791633605957,
+            -0.947546303272247
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -39.7765350341797,
+            28.6480445861816,
+            -54.6927337646484
+          ],
+          "projection": 0,
+          "up": [
+            0.0495498552918434,
+            0.964852631092072,
+            -0.258078008890152
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 640,
+        "image": "frame_0120.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 3000.0,
+          "forward": [
+            0.400012820959091,
+            -0.256008207798004,
+            -0.880028188228607
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -80.0,
+            32.0,
+            -110.0
+          ],
+          "projection": 0,
+          "up": [
+            0.105936951935291,
+            0.966674625873566,
+            -0.233061283826828
+          ]
+        },
+        "elapsed_s": 3.0,
+        "frame": 180,
+        "height": 640,
+        "image": "frame_0180.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 109
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 109
+      },
+      "host": "existing_project",
+      "level": 3.0,
+      "scope": "full_scene",
+      "source_host_modified": false,
+      "targets": [
+        "DeepOcean"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 180,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_024043_3c3d4102/samples.json"
+}

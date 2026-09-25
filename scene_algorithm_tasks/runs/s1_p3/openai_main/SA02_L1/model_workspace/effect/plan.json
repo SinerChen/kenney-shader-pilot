@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "active_step": null,
+  "steps": [
+    {"id":"inspect_host","goal":"理解现有入口、宿主场景和候选实现的接口约定。","expected":"明确 configure、step、sample 与渲染材质的接入方式。","counterexample":"入口缺失或接口与题面不一致，无法直接保留既有行为。","status":"passed","observations":[],"summary":"确认 effect/main.gd 由宿主调用；原场景有 DeepOcean、水材质、光照和相机。","limitations":"实际可见场景经宿主筛选后内容有限。"},
+    {"id":"wave_math","goal":"实现固定网格上的多方向 Gerstner 位移、切向、单位几何法线与 Jacobian。","expected":"每个采样点有水平/垂直位移和单位几何法线。","counterexample":"波面仅垂直移动、法线错误或数组顺序错误。","status":"passed","observations":[],"summary":"实现解析切向、水平 Jacobian 和规范化切向叉积法线；行优先、周期参数域采样。","limitations":"未单独数值验证所有网格点。"},
+    {"id":"foam_time","goal":"实现时间推进、泡沫演化和关闭泡沫的全零输出。","expected":"帧步时间正确，foam 关闭时全零。","counterexample":"时间偏移、foam 非零或数组尺寸不符。","status":"passed","observations":[{"directory":"observations/render_20260925_021810_696afea4","samples":"observations/render_20260925_021810_696afea4/samples.json","frames":[1,60,120,180],"view":"[6,4,8] 看向原点，透视","result":"无错误；samples.json 生成固定四个记录帧，elapsed_s 为 1/60、1、2、3 秒，foam 全零。"}],"summary":"step 每次只推进一次；泡沫按指数衰减、周期中央差分源项实现。","limitations":"宿主包装输出带 frame/output 层级。"},
+    {"id":"visual_material","goal":"接入可见的 Gerstner 波面，展示水平/垂直位移和真实切向法线受光。","expected":"渲染出现方向明确的几何波面和随法线变化的光照。","counterexample":"表面仍平坦或 shader 不能编译。","status":"passed","observations":[{"directory":"observations/render_20260925_021810_696afea4","images":["frame_0001.png","frame_0060.png","frame_0120.png","frame_0180.png"],"view":"[6,4,8] 看向原点，透视","result":"shader 无编译错误；可见两组方向波峰、明显水平位移和随时间变化的高光/法线明暗。"}],"summary":"新增 64x64 PlaneMesh 和 Gerstner shader，使用固定输入实时更新时间与波参数。","limitations":"原宿主筛选场景的水面仍可能与新增中心网格叠加，画面边缘可见叠层。"},
+    {"id":"full_review","goal":"复查目标入口的数值输出、固定帧和完整视觉表现。","expected":"运行稳定且完整呈现波面效果。","counterexample":"日志错误、数据错误或视觉不符。","status":"passed","observations":[{"directory":"observations/render_20260925_021810_696afea4","logs":["godot.log"],"result":"Godot 日志仅正常启动和 MODEL_RENDER_COMPLETE；四帧截图与 samples 均生成。"}],"summary":"数值与视觉回归通过，固定输入下完成完整 Gerstner 位移、法线、Jacobian、泡沫和受光显示。","limitations":"泡沫固定输入关闭，因此未通过目标场景直接观察非零泡沫视觉。"}
+  ]
+}

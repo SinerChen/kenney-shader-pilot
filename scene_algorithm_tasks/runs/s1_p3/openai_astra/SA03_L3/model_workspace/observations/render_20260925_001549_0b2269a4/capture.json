@@ -1,0 +1,60 @@
+{
+  "captures": [
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.357770889997482,
+          -0.268328189849854,
+          -0.894427180290222
+        ],
+        "fov_degrees": 65.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          0.0,
+          3.0,
+          9.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.0996546000242233,
+          0.963327586650848,
+          -0.249136477708817
+        ]
+      },
+      "elapsed_s": 0.0166666666666667,
+      "frame": 1,
+      "height": 640,
+      "image": "frame_0001.png",
+      "width": 960
+    }
+  ],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "environment": {
+    "geometry_after": {
+      "multimesh_instances": 0,
+      "visible_geometry": 1201
+    },
+    "geometry_before": {
+      "multimesh_instances": 0,
+      "visible_geometry": 1201
+    },
+    "host": "existing_project",
+    "level": 3.0,
+    "scope": "full_scene",
+    "source_host_modified": false,
+    "targets": [
+      "Level Geometry/Ground/Ground"
+    ]
+  },
+  "initialization": "paused scene initialization; shader global TIME may include initialization time",
+  "process_frames": 1,
+  "renderer": "forward_plus",
+  "scene": "scene/main.tscn",
+  "step_mode": "native_fixed_fps",
+  "visual_quality": "not_scored"
+}

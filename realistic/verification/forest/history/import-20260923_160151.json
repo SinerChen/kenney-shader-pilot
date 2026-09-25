@@ -1,0 +1,31 @@
+{
+  "scene_id": "forest",
+  "mode": "import",
+  "checked_at": "2026-09-23T15:58:39.322544+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 19.61,
+  "errors": [
+    "ERROR: Attempt to open script 'res://addons/groundcover/GroundcoverData.gd' resulted in error 'File not found'.",
+    "ERROR: Failed loading resource: res://addons/groundcover/GroundcoverData.gd.",
+    "ERROR: Attempt to open script 'res://addons/groundcover/GroundcoverMesh.gd' resulted in error 'File not found'.",
+    "ERROR: Failed loading resource: res://addons/groundcover/GroundcoverMesh.gd.",
+    "ERROR: Cannot set object script. Parameter should be null or a reference to a valid script.",
+    "ERROR: Attempt to open script 'res://addons/groundcover/Groundcover.gd' resulted in error 'File not found'.",
+    "ERROR: Failed loading resource: res://addons/groundcover/Groundcover.gd."
+  ],
+  "warnings": [
+    "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+    "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+    "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+    "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+    "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+  ],
+  "log": "verification/forest/import.log"
+}

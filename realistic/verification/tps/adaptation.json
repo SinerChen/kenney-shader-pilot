@@ -1,0 +1,7 @@
+{
+  "scene": "tps",
+  "changes": [
+    "Hide the 4.7-only nearest-neighbor resolution option and remove its two enum references.",
+    "Mark the locally adapted project as Godot 4.6; preserve all geometry, materials, lights and gameplay."
+  ]
+}

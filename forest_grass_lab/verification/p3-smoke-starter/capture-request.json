@@ -1,0 +1,17 @@
+{
+  "level": 1,
+  "cases": [
+    {
+      "name": "target",
+      "params": {
+        "camera": "roots"
+      },
+      "frames": [
+        1,
+        30,
+        60
+      ],
+      "schedule": []
+    }
+  ]
+}

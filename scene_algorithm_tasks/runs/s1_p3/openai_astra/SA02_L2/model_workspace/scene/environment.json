@@ -1,0 +1,28 @@
+{
+  "host": "existing_project",
+  "name": "海面",
+  "kind": "water",
+  "level": 2,
+  "scope": "interaction_subset",
+  "description": "保留中心及相邻 LOD 网格、海床，观察波面与泡沫的时空关系；隐藏无关展示物。",
+  "source_entry": "example/boujie_water_shader/water_shader_examples.tscn",
+  "targets": [
+    "DeepOcean"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      12,
+      7,
+      16
+    ],
+    "look_at": [
+      0,
+      0,
+      0
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

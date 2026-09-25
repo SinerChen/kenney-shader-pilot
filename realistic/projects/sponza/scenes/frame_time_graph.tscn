@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://nmk3ubc60r83"]
+
+[ext_resource type="Script" uid="uid://de22ktdlb4gnm" path="res://scripts/frame_time_graph.gd" id="1"]
+[ext_resource type="Gradient" uid="uid://d0y6it54knhcr" path="res://resources/frame_time_graph_colors.tres" id="2"]
+
+[node name="FrameTimeGraph" type="Panel" unique_id=2040113594]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="ResourcePreloader" type="ResourcePreloader" parent="." unique_id=222734509]
+resources = [PackedStringArray("frame_time_graph_colors"), [ExtResource("2")]]

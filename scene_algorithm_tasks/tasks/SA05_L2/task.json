@@ -1,0 +1,151 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA05_L2",
+  "chain_id": "SA05",
+  "level": 2,
+  "level_name": "效果交互",
+  "core_question": "多个模块组合后，关系是否正确？",
+  "title": "高度雾与深度、植被和颜色合成",
+  "goal": "正确雾积分接入场景深度后，是否仍作用于正确的视线且只合成一次？",
+  "requirement": "正确雾积分接入场景深度后，是否仍作用于正确的视线且只合成一次？",
+  "requirements": [
+    "使用固定 renderer bridge 的相机至实际可见表面端点，不把 reverse-Z 原值当线性距离。",
+    "颜色在线性空间按 T*C+(1-T)*Cf 合成，在 tone mapping 之前只做一次；旧高度雾重复项必须由宿主统一处理。",
+    "裁切叶片的有效像素结束于叶面，透明空隙看到后方表面；不允许给整张草片矩形统一写近景深度。",
+    "相机改变高度或方向时重新求当前射线，密度层仍固定在世界坐标；天空与 UI 采用合同中的保留路径。"
+  ],
+  "criteria": [
+    "每次 T 对应当前两个端点的积分，回原位恢复；雾层不跟随相机平移。",
+    "三种射线使用实际各自深度，空隙无矩形雾片，前后遮挡一致。",
+    "tone map 前合成数值正确，曝光不参与积分且候选雾仅合成一次。",
+    "rho=0 恢复共同基线，falloff=0 是距离均匀介质；sky/UI 不变。"
+  ],
+  "parent_task": "SA05_L1",
+  "input_code": "same_model_previous_submission_may_repair",
+  "base_scene": "realistic/projects/forest/Main.tscn",
+  "project": "realistic/projects/forest/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA05",
+  "algorithms": [
+    "SH179"
+  ],
+  "source_scenario_ids": [
+    "F02",
+    "P01"
+  ],
+  "primary_algorithms": [
+    "SH179"
+  ],
+  "fixed_supporting_algorithms": [],
+  "primary_evidence": "关系型 rubric、受控实验、引擎/GPU 诊断、动态观察",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "主相机可见地形、树干、石块及 Alpha 裁切植被对应的相机至表面视线段",
+  "protected_targets": "场景几何/植被分布、材质纹理、天空/原体积云、UI、原相机控制；近景关键对象的可辨识度",
+  "scene_purpose": "通过低处与远处的雾层次表达清晨空间深度，同时能继续辨认近景地形、岩石与植被。",
+  "impact_path": [
+    "世界高度密度参数与当前相机/表面端点",
+    "有限视线段完整积分 tau",
+    "T=exp(-tau)",
+    "线性场景色与雾色合成一次",
+    "真实不透明/裁切植被的前后关系",
+    "完整森林的低处层次和近景可读性"
+  ],
+  "scope": "有限段高度雾；不求解烟传播、光束遮挡或多重散射。天背景采用显式保留策略，不把无限远深度输入有限段公式。",
+  "prompt": "tasks/SA05_L2/prompt.md",
+  "evaluation_cases": "tasks/SA05_L2/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA05_L2/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA05_L2/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA05_L2/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa05",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "critical_relations"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原森林拆出地形及原视点附近的岩石，保留原空间坐标、天空、云、光照和自由相机；观察高度雾。",
+    "L2: 加入同一区域的树木、草和蕨叶，观察真实遮挡、植被空隙与雾的颜色合成。",
+    "L3: 使用原完整森林，保留全部地形、树木、岩石、Groundcover、天空、云和自由相机。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "森林",
+    "kind": "forest",
+    "level": 2,
+    "scope": "interaction_subset",
+    "description": "加入同一区域的树木、草和蕨叶，观察真实遮挡、植被空隙与雾的颜色合成。",
+    "source_entry": "Main.tscn",
+    "targets": [
+      "Main Terrain",
+      "Decorations-Forest",
+      "Groundcover"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": null,
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

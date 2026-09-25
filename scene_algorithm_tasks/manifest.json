@@ -1,0 +1,413 @@
+{
+  "version": "scene_algorithm_tasks_v1",
+  "created": "2026-09-24",
+  "chain_count": 5,
+  "task_count": 15,
+  "levels": 3,
+  "engine": "Godot 4.6.1",
+  "renderer": "forward_plus",
+  "level_semantics": {
+    "1": {
+      "name": "单效果／算法实现",
+      "question": "这个模块本身是否正确？",
+      "evidence": "独立数值 OJ、性质测试、原场景子集"
+    },
+    "2": {
+      "name": "效果交互",
+      "question": "多个模块组合后，关系是否正确？",
+      "evidence": "关系型 rubric、受控实验、引擎/GPU 诊断、动态观察"
+    },
+    "3": {
+      "name": "场景影响与设计作用",
+      "question": "影响了该影响的内容，保留了该保留的内容吗？",
+      "evidence": "关键对象/资源检查、影响路径测试、完整场景感知"
+    }
+  },
+  "status": "environment_prepared",
+  "environment_ready": true,
+  "runtime_ready": false,
+  "api_enabled": false,
+  "model_api_calls": 0,
+  "evaluation_status": "not_run",
+  "replaces_existing_tasks": false,
+  "model_input_policy": "prompt_read_write_render_v2",
+  "model_tools": "model_tools.json",
+  "evaluator_cases_model_visible": false,
+  "source_snapshot": "sources/shader_algorithm_scenarios.md",
+  "algorithm_snapshot": "sources/library_snapshot.json",
+  "chains": [
+    {
+      "id": "SA01",
+      "title": "草地通行：局部踩踏与自然风动",
+      "scene": "forest_grass_lab/project/scenes/GrassPatch.tscn",
+      "project": "forest_grass_lab/project/project.godot",
+      "source_ids": [
+        "P01",
+        "H05",
+        "H03",
+        "I10"
+      ],
+      "algorithms": [
+        "SH234"
+      ],
+      "rationale": "取 P01 的人物经过植被子问题；H05 对应 SH234。H03 的风动作为冻结的配套模块，未把尚未实现的 SH233 层级树木风动列作已完成依赖。",
+      "anchors": [
+        [
+          "forest_grass_lab/project/scenes/GrassPatch.tscn",
+          "场景与固定宿主入口"
+        ],
+        [
+          "forest_grass_lab/project/host/grass_host.gd",
+          "335 张草片、玩家回放及程序生成对象"
+        ],
+        [
+          "forest_grass_lab/HOST_API.md",
+          "UV2 高度、实例相位和现有场地说明"
+        ]
+      ],
+      "target": "固定草地中所有被有效交互 footprint 覆盖的草实例及对应的变形阴影",
+      "protect": "作用范围外草的原风动；所有草根；地面、玩家显示体、场景控制和 UI",
+      "purpose": "玩家仍可看清草地中的自身位置、经过方向及短时痕迹，远处草保持环境风动。",
+      "scope": "固定 XZ patch，二维交互场；不扩展到全森林、树木分层动画、坡地高度判定或相机滚动场重投影。",
+      "fixture": [
+        "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+        "L1: 从原草地拆出通行路径附近的一排草，保留原草片网格、地面、玩家、光照和相机；关闭风动。",
+        "L2: 扩大为路径附近的三排草，使用原风参数、玩家回放和阴影，观察风动与压草的组合。",
+        "L3: 使用原完整草地，保留全部 335 张草片、地面标记、玩家、相机和 UI。",
+        "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+        "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+      ],
+      "impact_path": [
+        "玩家脚底位置/速度/有效半径",
+        "固定世界 patch 的衰减与写入",
+        "每个草实例采样同一交互场",
+        "叠加冻结风动并约束根部",
+        "顶点、法线与阴影",
+        "全景中的通行痕迹及远处植被"
+      ],
+      "tasks": [
+        "SA01_L1",
+        "SA01_L2",
+        "SA01_L3"
+      ]
+    },
+    {
+      "id": "SA02",
+      "title": "海面展示：Gerstner 波与波峰泡沫",
+      "scene": "realistic/projects/water/example/boujie_water_shader/water_shader_examples.tscn",
+      "project": "realistic/projects/water/project.godot",
+      "source_ids": [
+        "G02",
+        "G13",
+        "P02"
+      ],
+      "algorithms": [
+        "SH185",
+        "SH192"
+      ],
+      "rationale": "选 G02 波面与 G13 压缩泡沫；P02 仅提供水/障碍关系的场景设计启发。实际载体是现有海面展示，不声称它已有弯曲浅溪，也不要求未选用的浅水求解器。",
+      "anchors": [
+        [
+          "realistic/projects/water/example/boujie_water_shader/water_shader_examples.tscn",
+          "DeepOcean、Other_Designers、Material_Testers、Camera、HUD"
+        ]
+      ],
+      "target": "DeepOcean 的海面网格及其各 LOD 表面；同一 q 参数上的波形、法线和泡沫",
+      "protect": "OceanFloor、岸上/展示台几何、IceCube、ObsidianCube、OutsetOceanSphere、DeepOceanSphere 对照样本、HUD 和原相机控制",
+      "purpose": "在保留原材质展览与相机游览功能的条件下，海面波峰及泡沫随同一波形运动。",
+      "scope": "只做参数附着的波峰泡沫；不要求泡沫流体平流、岸边浪花、反射/折射新算法或水下切换重写。",
+      "fixture": [
+        "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+        "L1: 从原海面展示中拆出 DeepOcean 的中心网格，用原网格生成器设置 8 米、64 格子区域，保留原水材质、光照和相机；只实现波面。",
+        "L2: 保留中心及相邻 LOD 网格、海床，观察波面与泡沫的时空关系；隐藏无关展示物。",
+        "L3: 使用原完整海面展示，保留全部海面 LOD、海床、地形、独立材质样品、HUD 和相机控制。",
+        "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+        "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+      ],
+      "impact_path": [
+        "显式波参数与 elapsed",
+        "P(q,t)、完整切向和法线",
+        "水平位移场 D(q,t)",
+        "J 与泡沫历史 F(q)",
+        "同一 q 对应的显示位置 P(q,t)",
+        "完整海面 LOD 与独立展示材质"
+      ],
+      "tasks": [
+        "SA02_L1",
+        "SA02_L2",
+        "SA02_L3"
+      ]
+    },
+    {
+      "id": "SA03",
+      "title": "Bistro 雨后路面：湿区覆盖与材质保留",
+      "scene": "realistic/projects/bistro/MainScene.tscn",
+      "project": "realistic/projects/bistro/project.godot",
+      "source_ids": [
+        "P07",
+        "B06",
+        "B09"
+      ],
+      "algorithms": [
+        "SH023",
+        "SH043"
+      ],
+      "rationale": "抽取 P07 湿路面的材质子问题，使用 B06/SH023 四层高度混合与 B09/SH043 法线细节；不把反射求解、多光源系统或降噪一并塞入任务。",
+      "anchors": [
+        [
+          "realistic/projects/bistro/MainScene.tscn",
+          "Level Geometry/Ground/Ground；Props、Patches/Blockers、Human-For-Scale、Night Lights 作为保护范围"
+        ]
+      ],
+      "target": "经明确 surface/region 白名单标记的室外石路低洼湿区，不是 Ground 节点下所有表面",
+      "protect": "干燥路脊、约定干燥人行区/门口、室内地面、桌椅招牌玻璃、角色、碰撞与日夜控制",
+      "purpose": "路面呈现雨后湿润与原石材细节，仍可辨别通行边界、入口和原有材质。",
+      "scope": "美术指定湿区和高度混合，不求解雨水汇流、积水几何、SSR 或完整反射；保留原照明与反射配置。",
+      "fixture": [
+        "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+        "L1: 从原 Bistro 拆出 Ground 路面，保留原地面网格、材质、光照和相机；只观察四层材质混合。",
+        "L2: 保留 Ground 与相邻 Section01 街区，观察湿区、细节法线、受光和干湿边界的关系。",
+        "L3: 使用原完整 Bistro 街景，保留各街区、室内入口、道具、碰撞、日夜控制和相机。",
+        "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+        "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+      ],
+      "impact_path": [
+        "wetness 与作者给定的材质高度/区域 mask",
+        "四层同时竞争的权重",
+        "颜色、粗糙度、金属度、基础法线共用权重",
+        "同切线空间的 RNM 细节",
+        "指定道路 surface 的原照明响应",
+        "街道入口、干区和道具仍可辨识"
+      ],
+      "tasks": [
+        "SA03_L1",
+        "SA03_L2",
+        "SA03_L3"
+      ]
+    },
+    {
+      "id": "SA04",
+      "title": "FPS 命中反馈：有边界的投影贴花",
+      "scene": "projects/fps/pilot/F01.tscn",
+      "project": "projects/fps/project.godot",
+      "source_ids": [
+        "B13",
+        "B08"
+      ],
+      "algorithms": [
+        "SH018"
+      ],
+      "rationale": "使用 B13 的弹孔/命中贴花子问题，SH018 已包含深度重建、投影裁剪、法线/材料混合和后续照明；与射击事件、目标变换和遮挡的连接属于 L2。",
+      "anchors": [
+        [
+          "projects/fps/pilot/F01.tscn",
+          "World/TargetA、TargetB、TargetC、Cover、Player、HUD/Crosshair"
+        ],
+        [
+          "projects/fps/pilot/hit_target.gd",
+          "现有 hit 仅含 target/amount/health，没有 position/normal"
+        ],
+        [
+          "projects/fps/objects/player.tscn",
+          "原玩家、武器视口及射线节点"
+        ]
+      ],
+      "target": "最近一次有效命中的 TargetA 或 TargetB 上朝向正确、位于投影体内的实际可见表面",
+      "protect": "TargetC、Cover、墙/地、目标背面、其他共享材质实例、武器视口与 HUD；全部原命中/生命值/碰撞逻辑",
+      "purpose": "玩家能判断最近一次命中发生在哪个目标和位置，同时保留遮挡、瞄准与原射击流程。",
+      "scope": "一次只保留一个活动贴花，寿命 2 秒；不要求多贴花排序、透明受体、蒙皮目标或完整 deferred renderer。",
+      "fixture": [
+        "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+        "L1: 从原靶场拆出 TargetA 和地面，保留原靶标网格、材质、光照和观察相机；验证表面投影。",
+        "L2: 保留 TargetA、TargetB、Cover、地面与射击控制，观察移动受体、命中、遮挡和寿命。",
+        "L3: 使用原完整靶场，保留全部靶标、掩体、墙地、角色、武器、准星、碰撞和射击流程。",
+        "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+        "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+      ],
+      "impact_path": [
+        "原射线命中与独立 hit_surface 输入",
+        "target_id/局部锚点/目标变换",
+        "当前深度重建和投影体裁剪",
+        "受体法线/材料修改后照明",
+        "最近一次命中反馈",
+        "遮挡、原伤害和瞄准流程"
+      ],
+      "tasks": [
+        "SA04_L1",
+        "SA04_L2",
+        "SA04_L3"
+      ]
+    },
+    {
+      "id": "SA05",
+      "title": "森林晨雾：高度层次与景观可读性",
+      "scene": "realistic/projects/forest/Main.tscn",
+      "project": "realistic/projects/forest/project.godot",
+      "source_ids": [
+        "F02",
+        "P01"
+      ],
+      "algorithms": [
+        "SH179"
+      ],
+      "rationale": "取 F02 的清晨低洼薄雾，并放入现有森林；SH179 是有限视线段指数高度雾积分，不等同于 P03 的烟雾流体、局部灯光散射或体积阴影。",
+      "anchors": [
+        [
+          "realistic/projects/forest/Main.tscn",
+          "WorldEnvironment、Decorations-Forest、Groundcover、Main Terrain"
+        ],
+        [
+          "realistic/README.md",
+          "现有 Forest 自由相机与场景保留说明"
+        ]
+      ],
+      "target": "主相机可见地形、树干、石块及 Alpha 裁切植被对应的相机至表面视线段",
+      "protect": "场景几何/植被分布、材质纹理、天空/原体积云、UI、原相机控制；近景关键对象的可辨识度",
+      "purpose": "通过低处与远处的雾层次表达清晨空间深度，同时能继续辨认近景地形、岩石与植被。",
+      "scope": "有限段高度雾；不求解烟传播、光束遮挡或多重散射。天背景采用显式保留策略，不把无限远深度输入有限段公式。",
+      "fixture": [
+        "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+        "L1: 从原森林拆出地形及原视点附近的岩石，保留原空间坐标、天空、云、光照和自由相机；观察高度雾。",
+        "L2: 加入同一区域的树木、草和蕨叶，观察真实遮挡、植被空隙与雾的颜色合成。",
+        "L3: 使用原完整森林，保留全部地形、树木、岩石、Groundcover、天空、云和自由相机。",
+        "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+        "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+      ],
+      "impact_path": [
+        "世界高度密度参数与当前相机/表面端点",
+        "有限视线段完整积分 tau",
+        "T=exp(-tau)",
+        "线性场景色与雾色合成一次",
+        "真实不透明/裁切植被的前后关系",
+        "完整森林的低处层次和近景可读性"
+      ],
+      "tasks": [
+        "SA05_L1",
+        "SA05_L2",
+        "SA05_L3"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "SA01_L1",
+      "chain_id": "SA01",
+      "level": 1,
+      "task": "tasks/SA01_L1/task.json",
+      "prompt": "tasks/SA01_L1/prompt.md",
+      "cases": "tasks/SA01_L1/cases.json"
+    },
+    {
+      "id": "SA01_L2",
+      "chain_id": "SA01",
+      "level": 2,
+      "task": "tasks/SA01_L2/task.json",
+      "prompt": "tasks/SA01_L2/prompt.md",
+      "cases": "tasks/SA01_L2/cases.json"
+    },
+    {
+      "id": "SA01_L3",
+      "chain_id": "SA01",
+      "level": 3,
+      "task": "tasks/SA01_L3/task.json",
+      "prompt": "tasks/SA01_L3/prompt.md",
+      "cases": "tasks/SA01_L3/cases.json"
+    },
+    {
+      "id": "SA02_L1",
+      "chain_id": "SA02",
+      "level": 1,
+      "task": "tasks/SA02_L1/task.json",
+      "prompt": "tasks/SA02_L1/prompt.md",
+      "cases": "tasks/SA02_L1/cases.json"
+    },
+    {
+      "id": "SA02_L2",
+      "chain_id": "SA02",
+      "level": 2,
+      "task": "tasks/SA02_L2/task.json",
+      "prompt": "tasks/SA02_L2/prompt.md",
+      "cases": "tasks/SA02_L2/cases.json"
+    },
+    {
+      "id": "SA02_L3",
+      "chain_id": "SA02",
+      "level": 3,
+      "task": "tasks/SA02_L3/task.json",
+      "prompt": "tasks/SA02_L3/prompt.md",
+      "cases": "tasks/SA02_L3/cases.json"
+    },
+    {
+      "id": "SA03_L1",
+      "chain_id": "SA03",
+      "level": 1,
+      "task": "tasks/SA03_L1/task.json",
+      "prompt": "tasks/SA03_L1/prompt.md",
+      "cases": "tasks/SA03_L1/cases.json"
+    },
+    {
+      "id": "SA03_L2",
+      "chain_id": "SA03",
+      "level": 2,
+      "task": "tasks/SA03_L2/task.json",
+      "prompt": "tasks/SA03_L2/prompt.md",
+      "cases": "tasks/SA03_L2/cases.json"
+    },
+    {
+      "id": "SA03_L3",
+      "chain_id": "SA03",
+      "level": 3,
+      "task": "tasks/SA03_L3/task.json",
+      "prompt": "tasks/SA03_L3/prompt.md",
+      "cases": "tasks/SA03_L3/cases.json"
+    },
+    {
+      "id": "SA04_L1",
+      "chain_id": "SA04",
+      "level": 1,
+      "task": "tasks/SA04_L1/task.json",
+      "prompt": "tasks/SA04_L1/prompt.md",
+      "cases": "tasks/SA04_L1/cases.json"
+    },
+    {
+      "id": "SA04_L2",
+      "chain_id": "SA04",
+      "level": 2,
+      "task": "tasks/SA04_L2/task.json",
+      "prompt": "tasks/SA04_L2/prompt.md",
+      "cases": "tasks/SA04_L2/cases.json"
+    },
+    {
+      "id": "SA04_L3",
+      "chain_id": "SA04",
+      "level": 3,
+      "task": "tasks/SA04_L3/task.json",
+      "prompt": "tasks/SA04_L3/prompt.md",
+      "cases": "tasks/SA04_L3/cases.json"
+    },
+    {
+      "id": "SA05_L1",
+      "chain_id": "SA05",
+      "level": 1,
+      "task": "tasks/SA05_L1/task.json",
+      "prompt": "tasks/SA05_L1/prompt.md",
+      "cases": "tasks/SA05_L1/cases.json"
+    },
+    {
+      "id": "SA05_L2",
+      "chain_id": "SA05",
+      "level": 2,
+      "task": "tasks/SA05_L2/task.json",
+      "prompt": "tasks/SA05_L2/prompt.md",
+      "cases": "tasks/SA05_L2/cases.json"
+    },
+    {
+      "id": "SA05_L3",
+      "chain_id": "SA05",
+      "level": 3,
+      "task": "tasks/SA05_L3/task.json",
+      "prompt": "tasks/SA05_L3/prompt.md",
+      "cases": "tasks/SA05_L3/cases.json"
+    }
+  ]
+}

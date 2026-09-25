@@ -1,0 +1,219 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_212429_7b9f47f6",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      2
+    ],
+    "resolution": [
+      640,
+      480
+    ],
+    "camera": {
+      "position": [
+        12.0,
+        7.0,
+        16.0
+      ],
+      "look_at": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "fov_degrees": 50.0,
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 4.133,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 2.048,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.566315054893494,
+            -0.330350428819656,
+            -0.755086719989777
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            12.0,
+            7.0,
+            16.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.198210269212723,
+            0.94385838508606,
+            -0.26428034901619
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 480,
+        "image": "frame_0001.png",
+        "width": 640
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.566315054893494,
+            -0.330350428819656,
+            -0.755086719989777
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            12.0,
+            7.0,
+            16.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.198210269212723,
+            0.94385838508606,
+            -0.26428034901619
+          ]
+        },
+        "elapsed_s": 0.0333333333333333,
+        "frame": 2,
+        "height": 480,
+        "image": "frame_0002.png",
+        "width": 640
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 10
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 109
+      },
+      "host": "existing_project",
+      "level": 2.0,
+      "scope": "interaction_subset",
+      "source_host_modified": false,
+      "targets": [
+        "DeepOcean"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 2,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260924_212429_7b9f47f6/samples.json",
+  "logs": [
+    "observations/render_20260924_212429_7b9f47f6/import.log",
+    "observations/render_20260924_212429_7b9f47f6/godot.log"
+  ],
+  "images": [
+    {
+      "path": "observations/render_20260924_212429_7b9f47f6/frame_0001.png",
+      "mime_type": "image/png",
+      "encoding": "base64",
+      "frame": 1,
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.566315054893494,
+          -0.330350428819656,
+          -0.755086719989777
+        ],
+        "fov_degrees": 50.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          12.0,
+          7.0,
+          16.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.198210269212723,
+          0.94385838508606,
+          -0.26428034901619
+        ]
+      },
+      "width": 640,
+      "height": 480
+    },
+    {
+      "path": "observations/render_20260924_212429_7b9f47f6/frame_0002.png",
+      "mime_type": "image/png",
+      "encoding": "base64",
+      "frame": 2,
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.566315054893494,
+          -0.330350428819656,
+          -0.755086719989777
+        ],
+        "fov_degrees": 50.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          12.0,
+          7.0,
+          16.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.198210269212723,
+          0.94385838508606,
+          -0.26428034901619
+        ]
+      },
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "task_id": "SA02_L2",
+  "scope": "environment_startup_only_not_algorithm_correctness"
+}

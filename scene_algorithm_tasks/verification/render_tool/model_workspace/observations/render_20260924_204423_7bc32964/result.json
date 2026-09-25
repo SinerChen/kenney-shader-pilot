@@ -1,0 +1,74 @@
+{
+  "ok": false,
+  "errors": [
+    "Requested frames were not all captured"
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_204423_7bc32964",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60
+    ],
+    "resolution": [
+      512,
+      384
+    ],
+    "camera": {
+      "position": [
+        4.0,
+        3.0,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "fov_degrees": 50.0,
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.789,
+      "errors": [],
+      "warnings": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 2.0,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "capture": {
+    "captures": [],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "initialization": "one paused draw; shader global TIME may include initialization time",
+    "process_frames": 60,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "manual_preview_step",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored"
+}

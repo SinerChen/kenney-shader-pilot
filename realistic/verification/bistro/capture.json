@@ -1,0 +1,25 @@
+{
+	"camera": "/root/MainScene/Human-For-Scale/CameraPivot/SpringArm/Camera",
+	"captures": [
+		{
+			"frame": 30,
+			"height": 540,
+			"image": "frame_030.png",
+			"width": 960
+		},
+		{
+			"frame": 120,
+			"height": 540,
+			"image": "frame_120.png",
+			"width": 960
+		}
+	],
+	"display": "Windows",
+	"engine": "4.6.1-stable (official)",
+	"frames": 120,
+	"model_api_calls": 0,
+	"nodes": 3710,
+	"renderer": "forward_plus",
+	"scene": "res://MainScene.tscn",
+	"scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+}

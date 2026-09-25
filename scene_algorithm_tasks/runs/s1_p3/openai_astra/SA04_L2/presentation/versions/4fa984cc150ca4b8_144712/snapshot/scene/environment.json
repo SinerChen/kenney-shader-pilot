@@ -1,0 +1,29 @@
+{
+  "host": "existing_project",
+  "name": "FPS 靶场",
+  "kind": "fps",
+  "level": 2,
+  "scope": "interaction_subset",
+  "description": "保留 TargetA、TargetB、Cover、地面与射击控制，观察移动受体、命中、遮挡和寿命。",
+  "source_entry": "pilot/F01.tscn",
+  "targets": [
+    "World/TargetA",
+    "World/TargetB"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      8,
+      7,
+      12
+    ],
+    "look_at": [
+      0,
+      1,
+      -2
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

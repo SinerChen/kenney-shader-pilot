@@ -1,0 +1,20 @@
+{
+  "host": "existing_project",
+  "name": "草地",
+  "kind": "grass",
+  "level": 3,
+  "scope": "full_scene",
+  "description": "使用原完整草地，保留全部 335 张草片、地面标记、玩家、相机和 UI。",
+  "source_entry": "scenes/GrassPatch.tscn",
+  "targets": [
+    "GrassCards_0",
+    "GrassCards_1",
+    "GrassCards_2",
+    "GrassCards_3"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

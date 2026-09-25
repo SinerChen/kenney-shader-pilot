@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "5797e83a4e106042179502844066fc7edaa11b1f441900cb7864f00b145e799f"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "45c738122de3e191077555f5ecd4c9a225d24d070870c4aef8ccf8bad6db0f40"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "6db302b7db45f99c8629912cf22cf0388da46ba154d322927345cd66e73f47fe"
+    },
+    {
+      "path": "effect/gerstner_water.gdshader",
+      "sha256": "21a489cd64543a6a1713f09bb5e416f27e470cbd60aeed770234443195696dfb"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "fa929f0b099dfde841a8335c71b88ee78af2fac84a8f9df019f66738dcf2a695"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "6a8ba5b47e6a6112d7ebc75e7cde8dcda61d47f7846610b8e2f75f93fb5d7158"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "efd90f5c3fe747facf70cdaf536aeb18acd62c9f1eae0faa483f451049c534cd"
+    }
+  ],
+  "input_sha256": "efd90f5c3fe747facf70cdaf536aeb18acd62c9f1eae0faa483f451049c534cd"
+}

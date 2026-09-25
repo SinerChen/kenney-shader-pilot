@@ -1,0 +1,239 @@
+[
+  {
+    "name": "set_plan",
+    "description": "首次唯一调用：保存4–8项计划；之后不可重设。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "goal": {
+                "type": "string"
+              },
+              "acceptance": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "goal",
+              "acceptance",
+              "tags"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 4,
+          "maxItems": 8
+        }
+      },
+      "required": [
+        "steps"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "read_main",
+    "description": "读取自己的 grass.gdshader、revision 版本号 和当前子任务。",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "update_main",
+    "description": "只更新当前子任务。code 与 edits 二选一；先验证整个补丁，失败不改文件。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "step_id": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string",
+          "description": "完整文件，首次必用；后续优先 edits。"
+        },
+        "edits": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "old": {
+                "type": "string"
+              },
+              "new": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "old",
+              "new"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "base_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "当前工具状态中的 revision，初始为 0。"
+        }
+      },
+      "required": [
+        "step_id",
+        "base_revision",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "check",
+    "description": "Run the fixed Godot target scene; step returns up to 3 actual PNGs, public uses fixed cases.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "step_id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "step",
+            "public"
+          ]
+        },
+        "scene": {
+          "type": "string",
+          "enum": [
+            "target"
+          ]
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "frames": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 720
+          },
+          "minItems": 1,
+          "maxItems": 3
+        },
+        "schedule": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "frame": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 720
+              },
+              "set": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            },
+            "required": [
+              "frame",
+              "set"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "claim": {
+          "type": "string"
+        },
+        "expected": {
+          "type": "string"
+        },
+        "counterexample": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "step_id",
+        "kind",
+        "claim",
+        "expected",
+        "counterexample"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "finish_step",
+    "description": "提交有证据的阶段判断。pass推进下一项；fail/inconclusive留在当前项。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "step_id": {
+          "type": "string"
+        },
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail",
+            "inconclusive"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "limitations": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "step_id",
+        "verdict",
+        "evidence",
+        "summary",
+        "limitations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "submit",
+    "description": "所有子任务结束且当前版本公开执行无错误后，明确提交；不是视觉成功声明。",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "beads": 4690,
+  "captures": [
+    {
+      "height": 720,
+      "name": "macro_before",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "name": "macro_after",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "name": "macro_wind",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "name": "macro_sky_only",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "name": "plant_before",
+      "width": 1280
+    },
+    {
+      "height": 720,
+      "name": "plant_after",
+      "width": 1280
+    }
+  ],
+  "checks": {
+    "dew_shader_compiled": true,
+    "source_scene": "res://Main.tscn (instanced, unchanged)",
+    "wind_displacement_m": 0.0028500952757895
+  },
+  "engine": "4.6.1-stable (official)",
+  "hero": "(40.73885, -5.86902, 17.52034)",
+  "plants": 7,
+  "renderer": "forward_plus"
+}

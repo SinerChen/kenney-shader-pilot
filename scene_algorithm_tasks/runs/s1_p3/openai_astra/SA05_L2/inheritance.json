@@ -1,0 +1,7 @@
+{
+  "parent": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\scene_algorithm_tasks\\runs\\s1_p3\\openai_astra\\SA05_L1",
+  "files": {
+    "height_fog.gdshader": "619c923dea3009265e58946f4ed42a1bcca0fd701f438bb1efb7b7fe8cbcb084",
+    "main.gd": "d1a04b401369833878d644177aee08dbb80eef98da623a494897508dc6307df1"
+  }
+}

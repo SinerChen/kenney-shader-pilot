@@ -1,0 +1,162 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA03_L1",
+  "chain_id": "SA03",
+  "level": 1,
+  "level_name": "单效果／算法实现",
+  "core_question": "这个模块本身是否正确？",
+  "title": "四层高度材质混合",
+  "goal": "高度混合是否保持各材料通道一致，并正确处理零与极小权重？",
+  "requirement": "高度混合是否保持各材料通道一致，并正确处理零与极小权重？",
+  "requirements": [
+    "实现 SH023 的四层同时竞争变体，不能用有顺序的逐层 mix 代替。",
+    "同一组权重用于线性 albedo、roughness、metallic、高度和基础法线；法线按契约归一化并处理退化。",
+    "全零 control 返回契约定义的零材质；极小总权重的分母下限允许权重和不为 1，不能强行当作普通归一化。",
+    "使用隔离材质图谱验证，不增加雨、反射或场景筛选作为 L1 评分内容。"
+  ],
+  "criteria": [
+    "所有 16 个输出通道符合 SH023 固定容差。",
+    "对应还原层编号后，材料结果保持一致。",
+    "分别遵守零策略、单层退化和法线回退；不捏造原材质回退。",
+    "原子拒绝，静态 step 不随时间改变结果。"
+  ],
+  "parent_task": null,
+  "input_code": "empty_effect_entry_on_existing_scene",
+  "base_scene": "realistic/projects/bistro/MainScene.tscn",
+  "project": "realistic/projects/bistro/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA03",
+  "algorithms": [
+    "SH023",
+    "SH043"
+  ],
+  "source_scenario_ids": [
+    "P07",
+    "B06",
+    "B09"
+  ],
+  "primary_algorithms": [
+    "SH023"
+  ],
+  "fixed_supporting_algorithms": [],
+  "primary_evidence": "独立数值 OJ、性质测试、原场景子集",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "经明确 surface/region 白名单标记的室外石路低洼湿区，不是 Ground 节点下所有表面",
+  "protected_targets": "干燥路脊、约定干燥人行区/门口、室内地面、桌椅招牌玻璃、角色、碰撞与日夜控制",
+  "scene_purpose": "路面呈现雨后湿润与原石材细节，仍可辨别通行边界、入口和原有材质。",
+  "impact_path": [
+    "wetness 与作者给定的材质高度/区域 mask",
+    "四层同时竞争的权重",
+    "颜色、粗糙度、金属度、基础法线共用权重",
+    "同切线空间的 RNM 细节",
+    "指定道路 surface 的原照明响应",
+    "街道入口、干区和道具仍可辨识"
+  ],
+  "scope": "美术指定湿区和高度混合，不求解雨水汇流、积水几何、SSR 或完整反射；保留原照明与反射配置。",
+  "prompt": "tasks/SA03_L1/prompt.md",
+  "evaluation_cases": "tasks/SA03_L1/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA03_L1/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA03_L1/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA03_L1/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa03",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "numeric_checks"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原 Bistro 拆出 Ground 路面，保留原地面网格、材质、光照和相机；只观察四层材质混合。",
+    "L2: 保留 Ground 与相邻 Section01 街区，观察湿区、细节法线、受光和干湿边界的关系。",
+    "L3: 使用原完整 Bistro 街景，保留各街区、室内入口、道具、碰撞、日夜控制和相机。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "Bistro 路面",
+    "kind": "bistro",
+    "level": 1,
+    "scope": "scene_subset",
+    "description": "从原 Bistro 拆出 Ground 路面，保留原地面网格、材质、光照和相机；只观察四层材质混合。",
+    "source_entry": "MainScene.tscn",
+    "targets": [
+      "Level Geometry/Ground/Ground"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": {
+      "position": [
+        -3,
+        5,
+        8
+      ],
+      "look_at": [
+        -3,
+        0,
+        0
+      ]
+    },
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

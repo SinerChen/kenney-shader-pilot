@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>场景算法实验 · P3 / S1</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="case_inspector.css">
+  <script src="dashboard.js" defer></script>
+  <script src="case_inspector.js" defer></script>
+</head>
+<body>
+  <header class="page-head">
+    <div class="topline"><a class="brand" href="index.html"><span class="brand-mark">S</span> SCENE ALGORITHM LAB</a><nav><a href="http://127.0.0.1:8770/index.html">项目首页 ↗</a><a href="experiment/review/INDEX.md" target="_blank">输入审阅</a><a href="experiment/STATUS.md" target="_blank">运行说明</a></nav></div>
+    <div class="hero"><div><p class="eyebrow">GODOT · 5 SCENES · 3 LEVELS</p><h1>场景算法实验<span>P3 / S1</span></h1><p class="subtitle">从单个算法到完整场景，查看模型的实现过程与实际渲染。</p></div><div class="refresh"><button id="refresh" class="quiet">↻ 刷新</button><label><input id="auto-refresh" type="checkbox" checked> 自动更新</label><small id="updated">正在读取实验记录…</small></div></div>
+    <div id="notice" class="notice" role="status" aria-live="polite">正在加载实验状态…</div>
+    <div class="metrics"><article><span>已结束任务</span><strong id="metric-completed">—</strong><small>包含模型结束与预算停止</small></article><article><span>模型请求</span><strong id="metric-requests">—</strong><small>包含失败与重试</small></article><article><span>可播放效果视频</span><strong id="metric-renders">—</strong><small id="video-progress">连续渲染 · 30 fps</small></article><article><span>当前任务</span><strong id="metric-current" class="current-task">—</strong><small id="metric-model">—</small></article></div>
+  </header>
+  <main>
+    <div class="section-heading"><div><h2>模型与任务</h2><p>同模型、同组按 L1 → L2 → L3 继承实现。</p></div><div class="legend"><span><i class="dot good"></i>模型结束</span><span><i class="dot warn"></i>预算停止</span><span><i class="dot bad"></i>异常暂停</span><span><i class="dot idle"></i>待运行</span></div></div>
+    <div id="models" class="model-tabs" role="group" aria-label="选择模型"></div>
+    <div class="workspace">
+      <aside class="task-panel"><div class="panel-label">五组递进题<span>L1 · L2 · L3</span></div><div id="tasks"></div><p class="aside-note">L1 单算法 · L2 效果交互<br>L3 场景影响与设计作用</p></aside>
+      <section id="detail" class="detail-panel" aria-label="任务详情">
+        <div class="detail-heading"><div><p id="task-id" class="eyebrow">选择任务</p><h2 id="task-title">正在加载…</h2></div><span id="task-status" class="badge">—</span></div>
+        <div id="task-stats" class="task-stats"></div>
+        <div id="task-error" class="task-error" hidden></div>
+        <div class="detail-tabs" role="group" aria-label="详情视图"><button class="active" data-view="video">效果视频</button><button data-view="render">过程截图</button><button data-view="prompt">Prompt</button><button data-view="trajectory">调用轨迹</button><button data-view="files">修改文件</button><button data-view="plan">子任务计划</button></div>
+        <div id="video-view" class="view">
+          <div class="video-toolbar"><span id="video-kind">最终候选视频</span><label>播放速度 <select id="video-speed" aria-label="视频播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></div>
+          <div id="video-stage" class="video-stage"><div class="empty-state">正在读取视频状态…</div></div>
+          <div id="video-caption" class="render-caption"></div>
+          <div id="video-links" class="resource-links"></div>
+          <div id="video-errors"></div>
+        </div>
+        <div id="render-view" class="view" hidden>
+          <div class="render-toolbar"><label for="render-select">渲染记录</label><select id="render-select" aria-label="选择渲染记录"></select><a id="original-image" target="_blank" rel="noopener">打开原图 ↗</a></div>
+          <div id="image-stage" class="image-stage"><div class="empty-state">本任务尚未产生渲染结果。</div></div>
+          <div id="frames" class="frame-controls" aria-label="截图帧"></div>
+          <div id="render-caption" class="render-caption"></div>
+          <div id="render-links" class="resource-links"></div>
+          <details id="camera-details"><summary>相机与渲染参数</summary><pre id="camera-json"></pre></details>
+          <div id="render-errors"></div>
+        </div>
+        <div id="plan-view" class="view" hidden><div id="plan-content"></div><div id="final-content"></div></div>
+        <div id="prompt-view" class="view" hidden><div id="prompt-body"></div></div>
+        <div id="trajectory-view" class="view" hidden>
+          <p id="trace-summary" class="muted"></p>
+          <div class="trace-toolbar"><select id="trace-filter" aria-label="筛选调用轨迹"><option value="all">全部事件</option><option value="model">模型响应</option><option value="request">模型请求</option><option value="read">read</option><option value="write">write</option><option value="render">render</option><option value="error">仅错误</option></select><input id="trace-search" type="search" aria-label="搜索调用轨迹" placeholder="搜索调用、文件名或响应文本"></div>
+          <div id="trajectory-body"></div>
+          <div class="trace-pagination"><button id="trace-prev">上一页</button><span id="trace-page" class="muted"></span><button id="trace-next">下一页</button></div>
+          <div id="trace-links" class="resource-links"></div>
+        </div>
+        <div id="files-view" class="view" hidden><div id="files-body"></div></div>
+      </section>
+    </div>
+    <section class="overview"><div class="section-heading"><div><h2>全部 60 个任务</h2><p>点击单元格跳转到对应模型与任务。</p></div><span class="muted">渲染成功与模型自评均不代表独立验收通过。</span></div><div class="table-scroll"><table><thead id="overview-head"></thead><tbody id="overview-body"></tbody></table></div></section>
+  </main>
+  <footer><span>SCENE ALGORITHM LAB</span><span>视频来自当前候选工程的连续渲染 · 每 15 秒刷新</span><a href="runtime/experiment/status.json" target="_blank">原始运行状态 ↗</a></footer>
+</body>
+</html>

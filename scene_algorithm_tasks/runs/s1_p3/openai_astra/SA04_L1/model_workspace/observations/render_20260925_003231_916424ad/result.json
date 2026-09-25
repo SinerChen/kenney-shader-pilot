@@ -1,0 +1,122 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "observation_directory": "observations/render_20260925_003231_916424ad",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1
+    ],
+    "resolution": [
+      640,
+      640
+    ],
+    "camera": {
+      "position": [
+        -2.0,
+        1.0,
+        0.0
+      ],
+      "look_at": [
+        -4.0,
+        2.2,
+        -3.0
+      ],
+      "fov_degrees": 40.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.379,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 1.507,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.526315808296204,
+            0.315789490938187,
+            -0.789473652839661
+          ],
+          "fov_degrees": 40.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -2.0,
+            1.0,
+            0.0
+          ],
+          "projection": 0,
+          "up": [
+            0.175168499350548,
+            0.948829293251038,
+            0.262752741575241
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 640
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 6
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 24
+      },
+      "host": "existing_project",
+      "level": 1.0,
+      "scope": "scene_subset",
+      "source_host_modified": false,
+      "targets": [
+        "World/TargetA",
+        "World/TargetB"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 1,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_003231_916424ad/samples.json"
+}

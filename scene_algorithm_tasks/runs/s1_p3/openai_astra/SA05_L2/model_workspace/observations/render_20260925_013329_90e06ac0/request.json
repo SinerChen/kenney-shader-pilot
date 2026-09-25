@@ -1,0 +1,15 @@
+{
+  "scene": "scene/main.tscn",
+  "frames": [
+    1,
+    60
+  ],
+  "resolution": [
+    960,
+    640
+  ],
+  "camera": null,
+  "camera_track": [],
+  "dt_seconds": 0.016666666666666666,
+  "fixed_fps": 60
+}

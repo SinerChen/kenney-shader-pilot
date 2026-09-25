@@ -1,0 +1,10 @@
+{
+  "scene": "forest",
+  "preserved_nodes": 15869,
+  "preserved_multimesh_nodes": 3709,
+  "changes": [
+    "Detach missing groundcover editor generator; keep all baked vegetation.",
+    "Attach free-look controls to the original Camera3D."
+  ],
+  "limitation": "Regenerating vegetation with the missing upstream groundcover plugin is unavailable."
+}

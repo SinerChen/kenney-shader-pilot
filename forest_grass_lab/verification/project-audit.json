@@ -1,0 +1,93 @@
+{
+  "runtime_project": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_grass_lab\\project",
+  "source_files": 14,
+  "all_files_without_godot_cache": 18,
+  "bytes": 9855454,
+  "before_bytes": 12895468,
+  "removed_from_runtime": [
+    "Grass_Normal.png",
+    "4 original Grass GLBs and their generated import files"
+  ],
+  "archive": "source_archive/",
+  "allowed_candidate_files": [
+    "effect/grass.gdshader"
+  ],
+  "retained": [
+    "project.godot",
+    "one host script",
+    "4 small scene wrappers",
+    "one candidate shader",
+    "2 required textures",
+    "grass_cards.json",
+    "source and license records",
+    "public CA certificate"
+  ],
+  "source_inventory": [
+    {
+      "path": "project.godot",
+      "bytes": 541
+    },
+    {
+      "path": "assets/cacert.pem",
+      "bytes": 240216
+    },
+    {
+      "path": "assets/Grass_BaseColor.png",
+      "bytes": 5488818
+    },
+    {
+      "path": "assets/grass_cards.json",
+      "bytes": 3313
+    },
+    {
+      "path": "assets/Grass_ORM.png",
+      "bytes": 4102413
+    },
+    {
+      "path": "assets/LICENSE-Forest.txt",
+      "bytes": 1065
+    },
+    {
+      "path": "assets/source.json",
+      "bytes": 616
+    },
+    {
+      "path": "assets/UPSTREAM-ASSET-CREDITS.txt",
+      "bytes": 597
+    },
+    {
+      "path": "effect/grass.gdshader",
+      "bytes": 1543
+    },
+    {
+      "path": "host/grass_host.gd",
+      "bytes": 13713
+    },
+    {
+      "path": "scenes/GrassPatch.tscn",
+      "bytes": 166
+    },
+    {
+      "path": "scenes/L1.tscn",
+      "bytes": 168
+    },
+    {
+      "path": "scenes/L2.tscn",
+      "bytes": 176
+    },
+    {
+      "path": "scenes/L3.tscn",
+      "bytes": 175
+    }
+  ],
+  "exclusions": [
+    ".godot is generated local cache, never model input",
+    "reference source and reference screenshots excluded from API input"
+  ],
+  "local_checks": {
+    "p3-smoke-starter": true,
+    "p3-smoke-invalid": false,
+    "p3-smoke-public": true
+  },
+  "bytes_reduced": 3040014
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA03_L1",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA03_L1_oracle",
+      "intervention": "普通、负高度、大高度、小 transition 样本逐像素求值。",
+      "expected": "所有 16 个输出通道符合 SH023 固定容差。",
+      "evidence": "独立 float64 参照、GPU 读回和材质图谱。",
+      "typical_failure": "结果颜色近似正确但粗糙度/法线使用了另一组权重。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L1_permutation",
+      "intervention": "对同一像素的四层执行全部 24 种排列。",
+      "expected": "对应还原层编号后，材料结果保持一致。",
+      "evidence": "排列对照和每通道误差。",
+      "typical_failure": "两两折叠产生顺序依赖。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L1_zeros",
+      "intervention": "全零、one-hot、极小 control 以及相消法线。",
+      "expected": "分别遵守零策略、单层退化和法线回退；不捏造原材质回退。",
+      "evidence": "权重和/法线读回及边界案例。",
+      "typical_failure": "除零、把零输入渲成随机灰色或总是强行归一化。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L1_invalid",
+      "intervention": "非法数值/尺寸/法线输入后再次读取旧输出。",
+      "expected": "原子拒绝，静态 step 不随时间改变结果。",
+      "evidence": "错误状态和前后数据。",
+      "typical_failure": "错误更新部分写入资源或静态混合持续闪动。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

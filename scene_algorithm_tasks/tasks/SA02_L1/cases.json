@@ -1,0 +1,39 @@
+{
+  "task_id": "SA02_L1",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA02_L1_geometry",
+      "intervention": "单波沿 X、沿 Z，再叠加两方向波；在 t=0/1/2 采样。",
+      "expected": "位置、切向、速度和法线均在 SH185 既定误差界内。",
+      "evidence": "逐点 GPU/独立 CPU 数据、隔离网格动画。",
+      "typical_failure": "只有高度变化，漏掉水平位移或切向交叉项。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L1_limits",
+      "intervention": "空波组、零振幅、反向速度与非单位方向。",
+      "expected": "平面极限、传播方向和方向归一化均正确。",
+      "evidence": "原契约边界样本及法线可视化。",
+      "typical_failure": "方向长度错误改变波长或平面极限仍有波动。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L1_transform",
+      "intervention": "施加合法非均匀缩放及负行列式矩阵。",
+      "expected": "世界位置和切向一致，法线方向按契约处理。",
+      "evidence": "变换前后读回和斜视 viewer。",
+      "typical_failure": "用位置矩阵直接变换法线。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L1_degeneracy",
+      "intervention": "运行折叠/近退化输入，暂停并 reset。",
+      "expected": "如实返回 J、normal_valid 和 orientation；dt=0 无推进；reset 回到初始时间。",
+      "evidence": "状态位、实际 GPU dispatch 和误差报告。",
+      "typical_failure": "夹小 steepness，伪造向上法线或隐藏失败点。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

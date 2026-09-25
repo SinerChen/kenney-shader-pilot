@@ -1,0 +1,11 @@
+{
+  "scene_id": "water",
+  "mode": "capture",
+  "checked_at": "2026-09-23T16:20:10.520557+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 7.76,
+  "errors": [],
+  "warnings": [],
+  "log": "verification/water/capture.log",
+  "capture_completed": true
+}

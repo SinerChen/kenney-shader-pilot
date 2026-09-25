@@ -1,0 +1,16 @@
+{
+  "scene_id": "bistro",
+  "mode": "capture",
+  "checked_at": "2026-09-23T16:04:27.980600+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 24.43,
+  "errors": [
+    "ERROR: 4 resources still in use at exit (run with --verbose for details)."
+  ],
+  "warnings": [
+    "WARNING: FSR 2 or MetalFX Temporal is not compatible with TAA. Disabling TAA internally.",
+    "WARNING: ObjectDB instances leaked at exit (run with --verbose for details)."
+  ],
+  "log": "verification/bistro/capture.log",
+  "capture_completed": true
+}

@@ -1,0 +1,435 @@
+{
+  "title": "Godot 扩展场景库",
+  "engine": "4.6.1",
+  "updated_at": "2026-09-23T19:15:09.651326+08:00",
+  "scope": "Native scene installation and inspection. No model tasks or scoring protocols created for these additional scenes.",
+  "prepared_model_tasks": 0,
+  "model_api_calls": 0,
+  "scenes": [
+    {
+      "id": "bistro",
+      "name": "Bistro",
+      "repository": "https://github.com/Jamsers/Bistro-Demo-Tweaked",
+      "branch": "main",
+      "archive_url": "https://codeload.github.com/Jamsers/Bistro-Demo-Tweaked/zip/refs/heads/main",
+      "archive_bytes": 625137656,
+      "downloaded_at": "2026-09-23T15:54:33.994348+08:00",
+      "directory": "projects/bistro",
+      "archive": "downloads/bistro.zip",
+      "code": "R01",
+      "launcher": "Bistro",
+      "category": "写实街区 / 室内外光照",
+      "description": "餐馆、石板路、街灯、玻璃和大量街道道具。原项目提供日夜切换、人物行走、自由飞行与动态物体。",
+      "directions": "适合后续设计材质粗糙度、玻璃、湿地反射、日夜变化和多光源任务。",
+      "controls": "WASD 移动；Shift 冲刺；空格跳跃；V 切换第一/第三人称；~ 自由穿行；H 显示/隐藏面板；Esc 释放鼠标。",
+      "original_version": "4.4",
+      "main_scene": "MainScene.tscn",
+      "license": "代码 MIT；大部分资产 CC BY 4.0；音乐 CC BY 3.0；部分音效 CC BY-NC 4.0。具体以 ATTRIBUTION 为准。",
+      "license_file": "ATTRIBUTION",
+      "note": "画面完成 120 帧渲染。原项目同时启用 FSR2/TAA，引擎自动关闭重复 TAA；检查退出时仍有资源释放提示。导入时 Bent_Quad.mtl 缺失，场景已正常显示。",
+      "capture": {
+        "camera": "/root/MainScene/Human-For-Scale/CameraPivot/SpringArm/Camera",
+        "captures": [
+          {
+            "frame": 30,
+            "height": 540,
+            "image": "frame_030.png",
+            "width": 960
+          },
+          {
+            "frame": 120,
+            "height": 540,
+            "image": "frame_120.png",
+            "width": 960
+          }
+        ],
+        "display": "Windows",
+        "engine": "4.6.1-stable (official)",
+        "frames": 120,
+        "model_api_calls": 0,
+        "nodes": 3710,
+        "renderer": "forward_plus",
+        "scene": "res://MainScene.tscn",
+        "scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+      },
+      "check": {
+        "scene_id": "bistro",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:04:27.980600+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 24.43,
+        "errors": [
+          "ERROR: 4 resources still in use at exit (run with --verbose for details)."
+        ],
+        "warnings": [
+          "WARNING: FSR 2 or MetalFX Temporal is not compatible with TAA. Disabling TAA internally.",
+          "WARNING: ObjectDB instances leaked at exit (run with --verbose for details)."
+        ],
+        "log": "verification/bistro/capture.log",
+        "capture_completed": true
+      },
+      "import_check": {
+        "scene_id": "bistro",
+        "mode": "import",
+        "checked_at": "2026-09-23T15:57:53.195539+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 138.19,
+        "errors": [
+          "ERROR: Couldn't open MTL file 'res://Meshes/Bent_Quad.mtl', it may not exist or not be readable."
+        ],
+        "warnings": [
+          "WARNING: Ignoring unsupported header information in HDR: GAMMA=1.",
+          "WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0."
+        ],
+        "log": "verification/bistro/import.log"
+      },
+      "screenshot": "verification/bistro/frame_120.png"
+    },
+    {
+      "id": "sponza",
+      "name": "Sponza",
+      "repository": "https://github.com/Calinou/godot-sponza",
+      "branch": "master",
+      "archive_url": "https://codeload.github.com/Calinou/godot-sponza/zip/refs/heads/master",
+      "archive_bytes": 129878340,
+      "downloaded_at": "2026-09-23T15:52:14.389401+08:00",
+      "directory": "projects/sponza",
+      "archive": "downloads/sponza.zip",
+      "code": "R02",
+      "launcher": "Sponza",
+      "category": "写实建筑 / 材质与间接光",
+      "description": "拱廊、石柱、布幔与中庭。可以切换画质预设并自由移动镜头，适合观察遮挡、材质和明暗关系。",
+      "directions": "适合后续设计 AO、间接光、接触阴影、反射与材质分离任务。",
+      "controls": "首次进入选择画质并点击 OK；WASD 移动；空格上升、Shift 下降；右键加速；滚轮调速；Esc 设置；F10 释放鼠标。",
+      "original_version": "4.6",
+      "main_scene": "scenes/sponza.scn",
+      "license": "代码 MIT；Crytek Sponza 资产按上游说明为 public domain；Noto Sans 字体 SIL OFL 1.1。",
+      "license_file": "LICENSE.md",
+      "note": "使用单线程资源导入后正常加载，运行日志无错误。首次 Collada 导入有多边形和空节点名称提示；截图关闭欢迎面板，保留默认 High 预设。",
+      "capture": {
+        "camera": "/root/Scene Root/Camera",
+        "captures": [
+          {
+            "frame": 30,
+            "height": 540,
+            "image": "frame_030.png",
+            "width": 960
+          },
+          {
+            "frame": 120,
+            "height": 540,
+            "image": "frame_120.png",
+            "width": 960
+          }
+        ],
+        "display": "Windows",
+        "engine": "4.6.1-stable (official)",
+        "frames": 120,
+        "model_api_calls": 0,
+        "nodes": 65,
+        "renderer": "forward_plus",
+        "scene": "res://scenes/sponza.scn",
+        "scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+      },
+      "check": {
+        "scene_id": "sponza",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:07:46.305412+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 6.19,
+        "errors": [],
+        "warnings": [],
+        "log": "verification/sponza/capture.log",
+        "capture_completed": true
+      },
+      "import_check": {
+        "scene_id": "sponza",
+        "mode": "import",
+        "checked_at": "2026-09-23T15:54:58.238851+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 7.23,
+        "errors": [
+          "ERROR: Condition \"p_name.is_empty()\" is true."
+        ],
+        "warnings": [
+          "WARNING: Primitive type \"polygons\" is not well supported (concave shapes may fail). To ensure that the geometry is properly imported, please re-export using \"triangles\" or \"polylist\"."
+        ],
+        "log": "verification/sponza/import.log"
+      },
+      "screenshot": "verification/sponza/frame_120.png"
+    },
+    {
+      "id": "forest",
+      "name": "Open Forest Benchmark",
+      "repository": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+      "branch": "main",
+      "archive_url": "https://codeload.github.com/Rytelier/Godot-4-forest-benchmark/zip/refs/heads/main",
+      "archive_bytes": 690641991,
+      "downloaded_at": "2026-09-23T15:55:16.386488+08:00",
+      "directory": "projects/forest",
+      "archive": "downloads/forest.zip",
+      "code": "R03",
+      "launcher": "Forest",
+      "category": "自然环境 / 植被与大气",
+      "description": "森林、地形、石块、草木和体积云。保留原有树木、风动材质、地表与已生成的植被分布。",
+      "directions": "适合后续设计植被风动、地表混合、雾、云与交互扰动任务。",
+      "controls": "按住右键转动视角；WASD 移动；Q/E 下降/上升；Shift 加速；R 恢复原始镜头；Esc 释放鼠标。自由相机不带碰撞。",
+      "original_version": "4.0",
+      "main_scene": "Main.tscn",
+      "license": "仓库 MIT；外部模型与贴图来源见 Asset Credits.txt，保留原有署名文件。",
+      "license_file": "Asset Credits.txt",
+      "note": "上游没有附带 groundcover 编辑器插件。本地解除该插件引用，完整保留 15,869 个节点和 3,709 个 MultiMesh 节点，并加入自由相机。不能用缺失插件重新散布植被；旧网格格式/资源 UID 提示不影响当前画面。",
+      "capture": {
+        "camera": "/root/Node3D/Camera3D",
+        "captures": [
+          {
+            "frame": 30,
+            "height": 540,
+            "image": "frame_030.png",
+            "width": 960
+          },
+          {
+            "frame": 120,
+            "height": 540,
+            "image": "frame_120.png",
+            "width": 960
+          }
+        ],
+        "display": "Windows",
+        "engine": "4.6.1-stable (official)",
+        "frames": 120,
+        "model_api_calls": 0,
+        "nodes": 35274,
+        "renderer": "forward_plus",
+        "scene": "res://Main.tscn",
+        "scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+      },
+      "check": {
+        "scene_id": "forest",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:02:43.380719+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 22.05,
+        "errors": [],
+        "warnings": [
+          "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+          "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+          "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+          "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+        ],
+        "log": "verification/forest/capture.log",
+        "capture_completed": true
+      },
+      "import_check": {
+        "scene_id": "forest",
+        "mode": "import",
+        "checked_at": "2026-09-23T16:02:10.529497+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 18.85,
+        "errors": [],
+        "warnings": [
+          "WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png",
+          "WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png",
+          "WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png",
+          "WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.",
+          "WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded."
+        ],
+        "log": "verification/forest/import.log"
+      },
+      "screenshot": "verification/forest/frame_120.png"
+    },
+    {
+      "id": "tps",
+      "name": "Official TPS Demo",
+      "repository": "https://github.com/godotengine/tps-demo",
+      "branch": "master",
+      "archive_url": "https://codeload.github.com/godotengine/tps-demo/zip/refs/heads/master",
+      "archive_bytes": 368517408,
+      "downloaded_at": "2026-09-23T15:55:59.063601+08:00",
+      "directory": "projects/tps",
+      "archive": "downloads/tps.zip",
+      "code": "R04",
+      "launcher": "TPS",
+      "category": "科幻工业场景 / 动态交互",
+      "description": "官方第三人称射击演示：工业空间、角色、机器人、武器、发光体与动态光照。风格为科幻 PBR，并非现实地点扫描。",
+      "directions": "适合后续设计命中反馈、溶解、护盾、动态阴影与多效果组合任务。",
+      "controls": "主菜单点击 Play；WASD 移动；鼠标转动视角；空格跳跃；右键瞄准后左键射击；Esc 返回菜单；F11 全屏。",
+      "original_version": "4.7",
+      "main_scene": "main/main.tscn",
+      "license": "代码 MIT；资产与音乐 CC BY 3.0；材质来源与作者见 LICENSE.md。",
+      "license_file": "LICENSE.md",
+      "note": "当前上游 master 标注 4.7；本地隐藏 4.7 专属的 Nearest 3D 缩放选项，以兼容 4.6.1。关卡完成 120 帧渲染；菜单另外检查。首次导入仍有重复动画名、旧纹理引用及空网格提示。",
+      "capture": {
+        "camera": "/root/Level/SpawnedNodes/1/CameraBase/CameraRot/SpringArm3D/Camera3D",
+        "captures": [
+          {
+            "frame": 30,
+            "height": 540,
+            "image": "frame_030.png",
+            "width": 960
+          },
+          {
+            "frame": 120,
+            "height": 540,
+            "image": "frame_120.png",
+            "width": 960
+          }
+        ],
+        "display": "Windows",
+        "engine": "4.6.1-stable (official)",
+        "frames": 120,
+        "model_api_calls": 0,
+        "nodes": 3309,
+        "renderer": "forward_plus",
+        "scene": "res://level/level.tscn",
+        "scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+      },
+      "check": {
+        "scene_id": "tps",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:02:04.810126+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 37.24,
+        "errors": [],
+        "warnings": [],
+        "log": "verification/tps/capture.log",
+        "capture_completed": true
+      },
+      "import_check": {
+        "scene_id": "tps",
+        "mode": "import",
+        "checked_at": "2026-09-23T16:00:06.099089+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 32.19,
+        "errors": [
+          "ERROR: Animation name \"Cannon_Charge\" already exists in library.",
+          "ERROR: Failed loading resource: res://door/model/doorsimple_d.png.",
+          "ERROR: Condition \"surfaces.is_empty()\" is true. Returning: Ref<ArrayMesh>()"
+        ],
+        "warnings": [
+          "WARNING: Ignoring unsupported header information in HDR: GAMMA=1.",
+          "WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0."
+        ],
+        "log": "verification/tps/import.log"
+      },
+      "menu_check": {
+        "scene_id": "tps",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:05:25.001917+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 13.24,
+        "errors": [],
+        "warnings": [],
+        "log": "verification/tps/menu/capture.log",
+        "capture_completed": true
+      },
+      "play_check": {
+        "scene_id": "tps",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:11:04.373303+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 28.63,
+        "errors": [],
+        "warnings": [],
+        "log": "verification/tps/play/capture.log",
+        "capture_completed": true
+      },
+      "screenshot": "verification/tps/frame_120.png"
+    },
+    {
+      "id": "water",
+      "name": "Boujie Water Shader",
+      "repository": "https://github.com/Chrisknyfe/boujie_water_shader",
+      "branch": "main",
+      "archive_url": "https://codeload.github.com/Chrisknyfe/boujie_water_shader/zip/refs/heads/main",
+      "archive_bytes": 10572695,
+      "downloaded_at": "2026-09-23T16:16:01.332506+08:00",
+      "directory": "projects/water",
+      "archive": "downloads/water.zip",
+      "supplemental_sources": [
+        {
+          "url": "https://raw.githubusercontent.com/Chrisknyfe/boujie_water_shader/main/project.godot",
+          "file": "downloads/water-project.godot",
+          "reason": "Excluded from upstream ZIP by export-ignore."
+        }
+      ],
+      "code": "R05",
+      "launcher": "Water",
+      "category": "水体与透明材质 / Shader 示例",
+      "description": "海面及材质展示场景，包含 Gerstner 波浪、海面泡沫、岸边泡沫、折射、深度雾，以及冰与黑曜石等材质示例。海面网格包含 LOD 并跟随相机。",
+      "directions": "适合后续设计波浪、泡沫、折射、水下过渡及相机移动时的连续性任务。",
+      "controls": "方向键移动；鼠标转动视角；Enter 或空格捕获/释放鼠标；Tab 显示/隐藏帮助；Page Up / Page Down 调整远裁剪距离；Esc 退出。",
+      "original_version": "4.1",
+      "main_scene": "example/boujie_water_shader/water_shader_examples.tscn",
+      "license": "MIT；Zach Bernal 与贡献者。原始水面 Shader 作者 Tom Langwaldt 等来源署名保留在插件 README 中。",
+      "license_file": "addons/boujie_water_shader/LICENSE.md",
+      "note": "官方 ZIP 通过 export-ignore 排除了 project.godot，已从同一官方 main 分支补齐。核心 Shader 与示例保持原样，完成 120 帧渲染且运行无错误、无警告。首次 OBJ 导入提示 mountains.mtl、subdivcube.mtl 缺失，记录保留。",
+      "capture": {
+        "camera": "/root/WaterShaderExamples/Camera",
+        "captures": [
+          {
+            "frame": 30,
+            "height": 540,
+            "image": "frame_030.png",
+            "width": 960
+          },
+          {
+            "frame": 120,
+            "height": 540,
+            "image": "frame_120.png",
+            "width": 960
+          }
+        ],
+        "display": "Windows",
+        "engine": "4.6.1-stable (official)",
+        "entered_via_play": false,
+        "frames": 120,
+        "model_api_calls": 0,
+        "nodes": 136,
+        "renderer": "forward_plus",
+        "scene": "res://example/boujie_water_shader/water_shader_examples.tscn",
+        "scope": "Scene loading and GPU rendering only; no model evaluation or shader correctness score."
+      },
+      "check": {
+        "scene_id": "water",
+        "mode": "capture",
+        "checked_at": "2026-09-23T16:20:10.520557+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 7.76,
+        "errors": [],
+        "warnings": [],
+        "log": "verification/water/capture.log",
+        "capture_completed": true
+      },
+      "import_check": {
+        "scene_id": "water",
+        "mode": "import",
+        "checked_at": "2026-09-23T16:16:09.034490+08:00",
+        "exit_code": 0,
+        "elapsed_seconds": 7.51,
+        "errors": [
+          "ERROR: Couldn't open MTL file 'res://example/boujie_water_shader/mountains.mtl', it may not exist or not be readable.",
+          "ERROR: Couldn't open MTL file 'res://example/boujie_water_shader/subdivcube.mtl', it may not exist or not be readable."
+        ],
+        "warnings": [],
+        "log": "verification/water/import.log"
+      },
+      "screenshot": "verification/water/frame_120.png"
+    }
+  ]
+}

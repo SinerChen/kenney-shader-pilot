@@ -1,0 +1,547 @@
+{
+  "mode": "serial",
+  "max_active_tasks": 1,
+  "count": 60,
+  "items": [
+    {
+      "position": 1,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA01_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA01_L1.json"
+    },
+    {
+      "position": 2,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA01_L2",
+      "parent": "openai_astra/SA01_L1",
+      "status": "not_started",
+      "request_preview": "review/SA01_L2.json"
+    },
+    {
+      "position": 3,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA01_L3",
+      "parent": "openai_astra/SA01_L2",
+      "status": "not_started",
+      "request_preview": "review/SA01_L3.json"
+    },
+    {
+      "position": 4,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA02_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA02_L1.json"
+    },
+    {
+      "position": 5,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA02_L2",
+      "parent": "openai_astra/SA02_L1",
+      "status": "not_started",
+      "request_preview": "review/SA02_L2.json"
+    },
+    {
+      "position": 6,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA02_L3",
+      "parent": "openai_astra/SA02_L2",
+      "status": "not_started",
+      "request_preview": "review/SA02_L3.json"
+    },
+    {
+      "position": 7,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA03_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA03_L1.json"
+    },
+    {
+      "position": 8,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA03_L2",
+      "parent": "openai_astra/SA03_L1",
+      "status": "not_started",
+      "request_preview": "review/SA03_L2.json"
+    },
+    {
+      "position": 9,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA03_L3",
+      "parent": "openai_astra/SA03_L2",
+      "status": "not_started",
+      "request_preview": "review/SA03_L3.json"
+    },
+    {
+      "position": 10,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA04_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA04_L1.json"
+    },
+    {
+      "position": 11,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA04_L2",
+      "parent": "openai_astra/SA04_L1",
+      "status": "not_started",
+      "request_preview": "review/SA04_L2.json"
+    },
+    {
+      "position": 12,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA04_L3",
+      "parent": "openai_astra/SA04_L2",
+      "status": "not_started",
+      "request_preview": "review/SA04_L3.json"
+    },
+    {
+      "position": 13,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA05_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA05_L1.json"
+    },
+    {
+      "position": 14,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA05_L2",
+      "parent": "openai_astra/SA05_L1",
+      "status": "not_started",
+      "request_preview": "review/SA05_L2.json"
+    },
+    {
+      "position": 15,
+      "model_alias": "openai_astra",
+      "model": "gpt-6-astra",
+      "task_id": "SA05_L3",
+      "parent": "openai_astra/SA05_L2",
+      "status": "not_started",
+      "request_preview": "review/SA05_L3.json"
+    },
+    {
+      "position": 16,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA01_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA01_L1.json"
+    },
+    {
+      "position": 17,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA01_L2",
+      "parent": "openai_main/SA01_L1",
+      "status": "not_started",
+      "request_preview": "review/SA01_L2.json"
+    },
+    {
+      "position": 18,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA01_L3",
+      "parent": "openai_main/SA01_L2",
+      "status": "not_started",
+      "request_preview": "review/SA01_L3.json"
+    },
+    {
+      "position": 19,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA02_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA02_L1.json"
+    },
+    {
+      "position": 20,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA02_L2",
+      "parent": "openai_main/SA02_L1",
+      "status": "not_started",
+      "request_preview": "review/SA02_L2.json"
+    },
+    {
+      "position": 21,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA02_L3",
+      "parent": "openai_main/SA02_L2",
+      "status": "not_started",
+      "request_preview": "review/SA02_L3.json"
+    },
+    {
+      "position": 22,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA03_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA03_L1.json"
+    },
+    {
+      "position": 23,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA03_L2",
+      "parent": "openai_main/SA03_L1",
+      "status": "not_started",
+      "request_preview": "review/SA03_L2.json"
+    },
+    {
+      "position": 24,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA03_L3",
+      "parent": "openai_main/SA03_L2",
+      "status": "not_started",
+      "request_preview": "review/SA03_L3.json"
+    },
+    {
+      "position": 25,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA04_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA04_L1.json"
+    },
+    {
+      "position": 26,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA04_L2",
+      "parent": "openai_main/SA04_L1",
+      "status": "not_started",
+      "request_preview": "review/SA04_L2.json"
+    },
+    {
+      "position": 27,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA04_L3",
+      "parent": "openai_main/SA04_L2",
+      "status": "not_started",
+      "request_preview": "review/SA04_L3.json"
+    },
+    {
+      "position": 28,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA05_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA05_L1.json"
+    },
+    {
+      "position": 29,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA05_L2",
+      "parent": "openai_main/SA05_L1",
+      "status": "not_started",
+      "request_preview": "review/SA05_L2.json"
+    },
+    {
+      "position": 30,
+      "model_alias": "openai_main",
+      "model": "gpt-5.6-sol",
+      "task_id": "SA05_L3",
+      "parent": "openai_main/SA05_L2",
+      "status": "not_started",
+      "request_preview": "review/SA05_L3.json"
+    },
+    {
+      "position": 31,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA01_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA01_L1.json"
+    },
+    {
+      "position": 32,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA01_L2",
+      "parent": "claude_main/SA01_L1",
+      "status": "not_started",
+      "request_preview": "review/SA01_L2.json"
+    },
+    {
+      "position": 33,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA01_L3",
+      "parent": "claude_main/SA01_L2",
+      "status": "not_started",
+      "request_preview": "review/SA01_L3.json"
+    },
+    {
+      "position": 34,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA02_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA02_L1.json"
+    },
+    {
+      "position": 35,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA02_L2",
+      "parent": "claude_main/SA02_L1",
+      "status": "not_started",
+      "request_preview": "review/SA02_L2.json"
+    },
+    {
+      "position": 36,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA02_L3",
+      "parent": "claude_main/SA02_L2",
+      "status": "not_started",
+      "request_preview": "review/SA02_L3.json"
+    },
+    {
+      "position": 37,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA03_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA03_L1.json"
+    },
+    {
+      "position": 38,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA03_L2",
+      "parent": "claude_main/SA03_L1",
+      "status": "not_started",
+      "request_preview": "review/SA03_L2.json"
+    },
+    {
+      "position": 39,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA03_L3",
+      "parent": "claude_main/SA03_L2",
+      "status": "not_started",
+      "request_preview": "review/SA03_L3.json"
+    },
+    {
+      "position": 40,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA04_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA04_L1.json"
+    },
+    {
+      "position": 41,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA04_L2",
+      "parent": "claude_main/SA04_L1",
+      "status": "not_started",
+      "request_preview": "review/SA04_L2.json"
+    },
+    {
+      "position": 42,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA04_L3",
+      "parent": "claude_main/SA04_L2",
+      "status": "not_started",
+      "request_preview": "review/SA04_L3.json"
+    },
+    {
+      "position": 43,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA05_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA05_L1.json"
+    },
+    {
+      "position": 44,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA05_L2",
+      "parent": "claude_main/SA05_L1",
+      "status": "not_started",
+      "request_preview": "review/SA05_L2.json"
+    },
+    {
+      "position": 45,
+      "model_alias": "claude_main",
+      "model": "claude-sonnet-5",
+      "task_id": "SA05_L3",
+      "parent": "claude_main/SA05_L2",
+      "status": "not_started",
+      "request_preview": "review/SA05_L3.json"
+    },
+    {
+      "position": 46,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA01_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA01_L1.json"
+    },
+    {
+      "position": 47,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA01_L2",
+      "parent": "kimi_retry_128k/SA01_L1",
+      "status": "not_started",
+      "request_preview": "review/SA01_L2.json"
+    },
+    {
+      "position": 48,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA01_L3",
+      "parent": "kimi_retry_128k/SA01_L2",
+      "status": "not_started",
+      "request_preview": "review/SA01_L3.json"
+    },
+    {
+      "position": 49,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA02_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA02_L1.json"
+    },
+    {
+      "position": 50,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA02_L2",
+      "parent": "kimi_retry_128k/SA02_L1",
+      "status": "not_started",
+      "request_preview": "review/SA02_L2.json"
+    },
+    {
+      "position": 51,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA02_L3",
+      "parent": "kimi_retry_128k/SA02_L2",
+      "status": "not_started",
+      "request_preview": "review/SA02_L3.json"
+    },
+    {
+      "position": 52,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA03_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA03_L1.json"
+    },
+    {
+      "position": 53,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA03_L2",
+      "parent": "kimi_retry_128k/SA03_L1",
+      "status": "not_started",
+      "request_preview": "review/SA03_L2.json"
+    },
+    {
+      "position": 54,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA03_L3",
+      "parent": "kimi_retry_128k/SA03_L2",
+      "status": "not_started",
+      "request_preview": "review/SA03_L3.json"
+    },
+    {
+      "position": 55,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA04_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA04_L1.json"
+    },
+    {
+      "position": 56,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA04_L2",
+      "parent": "kimi_retry_128k/SA04_L1",
+      "status": "not_started",
+      "request_preview": "review/SA04_L2.json"
+    },
+    {
+      "position": 57,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA04_L3",
+      "parent": "kimi_retry_128k/SA04_L2",
+      "status": "not_started",
+      "request_preview": "review/SA04_L3.json"
+    },
+    {
+      "position": 58,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA05_L1",
+      "parent": null,
+      "status": "not_started",
+      "request_preview": "review/SA05_L1.json"
+    },
+    {
+      "position": 59,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA05_L2",
+      "parent": "kimi_retry_128k/SA05_L1",
+      "status": "not_started",
+      "request_preview": "review/SA05_L2.json"
+    },
+    {
+      "position": 60,
+      "model_alias": "kimi_retry_128k",
+      "model": "kimi-k3",
+      "task_id": "SA05_L3",
+      "parent": "kimi_retry_128k/SA05_L2",
+      "status": "not_started",
+      "request_preview": "review/SA05_L3.json"
+    }
+  ]
+}

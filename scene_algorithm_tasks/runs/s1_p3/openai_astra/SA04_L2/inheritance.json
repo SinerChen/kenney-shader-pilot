@@ -1,0 +1,9 @@
+{
+  "parent": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\scene_algorithm_tasks\\runs\\s1_p3\\openai_astra\\SA04_L1",
+  "files": {
+    "main.gd": "4fa224445260500c1ebe7658a118be8c6151577108ac3a86e0dcdce1db6d9fea",
+    "projected.gdshader": "3a5be260de70af165d9fcce4075fe389acb940cfae31f55d2b9c70788cdbe25c",
+    "receiver.gd": "a28ebd625a744f82cd7dcbb7767c47471bceed52fa7de1a1bd95256f1502eaf7",
+    "sampling.gd": "b287622edf4b740a7d82c6fcbfb454fa3f8123f2a93bb7fbbbfdebdbcb0a51d4"
+  }
+}

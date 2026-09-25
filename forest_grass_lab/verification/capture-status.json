@@ -1,0 +1,14 @@
+{
+  "mode": "capture",
+  "exit_code": 0,
+  "elapsed_seconds": 9.85,
+  "errors": [],
+  "warnings": [],
+  "model_api_calls": 0,
+  "completed": true,
+  "animated_previews": [
+    "L1/animation.webp",
+    "L2/animation.webp",
+    "L3/animation.webp"
+  ]
+}

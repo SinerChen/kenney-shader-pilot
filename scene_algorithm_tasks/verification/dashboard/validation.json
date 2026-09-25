@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "models": 4,
+  "tasks": 60,
+  "model_switch": true,
+  "task_switch": true,
+  "render_history": true,
+  "frame_controls": true,
+  "plan_and_files": true,
+  "queued_empty_state": true,
+  "paused_401_state": true,
+  "mobile_no_overflow": true,
+  "both_http_entries": true,
+  "browser_errors": [],
+  "failed_http_responses": [],
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "model_api_calls": 0
+}

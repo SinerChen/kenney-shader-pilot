@@ -1,0 +1,1457 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://2pppdlb4mndm"
+path="res://.godot/imported/BistroProps_Props.glb-b1a4f19e137fc441fb04ba5938e1f7fe.scn"
+
+[deps]
+
+source_file="res://Meshes/Section02/BistroProps_Props.glb"
+dest_files=["res://.godot/imported/BistroProps_Props.glb-b1a4f19e137fc441fb04ba5938e1f7fe.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"@MATERIAL:0": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Vespa_Headlight.tres"
+},
+"@MATERIAL:1": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Glass/Windows_Glass.tres"
+},
+"@MATERIAL:10": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:11": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:12": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:13": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:14": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:15": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:16": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:17": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:18": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:19": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:2": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Vespa.tres"
+},
+"@MATERIAL:20": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:21": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:22": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:23": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:24": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:25": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:26": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:27": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:28": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:29": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:3": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Vespa_Odometer.tres"
+},
+"@MATERIAL:30": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:31": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:32": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:33": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:34": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:35": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:36": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Chair_01.tres"
+},
+"@MATERIAL:37": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:38": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:39": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:4": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:40": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:41": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:42": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:43": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:44": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:45": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:46": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:47": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:48": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:49": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:5": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:50": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:51": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:52": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:53": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:54": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:55": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:56": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:57": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:58": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:59": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:6": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:60": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:61": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:62": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:63": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:64": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:65": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:66": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:67": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Glass_Wine.tres"
+},
+"@MATERIAL:68": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Caps.tres"
+},
+"@MATERIAL:69": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Paris_LiquorBottle_01_Labels.tres"
+},
+"@MATERIAL:7": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:70": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/MenuSign_01.tres"
+},
+"@MATERIAL:71": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/MenuSign_01.tres"
+},
+"@MATERIAL:72": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:73": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:74": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:75": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:76": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:77": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:78": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:79": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:8": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:80": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:81": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:82": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/NapkinHolder.tres"
+},
+"@MATERIAL:83": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:84": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:85": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:86": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:87": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:88": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:89": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:9": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Miscellaneous/Ashtray.tres"
+},
+"@MATERIAL:90": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:91": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:92": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+},
+"@MATERIAL:93": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Wood/Paris_Table_Terrace.tres"
+}
+},
+"meshes": {
+"BistroProps_Props_Mesh_1282_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_1282_006.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b66jksbpy6pl8"
+},
+"BistroProps_Props_Mesh_1282_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_1282_007.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b3cer67vl5fhx"
+},
+"BistroProps_Props_Mesh_248_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_248_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://8c6jtffnyi10"
+},
+"BistroProps_Props_Mesh_248_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_248_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dkvp275mhjida"
+},
+"BistroProps_Props_Mesh_248_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_248_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d2wogtmon0uyp"
+},
+"BistroProps_Props_Mesh_249_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_249_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c6g8lnx0mvls8"
+},
+"BistroProps_Props_Mesh_249_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_249_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://v1lsp0v5hg6l"
+},
+"BistroProps_Props_Mesh_249_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_249_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dsha6cmqxglfv"
+},
+"BistroProps_Props_Mesh_250_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_250_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://btpnuvqgfe1fi"
+},
+"BistroProps_Props_Mesh_250_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_250_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d2l7mjcs7oj28"
+},
+"BistroProps_Props_Mesh_250_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_250_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://jiw53fvfwwwp"
+},
+"BistroProps_Props_Mesh_251_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_251_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cnda8dadoisxd"
+},
+"BistroProps_Props_Mesh_251_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_251_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cl510jcriiw1s"
+},
+"BistroProps_Props_Mesh_251_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_251_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ds7dyade0ndn0"
+},
+"BistroProps_Props_Mesh_252_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_252_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://8ilrm00jm65q"
+},
+"BistroProps_Props_Mesh_252_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_252_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bucmh32n1c5l5"
+},
+"BistroProps_Props_Mesh_252_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_252_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dxed5v72ndivn"
+},
+"BistroProps_Props_Mesh_253_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_253_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ce34n4k3lc5b1"
+},
+"BistroProps_Props_Mesh_253_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_253_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://7tnkdn834xbf"
+},
+"BistroProps_Props_Mesh_253_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_253_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d2vx01m8ihwa6"
+},
+"BistroProps_Props_Mesh_254_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_254_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ndrbircoagjs"
+},
+"BistroProps_Props_Mesh_254_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_254_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dbfcy4nk7w4xy"
+},
+"BistroProps_Props_Mesh_254_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_254_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ced5v6djephj3"
+},
+"BistroProps_Props_Mesh_255_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_255_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bhfxb6khochej"
+},
+"BistroProps_Props_Mesh_255_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_255_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dgyrhs0yqecwk"
+},
+"BistroProps_Props_Mesh_255_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_255_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cqenwpypbaoyw"
+},
+"BistroProps_Props_Mesh_256_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_256_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b6lpjlbrjtw0c"
+},
+"BistroProps_Props_Mesh_256_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_256_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cyi3mw6r5kc6c"
+},
+"BistroProps_Props_Mesh_256_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_256_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bw4i7b4gnrra7"
+},
+"BistroProps_Props_Mesh_257_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_257_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://8lkvq2x0uv4l"
+},
+"BistroProps_Props_Mesh_257_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_257_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ddcuib4dnaoio"
+},
+"BistroProps_Props_Mesh_257_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_257_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b8q70v83vol3r"
+},
+"BistroProps_Props_Mesh_258_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_258_009.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dmdofdg08wljc"
+},
+"BistroProps_Props_Mesh_258_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_258_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://caofckkrdog1q"
+},
+"BistroProps_Props_Mesh_258_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_258_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c8cb5jbv2am53"
+},
+"BistroProps_Props_Mesh_646": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_646.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bmeug5iwtycvp"
+},
+"BistroProps_Props_Mesh_647": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_647.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b53hfnl3aq8e0"
+},
+"BistroProps_Props_Mesh_658": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_658.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b2jrhq05l6tau"
+},
+"BistroProps_Props_Mesh_659": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_659.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c6gfpl7n13qp0"
+},
+"BistroProps_Props_Mesh_660": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_660.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://rus1af6ctejo"
+},
+"BistroProps_Props_Mesh_661": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_661.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dpcdlb0p3pd6g"
+},
+"BistroProps_Props_Mesh_662": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_662.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://vwdsq86vd8mk"
+},
+"BistroProps_Props_Mesh_663": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_663.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://w68uuqyhtfdh"
+},
+"BistroProps_Props_Mesh_664": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_664.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://05xedgtfo082"
+},
+"BistroProps_Props_Mesh_665": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_665.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cayfrayp54ihf"
+},
+"BistroProps_Props_Mesh_666": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_666.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cte43sa441g7j"
+},
+"BistroProps_Props_Mesh_667": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_667.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://clmy0guuvxs84"
+},
+"BistroProps_Props_Mesh_668": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_668.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bqfgefgeu5swk"
+},
+"BistroProps_Props_Mesh_669": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_669.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dikxegqwdmxtm"
+},
+"BistroProps_Props_Mesh_670": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_670.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bnio4khu1tfpb"
+},
+"BistroProps_Props_Mesh_673": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_673.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bvsmhyjeymqld"
+},
+"BistroProps_Props_Mesh_674": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_674.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://drv65abmspso2"
+},
+"BistroProps_Props_Mesh_675": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_675.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://drpnlkqmsgfe8"
+},
+"BistroProps_Props_Mesh_676": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_676.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c5cmvyal7gq8w"
+},
+"BistroProps_Props_Mesh_677": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_677.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cx3gvtsb4y1jj"
+},
+"BistroProps_Props_Mesh_678": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_678.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d2d3ob88oritc"
+},
+"BistroProps_Props_Mesh_679": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_679.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b37dq051etsmv"
+},
+"BistroProps_Props_Mesh_680": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_680.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://csly4d3wo464o"
+},
+"BistroProps_Props_Mesh_681": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_681.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cfegj08xiw5l"
+},
+"BistroProps_Props_Mesh_682": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_682.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dorkvmmwooepm"
+},
+"BistroProps_Props_Mesh_683": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_683.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cg2qebjuixj00"
+},
+"BistroProps_Props_Mesh_684": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_684.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://r7itliy7irqy"
+},
+"BistroProps_Props_Mesh_689": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_689.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c7j2q175pfnn2"
+},
+"BistroProps_Props_Mesh_706": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_706.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://lmwoe76gf8r0"
+},
+"BistroProps_Props_Mesh_707": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_707.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cqw3yshdj5k10"
+},
+"BistroProps_Props_Mesh_708": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_708.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://br55j0m7s001i"
+},
+"BistroProps_Props_Mesh_709": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_709.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dqs80h3n1gg5t"
+},
+"BistroProps_Props_Mesh_710": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_710.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://oc0g63cccqhp"
+},
+"BistroProps_Props_Mesh_711": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_711.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://djiofsdyrfuqp"
+},
+"BistroProps_Props_Mesh_712": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_712.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://da353871x2og6"
+},
+"BistroProps_Props_Mesh_718": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_718.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ceysuvndp4jw3"
+},
+"BistroProps_Props_Mesh_719": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_719.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dqrxeiutk636"
+},
+"BistroProps_Props_Mesh_720": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_720.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://de1u5kvis0gad"
+},
+"BistroProps_Props_Mesh_721": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_721.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dpuuefm1wrwtt"
+},
+"BistroProps_Props_Mesh_722": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_722.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bbb7vwvxjqlsv"
+},
+"BistroProps_Props_Mesh_723": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_723.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b1vhi0a0xfb8j"
+},
+"BistroProps_Props_Mesh_724": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_724.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d014cw1jb1fnp"
+},
+"BistroProps_Props_Mesh_725": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_725.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b7o71c3h6nqgr"
+},
+"BistroProps_Props_Mesh_726": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_726.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cnpkc2cjmnyf7"
+},
+"BistroProps_Props_Mesh_727": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_727.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://drknyarl01cjs"
+},
+"BistroProps_Props_Mesh_728": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_728.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cda7erkvrhyrt"
+},
+"BistroProps_Props_Mesh_732": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_732.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bq26bxqo0cim8"
+},
+"BistroProps_Props_Mesh_733": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_733.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c43krs3jy41f"
+},
+"BistroProps_Props_Mesh_748": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_748.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dgyj2b17t8n50"
+},
+"BistroProps_Props_Mesh_749": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_749.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://f08i4rkf75e6"
+},
+"BistroProps_Props_Mesh_750": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_750.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bfhx7yy2aj4t7"
+},
+"BistroProps_Props_Mesh_751": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_751.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cj2fgv8dvh44n"
+},
+"BistroProps_Props_Mesh_752": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_752.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dc3jld6wctl6u"
+},
+"BistroProps_Props_Mesh_753": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_753.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cbqsbtd8s4q3v"
+},
+"BistroProps_Props_Mesh_801": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_801.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bas8k6t27bbcl"
+},
+"BistroProps_Props_Mesh_810": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_810.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dheb7odsbpewi"
+},
+"BistroProps_Props_Mesh_811": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_811.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b3tthlypccvrm"
+},
+"BistroProps_Props_Mesh_812": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_812.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b8oepvs2iqjj8"
+},
+"BistroProps_Props_Mesh_815": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section02/BistroProps_Props/BistroProps_Props_Mesh_815.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dsre5b7ko6fjp"
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

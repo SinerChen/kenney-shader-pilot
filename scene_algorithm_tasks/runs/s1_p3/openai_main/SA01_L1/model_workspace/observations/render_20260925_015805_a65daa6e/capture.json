@@ -1,0 +1,150 @@
+{
+  "captures": [
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          0.0,
+          -0.262229740619659,
+          -0.965005457401276
+        ],
+        "fov_degrees": 42.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          0.5,
+          1.60000002384186,
+          4.59999990463257
+        ],
+        "projection": 0,
+        "up": [
+          0.0,
+          0.965005457401276,
+          -0.262229740619659
+        ]
+      },
+      "elapsed_s": 0.0166666666666667,
+      "frame": 1,
+      "height": 600,
+      "image": "frame_0001.png",
+      "width": 900
+    },
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          0.0,
+          -0.262229740619659,
+          -0.965005457401276
+        ],
+        "fov_degrees": 42.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          0.5,
+          1.60000002384186,
+          4.59999990463257
+        ],
+        "projection": 0,
+        "up": [
+          0.0,
+          0.965005457401276,
+          -0.262229740619659
+        ]
+      },
+      "elapsed_s": 1.0,
+      "frame": 60,
+      "height": 600,
+      "image": "frame_0060.png",
+      "width": 900
+    },
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          0.0,
+          -0.262229740619659,
+          -0.965005457401276
+        ],
+        "fov_degrees": 42.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          0.5,
+          1.60000002384186,
+          4.59999990463257
+        ],
+        "projection": 0,
+        "up": [
+          0.0,
+          0.965005457401276,
+          -0.262229740619659
+        ]
+      },
+      "elapsed_s": 2.0,
+      "frame": 120,
+      "height": 600,
+      "image": "frame_0120.png",
+      "width": 900
+    },
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          0.0,
+          -0.262229740619659,
+          -0.965005457401276
+        ],
+        "fov_degrees": 42.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          0.5,
+          1.60000002384186,
+          4.59999990463257
+        ],
+        "projection": 0,
+        "up": [
+          0.0,
+          0.965005457401276,
+          -0.262229740619659
+        ]
+      },
+      "elapsed_s": 4.0,
+      "frame": 240,
+      "height": 600,
+      "image": "frame_0240.png",
+      "width": 900
+    }
+  ],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "environment": {
+    "geometry_after": {
+      "multimesh_instances": 30,
+      "visible_geometry": 30
+    },
+    "geometry_before": {
+      "multimesh_instances": 335,
+      "visible_geometry": 30
+    },
+    "host": "existing_project",
+    "level": 1.0,
+    "scope": "scene_subset",
+    "source_host_modified": false,
+    "targets": [
+      "GrassCards_0",
+      "GrassCards_1",
+      "GrassCards_2",
+      "GrassCards_3"
+    ]
+  },
+  "initialization": "paused scene initialization; shader global TIME may include initialization time",
+  "process_frames": 240,
+  "renderer": "forward_plus",
+  "scene": "scene/main.tscn",
+  "step_mode": "native_fixed_fps",
+  "visual_quality": "not_scored"
+}

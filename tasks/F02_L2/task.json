@@ -1,0 +1,19 @@
+{
+  "id": "F02_L2",
+  "scene_id": "F02",
+  "kit": "fps",
+  "level": 2,
+  "title": "供能与扫描交互",
+  "requirement": "保留 L1。power 平滑控制能量强度，scan 控制沿走廊推进的扫描效果，关闭后及时退出；快速切换不产生永远残留的效果。",
+  "criteria": [
+    "保留 L1",
+    "供能强度随输入变化",
+    "扫描有明确位置与运动",
+    "关闭和反复触发均可恢复"
+  ],
+  "parent_task": "F02_L1",
+  "base_scene": "projects/fps/pilot/F02.tscn",
+  "editable_directory": "projects/fps/effects/F02",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

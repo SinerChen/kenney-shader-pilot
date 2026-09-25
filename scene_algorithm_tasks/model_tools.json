@@ -1,0 +1,185 @@
+[
+  {
+    "name": "read",
+    "description": "读取当前实验目录中的 UTF-8 文本、图像，或列出目录内容。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "相对实验根目录的路径；. 列出可读目录。"
+        },
+        "start_line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_lines": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "write",
+    "description": "在 effect/ 内创建或覆盖 UTF-8 文本文件，content 为完整内容。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "effect/ 内的相对文件路径。"
+        },
+        "content": {
+          "type": "string",
+          "description": "文件完整文本。"
+        }
+      },
+      "required": [
+        "path",
+        "content"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "render",
+    "description": "运行当前 Godot 场景或效果预览，返回真实 PNG、日志和相机记录。可自行设定视角、截图帧、分辨率及相机轨迹；固定测试输入不变。",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "scene": {
+          "type": "string",
+          "description": "默认 scene/main.tscn；也可指定 effect/ 内自行编写的 .tscn 预览。"
+        },
+        "frames": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 720
+          },
+          "minItems": 1,
+          "maxItems": 4,
+          "description": "递增、不重复；不得超过固定输入 steps。省略时采用固定输入的记录帧。"
+        },
+        "resolution": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[宽,高]，各为 128–1920，总像素不超过 2073600，默认 [960,640]。"
+        },
+        "camera": {
+          "type": "object",
+          "properties": {
+            "position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "look_at": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "up": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "projection": {
+              "type": "string",
+              "enum": [
+                "perspective",
+                "orthogonal"
+              ]
+            },
+            "fov_degrees": {
+              "type": "number",
+              "minimum": 5,
+              "maximum": 150
+            },
+            "orthogonal_size": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 100000
+            },
+            "near": {
+              "type": "number",
+              "minimum": 0.001,
+              "maximum": 1000
+            },
+            "far": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 100000
+            }
+          },
+          "required": [
+            "position",
+            "look_at"
+          ],
+          "additionalProperties": false,
+          "description": "世界坐标。省略时使用场景相机；俯视时 up 不可与观察方向平行。"
+        },
+        "camera_track": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "properties": {
+              "frame": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 720
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "look_at": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            "required": [
+              "frame",
+              "position",
+              "look_at"
+            ],
+            "additionalProperties": false
+          },
+          "description": "需同时传 camera；位置与观察目标按帧线性插值，首尾之外保持端点。"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+]

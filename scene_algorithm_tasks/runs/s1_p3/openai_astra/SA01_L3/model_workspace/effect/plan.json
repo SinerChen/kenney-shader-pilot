@@ -1,0 +1,10 @@
+{
+  "status":"completed",
+  "active_step":null,
+  "steps":[
+    {"id":"inspect","goal":"理解继承实现、完整场景实例和宿主接口，确认保留边界。","expected":"明确335张草片的来源、变形和输出顺序及非草节点保留方式。","counterexample":"实例枚举仅覆盖子集或实现改动玩家、UI、相机。","status":"passed","observations":["读取 effect/main.gd、grass_geometry.gd、interaction_field.gd、grass.gdshader 及 scene/environment_setup.gd；宿主四个 GrassCards MultiMesh 共335实例，L3不裁剪，候选仅替换草材质。"],"summary":"现有实现已枚举root.grass_nodes全部MultiMesh实例，场、几何输出和shader均为独立候选逻辑。","limitations":"需通过完整场景运行确认无编译和视觉回归。"},
+    {"id":"coverage","goal":"将现有按实例草片变形与阴影绑定覆盖全部草片，保留场景其他行为。","expected":"所有目标实例都有风动及交互材质，地面标记和玩家UI不被替换。","counterexample":"遗漏草片、共享参数串扰或非草对象被变形。","status":"passed","observations":["observations/render_20260924_223203_08bfefa7：默认overview视角，帧1/60/120/240；日志确认四组分别87、82、83、83实例，总335，每组可见且cast_shadow=1。截图保留地面标记、橙色玩家与完整UI。"],"summary":"为四组草片建立独立ShaderMaterial并转发实时风参数；未修改非草节点。","limitations":"视觉评估为默认overview，局部细节以数值检查补充。"},
+    {"id":"field","goal":"核实并完善固定世界交互场累积衰减、路径输入以及世界顶点法线输出。","expected":"经过区域有连续历史痕迹，2秒停止写入后继续恢复，场外只有风动。","counterexample":"仅当前位置生效、停止交互后仍写入或输出顺序与场景不一致。","status":"passed","observations":["同一 render 日志：4096 texels；frame 1/60/120 active 分别为true/true/false边界，peak为0.8268/0.7814/0.7607；frame240 peak=0.0000343，DECAY_CHECK误差2.7e-11，场外采样始终为零。335实例输出31825顶点，根误差0，单位法线误差小于1.8e-7。"],"summary":"固定patch场按每步先衰减再写入，沿玩家轨迹持久化并在2秒后恢复；shader与CPU评估使用一致世界采样。","limitations":"场的RGBA第四通道按要求固定为0。"},
+    {"id":"review","goal":"在目标完整场景复查全部效果、阴影和既有行为。","expected":"各记录帧无运行错误，完整草地有风动、局部压草和恢复，原地面、玩家、相机与UI保留。","counterexample":"可见变形或阴影错位、场景要素缺失或数值输出不完整。","status":"passed","observations":["observations/render_20260924_223203_08bfefa7 的四帧截图显示完整草地随路径变化，玩家从左侧移动到右侧，地面网格/标记、相机视角和HUD保留；render import/capture errors均为空，samples.json已生成。"],"summary":"完整目标场景复查通过。","limitations":"仅在提供的固定输入、Forward+渲染器和默认overview相机下验证。"}
+  ]
+}

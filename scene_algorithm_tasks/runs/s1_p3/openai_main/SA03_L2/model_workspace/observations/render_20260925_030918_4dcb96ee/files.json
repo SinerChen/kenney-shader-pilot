@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "fb403805be1212e017e1132bdb3ea81a880a7df97bb65ef3f8302222c9db4235"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "57c03726863b91876a2b40cd772395a876e501c1cf9cf45d4cfe155a63291f40"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "aa1cc589f5bbeee926dfc5b31919011b27a37e6794a68c7a270524a0a0824bfb"
+    },
+    {
+      "path": "effect/four_layer_height_blend.gdshader",
+      "sha256": "3c75a0396f985022e7507c652e8bb0c71b871be1e1db3763911e171a8aec5591"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "6910e6cff2a13cf433f2d66fbb00d4e52a339a29fe435ac2a107091ae16ea86a"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "467de93b0484aa7b4f4da7bd3af0f561ca0dc971ea356c2cc4ee40dc8b944584"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "0932e4b3d7a4c16bcd92e7a3a8c4dc019edfcebe786c7d33a2e642df77748efd"
+    }
+  ],
+  "input_sha256": "0932e4b3d7a4c16bcd92e7a3a8c4dc019edfcebe786c7d33a2e642df77748efd"
+}

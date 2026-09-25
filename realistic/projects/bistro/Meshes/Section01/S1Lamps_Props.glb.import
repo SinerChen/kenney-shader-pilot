@@ -1,0 +1,572 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://skun5sb54pdm"
+path="res://.godot/imported/S1Lamps_Props.glb-e868b761773b05f82173644b1c2b865a.scn"
+
+[deps]
+
+source_file="res://Meshes/Section01/S1Lamps_Props.glb"
+dest_files=["res://.godot/imported/S1Lamps_Props.glb-e868b761773b05f82173644b1c2b865a.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"@MATERIAL:0": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:1": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:10": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:11": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:12": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:13": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:14": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:15": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:16": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:17": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:18": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:19": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:2": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:20": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:21": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:22": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:23": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:24": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:25": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:26": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:27": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:28": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:29": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:3": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:30": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:31": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:32": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:33": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:34": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:4": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Nature/Foliage_Paris_Flowers.tres"
+},
+"@MATERIAL:5": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+},
+"@MATERIAL:6": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:7": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:8": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Metal.tres"
+},
+"@MATERIAL:9": {
+"use_external/enabled": true,
+"use_external/path": "res://Materials/Lights/Streetlight_Chains.tres"
+}
+},
+"meshes": {
+"S1Lamps_Props_Mesh_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bpw14unewnly6"
+},
+"S1Lamps_Props_Mesh_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://d4h6pk33rdmxv"
+},
+"S1Lamps_Props_Mesh_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://clwkq7qsn03gs"
+},
+"S1Lamps_Props_Mesh_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b6dqldnwdeqik"
+},
+"S1Lamps_Props_Mesh_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://hu87u11ub836"
+},
+"S1Lamps_Props_Mesh_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_010.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cmny2fmv1ovjh"
+},
+"S1Lamps_Props_Mesh_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_011.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c8kqlwm1npi5q"
+},
+"S1Lamps_Props_Mesh_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_012.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bhi6l4scgq8ta"
+},
+"S1Lamps_Props_Mesh_013": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_013.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://drx6ch58cfkpi"
+},
+"S1Lamps_Props_Mesh_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_014.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://x6lshgecyrmp"
+},
+"S1Lamps_Props_Mesh_165_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_165_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://deftt5kncx7c3"
+},
+"S1Lamps_Props_Mesh_165_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_165_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dnaxcyvltuh4t"
+},
+"S1Lamps_Props_Mesh_165_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_165_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bqw2siff1p7ot"
+},
+"S1Lamps_Props_Mesh_165_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_165_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b4a0svmeuu3da"
+},
+"S1Lamps_Props_Mesh_165_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_165_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s8mdwmxsnxwm"
+},
+"S1Lamps_Props_Mesh_166_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_166_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dg8jg85v0cvs7"
+},
+"S1Lamps_Props_Mesh_166_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_166_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ctgrmqedikomg"
+},
+"S1Lamps_Props_Mesh_166_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_166_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cdmad3q1fy2sb"
+},
+"S1Lamps_Props_Mesh_166_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_166_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://l8h7vs4p2hgq"
+},
+"S1Lamps_Props_Mesh_166_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_166_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dwii2083516iv"
+},
+"S1Lamps_Props_Mesh_167_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_167_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://lv8560dvb73t"
+},
+"S1Lamps_Props_Mesh_167_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_167_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cc2t6js7q7dt4"
+},
+"S1Lamps_Props_Mesh_167_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_167_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c7g6k427bk5kc"
+},
+"S1Lamps_Props_Mesh_167_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_167_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c6v02w6lbot5t"
+},
+"S1Lamps_Props_Mesh_167_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_167_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dhwrt41ai7rkw"
+},
+"S1Lamps_Props_Mesh_173_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_173_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b66p8h7j5xyco"
+},
+"S1Lamps_Props_Mesh_173_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_173_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bopvtgfxynrxn"
+},
+"S1Lamps_Props_Mesh_173_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_173_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b5ll8qcwiawu5"
+},
+"S1Lamps_Props_Mesh_173_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_173_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://55wi8pxqm1go"
+},
+"S1Lamps_Props_Mesh_173_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_173_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://c40q3k35uu7uu"
+},
+"S1Lamps_Props_Mesh_174_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_174_001.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b70fejfxt80qs"
+},
+"S1Lamps_Props_Mesh_174_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_174_002.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cc4rdqw7b5kql"
+},
+"S1Lamps_Props_Mesh_174_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_174_003.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://s5jti8alsemc"
+},
+"S1Lamps_Props_Mesh_174_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_174_004.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dxk87jyqgt4us"
+},
+"S1Lamps_Props_Mesh_174_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Meshes/Section01/S1Lamps_Props/S1Lamps_Props_Mesh_174_005.res",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://b6njnt7usocl8"
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

@@ -1,0 +1,19 @@
+{
+  "id": "F02_L3",
+  "scene_id": "F02",
+  "kit": "fps",
+  "level": 3,
+  "title": "光束、遮挡与合成",
+  "requirement": "保留 L1/L2。在 BeamVolume 内组合能量光束/薄雾与局部照明，Occluder 应产生可信遮挡；与发光和扫描合成时保持场景亮度层次，相机移动不把效果变成屏幕贴片。",
+  "criteria": [
+    "前两级仍正确",
+    "光束与遮挡空间关系合理",
+    "局部照明不重复累加能量",
+    "镜头运动、断电与 reset 后无残留"
+  ],
+  "parent_task": "F02_L2",
+  "base_scene": "projects/fps/pilot/F02.tscn",
+  "editable_directory": "projects/fps/effects/F02",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

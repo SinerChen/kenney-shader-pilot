@@ -1,0 +1,88 @@
+{
+	"display": "Windows",
+	"engine": "4.6.1-stable (official)",
+	"events": [
+		{
+			"before_step": 30,
+			"completed_frames": 29,
+			"event": "focus",
+			"payload": {
+				"target": "MaterialA"
+			},
+			"time": 0.483333333333333
+		},
+		{
+			"before_step": 60,
+			"completed_frames": 59,
+			"event": "collect",
+			"payload": {
+				"count": 1.0,
+				"target": "CollectibleA"
+			},
+			"time": 0.983333333333335
+		},
+		{
+			"before_step": 100,
+			"completed_frames": 99,
+			"event": "collect",
+			"payload": {
+				"count": 2.0,
+				"target": "CollectibleB"
+			},
+			"time": 1.65
+		},
+		{
+			"before_step": 140,
+			"completed_frames": 139,
+			"event": "unlock",
+			"payload": {
+				"target": "Gate"
+			},
+			"time": 2.31666666666666
+		}
+	],
+	"frames": 180,
+	"level": 1,
+	"note": "Baseline environment validation, not model output or shader correctness.",
+	"rendered": true,
+	"renderer": "forward_plus",
+	"reset_ok": true,
+	"samples": [
+		{
+			"frame": 1,
+			"image": "frame_001.png",
+			"last_event": "none",
+			"time": 0.0166666666666667
+		},
+		{
+			"frame": 60,
+			"image": "frame_060.png",
+			"last_event": "collect",
+			"time": 1.0
+		},
+		{
+			"frame": 120,
+			"image": "frame_120.png",
+			"last_event": "collect",
+			"time": 2.0
+		},
+		{
+			"frame": 180,
+			"image": "frame_180.png",
+			"last_event": "unlock",
+			"time": 2.99999999999999
+		}
+	],
+	"scene_id": "P01",
+	"status": "baseline_ready",
+	"target_count": 6,
+	"targets": [
+		"MaterialA",
+		"MaterialB",
+		"MaterialC",
+		"CollectibleA",
+		"CollectibleB",
+		"Gate"
+	],
+	"task_status": "not_run"
+}

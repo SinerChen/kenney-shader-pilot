@@ -1,0 +1,33 @@
+{
+  "javascript_errors": [],
+  "local_links_missing": [],
+  "levels_and_views": true,
+  "embedded_prompts": true,
+  "animation_pixel_change": 10.143,
+  "animations": {
+    "1": {
+      "frames": 32,
+      "size": [
+        960,
+        640
+      ]
+    },
+    "2": {
+      "frames": 32,
+      "size": [
+        960,
+        640
+      ]
+    },
+    "3": {
+      "frames": 88,
+      "size": [
+        960,
+        640
+      ]
+    }
+  },
+  "mobile_no_overflow": true,
+  "api_disabled": true,
+  "model_api_calls": 0
+}

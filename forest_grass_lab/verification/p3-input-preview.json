@@ -1,0 +1,244 @@
+{
+  "system": "# 逐子任务实现协议\n你是 ShaderAgent 的效果实现者。目标是完成任务契约，不是复刻某一份参考源码。\n只修改候选 grass.gdshader；保留固定 HTML、依赖、资产、相机约定和公开接口。不得读取参考实现、调用完整目标效果模块或修改测试器。\n\n## 先规划，再逐项实现\n第一次回复只调用 set_plan，不写代码。自行将任务拆成 4–8 个有先后依赖、可单独观察的子任务。每项记录 id、goal、acceptance、tags；acceptance 写可检验的行为，不写“代码里存在某函数”。必须覆盖完整任务，最后一项是目标场景整合与公开测试。\n计划描述功能和输入输出关系，不输出冗长推演。不要把整套效果塞进一个子任务，也不要为凑数按文件或函数机械拆分。\n\n“一轮”指围绕同一个子任务完成修改、运行、观察、修正和阶段汇报，可以包含多次工具请求。每个模型回复最多调用一个工具；当前子任务未结束，不得实现后续子任务。框架只约束阶段顺序，代码是否越界还需由记录审查。\n\n## 当前子任务的工作循环\n1. 读取当前代码和状态；明确这一步增加什么、暂不实现什么。\n2. 首次使用 update_main 写完整可运行 grass.gdshader；后续优先提交精确 old/new 局部替换。填写工具返回的当前整数版本号作为 base_revision，禁止猜测旧代码或模糊匹配。必要的全量重写必须说明原因。\n3. 使用 check 运行当前版本，先说明要检查的 claim、预期 expected 和会否定判断的 counterexample。未完成阶段可以暂时旁路，但必须明确标为 pending，不能把旁路画面伪称为目标算法输出。\n4. 只依据实际返回证据判断。执行无错误不等于视觉正确；没有收到图片时不能声称看过画面。失败或证据不足时，只修复或补测当前子任务。\n5. 调用 finish_step，提交 pass/fail/inconclusive、实际证据 id、summary 和 limitations。pass 只是你的阶段判断，不是官方评分；证据不足不得冒充通过。pass 后等待工具返回下一任务，不在同一回复推进第二项。\n\n## 工程约束\n每一步保留此前已完成行为；必要的回归修复可以涉及旧代码，但不得提前实现新阶段。优先少量函数、统一参数和显式缓冲数据流，不增加通用框架、插件系统或多 agent。\n保留可复现参数和手动 step(dt)；set 只改变输入，不偷偷推进帧或为掩盖问题清空历史。内部数据与最终显示的颜色约定保持明确；不使用预制结果图片、截图贴图、虚假噪声或固定结果冒充计算。\n最终在真实目标场景中完成所有需求，以 kind=public 调用 check 运行原公开测试，再提交。若预算耗尽，保留当前代码和未完成项，不宣称整项成功。\n\n## 输出与证据\n代码只通过工具写入。阶段汇报保持简短：本步目标、修改、实际证据、判定、限制。不得编造截图、工具结果或不存在的接口。工具实际支持的权限和预算由本次实验条件给出。\n\n\n# FG01 · S1 / P3\n\n遵守逐子任务实现协议。只修改 grass.gdshader，不修改宿主、场景、相机或资产。工具 update_main/read_main 的名字沿用原协议，实际文件是 grass.gdshader。\n\n先 set_plan 生成 4–8 项计划，每次回复只调用一个工具。每项完成前至少对当前版本调用一次目标场景 step 检查并观察返回的真实 PNG；最后一项还需公开检查，然后 submit。pass 是模型自评，不是独立质量分数。\n\ncheck(kind=step) 只允许 scene=target（可省略）。params 可包含 camera（overview/roots/top）、wind_strength（0–0.45）、wind_speed（0–3）、wind_direction（XZ 二元数组）、player_position（XYZ 三元数组）。默认相机 overview，默认风强 0.22、风速 1.6、风向 [1,0.35]。设置 player_position 后转为手动玩家，不再自动行走。\n\n每次检查启动全新目标场景，无已有轨迹，768×512，dt=1/60。frames 为 1–3 个严格递增的帧编号，范围 1–720，默认 [1,120,240]。schedule 为 [{frame,set}]，在对应 step 之前设置参数，参数为绝对值。可用它改变风、玩家位置或观察相机，但不能换成自建场景。每个 step 后执行真实渲染；无额外效果预热步骤。\n\ncheck(kind=public) 不能传入 scene/params/frames/schedule，固定执行题目所有公开案例。4 秒案例截图 [1,120,240]，2 秒案例 [1,60,120]；11 秒案例 [225,420,660]，12 秒反向停留案例 [225,420,720]。反向停留案例按题目给定端点线性插值玩家位置。每个案例独立重开，数据互不继承。\n\nL1/L2 的 public 固定回传 wind_default/240、wind_off/120、strong_crosswind/240 三张 PNG；L3 固定回传 player_without_wind/225、420、660。所有其他公开截图也保存到磁盘。step 回传指定的全部图片（最多三张）。选择规则固定，不按画面好坏选图。\n\n图像在工具结果之后发送，保留在本次会话历史中。没有作者参考代码或参考图输入。只依据收到的证据陈述观察，执行无错误不等于视觉正确；有疑问继续当前子任务。最终提交后另做一次不反馈的公开执行并保存动画。\n\n每项最多 80 次 API 请求、24 次模型发起的检查；HTTP 失败也计入请求次数。可重试的 HTTP/网络错误等待五分钟后重试当前请求，保持已有代码和对话，不重开批次；授权/配置错误停下该模型。预算不会自动追加。\n",
+  "user": "# FG01 · L1：让草随风动\n\n在给定的 Godot 草地小场景中，实现持续、平滑的草地风动。效果要来自草网格自身的顶点运动，保留已有草地分布、草贴图、地面、相机与照明。\n\n风向由 `wind_direction` 控制，幅度与速度分别响应 `wind_strength` 和 `wind_speed`。相邻草丛可以有相位差或传播感，不能让所有草始终像一块整板完全同步平移。连续运行不能出现跳变、闪烁或纹理脱离。\n\n阅读 `HOST_API.md`。只修改 `project/effect/grass.gdshader`，使用宿主 `elapsed`。输出完整、可直接运行的 shader 代码。不得修改宿主与测试条件，不使用参考实现源码。\n\n\n# FG01 · 草地小场景合同\n\n本题基于 Forest Benchmark 的 Grass1–4 草片与原贴图，搭建独立草地小场景。Godot 4.6.1 / Forward+；场地约 7.2 × 6.8 m，335 张草片，固定布局种子 20260923。草片在原四角间增加 18 段高度、4 段宽度的细分，每张 95 个顶点；这是三关共同的输入资产，不是模型需要补写的内容。\n\n## 可修改与固定部分\n\n- 只编辑 `project/effect/grass.gdshader`，输出其完整代码。\n- 保留原草贴图、Alpha 裁切与受光，不用色块、屏幕晃动或相机移动伪装草的形变。\n- 场景、草实例的节点变换、相机、玩家控制、光照和回放由宿主固定提供。\n- 不修改 `host/`、`assets/`、`scenes/`、`project.godot` 或测试过程。\n- 使用宿主传入的 `elapsed`，不能依赖全局 `TIME`，保证暂停、重置与手动步进有效。\n- L2、L3 接续同一个模型的上一层候选代码；不自动填入本地参考答案。上一层有缺陷时允许在升级中修复，并记录上一层是否正式提交。\n\n## Shader 数据\n\n草片启用 `world_vertex_coords`：`VERTEX` 和 `NORMAL` 为世界空间，Y 向上。\n\n| 输入 | 含义 |\n| --- | --- |\n| `UV` | 原草贴图的 atlas 坐标，不等同于草叶高度 |\n| `UV2.y` | 沿草片的归一化高度，根部 0，顶边 1 |\n| `MODEL_MATRIX[3].xz` | 当前草实例根部中心的世界 XZ 坐标 |\n| `INSTANCE_CUSTOM.r` | 固定在实例上的 0–1 随机值，可用于相位差异 |\n| `elapsed` | 自 reset 起累计秒数，由 step 驱动 |\n| `wind_strength` | 风动幅度输入，默认 0.22，公开检查范围 0–0.45 |\n| `wind_speed` | 时间变化速率输入，默认 1.6，检查范围 0–3 |\n| `wind_direction` | 世界 XZ 风向向量，默认 (1, 0.35)；零向量视为无风，不能产生 NaN |\n| `player_position` | 当前玩家脚底中心世界坐标 |\n| `interaction_radius` | 玩家影响半径，默认 0.95 m |\n| `interaction_strength` | 压草程度输入，默认 0.95 |\n| `player_history[32]` | vec4 数组，各元素为 `(world_x, world_z, age_seconds, valid)` |\n| `grass_albedo` / `grass_orm` | 已绑定的原始草贴图 |\n| `audit_roots` / `audit_tips` | 预留的端点诊断显示，不是运动算法；默认 false |\n\nhistory 第 0 项为当前位置，age=0；其余项为约每 0.1 秒记录的最近位置。valid=0 的项无效。宿主只记录原始轨迹，不计算影响权重、外倒方向、恢复程度或根部形变，这些由提交的 shader 实现。轨迹可用于“经过后”的短时响应；不能只检测当前玩家位置然后立刻恢复。\n\n## 宿主接口\n\n```gdscript\nreset()                         # elapsed/frame/轨迹清零，玩家回到 (-4,0,0)\nstep(dt)                        # 0 < dt <= 0.1，推进一次效果输入\nset_parameters(values)          # wind_strength / wind_speed / wind_direction / player_position\nset_level(1 | 2 | 3)             # 切换等级并重置\nset_camera(\"overview\" | \"roots\" | \"top\")\n```\n\n使用 `--manual-step` 时宿主不会在 `_process` 内自动推进。拟接入的公开自动检查以 1/60 秒推进；当前网页动画通过每次 5 个 0.025 秒步骤生成 8 fps 采样，不是模型评测分数。\n\n自动玩家回放为 11 秒：前 1 秒位于 x=-4；第 1–6.5 秒沿 z=0 从 x=-4 行走至 x=4；第 6.5–11 秒停留在草地外，用于观察恢复。原生预览也可点击 `Replay / WASD`，以 WASD 手动经过不同位置。\n\n## 输入边界\n\n模型输入为当前题面、本合同、初始/上一层候选代码以及公开检查说明；不能将 `reference/`、`tools/build_reference.py` 或参考源码作为模型输入。S1/P3 只回传模型自己候选的真实 PNG，不输入作者参考图。模型只可修改 grass.gdshader，不能读取本地任意文件。\n\n\n公开案例：\n[\n  {\n    \"id\": \"wind_default\",\n    \"camera\": \"overview\",\n    \"seconds\": 4,\n    \"parameters\": {\n      \"wind_strength\": 0.22,\n      \"wind_speed\": 1.6,\n      \"wind_direction\": [\n        1,\n        0.35\n      ]\n    }\n  },\n  {\n    \"id\": \"wind_off\",\n    \"camera\": \"roots\",\n    \"seconds\": 2,\n    \"parameters\": {\n      \"wind_strength\": 0\n    }\n  },\n  {\n    \"id\": \"strong_crosswind\",\n    \"camera\": \"roots\",\n    \"seconds\": 4,\n    \"parameters\": {\n      \"wind_strength\": 0.4,\n      \"wind_direction\": [\n        -0.3,\n        1\n      ]\n    }\n  }\n]\n\n本次起始候选代码（L1 为静态起点，后续为同一模型上一层实际代码）：\n```glsl\nshader_type spatial;\nrender_mode cull_disabled, diffuse_burley, specular_schlick_ggx, world_vertex_coords;\n\nuniform sampler2D grass_albedo : source_color, filter_linear_mipmap, repeat_disable;\nuniform sampler2D grass_orm : filter_linear_mipmap, repeat_disable;\nuniform float elapsed = 0.0;\nuniform float wind_strength = 0.22;\nuniform float wind_speed = 1.6;\nuniform vec2 wind_direction = vec2(1.0, 0.35);\nuniform vec3 player_position = vec3(-4.0, 0.0, 0.0);\nuniform float interaction_radius = 0.95;\nuniform float interaction_strength = 0.95;\nuniform vec4 player_history[32]; // x,z,age_seconds,valid; raw input, not a solved bend\nuniform bool audit_roots = false;\nuniform bool audit_tips = false;\n\nvoid vertex() {\n\t// TASK: implement the requested level here. This starter is static.\n\t// VERTEX is world space; MODEL_MATRIX[3].xz is this card's root center.\n\t// UV2.y is normalized height: 0 at root, 1 at the top edge.\n}\n\nvoid fragment() {\n\tvec4 base = texture(grass_albedo, UV);\n\tvec3 orm = texture(grass_orm, UV).rgb;\n\tALBEDO = base.rgb;\n\tROUGHNESS = clamp(orm.g, 0.55, 1.0);\n\tMETALLIC = 0.0;\n\tAO = mix(0.75, 1.0, orm.r);\n\tBACKLIGHT = base.rgb * 0.18;\n\tNORMAL = FRONT_FACING ? NORMAL : -NORMAL;\n\tALPHA = base.a;\n\tALPHA_SCISSOR_THRESHOLD = 0.45;\n\t// Fixed diagnostic display, not an animation implementation.\n\tif (audit_roots || audit_tips) {\n\t\tbool keep = (audit_roots && UV2.y < 0.01) || (audit_tips && UV2.y > 0.99);\n\t\tALPHA = keep ? 1.0 : 0.0;\n\t\tALBEDO = vec3(0.0);\n\t\tEMISSION = audit_roots ? vec3(1.0,0.0,0.5) : vec3(0.0,0.5,1.0);\n\t}\n}\n\n```",
+  "images": [],
+  "tools": [
+    {
+      "name": "set_plan",
+      "description": "首次唯一调用：保存4–8项计划；之后不可重设。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "goal": {
+                  "type": "string"
+                },
+                "acceptance": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "goal",
+                "acceptance",
+                "tags"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 4,
+            "maxItems": 8
+          }
+        },
+        "required": [
+          "steps"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "read_main",
+      "description": "读取自己的 grass.gdshader、revision 版本号 和当前子任务。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "update_main",
+      "description": "只更新当前子任务。code 与 edits 二选一；先验证整个补丁，失败不改文件。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string",
+            "description": "完整文件，首次必用；后续优先 edits。"
+          },
+          "edits": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "old": {
+                  "type": "string"
+                },
+                "new": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "old",
+                "new"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "base_revision": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "当前工具状态中的 revision，初始为 0。"
+          }
+        },
+        "required": [
+          "step_id",
+          "base_revision",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "check",
+      "description": "Run the fixed Godot target scene; step returns up to 3 actual PNGs, public uses fixed cases.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step_id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "step",
+              "public"
+            ]
+          },
+          "scene": {
+            "type": "string",
+            "enum": [
+              "target"
+            ]
+          },
+          "params": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 720
+            },
+            "minItems": 1,
+            "maxItems": 3
+          },
+          "schedule": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "frame": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 720
+                },
+                "set": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              "required": [
+                "frame",
+                "set"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "claim": {
+            "type": "string"
+          },
+          "expected": {
+            "type": "string"
+          },
+          "counterexample": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step_id",
+          "kind",
+          "claim",
+          "expected",
+          "counterexample"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "finish_step",
+      "description": "提交有证据的阶段判断。pass推进下一项；fail/inconclusive留在当前项。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step_id": {
+            "type": "string"
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "inconclusive"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "step_id",
+          "verdict",
+          "evidence",
+          "summary",
+          "limitations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "submit",
+      "description": "所有子任务结束且当前版本公开执行无错误后，明确提交；不是视觉成功声明。",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

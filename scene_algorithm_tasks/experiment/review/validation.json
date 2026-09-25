@@ -1,0 +1,110 @@
+{
+  "status": "review_prepared",
+  "requests_validated": 15,
+  "models": 4,
+  "queued_tasks": 60,
+  "serial": true,
+  "model_api_calls": 0,
+  "network_used": false,
+  "godot_started": false,
+  "user_review_pending": true,
+  "runtime_ready": false,
+  "model_budget_disclosure": false,
+  "tools": [
+    "read",
+    "write",
+    "render"
+  ],
+  "task_readiness": [
+    {
+      "task_id": "SA01_L1",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA01_L2",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA01_L3",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA02_L1",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA02_L2",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA02_L3",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA03_L1",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA03_L2",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA03_L3",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA04_L1",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA04_L2",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA04_L3",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA05_L1",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA05_L2",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    },
+    {
+      "task_id": "SA05_L3",
+      "runtime_ready": false,
+      "environment_ready": true,
+      "scene_entry_exists": true
+    }
+  ]
+}

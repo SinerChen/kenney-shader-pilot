@@ -1,0 +1,4 @@
+downloads/
+projects/*/.godot/
+*.log
+__pycache__/

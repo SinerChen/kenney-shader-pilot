@@ -1,0 +1,43 @@
+{
+  "engine": "4.6.1-stable (official)",
+  "extra_cases": [
+    "L2 strong crosswind",
+    "L3 interaction without wind",
+    "L3 recovered without wind"
+  ],
+  "grass_cards": 335,
+  "levels": [
+    {
+      "animation_frames": 32,
+      "effect_steps": 160,
+      "elapsed": 3.99999999999999,
+      "history_samples": 0,
+      "level": 1,
+      "player": "(-4.0, 0.0, 0.0)",
+      "reset_clears_time_and_history": true
+    },
+    {
+      "animation_frames": 32,
+      "effect_steps": 160,
+      "elapsed": 3.99999999999999,
+      "history_samples": 0,
+      "level": 2,
+      "player": "(-4.0, 0.0, 0.0)",
+      "reset_clears_time_and_history": true
+    },
+    {
+      "animation_frames": 88,
+      "effect_steps": 440,
+      "elapsed": 11.0000000000001,
+      "history_samples": 31,
+      "level": 3,
+      "player": "(4.0, 0.0, 0.0)",
+      "reset_clears_time_and_history": true
+    }
+  ],
+  "mesh_vertices_per_card": 95,
+  "model_api_calls": 0,
+  "renderer": "forward_plus",
+  "stage": "author_preview_not_model_evaluation",
+  "starter_shader": "res://effect/grass.gdshader"
+}

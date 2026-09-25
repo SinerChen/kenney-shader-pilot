@@ -1,0 +1,198 @@
+{
+  "ok": false,
+  "errors": [
+    "SCRIPT ERROR: Parse Error: Cannot infer the type of \"w\" variable because the value doesn't have a set type.",
+    "SCRIPT ERROR: Parse Error: Cannot infer the type of \"k\" variable because the value doesn't have a set type.",
+    "ERROR: Failed to load script \"res://effect/main.gd\" with error \"Parse error\".",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'step' in base 'Nil'.",
+    "SCRIPT ERROR: Invalid call. Nonexistent function 'sample' in base 'Nil'."
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260925_015603_c5e4a40f",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      120,
+      240
+    ],
+    "resolution": [
+      720,
+      540
+    ],
+    "camera": {
+      "position": [
+        4.8,
+        3.1,
+        5.2
+      ],
+      "look_at": [
+        0.0,
+        0.3,
+        0.0
+      ],
+      "fov_degrees": 45.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.293,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 4.248,
+      "errors": [
+        "SCRIPT ERROR: Parse Error: Cannot infer the type of \"w\" variable because the value doesn't have a set type.",
+        "SCRIPT ERROR: Parse Error: Cannot infer the type of \"k\" variable because the value doesn't have a set type.",
+        "ERROR: Failed to load script \"res://effect/main.gd\" with error \"Parse error\".",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'step' in base 'Nil'.",
+        "SCRIPT ERROR: Invalid call. Nonexistent function 'sample' in base 'Nil'."
+      ],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.630706012248993,
+            -0.367911845445633,
+            -0.683264791965485
+          ],
+          "fov_degrees": 45.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            4.80000019073486,
+            3.09999990463257,
+            5.19999980926514
+          ],
+          "projection": 0,
+          "up": [
+            -0.24954728782177,
+            0.929860651493073,
+            -0.270342886447906
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 540,
+        "image": "frame_0001.png",
+        "width": 720
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.630706012248993,
+            -0.367911845445633,
+            -0.683264791965485
+          ],
+          "fov_degrees": 45.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            4.80000019073486,
+            3.09999990463257,
+            5.19999980926514
+          ],
+          "projection": 0,
+          "up": [
+            -0.24954728782177,
+            0.929860651493073,
+            -0.270342886447906
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 540,
+        "image": "frame_0120.png",
+        "width": 720
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.630706012248993,
+            -0.367911845445633,
+            -0.683264791965485
+          ],
+          "fov_degrees": 45.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            4.80000019073486,
+            3.09999990463257,
+            5.19999980926514
+          ],
+          "projection": 0,
+          "up": [
+            -0.24954728782177,
+            0.929860651493073,
+            -0.270342886447906
+          ]
+        },
+        "elapsed_s": 4.0,
+        "frame": 240,
+        "height": 540,
+        "image": "frame_0240.png",
+        "width": 720
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 30,
+        "visible_geometry": 30
+      },
+      "geometry_before": {
+        "multimesh_instances": 335,
+        "visible_geometry": 30
+      },
+      "host": "existing_project",
+      "level": 1.0,
+      "scope": "scene_subset",
+      "source_host_modified": false,
+      "targets": [
+        "GrassCards_0",
+        "GrassCards_1",
+        "GrassCards_2",
+        "GrassCards_3"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 240,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_015603_c5e4a40f/samples.json"
+}

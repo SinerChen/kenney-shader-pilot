@@ -1,0 +1,22 @@
+config_version=5
+
+[application]
+config/name="Forest Grass Lab - Review Preview"
+run/main_scene="res://scenes/L1.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="forward_plus"
+anti_aliasing/quality/msaa_3d=1
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[editor]
+import/use_multiple_threads=false
+
+[network]
+tls/certificate_bundle_override="res://assets/cacert.pem"

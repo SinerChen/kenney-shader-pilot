@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "1eaefaf29c0cf54a094230471724677a0d9b960791daba4e4a179cb65fe3917d"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "ebc5b53fde5979c56495f0a1cb93df5538a2ce3e6c0ac7a4742d6fdd356aa9f2"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "5ad149564a1ec0f184d49d33b9638d0c6c8044ec8f8a5f536189e608da4f947e"
+    },
+    {
+      "path": "effect/height_fog.gdshader",
+      "sha256": "619c923dea3009265e58946f4ed42a1bcca0fd701f438bb1efb7b7fe8cbcb084"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "d1a04b401369833878d644177aee08dbb80eef98da623a494897508dc6307df1"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "9546acdc406ba968ece078c31aa56e0853fae67bb9139a681f9cc89ae851082b"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "b9c3edb502d56f1f029db96072990d60ec5038d3f6d6c2f93a731d2d2e3d160a"
+    }
+  ],
+  "input_sha256": "b9c3edb502d56f1f029db96072990d60ec5038d3f6d6c2f93a731d2d2e3d160a"
+}

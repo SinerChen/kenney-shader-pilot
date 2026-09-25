@@ -1,0 +1,39 @@
+{
+  "task_id": "SA04_L3",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA04_L3_coverage",
+      "intervention": "按清单射击 A/B 的正面与斜面锚点，包含初始镜头外的锚点。",
+      "expected": "全部允许锚点有局部反馈，无漏 surface；最近命中位置可辨。",
+      "evidence": "锚点覆盖表、真实命中数据与完整画面视频。",
+      "typical_failure": "只改 TargetA 的一个 mesh 或把所有命中放在目标中心。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L3_negative_receivers",
+      "intervention": "命中 A 时观察 C/墙地/武器；注入带位置但 target_id=C 的公开负例。",
+      "expected": "负对象不显示贴花；不允许的事件不替换当前有效贴花或改变原健康状态。",
+      "evidence": "receiver 清单、材质身份和事件过滤记录。",
+      "typical_failure": "同材质目标一起出现弹孔或错误事件抹掉当前反馈。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L3_gameplay",
+      "intervention": "用原武器执行无遮挡射击、掩体阻挡射击和切换目标，与基线比较。",
+      "expected": "伤害次数、生命值和阻挡关系相同；准星、武器显示与控制可用。",
+      "evidence": "原/新事件和健康状态逐项对照、游戏视频。",
+      "typical_failure": "贴花算法修改射线、穿透掩体或多调用一次 damage。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L3_lifecycle",
+      "intervention": "有效命中后等待到期，再 reset 并重复三轮。",
+      "expected": "到期/重置只清候选贴花，原资源绑定正确且数量不增长。",
+      "evidence": "三轮节点/资源/材质差异及完整场景截图。",
+      "typical_failure": "到期删了原对象、永久改材质或残留后台贴花。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

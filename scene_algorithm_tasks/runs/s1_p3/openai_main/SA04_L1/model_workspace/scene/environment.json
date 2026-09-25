@@ -1,0 +1,29 @@
+{
+  "host": "existing_project",
+  "name": "FPS 靶场",
+  "kind": "fps",
+  "level": 1,
+  "scope": "scene_subset",
+  "description": "从原靶场拆出 TargetA 和地面，保留原靶标网格、材质、光照和观察相机；验证表面投影。",
+  "source_entry": "pilot/F01.tscn",
+  "targets": [
+    "World/TargetA",
+    "World/TargetB"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      -1,
+      4,
+      3
+    ],
+    "look_at": [
+      -4,
+      2,
+      -3
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_213000_294822f8",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1
+    ],
+    "resolution": [
+      512,
+      384
+    ],
+    "camera": {
+      "position": [
+        0.0,
+        8.0,
+        0.0
+      ],
+      "look_at": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "projection": "orthogonal",
+      "orthogonal_size": 5.0,
+      "fov_degrees": 50.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.579,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 1.274,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            0.0,
+            -1.0,
+            4.37113882867379e-08
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 5.0,
+          "position": [
+            0.0,
+            8.0,
+            0.0
+          ],
+          "projection": 1,
+          "up": [
+            0.0,
+            -4.37113882867379e-08,
+            -1.0
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 384,
+        "image": "frame_0001.png",
+        "width": 512
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 1,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "manual_preview_step",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored"
+}

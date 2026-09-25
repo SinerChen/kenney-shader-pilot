@@ -1,0 +1,17 @@
+{
+  "host": "existing_project",
+  "name": "Bistro 路面",
+  "kind": "bistro",
+  "level": 3,
+  "scope": "full_scene",
+  "description": "使用原完整 Bistro 街景，保留各街区、室内入口、道具、碰撞、日夜控制和相机。",
+  "source_entry": "MainScene.tscn",
+  "targets": [
+    "Level Geometry/Ground/Ground"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

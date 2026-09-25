@@ -1,0 +1,19 @@
+{
+  "id": "F01_L1",
+  "scene_id": "F01",
+  "kit": "fps",
+  "level": 1,
+  "title": "选中目标描边",
+  "requirement": "select 为指定靶标增加清晰的选中描边。保持主体原材质，轮廓随物体投影移动，其他对象不产生同样描边。",
+  "criteria": [
+    "描边贴合目标轮廓",
+    "仅选中目标受影响",
+    "保留原有主体材质",
+    "移动相机后轮廓仍对齐"
+  ],
+  "parent_task": null,
+  "base_scene": "projects/fps/pilot/F01.tscn",
+  "editable_directory": "projects/fps/effects/F01",
+  "status": "prepared_not_run",
+  "carry_forward": "clean_baseline"
+}

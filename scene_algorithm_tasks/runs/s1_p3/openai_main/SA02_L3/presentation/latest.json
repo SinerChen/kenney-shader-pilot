@@ -1,0 +1,201 @@
+{
+  "status": "ready",
+  "created": "2026-09-25T14:54:43+08:00",
+  "version": "continuous-video-v1",
+  "fingerprint": "cdfb81932564c9354a43c4614d93f5d2428767bc0e9ed660c66bd1930392e8bf",
+  "task_id": "SA02_L3",
+  "alias": "openai_main",
+  "candidate_sha256": {
+    "effect/gerstner_water.gdshader": "a141a5e86290bf480ce928ca5a6d74fd0174f16ec21e5158aaa34b81ae3ca4ae",
+    "effect/main.gd": "3a3774fd08125143082c6aea0fa400b55ead1d8a4c72843188f1d9600aed9134"
+  },
+  "input_sha256": "94511f1b5b89026fe4f502aae6f022bc02033df0de6673096bf2938f9ee3ab7d",
+  "model_api_calls": 0,
+  "purpose": "human_review_only",
+  "fed_to_model": false,
+  "counts_toward_model_budget": false,
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180
+    ],
+    "resolution": [
+      1280,
+      720
+    ],
+    "camera": {
+      "position": [
+        40.0,
+        22.0,
+        55.0
+      ],
+      "look_at": [
+        0.0,
+        0.0,
+        -35.0
+      ],
+      "fov_degrees": 60.0,
+      "far": 3000.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05
+    },
+    "camera_track": [
+      {
+        "frame": 1,
+        "position": [
+          40,
+          22,
+          55
+        ],
+        "look_at": [
+          0,
+          0,
+          -35
+        ]
+      },
+      {
+        "frame": 180,
+        "position": [
+          -80,
+          32,
+          -110
+        ],
+        "look_at": [
+          -30,
+          0,
+          -220
+        ]
+      }
+    ],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60,
+    "video_fps": 30.0,
+    "orbit": false,
+    "view_source": "observations/render_20260925_024336_eaf3a7c8"
+  },
+  "errors": [],
+  "warnings": [],
+  "directory": "runs/s1_p3/openai_main/SA02_L3/presentation/versions/cdfb81932564c935_145443",
+  "import": {
+    "exit_code": 0,
+    "seconds": 3.94,
+    "errors": [],
+    "warnings": [],
+    "shutdown_diagnostics": []
+  },
+  "capture": {
+    "exit_code": 0,
+    "seconds": 27.637,
+    "errors": [],
+    "warnings": [],
+    "shutdown_diagnostics": []
+  },
+  "video": "runs/s1_p3/openai_main/SA02_L3/presentation/versions/cdfb81932564c935_145443/effect.mp4",
+  "poster": "runs/s1_p3/openai_main/SA02_L3/presentation/versions/cdfb81932564c935_145443/poster.png",
+  "fps": 30.0,
+  "frame_count": 90,
+  "duration_seconds": 3.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "video_sha256": "ab22b1286d8e4459fd9ccebc23b0c919abc929ed3b254555b94da32fa40f9ea4",
+  "codec": "h264",
+  "finished": "2026-09-25T14:55:16+08:00",
+  "matches_current_files": true
+}

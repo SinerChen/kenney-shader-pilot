@@ -1,0 +1,36 @@
+{
+  "scene": "scene/main.tscn",
+  "frames": [
+    60,
+    240
+  ],
+  "resolution": [
+    960,
+    720
+  ],
+  "camera": {
+    "position": [
+      2.0,
+      2.3,
+      3.4
+    ],
+    "look_at": [
+      0.6,
+      0.3,
+      0.0
+    ],
+    "projection": "orthogonal",
+    "orthogonal_size": 4.0,
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "fov_degrees": 50.0,
+    "near": 0.05,
+    "far": 1000.0
+  },
+  "camera_track": [],
+  "dt_seconds": 0.016666666666666666,
+  "fixed_fps": 60
+}

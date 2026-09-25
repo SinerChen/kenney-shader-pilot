@@ -1,0 +1,94 @@
+{
+	"display": "Windows",
+	"engine": "4.6.1-stable (official)",
+	"events": [
+		{
+			"before_step": 30,
+			"completed_frames": 29,
+			"event": "splash",
+			"payload": {
+				"position": [
+					0.0,
+					0.22,
+					1.0
+				],
+				"strength": 0.6
+			},
+			"time": 0.483333333333333
+		},
+		{
+			"before_step": 70,
+			"completed_frames": 69,
+			"event": "splash",
+			"payload": {
+				"position": [
+					-2.0,
+					0.22,
+					-1.0
+				],
+				"strength": 1.0
+			},
+			"time": 1.15
+		},
+		{
+			"before_step": 110,
+			"completed_frames": 109,
+			"event": "rain",
+			"payload": {
+				"intensity": 0.8
+			},
+			"time": 1.81666666666667
+		},
+		{
+			"before_step": 150,
+			"completed_frames": 149,
+			"event": "rain",
+			"payload": {
+				"intensity": 0.0
+			},
+			"time": 2.48333333333333
+		}
+	],
+	"frames": 180,
+	"level": 1,
+	"note": "Baseline environment validation, not model output or shader correctness.",
+	"rendered": true,
+	"renderer": "forward_plus",
+	"reset_ok": true,
+	"samples": [
+		{
+			"frame": 1,
+			"image": "frame_001.png",
+			"last_event": "none",
+			"time": 0.0166666666666667
+		},
+		{
+			"frame": 60,
+			"image": "frame_060.png",
+			"last_event": "splash",
+			"time": 1.0
+		},
+		{
+			"frame": 120,
+			"image": "frame_120.png",
+			"last_event": "rain",
+			"time": 2.0
+		},
+		{
+			"frame": 180,
+			"image": "frame_180.png",
+			"last_event": "rain",
+			"time": 2.99999999999999
+		}
+	],
+	"scene_id": "P02",
+	"status": "baseline_ready",
+	"target_count": 4,
+	"targets": [
+		"Water",
+		"BridgeA",
+		"BridgeB",
+		"Obstacle"
+	],
+	"task_status": "not_run"
+}

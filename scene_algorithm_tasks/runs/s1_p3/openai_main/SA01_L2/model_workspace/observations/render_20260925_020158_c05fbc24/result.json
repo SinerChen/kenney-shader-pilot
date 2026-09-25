@@ -1,0 +1,214 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "observation_directory": "observations/render_20260925_020158_c05fbc24",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60,
+      120,
+      240
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        5.0,
+        4.0,
+        6.0
+      ],
+      "look_at": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "projection": "perspective",
+      "fov_degrees": 50.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.292,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 3.741,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.581395387649536,
+            -0.418604642152786,
+            -0.697674453258514
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            5.0,
+            4.0,
+            6.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.26798415184021,
+            0.90816855430603,
+            -0.321580976247787
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.581395387649536,
+            -0.418604642152786,
+            -0.697674453258514
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            5.0,
+            4.0,
+            6.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.26798415184021,
+            0.90816855430603,
+            -0.321580976247787
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 640,
+        "image": "frame_0060.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.581395387649536,
+            -0.418604642152786,
+            -0.697674453258514
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            5.0,
+            4.0,
+            6.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.26798415184021,
+            0.90816855430603,
+            -0.321580976247787
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 640,
+        "image": "frame_0120.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.581395387649536,
+            -0.418604642152786,
+            -0.697674453258514
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            5.0,
+            4.0,
+            6.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.26798415184021,
+            0.90816855430603,
+            -0.321580976247787
+          ]
+        },
+        "elapsed_s": 4.0,
+        "frame": 240,
+        "height": 640,
+        "image": "frame_0240.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 90,
+        "visible_geometry": 30
+      },
+      "geometry_before": {
+        "multimesh_instances": 335,
+        "visible_geometry": 30
+      },
+      "host": "existing_project",
+      "level": 2.0,
+      "scope": "interaction_subset",
+      "source_host_modified": false,
+      "targets": [
+        "GrassCards_0",
+        "GrassCards_1",
+        "GrassCards_2",
+        "GrassCards_3"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 240,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_020158_c05fbc24/samples.json"
+}

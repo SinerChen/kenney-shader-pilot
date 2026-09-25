@@ -1,0 +1,28 @@
+{
+  "host": "existing_project",
+  "name": "Bistro 路面",
+  "kind": "bistro",
+  "level": 2,
+  "scope": "interaction_subset",
+  "description": "保留 Ground 与相邻 Section01 街区，观察湿区、细节法线、受光和干湿边界的关系。",
+  "source_entry": "MainScene.tscn",
+  "targets": [
+    "Level Geometry/Ground/Ground"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      -3,
+      3,
+      8
+    ],
+    "look_at": [
+      -3,
+      1,
+      -2
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

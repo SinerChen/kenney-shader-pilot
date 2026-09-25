@@ -1,0 +1,273 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://pilot/pilot.gd" id="host"]
+[ext_resource type="Environment" path="res://scenes/main-environment.tres" id="env"]
+[ext_resource type="PackedScene" path="res://objects/player.tscn" id="player"]
+[ext_resource type="Script" path="res://effects/F02/effect.gd" id="effect"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model4"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model5"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model6"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model7"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model8"]
+[ext_resource type="PackedScene" path="res://objects/wall_high.tscn" id="model9"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model10"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model11"]
+[ext_resource type="PackedScene" path="res://objects/platform.tscn" id="model12"]
+[ext_resource type="PackedScene" path="res://models/blaster.glb" id="model13"]
+
+[sub_resource type="StandardMaterial3D" id="box0mat"]
+albedo_color = Color(0.13, 0.21, 0.28, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box0mesh"]
+size = Vector3(18, 0.8, 17)
+material = SubResource("box0mat")
+
+[sub_resource type="BoxShape3D" id="box0shape"]
+size = Vector3(18, 0.8, 17)
+
+[sub_resource type="StandardMaterial3D" id="box3mat"]
+albedo_color = Color(0.2, 0.28, 0.34, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box3mesh"]
+size = Vector3(0.35, 2.8, 14)
+material = SubResource("box3mat")
+
+[sub_resource type="BoxShape3D" id="box3shape"]
+size = Vector3(0.35, 2.8, 14)
+
+[sub_resource type="StandardMaterial3D" id="box6mat"]
+albedo_color = Color(0.2, 0.28, 0.34, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box6mesh"]
+size = Vector3(0.35, 2.8, 14)
+material = SubResource("box6mat")
+
+[sub_resource type="BoxShape3D" id="box6shape"]
+size = Vector3(0.35, 2.8, 14)
+
+[sub_resource type="StandardMaterial3D" id="box9mat"]
+albedo_color = Color(0.18, 0.24, 0.3, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box9mesh"]
+size = Vector3(10, 3.6, 0.35)
+material = SubResource("box9mat")
+
+[sub_resource type="BoxShape3D" id="box9shape"]
+size = Vector3(10, 3.6, 0.35)
+
+[sub_resource type="StandardMaterial3D" id="box12mat"]
+albedo_color = Color(0.1, 0.5, 0.68, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box12mesh"]
+size = Vector3(2.0, 2.0, 0.8)
+material = SubResource("box12mat")
+
+[sub_resource type="BoxShape3D" id="box12shape"]
+size = Vector3(2.0, 2.0, 0.8)
+
+[sub_resource type="StandardMaterial3D" id="box15mat"]
+albedo_color = Color(0.18, 0.32, 0.43, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box15mesh"]
+size = Vector3(2, 2, 7)
+material = SubResource("box15mat")
+
+[sub_resource type="StandardMaterial3D" id="box17mat"]
+albedo_color = Color(0.32, 0.4, 0.46, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box17mesh"]
+size = Vector3(1, 3, 1)
+material = SubResource("box17mat")
+
+[sub_resource type="BoxShape3D" id="box17shape"]
+size = Vector3(1, 3, 1)
+
+[sub_resource type="StandardMaterial3D" id="box20mat"]
+albedo_color = Color(0.12, 0.34, 0.44, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="box20mesh"]
+size = Vector3(2, 2.5, 0.2)
+material = SubResource("box20mat")
+
+[sub_resource type="BoxShape3D" id="box20shape"]
+size = Vector3(2, 2.5, 0.2)
+
+[node name="Pilot" type="Node3D"]
+script = ExtResource("host")
+scene_id = "F02"
+kit = "fps"
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = ExtResource("env")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, -30, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="World" type="Node3D" parent="."]
+
+
+[node name="Observer" type="Camera3D" parent="."]
+position = Vector3(15, 13, 19)
+fov = 48.0
+current = true
+
+[node name="EffectAdapter" type="Node" parent="."]
+script = ExtResource("effect")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+
+[node name="Instructions" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 15.0
+theme_override_font_sizes/font_size = 17
+
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 20.0
+offset_top = 575.0
+theme_override_font_sizes/font_size = 16
+
+[node name="EffectHUD" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Crosshair" type="TextureRect" parent="HUD"]
+offset_left = 463.0
+offset_top = 303.0
+offset_right = 497.0
+offset_bottom = 337.0
+expand_mode = 1
+mouse_filter = 2
+visible = false
+
+[node name="Player" parent="." node_paths=PackedStringArray("crosshair") groups=["player"] instance=ExtResource("player")]
+position = Vector3(0, 1.0, 5)
+crosshair = NodePath("../HUD/Crosshair")
+
+[node name="Foundation" type="MeshInstance3D" parent="World"]
+position = Vector3(0, -0.4, -1)
+mesh = SubResource("box0mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Foundation"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Foundation/Body"]
+shape = SubResource("box0shape")
+
+[node name="Wall_-6_-5" parent="World" instance=ExtResource("model4")]
+position = Vector3(-6, 0, -5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_-6_0" parent="World" instance=ExtResource("model5")]
+position = Vector3(-6, 0, 0)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_-6_5" parent="World" instance=ExtResource("model6")]
+position = Vector3(-6, 0, 5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_-5" parent="World" instance=ExtResource("model7")]
+position = Vector3(6, 0, -5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_0" parent="World" instance=ExtResource("model8")]
+position = Vector3(6, 0, 0)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Wall_6_5" parent="World" instance=ExtResource("model9")]
+position = Vector3(6, 0, 5)
+scale = Vector3(1.3, 1.5, 1.6)
+
+[node name="Platform-4" parent="World" instance=ExtResource("model10")]
+position = Vector3(-4, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="Platform0" parent="World" instance=ExtResource("model11")]
+position = Vector3(0, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="Platform4" parent="World" instance=ExtResource("model12")]
+position = Vector3(4, 0, -3)
+scale = Vector3(1.5, 1, 1.5)
+
+[node name="CorridorWallLeft" type="MeshInstance3D" parent="World"]
+position = Vector3(-5, 1.4, -1)
+mesh = SubResource("box3mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/CorridorWallLeft"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/CorridorWallLeft/Body"]
+shape = SubResource("box3shape")
+
+[node name="CorridorWallRight" type="MeshInstance3D" parent="World"]
+position = Vector3(5, 1.4, -1)
+mesh = SubResource("box6mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/CorridorWallRight"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/CorridorWallRight/Body"]
+shape = SubResource("box6shape")
+
+[node name="EndWall" type="MeshInstance3D" parent="World"]
+position = Vector3(0, 1.8, -7.6)
+mesh = SubResource("box9mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/EndWall"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/EndWall/Body"]
+shape = SubResource("box9shape")
+
+[node name="Emitter" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(0, 2, -6)
+mesh = SubResource("box12mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Emitter"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Emitter/Body"]
+shape = SubResource("box12shape")
+
+[node name="BeamVolume" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(0, 2, -2)
+mesh = SubResource("box15mesh")
+visible = false
+
+[node name="Occluder" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(-0.8, 1.5, -2)
+mesh = SubResource("box17mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Occluder"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Occluder/Body"]
+shape = SubResource("box17shape")
+
+[node name="Panel" type="MeshInstance3D" parent="World" groups=["effect_target"]]
+position = Vector3(3, 1.6, 1)
+mesh = SubResource("box20mesh")
+
+[node name="Body" type="StaticBody3D" parent="World/Panel"]
+
+
+[node name="Collision" type="CollisionShape3D" parent="World/Panel/Body"]
+shape = SubResource("box20shape")
+
+[node name="Console" parent="World" instance=ExtResource("model13")]
+position = Vector3(3, 0.8, 2)
+scale = Vector3(2, 2, 2)

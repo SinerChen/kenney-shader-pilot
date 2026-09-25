@@ -1,0 +1,10 @@
+{
+  "scene_id": "sponza",
+  "mode": "import",
+  "checked_at": "2026-09-23T15:54:13.006274+08:00",
+  "exit_code": 3221225477,
+  "elapsed_seconds": 8.56,
+  "errors": [],
+  "warnings": [],
+  "log": "verification/sponza/import.log"
+}

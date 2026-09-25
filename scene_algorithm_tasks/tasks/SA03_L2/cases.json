@@ -1,0 +1,39 @@
+{
+  "task_id": "SA03_L2",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA03_L2_mask_relation",
+      "intervention": "同一局部 patch 将 wetness 从 0 改到 .5、1；读取权重和材料通道。",
+      "expected": "各通道响应同一权重来源，湿区位置一致；0 使用冻结的原材质 one-hot 输入。",
+      "evidence": "权重、颜色、roughness、normal 对齐视图。",
+      "typical_failure": "湿颜色和高光/法线边界脱离。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L2_normal_identity",
+      "intervention": "将 detail 置平坦法线，再还原细节；保留湿区不变。",
+      "expected": "平坦 detail 等于混合基础法线；细节变化不改变 wetness 权重。",
+      "evidence": "RNM 输入输出向量和固定光照对照。",
+      "typical_failure": "把法线图当颜色混合，或 detail 重置了湿度。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L2_tangent_frame",
+      "intervention": "旋转 patch/相机和光源，检查带镜像 UV 的固定诊断 patch。",
+      "expected": "细节仍贴在表面，受光随真实方向变化而非随屏幕旋转。",
+      "evidence": "TBN/世界法线可视化、旋转序列。",
+      "typical_failure": "手性或坐标混用导致一侧法线凹凸翻转。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA03_L2_factorial",
+      "intervention": "固定曝光运行干+无细节、湿+无细节、干+细节、湿+细节四组。",
+      "expected": "每次只有声明的输入变化；组合中仍能辨认原石材大结构。",
+      "evidence": "四组材料数据和斜视截图。",
+      "typical_failure": "改曝光/灯光补偿算法错误，或细节抹平原材质。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

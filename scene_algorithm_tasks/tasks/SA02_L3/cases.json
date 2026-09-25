@@ -1,0 +1,39 @@
+{
+  "task_id": "SA02_L3",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA02_L3_lod_coverage",
+      "intervention": "沿预置世界相机路径跨过近中远 LOD 边界，固定若干世界 q 标记点。",
+      "expected": "必要海面表面均响应；同一 q 无可见重置、突然位移或泡沫粘屏。",
+      "evidence": "LOD/网格覆盖清单、世界点轨迹及全程视频。",
+      "typical_failure": "近景成功但远景漏绑或相机移动重置历史。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L3_resource_isolation",
+      "intervention": "在相同时间切候选开关，逐一查看 IceCube、ObsidianCube 和两个海面球。",
+      "expected": "冻结对照样本的原 shader、参数与外观不被候选写入污染。",
+      "evidence": "共享资源身份/参数差异表、各样本 ROI 截图。",
+      "typical_failure": "编辑共享 .tres 改坏整个材质展台。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L3_dry_objects",
+      "intervention": "检查 OceanFloor、展示台、天空、HUD；从多个视角看前景交叠。",
+      "expected": "泡沫只属于目标水面，其他对象不出现波位移/白沫；遮挡及原基础水材质功能仍成立。",
+      "evidence": "对象 ID/mask、全景和前景交叠序列。",
+      "typical_failure": "全屏噪声覆盖干物体或海面效果穿过展示台。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L3_purpose",
+      "intervention": "使用原 Camera 操作游览，开关效果后 reset 重放。",
+      "expected": "既能读出波峰泡沫，又能继续比较原展示材质；重置不改变原相机/展示对象布局。",
+      "evidence": "实际操作视频、节点/资源快照和两轮回放。",
+      "typical_failure": "为了效果删掉展台、更换观察范围或锁死相机。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

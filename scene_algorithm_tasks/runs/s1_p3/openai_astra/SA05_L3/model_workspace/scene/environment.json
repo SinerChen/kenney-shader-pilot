@@ -1,0 +1,19 @@
+{
+  "host": "existing_project",
+  "name": "森林",
+  "kind": "forest",
+  "level": 3,
+  "scope": "full_scene",
+  "description": "使用原完整森林，保留全部地形、树木、岩石、Groundcover、天空、云和自由相机。",
+  "source_entry": "Main.tscn",
+  "targets": [
+    "Main Terrain",
+    "Decorations-Forest",
+    "Groundcover"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": null,
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

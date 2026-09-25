@@ -1,0 +1,341 @@
+{
+  "captured_at": "2026-09-25T16:20:36+08:00",
+  "repository": "https://github.com/SinerChen/kenney-shader-pilot",
+  "private": true,
+  "selection": "Only finished scene-algorithm cases; large raw sample arrays and local caches excluded.",
+  "cases": [
+    {
+      "alias": "openai_astra",
+      "task": "SA01_L1",
+      "finished": "2026-09-24T22:21:40+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "975cd7a7942da3b11d1621f4c5de68c2b10734acc33329131eb8b902da8dc8b3",
+        "grass_geometry.gd": "e9723b54e86c03f8c8f9209bcf252a6da8eb10cab9598870477d76a39699e776",
+        "interaction_field.gd": "d638e889f6291be00a0a0ee6aac85475a530cb71db772834300f515e6bdbb155",
+        "main.gd": "6e6bf3cd228c5c564ee092c453d29f2f34db6ab39afe8a9b3326edeccb2d2b83",
+        "plan.json": "39b8250fa2945f7b9db0b4d3f65586853f8f50ce6d0d983df5b737bd76e9c307"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA01_L2",
+      "finished": "2026-09-24T22:27:47+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "b0357dbc68697a2038f77dc1c28e027582a2fbc824478cbc2e4a0f76ff05ea87",
+        "grass_geometry.gd": "185c9d8efa9c6fab288ee227579b02fc1a7247e2de8c78083d888313175a150a",
+        "interaction_field.gd": "d638e889f6291be00a0a0ee6aac85475a530cb71db772834300f515e6bdbb155",
+        "main.gd": "335888dfc0eabd4908a093ba23f3bf2bb56ca2a7e0e93a8723b6e60c00129f3e",
+        "plan.json": "d85ace811051964deb2753c05fb6fe3210c86aaba813e89a89d660995795c0bd"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA01_L3",
+      "finished": "2026-09-24T22:34:56+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "b0357dbc68697a2038f77dc1c28e027582a2fbc824478cbc2e4a0f76ff05ea87",
+        "grass_geometry.gd": "4f0d297fcf18106c1c926a2fbe30ce7cbb5be7611f20941d7fe4f7e57143ff07",
+        "interaction_field.gd": "d638e889f6291be00a0a0ee6aac85475a530cb71db772834300f515e6bdbb155",
+        "main.gd": "335888dfc0eabd4908a093ba23f3bf2bb56ca2a7e0e93a8723b6e60c00129f3e",
+        "plan.json": "3b659388f335c27254642fafda8b7c3d27ad0842369ab1eeddaf208dea9cad4e"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA02_L1",
+      "finished": "2026-09-24T22:50:28+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "6a73068d486327f9ac8a7358bbebfa9c4cfafaa1921954775b93edc7e89ba3ae",
+        "ocean_surface.gd": "4dd9e1feeb99515f69627802657a6b9546acc7bd878cac6a90438fafaa8ad9f5",
+        "plan.json": "ebbcd83e652d359a1431c02174e7038456628cab13524b088292ab868ffae47f",
+        "verify.gd": "275d97a3baa4cc0ea2fc1a3f2ecc0b24650f632a03ef3cb42e9c1d2e5ac41484"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA02_L2",
+      "finished": "2026-09-24T23:11:12+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "1c3ff1314246376be2bc705fdedad34c3f5657720ada5bea6ae4424d21e30f6a",
+        "ocean_surface.gd": "8d72b93ba3e8bc7b5da11298061ed5308c62bb19ecebeb741873265ecb5ba921",
+        "plan.json": "3af7a03cdd0e2a499f6e83edbf5d38a8d9fb2e68537128e5e5fc773301c4f100",
+        "verify.gd": "667e69f635dbee709047967d05b61b1902c656d6504296b203a026e5de765aad"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA02_L3",
+      "finished": "2026-09-24T23:30:00+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "42d701b10deb89a17e68ba0425daa0457c324262837e9e678b22fcf5de8e9f22",
+        "ocean_surface.gd": "421fa00e9c3cada770548da41dd9b5909c0d3ae614cb57bf03010a526398e140",
+        "plan.json": "158dbeab660b2db6e93687ea4f18ab046213dff729902966ef66c828ea675219",
+        "verify.gd": "667e69f635dbee709047967d05b61b1902c656d6504296b203a026e5de765aad"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA03_L1",
+      "finished": "2026-09-24T23:41:49+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "045aa1341fbe948fdac33d1aec0da68c6c2c58f28ad38032502c4d6ca79bda22",
+        "plan.json": "8d80d3ba23e5d4c011dd4a7dd53e9ecfc28901a647a615ea0ce11da1a2bebe90",
+        "road.gdshader": "0d633400d71ed691f004e0d2a9768e12d964bdac80e3af6c3a7f30f99736f1ec"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA03_L2",
+      "finished": "2026-09-25T00:08:08+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "045aa1341fbe948fdac33d1aec0da68c6c2c58f28ad38032502c4d6ca79bda22",
+        "plan.json": "4cda5d23b545b0c3a53800fe1c647d8e795c77206dcf9e9e775add5fe0663c73",
+        "road.gdshader": "a8ca663938d0a583d7da36c6ea78b278a3ad336d28629a819ff11fe41db30d40"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA03_L3",
+      "finished": "2026-09-25T00:27:19+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "d1601af23660933a6e6a12d80f58bd377b32f547dd4d710e87642888ed968830",
+        "plan.json": "6f9c79bd3dba23cb11528e2cc1908719ef86a0fd3df9f0bceaa409d7dfe7e670",
+        "road.gdshader": "3173c2ebb2c329bc4e6f4e4db3f1a2aa7e6605c1276d4b2b59cece120456b9e2"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA04_L1",
+      "finished": "2026-09-25T00:38:07+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "4fa224445260500c1ebe7658a118be8c6151577108ac3a86e0dcdce1db6d9fea",
+        "plan.json": "c10071ca99f294ad1f5c4492865e17a07f76e8dcc0c5b6eb0c29c36f41de0ecc",
+        "projected.gdshader": "3a5be260de70af165d9fcce4075fe389acb940cfae31f55d2b9c70788cdbe25c",
+        "receiver.gd": "a28ebd625a744f82cd7dcbb7767c47471bceed52fa7de1a1bd95256f1502eaf7",
+        "sampling.gd": "b287622edf4b740a7d82c6fcbfb454fa3f8123f2a93bb7fbbbfdebdbcb0a51d4"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA04_L2",
+      "finished": "2026-09-25T01:04:38+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "audit.gd": "ef63cb9a7a20aab2c47c5976954e7cc622ff928b16fece5e37f0182c5c3fc04b",
+        "main.gd": "13b3d8ab81ac6eb63ca253461333627aa5eedf43f3f4ebb4a627b400c232ef55",
+        "plan.json": "7d2e62b98e0669dc18d517882c1b4a8755570d141c29fcf4112aa9165ae2fef5",
+        "projected.gdshader": "3a5be260de70af165d9fcce4075fe389acb940cfae31f55d2b9c70788cdbe25c",
+        "receiver.gd": "5fbffa44231d652a1565d3c91061f94f3e20886aef787abdb146139cda422e1f",
+        "sampling.gd": "bdb3f1c229302f1adae3de52c3a9797d73c8457c9943855e4092714d900071e7"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA04_L3",
+      "finished": "2026-09-25T01:21:15+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "audit.gd": "ea9c201de1740f85fa2f2faa767676739315bb5d8141ad5fbdb498c1390e4838",
+        "contact.gd": "e77d6a634571e3214913afda6de72f622b88b0ad14e2443318b4ecd8532f2b99",
+        "main.gd": "1b5107b69a38050c04128f51442d7896e03a0050ba6be6d5ff865da477ee309d",
+        "plan.json": "14c935d6923da440a9a8d7e1142b1a3e88a4157886ae29652ec06f0d14a6b1a8",
+        "projected.gdshader": "dd9a9d71144c1c73282dbe8849b4c88a9a5612f579f8fc4bcfb68a79858b0958",
+        "receiver.gd": "5a17e29a3a5194283b60d1acc01d7e24ae28e763fe2eecde5032744829c8606f",
+        "sampling.gd": "bdb3f1c229302f1adae3de52c3a9797d73c8457c9943855e4092714d900071e7"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA05_L1",
+      "finished": "2026-09-25T01:29:47+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "height_fog.gdshader": "619c923dea3009265e58946f4ed42a1bcca0fd701f438bb1efb7b7fe8cbcb084",
+        "main.gd": "d1a04b401369833878d644177aee08dbb80eef98da623a494897508dc6307df1",
+        "plan.json": "c5753f5fb98ec45877c421af8c4a3b8ed31d5e71ff8bd618de32156ae4ee94f9"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA05_L2",
+      "finished": "2026-09-25T01:38:10+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "height_fog.gdshader": "619c923dea3009265e58946f4ed42a1bcca0fd701f438bb1efb7b7fe8cbcb084",
+        "main.gd": "01451cc262309157d0ad4f064e24a00f036e638b436cbf6633a96db376430fce",
+        "plan.json": "1fe52f9a7f0b846936baa424e732a2a41a7afc68e38427d98fc028a2b1c75d09",
+        "plant_depth.gdshader": "d68f0e18325d66e34362777485c8b8abef15766e7d1492160c424c91f6396948"
+      }
+    },
+    {
+      "alias": "openai_astra",
+      "task": "SA05_L3",
+      "finished": "2026-09-25T01:48:07+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "height_fog.gdshader": "619c923dea3009265e58946f4ed42a1bcca0fd701f438bb1efb7b7fe8cbcb084",
+        "inspect.gd": "53effce6a027dd532d4a1e8163c9e6134da3ed530bb87c0b3f4f4373e766c5b4",
+        "main.gd": "c05ec724b35f0f267a907ab945b8dfffe474ad6420c860d11688cd3dc221ba7f",
+        "plan.json": "6d36a4bd3aa6d112e463581df31f51cab11c0a8fb04a892fc04b85b0b320c1fb",
+        "plant_depth.gdshader": "d68f0e18325d66e34362777485c8b8abef15766e7d1492160c424c91f6396948"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA01_L1",
+      "finished": "2026-09-25T01:59:57+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "8d909e34449362834f75d12e2301f7550285ad5c0ffe241c495e7e6ee16d4915",
+        "main.gd": "3408af8670f41344c404fadb413c8671bd63745bbd033583c88ee27f141eed8e",
+        "plan.json": "1585ac24dc3a3eb67ccaca5e7b60281a2b887d15bfca9fb3e06670df3b83d630"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA01_L2",
+      "finished": "2026-09-25T02:08:57+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "bc727a645a7403caf4885e91e49b4132300024b947fcbcc3147339e96602afb2",
+        "main.gd": "b668fc1723dbeec5f1e7fb2076a48d1976f859cb2b4ca11a4149d50813f97171",
+        "plan.json": "7fc3496c5d40caf10a68767e06414145ed345128b5c87e58350f8505e7fbd885"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA01_L3",
+      "finished": "2026-09-25T02:09:40+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "grass.gdshader": "bc727a645a7403caf4885e91e49b4132300024b947fcbcc3147339e96602afb2",
+        "main.gd": "b668fc1723dbeec5f1e7fb2076a48d1976f859cb2b4ca11a4149d50813f97171"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA02_L1",
+      "finished": "2026-09-25T02:21:40+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "gerstner_water.gdshader": "21a489cd64543a6a1713f09bb5e416f27e470cbd60aeed770234443195696dfb",
+        "main.gd": "fa929f0b099dfde841a8335c71b88ee78af2fac84a8f9df019f66738dcf2a695",
+        "plan.json": "50a6f974da30ac44907e28d9e7c885bc1dd1086daf2e0ebbc639b00a0e85723c"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA02_L2",
+      "finished": "2026-09-25T02:30:28+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "gerstner_water.gdshader": "d0dffe8fd2bd3a247cb03b201791402973a9984f420fbd1d06c14b7f731c81cc",
+        "main.gd": "9fbd5c16134d0511ab44edfe42187122bdae1335c8e9d045d4bbf90eb234c5dd",
+        "plan.json": "4d8234b80ee7bc11f272ad609e6035ee14deba463cb69becae150dc4a7593cc2"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA02_L3",
+      "finished": "2026-09-25T02:51:52+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "gerstner_water.gdshader": "a141a5e86290bf480ce928ca5a6d74fd0174f16ec21e5158aaa34b81ae3ca4ae",
+        "main.gd": "3a3774fd08125143082c6aea0fa400b55ead1d8a4c72843188f1d9600aed9134",
+        "plan.json": "df1147be8d3984b9c8e049801b3b282a278d35e23aa42515c6d5dea0ace34544"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA03_L1",
+      "finished": "2026-09-25T03:03:18+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "four_layer_height_blend.gdshader": "654a7b3f535416ff025844f65dbac564be6b4e778dc42fe52280b2c09fc24a08",
+        "main.gd": "c8be9156878216b06285a3168cf858bfbb4af4c7af42f725d77edb69949fe07c",
+        "plan.json": "ede71f61a4d3b8e861ce321abe3b293c5b89f873f4105bd9afb2a7004da53017"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA03_L2",
+      "finished": "2026-09-25T03:14:35+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "four_layer_height_blend.gdshader": "3c75a0396f985022e7507c652e8bb0c71b871be1e1db3763911e171a8aec5591",
+        "main.gd": "6910e6cff2a13cf433f2d66fbb00d4e52a339a29fe435ac2a107091ae16ea86a",
+        "plan.json": "5a27ed60f60a7df40202164d21c9b0e2327292bf1801fe075c361e0fa5bf1fba"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA03_L3",
+      "finished": "2026-09-25T03:24:03+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "four_layer_height_blend.gdshader": "df67b4fc781ff8641a6510141ff5dbcad343fad69b459eb3f1695a30358114fb",
+        "main.gd": "b228440d82cb80e8410f4182450afe6c5af99e89e84eb70410e9a743ecb45fd3",
+        "plan.json": "17197fdceb8de4d4b56ca3c7e44e416c373377d9c65a272ece955e6b6640a475"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA04_L1",
+      "finished": "2026-09-25T03:43:30+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "47eae5d70c36d591791c7b3e3f2289028d31c416f64b4e513f3bf5671e76c020",
+        "plan.json": "f36a9e57ee825c651835bffe7932eea603cef265b7cf7b11a1db8c0eed1951c8"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA04_L2",
+      "finished": "2026-09-25T03:49:58+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "5fa6710c7f06c2d46ce28157699bff688e9a621e2f25ec6408f83c7f91d7fae6",
+        "plan.json": "4d48b3cc5044bcfdf3f789c7fc0e84ba157d044505b2410d1e3dfffe2e13a3cf"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA04_L3",
+      "finished": "2026-09-25T15:58:34+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "f306bc0bdf66c6190611d996aa1220ad19650085002b8748ae2d67117edc4da4",
+        "plan.json": "36889280b516855b8940fe53f2602e0446904c5e99ea9559f9276474b0c9f337"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA05_L1",
+      "finished": "2026-09-25T15:59:20+08:00",
+      "stop_reason": "model_incomplete",
+      "candidate_files": {
+        "main.gd": "36bb840e1578bb05ef317f788567edbdf6036a170b760962e21806851ba22c1e"
+      }
+    },
+    {
+      "alias": "openai_main",
+      "task": "SA05_L2",
+      "finished": "2026-09-25T16:10:19+08:00",
+      "stop_reason": "model_finished",
+      "candidate_files": {
+        "main.gd": "f59ad716b8655f0e405cfd8d393c2921462cc67524af361ba9ee0bdf934b1525",
+        "plan.json": "cf64bed1245ea485177459a6a2009081f94a3881b33b7a120b074c2c2895d02f"
+      }
+    }
+  ]
+}

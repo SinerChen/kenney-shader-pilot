@@ -1,0 +1,28 @@
+{
+  "host": "existing_project",
+  "name": "海面",
+  "kind": "water",
+  "level": 1,
+  "scope": "scene_subset",
+  "description": "从原海面展示中拆出 DeepOcean 的中心网格，用原网格生成器设置 8 米、64 格子区域，保留原水材质、光照和相机；只实现波面。",
+  "source_entry": "example/boujie_water_shader/water_shader_examples.tscn",
+  "targets": [
+    "DeepOcean"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      6,
+      4,
+      8
+    ],
+    "look_at": [
+      0,
+      0,
+      0
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

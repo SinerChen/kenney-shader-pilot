@@ -1,0 +1,62 @@
+{
+  "seed": 20260924,
+  "dt_seconds": 0.016666666666666666,
+  "steps": 240,
+  "record_after_steps": [
+    1,
+    60,
+    120,
+    240
+  ],
+  "patch": {
+    "origin_xz_m": [
+      -4,
+      -4
+    ],
+    "size_m": 8,
+    "resolution": [
+      64,
+      64
+    ]
+  },
+  "interaction": {
+    "radius_m": 0.95,
+    "strength": 0.95,
+    "persistence_per_60hz_step": 0.92,
+    "bend_m": 0.35,
+    "flatten_m": 0.1
+  },
+  "player_keyframes": [
+    {
+      "time_s": 0,
+      "position_xz_m": [
+        -3,
+        0
+      ]
+    },
+    {
+      "time_s": 2,
+      "position_xz_m": [
+        3,
+        0
+      ]
+    },
+    {
+      "time_s": 4,
+      "position_xz_m": [
+        3,
+        0
+      ]
+    }
+  ],
+  "interaction_active_until_s": 2,
+  "wind": {
+    "strength": 0,
+    "speed": 1.6,
+    "direction_xz": [
+      1,
+      0.35
+    ]
+  },
+  "camera": "overview"
+}

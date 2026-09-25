@@ -1,0 +1,39 @@
+{
+  "task_id": "SA04_L1",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA04_L1_reconstruction",
+      "intervention": "运行透视/正交相机、平移、近远平面与斜面输入。",
+      "expected": "深度、世界/局部位置、UV 和 primitive ID 与独立 ray-triangle 参照匹配。",
+      "evidence": "SH018 固定容差逐像素读回及原场景子集。",
+      "typical_failure": "reverse-Z 或齐次除法错误，只在一个相机角度正确。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L1_volume",
+      "intervention": "检查六个盒面、背面、正负 scale 与朝向阈值。",
+      "expected": "体积和朝向裁剪符合契约；临界 float32 分类按已有限制独立报告。",
+      "evidence": "inside/facing/alpha 通道和边界报告。",
+      "typical_failure": "贴花穿透背面、遗漏一个盒面或把边界反例删掉。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L1_material",
+      "intervention": "只改变贴花 normal_roughness 并移动固定 viewer 光源。",
+      "expected": "材料变化进入后续照明，深度和几何保持。",
+      "evidence": "before/after G-buffer、光照输出。",
+      "typical_failure": "后期叠图在所有角度保持同一明暗。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA04_L1_filtering",
+      "intervention": "缩小贴花、拉远相机并运行非法输入/暂停/reset。",
+      "expected": "使用完整 mip；错误原子拒绝；暂停/reset 符合契约。",
+      "evidence": "LOD/导数诊断、错误日志及状态读回。",
+      "typical_failure": "远处闪烁、dt=0 仍推进或错误破坏已提交材质。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "level": 1,
+  "title": "让草随风动",
+  "adds": "平滑风动、方向与强度控制、草丛相位差",
+  "criteria": [
+    "草网格产生连续可见的运动，相机和地面不跟着移动",
+    "风向、幅度、速度响应对应输入",
+    "相邻草丛有变化，不是整块场地机械同步平移",
+    "风强归零时静止；暂停和重置有效"
+  ],
+  "not_required": [
+    "根部固定",
+    "玩家交互"
+  ],
+  "id": "FG01_L1",
+  "scene_id": "FG01",
+  "status": "authorized_s1_p3",
+  "api_enabled": true,
+  "parent_task": null,
+  "input_code": "static starter",
+  "editable_files": [
+    "project/effect/grass.gdshader"
+  ],
+  "fixed_scene": "project/scenes/L1.tscn",
+  "prompt": "tasks/FG01_L1/prompt.md",
+  "host_contract": "HOST_API.md",
+  "public_cases": [
+    {
+      "id": "wind_default",
+      "camera": "overview",
+      "seconds": 4,
+      "parameters": {
+        "wind_strength": 0.22,
+        "wind_speed": 1.6,
+        "wind_direction": [
+          1,
+          0.35
+        ]
+      }
+    },
+    {
+      "id": "wind_off",
+      "camera": "roots",
+      "seconds": 2,
+      "parameters": {
+        "wind_strength": 0
+      }
+    },
+    {
+      "id": "strong_crosswind",
+      "camera": "roots",
+      "seconds": 4,
+      "parameters": {
+        "wind_strength": 0.4,
+        "wind_direction": [
+          -0.3,
+          1
+        ]
+      }
+    }
+  ],
+  "step_seconds": 0.016666666666666666,
+  "evaluation_status": "observable criteria prepared; full automatic scoring not implemented",
+  "disallowed_model_inputs": [
+    "reference/",
+    "tools/build_reference.py"
+  ],
+  "reference_media_policy": "S1 P3: candidate PNG feedback only; no author reference input"
+}

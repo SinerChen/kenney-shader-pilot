@@ -1,0 +1,68 @@
+{
+  "level": 2,
+  "title": "根部固定，顶部随风摆动",
+  "adds": "固定草根、沿高度弯曲、保留 L1 风动",
+  "criteria": [
+    "继承 L1 的风动与参数响应",
+    "草根不滑动、不浮起、不沉入地面",
+    "顶部可见摆动，中段过渡连续，不整体平移",
+    "强风和不同风向下根部仍固定；风强归零恢复"
+  ],
+  "not_required": [
+    "玩家交互"
+  ],
+  "id": "FG01_L2",
+  "scene_id": "FG01",
+  "status": "authorized_s1_p3",
+  "api_enabled": true,
+  "parent_task": "FG01_L1",
+  "input_code": "same model previous level submission; may repair failures",
+  "editable_files": [
+    "project/effect/grass.gdshader"
+  ],
+  "fixed_scene": "project/scenes/L2.tscn",
+  "prompt": "tasks/FG01_L2/prompt.md",
+  "host_contract": "HOST_API.md",
+  "public_cases": [
+    {
+      "id": "wind_default",
+      "camera": "overview",
+      "seconds": 4,
+      "parameters": {
+        "wind_strength": 0.22,
+        "wind_speed": 1.6,
+        "wind_direction": [
+          1,
+          0.35
+        ]
+      }
+    },
+    {
+      "id": "wind_off",
+      "camera": "roots",
+      "seconds": 2,
+      "parameters": {
+        "wind_strength": 0
+      }
+    },
+    {
+      "id": "strong_crosswind",
+      "camera": "roots",
+      "seconds": 4,
+      "parameters": {
+        "wind_strength": 0.4,
+        "wind_direction": [
+          -0.3,
+          1
+        ]
+      }
+    }
+  ],
+  "step_seconds": 0.016666666666666666,
+  "evaluation_status": "observable criteria prepared; full automatic scoring not implemented",
+  "disallowed_model_inputs": [
+    "reference/",
+    "tools/build_reference.py"
+  ],
+  "reference_media_policy": "S1 P3: candidate PNG feedback only; no author reference input"
+}

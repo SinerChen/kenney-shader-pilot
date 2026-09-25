@@ -1,0 +1,19 @@
+{
+  "id": "P03_L1",
+  "scene_id": "P03",
+  "kit": "platformer",
+  "level": 1,
+  "title": "锚定风动形变",
+  "requirement": "让 GrassField 的草与 Flag 旗面随时间摆动。根部/固定边保持锚定，实例相位有空间变化，不通过整体平移模型制造摇摆。",
+  "criteria": [
+    "草根和旗固定边稳定",
+    "形变连续且无整物漂移",
+    "不同实例不是完全同步",
+    "法线或明暗变化与形变相容"
+  ],
+  "parent_task": null,
+  "base_scene": "projects/platformer/pilot/P03.tscn",
+  "editable_directory": "projects/platformer/effects/P03",
+  "status": "prepared_not_run",
+  "carry_forward": "clean_baseline"
+}

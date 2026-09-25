@@ -1,0 +1,9 @@
+{
+  "browser": "Edge headless",
+  "javascript_errors": [],
+  "slider": true,
+  "three_comparison_tabs": true,
+  "two_views": true,
+  "images_loaded": true,
+  "mobile_no_horizontal_overflow": true
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA02_L2",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA02_L2_source",
+      "intervention": "锁定 q 网格和时间，分别只改变波高展示与水平位移输入。",
+      "expected": "只改展示高度不改变 J/source；水平压缩改变 source，相关 F 随之演化。",
+      "evidence": "D、四个导数、J、source、F 同步读回。",
+      "typical_failure": "把高处或随机白噪声直接当白沫源。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L2_history",
+      "intervention": "有压缩时生成泡沫，随后 grow=0，保持波运动 2 秒。",
+      "expected": "新生成停止，已有 F 按衰减保留并跟随同一参数位置。",
+      "evidence": "标记 q 的世界轨迹、F 曲线、连续帧。",
+      "typical_failure": "每帧重置历史、泡沫悬浮或沿屏幕滑动。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L2_timing",
+      "intervention": "固定 1/60 秒推进 180 步；记录各模块时间和 set_surface 前后状态。",
+      "expected": "各模块时间一致；set_surface 不额外推进或清零；没有双重速度。",
+      "evidence": "调用顺序日志和 step_count。",
+      "typical_failure": "wave 和 foam 时间失配，或同时开启 pattern_velocity 导致二次运动。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA02_L2_ablation",
+      "intervention": "同一轨迹跑波+泡沫、仅波、grow=0 三组；改相机不改世界状态。",
+      "expected": "波结果在三组一致，泡沫差异只沿其来源/历史路径产生。",
+      "evidence": "同时间世界采样点、模块消融视频。",
+      "typical_failure": "关泡沫改变波形，或移动相机使 source 跟着走。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

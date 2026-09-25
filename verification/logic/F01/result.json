@@ -1,0 +1,92 @@
+{
+	"display": "headless",
+	"engine": "4.6.1-stable (official)",
+	"events": [
+		{
+			"before_step": 25,
+			"completed_frames": 24,
+			"event": "select",
+			"payload": {
+				"target": "TargetA"
+			},
+			"time": 0.4
+		},
+		{
+			"before_step": 55,
+			"completed_frames": 54,
+			"event": "hit",
+			"payload": {
+				"amount": 35.0,
+				"health": 0.65,
+				"target": "TargetA"
+			},
+			"time": 0.900000000000001
+		},
+		{
+			"before_step": 95,
+			"completed_frames": 94,
+			"event": "hit",
+			"payload": {
+				"amount": 80.0,
+				"health": 0.2,
+				"target": "TargetB"
+			},
+			"time": 1.56666666666667
+		},
+		{
+			"before_step": 135,
+			"completed_frames": 134,
+			"event": "destroy",
+			"payload": {
+				"target": "TargetB"
+			},
+			"time": 2.23333333333333
+		},
+		{
+			"before_step": 160,
+			"completed_frames": 159,
+			"event": "select",
+			"payload": {
+				"target": "TargetC"
+			},
+			"time": 2.65
+		}
+	],
+	"frames": 180,
+	"note": "Baseline environment validation, not model output or shader correctness.",
+	"rendered": false,
+	"renderer": "forward_plus",
+	"reset_ok": true,
+	"samples": [
+		{
+			"frame": 1,
+			"last_event": "none",
+			"time": 0.0166666666666667
+		},
+		{
+			"frame": 60,
+			"last_event": "hit",
+			"time": 1.0
+		},
+		{
+			"frame": 120,
+			"last_event": "hit",
+			"time": 2.0
+		},
+		{
+			"frame": 180,
+			"last_event": "select",
+			"time": 2.99999999999999
+		}
+	],
+	"scene_id": "F01",
+	"status": "baseline_ready",
+	"target_count": 4,
+	"targets": [
+		"TargetA",
+		"TargetB",
+		"TargetC",
+		"Cover"
+	],
+	"task_status": "not_run"
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA01_L3",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA01_L3_coverage",
+      "intervention": "执行原 11 秒穿场轨迹、偏移一条平行轨迹和反向轨迹。",
+      "expected": "实例清单中全部有效覆盖草有正确局部响应，无只处理一块 mesh 或一种草资产的遗漏。",
+      "evidence": "实例覆盖表、轨迹/footprint 叠图、三条全景视频。",
+      "typical_failure": "主画面有效但边缘、另一种草或另一条路径完全无效。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L3_negative_controls",
+      "intervention": "对比相同时间的仅风与风+交互；检查 footprint 外实例和非草对象。",
+      "expected": "远草不被压倒；地面、玩家和 UI 的资源、几何与行为不变。",
+      "evidence": "目标/非目标资源绑定表、字段外采样、负对照截图。",
+      "typical_failure": "共享材质写入污染全部对象，或全场同时趴倒。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L3_purpose",
+      "intervention": "使用原相机与手动控制从草地一侧走到另一侧，再切顶视检查。",
+      "expected": "玩家、经过方向和草地范围仍可辨；无新增遮挡屏片、删草或控制中断。",
+      "evidence": "操作记录、原/新节点与实例数量、完整画面视频。",
+      "typical_failure": "局部效果漂亮但角色被遮死、草消失或原控制不可用。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L3_reset_scene",
+      "intervention": "完成交互后 reset，再重放；检查新建 GPU 资源和所有材质绑定。",
+      "expected": "历史清空且重放一致；资源数量不逐轮增长；无需重载整个原项目。",
+      "evidence": "两轮字段/覆盖报告、资源计数和全景对照。",
+      "typical_failure": "上轮轨迹残留，或释放/重绑破坏其他草材质。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

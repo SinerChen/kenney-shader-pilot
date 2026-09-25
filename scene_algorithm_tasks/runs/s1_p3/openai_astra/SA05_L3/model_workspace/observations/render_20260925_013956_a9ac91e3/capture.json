@@ -1,0 +1,62 @@
+{
+  "captures": [
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.574695825576782,
+          -0.287347882986069,
+          -0.766261041164398
+        ],
+        "fov_degrees": 50.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 8.0,
+        "position": [
+          6.0,
+          4.0,
+          8.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.172408744692802,
+          0.957826316356659,
+          -0.229878291487694
+        ]
+      },
+      "elapsed_s": 0.0166666666666667,
+      "frame": 1,
+      "height": 400,
+      "image": "frame_0001.png",
+      "width": 640
+    }
+  ],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "environment": {
+    "geometry_after": {
+      "multimesh_instances": 143758,
+      "visible_geometry": 23113
+    },
+    "geometry_before": {
+      "multimesh_instances": 143758,
+      "visible_geometry": 23113
+    },
+    "host": "existing_project",
+    "level": 3.0,
+    "scope": "full_scene",
+    "source_host_modified": false,
+    "targets": [
+      "Main Terrain",
+      "Decorations-Forest",
+      "Groundcover"
+    ]
+  },
+  "initialization": "paused scene initialization; shader global TIME may include initialization time",
+  "process_frames": 1,
+  "renderer": "forward_plus",
+  "scene": "scene/main.tscn",
+  "step_mode": "native_fixed_fps",
+  "visual_quality": "not_scored"
+}

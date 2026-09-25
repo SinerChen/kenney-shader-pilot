@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "exact_prompt": true,
+  "initial_and_current_contents": true,
+  "diff": true,
+  "write_to_event_jump": true,
+  "event_filters_search_paging": true,
+  "render_feedback_images": true,
+  "inheritance_baseline": true,
+  "queued_preview": true,
+  "both_entries": true,
+  "mobile_no_overflow": true,
+  "browser_errors": [],
+  "http_errors": [],
+  "model_api_calls": 0
+}

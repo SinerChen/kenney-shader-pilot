@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "elapsed": 1.0,
+      "frames": [
+        1,
+        30,
+        60
+      ],
+      "name": "target",
+      "steps": 60
+    }
+  ],
+  "completed": true,
+  "renderer": "forward_plus"
+}

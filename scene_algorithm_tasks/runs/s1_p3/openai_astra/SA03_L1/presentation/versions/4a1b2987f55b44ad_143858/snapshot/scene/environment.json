@@ -1,0 +1,28 @@
+{
+  "host": "existing_project",
+  "name": "Bistro 路面",
+  "kind": "bistro",
+  "level": 1,
+  "scope": "scene_subset",
+  "description": "从原 Bistro 拆出 Ground 路面，保留原地面网格、材质、光照和相机；只观察四层材质混合。",
+  "source_entry": "MainScene.tscn",
+  "targets": [
+    "Level Geometry/Ground/Ground"
+  ],
+  "project_directory": "scene/project/",
+  "candidate_entry": "effect/main.gd",
+  "source_host_modified": false,
+  "camera": {
+    "position": [
+      -3,
+      5,
+      8
+    ],
+    "look_at": [
+      -3,
+      0,
+      0
+    ]
+  },
+  "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+}

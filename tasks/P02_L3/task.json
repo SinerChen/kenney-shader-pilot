@@ -1,0 +1,19 @@
+{
+  "id": "P02_L3",
+  "scene_id": "P02",
+  "kit": "platformer",
+  "level": 3,
+  "title": "雨、水面与岸边组合",
+  "requirement": "保留 L1/L2。rain 平滑控制雨扰动，加入岸边/障碍交界的水面过渡或泡沫，协调反射、透明度和波纹。停止雨后恢复基础水面，reset 清除残留涟漪。",
+  "criteria": [
+    "前两级仍正确",
+    "雨强变化连续且可恢复",
+    "交界效果与真实障碍位置相符",
+    "透明与反射合成不遮盖整幅场景"
+  ],
+  "parent_task": "P02_L2",
+  "base_scene": "projects/platformer/pilot/P02.tscn",
+  "editable_directory": "projects/platformer/effects/P02",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

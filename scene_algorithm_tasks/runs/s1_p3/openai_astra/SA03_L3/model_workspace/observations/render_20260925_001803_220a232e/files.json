@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "scene/environment.json",
+      "sha256": "64ca4294d6e1380b66714208351a8a79ea7ca038a267346020c23459b205df67"
+    },
+    {
+      "path": "scene/environment_setup.gd",
+      "sha256": "be2a8688488605dd79a8cc1c36c4bfc1c10224b4f7184149fa142ee5f3dd8e59"
+    },
+    {
+      "path": "scene/main.tscn",
+      "sha256": "57c03726863b91876a2b40cd772395a876e501c1cf9cf45d4cfe155a63291f40"
+    },
+    {
+      "path": "scene/README.md",
+      "sha256": "238895d9fc0bab08784fa2165e6aaf9eb5bf02eb074688d5f75cc97b51982f2b"
+    },
+    {
+      "path": "effect/main.gd",
+      "sha256": "d1601af23660933a6e6a12d80f58bd377b32f547dd4d710e87642888ed968830"
+    },
+    {
+      "path": "effect/plan.json",
+      "sha256": "9b60421c0a2884c1e1fb5b28b022ce5ab55e396d7fc6075e4eda5291a975cbb5"
+    },
+    {
+      "path": "effect/road.gdshader",
+      "sha256": "3173c2ebb2c329bc4e6f4e4db3f1a2aa7e6605c1276d4b2b59cece120456b9e2"
+    },
+    {
+      "path": "inputs/test_input.json",
+      "sha256": "0932e4b3d7a4c16bcd92e7a3a8c4dc019edfcebe786c7d33a2e642df77748efd"
+    }
+  ],
+  "input_sha256": "0932e4b3d7a4c16bcd92e7a3a8c4dc019edfcebe786c7d33a2e642df77748efd"
+}

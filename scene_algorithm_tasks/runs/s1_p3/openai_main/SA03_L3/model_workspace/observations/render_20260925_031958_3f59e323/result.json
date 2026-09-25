@@ -1,0 +1,161 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "WARNING: FSR 3D resolution scaling is not designed for downsampling. Falling back to bilinear 3D resolution scaling.",
+    "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+    "ERROR: 1 resources still in use at exit (run with --verbose for details)."
+  ],
+  "observation_directory": "observations/render_20260925_031958_3f59e323",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      60
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        -1.8,
+        1.6,
+        6.9
+      ],
+      "look_at": [
+        -2.0,
+        0.0,
+        2.0
+      ],
+      "fov_degrees": 60.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 10.858,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 16.791,
+      "errors": [],
+      "warnings": [
+        "WARNING: FSR 3D resolution scaling is not designed for downsampling. Falling back to bilinear 3D resolution scaling.",
+        "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+        "ERROR: 1 resources still in use at exit (run with --verbose for details)."
+      ],
+      "shutdown_diagnostics": [
+        "ERROR: 1 resources still in use at exit (run with --verbose for details)."
+      ]
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.0387710593640804,
+            -0.310168415307999,
+            -0.949890732765198
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -1.79999995231628,
+            1.60000002384186,
+            6.90000009536743
+          ],
+          "projection": 0,
+          "up": [
+            -0.0126494048163295,
+            0.950681686401367,
+            -0.309910356998444
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 640,
+        "image": "frame_0001.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.0387710593640804,
+            -0.310168415307999,
+            -0.949890732765198
+          ],
+          "fov_degrees": 60.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -1.79999995231628,
+            1.60000002384186,
+            6.90000009536743
+          ],
+          "projection": 0,
+          "up": [
+            -0.0126494048163295,
+            0.950681686401367,
+            -0.309910356998444
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 640,
+        "image": "frame_0060.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1201
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1201
+      },
+      "host": "existing_project",
+      "level": 3.0,
+      "scope": "full_scene",
+      "source_host_modified": false,
+      "targets": [
+        "Level Geometry/Ground/Ground"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 60,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_031958_3f59e323/samples.json"
+}

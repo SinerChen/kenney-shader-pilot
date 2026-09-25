@@ -1,0 +1,153 @@
+{
+  "schema_version": "scene_algorithm_tasks_v1",
+  "id": "SA03_L3",
+  "chain_id": "SA03",
+  "level": 3,
+  "level_name": "场景影响与设计作用",
+  "core_question": "影响了该影响的内容，保留了该保留的内容吗？",
+  "title": "湿路面的作用边界与街道用途",
+  "goal": "是否只湿润必要路面，同时保留干区、入口和道具材质？",
+  "requirement": "是否只湿润必要路面，同时保留干区、入口和道具材质？",
+  "requirements": [
+    "按已冻结的 surface/region 清单覆盖室外目标湿区；每个必要 surface 都检查，不只验摄像机正前方。",
+    "保留干脊、约定干燥门口/人行区、室内地面；高度图的局部低值不意味着任何对象都应变湿。",
+    "不修改全局曝光、灯光、玻璃、招牌、桌椅和共享原材质；保留角色控制与实际碰撞。",
+    "在近景和完整街景中仍能识别石缝、通行边界及入口，效果关闭回到同一日夜模式的基线。"
+  ],
+  "criteria": [
+    "清单内必要低洼湿区均有对应材料响应；不依赖固定视角。",
+    "对象/区域准入先于材质高度判断；这些样本保持基线。",
+    "只改变目标 surface 的实例材质；灯具、玻璃和道具不受污染。",
+    "入口、地面边界与石材细节可辨，原通行/碰撞/日夜操作可用；关闭后恢复。"
+  ],
+  "parent_task": "SA03_L2",
+  "input_code": "same_model_previous_submission_may_repair",
+  "base_scene": "realistic/projects/bistro/MainScene.tscn",
+  "project": "realistic/projects/bistro/project.godot",
+  "path_base": "workspace_root_except_prompt_and_cases_relative_to_pack",
+  "scene_id": "SA03",
+  "algorithms": [
+    "SH023",
+    "SH043"
+  ],
+  "source_scenario_ids": [
+    "P07",
+    "B06",
+    "B09"
+  ],
+  "primary_algorithms": [
+    "SH023"
+  ],
+  "fixed_supporting_algorithms": [
+    "SH043"
+  ],
+  "primary_evidence": "关键对象/资源检查、影响路径测试、完整场景感知",
+  "editable_directory": "effect/",
+  "editable_directory_status": "existing_host_environment_prepared",
+  "required_targets": "经明确 surface/region 白名单标记的室外石路低洼湿区，不是 Ground 节点下所有表面",
+  "protected_targets": "干燥路脊、约定干燥人行区/门口、室内地面、桌椅招牌玻璃、角色、碰撞与日夜控制",
+  "scene_purpose": "路面呈现雨后湿润与原石材细节，仍可辨别通行边界、入口和原有材质。",
+  "impact_path": [
+    "wetness 与作者给定的材质高度/区域 mask",
+    "四层同时竞争的权重",
+    "颜色、粗糙度、金属度、基础法线共用权重",
+    "同切线空间的 RNM 细节",
+    "指定道路 surface 的原照明响应",
+    "街道入口、干区和道具仍可辨识"
+  ],
+  "scope": "美术指定湿区和高度混合，不求解雨水汇流、积水几何、SSR 或完整反射；保留原照明与反射配置。",
+  "prompt": "tasks/SA03_L3/prompt.md",
+  "evaluation_cases": "tasks/SA03_L3/cases.json",
+  "model_input": {
+    "prompt_only": true,
+    "tools": "model_tools.json",
+    "readable_directories": [
+      "scene/",
+      "inputs/",
+      "observations/",
+      "effect/"
+    ],
+    "writable_directories": [
+      "effect/"
+    ],
+    "workspace": "tasks/SA03_L3/model_workspace",
+    "automatic_attachments": [],
+    "fixed_input": "tasks/SA03_L3/model_workspace/inputs/test_input.json",
+    "assembled_scene": true,
+    "render_tool": true,
+    "environment": "tasks/SA03_L3/model_workspace/scene/environment.json",
+    "project_mount": "scene/project/",
+    "host_reuse": "existing_project",
+    "default_render_scene": "scene/main.tscn",
+    "camera_control": "model_selected",
+    "render_arguments": [
+      "scene",
+      "frames",
+      "resolution",
+      "camera",
+      "camera_track"
+    ]
+  },
+  "evaluation_protocol": "EVALUATION.md",
+  "fixture_protocol": "FIXTURES.md#sa03",
+  "status": "spec_ready",
+  "runtime_ready": false,
+  "api_enabled": false,
+  "evaluation_status": "new_task_not_run",
+  "model_api_calls": 0,
+  "scoring": {
+    "rubrics": 4,
+    "each": [
+      0,
+      1,
+      2
+    ],
+    "maximum": 8,
+    "passing_rule": "all_rubrics_2_and_level_gates_pass",
+    "gates": [
+      "prerequisites_reported",
+      "required_evidence_complete",
+      "coverage_preservation_and_scene_purpose"
+    ]
+  },
+  "required_fixture_work": [
+    "复用现有工程、宿主脚本和资源路径，原工程文件不改写。",
+    "L1: 从原 Bistro 拆出 Ground 路面，保留原地面网格、材质、光照和相机；只观察四层材质混合。",
+    "L2: 保留 Ground 与相邻 Section01 街区，观察湿区、细节法线、受光和干湿边界的关系。",
+    "L3: 使用原完整 Bistro 街景，保留各街区、室内入口、道具、碰撞、日夜控制和相机。",
+    "仅增加场景选择与固定输入转发；候选通过 effect/main.gd 接入，render 返回真实图像和候选 sample 数据。",
+    "L3 不裁剪原场景；L1/L2 保留宿主依赖节点，对可见几何与原实例作裁剪。"
+  ],
+  "disallowed_model_inputs": [
+    "task.json",
+    "cases.json",
+    "algorithm contracts",
+    "INTERFACE.md",
+    "EVALUATION.md",
+    "FIXTURES.md",
+    "ALGORITHM_MAP.md",
+    "source catalog documents",
+    "author algorithm source",
+    "independent oracle",
+    "author validation outputs",
+    "original complete target effect"
+  ],
+  "test_environment": {
+    "host": "existing_project",
+    "name": "Bistro 路面",
+    "kind": "bistro",
+    "level": 3,
+    "scope": "full_scene",
+    "description": "使用原完整 Bistro 街景，保留各街区、室内入口、道具、碰撞、日夜控制和相机。",
+    "source_entry": "MainScene.tscn",
+    "targets": [
+      "Level Geometry/Ground/Ground"
+    ],
+    "project_directory": "scene/project/",
+    "candidate_entry": "effect/main.gd",
+    "source_host_modified": false,
+    "camera": null,
+    "selection": "Preserve host dependency nodes; restrict visible geometry and original instances for L1/L2. L3 has no scene selection."
+  },
+  "environment_ready": true
+}

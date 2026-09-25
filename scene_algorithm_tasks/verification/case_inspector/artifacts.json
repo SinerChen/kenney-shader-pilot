@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 60,
+  "actual_inputs": 27,
+  "frozen_previews": 33,
+  "events": 2193,
+  "files": 98,
+  "links_checked": 2446,
+  "model_api_calls": 0
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA05_L1",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA05_L1_integral",
+      "intervention": "相同长度取水平、上升和下降视线段，与双精度解析及数值求积比较。",
+      "expected": "各输出符合 SH179 容差，端点翻转保持积分一致。",
+      "evidence": "独立参考、tau/T/颜色读回及三球 viewer。",
+      "typical_failure": "仅按终点高度求密度或前后端点不对称。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L1_limits",
+      "intervention": "零长度、零密度、零 falloff 及极薄雾/近水平射线。",
+      "expected": "T=1 或均匀介质极限正确；小量不发生相减消失。",
+      "evidence": "绝对/相对误差及有限性检查。",
+      "typical_failure": "除零、雾突然一片白或小雾量全被错误抹掉。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L1_range",
+      "intervention": "极大合法光学厚度，以及契约内的极小参数。",
+      "expected": "深度不可表示时 canonical tau=null、log_tau 保留、T=0；不把占位零当透明。",
+      "evidence": "depth_state、原始槽和 canonical 输出并列。",
+      "typical_failure": "溢出 NaN，或用 tau 占位零显示透明。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA05_L1_domain",
+      "intervention": "无效高度/长度、NaN 标记输入和重复静态 step。",
+      "expected": "错误原子拒绝；相同输入输出固定，不受 TIME 影响。",
+      "evidence": "配置/错误返回、前后输出和 reset 记录。",
+      "typical_failure": "无效输入夹紧、旧状态被部分覆盖。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

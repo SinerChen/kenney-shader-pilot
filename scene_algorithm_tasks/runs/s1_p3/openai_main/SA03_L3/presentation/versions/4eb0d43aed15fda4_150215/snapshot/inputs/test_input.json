@@ -1,0 +1,78 @@
+{
+  "transition": 0.25,
+  "wetness": 0.6,
+  "layers": [
+    {
+      "height": 0.8,
+      "control": 0.4,
+      "albedo_linear": [
+        0.45,
+        0.42,
+        0.38
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "normal_ts": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 0.8,
+      "control": 0.6,
+      "albedo_linear": [
+        0.25,
+        0.23,
+        0.21
+      ],
+      "roughness": 0.25,
+      "metallic": 0,
+      "normal_ts": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 0.2,
+      "control": 0.2,
+      "albedo_linear": [
+        0.12,
+        0.09,
+        0.06
+      ],
+      "roughness": 0.6,
+      "metallic": 0,
+      "normal_ts": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 0,
+      "control": 0,
+      "albedo_linear": [
+        0,
+        0,
+        0
+      ],
+      "roughness": 0.5,
+      "metallic": 0,
+      "normal_ts": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "detail_normal_ts": [
+    0.3,
+    0,
+    0.9539392014169457
+  ],
+  "detail_enabled": true,
+  "eligible_region": "outdoor_road_wet",
+  "camera": "road_close"
+}

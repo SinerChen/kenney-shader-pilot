@@ -1,0 +1,11 @@
+{
+  "scene_id": "sponza",
+  "mode": "capture",
+  "checked_at": "2026-09-23T15:55:26.501762+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 9.5,
+  "errors": [],
+  "warnings": [],
+  "log": "verification/sponza/capture.log",
+  "capture_completed": true
+}

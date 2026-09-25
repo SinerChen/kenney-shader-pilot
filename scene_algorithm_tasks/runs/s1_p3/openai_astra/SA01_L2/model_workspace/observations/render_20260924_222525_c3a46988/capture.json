@@ -1,0 +1,92 @@
+{
+  "captures": [
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.334472984075546,
+          -0.477818429470062,
+          -0.812291443347931
+        ],
+        "fov_degrees": 50.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 4.0,
+        "position": [
+          2.0,
+          2.29999995231628,
+          3.40000009536743
+        ],
+        "projection": 1,
+        "up": [
+          -0.181929290294647,
+          0.878458619117737,
+          -0.44182825088501
+        ]
+      },
+      "elapsed_s": 1.0,
+      "frame": 60,
+      "height": 720,
+      "image": "frame_0060.png",
+      "width": 960
+    },
+    {
+      "camera": {
+        "far": 1000.0,
+        "forward": [
+          -0.334472984075546,
+          -0.477818429470062,
+          -0.812291443347931
+        ],
+        "fov_degrees": 50.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 4.0,
+        "position": [
+          2.0,
+          2.29999995231628,
+          3.40000009536743
+        ],
+        "projection": 1,
+        "up": [
+          -0.181929290294647,
+          0.878458619117737,
+          -0.44182825088501
+        ]
+      },
+      "elapsed_s": 4.0,
+      "frame": 240,
+      "height": 720,
+      "image": "frame_0240.png",
+      "width": 960
+    }
+  ],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "environment": {
+    "geometry_after": {
+      "multimesh_instances": 90,
+      "visible_geometry": 30
+    },
+    "geometry_before": {
+      "multimesh_instances": 335,
+      "visible_geometry": 30
+    },
+    "host": "existing_project",
+    "level": 2.0,
+    "scope": "interaction_subset",
+    "source_host_modified": false,
+    "targets": [
+      "GrassCards_0",
+      "GrassCards_1",
+      "GrassCards_2",
+      "GrassCards_3"
+    ]
+  },
+  "initialization": "paused scene initialization; shader global TIME may include initialization time",
+  "process_frames": 240,
+  "renderer": "forward_plus",
+  "scene": "scene/main.tscn",
+  "step_mode": "native_fixed_fps",
+  "visual_quality": "not_scored"
+}

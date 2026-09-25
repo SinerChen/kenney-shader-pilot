@@ -1,0 +1,9 @@
+{
+  "status":"completed","active_step":null,"steps":[
+    {"id":"inspect","goal":"检查现有候选实现、宿主接口、场景草网格结构与固定输入，确认可复用行为和数据约定。","expected":"明确接口、实例与顶点顺序。","counterexample":"关键数据无法确定。","status":"passed","observations":["读取宿主确认 4 组 MultiMesh、每网格 19×5 顶点、UV2.y 高度。"],"summary":"接口与网格结构明确。","limitations":""},
+    {"id":"field","goal":"实现 64×64 持久交互场、指数衰减和活动期径向写入。","expected":"2 秒后只衰减。","counterexample":"尺寸、顺序或时序错误。","status":"passed","observations":["render_20260925_015256_6bda85ed 生成四个记录帧及 16384 元素场。"],"summary":"纹素中心平滑径向刷和 0.92/60Hz 衰减已实现。","limitations":""},
+    {"id":"deform","goal":"实现双线性场采样及按草高加权的位置和法线变形。","expected":"根固定，中上部弯倒，法线单位化。","counterexample":"根漂移、边界泄漏或法线异常。","status":"passed","observations":["render_20260925_015720_99937ad6 samples 输出全部实例顶点；根部权重为零，法线重建并单位化。"],"summary":"CPU 与 GPU 共同使用场采样和二次高度权重。","limitations":""},
+    {"id":"visual","goal":"将同一交互场接入草渲染，关闭风并保留场景行为。","expected":"路径附近局部倒伏，草持续可见。","counterexample":"画面不变、风动或草消失。","status":"passed","observations":["render_20260925_015805_a65daa6e 近景四帧显示草片持续可见；经过位置在 1 秒有局部向外弯曲，2 秒后保留轨迹并于 4 秒恢复。无渲染错误。"],"summary":"shader 通过 ImageTexture 接入持久场，wind_strength 固定为零。","limitations":"近景下草片本身密集，形变观察依赖玩家位置和局部轮廓。"},
+    {"id":"validate","goal":"完整运行 240 步，复查字段、衰减、根部、单位法线、视觉轨迹与既有行为。","expected":"四记录帧正确，120 帧明显、240 帧恢复。","counterexample":"报错、缺项、数值异常或回归。","status":"passed","observations":["render_20260925_015720_99937ad6 在 1/60/120/240 帧完成，样本包含 step、elapsed_s、field_rgba、positions、normals；场景保留地面、玩家、灯光、草片且无错误。"],"summary":"目标入口完成固定输入 240 步回归。","limitations":"宿主的图像抓取只显示 L1 可见子集统计；数值仍按实际四组 MultiMesh 输出。"}
+  ]
+}

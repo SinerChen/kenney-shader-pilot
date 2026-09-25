@@ -1,0 +1,11 @@
+{
+  "scene_id": "tps",
+  "mode": "capture",
+  "checked_at": "2026-09-23T16:02:04.810126+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 37.24,
+  "errors": [],
+  "warnings": [],
+  "log": "verification/tps/capture.log",
+  "capture_completed": true
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "SA01_L1",
+  "kind": "evaluator_only_protocol_not_executable_runner",
+  "model_visible": false,
+  "cases": [
+    {
+      "id": "SA01_L1_locality",
+      "intervention": "关闭风，单个静止交互者；采样中心、有效 footprint 内外及 patch 外。",
+      "expected": "GPU 场与独立参照一致；patch 外采样为零；所有根部位置不变。",
+      "evidence": "场 RGBA、所有顶点/法线读回、roots viewer。",
+      "typical_failure": "颜色变化近似正确，但场域、坐标或根部错误。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L1_conflict",
+      "intervention": "在固定位置放两个相向交互者，再交换输入顺序。",
+      "expected": "方向合成与峰值压低符合契约；交换顺序不引入可见或数值偏差。",
+      "evidence": "独立 float64 对照及两次字段差值。",
+      "typical_failure": "最后一个输入覆盖此前状态或方向抵消时草完全恢复。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L1_recovery",
+      "intervention": "写入后移除所有交互者；p=.92，以 1/60 秒运行 2 秒，再 reset 重放。",
+      "expected": "纯恢复按 p^(60*dt) 衰减；reset 场和时间清零；根部仍固定。",
+      "evidence": "每 30 步字段采样及 reset 前后读回。",
+      "typical_failure": "离开立即恢复、永不恢复或按帧率而非 dt 衰减。",
+      "status": "protocol_defined_not_executed"
+    },
+    {
+      "id": "SA01_L1_domain",
+      "intervention": "运行公开契约边界、无效配置、dt=0 和 subtexel 案例。",
+      "expected": "非法更新原子拒绝；暂停无推进；微小合法输入按声明的采样限制报告。",
+      "evidence": "错误返回、旧状态哈希、既有独立测试协议。",
+      "typical_failure": "NaN、偷偷截断输入或把所有异常统一返回成功。",
+      "status": "protocol_defined_not_executed"
+    }
+  ]
+}

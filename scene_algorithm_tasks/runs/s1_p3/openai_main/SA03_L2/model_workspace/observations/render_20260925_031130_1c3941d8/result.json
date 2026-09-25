@@ -1,0 +1,161 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "WARNING: FSR 3D resolution scaling is not designed for downsampling. Falling back to bilinear 3D resolution scaling.",
+    "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+    "ERROR: 3 resources still in use at exit (run with --verbose for details)."
+  ],
+  "observation_directory": "observations/render_20260925_031130_1c3941d8",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      60,
+      120
+    ],
+    "resolution": [
+      960,
+      640
+    ],
+    "camera": {
+      "position": [
+        -3.0,
+        3.0,
+        8.0
+      ],
+      "look_at": [
+        -3.0,
+        1.0,
+        -2.0
+      ],
+      "fov_degrees": 50.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 10.827,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 14.449,
+      "errors": [],
+      "warnings": [
+        "WARNING: FSR 3D resolution scaling is not designed for downsampling. Falling back to bilinear 3D resolution scaling.",
+        "WARNING: ObjectDB instances leaked at exit (run with --verbose for details).",
+        "ERROR: 3 resources still in use at exit (run with --verbose for details)."
+      ],
+      "shutdown_diagnostics": [
+        "ERROR: 3 resources still in use at exit (run with --verbose for details)."
+      ]
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            0.0,
+            -0.196116134524345,
+            -0.980580687522888
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -3.0,
+            3.0,
+            8.0
+          ],
+          "projection": 0,
+          "up": [
+            0.0,
+            0.980580687522888,
+            -0.196116134524345
+          ]
+        },
+        "elapsed_s": 1.0,
+        "frame": 60,
+        "height": 640,
+        "image": "frame_0060.png",
+        "width": 960
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            0.0,
+            -0.196116134524345,
+            -0.980580687522888
+          ],
+          "fov_degrees": 50.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            -3.0,
+            3.0,
+            8.0
+          ],
+          "projection": 0,
+          "up": [
+            0.0,
+            0.980580687522888,
+            -0.196116134524345
+          ]
+        },
+        "elapsed_s": 2.0,
+        "frame": 120,
+        "height": 640,
+        "image": "frame_0120.png",
+        "width": 960
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 177
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1201
+      },
+      "host": "existing_project",
+      "level": 2.0,
+      "scope": "interaction_subset",
+      "source_host_modified": false,
+      "targets": [
+        "Level Geometry/Ground/Ground"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 120,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260925_031130_1c3941d8/samples.json"
+}

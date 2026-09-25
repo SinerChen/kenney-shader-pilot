@@ -1,0 +1,9 @@
+{
+  "status":"completed","active_step":null,"steps":[
+    {"id":"inspect","goal":"检查宿主、固定输入及上一阶段候选实现。","expected":"明确 configure/step/sample 接口与场景可用性。","counterexample":"入口缺失或宿主接口与题面不符。","status":"passed","observations":[],"summary":"候选仅有空接口；宿主为大型森林场景，已有 WorldEnvironment、树木、草和蕨叶资源。","limitations":"运行时通过递归查找环境。"},
+    {"id":"integral","goal":"实现有限线段指数高度密度积分及颜色输出。","expected":"三条射线得到非负光学厚度及互补透射率/不透明度。","counterexample":"积分无视高度或长度、颜色不在线性空间合成。","status":"passed","observations":["observations/render_20260925_160602_4b7764b3/samples.json；固定射线光学厚度为0.1、0.0659367045、0.0659367045。"],"summary":"解析有限线段积分、稳定极限分支和线性颜色合成均通过。","limitations":"无。"},
+    {"id":"scene-fog","goal":"将高度雾应用于场景可见表面，按相机与表面世界位置确定深度。","expected":"雾随高度与表面深度变化，植被叶片遮挡及空隙各自参与。","counterexample":"整屏统一雾或叶片空隙沿用背景深度。","status":"passed","observations":["observations/render_20260925_160602_4b7764b3/frame_0001.png；自选远景；表面雾随距离变化。"],"summary":"以引擎深度感知高度雾处理最近可见表面及alpha测试植被空隙。","limitations":"Godot Environment 雾为引擎内置实现。"},
+    {"id":"preservation","goal":"保留天空/UI并避免颜色重复合成，验证场景表现。","expected":"天空与UI不被雾化，表面仅合成一次。","counterexample":"天空/UI被染雾或出现双重雾化。","status":"passed","observations":["observations/render_20260925_160837_913776cd/frame_0001.png；近地蕨叶轮廓与空隙可辨。"],"summary":"保留天空和Canvas UI，关闭体积雾避免二次合成。","limitations":"参考高度以下会按固定指数参数快速增浓。"},
+    {"id":"review","goal":"在目标场景复查完整效果、数值输出与既有行为。","expected":"固定射线结果正确，树草蕨叶及其空隙体现深度雾。","counterexample":"运行错误、数值不符或场景遮挡/颜色表现异常。","status":"passed","observations":["observations/render_20260925_160929_a0535f3d/frame_0001.png 与 samples.json；默认forest_overview；无脚本/着色器错误，树木、蕨叶、地形遮挡和空隙均保留。"],"summary":"目标入口完整运行，数值输出、森林子集和雾合成行为通过复查。","limitations":"源资产存在UID与旧网格格式警告，不由本效果产生。"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "F01_L2",
+  "scene_id": "F01",
+  "kit": "fps",
+  "level": 2,
+  "title": "命中与消隐",
+  "requirement": "保留 L1。hit 根据目标身份和伤害触发短暂闪烁；destroy 对指定靶标执行连续溶解，结束后移除其可见表面，其他目标与背景不受影响。",
+  "criteria": [
+    "保留选中逻辑",
+    "命中反馈局部且及时",
+    "溶解连续并完成",
+    "多目标事件不串扰"
+  ],
+  "parent_task": "F01_L1",
+  "base_scene": "projects/fps/pilot/F01.tscn",
+  "editable_directory": "projects/fps/effects/F01",
+  "status": "prepared_not_run",
+  "carry_forward": "previous_model_submission"
+}

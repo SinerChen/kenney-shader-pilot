@@ -1,0 +1,15 @@
+{
+  "scene_id": "bistro",
+  "mode": "import",
+  "checked_at": "2026-09-23T15:57:53.195539+08:00",
+  "exit_code": 0,
+  "elapsed_seconds": 138.19,
+  "errors": [
+    "ERROR: Couldn't open MTL file 'res://Meshes/Bent_Quad.mtl', it may not exist or not be readable."
+  ],
+  "warnings": [
+    "WARNING: Ignoring unsupported header information in HDR: GAMMA=1.",
+    "WARNING: Ignoring unsupported header information in HDR: PRIMARIES=0 0 0 0 0 0 0 0."
+  ],
+  "log": "verification/bistro/import.log"
+}

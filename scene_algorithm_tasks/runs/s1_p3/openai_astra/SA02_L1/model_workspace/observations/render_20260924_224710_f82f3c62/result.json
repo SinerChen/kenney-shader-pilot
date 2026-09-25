@@ -1,0 +1,155 @@
+{
+  "ok": false,
+  "errors": [
+    "ERROR: String formatting error: unsupported format character."
+  ],
+  "warnings": [],
+  "observation_directory": "observations/render_20260924_224710_f82f3c62",
+  "scene_kind": "target",
+  "request": {
+    "scene": "scene/main.tscn",
+    "frames": [
+      1,
+      180
+    ],
+    "resolution": [
+      640,
+      480
+    ],
+    "camera": {
+      "position": [
+        7.0,
+        3.4,
+        9.0
+      ],
+      "look_at": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov_degrees": 48.0,
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "projection": "perspective",
+      "orthogonal_size": 8.0,
+      "near": 0.05,
+      "far": 1000.0
+    },
+    "camera_track": [],
+    "dt_seconds": 0.016666666666666666,
+    "fixed_fps": 60
+  },
+  "phases": {
+    "import": {
+      "exit_code": 0,
+      "seconds": 3.754,
+      "errors": [],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    },
+    "capture": {
+      "exit_code": 0,
+      "seconds": 4.48,
+      "errors": [
+        "ERROR: String formatting error: unsupported format character."
+      ],
+      "warnings": [],
+      "shutdown_diagnostics": []
+    }
+  },
+  "capture": {
+    "captures": [
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.588339149951935,
+            -0.28576472401619,
+            -0.756436109542847
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            7.0,
+            3.40000009536743,
+            9.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.175442561507225,
+            0.958299815654755,
+            -0.225569024682045
+          ]
+        },
+        "elapsed_s": 0.0166666666666667,
+        "frame": 1,
+        "height": 480,
+        "image": "frame_0001.png",
+        "width": 640
+      },
+      {
+        "camera": {
+          "far": 1000.0,
+          "forward": [
+            -0.588339149951935,
+            -0.28576472401619,
+            -0.756436109542847
+          ],
+          "fov_degrees": 48.0,
+          "near": 0.0500000007450581,
+          "orthogonal_size": 8.0,
+          "position": [
+            7.0,
+            3.40000009536743,
+            9.0
+          ],
+          "projection": 0,
+          "up": [
+            -0.175442561507225,
+            0.958299815654755,
+            -0.225569024682045
+          ]
+        },
+        "elapsed_s": 3.0,
+        "frame": 180,
+        "height": 480,
+        "image": "frame_0180.png",
+        "width": 640
+      }
+    ],
+    "completed": true,
+    "display": "Windows",
+    "dt_seconds": 0.0166666666666667,
+    "engine": "4.6.1-stable (official)",
+    "environment": {
+      "geometry_after": {
+        "multimesh_instances": 0,
+        "visible_geometry": 1
+      },
+      "geometry_before": {
+        "multimesh_instances": 0,
+        "visible_geometry": 109
+      },
+      "host": "existing_project",
+      "level": 1.0,
+      "scope": "scene_subset",
+      "source_host_modified": false,
+      "targets": [
+        "DeepOcean"
+      ]
+    },
+    "initialization": "paused scene initialization; shader global TIME may include initialization time",
+    "process_frames": 180,
+    "renderer": "forward_plus",
+    "scene": "scene/main.tscn",
+    "step_mode": "native_fixed_fps",
+    "visual_quality": "not_scored"
+  },
+  "model_api_calls": 0,
+  "visual_quality": "not_scored",
+  "samples_file": "observations/render_20260924_224710_f82f3c62/samples.json"
+}

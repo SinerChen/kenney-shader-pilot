@@ -1,0 +1,72 @@
+{
+  "captures": [
+    {
+      "camera": {
+        "far": 4000.0,
+        "forward": [
+          -0.581914365291595,
+          -0.363696485757828,
+          -0.7273930311203
+        ],
+        "fov_degrees": 75.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 1.0,
+        "position": [
+          4.0,
+          3.0,
+          5.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.227199360728264,
+          0.931517541408539,
+          -0.283999234437943
+        ]
+      },
+      "elapsed_s": 0.0166666666666667,
+      "frame": 1,
+      "height": 384,
+      "image": "frame_0001.png",
+      "width": 512
+    },
+    {
+      "camera": {
+        "far": 4000.0,
+        "forward": [
+          -0.581914365291595,
+          -0.363696485757828,
+          -0.7273930311203
+        ],
+        "fov_degrees": 75.0,
+        "near": 0.0500000007450581,
+        "orthogonal_size": 1.0,
+        "position": [
+          4.0,
+          3.0,
+          5.0
+        ],
+        "projection": 0,
+        "up": [
+          -0.227199360728264,
+          0.931517541408539,
+          -0.283999234437943
+        ]
+      },
+      "elapsed_s": 1.0,
+      "frame": 60,
+      "height": 384,
+      "image": "frame_0060.png",
+      "width": 512
+    }
+  ],
+  "completed": true,
+  "display": "Windows",
+  "dt_seconds": 0.0166666666666667,
+  "engine": "4.6.1-stable (official)",
+  "initialization": "paused scene initialization; shader global TIME may include initialization time",
+  "process_frames": 60,
+  "renderer": "forward_plus",
+  "scene": "effect/preview.tscn",
+  "step_mode": "native_fixed_fps",
+  "visual_quality": "not_scored"
+}
