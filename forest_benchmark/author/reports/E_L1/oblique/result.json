@@ -1,0 +1,1081 @@
+{
+  "capture_masks": {
+    "OpaqueCapture": 1,
+    "RearCapture": 3
+  },
+  "elapsed_s": 2.599803,
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "frames": [
+    {
+      "file": "frame_00000.png",
+      "frame": 0,
+      "time": 0.0
+    },
+    {
+      "file": "frame_00001.png",
+      "frame": 1,
+      "time": 0.0666666666666667
+    },
+    {
+      "file": "frame_00002.png",
+      "frame": 2,
+      "time": 0.133333333333333
+    },
+    {
+      "file": "frame_00003.png",
+      "frame": 3,
+      "time": 0.2
+    },
+    {
+      "file": "frame_00004.png",
+      "frame": 4,
+      "time": 0.266666666666667
+    },
+    {
+      "file": "frame_00005.png",
+      "frame": 5,
+      "time": 0.333333333333333
+    },
+    {
+      "file": "frame_00006.png",
+      "frame": 6,
+      "time": 0.4
+    },
+    {
+      "file": "frame_00007.png",
+      "frame": 7,
+      "time": 0.466666666666667
+    },
+    {
+      "file": "frame_00008.png",
+      "frame": 8,
+      "time": 0.533333333333333
+    },
+    {
+      "file": "frame_00009.png",
+      "frame": 9,
+      "time": 0.6
+    },
+    {
+      "file": "frame_00010.png",
+      "frame": 10,
+      "time": 0.666666666666667
+    },
+    {
+      "file": "frame_00011.png",
+      "frame": 11,
+      "time": 0.733333333333333
+    },
+    {
+      "file": "frame_00012.png",
+      "frame": 12,
+      "time": 0.8
+    },
+    {
+      "file": "frame_00013.png",
+      "frame": 13,
+      "time": 0.866666666666667
+    },
+    {
+      "file": "frame_00014.png",
+      "frame": 14,
+      "time": 0.933333333333333
+    },
+    {
+      "file": "frame_00015.png",
+      "frame": 15,
+      "time": 1.0
+    },
+    {
+      "file": "frame_00016.png",
+      "frame": 16,
+      "time": 1.06666666666667
+    },
+    {
+      "file": "frame_00017.png",
+      "frame": 17,
+      "time": 1.13333333333333
+    },
+    {
+      "file": "frame_00018.png",
+      "frame": 18,
+      "time": 1.2
+    },
+    {
+      "file": "frame_00019.png",
+      "frame": 19,
+      "time": 1.26666666666667
+    },
+    {
+      "file": "frame_00020.png",
+      "frame": 20,
+      "time": 1.33333333333333
+    },
+    {
+      "file": "frame_00021.png",
+      "frame": 21,
+      "time": 1.4
+    },
+    {
+      "file": "frame_00022.png",
+      "frame": 22,
+      "time": 1.46666666666667
+    },
+    {
+      "file": "frame_00023.png",
+      "frame": 23,
+      "time": 1.53333333333333
+    },
+    {
+      "file": "frame_00024.png",
+      "frame": 24,
+      "time": 1.6
+    },
+    {
+      "file": "frame_00025.png",
+      "frame": 25,
+      "time": 1.66666666666667
+    },
+    {
+      "file": "frame_00026.png",
+      "frame": 26,
+      "time": 1.73333333333333
+    },
+    {
+      "file": "frame_00027.png",
+      "frame": 27,
+      "time": 1.8
+    },
+    {
+      "file": "frame_00028.png",
+      "frame": 28,
+      "time": 1.86666666666667
+    },
+    {
+      "file": "frame_00029.png",
+      "frame": 29,
+      "time": 1.93333333333333
+    },
+    {
+      "file": "frame_00030.png",
+      "frame": 30,
+      "time": 2.0
+    },
+    {
+      "file": "frame_00031.png",
+      "frame": 31,
+      "time": 2.06666666666667
+    },
+    {
+      "file": "frame_00032.png",
+      "frame": 32,
+      "time": 2.13333333333333
+    },
+    {
+      "file": "frame_00033.png",
+      "frame": 33,
+      "time": 2.2
+    },
+    {
+      "file": "frame_00034.png",
+      "frame": 34,
+      "time": 2.26666666666667
+    },
+    {
+      "file": "frame_00035.png",
+      "frame": 35,
+      "time": 2.33333333333333
+    },
+    {
+      "file": "frame_00036.png",
+      "frame": 36,
+      "time": 2.4
+    },
+    {
+      "file": "frame_00037.png",
+      "frame": 37,
+      "time": 2.46666666666667
+    },
+    {
+      "file": "frame_00038.png",
+      "frame": 38,
+      "time": 2.53333333333333
+    },
+    {
+      "file": "frame_00039.png",
+      "frame": 39,
+      "time": 2.6
+    },
+    {
+      "file": "frame_00040.png",
+      "frame": 40,
+      "time": 2.66666666666667
+    },
+    {
+      "file": "frame_00041.png",
+      "frame": 41,
+      "time": 2.73333333333333
+    },
+    {
+      "file": "frame_00042.png",
+      "frame": 42,
+      "time": 2.8
+    },
+    {
+      "file": "frame_00043.png",
+      "frame": 43,
+      "time": 2.86666666666667
+    },
+    {
+      "file": "frame_00044.png",
+      "frame": 44,
+      "time": 2.93333333333333
+    },
+    {
+      "file": "frame_00045.png",
+      "frame": 45,
+      "time": 3.0
+    },
+    {
+      "file": "frame_00046.png",
+      "frame": 46,
+      "time": 3.06666666666667
+    },
+    {
+      "file": "frame_00047.png",
+      "frame": 47,
+      "time": 3.13333333333333
+    },
+    {
+      "file": "frame_00048.png",
+      "frame": 48,
+      "time": 3.2
+    },
+    {
+      "file": "frame_00049.png",
+      "frame": 49,
+      "time": 3.26666666666667
+    },
+    {
+      "file": "frame_00050.png",
+      "frame": 50,
+      "time": 3.33333333333333
+    },
+    {
+      "file": "frame_00051.png",
+      "frame": 51,
+      "time": 3.4
+    },
+    {
+      "file": "frame_00052.png",
+      "frame": 52,
+      "time": 3.46666666666667
+    },
+    {
+      "file": "frame_00053.png",
+      "frame": 53,
+      "time": 3.53333333333333
+    },
+    {
+      "file": "frame_00054.png",
+      "frame": 54,
+      "time": 3.6
+    },
+    {
+      "file": "frame_00055.png",
+      "frame": 55,
+      "time": 3.66666666666667
+    },
+    {
+      "file": "frame_00056.png",
+      "frame": 56,
+      "time": 3.73333333333333
+    },
+    {
+      "file": "frame_00057.png",
+      "frame": 57,
+      "time": 3.8
+    },
+    {
+      "file": "frame_00058.png",
+      "frame": 58,
+      "time": 3.86666666666667
+    },
+    {
+      "file": "frame_00059.png",
+      "frame": 59,
+      "time": 3.93333333333333
+    },
+    {
+      "file": "frame_00060.png",
+      "frame": 60,
+      "time": 4.0
+    },
+    {
+      "file": "frame_00061.png",
+      "frame": 61,
+      "time": 4.06666666666667
+    },
+    {
+      "file": "frame_00062.png",
+      "frame": 62,
+      "time": 4.13333333333333
+    },
+    {
+      "file": "frame_00063.png",
+      "frame": 63,
+      "time": 4.2
+    },
+    {
+      "file": "frame_00064.png",
+      "frame": 64,
+      "time": 4.26666666666667
+    },
+    {
+      "file": "frame_00065.png",
+      "frame": 65,
+      "time": 4.33333333333333
+    },
+    {
+      "file": "frame_00066.png",
+      "frame": 66,
+      "time": 4.4
+    },
+    {
+      "file": "frame_00067.png",
+      "frame": 67,
+      "time": 4.46666666666667
+    },
+    {
+      "file": "frame_00068.png",
+      "frame": 68,
+      "time": 4.53333333333333
+    },
+    {
+      "file": "frame_00069.png",
+      "frame": 69,
+      "time": 4.6
+    },
+    {
+      "file": "frame_00070.png",
+      "frame": 70,
+      "time": 4.66666666666667
+    },
+    {
+      "file": "frame_00071.png",
+      "frame": 71,
+      "time": 4.73333333333333
+    },
+    {
+      "file": "frame_00072.png",
+      "frame": 72,
+      "time": 4.8
+    },
+    {
+      "file": "frame_00073.png",
+      "frame": 73,
+      "time": 4.86666666666667
+    },
+    {
+      "file": "frame_00074.png",
+      "frame": 74,
+      "time": 4.93333333333333
+    },
+    {
+      "file": "frame_00075.png",
+      "frame": 75,
+      "time": 5.0
+    },
+    {
+      "file": "frame_00076.png",
+      "frame": 76,
+      "time": 5.06666666666667
+    },
+    {
+      "file": "frame_00077.png",
+      "frame": 77,
+      "time": 5.13333333333333
+    },
+    {
+      "file": "frame_00078.png",
+      "frame": 78,
+      "time": 5.2
+    },
+    {
+      "file": "frame_00079.png",
+      "frame": 79,
+      "time": 5.26666666666667
+    },
+    {
+      "file": "frame_00080.png",
+      "frame": 80,
+      "time": 5.33333333333333
+    },
+    {
+      "file": "frame_00081.png",
+      "frame": 81,
+      "time": 5.4
+    },
+    {
+      "file": "frame_00082.png",
+      "frame": 82,
+      "time": 5.46666666666667
+    },
+    {
+      "file": "frame_00083.png",
+      "frame": 83,
+      "time": 5.53333333333333
+    },
+    {
+      "file": "frame_00084.png",
+      "frame": 84,
+      "time": 5.6
+    },
+    {
+      "file": "frame_00085.png",
+      "frame": 85,
+      "time": 5.66666666666667
+    },
+    {
+      "file": "frame_00086.png",
+      "frame": 86,
+      "time": 5.73333333333333
+    },
+    {
+      "file": "frame_00087.png",
+      "frame": 87,
+      "time": 5.8
+    },
+    {
+      "file": "frame_00088.png",
+      "frame": 88,
+      "time": 5.86666666666667
+    },
+    {
+      "file": "frame_00089.png",
+      "frame": 89,
+      "time": 5.93333333333333
+    }
+  ],
+  "gpu": "AMD Radeon 780M Graphics",
+  "ground_center_pixel": [
+    319.999969482422,
+    193.19775390625
+  ],
+  "protection": {
+    "actual": {
+      ".": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "CameraRig": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "CameraRig/Camera3D": {
+        "class": "Camera3D",
+        "cull_mask": 7,
+        "far": 50.0,
+        "fov": 45.0,
+        "near": 0.0500000007450581,
+        "transform": "Transform3D(0.8181917, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.57494545, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "visible": true
+      },
+      "Environment": {
+        "ambient_energy": 0.5,
+        "background": "Color(0.075, 0.11, 0.15, 1)",
+        "class": "WorldEnvironment",
+        "exposure": 1.0,
+        "tonemap": 0
+      },
+      "Floor": {
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(ShaderMaterial,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"shader\":Resource(\"res://fixture/background.gdshader\"),\"script\":null)\n",
+        "mesh_aabb": "AABB(-3, 0, -2.5, 6, 0, 5)",
+        "mesh_hash": "3bd881ab030420ff9807e57e66ed08d9cfdbafdbc6577d06f27314b57a46c871",
+        "mesh_id": -9223371997646420537,
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03, 0)",
+        "visible": true
+      },
+      "ProtectedControl": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.35, 0.4, 0)",
+        "visible": true
+      },
+      "ReferenceMarkers": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark0": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -1.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark1": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -1, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark2": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -0.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark3": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 0, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark4": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 0.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark5": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 1, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark6": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 1.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker0": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0.25, -1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker1": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.25, -1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker2": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0.25, 1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker3": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.25, 1.3)",
+        "visible": true
+      },
+      "Sun": {
+        "class": "DirectionalLight3D",
+        "color": "Color(1, 1, 1, 1)",
+        "cull_mask": 4294967295,
+        "energy": 1.39999997615814,
+        "shadows": true,
+        "transform": "Transform3D(0.9396926, 0.28016648, -0.1961747, 0, 0.57357645, 0.81915206, 0.34202012, -0.76975113, 0.53898555, 0, 0, 0)",
+        "visible": true
+      },
+      "TransparentTarget": {
+        "class": "MeshInstance3D",
+        "layers": 4,
+        "mesh_aabb": "AABB(-0.8, -0.65, 0, 1.6, 1.3, 0)",
+        "mesh_hash": "2d7cdf3904d2afff330ee36e10d020102473822bf3d629239f18eb11d4b3d6b1",
+        "mesh_id": -9223371997696752187,
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 1)",
+        "visible": true
+      },
+      "capture/OpaqueCapture": {
+        "camera": "Transform3D(0.81819177, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.5749455, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "mask": 1,
+        "mode": 4,
+        "size": "Vector2i(640, 360)"
+      },
+      "capture/RearCapture": {
+        "camera": "Transform3D(0.81819177, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.5749455, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "mask": 3,
+        "mode": 4,
+        "size": "Vector2i(640, 360)"
+      }
+    },
+    "baseline": {
+      ".": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "CameraRig": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "CameraRig/Camera3D": {
+        "class": "Camera3D",
+        "cull_mask": 7,
+        "far": 50.0,
+        "fov": 45.0,
+        "near": 0.0500000007450581,
+        "transform": "Transform3D(0.8181917, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.57494545, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "visible": true
+      },
+      "Environment": {
+        "ambient_energy": 0.5,
+        "background": "Color(0.075, 0.11, 0.15, 1)",
+        "class": "WorldEnvironment",
+        "exposure": 1.0,
+        "tonemap": 0
+      },
+      "Floor": {
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(ShaderMaterial,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"shader\":Resource(\"res://fixture/background.gdshader\"),\"script\":null)\n",
+        "mesh_aabb": "AABB(-3, 0, -2.5, 6, 0, 5)",
+        "mesh_hash": "3bd881ab030420ff9807e57e66ed08d9cfdbafdbc6577d06f27314b57a46c871",
+        "mesh_id": -9223371997646420537,
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03, 0)",
+        "visible": true
+      },
+      "ProtectedControl": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.35, 0.4, 0)",
+        "visible": true
+      },
+      "ReferenceMarkers": {
+        "class": "Node3D",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark0": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -1.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark1": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -1, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark2": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, -0.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark3": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 0, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark4": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 0.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark5": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 1, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/ColorMark6": {
+        "albedo": "Color(0.85, 0.62, 0.14, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.85, 0.62, 0.14, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.85,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.25, -0.4, -0.25, 0.5, 0.8, 0.5)",
+        "mesh_hash": "3e27fe28201cd261b924a4f86bab616cddbb22839bc8cad302f55d0d696efc5c",
+        "mesh_id": -9223371997747083838,
+        "roughness": 0.850000023841858,
+        "texture": "null",
+        "transform": "Transform3D(0.65, 0, 0, 0, 0.12, 0, 0, 0, 0.65, 1.5, 0.06, -0.5)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker0": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0.25, -1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker1": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.25, -1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker2": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0.25, 1.3)",
+        "visible": true
+      },
+      "ReferenceMarkers/Marker3": {
+        "albedo": "Color(0.48, 0.25, 0.11, 1)",
+        "class": "MeshInstance3D",
+        "layers": 1,
+        "material": "Object(StandardMaterial3D,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"render_priority\":0,\"next_pass\":null,\"transparency\":0,\"blend_mode\":0,\"cull_mode\":0,\"depth_draw_mode\":0,\"no_depth_test\":false,\"depth_test\":0,\"shading_mode\":1,\"diffuse_mode\":0,\"specular_mode\":0,\"disable_ambient_light\":false,\"disable_fog\":false,\"disable_specular_occlusion\":false,\"vertex_color_use_as_albedo\":false,\"vertex_color_is_srgb\":false,\"albedo_color\":Color(0.48, 0.25, 0.11, 1),\"albedo_texture\":null,\"albedo_texture_force_srgb\":false,\"albedo_texture_msdf\":false,\"metallic\":0.0,\"metallic_specular\":0.5,\"metallic_texture\":null,\"metallic_texture_channel\":0,\"roughness\":0.7,\"roughness_texture\":null,\"roughness_texture_channel\":0,\"emission_enabled\":false,\"emission\":Color(0, 0, 0, 1),\"emission_energy_multiplier\":1.0,\"emission_operator\":0,\"emission_on_uv2\":false,\"emission_texture\":null,\"normal_enabled\":false,\"normal_scale\":1.0,\"normal_texture\":null,\"bent_normal_enabled\":false,\"bent_normal_texture\":null,\"rim_enabled\":false,\"rim\":1.0,\"rim_tint\":0.5,\"rim_texture\":null,\"clearcoat_enabled\":false,\"clearcoat\":1.0,\"clearcoat_roughness\":0.5,\"clearcoat_texture\":null,\"anisotropy_enabled\":false,\"anisotropy\":0.0,\"anisotropy_flowmap\":null,\"ao_enabled\":false,\"ao_light_affect\":0.0,\"ao_texture\":null,\"ao_on_uv2\":false,\"ao_texture_channel\":0,\"heightmap_enabled\":false,\"heightmap_scale\":5.0,\"heightmap_deep_parallax\":false,\"heightmap_flip_tangent\":false,\"heightmap_flip_binormal\":false,\"heightmap_texture\":null,\"heightmap_flip_texture\":false,\"subsurf_scatter_enabled\":false,\"subsurf_scatter_strength\":0.0,\"subsurf_scatter_skin_mode\":false,\"subsurf_scatter_texture\":null,\"subsurf_scatter_transmittance_enabled\":false,\"subsurf_scatter_transmittance_color\":Color(1, 1, 1, 1),\"subsurf_scatter_transmittance_texture\":null,\"subsurf_scatter_transmittance_depth\":0.1,\"subsurf_scatter_transmittance_boost\":0.0,\"backlight_enabled\":false,\"backlight\":Color(0, 0, 0, 1),\"backlight_texture\":null,\"refraction_enabled\":false,\"refraction_scale\":0.05,\"refraction_texture\":null,\"refraction_texture_channel\":0,\"detail_enabled\":false,\"detail_mask\":null,\"detail_blend_mode\":0,\"detail_uv_layer\":0,\"detail_albedo\":null,\"detail_normal\":null,\"uv1_scale\":Vector3(1, 1, 1),\"uv1_offset\":Vector3(0, 0, 0),\"uv1_triplanar\":false,\"uv1_triplanar_sharpness\":1.0,\"uv1_world_triplanar\":false,\"uv2_scale\":Vector3(1, 1, 1),\"uv2_offset\":Vector3(0, 0, 0),\"uv2_triplanar\":false,\"uv2_triplanar_sharpness\":1.0,\"uv2_world_triplanar\":false,\"texture_filter\":3,\"texture_repeat\":true,\"disable_receive_shadows\":false,\"shadow_to_opacity\":false,\"billboard_mode\":0,\"billboard_keep_scale\":false,\"grow\":false,\"grow_amount\":0.0,\"fixed_size\":false,\"use_point_size\":false,\"point_size\":1.0,\"use_particle_trails\":false,\"use_z_clip_scale\":false,\"z_clip_scale\":1.0,\"use_fov_override\":false,\"fov_override\":75.0,\"proximity_fade_enabled\":false,\"proximity_fade_distance\":1.0,\"msdf_pixel_range\":4.0,\"msdf_outline_size\":0.0,\"distance_fade_mode\":0,\"distance_fade_min_distance\":0.0,\"distance_fade_max_distance\":10.0,\"stencil_mode\":0,\"stencil_flags\":0,\"stencil_compare\":0,\"stencil_reference\":1,\"stencil_color\":Color(0, 0, 0, 1),\"stencil_outline_thickness\":0.01,\"script\":null)\n",
+        "mesh_aabb": "AABB(-0.12, -0.25, -0.12, 0.24000001, 0.5, 0.24000001)",
+        "mesh_hash": "08117e75456b3ec93572a078901618bc46926d931ce1e91eb665c405523f142c",
+        "mesh_id": -9223371997629643320,
+        "roughness": 0.699999988079071,
+        "texture": "null",
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.25, 1.3)",
+        "visible": true
+      },
+      "Sun": {
+        "class": "DirectionalLight3D",
+        "color": "Color(1, 1, 1, 1)",
+        "cull_mask": 4294967295,
+        "energy": 1.39999997615814,
+        "shadows": true,
+        "transform": "Transform3D(0.9396926, 0.28016648, -0.1961747, 0, 0.57357645, 0.81915206, 0.34202012, -0.76975113, 0.53898555, 0, 0, 0)",
+        "visible": true
+      },
+      "TransparentTarget": {
+        "class": "MeshInstance3D",
+        "layers": 4,
+        "mesh_aabb": "AABB(-0.8, -0.65, 0, 1.6, 1.3, 0)",
+        "mesh_hash": "2d7cdf3904d2afff330ee36e10d020102473822bf3d629239f18eb11d4b3d6b1",
+        "mesh_id": -9223371997696752187,
+        "transform": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 1)",
+        "visible": true
+      },
+      "capture/OpaqueCapture": {
+        "camera": "Transform3D(0.81819177, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.5749455, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "mask": 1,
+        "mode": 4,
+        "size": "Vector2i(640, 360)"
+      },
+      "capture/RearCapture": {
+        "camera": "Transform3D(0.81819177, -0.15884781, 0.5525664, 0, 0.96107626, 0.27628326, -0.5749455, -0.22605267, 0.78634465, 2.6, 1.45, 3.7)",
+        "mask": 3,
+        "mode": 4,
+        "size": "Vector2i(640, 360)"
+      }
+    },
+    "changed_paths": [],
+    "status": "PASS"
+  },
+  "snapshots": [
+    {
+      "frame": 0,
+      "state": {
+        "birth_log": [],
+        "emitted": [],
+        "front_optical_terms": {
+          "dtype": "<f4",
+          "fields": [
+            "F",
+            "Tdir.x",
+            "Tdir.y",
+            "Tdir.z",
+            "R.x",
+            "R.y",
+            "R.z",
+            "A.r",
+            "A.g",
+            "A.b",
+            "has_transmission",
+            "background_uv.x",
+            "background_uv.y",
+            "valid",
+            "color.r",
+            "color.g",
+            "color.b"
+          ],
+          "file": "state_0001.f32",
+          "origin": "actual_gpu_readback",
+          "shape": [
+            1280,
+            17
+          ],
+          "status": "OK"
+        },
+        "particle_ids": [],
+        "simulation_time": 0.0,
+        "status": "OK"
+      },
+      "textures": {
+        "TransparentTarget": {
+          "background_tex": {
+            "file": "00000_TransparentTarget_background_tex.png",
+            "kind": "viewport",
+            "viewport_path": ""
+          },
+          "optical_absorb": {
+            "file": "00000_TransparentTarget_optical_absorb.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          },
+          "optical_f": {
+            "file": "00000_TransparentTarget_optical_f.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          },
+          "optical_uv": {
+            "file": "00000_TransparentTarget_optical_uv.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          }
+        }
+      }
+    },
+    {
+      "frame": 89,
+      "state": {
+        "birth_log": [],
+        "emitted": [],
+        "front_optical_terms": {
+          "dtype": "<f4",
+          "fields": [
+            "F",
+            "Tdir.x",
+            "Tdir.y",
+            "Tdir.z",
+            "R.x",
+            "R.y",
+            "R.z",
+            "A.r",
+            "A.g",
+            "A.b",
+            "has_transmission",
+            "background_uv.x",
+            "background_uv.y",
+            "valid",
+            "color.r",
+            "color.g",
+            "color.b"
+          ],
+          "file": "state_0002.f32",
+          "origin": "actual_gpu_readback",
+          "shape": [
+            1280,
+            17
+          ],
+          "status": "OK"
+        },
+        "particle_ids": [],
+        "simulation_time": 5.93333333333333,
+        "status": "OK"
+      },
+      "textures": {
+        "TransparentTarget": {
+          "background_tex": {
+            "file": "00089_TransparentTarget_background_tex.png",
+            "kind": "viewport",
+            "viewport_path": ""
+          },
+          "optical_absorb": {
+            "file": "00089_TransparentTarget_optical_absorb.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          },
+          "optical_f": {
+            "file": "00089_TransparentTarget_optical_f.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          },
+          "optical_uv": {
+            "file": "00089_TransparentTarget_optical_uv.bin",
+            "format": 11,
+            "height": 32,
+            "kind": "image",
+            "width": 40
+          }
+        }
+      }
+    }
+  ],
+  "startup": {
+    "status": "OK"
+  },
+  "status": "RENDERED"
+}

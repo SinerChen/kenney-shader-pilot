@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N03",
+  "purpose": "纯平移",
+  "input_design": "均匀 v,S=decay=0",
+  "criterion": "回溯方向与插值",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

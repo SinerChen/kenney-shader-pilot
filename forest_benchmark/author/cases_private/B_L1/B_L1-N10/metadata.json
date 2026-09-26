@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N10",
+  "purpose": "持续性/去重",
+  "input_design": "同 ID 重发、无事件推进",
+  "criterion": "不重复踩踏、不丢失状态",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

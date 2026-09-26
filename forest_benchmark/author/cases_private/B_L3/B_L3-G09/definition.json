@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G09",
+  "purpose": "共享地形/资产保护",
+  "input_design": "对照地形/非目标区域，关新增显示",
+  "criterion": "原层混合、纹理、法线和环境保持",
+  "observations": "原资源消费者与隔离基线",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

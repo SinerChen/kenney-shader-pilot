@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N06",
+  "purpose": "各向网格",
+  "input_design": "dx!=dz",
+  "criterion": "不能把像素间隔当一米",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

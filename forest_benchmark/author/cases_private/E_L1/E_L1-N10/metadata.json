@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N10",
+  "purpose": "方向变换/投影",
+  "input_design": "I/N 作相同旋转，含合法/越界投影",
+  "criterion": "F 不变、方向协变、valid 正确",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

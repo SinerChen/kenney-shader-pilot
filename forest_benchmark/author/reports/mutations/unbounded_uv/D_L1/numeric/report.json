@@ -1,0 +1,134 @@
+{
+  "task": "D_L1",
+  "case_task": "D_L1",
+  "pass": 7,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "D_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/3",
+          "max_error": 0.44885973729193207,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.011140262708067894,
+          "expected": 0.45999999999999996,
+          "allowed": 0.000292
+        },
+        {
+          "path": "/5",
+          "max_error": 0.4488597743150258,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.011137420311570168,
+          "expected": 0.45999719462659594,
+          "allowed": 0.0002919994389253192
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.700000023841858,
+          "index": [
+            0,
+            4
+          ],
+          "actual": -0.3500000238418579,
+          "expected": 0.3500000000000001,
+          "allowed": 0.00027000000000000006
+        },
+        {
+          "path": "/7",
+          "max_error": 1.999999990463257,
+          "index": [
+            0,
+            4
+          ],
+          "actual": -1.5099999904632568,
+          "expected": 0.4900000000000002,
+          "allowed": 0.0002980000000000001
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 38.4800016784668,
+          "index": [
+            0,
+            4
+          ],
+          "actual": -38.2400016784668,
+          "expected": 0.240000000000002,
+          "allowed": 0.0002480000000000004
+        },
+        {
+          "path": "/3",
+          "max_error": 118.47999786376953,
+          "index": [
+            0,
+            4
+          ],
+          "actual": -118.23999786376953,
+          "expected": 0.23999999999999488,
+          "allowed": 0.000247999999999999
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\unbounded_uv\\D_L1\\numeric",
+  "scope": "numeric_only"
+}

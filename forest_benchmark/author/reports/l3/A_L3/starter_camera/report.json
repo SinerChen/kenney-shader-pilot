@@ -1,0 +1,107 @@
+{
+  "binding": {
+    "status": "UNIMPLEMENTED_BINDING"
+  },
+  "camera": {
+    "basis": "[X: (0.894427, 0.0, 0.447214), Y: (0.267261, 0.801784, -0.534523), Z: (-0.358569, 0.597614, 0.717137)]",
+    "fov": 75.0,
+    "position": "(40.0, 2.0, -20.0)",
+    "requested": {
+      "look_at": [
+        43.0,
+        -3.0,
+        -26.0
+      ],
+      "position": [
+        40.0,
+        2.0,
+        -20.0
+      ]
+    }
+  },
+  "changed_source_nodes": [],
+  "detach_restored": true,
+  "effect_present": false,
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "frames": [
+    {
+      "file": "frame_00000.png",
+      "frame": 0,
+      "tick": 0
+    },
+    {
+      "file": "frame_00001.png",
+      "frame": 1,
+      "tick": 0
+    },
+    {
+      "file": "frame_00002.png",
+      "frame": 2,
+      "tick": 0
+    },
+    {
+      "file": "frame_00003.png",
+      "frame": 3,
+      "tick": 0
+    },
+    {
+      "file": "frame_00004.png",
+      "frame": 4,
+      "tick": 0
+    },
+    {
+      "file": "frame_00005.png",
+      "frame": 5,
+      "tick": 0
+    },
+    {
+      "file": "frame_00006.png",
+      "frame": 6,
+      "tick": 0
+    },
+    {
+      "file": "frame_00007.png",
+      "frame": 7,
+      "tick": 0
+    },
+    {
+      "file": "frame_00008.png",
+      "frame": 8,
+      "tick": 0
+    },
+    {
+      "file": "frame_00009.png",
+      "frame": 9,
+      "tick": 0
+    },
+    {
+      "file": "frame_00010.png",
+      "frame": 10,
+      "tick": 0
+    },
+    {
+      "file": "frame_00011.png",
+      "frame": 11,
+      "tick": 0
+    }
+  ],
+  "gpu": "AMD Radeon 780M Graphics",
+  "protected_node_count": 35273,
+  "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+  "source_runtime_unchanged": true,
+  "status": "NATIVE_STARTER_RENDERED",
+  "task": "A_L3",
+  "video": "author/reports/l3/A_L3/starter_camera/effect.mp4",
+  "seconds": 15.996419099974446,
+  "clean_import_exit": 0
+}

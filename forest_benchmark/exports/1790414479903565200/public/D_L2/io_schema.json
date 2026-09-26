@@ -1,0 +1,62 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "flow_query": {
+      "input": {
+        "grid_size": "Vector2i",
+        "domain_min": "Vector2",
+        "domain_size": "Vector2",
+        "uvs": "Vector2[N]",
+        "flow": "Vector2[Nz,Nx]",
+        "time": "float",
+        "period": "float",
+        "phase": "float",
+        "tiling": "float",
+        "texture_size": "Vector2i",
+        "color_texture": "Vector3[H,W]",
+        "normal_texture": "Vector3[H,W]",
+        "normal_encoded": "bool"
+      },
+      "output_fields": {
+        "uv_phase0": "Vector2",
+        "uv_phase1": "Vector2",
+        "weight0": "float",
+        "weight1": "float",
+        "sampled_color": "Vector3",
+        "blended_normal": "Vector3"
+      }
+    },
+    "foam_step": {
+      "input": {
+        "grid_size": "Vector2i",
+        "domain_min": "Vector2",
+        "domain_size": "Vector2",
+        "foam": "float[Nz,Nx]",
+        "flow": "Vector2[Nz,Nx]",
+        "sources": "Tuple[x:float,z:float,radius:float,rate:float][N]",
+        "dt": "float",
+        "decay": "float"
+      },
+      "output_fields": {
+        "foam_field": "float",
+        "source_field": "float"
+      }
+    }
+  }
+}

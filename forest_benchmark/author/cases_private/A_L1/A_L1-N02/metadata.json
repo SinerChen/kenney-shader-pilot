@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N02",
+  "purpose": "无噪声前沿",
+  "input_design": "noise_amplitude=0，跨越球形前沿取点",
+  "criterion": "q、b、a 与解析值",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

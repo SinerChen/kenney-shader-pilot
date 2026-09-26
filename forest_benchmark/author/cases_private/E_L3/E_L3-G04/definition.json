@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G04",
+  "purpose": "同tick更新",
+  "input_design": "每步改变后景中性标记/原水状态",
+  "criterion": "不能读取初始化/上一帧，不能额外推进模拟",
+  "observations": "实际像素标记、tick和状态日志",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

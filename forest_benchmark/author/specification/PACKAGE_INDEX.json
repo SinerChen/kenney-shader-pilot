@@ -1,0 +1,402 @@
+{
+  "package": "forest_benchmark_codex_v0_1",
+  "status": "SPEC_ONLY",
+  "files": [
+    {
+      "path": "01_算法实现与测试/00_通用实现与测试规范.md",
+      "bytes": 5080,
+      "sha256": "2fd9f06a2274c688a552a257b44d3667896662e693af9ccce77ae1f16c67947d",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/01_解析自检锚点.md",
+      "bytes": 1497,
+      "sha256": "f956cf5bfd7644fe45a083d5fee7e46c8bcde2b4278caf928e988e3c8cc97b34",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/A_L1.md",
+      "bytes": 5928,
+      "sha256": "1b016271aea50754db5d8f7957c1106ef619822f67eaa3418b231e49bf2d1f24",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/A_L2.md",
+      "bytes": 6396,
+      "sha256": "0f1e1f679a186764a5aface74ddbd42501e88f40bfbc37f72820f9c17cf44410",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/B_L1.md",
+      "bytes": 5577,
+      "sha256": "a8398c9b397cfdd11a9b0cc9c95bce580809dd8354051b1d9863db46f67e33b5",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/B_L2.md",
+      "bytes": 6060,
+      "sha256": "3edad861db78acda5518b70f9c74b9b519391bb458ecb93c59a17d1118b2fcb4",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/C_L1.md",
+      "bytes": 5750,
+      "sha256": "ce678cc7e1c7e7ea098e43f5b3d2903acb47062de9c98a516b613fc0dc704aa1",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/C_L2.md",
+      "bytes": 6176,
+      "sha256": "44200ce8555ef4d5472c036f52c2493b4136c22c424c61f01f6fc3b46536611a",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/D_L1.md",
+      "bytes": 5560,
+      "sha256": "a77da8b933d4fae68f2f2209d3199ab52f9eac1306e735f0da8a479b88060107",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/D_L2.md",
+      "bytes": 6029,
+      "sha256": "6c10d137fa5b1cd570290967e9d4df44cf013ceb823425d35832865024a54f4c",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/E_L1.md",
+      "bytes": 5748,
+      "sha256": "db4db56ebde772535b51b9d9df334a044cc3df31627dea9752ffc63028ed79ff",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/E_L2.md",
+      "bytes": 6390,
+      "sha256": "b391c82a3eb85a0d381425f4a5a54267302867def7b90bb397f14951ade8c377",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "01_算法实现与测试/README.md",
+      "bytes": 1795,
+      "sha256": "ed1f4a155b95342d8123d8fdd8a7a73443bdfc06bbde441be188feae1c0810ad",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/00_工程布局与文件权限.md",
+      "bytes": 3930,
+      "sha256": "64c2d608f7d899e434df2108d808da3eb29d60383d459bcea31eb58c77e4fd98",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/01_L3源工程绑定核验.md",
+      "bytes": 2367,
+      "sha256": "5fe5043e50496bd85e1bb47a3e236cc82a8b047ecc032a6ff769135b6b9e5f39",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/A_L1.md",
+      "bytes": 4247,
+      "sha256": "011803e43501a9d5de2af8e01de42605ad5d549bb9d2e08331c6012e187f764e",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/A_L2.md",
+      "bytes": 4216,
+      "sha256": "9a4144fede1ea4be6513d797086bb71a5abe3263a2736cb832c319957a21278c",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/B_L1.md",
+      "bytes": 4121,
+      "sha256": "369ff7e48f74d4c5a2c6cff430a9a5cb8a0e8b73f05aef497cb93b697a64088d",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/B_L2.md",
+      "bytes": 4146,
+      "sha256": "c100de85cdce685ba45e30708bb8ff52cae90f4d02e7fea2a768970b3696572d",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/C_L1.md",
+      "bytes": 4278,
+      "sha256": "e53c401cdf1b36d89541f9cc57bf6a0e99b4f31d10086f57a416cd3106aabf15",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/C_L2.md",
+      "bytes": 4346,
+      "sha256": "5f4e6ac009d58d701d2b750482921b56a3ccfc14cace7e558bc04e5d62625f40",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/D_L1.md",
+      "bytes": 4099,
+      "sha256": "6ba7cd4246b6a91c96275ba4a1008fd3830a9b7d52396adf01be90267cb4e2d2",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/D_L2.md",
+      "bytes": 4235,
+      "sha256": "ff882f8b54d906acb0fb4282df112b281308d98edec044a29160b9aafd52a715",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/E_L1.md",
+      "bytes": 4394,
+      "sha256": "ee0f6900c42e965e97e04df2581af9341cbe7b024fc2702545f24d901a58f0c2",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/E_L2.md",
+      "bytes": 4799,
+      "sha256": "1064b8985d5d069e12125eea17d8f9711e9371da03e7471fbe3b9199137cfee2",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/README.md",
+      "bytes": 1825,
+      "sha256": "b504644d2fb9d6c0192e2ab663956f6a96e8cdaa6628e64f4a1af6a6231378d2",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "02_场景文件与资源/asset_manifest.template.json",
+      "bytes": 17809,
+      "sha256": "d0c08a4e32b535750ab8e683cc728bd371a50e54a002be4d0ad94bb4373ea88a",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "03_测试模型Prompt/00_通用System.md",
+      "bytes": 996,
+      "sha256": "ce1194b78d091ddedf7cfacc328a277ae9beb00733ca8885a40d71eff912ca6e",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/01_装配与投放规则.md",
+      "bytes": 1370,
+      "sha256": "74b75fb6334e06cda90f878a7aa90d7c5e04445494a096d58d8598d4c733de63",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "03_测试模型Prompt/02_可选Agent条件.md",
+      "bytes": 1089,
+      "sha256": "8fdb20e8d64c93bfaee9e5c35ab52cf4ef021d9cfc150bbb8fde97bad8ed069b",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "03_测试模型Prompt/README.md",
+      "bytes": 1090,
+      "sha256": "5dc835fb80660342a14ddd2f93e8feb1e69a71d5d812346d91eea88b1d702abd",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/A_L1.md",
+      "bytes": 8083,
+      "sha256": "5e99baa84ccb122909498f223e962610dcd858d2cbf814b36e1a8343fa9776a1",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/A_L2.md",
+      "bytes": 9869,
+      "sha256": "3854de0c2f18fdf9782ee8577747f18d55084c66c63f3b5aa8ed087818caaf33",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/B_L1.md",
+      "bytes": 7646,
+      "sha256": "ff902a90c11bbd016790a8d769b6f5d4fad2aafc3874b67f6077b598003fc7a9",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/B_L2.md",
+      "bytes": 8970,
+      "sha256": "f14c1fa26a98cf19b001205e04a8f443edaee205736d5722b5062853131e6992",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/C_L1.md",
+      "bytes": 7578,
+      "sha256": "3dbc60bbab06c63e60fdec508e314c91b26078b2ff35c7a9d6df6d155d753c1f",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/C_L2.md",
+      "bytes": 9177,
+      "sha256": "aabf32535463c3cb40afbf197ec60783f8e58cce1fb640c02ce5253e84ec25a3",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/D_L1.md",
+      "bytes": 7258,
+      "sha256": "fa9acf0cbb06c801f6a19bda932271e5577110fefe85d1e63f8c9765615cc251",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/D_L2.md",
+      "bytes": 8520,
+      "sha256": "d17952fd3fc34e83712568463a6a6b1cd73eca616f2a0eb5992061ed7d2aed01",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/E_L1.md",
+      "bytes": 8042,
+      "sha256": "7c99f72e60638cd21f54ca0e82101c820365a71de37e98db84552fbf4cb3c68c",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/E_L2.md",
+      "bytes": 10072,
+      "sha256": "4ba2c415d7620f45e0dd37a46abb25f59b3b912900e7ce6818705e9c02e0622b",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/00_公共运行契约.md",
+      "bytes": 3741,
+      "sha256": "87df022a9bdd8c51f1a13f31796a8709db441b2219fe42687f2d49130fa4e9a6",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/A_L1.md",
+      "bytes": 1805,
+      "sha256": "3c518858730df990035e64282b072f2345854e75b4f8b4be71b3c9f1640c920c",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/A_L2.md",
+      "bytes": 1824,
+      "sha256": "5fe695c3cfd1bf4065f516a96419060a2ff8db17e116d69a523944a8227e90d4",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/B_L1.md",
+      "bytes": 1533,
+      "sha256": "995d4d70d73b0befc6c180c183230fce48f6fb6f635922c2cc85b2579f1339bc",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/B_L2.md",
+      "bytes": 1296,
+      "sha256": "028b2a23d534f19f98c76836c3781d778ad747ed1ac06ad81fe0226f9112061f",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/C_L1.md",
+      "bytes": 1395,
+      "sha256": "2323b946536768a8822dbad463531530d1748a7ca550b7b79c6e8617b5c90beb",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/C_L2.md",
+      "bytes": 1514,
+      "sha256": "1ef220ad7a0c93251644f62d714baf35c79ee07cb173185225dcded45aa2ceb2",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/D_L1.md",
+      "bytes": 1178,
+      "sha256": "c27a1049e3482a5bd23ac23ad4618b046f7bdf4333381b50ad8f8cdd547c05d3",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/D_L2.md",
+      "bytes": 1213,
+      "sha256": "59f6ad65bb795616f1e1d870fff34f810774211ddf3410a38add5d70d9339763",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/E_L1.md",
+      "bytes": 1776,
+      "sha256": "6dd7c06e685ac0b16a71461bf10d40e6a22a50e7d3a4d87a557fd28b5f5dc1ae",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/E_L2.md",
+      "bytes": 1820,
+      "sha256": "fc74bd141e2c3ac987c9468570a9514657da2c21d7b4a27d129aac36fed8b250",
+      "distribution": "PUBLIC_ELIGIBLE_PER_TASK_EXPORT"
+    },
+    {
+      "path": "04_作者侧流程与评测/00_决策与适用范围.md",
+      "bytes": 2870,
+      "sha256": "87cf3819225102c0c68b874330a26848597dba2980ada1239bb7fcc8fb8cdc4a",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/01_防泄露与保护审计.md",
+      "bytes": 2704,
+      "sha256": "8c2083cc3a381747ff76e6d1a23c18119aaa36c8ff36335ebc590c4cd687a0a7",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/02_评分与实验条件.md",
+      "bytes": 2979,
+      "sha256": "4fbc799e4d92bd45496da4013a928ca9f1f150ab149cc8cebbdcb69d604d3215",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/03_发布前验收.md",
+      "bytes": 2151,
+      "sha256": "0a050ee27c20865c1544197f79d2dba378d47e21429a2d05552622744c8af85d",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/PACKAGE_VALIDATION.md",
+      "bytes": 1215,
+      "sha256": "7b64e8b553290eecf080d352cd8e579b321a4a4ff61c7710b3e0958a39ad7a3a",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/public_task.template.json",
+      "bytes": 999,
+      "sha256": "42f70c661ff9a7a31fbe4b147ed667b1259477ab3d4d8f09c55ff012bd056af8",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/release_lock.template.json",
+      "bytes": 1888,
+      "sha256": "d4837803e6c9074abd0af56a3f2e5fd35d005d334560acf8cfe864fb9c3eb80d",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "04_作者侧流程与评测/task_manifest.json",
+      "bytes": 36245,
+      "sha256": "4580c3ed18d8a916d06c64320780fe6595f61959b5d2dfde29cf1e400c7c8dcf",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "05_来源与边界/README.md",
+      "bytes": 2274,
+      "sha256": "2262426f1079aa936a83dfecb471a3e2c7fb9fffbd4e6851b4591ded4d34b0da",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "05_来源与边界/forest_integration_constraint_candidates.json",
+      "bytes": 20213,
+      "sha256": "72637962049ec7524aec0c1caaea766f7053fb85ab114810c5a34f3727ef4658",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "05_来源与边界/forest_integration_constraints_static_audit.md",
+      "bytes": 15467,
+      "sha256": "712483948f2a5675a74c64d4a5b2ef9428b7b4c780885915f34fb778571a0ef8",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "05_来源与边界/shader_algorithm_scenarios.md",
+      "bytes": 75942,
+      "sha256": "0a38b7c2b1bd7b38044cd6cedec371dacffe74692dcd17a2a18bae7c73b05cb1",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "CODEX_START_HERE.md",
+      "bytes": 3541,
+      "sha256": "ae36272c82fe168952eeba6f1bffe26c745584a0e3420b50692115227a610fe8",
+      "distribution": "AUTHOR_ONLY"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4105,
+      "sha256": "6d9c50b96172bd37b0a89d2c67f0a72ab1884780411ea142b1713e41bf0b8826",
+      "distribution": "AUTHOR_ONLY"
+    }
+  ]
+}

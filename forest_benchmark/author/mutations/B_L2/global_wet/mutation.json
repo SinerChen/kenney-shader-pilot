@@ -1,0 +1,7 @@
+{
+  "task": "B_L2",
+  "name": "global_wet",
+  "file": "solution\\display.gd",
+  "detector": "display_dependency",
+  "source_occurrences": 1
+}

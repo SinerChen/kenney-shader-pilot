@@ -1,0 +1,118 @@
+{
+  "destination": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\exports\\final_review_1790414793007604600\\B_L2",
+  "review_only": true,
+  "files": {
+    "assets/metadata.json": "29e60e4bd936e3b718f069a9bd035411184248c93b9c4f2fa6b4cc0b859feb3b",
+    "assets/sole_mask.f32": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12",
+    "assets/sole_mask.png": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd",
+    "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+    "fixture/base_stage.tscn": "8509dc56b0d9b1c286566b10db0e39b94a2a369ca555d234101617c15374541c",
+    "fixture/bridge.gd": "f872c4736e9359c0e60b7ef368d5f3155401cd613dd6061b39fcdd0cc07dbc9a",
+    "fixture/entry.tscn": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+    "fixture/evidence.gd": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+    "fixture/runner.gd": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d",
+    "fixture/visual_runner.gd": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+    "project.godot": "86515b3cd59d891e5ee85404e532c2c973973c529a5be56b5a88994767d785ee",
+    "solution/adapter.gd": "abc143435827e05ef8310ccada90510df65a122c6843665661a0ec712f77fb43",
+    "solution/defaults.json": "efd1e936486e14627bee88110c53865df8d2930e229b695634eaa3d49ecf7fb6",
+    "solution/display.gd": "5287c9649ba7b1c00a07050103589069f4d837b8eef8f5976cc8b55b9ecc76c1",
+    "solution/effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "solution/kernel.txt": "d5315a6d4b30a13fe0fcf165dc5c9892d2234985a6491639f8be5c65c8238774",
+    "solution/wire.json": "cf1cd9133afd9fa90a409446ac32b194fee5ac3290281c3509a8e65172130487"
+  },
+  "inheritance": {
+    "condition": "gold_predecessor",
+    "task_id": "B_L1",
+    "source_hashes": {
+      "adapter.gd": "abc143435827e05ef8310ccada90510df65a122c6843665661a0ec712f77fb43",
+      "defaults.json": "efd1e936486e14627bee88110c53865df8d2930e229b695634eaa3d49ecf7fb6",
+      "display.gd": "5287c9649ba7b1c00a07050103589069f4d837b8eef8f5976cc8b55b9ecc76c1",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "d5315a6d4b30a13fe0fcf165dc5c9892d2234985a6491639f8be5c65c8238774",
+      "wire.json": "cf1cd9133afd9fa90a409446ac32b194fee5ac3290281c3509a8e65172130487"
+    },
+    "context": "code plus brief handoff; no conversation or private scores"
+  },
+  "prompt_revisions": [
+    {
+      "before": {
+        "public/prompt.md": "71dc63473ed11b080ac8797381e7823752361a5258f56630b9153ac4f34209d7",
+        "public/scene_inventory.json": "bf3a0bc705ec97f886df0f2886e8298c3dca63ae7985d0ddf7744928d2ea69d2"
+      },
+      "after": {
+        "public/prompt.md": "75952146deadb67d7c89b6495de0bbdfd345bb0c9ce83d1b1ab494b2fba6c0fa",
+        "public/scene_inventory.json": "983e30737f1123fd4e6d3cffb71b8bde4c9c4aafa9de2f3787554f9eae1cdfa3"
+      }
+    },
+    {
+      "before": {
+        "public/prompt.md": "75952146deadb67d7c89b6495de0bbdfd345bb0c9ce83d1b1ab494b2fba6c0fa",
+        "public/scene_inventory.json": "983e30737f1123fd4e6d3cffb71b8bde4c9c4aafa9de2f3787554f9eae1cdfa3"
+      },
+      "after": {
+        "public/prompt.md": "b973e6c6ea0249a04322daf056eae8f436d830fa02f2cd562cb640f154183119",
+        "public/scene_inventory.json": "2c1e5ecfcb966b16d92fa1806087785dc1738394ca753ff21373a18a1ce2e11e"
+      }
+    },
+    {
+      "before": {
+        "public/io_schema.json": null,
+        "public/sample_inputs/sample.json": "c081f617c1843482ea888544e1a0248b297d43b651a8818b397f06bb3d60f8a0",
+        "public/prompt.md": "b973e6c6ea0249a04322daf056eae8f436d830fa02f2cd562cb640f154183119",
+        "public/scene_inventory.json": "2c1e5ecfcb966b16d92fa1806087785dc1738394ca753ff21373a18a1ce2e11e"
+      },
+      "after": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "94568438f552260558be6d90641805ac7e6d570b80e26494bfa0af9e1a568edf",
+        "public/scene_inventory.json": "2f0999324c80f14f0441f3a5e4a54d6ad75b23650da121fb86b70450578dcc09"
+      }
+    },
+    {
+      "before": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "94568438f552260558be6d90641805ac7e6d570b80e26494bfa0af9e1a568edf",
+        "public/scene_inventory.json": "2f0999324c80f14f0441f3a5e4a54d6ad75b23650da121fb86b70450578dcc09"
+      },
+      "after": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "9ceb35c94a8226747ae466c10ddee87d04b897d3a17479062cdf5faa566f98ce",
+        "public/scene_inventory.json": "3a094a34d59e2792e20bced99c01c423dae89fe0c0efee84b555beb466086acb"
+      }
+    }
+  ],
+  "layout_revisions": [
+    {
+      "previous_files": {
+        "assets/metadata.json": "29e60e4bd936e3b718f069a9bd035411184248c93b9c4f2fa6b4cc0b859feb3b",
+        "assets/sole_mask.f32": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12",
+        "assets/sole_mask.png": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd",
+        "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+        "fixture/base_stage.tscn": "8509dc56b0d9b1c286566b10db0e39b94a2a369ca555d234101617c15374541c",
+        "fixture/bridge.gd": "5ebc54c71885353c752e29c0cc85109dc7d2fc882b2da633cb9bc09ce0437237",
+        "fixture/entry.tscn": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+        "fixture/evidence.gd": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+        "fixture/runner.gd": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d",
+        "fixture/visual_runner.gd": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+        "project.godot": "86515b3cd59d891e5ee85404e532c2c973973c529a5be56b5a88994767d785ee",
+        "public/api.md": "ba93734c89888af0b6359ab922e42f39d74662c933d57196e729d33a7eb94f02",
+        "public/contract.md": "e1acefa9ea0b7af75c100681fec3539d4422b2586c0d6420f9e296099a582c97",
+        "public/demo.json": "066efff9d08391771be684c10d12be3a75792e1a5ec1a3b4f7568f68ee3a7ffa",
+        "public/prompt.md": "9ceb35c94a8226747ae466c10ddee87d04b897d3a17479062cdf5faa566f98ce",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/scene_inventory.json": "3a094a34d59e2792e20bced99c01c423dae89fe0c0efee84b555beb466086acb",
+        "public/task.json": "0fefff49adb9e878cee066f8120f5b405b0dbae72043eb76360f7aa8810ca278",
+        "solution/adapter.gd": "abc143435827e05ef8310ccada90510df65a122c6843665661a0ec712f77fb43",
+        "solution/defaults.json": "efd1e936486e14627bee88110c53865df8d2930e229b695634eaa3d49ecf7fb6",
+        "solution/display.gd": "5287c9649ba7b1c00a07050103589069f4d837b8eef8f5976cc8b55b9ecc76c1",
+        "solution/effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+        "solution/kernel.txt": "d5315a6d4b30a13fe0fcf165dc5c9892d2234985a6491639f8be5c65c8238774",
+        "solution/wire.json": "cf1cd9133afd9fa90a409446ac32b194fee5ac3290281c3509a8e65172130487",
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80"
+      },
+      "metadata": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\exports\\final_review_1790414793007604600\\public\\B_L2"
+    }
+  ]
+}

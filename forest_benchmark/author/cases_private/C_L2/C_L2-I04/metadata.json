@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-I04",
+  "intervention": "只动相机",
+  "control": "云场/光源不变",
+  "relation": "世界云影锚定，散射可随视角变化",
+  "status": "GENERATED",
+  "baseline_length": 3,
+  "intervention_name": "camera"
+}

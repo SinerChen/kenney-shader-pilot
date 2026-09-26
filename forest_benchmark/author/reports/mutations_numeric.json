@@ -1,0 +1,335 @@
+[
+  {
+    "task": "A_L1",
+    "mutation": "global_black",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "A_L1",
+    "mutation": "moving_noise",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "A_L1",
+    "mutation": "camera_locked",
+    "status": "NOT_RUN",
+    "detector": "camera_state"
+  },
+  {
+    "task": "A_L1",
+    "mutation": "fake_probe",
+    "status": "NOT_RUN",
+    "detector": "display_dependency"
+  },
+  {
+    "task": "A_L2",
+    "mutation": "fixed_emitter",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "charred_emitter",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "delete_stock",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "euler",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "repeat_birth",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "decal_only",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "clear_depth",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "duplicate_stamp",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "wrong_pom_sign",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "constant_offset",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "ignore_depth",
+    "status": "REJECTED",
+    "numeric_pass": 7,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "global_wet",
+    "status": "NOT_RUN",
+    "detector": "display_dependency"
+  },
+  {
+    "task": "B_L2",
+    "mutation": "source_only",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "directional_update",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "style_changes_state",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "independent_shadow",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "density_slice",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "omit_length",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "darken_ambient",
+    "status": "NOT_RUN",
+    "detector": "ambient_preservation"
+  },
+  {
+    "task": "C_L1",
+    "mutation": "negative_start",
+    "status": "REJECTED",
+    "numeric_pass": 8,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "shared_opacity",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "fake_cloud",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "phase_reversed",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "omit_sun_fog",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "double_shadow",
+    "status": "NOT_RUN",
+    "detector": "shadow_linearity"
+  },
+  {
+    "task": "D_L1",
+    "mutation": "single_phase",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "bad_weights",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "decode_velocity",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "srgb_normal",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "unbounded_uv",
+    "status": "REJECTED",
+    "numeric_pass": 7,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "moving_source",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "source_only",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "carry_field_with_source",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "tiling_velocity",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "forward_sample",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "schlick",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "eta_inverse",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "no_directional_refraction",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "clamp_invalid_uv",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "fake_probe",
+    "status": "NOT_RUN",
+    "detector": "display_dependency"
+  },
+  {
+    "task": "E_L2",
+    "mutation": "loop_wave",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "E_L2",
+    "mutation": "stale_background",
+    "status": "NOT_RUN",
+    "detector": "layer_current"
+  },
+  {
+    "task": "E_L2",
+    "mutation": "missing_rear",
+    "status": "NOT_RUN",
+    "detector": "layer_current"
+  },
+  {
+    "task": "E_L2",
+    "mutation": "hide_front",
+    "status": "NOT_RUN",
+    "detector": "display_dependency"
+  },
+  {
+    "task": "E_L2",
+    "mutation": "recursive_capture",
+    "status": "NOT_RUN",
+    "detector": "layer_exclusion"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G10",
+  "purpose": "干净重导入与预算",
+  "input_design": "清缓存导入同一源提交，再按路径运行",
+  "criterion": "效果/状态和绑定复现，未依赖缓存且符合预算",
+  "observations": "导入记录、状态证据、资源/帧耗时",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

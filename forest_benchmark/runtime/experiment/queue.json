@@ -1,0 +1,388 @@
+{
+  "items": [
+    {
+      "model_alias": "openai_astra",
+      "task_id": "A_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "A_L2",
+      "parent": "openai_astra/A_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "A_L3",
+      "parent": "openai_astra/A_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "B_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "B_L2",
+      "parent": "openai_astra/B_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "B_L3",
+      "parent": "openai_astra/B_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "C_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "C_L2",
+      "parent": "openai_astra/C_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "C_L3_R",
+      "parent": "openai_astra/C_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "C_L3_S",
+      "parent": "openai_astra/C_L2",
+      "blocked": "Original sky world-space mapping is unresolved; no runnable starter exists."
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "D_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "D_L2",
+      "parent": "openai_astra/D_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "D_L3",
+      "parent": "openai_astra/D_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "E_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "E_L2",
+      "parent": "openai_astra/E_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_astra",
+      "task_id": "E_L3",
+      "parent": "openai_astra/E_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "A_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "A_L2",
+      "parent": "openai_main/A_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "A_L3",
+      "parent": "openai_main/A_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "B_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "B_L2",
+      "parent": "openai_main/B_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "B_L3",
+      "parent": "openai_main/B_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "C_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "C_L2",
+      "parent": "openai_main/C_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "C_L3_R",
+      "parent": "openai_main/C_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "C_L3_S",
+      "parent": "openai_main/C_L2",
+      "blocked": "Original sky world-space mapping is unresolved; no runnable starter exists."
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "D_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "D_L2",
+      "parent": "openai_main/D_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "D_L3",
+      "parent": "openai_main/D_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "E_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "E_L2",
+      "parent": "openai_main/E_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "openai_main",
+      "task_id": "E_L3",
+      "parent": "openai_main/E_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "A_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "A_L2",
+      "parent": "claude_main/A_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "A_L3",
+      "parent": "claude_main/A_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "B_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "B_L2",
+      "parent": "claude_main/B_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "B_L3",
+      "parent": "claude_main/B_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "C_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "C_L2",
+      "parent": "claude_main/C_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "C_L3_R",
+      "parent": "claude_main/C_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "C_L3_S",
+      "parent": "claude_main/C_L2",
+      "blocked": "Original sky world-space mapping is unresolved; no runnable starter exists."
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "D_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "D_L2",
+      "parent": "claude_main/D_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "D_L3",
+      "parent": "claude_main/D_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "E_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "E_L2",
+      "parent": "claude_main/E_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "claude_main",
+      "task_id": "E_L3",
+      "parent": "claude_main/E_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "A_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "A_L2",
+      "parent": "kimi_retry_128k/A_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "A_L3",
+      "parent": "kimi_retry_128k/A_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "B_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "B_L2",
+      "parent": "kimi_retry_128k/B_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "B_L3",
+      "parent": "kimi_retry_128k/B_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "C_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "C_L2",
+      "parent": "kimi_retry_128k/C_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "C_L3_R",
+      "parent": "kimi_retry_128k/C_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "C_L3_S",
+      "parent": "kimi_retry_128k/C_L2",
+      "blocked": "Original sky world-space mapping is unresolved; no runnable starter exists."
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "D_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "D_L2",
+      "parent": "kimi_retry_128k/D_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "D_L3",
+      "parent": "kimi_retry_128k/D_L2",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "E_L1",
+      "parent": null,
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "E_L2",
+      "parent": "kimi_retry_128k/E_L1",
+      "blocked": null
+    },
+    {
+      "model_alias": "kimi_retry_128k",
+      "task_id": "E_L3",
+      "parent": "kimi_retry_128k/E_L2",
+      "blocked": null
+    }
+  ]
+}

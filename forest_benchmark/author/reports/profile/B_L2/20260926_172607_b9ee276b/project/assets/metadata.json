@@ -1,0 +1,47 @@
+{
+  "assets": {
+    "metadata.json": {
+      "path": "assets/metadata.json",
+      "sha256": "60a86339b929205d1d6258c3ab1f18925a6599a649b5df6b9c7c5ea490e704da",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 1113
+    },
+    "sole_mask.f32": {
+      "path": "assets/sole_mask.f32",
+      "sha256": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 192
+    },
+    "sole_mask.png": {
+      "path": "assets/sole_mask.png",
+      "sha256": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 93
+    }
+  },
+  "float_format": "little-endian float32, linear",
+  "not_target_solutions": true,
+  "grid_size": [
+    48,
+    36
+  ],
+  "density_size": [
+    5,
+    4,
+    3
+  ],
+  "mask_size": [
+    6,
+    8
+  ],
+  "texture_size": [
+    8,
+    8
+  ]
+}

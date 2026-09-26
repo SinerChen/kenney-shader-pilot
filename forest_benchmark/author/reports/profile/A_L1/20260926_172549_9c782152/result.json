@@ -1,0 +1,485 @@
+{
+  "camera": {
+    "class": "Camera3D",
+    "path": "Stage/CameraRig/Camera3D",
+    "properties": {
+      "attributes": null,
+      "auto_translate_mode": 0,
+      "compositor": null,
+      "cull_mask": 7,
+      "current": true,
+      "doppler_tracking": 0,
+      "editor_description": "",
+      "environment": null,
+      "far": 50.0,
+      "fov": 45.0,
+      "frustum_offset": [
+        0.0,
+        0.0
+      ],
+      "h_offset": 0.0,
+      "keep_aspect": 1,
+      "near": 0.0500000007450581,
+      "physics_interpolation_mode": 0,
+      "process_mode": 0,
+      "process_physics_priority": 0,
+      "process_priority": 0,
+      "process_thread_group": 0,
+      "projection": 0,
+      "rotation_edit_mode": 0,
+      "rotation_order": 2,
+      "size": 1.0,
+      "top_level": false,
+      "transform": [
+        [
+          0.829037606716156,
+          -0.209477335214615,
+          0.518474638462067
+        ],
+        [
+          0.0,
+          0.927183866500854,
+          0.37460657954216
+        ],
+        [
+          -0.559192895889282,
+          -0.310562938451767,
+          0.768670320510864
+        ],
+        [
+          3.5,
+          3.09999990463257,
+          5.0
+        ]
+      ],
+      "unique_name_in_owner": false,
+      "v_offset": 0.0,
+      "visibility_parent": "",
+      "visible": true
+    },
+    "transform": [
+      [
+        0.829037606716156,
+        -0.209477335214615,
+        0.518474638462067
+      ],
+      [
+        0.0,
+        0.927183866500854,
+        0.374606609344482
+      ],
+      [
+        -0.559192895889282,
+        -0.310562938451767,
+        0.768670320510864
+      ],
+      [
+        3.5,
+        3.09999990463257,
+        5.0
+      ]
+    ],
+    "visible": true
+  },
+  "changes": [],
+  "channel": "color",
+  "coverage": "selected runtime target; native debug views cover the entire viewport",
+  "diagnostic_changes": [],
+  "encoding": "display-processed PNG, not raw linear HDR or depth",
+  "engine": "4.6.1-stable (official)",
+  "hardware": {
+    "adapter": "AMD Radeon 780M Graphics",
+    "vendor": "AMD"
+  },
+  "images": [],
+  "limitations": [
+    "Native fixed stepping does not reset shader TIME or external nondeterministic inputs",
+    "SceneTree structure is not an effect influence graph"
+  ],
+  "provenance": "godot_runner",
+  "renderer": "forward_plus",
+  "resolution": [
+    640,
+    360
+  ],
+  "samples": [
+    {
+      "draw_calls": 23.0,
+      "frame": 16,
+      "render_cpu_ms": 0.190999999642372,
+      "render_gpu_ms": 0.24099999666214,
+      "setup_cpu_ms": 0.042,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.302
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 17,
+      "render_cpu_ms": 0.158999994397163,
+      "render_gpu_ms": 0.231000006198883,
+      "setup_cpu_ms": 0.054,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.043
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 18,
+      "render_cpu_ms": 0.175999999046326,
+      "render_gpu_ms": 0.243000000715256,
+      "setup_cpu_ms": 0.052,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.054
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 19,
+      "render_cpu_ms": 0.157000005245209,
+      "render_gpu_ms": 0.247999995946884,
+      "setup_cpu_ms": 0.045,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 4.844
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 20,
+      "render_cpu_ms": 0.194000005722046,
+      "render_gpu_ms": 0.221000000834465,
+      "setup_cpu_ms": 0.06,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.425
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 21,
+      "render_cpu_ms": 0.187999993562698,
+      "render_gpu_ms": 0.237000003457069,
+      "setup_cpu_ms": 0.076,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.854
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 22,
+      "render_cpu_ms": 0.145999997854233,
+      "render_gpu_ms": 0.250999987125397,
+      "setup_cpu_ms": 0.045,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.126
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 23,
+      "render_cpu_ms": 0.310000002384186,
+      "render_gpu_ms": 0.231000006198883,
+      "setup_cpu_ms": 0.05,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.107
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 24,
+      "render_cpu_ms": 0.165000006556511,
+      "render_gpu_ms": 0.238000005483627,
+      "setup_cpu_ms": 0.034,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.264
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 25,
+      "render_cpu_ms": 0.133000001311302,
+      "render_gpu_ms": 0.418999999761581,
+      "setup_cpu_ms": 0.074,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.409
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 26,
+      "render_cpu_ms": 0.167999997735024,
+      "render_gpu_ms": 0.257999986410141,
+      "setup_cpu_ms": 0.034,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 4.971
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 27,
+      "render_cpu_ms": 0.223000004887581,
+      "render_gpu_ms": 0.229000002145767,
+      "setup_cpu_ms": 0.052,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.192
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 28,
+      "render_cpu_ms": 0.148000001907349,
+      "render_gpu_ms": 0.230000004172325,
+      "setup_cpu_ms": 0.051,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.082
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 29,
+      "render_cpu_ms": 0.14300000667572,
+      "render_gpu_ms": 0.259999990463257,
+      "setup_cpu_ms": 0.07,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.202
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 30,
+      "render_cpu_ms": 0.342000007629395,
+      "render_gpu_ms": 0.234999999403954,
+      "setup_cpu_ms": 0.044,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.02
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 31,
+      "render_cpu_ms": 0.203999996185303,
+      "render_gpu_ms": 0.215000003576279,
+      "setup_cpu_ms": 0.048,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.904
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 32,
+      "render_cpu_ms": 0.171000003814697,
+      "render_gpu_ms": 0.259999990463257,
+      "setup_cpu_ms": 0.061,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.338
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 33,
+      "render_cpu_ms": 0.130999997258186,
+      "render_gpu_ms": 0.237000003457069,
+      "setup_cpu_ms": 0.047,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.309
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 34,
+      "render_cpu_ms": 0.404000014066696,
+      "render_gpu_ms": 0.238999992609024,
+      "setup_cpu_ms": 0.069,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.493
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 35,
+      "render_cpu_ms": 0.312000006437302,
+      "render_gpu_ms": 0.236000001430511,
+      "setup_cpu_ms": 0.032,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 8.242
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 36,
+      "render_cpu_ms": 0.180000007152557,
+      "render_gpu_ms": 0.24600000679493,
+      "setup_cpu_ms": 0.054,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.9
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 37,
+      "render_cpu_ms": 0.186000004410744,
+      "render_gpu_ms": 0.246999993920326,
+      "setup_cpu_ms": 0.044,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.687
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 38,
+      "render_cpu_ms": 0.148000001907349,
+      "render_gpu_ms": 0.238999992609024,
+      "setup_cpu_ms": 0.036,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.549
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 39,
+      "render_cpu_ms": 0.264999985694885,
+      "render_gpu_ms": 0.232999995350838,
+      "setup_cpu_ms": 0.069,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.35
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 40,
+      "render_cpu_ms": 0.203999996185303,
+      "render_gpu_ms": 0.214000001549721,
+      "setup_cpu_ms": 0.037,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.948
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 41,
+      "render_cpu_ms": 0.268999993801117,
+      "render_gpu_ms": 0.287000000476837,
+      "setup_cpu_ms": 0.054,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.544
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 42,
+      "render_cpu_ms": 0.177000001072884,
+      "render_gpu_ms": 0.270999997854233,
+      "setup_cpu_ms": 0.102,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.955
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 43,
+      "render_cpu_ms": 0.166999995708466,
+      "render_gpu_ms": 0.244000002741814,
+      "setup_cpu_ms": 0.038,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.797
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 44,
+      "render_cpu_ms": 0.208000004291534,
+      "render_gpu_ms": 0.23199999332428,
+      "setup_cpu_ms": 0.032,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.654
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 45,
+      "render_cpu_ms": 0.17399999499321,
+      "render_gpu_ms": 0.476000010967255,
+      "setup_cpu_ms": 0.056,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.056
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 46,
+      "render_cpu_ms": 0.167999997735024,
+      "render_gpu_ms": 0.289000004529953,
+      "setup_cpu_ms": 0.059,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.565
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 47,
+      "render_cpu_ms": 0.337999999523163,
+      "render_gpu_ms": 0.229000002145767,
+      "setup_cpu_ms": 0.038,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.667
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 48,
+      "render_cpu_ms": 0.197999998927116,
+      "render_gpu_ms": 0.233999997377396,
+      "setup_cpu_ms": 0.038,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.323
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 49,
+      "render_cpu_ms": 0.254000008106232,
+      "render_gpu_ms": 0.218999996781349,
+      "setup_cpu_ms": 0.061,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.321
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 50,
+      "render_cpu_ms": 0.162000000476837,
+      "render_gpu_ms": 0.223000004887581,
+      "setup_cpu_ms": 0.051,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 6.951
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 51,
+      "render_cpu_ms": 0.14300000667572,
+      "render_gpu_ms": 0.368000000715256,
+      "setup_cpu_ms": 0.079,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.329
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 52,
+      "render_cpu_ms": 0.165999993681908,
+      "render_gpu_ms": 0.233999997377396,
+      "setup_cpu_ms": 0.084,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.391
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 53,
+      "render_cpu_ms": 0.206000000238419,
+      "render_gpu_ms": 0.234999999403954,
+      "setup_cpu_ms": 0.037,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 5.296
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 54,
+      "render_cpu_ms": 0.314999997615814,
+      "render_gpu_ms": 0.230000004172325,
+      "setup_cpu_ms": 0.057,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.112
+    },
+    {
+      "draw_calls": 23.0,
+      "frame": 55,
+      "render_cpu_ms": 0.155000001192093,
+      "render_gpu_ms": 0.239999994635582,
+      "setup_cpu_ms": 0.045,
+      "video_memory_bytes": 52514384.0,
+      "wall_ms": 7.645
+    }
+  ],
+  "stage": "viewport_timing",
+  "status": "observed",
+  "surface": 0.0,
+  "target": ".",
+  "timing": {
+    "clock": "native realtime; fixed dt for explicit scene step only",
+    "fps": 60.0,
+    "history_policy": "fresh_process",
+    "seed": 0.0,
+    "shader_TIME": "engine clock includes initialization; use scene-controlled uniforms for exact shader time",
+    "step_method": "native"
+  },
+  "verdict": "not_evaluated",
+  "evidence_ref": "D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/author/reports/profile/A_L1/20260926_172549_9c782152/data.json",
+  "artifact_dir": "D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/author/reports/profile/A_L1/20260926_172549_9c782152",
+  "source_manifest": "D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/author/reports/profile/A_L1/20260926_172549_9c782152/source_files.json",
+  "request_ref": "D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/author/reports/profile/A_L1/20260926_172549_9c782152/request.json",
+  "rollback": "Disposable process and copied project; original files not edited"
+}

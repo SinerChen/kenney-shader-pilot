@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N03",
+  "purpose": "无太阳",
+  "input_design": "light_rgb=0",
+  "criterion": "目标散射为零",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

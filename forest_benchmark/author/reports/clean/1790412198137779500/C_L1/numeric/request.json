@@ -1,0 +1,10 @@
+{
+  "commands": [
+    {
+      "op": "reset",
+      "config": {
+        "task_id": "C_L1"
+      }
+    }
+  ]
+}

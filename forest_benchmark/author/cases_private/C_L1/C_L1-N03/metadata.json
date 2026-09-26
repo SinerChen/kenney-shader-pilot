@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N03",
+  "purpose": "分层密度",
+  "input_design": "沿一轴不同层值",
+  "criterion": "分段中点采样",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

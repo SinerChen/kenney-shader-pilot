@@ -1,0 +1,103 @@
+{
+  "schema": "forest-package-compatibility/0.2",
+  "source_archive_sha256": "96be3c7f79334c56b36309108f35bb2934d396535d2ef93e328b76e66de083f1",
+  "policy": "Public core contracts/prompts and historical evidence unchanged",
+  "files": [
+    {
+      "path": "03_测试模型Prompt/公开契约/00_公共运行契约.md",
+      "sha256": "87df022a9bdd8c51f1a13f31796a8709db441b2219fe42687f2d49130fa4e9a6"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/A_L1.md",
+      "sha256": "3c518858730df990035e64282b072f2345854e75b4f8b4be71b3c9f1640c920c"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/A_L2.md",
+      "sha256": "5fe695c3cfd1bf4065f516a96419060a2ff8db17e116d69a523944a8227e90d4"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/B_L1.md",
+      "sha256": "995d4d70d73b0befc6c180c183230fce48f6fb6f635922c2cc85b2579f1339bc"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/B_L2.md",
+      "sha256": "028b2a23d534f19f98c76836c3781d778ad747ed1ac06ad81fe0226f9112061f"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/C_L1.md",
+      "sha256": "2323b946536768a8822dbad463531530d1748a7ca550b7b79c6e8617b5c90beb"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/C_L2.md",
+      "sha256": "1ef220ad7a0c93251644f62d714baf35c79ee07cb173185225dcded45aa2ceb2"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/D_L1.md",
+      "sha256": "c27a1049e3482a5bd23ac23ad4618b046f7bdf4333381b50ad8f8cdd547c05d3"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/D_L2.md",
+      "sha256": "59f6ad65bb795616f1e1d870fff34f810774211ddf3410a38add5d70d9339763"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/E_L1.md",
+      "sha256": "6dd7c06e685ac0b16a71461bf10d40e6a22a50e7d3a4d87a557fd28b5f5dc1ae"
+    },
+    {
+      "path": "03_测试模型Prompt/公开契约/E_L2.md",
+      "sha256": "fc74bd141e2c3ac987c9468570a9514657da2c21d7b4a27d129aac36fed8b250"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/A_L1.md",
+      "sha256": "5e99baa84ccb122909498f223e962610dcd858d2cbf814b36e1a8343fa9776a1"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/A_L2.md",
+      "sha256": "3854de0c2f18fdf9782ee8577747f18d55084c66c63f3b5aa8ed087818caaf33"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/B_L1.md",
+      "sha256": "ff902a90c11bbd016790a8d769b6f5d4fad2aafc3874b67f6077b598003fc7a9"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/B_L2.md",
+      "sha256": "f14c1fa26a98cf19b001205e04a8f443edaee205736d5722b5062853131e6992"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/C_L1.md",
+      "sha256": "3dbc60bbab06c63e60fdec508e314c91b26078b2ff35c7a9d6df6d155d753c1f"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/C_L2.md",
+      "sha256": "aabf32535463c3cb40afbf197ec60783f8e58cce1fb640c02ce5253e84ec25a3"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/D_L1.md",
+      "sha256": "fa9acf0cbb06c801f6a19bda932271e5577110fefe85d1e63f8c9765615cc251"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/D_L2.md",
+      "sha256": "d17952fd3fc34e83712568463a6a6b1cd73eca616f2a0eb5992061ed7d2aed01"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/E_L1.md",
+      "sha256": "7c99f72e60638cd21f54ca0e82101c820365a71de37e98db84552fbf4cb3c68c"
+    },
+    {
+      "path": "03_测试模型Prompt/任务/E_L2.md",
+      "sha256": "4ba2c415d7620f45e0dd37a46abb25f59b3b912900e7ce6818705e9c02e0622b"
+    },
+    {
+      "path": "05_来源与边界/forest_integration_constraint_candidates.json",
+      "sha256": "72637962049ec7524aec0c1caaea766f7053fb85ab114810c5a34f3727ef4658"
+    },
+    {
+      "path": "05_来源与边界/forest_integration_constraints_static_audit.md",
+      "sha256": "712483948f2a5675a74c64d4a5b2ef9428b7b4c780885915f34fb778571a0ef8"
+    },
+    {
+      "path": "05_来源与边界/shader_algorithm_scenarios.md",
+      "sha256": "0a38b7c2b1bd7b38044cd6cedec371dacffe74692dcd17a2a18bae7c73b05cb1"
+    }
+  ]
+}

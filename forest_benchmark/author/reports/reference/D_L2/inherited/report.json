@@ -1,0 +1,65 @@
+{
+  "task": "D_L2",
+  "case_task": "D_L1",
+  "pass": 10,
+  "total": 10,
+  "status": "PASS",
+  "groups": [
+    {
+      "case": "D_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N09",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "D_L1-N10",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\reference\\D_L2\\inherited",
+  "scope": "numeric_only"
+}

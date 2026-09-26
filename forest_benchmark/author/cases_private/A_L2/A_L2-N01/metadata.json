@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N01",
+  "purpose": "零速度场",
+  "input_design": "curl_strength=up_speed=0",
+  "criterion": "位置不变、年龄增加",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

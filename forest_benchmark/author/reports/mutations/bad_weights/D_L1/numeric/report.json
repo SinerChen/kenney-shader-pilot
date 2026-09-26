@@ -1,0 +1,262 @@
+{
+  "task": "D_L1",
+  "case_task": "D_L1",
+  "pass": 0,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "D_L1-N01",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.365,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.635,
+          "allowed": 0.00032700000000000003
+        },
+        {
+          "path": "/3",
+          "max_error": 0.010000000000000231,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.9899999999999998,
+          "allowed": 0.00039799999999999997
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N02",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.49,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.51,
+          "allowed": 0.000302
+        },
+        {
+          "path": "/3",
+          "max_error": 0.76,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.24,
+          "allowed": 0.000248
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.9475,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.05249999999999999,
+          "allowed": 0.00021050000000000002
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.9475,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.05249999999999999,
+          "allowed": 0.00021050000000000002
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.7,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.30000000000000004,
+          "allowed": 0.00026000000000000003
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.9475,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.05249999999999999,
+          "allowed": 0.00021050000000000002
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/7",
+          "max_error": 0.9999875,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 1.2499999999970868e-05,
+          "allowed": 0.0002000025
+        },
+        {
+          "path": "/9",
+          "max_error": 0.9999875,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 1.2499999999970868e-05,
+          "allowed": 0.0002000025
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.9475,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.05249999999999999,
+          "allowed": 0.00021050000000000002
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.3500000000000001,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.6499999999999999,
+          "allowed": 0.00033
+        },
+        {
+          "path": "/3",
+          "max_error": 0.3500000000000001,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.6499999999999999,
+          "allowed": 0.00033
+        },
+        {
+          "path": "/5",
+          "max_error": 0.49,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.51,
+          "allowed": 0.000302
+        },
+        {
+          "path": "/7",
+          "max_error": 0.4900000000000002,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.5099999999999998,
+          "allowed": 0.00030199999999999997
+        }
+      ]
+    },
+    {
+      "case": "D_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.240000000000002,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.759999999999998,
+          "allowed": 0.0003519999999999996
+        },
+        {
+          "path": "/3",
+          "max_error": 0.23999999999999488,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.7600000000000051,
+          "allowed": 0.0003520000000000011
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\bad_weights\\D_L1\\numeric",
+  "scope": "numeric_only"
+}

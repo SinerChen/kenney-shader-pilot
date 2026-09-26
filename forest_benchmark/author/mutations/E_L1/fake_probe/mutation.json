@@ -1,0 +1,7 @@
+{
+  "task": "E_L1",
+  "name": "fake_probe",
+  "file": "solution\\display.gd",
+  "detector": "display_dependency",
+  "source_occurrences": 1
+}

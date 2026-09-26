@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N07",
+  "purpose": "反射边界",
+  "input_design": "波达到边缘",
+  "criterion": "ghost 和反射",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

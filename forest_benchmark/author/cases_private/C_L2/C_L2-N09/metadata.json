@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N09",
+  "purpose": "极薄介质",
+  "input_design": "k_f 接近零",
+  "criterion": "稳定极限，无 NaN",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 2
+}

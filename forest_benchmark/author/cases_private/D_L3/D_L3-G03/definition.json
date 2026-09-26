@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G03",
+  "purpose": "改变图案参数",
+  "input_design": "同速度源事件，仅改 K/P/phi",
+  "criterion": "图案变化而源与物理 f 演化不改变",
+  "observations": "相位 UV、source 和 f 对照",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,123 @@
+{
+  "task_id": "C_L3_R",
+  "constraint_ids": [
+    "F03"
+  ],
+  "predecessor": "C_L2",
+  "integration_groups": [
+    {
+      "id": "C_L3_R-G01",
+      "purpose": "真实资源读取",
+      "input_design": "本次指定 U/V，采多个非对称坐标",
+      "criterion": "实际样本与已验证原资源含义一致",
+      "observations": "GPU采样、资源类型/维度和源 hash",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G02",
+      "purpose": "切片与轴向",
+      "input_design": "跨深度层、轴交换可区分的位置",
+      "criterion": "无把层当颜色/轴颠倒/二维重复的错误",
+      "observations": "各坐标样本和独立参考",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G03",
+      "purpose": "过滤与数据空间",
+      "input_design": "选择梯度及边界样本，固定过滤规则",
+      "criterion": "无 sRGB、错误插层或未声明 mip 偏差",
+      "observations": "原始数值、取值范围",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G04",
+      "purpose": "密度生成",
+      "input_design": "改变 a/b/theta 和 grid 合法尺寸",
+      "criterion": "rho_grid 按本级公式变化且非源替身",
+      "observations": "U/V 样本、rho_grid",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G05",
+      "purpose": "下游因果",
+      "input_design": "相同视角，只改变源资产变体或构造参数",
+      "criterion": "云影和雾内光都响应同一个实际新密度",
+      "observations": "T_cloud、L_scatter、图像",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G06",
+      "purpose": "零密度与雾消融",
+      "input_design": "分别得到零 rho_grid、零雾密度",
+      "criterion": "云影/雾的消失关系符合 C_L1/C_L2",
+      "observations": "独立状态、目标受光",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G07",
+      "purpose": "源消费者保护",
+      "input_design": "关新增效果但保留所有派生资源/配置",
+      "criterion": "原天空和共享消费者保持基线",
+      "observations": "原材质/导入 hash、天空帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G08",
+      "purpose": "同帧深度合成",
+      "input_design": "相机移动并被原不透明物体遮挡",
+      "criterion": "雾不盖到前景物体前，资源更新同 tick",
+      "observations": "深度、视线 T、帧时间",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G09",
+      "purpose": "重置和资源切换",
+      "input_design": "reset 前合法选择另一资源输入，再回原输入",
+      "criterion": "无初始化缓存答案/前次状态残留",
+      "observations": "输入 hash、rho 和输出",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_R-G10",
+      "purpose": "干净导入与预算",
+      "input_design": "从未改的源导入后运行",
+      "criterion": "转换可复现，不靠修改共享 import 或缓存",
+      "observations": "导入审计、GPU内存/帧时",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "按普通二维图采样本应具有层组织的数据。",
+    "交换深度与高度轴，或在切片间不进行规定采样。",
+    "为适配新 shader 修改共享输入的导入类型。",
+    "使用同外观的自建噪声而不读原资源。",
+    "probe 读取正确资产，但画面使用固定云影纹理。"
+  ],
+  "requires_frozen": [
+    "verified_resource_paths_types_layout",
+    "sample_filter_and_color_space",
+    "density_construction_parameters",
+    "local_light_receiver_scope",
+    "original_consumer_baseline"
+  ]
+}

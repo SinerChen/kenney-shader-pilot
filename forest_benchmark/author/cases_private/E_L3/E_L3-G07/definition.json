@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G07",
+  "purpose": "不透明遮挡",
+  "input_design": "授权物体遮挡前景或部分水面",
+  "criterion": "合成遵守深度，不把后景贴在遮挡物上",
+  "observations": "深度/层关系、可见像素",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

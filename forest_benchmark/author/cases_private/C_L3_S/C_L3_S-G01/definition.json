@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G01",
+  "purpose": "原场密度绑定",
+  "input_design": "固定原天空状态，采多个世界位置",
+  "criterion": "新增密度来自原场，不是独立近似动画",
+  "observations": "原场私有探针、提交 rho_grid、源签名",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

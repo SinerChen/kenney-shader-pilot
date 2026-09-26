@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G04",
+  "purpose": "湿润到达内部边界",
+  "input_design": "允许区靠边注水，禁区初始为零",
+  "criterion": "遵守零通量边界而不是向禁区扩散后截掉",
+  "observations": "边界多步 w 及域内总量变化",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

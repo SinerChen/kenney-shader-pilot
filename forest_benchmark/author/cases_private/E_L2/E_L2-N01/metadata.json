@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N01",
+  "purpose": "静止",
+  "input_design": "h=h_prev=0,f=0",
+  "criterion": "保持零",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

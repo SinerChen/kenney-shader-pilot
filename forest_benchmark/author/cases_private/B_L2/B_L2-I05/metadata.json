@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-I05",
+  "intervention": "关干燥",
+  "control": "lambda0=0",
+  "relation": "无蒸发项，保持前级深度",
+  "status": "GENERATED",
+  "baseline_length": 23,
+  "intervention_name": "drying"
+}

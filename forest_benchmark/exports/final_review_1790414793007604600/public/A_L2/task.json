@@ -1,0 +1,119 @@
+{
+  "task_id": "A_L2",
+  "title": "灼烧前沿驱动的旋涡余烬",
+  "algorithm": "Curl Noise＋中点 RK2＋粒子生命周期",
+  "contract_version": "0.1",
+  "contract_sha256": "9d372bebb1e7290713d09ed573db8068aa478f4d25a1c1072b84bc1f1c47ea1f",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "TargetMesh"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "condition": "gold_predecessor",
+    "task_id": "A_L1",
+    "source_hashes": {
+      "adapter.gd": "5d355dc7104d6df6b887b9d0ce8142bf951a510fee0be0801ee2575804f4394e",
+      "defaults.json": "cdbc577b2b55dd6e01466bf1d2fd55b1f4d8f2ba2a64fa76955281d459f68a11",
+      "display.gd": "6cd12c7d2440e2583c6715daddf3ed78e879ca850f47cb32afa333b6816727a2",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "d0d6d9547fcf9d1949564b8706450b13f561593a5d34fb68e98eac740d7ad7cd",
+      "wire.json": "c0484730d9a30ab38bab5bfc220bc697540e389384a1442d65c5a092fd664b8b"
+    },
+    "context": "code plus brief handoff; no conversation or private scores"
+  },
+  "queries": {
+    "burn_query": [
+      "noise",
+      "signed_front",
+      "char_fraction",
+      "front_strength"
+    ],
+    "curl_query": [
+      "curl.x",
+      "curl.y",
+      "curl.z",
+      "velocity.x",
+      "velocity.y",
+      "velocity.z"
+    ],
+    "particle_step": [
+      "next_position.x",
+      "next_position.y",
+      "next_position.z",
+      "age",
+      "active",
+      "cooling"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "REVIEW_ONLY"
+}

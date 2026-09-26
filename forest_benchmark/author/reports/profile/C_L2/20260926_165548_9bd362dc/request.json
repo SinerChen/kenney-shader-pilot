@@ -1,0 +1,21 @@
+{
+  "scene": "",
+  "frames": [
+    1
+  ],
+  "fps": 60,
+  "resolution": [
+    640,
+    360
+  ],
+  "camera": {},
+  "seed": 0,
+  "step_method": "native",
+  "warmup": 15,
+  "measure_frames": 40,
+  "operation": "profile",
+  "target": ".",
+  "surface": 0,
+  "output_dir": "D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/author/reports/profile/C_L2/20260926_165548_9bd362dc",
+  "runner_sha256": "82d5edb99f3659893a8862fdcad89bc933723c55e7070581b6a124a4eee13496"
+}

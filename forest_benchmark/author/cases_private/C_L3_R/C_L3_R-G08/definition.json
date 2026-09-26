@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G08",
+  "purpose": "同帧深度合成",
+  "input_design": "相机移动并被原不透明物体遮挡",
+  "criterion": "雾不盖到前景物体前，资源更新同 tick",
+  "observations": "深度、视线 T、帧时间",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

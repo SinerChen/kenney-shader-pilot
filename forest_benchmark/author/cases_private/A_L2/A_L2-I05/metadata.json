@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-I05",
+  "intervention": "分离显示",
+  "control": "分别关余烬可见性/灼烧美术显示，保持算法",
+  "relation": "状态依赖保留，不靠可见像素触发出生",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "visibility_only"
+}

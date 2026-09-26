@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G03",
+  "purpose": "暂停与继续",
+  "input_design": "使用公开时钟控制暂停/继续",
+  "criterion": "暂停时无独立云漂移，继续后不重置错位",
+  "observations": "源时钟、世界点响应",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

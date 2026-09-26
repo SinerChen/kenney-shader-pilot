@@ -1,0 +1,39 @@
+{
+  "assets": {
+    "cloud_density.f32": {
+      "path": "assets/cloud_density.f32",
+      "sha256": "8d0bd8a663717e72d4d6598824a8b94e96cbc84641de221b6526d3c1e54009be",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 6144
+    },
+    "metadata.json": {
+      "path": "assets/metadata.json",
+      "sha256": "4959a8d1967211709bf0d0589e247d937f269e973eba0f6e093f6e20980d1cd5",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 845
+    }
+  },
+  "float_format": "little-endian float32, linear",
+  "not_target_solutions": true,
+  "grid_size": [
+    8,
+    6
+  ],
+  "density_size": [
+    16,
+    8,
+    12
+  ],
+  "mask_size": [
+    6,
+    8
+  ],
+  "texture_size": [
+    8,
+    8
+  ]
+}

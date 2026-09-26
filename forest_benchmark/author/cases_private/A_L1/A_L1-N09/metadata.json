@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N09",
+  "purpose": "重置复现",
+  "input_design": "同 config 两次 reset/query",
+  "criterion": "相同状态，不受前次运行污染",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

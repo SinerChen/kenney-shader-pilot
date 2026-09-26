@@ -1,0 +1,77 @@
+{
+  "task": "B_L1",
+  "case_task": "B_L1",
+  "pass": 9,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "B_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N09",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.039999998211860656,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.07999999821186066,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\duplicate_stamp\\B_L1\\numeric",
+  "scope": "numeric_only"
+}

@@ -1,0 +1,7 @@
+{
+  "task": "A_L1",
+  "name": "global_black",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

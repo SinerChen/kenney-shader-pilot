@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N04",
+  "purpose": "各向同性",
+  "input_design": "g=0",
+  "criterion": "phase=1/(4pi)",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

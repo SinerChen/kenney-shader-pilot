@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N07",
+  "purpose": "均匀介质",
+  "input_design": "均匀云/雾和规定分段",
+  "criterion": "源项/视线合成",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

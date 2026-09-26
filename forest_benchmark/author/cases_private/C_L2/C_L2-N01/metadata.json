@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N01",
+  "purpose": "无雾",
+  "input_design": "rho_f=0",
+  "criterion": "L=0,T_view=1，云影仍在",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N05",
+  "purpose": "衰减",
+  "input_design": "v=S=0",
+  "criterion": "exp(-decay*dt)",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

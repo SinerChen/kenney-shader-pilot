@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G05",
+  "purpose": "前景不反馈",
+  "input_design": "显示/隐藏/移动前景",
+  "criterion": "原水体输入不包含前景，没有递归残影",
+  "observations": "背景来源和帧链记录",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

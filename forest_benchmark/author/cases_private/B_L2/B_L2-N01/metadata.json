@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N01",
+  "purpose": "零初场零源",
+  "input_design": "w=0,S=0",
+  "criterion": "保持零",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

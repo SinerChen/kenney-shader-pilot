@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-I01",
+  "intervention": "只改图案",
+  "control": "改变 K/phi/P，固定真实速度及源",
+  "relation": "锚点/泡沫状态不随图案参数漂移",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "pattern_only"
+}

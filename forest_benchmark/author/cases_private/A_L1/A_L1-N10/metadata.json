@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N10",
+  "purpose": "时间与参考系",
+  "input_design": "固定噪声、多个时间；只改变相机",
+  "criterion": "b 单调、不因相机漂移",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 4
+}

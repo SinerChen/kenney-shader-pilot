@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-I02",
+  "intervention": "清雾",
+  "control": "rho_f=0",
+  "relation": "体积贡献消失，云影不消失",
+  "status": "GENERATED",
+  "baseline_length": 3,
+  "intervention_name": "clear_fog"
+}

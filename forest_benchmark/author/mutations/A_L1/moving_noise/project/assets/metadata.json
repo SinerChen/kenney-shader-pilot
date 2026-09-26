@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "emitter_anchors.bin": {
+      "path": "assets/emitter_anchors.bin",
+      "sha256": "923a82ca065c07e8993464d95fb27ff596693b7826f50d1f12a5eff1a7cda2d1",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 1680
+    },
+    "metadata.json": {
+      "path": "assets/metadata.json",
+      "sha256": "c114755f985901bbbe333f4800d739cc343aed9a6746e50436e07c2b57b74217",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 1422
+    },
+    "noise_permutation.json": {
+      "path": "assets/noise_permutation.json",
+      "sha256": "4e1a52817c5a77ca3c5a65627cd22747e5c75191dc6df5ed774418b426c26ec3",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 2519
+    },
+    "wood_base.png": {
+      "path": "assets/wood_base.png",
+      "sha256": "2ee7c9360dc73a648f169a14d6dae5f0ba7f5012cdb8949779752ef131b7a7f1",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 1966
+    }
+  },
+  "float_format": "little-endian float32, linear",
+  "not_target_solutions": true,
+  "grid_size": [
+    8,
+    6
+  ],
+  "density_size": [
+    5,
+    4,
+    3
+  ],
+  "mask_size": [
+    6,
+    8
+  ],
+  "texture_size": [
+    8,
+    8
+  ]
+}

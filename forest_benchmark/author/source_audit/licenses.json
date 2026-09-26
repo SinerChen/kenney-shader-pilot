@@ -1,0 +1,13 @@
+{
+  "repository_license": "MIT",
+  "license_file": "LICENSE",
+  "credits_file": "Asset Credits.txt",
+  "asset_sources": [
+    "https://polyhaven.com/license",
+    "https://docs.ambientcg.com/license/"
+  ],
+  "asset_source_terms": "CC0 for assets provided by these two listed providers",
+  "checked_date": "2026-09-26",
+  "scope": "Preserve upstream license, credits and shader attribution. Per-file attribution closure remains a release check.",
+  "public_redistribution_verified": false
+}

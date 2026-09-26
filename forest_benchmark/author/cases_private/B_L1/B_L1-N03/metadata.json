@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N03",
+  "purpose": "位置",
+  "input_design": "平移印章",
+  "criterion": "位置和非目标区域不变",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

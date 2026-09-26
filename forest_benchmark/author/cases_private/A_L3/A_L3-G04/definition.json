@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G04",
+  "purpose": "正常运行时切换",
+  "input_design": "时间继续，往返并停留在过渡区",
+  "criterion": "粒子不重复出生；焦化按同一时钟继续",
+  "observations": "复合粒子 ID、birth_time、age、轨迹",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-I04",
+  "intervention": "关扩散",
+  "control": "D=0",
+  "relation": "无邻域传播，源/干燥仍工作",
+  "status": "GENERATED",
+  "baseline_length": 23,
+  "intervention_name": "diffusion"
+}

@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "id": "contact_1",
+      "world_position": [
+        -48.33836078643804,
+        -3.159091353416447,
+        31.2196912765503
+      ],
+      "radius_m": 0.45,
+      "strength": 1.2
+    },
+    {
+      "id": "off_surface",
+      "world_position": [
+        -48.347901907749524,
+        -1.1592451333999674,
+        31.1967959702015
+      ],
+      "radius_m": 0.45,
+      "strength": 1.2
+    }
+  ],
+  "source_motion": "Only new injection follows moved world anchors; old foam retains its state."
+}

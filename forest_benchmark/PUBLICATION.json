@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-09-27T02:02:46+08:00",
+  "scope": "Staged Git content before adding this report; current experiment continues independently.",
+  "files": 18070,
+  "bytes": 1249947738,
+  "native_complete_projects": [
+    "forest_benchmark/starters/A_L3/Main.tscn"
+  ],
+  "native_project_files": 208,
+  "large_files_over_github_limit": 0,
+  "credential_pattern_findings": 0,
+  "l3_overlay_hashes_verified": [
+    "B_L3",
+    "C_L3_R",
+    "D_L3",
+    "E_L3"
+  ],
+  "l3_restore_verified": {
+    "task": "B_L3",
+    "files": 204,
+    "external_public_matches": true
+  },
+  "experiment_snapshot": {
+    "status": "running",
+    "updated": "2026-09-27T02:00:38+08:00",
+    "pid": 6820,
+    "serial": true,
+    "completed_tasks": 1,
+    "total_tasks": 60,
+    "blocked_tasks": 4,
+    "current": {
+      "status": "requesting",
+      "updated": "2026-09-27T02:00:38+08:00",
+      "model": "gpt-6-astra",
+      "alias": "openai_astra",
+      "task_id": "A_L2",
+      "requests": 12,
+      "render_calls": 0
+    }
+  },
+  "started_runs": [
+    "forest_benchmark/runs/s1_p3/openai_astra/A_L1",
+    "forest_benchmark/runs/s1_p3/openai_astra/A_L2"
+  ],
+  "saved_results": [
+    {
+      "alias": "openai_astra",
+      "task_id": "A_L1",
+      "stop_reason": "model_finished",
+      "requests": 42,
+      "render_calls": 5
+    }
+  ]
+}

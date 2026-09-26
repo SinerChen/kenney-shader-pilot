@@ -1,0 +1,7 @@
+{
+  "task": "E_L1",
+  "name": "clamp_invalid_uv",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

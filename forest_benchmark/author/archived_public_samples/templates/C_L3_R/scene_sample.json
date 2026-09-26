@@ -1,0 +1,22 @@
+{
+  "task": "C_L3_R",
+  "scope": "Public fixed development example; required behavior follows the contract, native reference validation is pending.",
+  "reset_overrides": {
+    "cloud_sigma": 0,
+    "fog_density": 0
+  },
+  "query": {
+    "name": "fog_query",
+    "receiver": "public/local_cloud_fog.json"
+  },
+  "required_output": {
+    "T_cloud": 1,
+    "T_view": 1,
+    "L_scatter": [
+      0,
+      0,
+      0
+    ]
+  },
+  "note": "Original sky, ambient, terrain materials and geometry shadows continue unchanged."
+}

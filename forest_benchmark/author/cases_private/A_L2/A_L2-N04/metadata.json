@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N04",
+  "purpose": "差分步长",
+  "input_design": "同场改变 epsilon",
+  "criterion": "符合指定离散算子",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

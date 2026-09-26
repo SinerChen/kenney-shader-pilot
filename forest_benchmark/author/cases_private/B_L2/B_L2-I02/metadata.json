@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-I02",
+  "intervention": "只换注水位置",
+  "control": "固定接触深度和历史",
+  "relation": "湿痕起点变，脚印不被移动",
+  "status": "GENERATED",
+  "baseline_length": 23,
+  "intervention_name": "source_position"
+}

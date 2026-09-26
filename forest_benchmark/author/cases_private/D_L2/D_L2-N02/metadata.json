@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N02",
+  "purpose": "静水有源",
+  "input_design": "v=0,decay=0",
+  "criterion": "dt*S 和空间核",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G01",
+  "purpose": "真实资源读取",
+  "input_design": "本次指定 U/V，采多个非对称坐标",
+  "criterion": "实际样本与已验证原资源含义一致",
+  "observations": "GPU采样、资源类型/维度和源 hash",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

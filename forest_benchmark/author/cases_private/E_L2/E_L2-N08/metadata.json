@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N08",
+  "purpose": "非方网格",
+  "input_design": "dx!=dz",
+  "criterion": "真实空间尺度",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "workspaces_checked": 50,
+  "checks": [
+    {
+      "task": "A_L1",
+      "package": "PASS",
+      "clean_import": "PASS",
+      "runtime": "PASS"
+    },
+    {
+      "task": "A_L2",
+      "package": "PASS",
+      "predecessor_metadata": "PASS"
+    },
+    {
+      "task": "A_L3",
+      "package": "PASS",
+      "clean_import": "PASS",
+      "runtime": "PASS"
+    }
+  ],
+  "path": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\public_layout\\1790443406527012300"
+}

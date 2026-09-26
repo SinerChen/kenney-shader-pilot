@@ -1,0 +1,123 @@
+{
+  "task_id": "C_L3_S",
+  "constraint_ids": [
+    "F04"
+  ],
+  "predecessor": "C_L2",
+  "integration_groups": [
+    {
+      "id": "C_L3_S-G01",
+      "purpose": "原场密度绑定",
+      "input_design": "固定原天空状态，采多个世界位置",
+      "criterion": "新增密度来自原场，不是独立近似动画",
+      "observations": "原场私有探针、提交 rho_grid、源签名",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G02",
+      "purpose": "原时钟正常推进",
+      "input_design": "按固定 dt 推进原天空",
+      "criterion": "云影/雾受光同源、同tick更新",
+      "observations": "密度、T_cloud、L_scatter 序列",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G03",
+      "purpose": "暂停与继续",
+      "input_design": "使用公开时钟控制暂停/继续",
+      "criterion": "暂停时无独立云漂移，继续后不重置错位",
+      "observations": "源时钟、世界点响应",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G04",
+      "purpose": "相位配置变体",
+      "input_design": "按公开规则 reset 到不同相位",
+      "criterion": "相位对应原云场，不只改阴影贴图偏移",
+      "observations": "原天空和地面/雾对应关系",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G05",
+      "purpose": "方向/速度变化",
+      "input_design": "在合法配置边界改变原云运动参数",
+      "criterion": "空间及时间响应均随原场变化",
+      "observations": "多个世界点跨时刻 density/T",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G06",
+      "purpose": "相机独立性",
+      "input_design": "冻结原场只移动相机",
+      "criterion": "世界锚定阴影不跟屏幕，雾按视角合法变化",
+      "observations": "世界查询、原视图/新视图",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G07",
+      "purpose": "光源方向变化",
+      "input_design": "固定密度，按公开范围改变目标方向光",
+      "criterion": "光程关系改变，不能仅改变亮度",
+      "observations": "光路 T、地面影区和雾贡献",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G08",
+      "purpose": "云雾分离消融",
+      "input_design": "分别原云密度归零、雾密度归零",
+      "criterion": "零云不等于无雾；零雾保留云影",
+      "observations": "各自独立输出与背景",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G09",
+      "purpose": "原环境保护",
+      "input_design": "关新增效果但保留全部配置/资源",
+      "criterion": "天空、原表面阴影、环境光及非目标保持",
+      "observations": "原系统属性和隔离帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "C_L3_S-G10",
+      "purpose": "同提交干净重放",
+      "input_design": "清缓存并重跑时间/相机序列",
+      "criterion": "映射和结果复现，无隐含作者机器状态",
+      "observations": "源/补丁哈希、运行日志和预算",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "原天空继续运行，另建同速度但不同噪声的地面暗斑。",
+    "只共用时间，不转换坐标/尺度/方向。",
+    "每帧跟随相机移动世界云影。",
+    "缓存初始化密度或固定上一帧输入。",
+    "改变天空/太阳使独立阴影看似对齐，或把全部环境光乘 T。"
+  ],
+  "requires_frozen": [
+    "native_world_mapping_proof",
+    "source_clock_protocol",
+    "world_density_grid_error",
+    "directional_light_scope",
+    "source_parameter_valid_domains"
+  ]
+}

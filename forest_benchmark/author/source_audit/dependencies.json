@@ -1,0 +1,520 @@
+{
+  "dummy.tscn": [
+    "Shaders/Sky/sky volumetric clouds.gdshader"
+  ],
+  "Groundcover/Forest plants test.tres": [
+    "Meshes/Plants/fern_02_a.glb",
+    "addons/groundcover/GroundcoverData.gd",
+    "addons/groundcover/GroundcoverMesh.gd"
+  ],
+  "Groundcover/Forest plants.tres": [
+    "Meshes/Plants/fern_02_a.glb",
+    "Meshes/Plants/fern_02_b.glb",
+    "Meshes/Plants/fern_02_c.glb",
+    "Meshes/Plants/fern_02_d.glb",
+    "addons/groundcover/GroundcoverData.gd",
+    "addons/groundcover/GroundcoverMesh.gd"
+  ],
+  "icon.png.import": [
+    ".godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex",
+    "icon.png"
+  ],
+  "Main.tscn": [
+    "Groundcover/Forest plants.tres",
+    "Groundcover/Groundcover.txt",
+    "Materials/fern_02.tres",
+    "Meshes/Main Terrain.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock01.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock02.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock03.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock04.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock05.glb",
+    "Meshes/Rocks/rock_moss_set_01_rock06.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock07.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock08.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock09.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock10.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock11.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock12.glb",
+    "Meshes/Rocks/rock_moss_set_02_rock13.glb",
+    "Meshes/Trees/Tree big 1.glb",
+    "Meshes/Trees/Tree_big_2.glb",
+    "Meshes/Trees/Tree_med_1.glb",
+    "Meshes/Trees/Tree_med_2.glb",
+    "Meshes/Trees/Tree_small_1.glb",
+    "Meshes/Trees/Tree_small_2.glb",
+    "Meshes/Trees/Tree_tall_1.glb",
+    "Meshes/Trees/Tree_tall_2.glb",
+    "Meshes/Trees/dry_branches_medium_01_a.glb",
+    "Meshes/Trees/dry_branches_medium_01_b.glb",
+    "Meshes/Trees/dry_branches_medium_01_c.glb",
+    "Shaders/Sky/perlworlnoise.tga",
+    "Shaders/Sky/sky volumetric clouds.gdshader",
+    "Shaders/Sky/weather.bmp",
+    "Shaders/Sky/worlnoise.bmp",
+    "addons/groundcover/Groundcover.gd"
+  ],
+  "Materials/dry_branches_medium_01.tres": [
+    "Textures/Trees/dry_branches_medium_01_arm_4k.jpg",
+    "Textures/Trees/dry_branches_medium_01_diff_4k.jpg",
+    "Textures/Trees/dry_branches_medium_01_nor_gl_4k.png"
+  ],
+  "Materials/fern_02.tres": [
+    "Shaders/Plant.gdshader",
+    "Textures/Plants/fern_02_diff_4k.png",
+    "Textures/Plants/fern_02_nor_gl_4k.png",
+    "Textures/Plants/fern_02_rough_4k.png"
+  ],
+  "Materials/River.tres": [
+    "Shaders/River.tres"
+  ],
+  "Materials/rock_moss_set_01.tres": [
+    "Textures/Rocks/rock_moss_set_01_diff_4k.jpg",
+    "Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg",
+    "Textures/Rocks/rock_moss_set_01_rough_4k.jpg"
+  ],
+  "Materials/rock_moss_set_02.tres": [
+    "Textures/Rocks/rock_moss_set_02_diff_4k.jpg",
+    "Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg",
+    "Textures/Rocks/rock_moss_set_02_rough_4k.jpg"
+  ],
+  "Materials/Terrain 1.tres": [
+    "Shaders/Blend8 splat.gdshader",
+    "Textures/Splat map 1.png",
+    "Textures/Splat map 2.png",
+    "Textures/Terrain/terrain1_color.jpg",
+    "Textures/Terrain/terrain1_normal.jpg",
+    "Textures/Terrain/terrain1_ormh.png"
+  ],
+  "Materials/Terrain 2.tres": [
+    "Shaders/Blend4 vcol.gdshader",
+    "Textures/Terrain/terrain2_color.jpg",
+    "Textures/Terrain/terrain2_normal.jpg",
+    "Textures/Terrain/terrain2_ormh.png"
+  ],
+  "Materials/Tree bark.tres": [
+    "Shaders/Plant.gdshader",
+    "Textures/Trees/bark_brown_02_arm_4k.jpg",
+    "Textures/Trees/bark_brown_02_diff_4k.jpg",
+    "Textures/Trees/bark_brown_02_nor_gl_4k.png"
+  ],
+  "Materials/Tree branch LOD.tres": [
+    "Shaders/Plant.gdshader",
+    "Textures/Trees/Tree_Branch_LOD_BaseColor.png",
+    "Textures/Trees/Tree_Branch_LOD_Normal.png",
+    "Textures/Trees/Tree_Branch_LOD_orm.png"
+  ],
+  "Materials/Tree branch.tres": [
+    "Shaders/Plant.gdshader",
+    "Textures/Trees/Tree_Branch_BaseColor.png",
+    "Textures/Trees/Tree_Branch_Normal.png",
+    "Textures/Trees/Tree_Branch_orm.png"
+  ],
+  "Materials/Tree LOD.tres": [
+    "Textures/Trees/Tree_LOD_BaseColor.png",
+    "Textures/Trees/Tree_LOD_Normal.png",
+    "Textures/Trees/Tree_LOD_orm.png"
+  ],
+  "Meshes/Main Terrain.glb.import": [
+    ".godot/imported/Main Terrain.glb-e8e4059e9a01481bae2cbe4bd321fe6f.scn",
+    "Materials/River.tres",
+    "Materials/Terrain 1.tres",
+    "Meshes/Main Terrain.glb"
+  ],
+  "Meshes/Plants/fern_02_a.glb.import": [
+    ".godot/imported/fern_02_a.glb-71dc87a8dc3c4600e91166501669e6ab.scn",
+    "Materials/fern_02.tres",
+    "Meshes/Plants/fern_02_a.glb"
+  ],
+  "Meshes/Plants/fern_02_b.glb.import": [
+    ".godot/imported/fern_02_b.glb-e632a9ce23717ac42832a59be10d079f.scn",
+    "Materials/fern_02.tres",
+    "Meshes/Plants/fern_02_b.glb"
+  ],
+  "Meshes/Plants/fern_02_c.glb.import": [
+    ".godot/imported/fern_02_c.glb-f4a4491e932e22992c679719ccb552f2.scn",
+    "Materials/fern_02.tres",
+    "Meshes/Plants/fern_02_c.glb"
+  ],
+  "Meshes/Plants/fern_02_d.glb.import": [
+    ".godot/imported/fern_02_d.glb-53fcbd8ddd293fee7db341846a8ebeb2.scn",
+    "Materials/fern_02.tres",
+    "Meshes/Plants/fern_02_d.glb"
+  ],
+  "Meshes/Plants/Grass1.glb.import": [
+    ".godot/imported/Grass1.glb-882d55b37bed95fef674c551ac1b1e18.scn",
+    "Meshes/Plants/Grass1.glb"
+  ],
+  "Meshes/Plants/Grass2.glb.import": [
+    ".godot/imported/Grass2.glb-6040f5c0f8a790fa4ce7a655e3bf185d.scn",
+    "Meshes/Plants/Grass2.glb"
+  ],
+  "Meshes/Plants/Grass3.glb.import": [
+    ".godot/imported/Grass3.glb-23a2b314e9691cb339660f2a9a1ad27d.scn",
+    "Meshes/Plants/Grass3.glb"
+  ],
+  "Meshes/Plants/Grass4.glb.import": [
+    ".godot/imported/Grass4.glb-79291dfd9ce5191b66730cd1ad053a68.scn",
+    "Meshes/Plants/Grass4.glb"
+  ],
+  "Meshes/Plants/Grass5.glb.import": [
+    ".godot/imported/Grass5.glb-1839a468badbcfa87ae72f857308c451.scn",
+    "Meshes/Plants/Grass5.glb"
+  ],
+  "Meshes/Plants/Grass6.glb.import": [
+    ".godot/imported/Grass6.glb-8380126f932a03de95c6afa03154f07b.scn",
+    "Meshes/Plants/Grass6.glb"
+  ],
+  "Meshes/Plants/Grass7.glb.import": [
+    ".godot/imported/Grass7.glb-54412bf6d74be7013e85ce00b97a514c.scn",
+    "Meshes/Plants/Grass7.glb"
+  ],
+  "Meshes/Plants/Grass8.glb.import": [
+    ".godot/imported/Grass8.glb-d6eb79d8f9b6d482f770852fd296d3f2.scn",
+    "Meshes/Plants/Grass8.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock01.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock01.glb-c593c5655558881585e8a9b3c1140a55.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock01.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock02.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock02.glb-deffbe00ffedf6944321dae635256058.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock02.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock03.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock03.glb-440dd4a159e2db51baeb71728b73bbb5.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock03.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock04.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock04.glb-906d8fd04c4c4b7bd10b8bd5b43c7792.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock04.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock05.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock05.glb-ce03bc0783c855918e41467deaa16767.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock05.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_01_rock06.glb.import": [
+    ".godot/imported/rock_moss_set_01_rock06.glb-4fdcec33ea4ee0fd547cbe9770b74474.scn",
+    "Materials/rock_moss_set_01.tres",
+    "Meshes/Rocks/rock_moss_set_01_rock06.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock07.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock07.glb-d94322fb21c6d8d346749f4e50093c8d.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock07.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock08.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock08.glb-98247387a381f9ba422738bd94515f28.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock08.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock09.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock09.glb-6b91b25730dd44ca9032181e55fe2b24.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock09.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock10.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock10.glb-6b243f46b0a27251a5d314aa5cb180b6.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock10.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock11.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock11.glb-8c828e13f80ff06c017dac43b24c49c1.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock11.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock12.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock12.glb-e87c9400af89348c3075bc768ccdafa0.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock12.glb"
+  ],
+  "Meshes/Rocks/rock_moss_set_02_rock13.glb.import": [
+    ".godot/imported/rock_moss_set_02_rock13.glb-75f3ff2d8c40414c819ef82facd19ef9.scn",
+    "Materials/rock_moss_set_02.tres",
+    "Meshes/Rocks/rock_moss_set_02_rock13.glb"
+  ],
+  "Meshes/Trees/dry_branches_medium_01_a.glb.import": [
+    ".godot/imported/dry_branches_medium_01_a.glb-9ec8f13091f3863f3ce18b61982c902a.scn",
+    "Materials/dry_branches_medium_01.tres",
+    "Meshes/Trees/dry_branches_medium_01_a.glb"
+  ],
+  "Meshes/Trees/dry_branches_medium_01_b.glb.import": [
+    ".godot/imported/dry_branches_medium_01_b.glb-8b87a012708fccc01a1defafadb91c67.scn",
+    "Materials/dry_branches_medium_01.tres",
+    "Meshes/Trees/dry_branches_medium_01_b.glb"
+  ],
+  "Meshes/Trees/dry_branches_medium_01_c.glb.import": [
+    ".godot/imported/dry_branches_medium_01_c.glb-2d96be835fb1a380648d2ccb15d8cad1.scn",
+    "Materials/dry_branches_medium_01.tres",
+    "Meshes/Trees/dry_branches_medium_01_c.glb"
+  ],
+  "Meshes/Trees/Tree big 1.glb.import": [
+    ".godot/imported/Tree big 1.glb-5fb618391541f7f9683e0c9836182622.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree big 1.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_big_2.glb.import": [
+    ".godot/imported/Tree_big_2.glb-bd516460041025e7d5b5c295b43d7ac5.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_big_2.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_med_1.glb.import": [
+    ".godot/imported/Tree_med_1.glb-76fd88016a45534aca11f9da6a994c25.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_med_1.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_med_2.glb.import": [
+    ".godot/imported/Tree_med_2.glb-e71988509a27d9477bbb9ca6ea1f0cbf.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_med_2.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_small_1.glb.import": [
+    ".godot/imported/Tree_small_1.glb-79705ba1053b4e733bd25478ac5a5cda.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_small_1.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_small_2.glb.import": [
+    ".godot/imported/Tree_small_2.glb-da76c8f41b7d4a4aaf310ee0ce7821ef.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_small_2.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_tall_1.glb.import": [
+    ".godot/imported/Tree_tall_1.glb-beff726561617d9a3839fb5e7836b3bf.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_tall_1.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "Meshes/Trees/Tree_tall_2.glb.import": [
+    ".godot/imported/Tree_tall_2.glb-e9ce98c68d4e3d5336282887d4312619.scn",
+    "Materials/Tree LOD.tres",
+    "Materials/Tree bark.tres",
+    "Materials/Tree branch LOD.tres",
+    "Materials/Tree branch.tres",
+    "Meshes/Trees/Tree_tall_2.glb",
+    "Scripts/Import/Tree_LOD.gd"
+  ],
+  "project.godot": [
+    "Main.tscn",
+    "icon.png"
+  ],
+  "Screenshots/1.jpg.import": [
+    ".godot/imported/1.jpg-43c127a7b9e07fe0987a1843ad89faf6.ctex",
+    "Screenshots/1.jpg"
+  ],
+  "Scripts/Import/Tree_LOD.gd": [],
+  "Shaders/Blend4 vcol.gdshader": [],
+  "Shaders/Blend8 splat.gdshader": [],
+  "Shaders/Plant.gdshader": [],
+  "Shaders/River.tres": [],
+  "Shaders/Sky/perlworlnoise.tga.import": [
+    ".godot/imported/perlworlnoise.tga-8b5b9579b121462b80f3c6e46b53918c.ctex3d",
+    "Shaders/Sky/perlworlnoise.tga"
+  ],
+  "Shaders/Sky/sky volumetric clouds.gdshader": [],
+  "Shaders/Sky/weather.bmp.import": [
+    ".godot/imported/weather.bmp-7b23e1c9e4d3dea766c01bb040ea4bb3.s3tc.ctex",
+    "Shaders/Sky/weather.bmp"
+  ],
+  "Shaders/Sky/worlnoise.bmp.import": [
+    ".godot/imported/worlnoise.bmp-85f08794495c268d8483d4e1f460fdd3.s3tc.ctex",
+    "Shaders/Sky/worlnoise.bmp"
+  ],
+  "Textures/Plants/fern_02_diff_4k.png.import": [
+    ".godot/imported/fern_02_diff_4k.png-9cad75f4ba01c46e510ea4fb016aed97.s3tc.ctex",
+    "Textures/Plants/fern_02_diff_4k.png"
+  ],
+  "Textures/Plants/fern_02_nor_gl_4k.png.import": [
+    ".godot/imported/fern_02_nor_gl_4k.png-d74ef7bd1ac7d370a1574f5f20d906db.s3tc.ctex",
+    "Textures/Plants/fern_02_nor_gl_4k.png"
+  ],
+  "Textures/Plants/fern_02_rough_4k.png.import": [
+    ".godot/imported/fern_02_rough_4k.png-51efbfb6dcb8097cae3c8385cbbb3740.s3tc.ctex",
+    "Textures/Plants/fern_02_rough_4k.png"
+  ],
+  "Textures/Plants/Grass_BaseColor.png.import": [
+    ".godot/imported/Grass_BaseColor.png-a77c3867a30cb3cc315ff47cba538bea.ctex",
+    "Textures/Plants/Grass_BaseColor.png"
+  ],
+  "Textures/Plants/Grass_Dry_BaseColor.png.import": [
+    ".godot/imported/Grass_Dry_BaseColor.png-529d493e32e44f8415031b9722756ade.ctex",
+    "Textures/Plants/Grass_Dry_BaseColor.png"
+  ],
+  "Textures/Plants/Grass_Normal.png.import": [
+    ".godot/imported/Grass_Normal.png-003ed5df7bc0283e64008b4d1d8ecf0c.ctex",
+    "Textures/Plants/Grass_Normal.png"
+  ],
+  "Textures/Plants/Grass_ORM.png.import": [
+    ".godot/imported/Grass_ORM.png-1a1246cb1e2de213bec0a795cdcacb60.ctex",
+    "Textures/Plants/Grass_ORM.png"
+  ],
+  "Textures/Rocks/rock_moss_set_01_diff_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_01_diff_4k.jpg-ad081fabdc78df8f0f7b02a83048fd3c.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_01_diff_4k.jpg"
+  ],
+  "Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_01_nor_gl_4k.jpg-52f0d8fdfb338956a377eeff4d3dfb4b.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg"
+  ],
+  "Textures/Rocks/rock_moss_set_01_nor_gl_4k.png.import": [
+    ".godot/imported/rock_moss_set_01_nor_gl_4k.png-c6cc8cd6dd7f0e9ceaad602d0a343c4e.etc2.ctex",
+    ".godot/imported/rock_moss_set_01_nor_gl_4k.png-c6cc8cd6dd7f0e9ceaad602d0a343c4e.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_01_nor_gl_4k.png"
+  ],
+  "Textures/Rocks/rock_moss_set_01_rough_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_01_rough_4k.jpg-4b21efd999fcdca3ceb6776fe4c33eb7.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_01_rough_4k.jpg"
+  ],
+  "Textures/Rocks/rock_moss_set_02_diff_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_02_diff_4k.jpg-015e98b69867fe1d1539ed0d7ab3d00c.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_02_diff_4k.jpg"
+  ],
+  "Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_02_nor_gl_4k.jpg-e1f4009a06871c3102ab2905f30c869e.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg"
+  ],
+  "Textures/Rocks/rock_moss_set_02_nor_gl_4k.png.import": [
+    ".godot/imported/rock_moss_set_02_nor_gl_4k.png-d6122f44c835c39506ac89152972e4d4.etc2.ctex",
+    ".godot/imported/rock_moss_set_02_nor_gl_4k.png-d6122f44c835c39506ac89152972e4d4.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_02_nor_gl_4k.png"
+  ],
+  "Textures/Rocks/rock_moss_set_02_rough_4k.jpg.import": [
+    ".godot/imported/rock_moss_set_02_rough_4k.jpg-0ae4ec4455d05b5aa3a15d1bf850a394.s3tc.ctex",
+    "Textures/Rocks/rock_moss_set_02_rough_4k.jpg"
+  ],
+  "Textures/Splat map 1.png.import": [
+    ".godot/imported/Splat map 1.png-dfa8c54537eac2b80777aa89951e560f.s3tc.ctex",
+    "Textures/Splat map 1.png"
+  ],
+  "Textures/Splat map 2.png.import": [
+    ".godot/imported/Splat map 2.png-c8b345c2a08cd2d597fa134a6dc3a22e.s3tc.ctex",
+    "Textures/Splat map 2.png"
+  ],
+  "Textures/Terrain/terrain1_color.jpg.import": [
+    ".godot/imported/terrain1_color.jpg-cdad0273c5f822dbcc0db69e16146a25.s3tc.ctexarray",
+    "Textures/Terrain/terrain1_color.jpg"
+  ],
+  "Textures/Terrain/terrain1_normal.jpg.import": [
+    ".godot/imported/terrain1_normal.jpg-610517d75a76e8015810141779cec8ef.s3tc.ctexarray",
+    "Textures/Terrain/terrain1_normal.jpg"
+  ],
+  "Textures/Terrain/terrain1_ormh.png.import": [
+    ".godot/imported/terrain1_ormh.png-2753e556dc43ff8d9778a2e76fb622e8.s3tc.ctexarray",
+    "Textures/Terrain/terrain1_ormh.png"
+  ],
+  "Textures/Terrain/terrain2_color.jpg.import": [
+    ".godot/imported/terrain2_color.jpg-623ea93723b7b387bb877d244f1e3987.s3tc.ctexarray",
+    "Textures/Terrain/terrain2_color.jpg"
+  ],
+  "Textures/Terrain/terrain2_normal.jpg.import": [
+    ".godot/imported/terrain2_normal.jpg-c833ec65d9f631d2a2b7a4915f91b7bc.s3tc.ctexarray",
+    "Textures/Terrain/terrain2_normal.jpg"
+  ],
+  "Textures/Terrain/terrain2_ormh.png.import": [
+    ".godot/imported/terrain2_ormh.png-6e434479209a9dfe17b722dabdbf1a98.s3tc.ctexarray",
+    "Textures/Terrain/terrain2_ormh.png"
+  ],
+  "Textures/Trees/bark_brown_01_arm_4k.jpg.import": [
+    ".godot/imported/bark_brown_01_arm_4k.jpg-592c5bea0082f8ba8078252a23b81d1a.ctex",
+    "Textures/Trees/bark_brown_01_arm_4k.jpg"
+  ],
+  "Textures/Trees/bark_brown_01_diff_4k.jpg.import": [
+    ".godot/imported/bark_brown_01_diff_4k.jpg-91af438494d5b471bcadffcbeb014f6e.ctex",
+    "Textures/Trees/bark_brown_01_diff_4k.jpg"
+  ],
+  "Textures/Trees/bark_brown_01_nor_gl_4k.png.import": [
+    ".godot/imported/bark_brown_01_nor_gl_4k.png-54373417f99391a4bb92583563e5d61f.ctex",
+    "Textures/Trees/bark_brown_01_nor_gl_4k.png"
+  ],
+  "Textures/Trees/bark_brown_02_arm_4k.jpg.import": [
+    ".godot/imported/bark_brown_02_arm_4k.jpg-bd2f61eb6f2eb3c1fbd0b7e5da8eb180.s3tc.ctex",
+    "Textures/Trees/bark_brown_02_arm_4k.jpg"
+  ],
+  "Textures/Trees/bark_brown_02_diff_4k.jpg.import": [
+    ".godot/imported/bark_brown_02_diff_4k.jpg-5847552e99439c2fcc76fb3637908b3a.s3tc.ctex",
+    "Textures/Trees/bark_brown_02_diff_4k.jpg"
+  ],
+  "Textures/Trees/bark_brown_02_nor_gl_4k.png.import": [
+    ".godot/imported/bark_brown_02_nor_gl_4k.png-9f5f5ffdf14d57e85a7926885ce63fac.s3tc.ctex",
+    "Textures/Trees/bark_brown_02_nor_gl_4k.png"
+  ],
+  "Textures/Trees/dry_branches_medium_01_arm_4k.jpg.import": [
+    ".godot/imported/dry_branches_medium_01_arm_4k.jpg-8edb45dc91ec494cedb650474c6a2825.s3tc.ctex",
+    "Textures/Trees/dry_branches_medium_01_arm_4k.jpg"
+  ],
+  "Textures/Trees/dry_branches_medium_01_diff_4k.jpg.import": [
+    ".godot/imported/dry_branches_medium_01_diff_4k.jpg-e40580ab215a032eeb11fbc15efaba50.s3tc.ctex",
+    "Textures/Trees/dry_branches_medium_01_diff_4k.jpg"
+  ],
+  "Textures/Trees/dry_branches_medium_01_nor_gl_4k.png.import": [
+    ".godot/imported/dry_branches_medium_01_nor_gl_4k.png-6d1184ab801852cededbc3624f7ade5e.s3tc.ctex",
+    "Textures/Trees/dry_branches_medium_01_nor_gl_4k.png"
+  ],
+  "Textures/Trees/Tree_Branch_BaseColor.png.import": [
+    ".godot/imported/Tree_Branch_BaseColor.png-769951d34d7ddaeaf5b45fe50a947538.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_BaseColor.png"
+  ],
+  "Textures/Trees/Tree_Branch_LOD_BaseColor.png.import": [
+    ".godot/imported/Tree_Branch_LOD_BaseColor.png-63be75fcb789006129e2df4dab8b5d54.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_LOD_BaseColor.png"
+  ],
+  "Textures/Trees/Tree_Branch_LOD_Normal.png.import": [
+    ".godot/imported/Tree_Branch_LOD_Normal.png-c8f9a78d9723a141c282afed117213de.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_LOD_Normal.png"
+  ],
+  "Textures/Trees/Tree_Branch_LOD_orm.png.import": [
+    ".godot/imported/Tree_Branch_LOD_orm.png-1deb06f600644493e970abb8f92f5d18.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_LOD_orm.png"
+  ],
+  "Textures/Trees/Tree_Branch_Normal.png.import": [
+    ".godot/imported/Tree_Branch_Normal.png-6dcb479f37fa0ade1dc9990f5177048a.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_Normal.png"
+  ],
+  "Textures/Trees/Tree_Branch_orm.png.import": [
+    ".godot/imported/Tree_Branch_orm.png-60761e942d9d035a2284318a647c9d62.s3tc.ctex",
+    "Textures/Trees/Tree_Branch_orm.png"
+  ],
+  "Textures/Trees/Tree_LOD_BaseColor.png.import": [
+    ".godot/imported/Tree_LOD_BaseColor.png-62d3b819462c2ac8209dd86710df0d61.s3tc.ctex",
+    "Textures/Trees/Tree_LOD_BaseColor.png"
+  ],
+  "Textures/Trees/Tree_LOD_Normal.png.import": [
+    ".godot/imported/Tree_LOD_Normal.png-111234937b4851706a6dbe11e0a667c5.s3tc.ctex",
+    "Textures/Trees/Tree_LOD_Normal.png"
+  ],
+  "Textures/Trees/Tree_LOD_orm.png.import": [
+    ".godot/imported/Tree_LOD_orm.png-64e6c005a1fea3b16034e3b7b994ebb9.s3tc.ctex",
+    "Textures/Trees/Tree_LOD_orm.png"
+  ]
+}

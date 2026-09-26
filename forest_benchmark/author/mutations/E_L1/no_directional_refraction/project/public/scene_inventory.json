@@ -1,0 +1,171 @@
+{
+  "task_id": "E_L1",
+  "files": [
+    {
+      "path": "assets/environment.json",
+      "sha256": "24f1c50c8c422943477bc307101d4f93755876ec7049778c5bb86d359bb0f603",
+      "type": ".json",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "assets/front_path_length.f32",
+      "sha256": "99500e063d4eb4bb6786a16abfbf1bcfd82b23cf3933e30859725f823d66bfae",
+      "type": ".f32",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "assets/metadata.json",
+      "sha256": "7810a16e1b9e88e1e7a309ea1f0e26a563d165d261b47c97daac31834ddef66e",
+      "type": ".json",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "assets/rear_path_length.f32",
+      "sha256": "4dc08df7663d265e0c69736de43ae9e4713fabaff85f7f4502ce942b00af1d50",
+      "type": ".f32",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/adapter_base.gd",
+      "sha256": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+      "type": ".gd",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/background.gdshader",
+      "sha256": "de720b742b241084ae4b3d0ec938d4b9c0975669b522ceb4bcd65aac162d9043",
+      "type": ".gdshader",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/base_stage.tscn",
+      "sha256": "5f5bc95689cf0032dd8965f3b7587ec4ded950b3cc57c4197437f0de33a4f09e",
+      "type": ".tscn",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/bridge.gd",
+      "sha256": "5ebc54c71885353c752e29c0cc85109dc7d2fc882b2da633cb9bc09ce0437237",
+      "type": ".gd",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/entry.tscn",
+      "sha256": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+      "type": ".tscn",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/evidence.gd",
+      "sha256": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+      "type": ".gd",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/runner.gd",
+      "sha256": "40a8224ad02a63720a5230723dabae70bc1a8a8f83c73e15ca2f5823ce510f98",
+      "type": ".gd",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "fixture/visual_runner.gd",
+      "sha256": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+      "type": ".gd",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/api.md",
+      "sha256": "ba93734c89888af0b6359ab922e42f39d74662c933d57196e729d33a7eb94f02",
+      "type": ".md",
+      "source": "provided_specification",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/contract.md",
+      "sha256": "528eeaa4a7ce53db7f7213a7b9f24bec6e4e8733c64ea65646b5488ad75546aa",
+      "type": ".md",
+      "source": "provided_specification",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/demo.json",
+      "sha256": "e32ef5c47a16a37e24a1ae3ca6b60115e48145f17c0847370737a82f4dd845e5",
+      "type": ".json",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/prompt.md",
+      "sha256": "8e391c8963a9cb48a68fe2ea03425ec04e10b76fd4f7c63644e629224cda03fd",
+      "type": ".md",
+      "source": "provided_specification",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/sample_inputs/sample.json",
+      "sha256": "b33fc369d66d0b1d0bc3db00a561e27227b038dfd6d049e764be937a92761165",
+      "type": ".json",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    },
+    {
+      "path": "public/task.json",
+      "sha256": "77a49cb543c87914abbe7217d28dbf3eabcd2d41449351a81ce3783de04dfe9a",
+      "type": ".json",
+      "source": "generated",
+      "license": "project-authored",
+      "status": "CREATED",
+      "access": "read_only"
+    }
+  ],
+  "source_scene": "constructed_fixture",
+  "target_nodes": [
+    "TransparentTarget"
+  ]
+}

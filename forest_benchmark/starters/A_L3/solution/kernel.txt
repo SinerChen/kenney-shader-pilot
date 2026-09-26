@@ -1,0 +1,153 @@
+#version 450
+layout(local_size_x=64) in;
+layout(set=0,binding=0,std430) readonly buffer Input { float input_data[]; };
+layout(set=0,binding=1,std430) writeonly buffer Output { float output_data[]; };
+#define K_P 0
+#define K_time 1
+#define K_t0 2
+#define K_dt 3
+#define K_points 4
+#define K_origin_ref 5
+#define K_R0 6
+#define K_speed 7
+#define K_noise_amplitude 8
+#define K_base_frequency 9
+#define K_octaves 10
+#define K_gain 11
+#define K_lacunarity 12
+#define K_width 13
+#define K_enabled 14
+#define K_frequency 15
+#define K_epsilon 16
+#define K_drift 17
+#define K_offsets 18
+#define K_up_speed 19
+#define K_curl_strength 20
+#define K_lifetime 21
+#define K_particles 22
+#define K_emit_threshold 23
+#define K_enable_emission 24
+#define K_anchors 25
+#define K_instance_transform 26
+#define K_grid_size 27
+#define K_domain_min 28
+#define K_domain_size 29
+#define K_d_max 30
+#define K_depth 31
+#define K_mask_size 32
+#define K_mask 33
+#define K_contacts 34
+#define K_pom_rays 35
+#define K_wetness 36
+#define K_source 37
+#define K_diffusion 38
+#define K_lambda0 39
+#define K_beta 40
+#define K_cloud_world_to_local 41
+#define K_cloud_min 42
+#define K_cloud_max 43
+#define K_density_size 44
+#define K_density 45
+#define K_cloud_sigma 46
+#define K_cloud_steps 47
+#define K_light_dir 48
+#define K_light_rgb 49
+#define K_fog_min 50
+#define K_fog_max 51
+#define K_fog_density 52
+#define K_fog_scatter 53
+#define K_fog_absorb 54
+#define K_g 55
+#define K_view_steps 56
+#define K_view_rays 57
+#define K_uvs 58
+#define K_period 59
+#define K_phase 60
+#define K_tiling 61
+#define K_flow 62
+#define K_texture_size 63
+#define K_color_texture 64
+#define K_normal_texture 65
+#define K_normal_encoded 66
+#define K_foam 67
+#define K_sources 68
+#define K_decay 69
+#define K_eta_i 70
+#define K_eta_t 71
+#define K_ell 72
+#define K_sigma_a 73
+#define K_optical_rays 74
+#define K_view_projection 75
+#define K_reflection_color 76
+#define K_fallback_color 77
+#define K_height 78
+#define K_height_prev 79
+#define K_force 80
+#define K_wave_speed 81
+#define K_gamma 82
+#define K_front_visible 83
+#define K_rear_visible 84
+#define K_burn_visible 85
+#define K_embers_visible 86
+#define K_ambient_color 87
+#define K_direct_color 88
+#define K_dry_color 89
+#define K_wet_color 90
+#define K_dry_roughness 91
+#define K_wet_roughness 92
+#define K_wood_color 93
+#define K_char_color 94
+#define K_ember_color 95
+#define K_contact_count 96
+#define K_source_count 97
+// Independent GPU implementation. The host prepends version, bindings and field indices.
+const vec3 gradients[12]=vec3[12](vec3(1,1,0),vec3(-1,1,0),vec3(1,-1,0),vec3(-1,-1,0),vec3(1,0,1),vec3(-1,0,1),vec3(1,0,-1),vec3(-1,0,-1),vec3(0,1,1),vec3(0,-1,1),vec3(0,1,-1),vec3(0,-1,-1));
+float at(int key,int i) { return input_data[int(input_data[4+key])+i]; }
+float s(int key) { return at(key,0); }
+vec3 v3(int key,int i) { return vec3(at(key,i),at(key,i+1),at(key,i+2)); }
+int imod(int x,int n) { return ((x%n)+n)%n; }
+int perm(int x) { return int(at(K_P,imod(x,256))); }
+float contribution(ivec3 cell,vec3 d) { return dot(gradients[perm(perm(perm(cell.x)+cell.y)+cell.z)%12],d); }
+float noise3(vec3 x) {
+    ivec3 b=ivec3(floor(x)); vec3 f=fract(x),u=f*f*f*(f*(f*6.-15.)+10.);
+    float a[8];
+    for(int k=0;k<2;k++) for(int j=0;j<2;j++) for(int i=0;i<2;i++)
+        a[i+2*j+4*k]=contribution(b+ivec3(i,j,k),f-vec3(i,j,k));
+    return mix(mix(mix(a[0],a[1],u.x),mix(a[2],a[3],u.x),u.y),mix(mix(a[4],a[5],u.x),mix(a[6],a[7],u.x),u.y),u.z);
+}
+vec4 burn_at(vec3 x,float t) {
+    float sum=0.,weights=0.,weight=1.,frequency=s(K_base_frequency);
+    for(int k=0;k<int(s(K_octaves));k++){sum+=weight*noise3(x*frequency);weights+=weight;weight*=s(K_gain);frequency*=s(K_lacunarity);}
+    float n=sum/weights;
+    float q=s(K_R0)+s(K_speed)*(t-s(K_t0))-length(x-v3(K_origin_ref,0))+s(K_noise_amplitude)*n;
+    float b=s(K_enabled)>0.?smoothstep(-s(K_width),s(K_width),q):0.;
+    return vec4(n,q,b,4.*b*(1.-b));
+}
+vec3 potential(vec3 x,float t) {
+    vec3 q=s(K_frequency)*x+v3(K_drift,0)*t;
+    return vec3(noise3(q+v3(K_offsets,0)),noise3(q+v3(K_offsets,3)),noise3(q+v3(K_offsets,6)));
+}
+vec3 curl_at(vec3 x,float t) {
+    float e=s(K_epsilon);
+    vec3 dx=(potential(x+vec3(e,0,0),t)-potential(x-vec3(e,0,0),t))/(2.*e);
+    vec3 dy=(potential(x+vec3(0,e,0),t)-potential(x-vec3(0,e,0),t))/(2.*e);
+    vec3 dz=(potential(x+vec3(0,0,e),t)-potential(x-vec3(0,0,e),t))/(2.*e);
+    return vec3(dy.z-dz.y,dz.x-dx.z,dx.y-dy.x);
+}
+vec3 velocity_at(vec3 x,float t) { return vec3(0,s(K_up_speed),0)+s(K_curl_strength)*curl_at(x,t); }
+void put(int base,int offset,vec3 value){for(int k=0;k<3;k++) output_data[base+offset+k]=value[k];}
+void main() {
+    int id=int(gl_GlobalInvocationID.x),op=int(input_data[0]),rows=int(input_data[1]),channels=int(input_data[2]);
+    if(id>=rows)return;
+    int b=id*channels; float t=s(K_time),dt=s(K_dt);
+    if(op==0){
+        vec4 v=burn_at(v3(K_points,id*3),t);for(int k=0;k<4;k++)output_data[b+k]=v[k];
+    }
+    else if(op==1){
+        vec3 x=v3(K_points,id*3);put(b,0,curl_at(x,t));put(b,3,velocity_at(x,t));
+    }
+    else if(op==2){
+        vec3 x=v3(K_particles,id*4);x+=dt*velocity_at(x+.5*dt*velocity_at(x,t),t+.5*dt);
+        float age=at(K_particles,id*4+3)+dt;put(b,0,x);output_data[b+3]=age;output_data[b+4]=age<s(K_lifetime)?1.:0.;output_data[b+5]=max(0.,1.-age/s(K_lifetime));
+    }
+}

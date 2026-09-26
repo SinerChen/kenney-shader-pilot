@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G10",
+  "purpose": "重导入重置和预算",
+  "input_design": "干净导入后重放事件/变体",
+  "criterion": "无缓存坐标或场，重置清晰，预算达标",
+  "observations": "事件日志、GPU资源、导入审计",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,206 @@
+{
+  "task": "C_L2",
+  "case_task": "C_L2",
+  "pass": 1,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "C_L2-N01",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5674662292003632,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.43253377079963684,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L2-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.43579911929995574,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3321744203567505,
+          "expected": 0.7679735396567062,
+          "allowed": 0.00035359470793134125
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.43579911929995574,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3321744203567505,
+          "expected": 0.7679735396567062,
+          "allowed": 0.00035359470793134125
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.43579911929995574,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3321744203567505,
+          "expected": 0.7679735396567062,
+          "allowed": 0.00035359470793134125
+        },
+        {
+          "path": "/3",
+          "max_error": 0.43579911929995574,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3321744203567505,
+          "expected": 0.7679735396567062,
+          "allowed": 0.00035359470793134125
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.4216523702682816,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.32139164209365845,
+          "expected": 0.7430440123619401,
+          "allowed": 0.00034860880247238805
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.3115046096768529,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3072787821292877,
+          "expected": 0.6187833918061406,
+          "allowed": 0.0003237566783612281
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5126043403435152,
+          "index": [
+            0,
+            4
+          ],
+          "actual": 0.3871801495552063,
+          "expected": 0.8997844898987215,
+          "allowed": 0.0003799568979797443
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5674661092003701,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.43253377079963684,
+          "expected": 0.999999880000007,
+          "allowed": 0.0003999999760000014
+        },
+        {
+          "path": "/3",
+          "max_error": 0.5674662292003632,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.43253377079963684,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.4265794728460982,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.3413940668106079,
+          "expected": 0.7679735396567061,
+          "allowed": 0.00035359470793134125
+        },
+        {
+          "path": "/3",
+          "max_error": 0.4366411243143751,
+          "index": [
+            1,
+            4
+          ],
+          "actual": 0.33133241534233093,
+          "expected": 0.767973539656706,
+          "allowed": 0.0003535947079313412
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\shared_opacity\\C_L2\\numeric",
+  "scope": "numeric_only"
+}

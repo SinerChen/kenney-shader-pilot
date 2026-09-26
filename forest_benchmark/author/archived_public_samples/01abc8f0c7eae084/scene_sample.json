@@ -1,0 +1,18 @@
+{
+  "task": "B_L3",
+  "scope": "Public fixed development example; required behavior follows the contract, native reference validation is pending.",
+  "reset_overrides": {
+    "initial_depth": 0,
+    "initial_wetness": 0
+  },
+  "advance": {
+    "dt": 0,
+    "events": []
+  },
+  "required_output": {
+    "depth_field": "64 x 48 float32 zeros",
+    "wetness_field": "64 x 48 float32 zeros",
+    "effective_normal": "original terrain normal"
+  },
+  "note": "The support field is computed from original textures; its value is not supplied by this example."
+}

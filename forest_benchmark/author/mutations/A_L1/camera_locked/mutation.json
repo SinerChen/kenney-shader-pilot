@@ -1,0 +1,7 @@
+{
+  "task": "A_L1",
+  "name": "camera_locked",
+  "file": "solution\\display.gd",
+  "detector": "camera_state",
+  "source_occurrences": 1
+}

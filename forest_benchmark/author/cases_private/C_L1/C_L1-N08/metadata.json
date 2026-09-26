@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N08",
+  "purpose": "平行边界",
+  "input_design": "一轴或两轴方向分量为零",
+  "criterion": "稳定 slab 判定",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

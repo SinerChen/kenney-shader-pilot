@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-I05",
+  "intervention": "关太阳",
+  "control": "light_rgb=0",
+  "relation": "太阳贡献消失，非授权环境贡献保持",
+  "status": "GENERATED",
+  "baseline_length": 3,
+  "intervention_name": "sun"
+}

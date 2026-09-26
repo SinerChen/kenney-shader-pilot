@@ -1,0 +1,576 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "AMD Radeon 780M Graphics",
+  "responses": [
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0001.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0002.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0003.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0004.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0005.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0006.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0007.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0008.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0009.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0010.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0011.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0012.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0013.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0014.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0015.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0016.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0017.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0018.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0019.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "uv_phase0.x",
+        "uv_phase0.y",
+        "uv_phase1.x",
+        "uv_phase1.y",
+        "weight0",
+        "weight1",
+        "sampled_color.r",
+        "sampled_color.g",
+        "sampled_color.b",
+        "blended_normal.x",
+        "blended_normal.y",
+        "blended_normal.z"
+      ],
+      "file": "gpu_0020.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        3,
+        12
+      ],
+      "status": "OK",
+      "time": 0.0
+    }
+  ]
+}

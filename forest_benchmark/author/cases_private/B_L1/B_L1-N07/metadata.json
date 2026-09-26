@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N07",
+  "purpose": "地面边缘",
+  "input_design": "印章跨出域",
+  "criterion": "裁切、不 wrap",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

@@ -1,0 +1,347 @@
+{
+  "task": "B_L2",
+  "case_task": "B_L2",
+  "pass": 3,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "B_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.736,
+          "index": [
+            18,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.736,
+          "allowed": 0.0003472
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.6859999999999999,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6859999999999999,
+          "allowed": 0.0003372
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.6949090909090908,
+          "index": [
+            4,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6949090909090908,
+          "allowed": 0.00033898181818181817
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.7091111111111111,
+          "index": [
+            18,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.7091111111111111,
+          "allowed": 0.00034182222222222227
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.784,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.784,
+          "allowed": 0.0003568
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.3493778408581599,
+          "index": [
+            6,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.3493778408581599,
+          "allowed": 0.000269875568171632
+        },
+        {
+          "path": "/4/wetness_field",
+          "max_error": 0.3493778408581599,
+          "index": [
+            6,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.3493778408581599,
+          "allowed": 0.000269875568171632
+        },
+        {
+          "path": "/6/wetness_field",
+          "max_error": 0.6547263841091194,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6547263841091194,
+          "allowed": 0.0003309452768218239
+        },
+        {
+          "path": "/8/wetness_field",
+          "max_error": 0.633134801397975,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.633134801397975,
+          "allowed": 0.000326626960279595
+        },
+        {
+          "path": "/10/wetness_field",
+          "max_error": 0.6123602386595601,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6123602386595601,
+          "allowed": 0.00032247204773191204
+        },
+        {
+          "path": "/12/wetness_field",
+          "max_error": 0.5924107396064717,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5924107396064717,
+          "allowed": 0.0003184821479212944
+        },
+        {
+          "path": "/14/wetness_field",
+          "max_error": 0.5732821903663177,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5732821903663177,
+          "allowed": 0.00031465643807326355
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.3493778408581599,
+          "index": [
+            6,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.3493778408581599,
+          "allowed": 0.000269875568171632
+        },
+        {
+          "path": "/4/wetness_field",
+          "max_error": 0.3493778408581599,
+          "index": [
+            6,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.3493778408581599,
+          "allowed": 0.000269875568171632
+        },
+        {
+          "path": "/6/wetness_field",
+          "max_error": 0.6547263841091194,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6547263841091194,
+          "allowed": 0.0003309452768218239
+        },
+        {
+          "path": "/8/wetness_field",
+          "max_error": 0.633134801397975,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.633134801397975,
+          "allowed": 0.000326626960279595
+        },
+        {
+          "path": "/10/wetness_field",
+          "max_error": 0.6123602386595601,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6123602386595601,
+          "allowed": 0.00032247204773191204
+        },
+        {
+          "path": "/12/wetness_field",
+          "max_error": 0.5924107396064717,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5924107396064717,
+          "allowed": 0.0003184821479212944
+        },
+        {
+          "path": "/14/wetness_field",
+          "max_error": 0.5732821903663177,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5732821903663177,
+          "allowed": 0.00031465643807326355
+        },
+        {
+          "path": "/17/wetness_field",
+          "max_error": 0.3493778408581599,
+          "index": [
+            6,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.3493778408581599,
+          "allowed": 0.000269875568171632
+        },
+        {
+          "path": "/19/wetness_field",
+          "max_error": 0.6547263841091194,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6547263841091194,
+          "allowed": 0.0003309452768218239
+        },
+        {
+          "path": "/21/wetness_field",
+          "max_error": 0.633134801397975,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.633134801397975,
+          "allowed": 0.000326626960279595
+        },
+        {
+          "path": "/23/wetness_field",
+          "max_error": 0.6123602386595601,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.6123602386595601,
+          "allowed": 0.00032247204773191204
+        },
+        {
+          "path": "/25/wetness_field",
+          "max_error": 0.5924107396064717,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5924107396064717,
+          "allowed": 0.0003184821479212944
+        },
+        {
+          "path": "/27/wetness_field",
+          "max_error": 0.5732821903663177,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.5732821903663177,
+          "allowed": 0.00031465643807326355
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\source_only\\B_L2\\numeric",
+  "scope": "numeric_only"
+}

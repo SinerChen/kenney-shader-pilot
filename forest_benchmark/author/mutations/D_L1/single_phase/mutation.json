@@ -1,0 +1,7 @@
+{
+  "task": "D_L1",
+  "name": "single_phase",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

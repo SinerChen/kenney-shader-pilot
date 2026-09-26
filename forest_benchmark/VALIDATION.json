@@ -1,0 +1,621 @@
+{
+  "generated": "2026-09-27T01:31:18+08:00",
+  "status": "AUTHOR_BUILD_VALIDATED_RELEASE_BLOCKED",
+  "source": {
+    "archive": "forest_benchmark_codex_v0_1.zip",
+    "sha256": "96be3c7f79334c56b36309108f35bb2934d396535d2ef93e328b76e66de083f1",
+    "files": 67,
+    "source_status": "SPEC_VALIDATED_RUNTIME_NOT_RUN"
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.4",
+    "engine": {
+      "build": "official",
+      "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+      "hex": 263681,
+      "major": 4,
+      "minor": 6,
+      "patch": 1,
+      "status": "stable",
+      "string": "4.6.1-stable (official)",
+      "timestamp": 0
+    },
+    "engine_sha256": "bd9e27c6994a128aaab45cdda4d372de87b91900618ba2de55c6aa29248d5b56",
+    "gpu": "AMD Radeon 780M Graphics",
+    "driver": "32.0.13046.2004",
+    "renderer": "Forward+ / Vulkan",
+    "capture": {
+      "width": 640,
+      "height": 360,
+      "fps": 15,
+      "frames": 90,
+      "format": "H.264 MP4",
+      "views": 2
+    },
+    "numeric_format": "GPU float32 raw buffer versus independent CPU float64"
+  },
+  "totals": {
+    "tasks": 10,
+    "numeric": 100,
+    "inherited": 50,
+    "legal_alternative": 100,
+    "causal_numeric": 25,
+    "causal_visual": 25,
+    "negative_rejected": 49,
+    "negative_total": 49,
+    "videos": 20
+  },
+  "unit_tests": [
+    {
+      "suite": "cpu_analytic",
+      "tests": 19,
+      "status": "PASS",
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "suite": "model_tools",
+      "tests": 10,
+      "status": "PASS",
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "limitations": [
+    "正式模型实验未启动，原实验保持暂停；没有模型成绩或调用轨迹。",
+    "L1/L2 使用合成最小场景；v0.2 的 6 个 L3 及原生源绑定状态单独见 L3_STATUS.md。",
+    "read/write 路径限制和运行时快照不等于 OS 沙箱。外部候选执行器尚未接入，默认拒绝执行任意候选。",
+    "图像响应、不变量、资源绑定检查已运行；VLM 审美评分、评分模型和阈值仍未校准。",
+    "推理与资源预算尚未锁定，正式模型导出门禁保持关闭；--review 仅用于人工检查。",
+    "错误变体含部分故障代理，例如方向性扩散算子模拟串行原地更新偏差；不是每种作弊实现的穷尽证明。",
+    "合法实现变体主要改变线程组、噪声多项式求值和 POM 粗搜索，不代表已覆盖全部合法解法。",
+    "当前容限为 atol=rtol=2e-4，布尔值精确匹配；跨 GPU 的最终容限仍待锁定。"
+  ],
+  "tasks": [
+    {
+      "task": "A_L1",
+      "title": "程序灼烧与焦化",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 2.980594006191106e-07,
+      "inherited": null,
+      "legal_alternative": {
+        "task": "A_L1",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": null,
+      "causal_visual": null,
+      "negative_rejected": 4,
+      "negative_total": 4,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "material_channels",
+        "bound_target": "TargetMesh",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "A_L1",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 21,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\A_L1"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/A_L1/visual/effect.mp4",
+        "oblique": "author/reports/A_L1/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "A_L2",
+      "title": "灼烧前沿驱动的旋涡余烬",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 2.4358317682882102e-05,
+      "inherited": {
+        "task": "A_L2",
+        "type": "inherited",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "legal_alternative": {
+        "task": "A_L2",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": 5,
+      "causal_visual": 5,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "material_channels",
+        "bound_target": "TargetMesh",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "A_L2",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 21,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\A_L2"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/A_L2/visual/effect.mp4",
+        "oblique": "author/reports/A_L2/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "B_L1",
+      "title": "持久化脚印压痕与 POM",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 3.337860099428269e-08,
+      "inherited": null,
+      "legal_alternative": {
+        "task": "B_L1",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": null,
+      "causal_visual": null,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "pom_hit",
+        "bound_target": "GroundPatch",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "B_L1",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 20,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\B_L1"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/B_L1/visual/effect.mp4",
+        "oblique": "author/reports/B_L1/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "B_L2",
+      "title": "压痕约束的湿润扩散与干燥",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 1.4555611849154104e-07,
+      "inherited": {
+        "task": "B_L2",
+        "type": "inherited",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "legal_alternative": {
+        "task": "B_L2",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": 5,
+      "causal_visual": 5,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "pom_hit",
+        "bound_target": "GroundPatch",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "B_L2",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 20,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\B_L2"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/B_L2/visual/effect.mp4",
+        "oblique": "author/reports/B_L2/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "C_L1",
+      "title": "三维云密度驱动的地面云影",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 7.152557346401522e-07,
+      "inherited": null,
+      "legal_alternative": {
+        "task": "C_L1",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": null,
+      "causal_visual": null,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "cloud_transmittance",
+        "bound_target": "GroundReceiver",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "C_L1",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 19,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\C_L1"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/C_L1/visual/effect.mp4",
+        "oblique": "author/reports/C_L1/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "C_L2",
+      "title": "云遮光约束的薄雾与体积光",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 3.199999488723293e-07,
+      "inherited": {
+        "task": "C_L2",
+        "type": "inherited",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "legal_alternative": {
+        "task": "C_L2",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": 5,
+      "causal_visual": 5,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "cloud_transmittance",
+        "bound_target": "GroundReceiver",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "C_L2",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 19,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\C_L2"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/C_L2/visual/effect.mp4",
+        "oblique": "author/reports/C_L2/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "D_L1",
+      "title": "双相位 Flow Mapping 水纹",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 2.1362304636340923e-06,
+      "inherited": null,
+      "legal_alternative": {
+        "task": "D_L1",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": null,
+      "causal_visual": null,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "flow_phases",
+        "bound_target": "WaterPatch",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "D_L1",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 21,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\D_L1"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/D_L1/visual/effect.mp4",
+        "oblique": "author/reports/D_L1/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "D_L2",
+      "title": "固定接触源的泡沫输运",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 1.9073486328125e-05,
+      "inherited": {
+        "task": "D_L2",
+        "type": "inherited",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "legal_alternative": {
+        "task": "D_L2",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": 5,
+      "causal_visual": 5,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "flow_phases",
+        "bound_target": "WaterPatch",
+        "bound_uniform": "values0"
+      },
+      "starter": {
+        "task": "D_L2",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 21,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\D_L2"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/D_L2/visual/effect.mp4",
+        "oblique": "author/reports/D_L2/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "E_L1",
+      "title": "透明水滴/水膜的折射与吸收",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 1.8263419471198361e-06,
+      "inherited": null,
+      "legal_alternative": {
+        "task": "E_L1",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": null,
+      "causal_visual": null,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "front_optical_terms",
+        "bound_target": "TransparentTarget",
+        "bound_uniform": "optical_uv"
+      },
+      "starter": {
+        "task": "E_L1",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 22,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\E_L1"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/E_L1/visual/effect.mp4",
+        "oblique": "author/reports/E_L1/oblique/effect.mp4"
+      }
+    },
+    {
+      "task": "E_L2",
+      "title": "交互涟漪与前景折射的正确组合",
+      "numeric": {
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "max_abs": 7.43962507154805e-08,
+      "inherited": {
+        "task": "E_L2",
+        "type": "inherited",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS"
+      },
+      "legal_alternative": {
+        "task": "E_L2",
+        "type": "legal_alternative",
+        "pass": 10,
+        "total": 10,
+        "status": "PASS",
+        "differences": [
+          "32 invocations/workgroup",
+          "different noise polynomial evaluation",
+          "1024 POM coarse intervals"
+        ]
+      },
+      "causal_numeric": 5,
+      "causal_visual": 5,
+      "negative_rejected": 5,
+      "negative_total": 5,
+      "gpu_render_consistency": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "source": "front_optical_terms",
+        "bound_target": "FrontTarget",
+        "bound_uniform": "optical_uv"
+      },
+      "starter": {
+        "task": "E_L2",
+        "clean_import": "PASS",
+        "starter": "PASS",
+        "source_unchanged": true,
+        "file_audit": "PASS",
+        "runtime_protection": "PASS",
+        "export_whitelist": "PASS",
+        "export_files": 22,
+        "evidence": "author\\reports\\clean\\1790414479903565200\\E_L2"
+      },
+      "release": "BLOCKED_RELEASE",
+      "videos": {
+        "overview": "author/reports/E_L2/visual/effect.mp4",
+        "oblique": "author/reports/E_L2/oblique/effect.mp4"
+      }
+    }
+  ],
+  "l3": {
+    "version": "0.2",
+    "generated": "2026-09-27T01:31:19+08:00",
+    "task_specs": 16,
+    "l3_specs": 6,
+    "native_starters": 5,
+    "l3_integration_designs": 60,
+    "l3_integration_executed": 0,
+    "predecessor_preflight_numeric": 120,
+    "predecessor_preflight_coupling": 30,
+    "l3_candidate_core_regressions": "NOT_RUN",
+    "active_l3_tasks": []
+  },
+  "task_specs": 16
+}

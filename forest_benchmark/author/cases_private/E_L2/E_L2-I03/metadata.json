@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-I03",
+  "intervention": "清波状态",
+  "control": "重置 h/hprev",
+  "relation": "水面回基态，前景无残留动画",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "clear_wave"
+}

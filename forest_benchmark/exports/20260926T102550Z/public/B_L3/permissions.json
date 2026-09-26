@@ -1,0 +1,32 @@
+{
+  "default_file_access": "readonly",
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "material_bindings": [
+    {
+      "node": "Main Terrain/Plane_031",
+      "surfaces": [
+        0
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    }
+  ],
+  "effect_root": "EffectRoot",
+  "input_slots": [],
+  "protected_properties": [
+    "original source bytes",
+    "geometry",
+    "transforms",
+    "visibility",
+    "LOD ranges",
+    "wind and alpha cutout",
+    "shared materials",
+    "camera",
+    "lighting",
+    "environment",
+    "TAA",
+    "occlusion"
+  ]
+}

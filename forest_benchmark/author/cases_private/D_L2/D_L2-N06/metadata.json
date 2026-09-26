@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N06",
+  "purpose": "源位置/尺寸",
+  "input_design": "多个 source/radius/rate",
+  "criterion": "世界锚点和核半径",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

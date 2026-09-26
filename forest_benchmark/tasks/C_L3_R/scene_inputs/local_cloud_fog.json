@@ -1,0 +1,77 @@
+{
+  "receiver": "Main Terrain/Plane_031",
+  "receiver_chart": {
+    "origin_world": [
+      -6,
+      -0.44444428985080425,
+      12
+    ],
+    "axes_world": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "extent_m": [
+      8,
+      6
+    ],
+    "grid_size": [
+      64,
+      48
+    ],
+    "surface_rule": "Vertical intersection with the selected original mesh, interpolate original UV/UV2/TBN; inward depth follows its local surface normal.",
+    "sample_at": "cell centers",
+    "source_geometry_sha256": "1505ed024599e300ce8ce2b8496a792c92beb6dcf82f77c9a6be0a5ebfc61f3b"
+  },
+  "density_coefficients": {
+    "a": 0.8,
+    "b": 0.2,
+    "theta": 0.35
+  },
+  "grid_size": [
+    24,
+    12,
+    24
+  ],
+  "cloud_bounds_world": [
+    [
+      -10,
+      5.5555557101491955,
+      9
+    ],
+    [
+      -2,
+      8.555555710149196,
+      15
+    ]
+  ],
+  "fog_bounds_world": [
+    [
+      -10,
+      -0.3444442898508042,
+      9
+    ],
+    [
+      -2,
+      2.555555710149196,
+      15
+    ]
+  ],
+  "cloud_sigma": 0.8,
+  "cloud_steps": 32,
+  "view_steps": 32,
+  "fog_density": 0.15,
+  "fog_scatter": 0.8,
+  "fog_absorb": 0.2,
+  "g": 0.2,
+  "directional_light": "DirectionalLight3D",
+  "lighting_scope": "Only the selected original surface direct-light contribution; preserve native ambient and geometry shadows.",
+  "status": "INPUT_DOMAIN_SELECTED_VISUAL_CALIBRATION_PENDING"
+}

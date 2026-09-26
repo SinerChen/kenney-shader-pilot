@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "camera": {
+    "basis": "[X: (0.984563, 0.0, -0.175033), Y: (-0.022782, 0.991493, -0.128149), Z: (0.173544, 0.130158, 0.976187)]",
+    "position": "(0.8, 1.8, 4.5)",
+    "requested": {
+      "look_at": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "position": [
+        0.8,
+        1.8,
+        4.5
+      ]
+    }
+  },
+  "runtime_status": "RENDERED",
+  "startup": {
+    "status": "OK"
+  },
+  "video": "scratch/observations/1790445422402971200/effect.mp4",
+  "logs": [
+    "scratch/observations/1790445422402971200/import.log",
+    "scratch/observations/1790445422402971200/godot.log",
+    "scratch/observations/1790445422402971200/result.json"
+  ],
+  "observation_directory": "scratch/observations/1790445422402971200",
+  "request": {
+    "camera": {
+      "position": [
+        0.8,
+        1.8,
+        4.5
+      ],
+      "look_at": [
+        0,
+        1.2,
+        0
+      ]
+    },
+    "frames": 60,
+    "resolution": [
+      960,
+      640
+    ]
+  },
+  "candidate_files": {
+    "adapter.gd": "685930660c939dca21af8d19136c6cb1e6bd07336bd2897b2453a49c0e6de880",
+    "burn_math.gdshaderinc": "b63944e8a67f60c04738b5120411f68c5d9d53be1695c917798d65d9d54cdf42",
+    "check.gd": "906ea0ac7cec2f46b80cd34432310bb25b6b14fcb3efd283ec222a91242964eb",
+    "effect.tscn": "234cc986048b3afc2ef5cdce27bbf4bfe8b9d0033579becbe9c6c645fb1a3619",
+    "wood_burn.gdshader": "9d7de2eb7492be553d94fa8b2aa49613d9844c4923b75b7e441c61c4a1535b47"
+  },
+  "images": [
+    {
+      "path": "scratch/observations/1790445422402971200/frame_00000.png",
+      "frame": 0,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    },
+    {
+      "path": "scratch/observations/1790445422402971200/frame_00029.png",
+      "frame": 29,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    },
+    {
+      "path": "scratch/observations/1790445422402971200/frame_00059.png",
+      "frame": 59,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+[
+  {
+    "task": "A_L1",
+    "mutation": "global_black",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "A_L1",
+    "mutation": "moving_noise",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "A_L1",
+    "mutation": "camera_locked",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "bound_burn_state_camera_error": 0.0
+    },
+    "faulty": {
+      "bound_burn_state_camera_error": 1.2966103553771973
+    }
+  },
+  {
+    "task": "A_L1",
+    "mutation": "fake_probe",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.012598192401960783
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "A_L2",
+    "mutation": "fixed_emitter",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "charred_emitter",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "delete_stock",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "euler",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "A_L2",
+    "mutation": "repeat_birth",
+    "status": "REJECTED",
+    "numeric_pass": 6,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "decal_only",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "clear_depth",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "duplicate_stamp",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "wrong_pom_sign",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L1",
+    "mutation": "constant_offset",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "ignore_depth",
+    "status": "REJECTED",
+    "numeric_pass": 7,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "global_wet",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.013600297294843864
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "B_L2",
+    "mutation": "source_only",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "directional_update",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "B_L2",
+    "mutation": "style_changes_state",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "independent_shadow",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "density_slice",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "omit_length",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L1",
+    "mutation": "darken_ambient",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "ambient_image_mae": 0.0
+    },
+    "faulty": {
+      "ambient_image_mae": 0.01980743350580973
+    }
+  },
+  {
+    "task": "C_L1",
+    "mutation": "negative_start",
+    "status": "REJECTED",
+    "numeric_pass": 8,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "shared_opacity",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "fake_cloud",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "phase_reversed",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "omit_sun_fog",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "C_L2",
+    "mutation": "double_shadow",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "linear_pixel": [
+        0.2581828529215958,
+        0.2232279573168085,
+        0.162029375639111
+      ],
+      "expected": [
+        0.2588390032890793,
+        0.22301656749192594,
+        0.16153618305705003
+      ],
+      "max_error": 0.0006561503674834546,
+      "pixel": [
+        313,
+        217
+      ]
+    },
+    "faulty": {
+      "linear_pixel": [
+        0.17464740365558504,
+        0.14995978981060856,
+        0.1119324278369056
+      ],
+      "expected": [
+        0.2588390032890793,
+        0.22301656749192594,
+        0.16153618305705003
+      ],
+      "max_error": 0.08419159963349424,
+      "pixel": [
+        313,
+        217
+      ]
+    }
+  },
+  {
+    "task": "D_L1",
+    "mutation": "single_phase",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "bad_weights",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "decode_velocity",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "srgb_normal",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "D_L1",
+    "mutation": "unbounded_uv",
+    "status": "REJECTED",
+    "numeric_pass": 7,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "moving_source",
+    "status": "REJECTED",
+    "numeric_pass": 5,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "source_only",
+    "status": "REJECTED",
+    "numeric_pass": 3,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "carry_field_with_source",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "tiling_velocity",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "D_L2",
+    "mutation": "forward_sample",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "schlick",
+    "status": "REJECTED",
+    "numeric_pass": 4,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "eta_inverse",
+    "status": "REJECTED",
+    "numeric_pass": 2,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "no_directional_refraction",
+    "status": "REJECTED",
+    "numeric_pass": 1,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "clamp_invalid_uv",
+    "status": "REJECTED",
+    "numeric_pass": 9,
+    "total": 10
+  },
+  {
+    "task": "E_L1",
+    "mutation": "fake_probe",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.0048113879811183735
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "loop_wave",
+    "status": "REJECTED",
+    "numeric_pass": 0,
+    "total": 10
+  },
+  {
+    "task": "E_L2",
+    "mutation": "stale_background",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "missing_rear",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.02304492329339143,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "hide_front",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.004204866784676834
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "recursive_capture",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.014986343727305732,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 7
+      }
+    }
+  }
+]

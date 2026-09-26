@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G06",
+  "purpose": "零密度与雾消融",
+  "input_design": "分别得到零 rho_grid、零雾密度",
+  "criterion": "云影/雾的消失关系符合 C_L1/C_L2",
+  "observations": "独立状态、目标受光",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

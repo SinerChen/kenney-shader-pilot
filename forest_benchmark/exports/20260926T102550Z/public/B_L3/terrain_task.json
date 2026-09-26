@@ -1,0 +1,59 @@
+{
+  "target": "Main Terrain/Plane_031",
+  "material": "res://Materials/Terrain 1.tres",
+  "shader": "res://Shaders/Blend8 splat.gdshader",
+  "semantic_layer_labels": [
+    "brown soil",
+    "gravel",
+    "coarse bare ground",
+    "moss",
+    "leaf litter",
+    "moss and soil",
+    "lichen and rock",
+    "unused white"
+  ],
+  "semantic_basis": "Author visual classification of the original 2x4 color array; only layer 0 is authorized in this task.",
+  "allowed_layers": [
+    0
+  ],
+  "tau_allow": 0.55,
+  "threshold_margin": 0.005,
+  "chart": {
+    "origin_world": [
+      -6,
+      -0.44444428985080425,
+      12
+    ],
+    "axes_world": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "extent_m": [
+      8,
+      6
+    ],
+    "grid_size": [
+      64,
+      48
+    ],
+    "surface_rule": "Vertical intersection with the selected original mesh, interpolate original UV/UV2/TBN; inward depth follows its local surface normal.",
+    "sample_at": "cell centers",
+    "source_geometry_sha256": "1505ed024599e300ce8ce2b8496a792c92beb6dcf82f77c9a6be0a5ebfc61f3b"
+  },
+  "material_weights": "Original get_depth_blended_weights normalized within each group, then multiply groups by (1-splat1.a) and splat1.a.",
+  "state_boundary": "four-neighbor zero flux across H=0 or patch boundary",
+  "texture_sampling_for_support": {
+    "lod": 0,
+    "filter": "linear",
+    "array_repeat": true
+  },
+  "calibration": "DRAFT_SOURCE_MEASURED_GPU_TOLERANCE_PENDING"
+}

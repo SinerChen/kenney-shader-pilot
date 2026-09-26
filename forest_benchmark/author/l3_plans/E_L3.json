@@ -1,0 +1,124 @@
+{
+  "task_id": "E_L3",
+  "constraint_ids": [
+    "F06"
+  ],
+  "predecessor": "E_L2",
+  "integration_groups": [
+    {
+      "id": "E_L3-G01",
+      "purpose": "水体确实进入输入",
+      "input_design": "前景覆盖具有可辨纹理的原水体",
+      "criterion": "前景内部包括当前水面，不跳过水面只见河床",
+      "observations": "前景真实输入、原水面中间色、覆盖ROI",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G02",
+      "purpose": "波事件联动",
+      "input_design": "改变扰动位置/触发时刻",
+      "criterion": "前景内外都响应同一真实波状态",
+      "observations": "h/n、原水面结果和前景帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G03",
+      "purpose": "前景光学独立",
+      "input_design": "固定波和原河流时刻，改变允许IOR/路径",
+      "criterion": "前景按E1变化，后景状态不受影响",
+      "observations": "光学输出、相同h、前景结果",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G04",
+      "purpose": "同tick更新",
+      "input_design": "每步改变后景中性标记/原水状态",
+      "criterion": "不能读取初始化/上一帧，不能额外推进模拟",
+      "observations": "实际像素标记、tick和状态日志",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G05",
+      "purpose": "前景不反馈",
+      "input_design": "显示/隐藏/移动前景",
+      "criterion": "原水体输入不包含前景，没有递归残影",
+      "observations": "背景来源和帧链记录",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G06",
+      "purpose": "零波回归",
+      "input_design": "清空h/hprev，原水纹继续",
+      "criterion": "法线合成为恒等，原光学/流动保留",
+      "observations": "n_base/n_eff、原水基线",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G07",
+      "purpose": "不透明遮挡",
+      "input_design": "授权物体遮挡前景或部分水面",
+      "criterion": "合成遵守深度，不把后景贴在遮挡物上",
+      "observations": "深度/层关系、可见像素",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G08",
+      "purpose": "视角与有效域",
+      "input_design": "公开相机/前景位置范围及越界情况",
+      "criterion": "UV方向/投影/fallback正确，不改主相机",
+      "observations": "背景UV、有效标记、相机记录",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G09",
+      "purpose": "范围与曝光保护",
+      "input_design": "关新增显示但保留其渲染资源",
+      "criterion": "非目标可见性/环境/原水体保持，非双倍曝光",
+      "observations": "隔离回归、主场景属性",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "E_L3-G10",
+      "purpose": "重启重导入与预算",
+      "input_design": "干净导入后持续多帧/重置",
+      "criterion": "无缓存答案/旧RID，内存与额外pass在预算内",
+      "observations": "实际资源、同步日志、CPU/GPU统计",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "前景继续读不包含原水体的默认输入。",
+    "只提高透明绘制优先级但输入仍缺层。",
+    "读取初始化或上一帧完整水面图。",
+    "捕获包含前景本身形成递归反馈。",
+    "把折射关掉或把原水体变成不透明以掩盖缺层。",
+    "新增离屏pass时重复 advance，导致波时间加速。"
+  ],
+  "requires_frozen": [
+    "native_river_render_path",
+    "one_front_one_water_scope",
+    "input_content_capture_feasibility",
+    "normal_combination_frame",
+    "same_tick_tolerances_and_pass_budget"
+  ]
+}

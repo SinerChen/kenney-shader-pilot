@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G07",
+  "purpose": "仅改变余烬参数",
+  "input_design": "灼烧固定，改变 curl 或关闭新发射",
+  "criterion": "灼烧状态不改；存量连续、无新发射",
+  "observations": "核心回归与出生/运动状态",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

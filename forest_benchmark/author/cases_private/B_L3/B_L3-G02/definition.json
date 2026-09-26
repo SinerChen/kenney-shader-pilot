@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G02",
+  "purpose": "禁止层内部",
+  "input_design": "同等强度事件落在禁止区域",
+  "criterion": "新增 d/w 保持零，原材质正常",
+  "observations": "禁区状态和材质端点",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

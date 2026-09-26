@@ -1,0 +1,338 @@
+{
+  "task": "B_L1",
+  "case_task": "B_L1",
+  "pass": 1,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "B_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L1-N02",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.045,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.045,
+          "allowed": 0.000209
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.04,
+          "index": [
+            34,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/4",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/7",
+          "max_error": 0.04,
+          "index": [
+            19,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/4",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.08,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.08,
+          "allowed": 0.00021600000000000002
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.037997047773841025,
+          "index": [
+            47,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.037997047773841025,
+          "allowed": 0.0002075994095547682
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.08,
+          "index": [
+            11,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.08,
+          "allowed": 0.00021600000000000002
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.032,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.032,
+          "allowed": 0.0002064
+        },
+        {
+          "path": "/4",
+          "max_error": 0.046875,
+          "index": [
+            7,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.046875,
+          "allowed": 0.000209375
+        },
+        {
+          "path": "/7",
+          "max_error": 0.04,
+          "index": [
+            2,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    },
+    {
+      "case": "B_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/5/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/7/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/9/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/11/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/13/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/16/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/18/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/20/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/22/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        },
+        {
+          "path": "/24/depth_field",
+          "max_error": 0.04,
+          "index": [
+            27,
+            0
+          ],
+          "actual": 0.0,
+          "expected": 0.04,
+          "allowed": 0.00020800000000000001
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\decal_only\\B_L1\\numeric",
+  "scope": "numeric_only"
+}

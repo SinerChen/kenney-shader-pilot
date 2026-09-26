@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G05",
+  "purpose": "下游因果",
+  "input_design": "相同视角，只改变源资产变体或构造参数",
+  "criterion": "云影和雾内光都响应同一个实际新密度",
+  "observations": "T_cloud、L_scatter、图像",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

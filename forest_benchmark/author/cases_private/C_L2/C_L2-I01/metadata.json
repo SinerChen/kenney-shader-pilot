@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-I01",
+  "intervention": "清云",
+  "control": "rho_cloud=0",
+  "relation": "地面云影消失，雾太阳照明仍在",
+  "status": "GENERATED",
+  "baseline_length": 3,
+  "intervention_name": "clear_cloud"
+}

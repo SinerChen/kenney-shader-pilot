@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "A_L1",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 37
+    },
+    {
+      "task": "A_L2",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 40
+    },
+    {
+      "task": "B_L1",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 36
+    },
+    {
+      "task": "B_L2",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 39
+    },
+    {
+      "task": "C_L1",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 35
+    },
+    {
+      "task": "C_L2",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 38
+    },
+    {
+      "task": "D_L1",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 37
+    },
+    {
+      "task": "D_L2",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 40
+    },
+    {
+      "task": "E_L1",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 38
+    },
+    {
+      "task": "E_L2",
+      "status": "PASS",
+      "videos": [
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        },
+        {
+          "duration": 6,
+          "width": 640,
+          "height": 360,
+          "error": null
+        }
+      ],
+      "local_links": 41
+    }
+  ],
+  "page_errors": [],
+  "playback": "PASS",
+  "mobile_overflow": false
+}

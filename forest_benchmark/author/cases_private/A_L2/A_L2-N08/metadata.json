@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N08",
+  "purpose": "死亡/冷却",
+  "input_design": "age 跨 lifetime",
+  "criterion": "边界 active/cooling",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

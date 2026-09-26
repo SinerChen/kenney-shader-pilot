@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G01",
+  "purpose": "水体确实进入输入",
+  "input_design": "前景覆盖具有可辨纹理的原水体",
+  "criterion": "前景内部包括当前水面，不跳过水面只见河床",
+  "observations": "前景真实输入、原水面中间色、覆盖ROI",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

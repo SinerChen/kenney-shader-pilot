@@ -1,0 +1,45 @@
+{
+  "status": "NORMALIZED_NATIVE_RUNTIME_ENUMERATED",
+  "repository": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "verified_commit": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "commit_evidence": "local GitHub archive commit comment",
+  "archive": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\realistic\\downloads\\forest.zip",
+  "archive_sha256": "432944e493165fafd051c281c712fde12b7bdbf8650681cf6e3222fde2b4254f",
+  "file_count": 192,
+  "source_file_manifest_sha256": "45c511725960ab33bd8abc282073e459953dcc600d1ce1123c7bce5f696c8b2f",
+  "source_origin": "native_snapshot",
+  "original_entry_scene": "res://Main.tscn",
+  "missing_dependencies": [
+    "Textures/Rocks/rock_moss_set_01_nor_gl_4k.png",
+    "Textures/Rocks/rock_moss_set_02_nor_gl_4k.png",
+    "addons/groundcover/Groundcover.gd",
+    "addons/groundcover/GroundcoverData.gd",
+    "addons/groundcover/GroundcoverMesh.gd"
+  ],
+  "original_run_verified": false,
+  "source_directory": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\upstream_forest",
+  "lfs_pointer_files": [],
+  "license_inventory": "author/source_audit/licenses.json",
+  "normalization_patches": [
+    {
+      "path": "Main.tscn",
+      "before": "a9ac88046ad459e670d8f2699562e8d868dc82675f1c3e1ff470fc8730c96af0",
+      "after": "0318618b52ad3f49e777b108779a3885f9be995a8a4e0281acbfc52bb94b55c3",
+      "purpose": "Detach absent editor generator; keep baked meshes, instances, transforms and materials."
+    },
+    {
+      "path": "project.godot",
+      "before": "0aa6c9b95b5b61f825ce4a5cf278507e5f6d18977ec7b6fea85edc6214c65cfc",
+      "after": "324dc7beaf7ec9aee27162dabf8f0676a4902140431be57dbf96eedce8f52992",
+      "purpose": "Pin Godot 4.6 import compatibility; preserve renderer, TAA, occlusion and quality settings."
+    }
+  ],
+  "engine_binary_sha256": "bd9e27c6994a128aaab45cdda4d372de87b91900618ba2de55c6aa29248d5b56",
+  "normalized_run_verified": true,
+  "original_run_note": "Missing upstream editor generator required a recorded patch. Runtime evidence is for the normalized complete scene, not an unmodified upstream run.",
+  "native_node_count": 35273,
+  "native_mesh_instances": 23113,
+  "gpu": "AMD Radeon 780M Graphics",
+  "engine_version": "4.6.1-stable (official)",
+  "renderer": "Forward+ / Vulkan"
+}

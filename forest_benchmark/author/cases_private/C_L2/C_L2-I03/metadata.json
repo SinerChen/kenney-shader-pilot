@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-I03",
+  "intervention": "移动云",
+  "control": "固定雾/相机，只改云相位或变换",
+  "relation": "地面与雾内受光共同响应",
+  "status": "GENERATED",
+  "baseline_length": 3,
+  "intervention_name": "move_cloud"
+}

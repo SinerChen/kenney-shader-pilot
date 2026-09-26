@@ -1,0 +1,341 @@
+[
+  {
+    "task": "A_L2",
+    "group": 1,
+    "status": "PASS",
+    "image_response_mae": 0.01019046160130719,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\A_L2\\I01\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\A_L2\\I01\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "A_L2",
+    "group": 2,
+    "status": "PASS",
+    "image_response_mae": 0.008505196986201887,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\A_L2\\I02\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\A_L2\\I02\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "A_L2",
+    "group": 3,
+    "status": "PASS",
+    "image_response_mae": 0.000235305464778504,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\A_L2\\I03\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\A_L2\\I03\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "A_L2",
+    "group": 4,
+    "status": "PASS",
+    "image_response_mae": 0.0006528685548293392,
+    "invariants": {
+      "burn_state": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\A_L2\\I04\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\A_L2\\I04\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "A_L2",
+    "group": 5,
+    "status": "PASS",
+    "image_response_mae": 0.004533854166666667,
+    "invariants": {
+      "burn_state": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "particle_state": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\A_L2\\I05\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\A_L2\\I05\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "B_L2",
+    "group": 1,
+    "status": "PASS",
+    "image_response_mae": 0.004170825390341322,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\B_L2\\I01\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\B_L2\\I01\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "B_L2",
+    "group": 2,
+    "status": "PASS",
+    "image_response_mae": 0.0013803444989106755,
+    "invariants": {
+      "depth_field": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\B_L2\\I02\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\B_L2\\I02\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "B_L2",
+    "group": 3,
+    "status": "PASS",
+    "image_response_mae": 8.783814451706609e-05,
+    "invariants": {
+      "depth_field": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\B_L2\\I03\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\B_L2\\I03\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "B_L2",
+    "group": 4,
+    "status": "PASS",
+    "image_response_mae": 0.00029400417574437185,
+    "invariants": {
+      "depth_field": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\B_L2\\I04\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\B_L2\\I04\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "B_L2",
+    "group": 5,
+    "status": "PASS",
+    "image_response_mae": 0.003793799927378358,
+    "invariants": {
+      "depth_field": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\B_L2\\I05\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\B_L2\\I05\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "C_L2",
+    "group": 1,
+    "status": "PASS",
+    "image_response_mae": 0.005398533950617284,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\C_L2\\I01\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\C_L2\\I01\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "C_L2",
+    "group": 2,
+    "status": "PASS",
+    "image_response_mae": 0.012973226443355117,
+    "invariants": {
+      "cloud_transmittance": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\C_L2\\I02\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\C_L2\\I02\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "C_L2",
+    "group": 3,
+    "status": "PASS",
+    "image_response_mae": 0.005497395833333333,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\C_L2\\I03\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\C_L2\\I03\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "C_L2",
+    "group": 4,
+    "status": "PASS",
+    "image_response_mae": 0.0514677457788671,
+    "invariants": {
+      "cloud_transmittance": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\C_L2\\I04\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\C_L2\\I04\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "C_L2",
+    "group": 5,
+    "status": "PASS",
+    "image_response_mae": 0.025307853349673202,
+    "invariants": {
+      "cloud_transmittance": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\C_L2\\I05\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\C_L2\\I05\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "D_L2",
+    "group": 1,
+    "status": "PASS",
+    "image_response_mae": 0.002659086782861293,
+    "invariants": {
+      "foam_field": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\D_L2\\I01\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\D_L2\\I01\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "D_L2",
+    "group": 2,
+    "status": "PASS",
+    "image_response_mae": 0.006297811138344226,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\D_L2\\I02\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\D_L2\\I02\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "D_L2",
+    "group": 3,
+    "status": "PASS",
+    "image_response_mae": 0.004600444807552651,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\D_L2\\I03\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\D_L2\\I03\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "D_L2",
+    "group": 4,
+    "status": "PASS",
+    "image_response_mae": 0.001515091684822077,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\D_L2\\I04\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\D_L2\\I04\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "D_L2",
+    "group": 5,
+    "status": "PASS",
+    "image_response_mae": 0.005085222630718954,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\D_L2\\I05\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\D_L2\\I05\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "E_L2",
+    "group": 1,
+    "status": "PASS",
+    "image_response_mae": 0.0007246505083514888,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\E_L2\\I01\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\E_L2\\I01\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "E_L2",
+    "group": 2,
+    "status": "PASS",
+    "image_response_mae": 0.00217468341503268,
+    "invariants": {
+      "wave_height_current": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "wave_height_prev": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "rear_input_unchanged": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\E_L2\\I02\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\E_L2\\I02\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "E_L2",
+    "group": 3,
+    "status": "PASS",
+    "image_response_mae": 0.0009773738198983297,
+    "invariants": {},
+    "baseline": "author\\reports\\visual_coupling\\E_L2\\I03\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\E_L2\\I03\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "E_L2",
+    "group": 4,
+    "status": "PASS",
+    "image_response_mae": 0.007352816358024691,
+    "invariants": {
+      "wave_height_current": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "wave_height_prev": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "rear_input_unchanged": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\E_L2\\I04\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\E_L2\\I04\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  },
+  {
+    "task": "E_L2",
+    "group": 5,
+    "status": "PASS",
+    "image_response_mae": 0.02217365649963689,
+    "invariants": {
+      "wave_height_current": {
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "wave_height_prev": {
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "baseline": "author\\reports\\visual_coupling\\E_L2\\I05\\baseline",
+    "intervention": "author\\reports\\visual_coupling\\E_L2\\I05\\intervention",
+    "meaning": "visible response and specified invariants; aesthetic rubric not scored"
+  }
+]

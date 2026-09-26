@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N10",
+  "purpose": "长时间",
+  "input_design": "多周期输入，范围受公开浮点域限制",
+  "criterion": "无累计状态漂移",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 2
+}

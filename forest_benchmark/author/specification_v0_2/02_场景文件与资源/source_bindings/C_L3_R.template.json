@@ -1,0 +1,41 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "C_L3_R",
+  "status": "SOURCE_UNVERIFIED",
+  "source_origin": null,
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Main.tscn（报告记录 3D TGA / 2D BMP 噪声引用，具体资源路径待核验）"
+  ],
+  "source_gap": "具体噪声文件名、导入类型/布局/采样、维度和所有消费者未闭合。不得凭文件扩展名编造 Texture3D 或 Texture2D 数据，也不得默认两份资源已可重分发。",
+  "verified_commit": null,
+  "checkout_sha256": null,
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": null,
+  "original_entry_scene": null,
+  "real_target_bindings": [],
+  "protected_runtime_properties": [],
+  "authorized_runtime_bindings": [],
+  "source_context_keep": [],
+  "new_target_solution_exclusions": [],
+  "author_normalization_patches": [],
+  "test_interventions": [],
+  "required_source_checks": [
+    "找到报告所述两类资源的真实路径、资源类、原导入设置和天空消费者；没有所需资源时不换生成噪声却仍称 native。",
+    "在固定引擎中验证原始数据的线性采样、尺寸、切片和轴向；为输入取值提供可复核元数据。",
+    "验证前级云影和薄雾可在选定真实接收区局部接入且不改原天空/环境；局部云盒与雾盒不相交。",
+    "原天空可在统一时钟下建立稳定回归基线，新增资源副本/派生缓冲不会污染共享消费者。"
+  ],
+  "required_frozen_fields": [
+    "verified_resource_paths_types_layout",
+    "sample_filter_and_color_space",
+    "density_construction_parameters",
+    "local_light_receiver_scope",
+    "original_consumer_baseline"
+  ],
+  "license_inventory": null,
+  "evidence_files": [],
+  "runtime_verified": false,
+  "can_export_native_task": false
+}

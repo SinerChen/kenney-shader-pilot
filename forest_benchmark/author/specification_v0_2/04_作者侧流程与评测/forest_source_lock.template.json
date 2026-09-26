@@ -1,0 +1,31 @@
+{
+  "schema": "forest-source-lock/0.2",
+  "status": "SOURCE_UNVERIFIED",
+  "repository": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "evidence_basis": "prior attached partial static audit, not a fresh complete checkout in v0.2",
+  "historical_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "requested_source": "Full single-revision checkout chosen and verified by author",
+  "verified_commit": null,
+  "source_file_manifest_sha256": null,
+  "submodules_lfs_complete": false,
+  "engine_version": null,
+  "engine_binary_sha256": null,
+  "renderer": null,
+  "gpu": null,
+  "driver": null,
+  "original_entry_scene": null,
+  "original_run_verified": false,
+  "asset_licenses_verified": false,
+  "normalization_patches": [],
+  "normalized_baseline_sha256": null,
+  "baseline_capture_evidence": [],
+  "task_binding_files": {
+    "A_L3": "02_场景文件与资源/source_bindings/A_L3.template.json",
+    "B_L3": "02_场景文件与资源/source_bindings/B_L3.template.json",
+    "C_L3_R": "02_场景文件与资源/source_bindings/C_L3_R.template.json",
+    "C_L3_S": "02_场景文件与资源/source_bindings/C_L3_S.template.json",
+    "D_L3": "02_场景文件与资源/source_bindings/D_L3.template.json",
+    "E_L3": "02_场景文件与资源/source_bindings/E_L3.template.json"
+  },
+  "release_policy": "No native deployment with missing binding/feasibility evidence; constructed variants must be separately labeled"
+}

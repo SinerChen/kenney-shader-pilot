@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G09",
+  "purpose": "范围与曝光保护",
+  "input_design": "关新增显示但保留其渲染资源",
+  "criterion": "非目标可见性/环境/原水体保持，非双倍曝光",
+  "observations": "隔离回归、主场景属性",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

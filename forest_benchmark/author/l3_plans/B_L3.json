@@ -1,0 +1,123 @@
+{
+  "task_id": "B_L3",
+  "constraint_ids": [
+    "F02"
+  ],
+  "predecessor": "B_L2",
+  "integration_groups": [
+    {
+      "id": "B_L3-G01",
+      "purpose": "允许层内部",
+      "input_design": "泥土内部施加接触及水源事件",
+      "criterion": "d/w/POM 均真实生效，不能通过不做效果保护禁区",
+      "observations": "有效层权重、d/w、POM、局部画面",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G02",
+      "purpose": "禁止层内部",
+      "input_design": "同等强度事件落在禁止区域",
+      "criterion": "新增 d/w 保持零，原材质正常",
+      "observations": "禁区状态和材质端点",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G03",
+      "purpose": "跨软混合边界",
+      "input_design": "足迹横跨已标定过渡区",
+      "criterion": "状态域按最终层贡献阈值，原软混合外观仍在",
+      "observations": "m/H、印章范围、边界帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G04",
+      "purpose": "湿润到达内部边界",
+      "input_design": "允许区靠边注水，禁区初始为零",
+      "criterion": "遵守零通量边界而不是向禁区扩散后截掉",
+      "observations": "边界多步 w 及域内总量变化",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G05",
+      "purpose": "深度保水联动",
+      "input_design": "允许区不同深度、相同水源和时间",
+      "criterion": "干燥率仍由真实 d 决定",
+      "observations": "lambda、w 多时刻",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G06",
+      "purpose": "非方网格和视角",
+      "input_design": "公开 dx!=dz，改变斜视角",
+      "criterion": "扩散尺度/POM chart 正确，不用纹理像素当米",
+      "observations": "数值场、表面命中与画面",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G07",
+      "purpose": "重复事件与重置",
+      "input_design": "重放同一 ID，再 reset",
+      "criterion": "不重复压入/注水，reset 按配置复现",
+      "observations": "事件轨迹和 d/w",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G08",
+      "purpose": "材质输入变体",
+      "input_design": "在 reset 前选另一合法原层分布",
+      "criterion": "适配真实数据，不使用一张写死允许遮罩",
+      "observations": "原数据 hash、m/H 和覆盖变化",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G09",
+      "purpose": "共享地形/资产保护",
+      "input_design": "对照地形/非目标区域，关新增显示",
+      "criterion": "原层混合、纹理、法线和环境保持",
+      "observations": "原资源消费者与隔离基线",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "B_L3-G10",
+      "purpose": "干净重导入与预算",
+      "input_design": "从源导入后重跑边界及 POM",
+      "criterion": "无缓存答案、无整块替代地形，预算合格",
+      "observations": "文件/对象树、数值回读、性能",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "不区分区域，对整个地形盖脚印和湿层。",
+    "直接将未经确认的 splat 红通道作为泥土。",
+    "先按全域扩散再把禁区 w 清零。",
+    "改原 splat/层权重把错误落点变成合法。",
+    "用纯色覆盖材质或第二块平面遮住原地形。"
+  ],
+  "requires_frozen": [
+    "semantic_layer_labels",
+    "effective_weight_definition",
+    "terrain_chart_and_valid_slope",
+    "support_threshold_and_edge_tolerance",
+    "boundary_no_flux_rule"
+  ]
+}

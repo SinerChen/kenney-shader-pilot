@@ -1,0 +1,60 @@
+{
+  "task_id": "D_L3",
+  "original_entry_scene": "res://Main.tscn",
+  "target_bindings": [
+    {
+      "aabb": [
+        [
+          -332.793395996094,
+          -13.2385969161987,
+          -1355.58081054688
+        ],
+        [
+          395.321807861328,
+          107.264747619629,
+          1816.94970703125
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/River.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Main Terrain.glb::ArrayMesh_wwr2p",
+      "path": "Main Terrain/BezierCurve_001",
+      "scene_file": "",
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -62.4331665039063,
+          -1.11193954944611,
+          35.4822120666504
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "source_nodes_count": 35273,
+  "source_file_manifest": "scene_files.json"
+}

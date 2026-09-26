@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N05",
+  "purpose": "方向分布",
+  "input_design": "正/负 g，多个视角",
+  "criterion": "HG 符号/归一化形式",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 2
+}

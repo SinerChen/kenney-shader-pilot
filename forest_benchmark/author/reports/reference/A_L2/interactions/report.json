@@ -1,0 +1,39 @@
+{
+  "task": "A_L2",
+  "numeric_causal_pass": 5,
+  "total": 5,
+  "groups": [
+    {
+      "case": "A_L2-I01",
+      "numeric_causal_status": "PASS",
+      "errors": [],
+      "visual_causal_status": "NOT_RUN"
+    },
+    {
+      "case": "A_L2-I02",
+      "numeric_causal_status": "PASS",
+      "errors": [],
+      "visual_causal_status": "NOT_RUN"
+    },
+    {
+      "case": "A_L2-I03",
+      "numeric_causal_status": "PASS",
+      "errors": [],
+      "visual_causal_status": "NOT_RUN"
+    },
+    {
+      "case": "A_L2-I04",
+      "numeric_causal_status": "PASS",
+      "errors": [],
+      "visual_causal_status": "NOT_RUN"
+    },
+    {
+      "case": "A_L2-I05",
+      "numeric_causal_status": "PASS",
+      "errors": [],
+      "visual_causal_status": "NOT_RUN"
+    }
+  ],
+  "status": "NUMERIC_CAUSAL_VALIDATED",
+  "scope": "actual GPU states under paired interventions; image dependence recorded separately"
+}

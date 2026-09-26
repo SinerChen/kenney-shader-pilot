@@ -1,0 +1,170 @@
+{
+  "task": "E_L1",
+  "case_task": "E_L1",
+  "pass": 4,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "E_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/3",
+          "max_error": 0.005708568942071498,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.022574177011847496,
+          "expected": 0.028282745953918994,
+          "allowed": 0.0002056565491907838
+        },
+        {
+          "path": "/5",
+          "max_error": 0.004587072699499914,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.12335573881864548,
+          "expected": 0.11876866611914556,
+          "allowed": 0.00022375373322382913
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0008562281555597115,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.040000174194574356,
+          "expected": 0.04085640235013407,
+          "allowed": 0.0002081712804700268
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0024355165973768272,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.020372897386550903,
+          "expected": 0.02280841398392773,
+          "allowed": 0.00020456168279678555
+        },
+        {
+          "path": "/3",
+          "max_error": 0.0024355165973768272,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.020372897386550903,
+          "expected": 0.02280841398392773,
+          "allowed": 0.00020456168279678555
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0024355165973768272,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.020372897386550903,
+          "expected": 0.02280841398392773,
+          "allowed": 0.00020456168279678555
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5896630110402904,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.04098820313811302,
+          "expected": 0.6306512141784034,
+          "allowed": 0.0003261302428356807
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0024355165973768272,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.020372897386550903,
+          "expected": 0.02280841398392773,
+          "allowed": 0.00020456168279678555
+        },
+        {
+          "path": "/3",
+          "max_error": 0.0024355165973768272,
+          "index": [
+            0,
+            0
+          ],
+          "actual": 0.020372897386550903,
+          "expected": 0.02280841398392773,
+          "allowed": 0.00020456168279678555
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N10",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\schlick\\E_L1\\numeric",
+  "scope": "numeric_only"
+}

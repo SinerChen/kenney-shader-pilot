@@ -1,0 +1,75 @@
+{
+  "schema": "forest-benchmark-release-lock/0.1",
+  "status": "BLOCKED_RELEASE",
+  "engine": {
+    "version": null,
+    "binary_sha256": null,
+    "renderer": "Forward+",
+    "render_device_verified": false,
+    "os": null,
+    "gpu": null,
+    "driver": null
+  },
+  "benchmark": {
+    "contract_version": "0.1",
+    "algorithm_track": "named_algorithm_with_public_contract",
+    "gpu_core_required": true,
+    "active_tasks": [
+      "A_L1",
+      "A_L2",
+      "B_L1",
+      "B_L2",
+      "C_L1",
+      "C_L2",
+      "D_L1",
+      "D_L2",
+      "E_L1",
+      "E_L2"
+    ],
+    "active_l3_tasks": []
+  },
+  "run": {
+    "predecessor_condition": null,
+    "agent_condition": "direct",
+    "inheritance_context_mode": null,
+    "network_policy": "deny_by_default",
+    "wall_time_s": null,
+    "token_budget": null,
+    "tool_calls": null,
+    "public_test_calls": null
+  },
+  "capture": {
+    "width": null,
+    "height": null,
+    "frame_times": null,
+    "simulation_dt": null,
+    "warmup_frames": null,
+    "color_space": "scene_linear_for_numeric",
+    "antialiasing": null,
+    "exposure": null,
+    "tonemapper": null
+  },
+  "judge": {
+    "numeric_tolerances_by_task": null,
+    "interaction_tolerances_by_task": null,
+    "visual_model_id": null,
+    "visual_model_version": null,
+    "visual_thresholds_by_task": null,
+    "private_case_store": "AUTHOR_ONLY_EXTERNAL_PATH",
+    "private_seed_policy": "never_copy_to_model_workspace"
+  },
+  "resources": {
+    "per_task_gpu_memory_mb": null,
+    "per_task_particle_or_grid_limits": null,
+    "frame_time_budget_ms": null
+  },
+  "release_gates": {
+    "independent_reference_validated": false,
+    "gpu_readback_validated": false,
+    "positive_negative_controls_validated": false,
+    "clean_starters_verified": false,
+    "no_leakage_verified": false,
+    "clean_reimport_verified": false,
+    "thresholds_frozen": false
+  }
+}

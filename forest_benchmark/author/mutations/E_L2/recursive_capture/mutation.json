@@ -1,0 +1,7 @@
+{
+  "task": "E_L2",
+  "name": "recursive_capture",
+  "file": "fixture\\bridge.gd",
+  "detector": "layer_exclusion",
+  "source_occurrences": 1
+}

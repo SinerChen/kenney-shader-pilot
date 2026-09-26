@@ -1,0 +1,77 @@
+{
+  "task": "E_L1",
+  "case_task": "E_L1",
+  "pass": 9,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "E_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N09",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/3",
+          "max_error": 1.024812030075188,
+          "index": [
+            0,
+            11
+          ],
+          "actual": 1.0,
+          "expected": 2.024812030075188,
+          "allowed": 0.0006049624060150376
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\clamp_invalid_uv\\E_L1\\numeric",
+  "scope": "numeric_only"
+}

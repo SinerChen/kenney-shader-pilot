@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N03",
+  "purpose": "旋度分量",
+  "input_design": "固定 P/offset/epsilon，非对称采样点",
+  "criterion": "三个 curl 分量符号和次序",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

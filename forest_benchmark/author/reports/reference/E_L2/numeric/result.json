@@ -1,0 +1,1078 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "AMD Radeon 780M Graphics",
+  "responses": [
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0001.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0002.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0003.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0004.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0005.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0006.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0007.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0008.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0009.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0010.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0011.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0012.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0013.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0014.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0015.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0016.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0017.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0018.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0019.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0020.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0021.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0022.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "height"
+      ],
+      "file": "gpu_0023.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        1
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "normal.x",
+        "normal.y",
+        "normal.z"
+      ],
+      "file": "gpu_0024.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        48,
+        3
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "status": "OK",
+      "time": 0.025
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.025,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0025.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0026.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0027.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.0
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.05
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.05,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0028.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.025
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0029.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0030.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.025
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.075
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.075,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0031.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.05
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0032.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.025
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0033.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.05
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.1
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.1,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0034.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.075
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0035.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.05
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0036.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.075
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.125
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.125,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0037.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.1
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0038.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.075
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0039.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.1
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.15
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.15,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0040.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.125
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0041.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.1
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0042.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.125
+      }
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "status": "OK",
+      "time": 0.025
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.025,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0043.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0044.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0045.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.0
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.05
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.05,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0046.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.025
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0047.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.0
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0048.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.025
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.075
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.075,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0049.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.05
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0050.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.025
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0051.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.05
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.1
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.1,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0052.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.075
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0053.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.05
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0054.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.075
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.125
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.125,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0055.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.1
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0056.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.075
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0057.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.1
+      }
+    },
+    {
+      "status": "OK",
+      "time": 0.15
+    },
+    {
+      "birth_log": [],
+      "emitted": [],
+      "particle_ids": [],
+      "simulation_time": 0.15,
+      "status": "OK",
+      "wave_height_current": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0058.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.125
+      },
+      "wave_height_prev": {
+        "dtype": "<f4",
+        "fields": [
+          "height"
+        ],
+        "file": "gpu_0059.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          1
+        ],
+        "status": "OK",
+        "time": 0.1
+      },
+      "wave_normal": {
+        "dtype": "<f4",
+        "fields": [
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "file": "gpu_0060.f32",
+        "origin": "actual_gpu_readback",
+        "shape": [
+          48,
+          3
+        ],
+        "status": "OK",
+        "time": 0.125
+      }
+    }
+  ]
+}

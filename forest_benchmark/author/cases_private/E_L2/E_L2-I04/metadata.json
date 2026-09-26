@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-I04",
+  "intervention": "移开前景",
+  "control": "保持后景运行",
+  "relation": "水面继续正确，不依赖遮罩才计算",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "hide_front"
+}

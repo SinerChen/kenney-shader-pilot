@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N05",
+  "purpose": "多扰动",
+  "input_design": "小幅输入、不截断",
+  "criterion": "线性叠加",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

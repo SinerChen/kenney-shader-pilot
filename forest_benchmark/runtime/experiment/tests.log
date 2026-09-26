@@ -1,0 +1,19 @@
+test_401_waits_300_seconds_then_continues_same_task (test_http_retry.HttpRetryTests.test_401_waits_300_seconds_then_continues_same_task) ... ok
+test_all_status_errors_retry (test_http_retry.HttpRetryTests.test_all_status_errors_retry) ... ok
+test_repeated_auth_errors_stop_at_budget_without_final_wait (test_http_retry.HttpRetryTests.test_repeated_auth_errors_stop_at_budget_without_final_wait) ... ok
+test_resume_keeps_retry_deadline_and_failed_attempt_count (test_http_retry.HttpRetryTests.test_resume_keeps_retry_deadline_and_failed_attempt_count) ... ok
+test_each_provider_gets_image_content_and_matching_call_id (test_runtime.NativeImageTests.test_each_provider_gets_image_content_and_matching_call_id) ... ok
+test_read_image_and_checkpoint_exact_roundtrip (test_runtime.NativeImageTests.test_read_image_and_checkpoint_exact_roundtrip) ... ok
+test_failed_requests_count_and_do_not_reset_or_prompt (test_runtime.RuntimeTests.test_failed_requests_count_and_do_not_reset_or_prompt) ... ok
+test_no_mandatory_render_before_normal_final (test_runtime.RuntimeTests.test_no_mandatory_render_before_normal_final) ... ok
+test_non_http_error_pauses_without_retry (test_runtime.RuntimeTests.test_non_http_error_pauses_without_retry) ... ok
+test_render_80_failure_counts_and_ends_without_next_request (test_runtime.RuntimeTests.test_render_80_failure_counts_and_ends_without_next_request) ... ok
+test_request_80_finishes_without_dispatching_new_tool_or_summary (test_runtime.RuntimeTests.test_request_80_finishes_without_dispatching_new_tool_or_summary) ... ok
+test_resume_preserves_failed_attempt_counter_and_candidate (test_runtime.RuntimeTests.test_resume_preserves_failed_attempt_counter_and_candidate) ... ok
+test_s1_copies_real_effect_only_and_keeps_level_environment (test_runtime.RuntimeTests.test_s1_copies_real_effect_only_and_keeps_level_environment) ... ok
+test_truncated_tool_is_not_executed (test_runtime.RuntimeTests.test_truncated_tool_is_not_executed) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.213s
+
+OK

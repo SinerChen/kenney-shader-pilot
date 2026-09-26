@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "environment.json": {
+      "path": "assets/environment.json",
+      "sha256": "24f1c50c8c422943477bc307101d4f93755876ec7049778c5bb86d359bb0f603",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 128
+    },
+    "front_path_length.f32": {
+      "path": "assets/front_path_length.f32",
+      "sha256": "99500e063d4eb4bb6786a16abfbf1bcfd82b23cf3933e30859725f823d66bfae",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 256
+    },
+    "metadata.json": {
+      "path": "assets/metadata.json",
+      "sha256": "d9d0125ae55920afb340fd1bb629c84c7fbeb3fad66571339adccc27f0e7bb3f",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 1427
+    },
+    "rear_path_length.f32": {
+      "path": "assets/rear_path_length.f32",
+      "sha256": "af583b758533bccfedfd103e72502ed57257d71bb94643a738dd8b82ae25ca6b",
+      "source": "generated_neutral_input",
+      "license": "CC0-1.0",
+      "status": "CREATED",
+      "bytes": 256
+    }
+  },
+  "float_format": "little-endian float32, linear",
+  "not_target_solutions": true,
+  "grid_size": [
+    48,
+    36
+  ],
+  "density_size": [
+    5,
+    4,
+    3
+  ],
+  "mask_size": [
+    6,
+    8
+  ],
+  "texture_size": [
+    8,
+    8
+  ]
+}

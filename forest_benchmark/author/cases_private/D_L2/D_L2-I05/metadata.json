@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-I05",
+  "intervention": "移动源",
+  "control": "固定既有 f，改变 source",
+  "relation": "新源位置改变，旧 f 不瞬移",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "move_source"
+}

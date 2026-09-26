@@ -1,0 +1,7 @@
+{
+  "task": "A_L1",
+  "name": "moving_noise",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

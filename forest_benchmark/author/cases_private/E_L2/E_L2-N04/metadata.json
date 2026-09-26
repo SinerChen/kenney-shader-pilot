@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N04",
+  "purpose": "对称传播",
+  "input_design": "对称初场与等距网格",
+  "criterion": "方向对称和相位",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

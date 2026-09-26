@@ -1,0 +1,7 @@
+{
+  "task": "A_L2",
+  "name": "delete_stock",
+  "file": "solution\\adapter.gd",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

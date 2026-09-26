@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G10",
+  "purpose": "干净重导入与预算",
+  "input_design": "从源导入后重跑边界及 POM",
+  "criterion": "无缓存答案、无整块替代地形，预算合格",
+  "observations": "文件/对象树、数值回读、性能",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

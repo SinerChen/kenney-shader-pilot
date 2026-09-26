@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G04",
+  "purpose": "相位配置变体",
+  "input_design": "按公开规则 reset 到不同相位",
+  "criterion": "相位对应原云场，不只改阴影贴图偏移",
+  "observations": "原天空和地面/雾对应关系",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

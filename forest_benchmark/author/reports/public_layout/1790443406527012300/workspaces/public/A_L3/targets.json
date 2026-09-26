@@ -1,0 +1,61 @@
+{
+  "objects": [
+    {
+      "object_id": "tree_1",
+      "root": "Decorations-Forest/Tree_small_2",
+      "origin_ref": [
+        0,
+        0,
+        0
+      ],
+      "propagation_speed": 1.2,
+      "anchor_inputs": {
+        "file": "assets/task_inputs/A_L3/tree_1_anchors.bin",
+        "dtype": "<f4",
+        "shape": [
+          48,
+          6
+        ],
+        "channels": [
+          "position.x",
+          "position.y",
+          "position.z",
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "frame": "object rest space",
+        "source_vertex_wind_weight": 0
+      }
+    },
+    {
+      "object_id": "tree_2",
+      "root": "Decorations-Forest/Tree_small_1",
+      "origin_ref": [
+        0,
+        0,
+        0
+      ],
+      "propagation_speed": 1.4,
+      "anchor_inputs": {
+        "file": "assets/task_inputs/A_L3/tree_2_anchors.bin",
+        "dtype": "<f4",
+        "shape": [
+          48,
+          6
+        ],
+        "channels": [
+          "position.x",
+          "position.y",
+          "position.z",
+          "normal.x",
+          "normal.y",
+          "normal.z"
+        ],
+        "frame": "object rest space",
+        "source_vertex_wind_weight": 0
+      }
+    }
+  ],
+  "transform_scope": "Preserve fixed authored rest transforms, including their non-uniform scale; additional test transforms are rigid with positive uniform scale in [0.75,1.5]."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N01",
+  "purpose": "空场",
+  "input_design": "f=0,S=0",
+  "criterion": "保持零",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

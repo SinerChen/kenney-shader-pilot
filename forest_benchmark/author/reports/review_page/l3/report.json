@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "A_L3",
+      "status": "PASS",
+      "video": {
+        "duration": 2,
+        "width": 640,
+        "height": 360,
+        "error": null
+      },
+      "visible_local_links": 224
+    },
+    {
+      "task": "B_L3",
+      "status": "PASS",
+      "video": {
+        "duration": 2,
+        "width": 640,
+        "height": 360,
+        "error": null
+      },
+      "visible_local_links": 220
+    },
+    {
+      "task": "C_L3_R",
+      "status": "PASS",
+      "video": {
+        "duration": 2,
+        "width": 640,
+        "height": 360,
+        "error": null
+      },
+      "visible_local_links": 219
+    },
+    {
+      "task": "C_L3_S",
+      "status": "PASS",
+      "video": null,
+      "visible_local_links": 10
+    },
+    {
+      "task": "D_L3",
+      "status": "PASS",
+      "video": {
+        "duration": 2,
+        "width": 640,
+        "height": 360,
+        "error": null
+      },
+      "visible_local_links": 223
+    },
+    {
+      "task": "E_L3",
+      "status": "PASS",
+      "video": {
+        "duration": 2,
+        "width": 640,
+        "height": 360,
+        "error": null
+      },
+      "visible_local_links": 222
+    }
+  ],
+  "page_errors": [],
+  "mobile_overflow": false,
+  "legacy_navigation_restored": true
+}

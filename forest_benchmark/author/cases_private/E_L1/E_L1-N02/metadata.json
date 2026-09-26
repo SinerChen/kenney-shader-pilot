@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N02",
+  "purpose": "法向入射",
+  "input_design": "I=-N，两个不同 eta",
+  "criterion": "解析 F 与方向",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

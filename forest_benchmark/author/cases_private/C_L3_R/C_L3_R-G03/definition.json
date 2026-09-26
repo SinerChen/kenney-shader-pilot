@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G03",
+  "purpose": "过滤与数据空间",
+  "input_design": "选择梯度及边界样本，固定过滤规则",
+  "criterion": "无 sRGB、错误插层或未声明 mip 偏差",
+  "observations": "原始数值、取值范围",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-I03",
+  "intervention": "停止发射",
+  "control": "已有粒子存活时关闭源",
+  "relation": "出生计数停止，存量继续运动",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "stop_emission"
+}

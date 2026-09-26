@@ -1,0 +1,101 @@
+{
+  "destination": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\exports\\1790414479903565200\\B_L2",
+  "review_only": true,
+  "files": {
+    "assets/metadata.json": "29e60e4bd936e3b718f069a9bd035411184248c93b9c4f2fa6b4cc0b859feb3b",
+    "assets/sole_mask.f32": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12",
+    "assets/sole_mask.png": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd",
+    "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+    "fixture/base_stage.tscn": "8509dc56b0d9b1c286566b10db0e39b94a2a369ca555d234101617c15374541c",
+    "fixture/bridge.gd": "f872c4736e9359c0e60b7ef368d5f3155401cd613dd6061b39fcdd0cc07dbc9a",
+    "fixture/entry.tscn": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+    "fixture/evidence.gd": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+    "fixture/runner.gd": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d",
+    "fixture/visual_runner.gd": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+    "project.godot": "86515b3cd59d891e5ee85404e532c2c973973c529a5be56b5a88994767d785ee",
+    "solution/adapter.gd": "52b5ffb3f2b27e9244135ec6a395e9be9c729a609d3469f61550806a81a99d75",
+    "solution/effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f"
+  },
+  "inheritance": {
+    "condition": "NOT_INJECTED",
+    "source_hashes": {}
+  },
+  "prompt_revisions": [
+    {
+      "before": {
+        "public/prompt.md": "71dc63473ed11b080ac8797381e7823752361a5258f56630b9153ac4f34209d7",
+        "public/scene_inventory.json": "ba56fc9879954778016332a3f1132075ca4a2f9a14f97d6a36bf01cdcfc5d531"
+      },
+      "after": {
+        "public/prompt.md": "75952146deadb67d7c89b6495de0bbdfd345bb0c9ce83d1b1ab494b2fba6c0fa",
+        "public/scene_inventory.json": "ba4fc5780950c3411c37f30095a4aa83307c4c4b8f7ae50b3cf970a786547a68"
+      }
+    },
+    {
+      "before": {
+        "public/prompt.md": "75952146deadb67d7c89b6495de0bbdfd345bb0c9ce83d1b1ab494b2fba6c0fa",
+        "public/scene_inventory.json": "ba4fc5780950c3411c37f30095a4aa83307c4c4b8f7ae50b3cf970a786547a68"
+      },
+      "after": {
+        "public/prompt.md": "b973e6c6ea0249a04322daf056eae8f436d830fa02f2cd562cb640f154183119",
+        "public/scene_inventory.json": "0c8811d2c9b9c78fe2bebf84ad1307fed337b2be16edafeb07902dc6f035cc41"
+      }
+    },
+    {
+      "before": {
+        "public/io_schema.json": null,
+        "public/sample_inputs/sample.json": "c081f617c1843482ea888544e1a0248b297d43b651a8818b397f06bb3d60f8a0",
+        "public/prompt.md": "b973e6c6ea0249a04322daf056eae8f436d830fa02f2cd562cb640f154183119",
+        "public/scene_inventory.json": "0c8811d2c9b9c78fe2bebf84ad1307fed337b2be16edafeb07902dc6f035cc41"
+      },
+      "after": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "e58c9bb8524c8534a19351a240e99183bef691951bbf27581c0c15b0591f84c8",
+        "public/scene_inventory.json": "8d7acfd9e358c5e44b89c398f9d260ddec77608aff2232df16163e8b4a8fb6bd"
+      }
+    },
+    {
+      "before": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "e58c9bb8524c8534a19351a240e99183bef691951bbf27581c0c15b0591f84c8",
+        "public/scene_inventory.json": "8d7acfd9e358c5e44b89c398f9d260ddec77608aff2232df16163e8b4a8fb6bd"
+      },
+      "after": {
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/prompt.md": "0a2a81195c0bc7ae33795c9e919f150cfe13945d3870b07267c433bf2ae35b60",
+        "public/scene_inventory.json": "7647dfaf376f6603b00d4de304248880c232b60f83065c73e54e0f3faf89c99c"
+      }
+    }
+  ],
+  "layout_revisions": [
+    {
+      "previous_files": {
+        "assets/metadata.json": "29e60e4bd936e3b718f069a9bd035411184248c93b9c4f2fa6b4cc0b859feb3b",
+        "assets/sole_mask.f32": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12",
+        "assets/sole_mask.png": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd",
+        "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+        "fixture/base_stage.tscn": "8509dc56b0d9b1c286566b10db0e39b94a2a369ca555d234101617c15374541c",
+        "fixture/bridge.gd": "5ebc54c71885353c752e29c0cc85109dc7d2fc882b2da633cb9bc09ce0437237",
+        "fixture/entry.tscn": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+        "fixture/evidence.gd": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+        "fixture/runner.gd": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d",
+        "fixture/visual_runner.gd": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+        "project.godot": "86515b3cd59d891e5ee85404e532c2c973973c529a5be56b5a88994767d785ee",
+        "public/api.md": "ba93734c89888af0b6359ab922e42f39d74662c933d57196e729d33a7eb94f02",
+        "public/contract.md": "e1acefa9ea0b7af75c100681fec3539d4422b2586c0d6420f9e296099a582c97",
+        "public/demo.json": "066efff9d08391771be684c10d12be3a75792e1a5ec1a3b4f7568f68ee3a7ffa",
+        "public/prompt.md": "0a2a81195c0bc7ae33795c9e919f150cfe13945d3870b07267c433bf2ae35b60",
+        "public/sample_inputs/sample.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80",
+        "public/scene_inventory.json": "7647dfaf376f6603b00d4de304248880c232b60f83065c73e54e0f3faf89c99c",
+        "public/task.json": "3c031b08aa047fcaee9bf1e906337fb02fc3b963b404cc3d920d3cb19ef61789",
+        "solution/adapter.gd": "52b5ffb3f2b27e9244135ec6a395e9be9c729a609d3469f61550806a81a99d75",
+        "solution/effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+        "public/io_schema.json": "813ea732a07cae47d9b80322e82aeaa850b0da338abc80b9a51fb1ba9e48bd80"
+      },
+      "metadata": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\exports\\1790414479903565200\\public\\B_L2"
+    }
+  ]
+}

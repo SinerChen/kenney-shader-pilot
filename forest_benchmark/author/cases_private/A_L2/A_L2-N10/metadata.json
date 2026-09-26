@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N10",
+  "purpose": "reset 与重放",
+  "input_design": "运行、reset、重复事件",
+  "criterion": "不残留 emitted/粒子状态",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

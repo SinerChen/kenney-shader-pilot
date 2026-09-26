@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N08",
+  "purpose": "边界寻址",
+  "input_design": "负 q、跨整数",
+  "criterion": "repeat 采样",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N07",
+  "purpose": "出生资格",
+  "input_design": "锚点跨阈值，含禁用阶段",
+  "criterion": "合法源、唯一 ID、不提前消耗资格",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

@@ -1,0 +1,7 @@
+{
+  "task": "B_L1",
+  "name": "clear_depth",
+  "file": "solution\\adapter.gd",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

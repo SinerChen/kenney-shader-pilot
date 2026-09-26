@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N01",
+  "purpose": "无事件",
+  "input_design": "全零初场，无 contact",
+  "criterion": "depth=0，POM 基准命中",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

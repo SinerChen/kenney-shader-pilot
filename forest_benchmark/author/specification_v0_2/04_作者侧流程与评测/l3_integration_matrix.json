@@ -1,0 +1,745 @@
+{
+  "schema": "forest-l3-integration-matrix/0.2",
+  "status": "DESIGN_ONLY_NOT_EXECUTED",
+  "tasks": [
+    {
+      "task_id": "A_L3",
+      "constraint_ids": [
+        "F01"
+      ],
+      "predecessor": "A_L2",
+      "integration_groups": [
+        {
+          "id": "A_L3-G01",
+          "purpose": "目标树静态接入",
+          "input_design": "近距离固定时间，至少一目标树和一非目标树",
+          "criterion": "灼烧/余烬实际进入目标材质及粒子资源；非目标保持基线",
+          "observations": "烧焦状态、实际活动材质、出生日志、目标/对照帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G02",
+          "purpose": "覆盖所有实际表示",
+          "input_design": "逐个采集核验过的表示及可见区间",
+          "criterion": "各表示按自己的基线表达同一目标状态，不能漏远景",
+          "observations": "表示 ID、参考点值、逐表示覆盖误差",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G03",
+          "purpose": "冻结状态跨越切换边界",
+          "input_design": "t 固定，相机往返跨实际边界",
+          "criterion": "仅表现精度允许改变，b/a 不重置或消失",
+          "observations": "切换两侧序列、状态缓冲",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G04",
+          "purpose": "正常运行时切换",
+          "input_design": "时间继续，往返并停留在过渡区",
+          "criterion": "粒子不重复出生；焦化按同一时钟继续",
+          "observations": "复合粒子 ID、birth_time、age、轨迹",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G05",
+          "purpose": "离屏后返回",
+          "input_design": "离开目标可见范围若干模拟 tick 后返回",
+          "criterion": "不可见不暂停状态/重触发事件",
+          "observations": "连续参考轨迹与返回状态",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G06",
+          "purpose": "同资源多实例",
+          "input_design": "两棵目标不同起点/种子，一棵共享资源对照",
+          "criterion": "两目标互不串色/串发射，对照不受影响",
+          "observations": "按 object_id 对齐的 b/a 和资源影响图",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G07",
+          "purpose": "仅改变余烬参数",
+          "input_design": "灼烧固定，改变 curl 或关闭新发射",
+          "criterion": "灼烧状态不改；存量连续、无新发射",
+          "observations": "核心回归与出生/运动状态",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G08",
+          "purpose": "重置与重复绑定",
+          "input_design": "相同配置 reset 重放；绑定显示接口但不 reset",
+          "criterion": "reset 可重播；纯重绑定不得重新开始",
+          "observations": "账本、对象引用、状态 hash",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G09",
+          "purpose": "原表示和风动保护",
+          "input_design": "关新增显示但保留提交配置，运行原风动/切换",
+          "criterion": "裁切、风动、阴影和切换机制未被改坏",
+          "observations": "原生属性、保护视图、源文件 diff",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "A_L3-G10",
+          "purpose": "干净重导入与预算",
+          "input_design": "清缓存导入同一源提交，再按路径运行",
+          "criterion": "效果/状态和绑定复现，未依赖缓存且符合预算",
+          "observations": "导入记录、状态证据、资源/帧耗时",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "只给近景 Mesh 换材质。",
+        "每个 LOD 各建独立发射器，切换时重新出生。",
+        "不可见时停止时钟，返回时 reset。",
+        "修改共享材质使非目标树一同焦化。",
+        "关闭 LOD/风动或填实 alpha 裁切来掩盖问题。"
+      ],
+      "requires_frozen": [
+        "targets_and_reference_frames",
+        "effective_lod_ranges",
+        "anchor_region_validity",
+        "state_error_tolerances",
+        "representation_visual_tolerances"
+      ]
+    },
+    {
+      "task_id": "B_L3",
+      "constraint_ids": [
+        "F02"
+      ],
+      "predecessor": "B_L2",
+      "integration_groups": [
+        {
+          "id": "B_L3-G01",
+          "purpose": "允许层内部",
+          "input_design": "泥土内部施加接触及水源事件",
+          "criterion": "d/w/POM 均真实生效，不能通过不做效果保护禁区",
+          "observations": "有效层权重、d/w、POM、局部画面",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G02",
+          "purpose": "禁止层内部",
+          "input_design": "同等强度事件落在禁止区域",
+          "criterion": "新增 d/w 保持零，原材质正常",
+          "observations": "禁区状态和材质端点",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G03",
+          "purpose": "跨软混合边界",
+          "input_design": "足迹横跨已标定过渡区",
+          "criterion": "状态域按最终层贡献阈值，原软混合外观仍在",
+          "observations": "m/H、印章范围、边界帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G04",
+          "purpose": "湿润到达内部边界",
+          "input_design": "允许区靠边注水，禁区初始为零",
+          "criterion": "遵守零通量边界而不是向禁区扩散后截掉",
+          "observations": "边界多步 w 及域内总量变化",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G05",
+          "purpose": "深度保水联动",
+          "input_design": "允许区不同深度、相同水源和时间",
+          "criterion": "干燥率仍由真实 d 决定",
+          "observations": "lambda、w 多时刻",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G06",
+          "purpose": "非方网格和视角",
+          "input_design": "公开 dx!=dz，改变斜视角",
+          "criterion": "扩散尺度/POM chart 正确，不用纹理像素当米",
+          "observations": "数值场、表面命中与画面",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G07",
+          "purpose": "重复事件与重置",
+          "input_design": "重放同一 ID，再 reset",
+          "criterion": "不重复压入/注水，reset 按配置复现",
+          "observations": "事件轨迹和 d/w",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G08",
+          "purpose": "材质输入变体",
+          "input_design": "在 reset 前选另一合法原层分布",
+          "criterion": "适配真实数据，不使用一张写死允许遮罩",
+          "observations": "原数据 hash、m/H 和覆盖变化",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G09",
+          "purpose": "共享地形/资产保护",
+          "input_design": "对照地形/非目标区域，关新增显示",
+          "criterion": "原层混合、纹理、法线和环境保持",
+          "observations": "原资源消费者与隔离基线",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "B_L3-G10",
+          "purpose": "干净重导入与预算",
+          "input_design": "从源导入后重跑边界及 POM",
+          "criterion": "无缓存答案、无整块替代地形，预算合格",
+          "observations": "文件/对象树、数值回读、性能",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "不区分区域，对整个地形盖脚印和湿层。",
+        "直接将未经确认的 splat 红通道作为泥土。",
+        "先按全域扩散再把禁区 w 清零。",
+        "改原 splat/层权重把错误落点变成合法。",
+        "用纯色覆盖材质或第二块平面遮住原地形。"
+      ],
+      "requires_frozen": [
+        "semantic_layer_labels",
+        "effective_weight_definition",
+        "terrain_chart_and_valid_slope",
+        "support_threshold_and_edge_tolerance",
+        "boundary_no_flux_rule"
+      ]
+    },
+    {
+      "task_id": "C_L3_R",
+      "constraint_ids": [
+        "F03"
+      ],
+      "predecessor": "C_L2",
+      "integration_groups": [
+        {
+          "id": "C_L3_R-G01",
+          "purpose": "真实资源读取",
+          "input_design": "本次指定 U/V，采多个非对称坐标",
+          "criterion": "实际样本与已验证原资源含义一致",
+          "observations": "GPU采样、资源类型/维度和源 hash",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G02",
+          "purpose": "切片与轴向",
+          "input_design": "跨深度层、轴交换可区分的位置",
+          "criterion": "无把层当颜色/轴颠倒/二维重复的错误",
+          "observations": "各坐标样本和独立参考",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G03",
+          "purpose": "过滤与数据空间",
+          "input_design": "选择梯度及边界样本，固定过滤规则",
+          "criterion": "无 sRGB、错误插层或未声明 mip 偏差",
+          "observations": "原始数值、取值范围",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G04",
+          "purpose": "密度生成",
+          "input_design": "改变 a/b/theta 和 grid 合法尺寸",
+          "criterion": "rho_grid 按本级公式变化且非源替身",
+          "observations": "U/V 样本、rho_grid",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G05",
+          "purpose": "下游因果",
+          "input_design": "相同视角，只改变源资产变体或构造参数",
+          "criterion": "云影和雾内光都响应同一个实际新密度",
+          "observations": "T_cloud、L_scatter、图像",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G06",
+          "purpose": "零密度与雾消融",
+          "input_design": "分别得到零 rho_grid、零雾密度",
+          "criterion": "云影/雾的消失关系符合 C_L1/C_L2",
+          "observations": "独立状态、目标受光",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G07",
+          "purpose": "源消费者保护",
+          "input_design": "关新增效果但保留所有派生资源/配置",
+          "criterion": "原天空和共享消费者保持基线",
+          "observations": "原材质/导入 hash、天空帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G08",
+          "purpose": "同帧深度合成",
+          "input_design": "相机移动并被原不透明物体遮挡",
+          "criterion": "雾不盖到前景物体前，资源更新同 tick",
+          "observations": "深度、视线 T、帧时间",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G09",
+          "purpose": "重置和资源切换",
+          "input_design": "reset 前合法选择另一资源输入，再回原输入",
+          "criterion": "无初始化缓存答案/前次状态残留",
+          "observations": "输入 hash、rho 和输出",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_R-G10",
+          "purpose": "干净导入与预算",
+          "input_design": "从未改的源导入后运行",
+          "criterion": "转换可复现，不靠修改共享 import 或缓存",
+          "observations": "导入审计、GPU内存/帧时",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "按普通二维图采样本应具有层组织的数据。",
+        "交换深度与高度轴，或在切片间不进行规定采样。",
+        "为适配新 shader 修改共享输入的导入类型。",
+        "使用同外观的自建噪声而不读原资源。",
+        "probe 读取正确资产，但画面使用固定云影纹理。"
+      ],
+      "requires_frozen": [
+        "verified_resource_paths_types_layout",
+        "sample_filter_and_color_space",
+        "density_construction_parameters",
+        "local_light_receiver_scope",
+        "original_consumer_baseline"
+      ]
+    },
+    {
+      "task_id": "C_L3_S",
+      "constraint_ids": [
+        "F04"
+      ],
+      "predecessor": "C_L2",
+      "integration_groups": [
+        {
+          "id": "C_L3_S-G01",
+          "purpose": "原场密度绑定",
+          "input_design": "固定原天空状态，采多个世界位置",
+          "criterion": "新增密度来自原场，不是独立近似动画",
+          "observations": "原场私有探针、提交 rho_grid、源签名",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G02",
+          "purpose": "原时钟正常推进",
+          "input_design": "按固定 dt 推进原天空",
+          "criterion": "云影/雾受光同源、同tick更新",
+          "observations": "密度、T_cloud、L_scatter 序列",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G03",
+          "purpose": "暂停与继续",
+          "input_design": "使用公开时钟控制暂停/继续",
+          "criterion": "暂停时无独立云漂移，继续后不重置错位",
+          "observations": "源时钟、世界点响应",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G04",
+          "purpose": "相位配置变体",
+          "input_design": "按公开规则 reset 到不同相位",
+          "criterion": "相位对应原云场，不只改阴影贴图偏移",
+          "observations": "原天空和地面/雾对应关系",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G05",
+          "purpose": "方向/速度变化",
+          "input_design": "在合法配置边界改变原云运动参数",
+          "criterion": "空间及时间响应均随原场变化",
+          "observations": "多个世界点跨时刻 density/T",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G06",
+          "purpose": "相机独立性",
+          "input_design": "冻结原场只移动相机",
+          "criterion": "世界锚定阴影不跟屏幕，雾按视角合法变化",
+          "observations": "世界查询、原视图/新视图",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G07",
+          "purpose": "光源方向变化",
+          "input_design": "固定密度，按公开范围改变目标方向光",
+          "criterion": "光程关系改变，不能仅改变亮度",
+          "observations": "光路 T、地面影区和雾贡献",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G08",
+          "purpose": "云雾分离消融",
+          "input_design": "分别原云密度归零、雾密度归零",
+          "criterion": "零云不等于无雾；零雾保留云影",
+          "observations": "各自独立输出与背景",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G09",
+          "purpose": "原环境保护",
+          "input_design": "关新增效果但保留全部配置/资源",
+          "criterion": "天空、原表面阴影、环境光及非目标保持",
+          "observations": "原系统属性和隔离帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "C_L3_S-G10",
+          "purpose": "同提交干净重放",
+          "input_design": "清缓存并重跑时间/相机序列",
+          "criterion": "映射和结果复现，无隐含作者机器状态",
+          "observations": "源/补丁哈希、运行日志和预算",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "原天空继续运行，另建同速度但不同噪声的地面暗斑。",
+        "只共用时间，不转换坐标/尺度/方向。",
+        "每帧跟随相机移动世界云影。",
+        "缓存初始化密度或固定上一帧输入。",
+        "改变天空/太阳使独立阴影看似对齐，或把全部环境光乘 T。"
+      ],
+      "requires_frozen": [
+        "native_world_mapping_proof",
+        "source_clock_protocol",
+        "world_density_grid_error",
+        "directional_light_scope",
+        "source_parameter_valid_domains"
+      ]
+    },
+    {
+      "task_id": "D_L3",
+      "constraint_ids": [
+        "F05"
+      ],
+      "predecessor": "D_L2",
+      "integration_groups": [
+        {
+          "id": "D_L3-G01",
+          "purpose": "原河流接入",
+          "input_design": "在核验水域运行流纹和泡沫",
+          "criterion": "前级核心实际进入原材质，无独立水面替身",
+          "observations": "活动材质、相位/f资源、目标帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G02",
+          "purpose": "固定接触与干扰物",
+          "input_design": "一个合法接触、一个离水前景物体",
+          "criterion": "只有真实接触产生源，不由屏幕邻近触发",
+          "observations": "世界距离、source_field",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G03",
+          "purpose": "改变图案参数",
+          "input_design": "同速度源事件，仅改 K/P/phi",
+          "criterion": "图案变化而源与物理 f 演化不改变",
+          "observations": "相位 UV、source 和 f 对照",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G04",
+          "purpose": "物理流场变化",
+          "input_design": "反向/改变速度但保持源和图案参数",
+          "criterion": "f 按新 m/s 运动，不把图案UV当速度",
+          "observations": "场、位移、f 多帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G05",
+          "purpose": "水域刚体变体",
+          "input_design": "reset 前旋转/平移目标片区",
+          "criterion": "接触投影和方向按实际实例一致",
+          "observations": "世界/source chart、速度基",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G06",
+          "purpose": "正轴向缩放",
+          "input_design": "reset 前改变两轴尺度",
+          "criterion": "每米速度、dx/dz、源半径仍按物理量",
+          "observations": "长度、源核、泡沫前沿",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G07",
+          "purpose": "移动源",
+          "input_design": "水域固定、接触物体合法移动",
+          "criterion": "新源跟随，旧泡沫不瞬移",
+          "observations": "源轨迹和 f 历史",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G08",
+          "purpose": "停源与零流速",
+          "input_design": "分别关闭源/令流速零",
+          "criterion": "按前级规则存量继续/停止搬运并衰减",
+          "observations": "分项状态、衰减输出",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G09",
+          "purpose": "原材质与范围保护",
+          "input_design": "关新增效果并保留配置",
+          "criterion": "原折射/透明/范围及非目标水域保持",
+          "observations": "源材质参数、保护视图",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "D_L3-G10",
+          "purpose": "重导入重置和预算",
+          "input_design": "干净导入后重放事件/变体",
+          "criterion": "无缓存坐标或场，重置清晰，预算达标",
+          "observations": "事件日志、GPU资源、导入审计",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "泡沫源跟随滚动图案 UV。",
+        "水纹UV每秒变化直接作为 m/s。",
+        "移动接触源时把旧泡沫场一起搬走。",
+        "只生成源遮罩而没有真实输运。",
+        "新建水面覆盖原水体或关闭原折射来简化任务。"
+      ],
+      "requires_frozen": [
+        "native_river_binding",
+        "surface_chart_and_metric",
+        "physical_flow_metadata",
+        "contact_validity_threshold",
+        "permitted_optical_preservation"
+      ]
+    },
+    {
+      "task_id": "E_L3",
+      "constraint_ids": [
+        "F06"
+      ],
+      "predecessor": "E_L2",
+      "integration_groups": [
+        {
+          "id": "E_L3-G01",
+          "purpose": "水体确实进入输入",
+          "input_design": "前景覆盖具有可辨纹理的原水体",
+          "criterion": "前景内部包括当前水面，不跳过水面只见河床",
+          "observations": "前景真实输入、原水面中间色、覆盖ROI",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G02",
+          "purpose": "波事件联动",
+          "input_design": "改变扰动位置/触发时刻",
+          "criterion": "前景内外都响应同一真实波状态",
+          "observations": "h/n、原水面结果和前景帧",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G03",
+          "purpose": "前景光学独立",
+          "input_design": "固定波和原河流时刻，改变允许IOR/路径",
+          "criterion": "前景按E1变化，后景状态不受影响",
+          "observations": "光学输出、相同h、前景结果",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G04",
+          "purpose": "同tick更新",
+          "input_design": "每步改变后景中性标记/原水状态",
+          "criterion": "不能读取初始化/上一帧，不能额外推进模拟",
+          "observations": "实际像素标记、tick和状态日志",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G05",
+          "purpose": "前景不反馈",
+          "input_design": "显示/隐藏/移动前景",
+          "criterion": "原水体输入不包含前景，没有递归残影",
+          "observations": "背景来源和帧链记录",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G06",
+          "purpose": "零波回归",
+          "input_design": "清空h/hprev，原水纹继续",
+          "criterion": "法线合成为恒等，原光学/流动保留",
+          "observations": "n_base/n_eff、原水基线",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G07",
+          "purpose": "不透明遮挡",
+          "input_design": "授权物体遮挡前景或部分水面",
+          "criterion": "合成遵守深度，不把后景贴在遮挡物上",
+          "observations": "深度/层关系、可见像素",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G08",
+          "purpose": "视角与有效域",
+          "input_design": "公开相机/前景位置范围及越界情况",
+          "criterion": "UV方向/投影/fallback正确，不改主相机",
+          "observations": "背景UV、有效标记、相机记录",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G09",
+          "purpose": "范围与曝光保护",
+          "input_design": "关新增显示但保留其渲染资源",
+          "criterion": "非目标可见性/环境/原水体保持，非双倍曝光",
+          "observations": "隔离回归、主场景属性",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        },
+        {
+          "id": "E_L3-G10",
+          "purpose": "重启重导入与预算",
+          "input_design": "干净导入后持续多帧/重置",
+          "criterion": "无缓存答案/旧RID，内存与额外pass在预算内",
+          "observations": "实际资源、同步日志、CPU/GPU统计",
+          "status": "TO_IMPLEMENT_AND_CALIBRATE",
+          "thresholds": null,
+          "oracle_evidence": null
+        }
+      ],
+      "mutations": [
+        "前景继续读不包含原水体的默认输入。",
+        "只提高透明绘制优先级但输入仍缺层。",
+        "读取初始化或上一帧完整水面图。",
+        "捕获包含前景本身形成递归反馈。",
+        "把折射关掉或把原水体变成不透明以掩盖缺层。",
+        "新增离屏pass时重复 advance，导致波时间加速。"
+      ],
+      "requires_frozen": [
+        "native_river_render_path",
+        "one_front_one_water_scope",
+        "input_content_capture_feasibility",
+        "normal_combination_frame",
+        "same_tick_tolerances_and_pass_budget"
+      ]
+    }
+  ]
+}

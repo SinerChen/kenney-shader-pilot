@@ -1,0 +1,209 @@
+{
+  "keys_order": [
+    "P",
+    "time",
+    "t0",
+    "dt",
+    "points",
+    "origin_ref",
+    "R0",
+    "speed",
+    "noise_amplitude",
+    "base_frequency",
+    "octaves",
+    "gain",
+    "lacunarity",
+    "width",
+    "enabled",
+    "frequency",
+    "epsilon",
+    "drift",
+    "offsets",
+    "up_speed",
+    "curl_strength",
+    "lifetime",
+    "particles",
+    "emit_threshold",
+    "enable_emission",
+    "anchors",
+    "instance_transform",
+    "grid_size",
+    "domain_min",
+    "domain_size",
+    "d_max",
+    "depth",
+    "mask_size",
+    "mask",
+    "contacts",
+    "pom_rays",
+    "wetness",
+    "source",
+    "diffusion",
+    "lambda0",
+    "beta",
+    "cloud_world_to_local",
+    "cloud_min",
+    "cloud_max",
+    "density_size",
+    "density",
+    "cloud_sigma",
+    "cloud_steps",
+    "light_dir",
+    "light_rgb",
+    "fog_min",
+    "fog_max",
+    "fog_density",
+    "fog_scatter",
+    "fog_absorb",
+    "g",
+    "view_steps",
+    "view_rays",
+    "uvs",
+    "period",
+    "phase",
+    "tiling",
+    "flow",
+    "texture_size",
+    "color_texture",
+    "normal_texture",
+    "normal_encoded",
+    "foam",
+    "sources",
+    "decay",
+    "eta_i",
+    "eta_t",
+    "ell",
+    "sigma_a",
+    "optical_rays",
+    "view_projection",
+    "reflection_color",
+    "fallback_color",
+    "height",
+    "height_prev",
+    "force",
+    "wave_speed",
+    "gamma",
+    "front_visible",
+    "rear_visible",
+    "burn_visible",
+    "embers_visible",
+    "ambient_color",
+    "direct_color",
+    "dry_color",
+    "wet_color",
+    "dry_roughness",
+    "wet_roughness",
+    "wood_color",
+    "char_color",
+    "ember_color",
+    "contact_count",
+    "source_count"
+  ],
+  "operations": {
+    "stamp_query": [
+      "depth_field"
+    ],
+    "pom_query": [
+      "valid",
+      "hit_depth",
+      "hit_uv.x",
+      "hit_uv.y",
+      "hit_xz.x",
+      "hit_xz.z"
+    ],
+    "wet_step": [
+      "wetness_field",
+      "drying_rate_field"
+    ],
+    "wave_normal_query": [
+      "normal.x",
+      "normal.y",
+      "normal.z"
+    ]
+  },
+  "query_rows": {
+    "burn_query": [
+      "points",
+      3
+    ],
+    "curl_query": [
+      "points",
+      3
+    ],
+    "particle_step": [
+      "particles",
+      4
+    ],
+    "pom_query": [
+      "pom_rays",
+      5
+    ],
+    "cloud_query": [
+      "points",
+      3
+    ],
+    "fog_query": [
+      "view_rays",
+      7
+    ],
+    "flow_query": [
+      "uvs",
+      2
+    ],
+    "optics_query": [
+      "optical_rays",
+      9
+    ]
+  },
+  "fields_by_operation": {
+    "stamp_query": [
+      "contact_count",
+      "contacts",
+      "d_max",
+      "depth",
+      "domain_min",
+      "domain_size",
+      "dt",
+      "grid_size",
+      "mask",
+      "mask_size",
+      "time"
+    ],
+    "pom_query": [
+      "d_max",
+      "depth",
+      "domain_min",
+      "domain_size",
+      "dt",
+      "grid_size",
+      "pom_rays",
+      "time"
+    ],
+    "wet_step": [
+      "beta",
+      "d_max",
+      "depth",
+      "diffusion",
+      "domain_size",
+      "dt",
+      "grid_size",
+      "lambda0",
+      "source",
+      "time",
+      "wetness"
+    ],
+    "wave_normal_query": [
+      "domain_size",
+      "dt",
+      "grid_size",
+      "height",
+      "time"
+    ]
+  },
+  "opcodes": {
+    "stamp_query": 3,
+    "pom_query": 4,
+    "wet_step": 5,
+    "wave_normal_query": 12
+  }
+}

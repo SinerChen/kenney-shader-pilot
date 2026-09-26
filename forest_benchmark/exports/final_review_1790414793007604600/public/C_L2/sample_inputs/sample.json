@@ -1,0 +1,69 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "cloud_query": {
+      "input": {
+        "cloud_world_to_local": "Matrix4",
+        "cloud_min": "Vector3",
+        "cloud_max": "Vector3",
+        "density_size": "Vector3i",
+        "density": "float[Nz,Ny,Nx]",
+        "cloud_sigma": "float",
+        "cloud_steps": "int",
+        "light_dir": "Vector3",
+        "points": "Vector3[N]"
+      },
+      "output_fields": {
+        "valid_interval": "bool",
+        "s0": "float",
+        "s1": "float",
+        "optical_depth": "float",
+        "transmittance": "float"
+      }
+    },
+    "fog_query": {
+      "input": {
+        "cloud_world_to_local": "Matrix4",
+        "cloud_min": "Vector3",
+        "cloud_max": "Vector3",
+        "density_size": "Vector3i",
+        "density": "float[Nz,Ny,Nx]",
+        "cloud_sigma": "float",
+        "cloud_steps": "int",
+        "light_dir": "Vector3",
+        "view_rays": "Tuple[ox:float,oy:float,oz:float,dx:float,dy:float,dz:float,opaque_distance:float][N]",
+        "light_rgb": "Vector3",
+        "fog_min": "Vector3",
+        "fog_max": "Vector3",
+        "fog_density": "float",
+        "fog_scatter": "float",
+        "fog_absorb": "float",
+        "g": "float",
+        "view_steps": "int"
+      },
+      "output_fields": {
+        "phase": "float",
+        "L_scatter": "Vector3",
+        "T_view": "float",
+        "T_cloud_at_samples": "float[Nv]",
+        "T_fog_light": "float[Nv]"
+      }
+    }
+  }
+}

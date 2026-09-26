@@ -1,0 +1,98 @@
+{
+  "task": "A_L2",
+  "case_task": "A_L2",
+  "pass": 9,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "A_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/13/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/15/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/17/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/19/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/21/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/23/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/25/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        },
+        {
+          "path": "/27/particle_state",
+          "error": "No actual GPU output: {'fields': ['next_position.x', 'next_position.y', 'next_position.z', 'age', 'active', 'cooling'], 'shape': [0, 6], 'status': 'EMPTY'}"
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N10",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\delete_stock\\A_L2\\numeric",
+  "scope": "numeric_only"
+}

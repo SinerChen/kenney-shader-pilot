@@ -1,0 +1,28 @@
+{
+  "task": "B_L2",
+  "status": "CHAIN_L2_VALIDATED",
+  "operations": [
+    "stamp_query",
+    "pom_query",
+    "wet_step",
+    "wave_normal_query"
+  ],
+  "solution_hashes": {
+    "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+    "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+    "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "kernel.txt": "8a3a7f082828dfca124edad59769fb66c6e58649e14b75172cac43887eb12a83",
+    "wire.json": "45654ae8503bd3493d15e58205197c4e998442e360237d5dae6b65c25cd7bc8b"
+  },
+  "source_solution_hashes": {
+    "adapter.gd": "85eef72dd05e26e7a631d4ab7a0542e407d3ce021d780ab90162c7e1b15c8da3",
+    "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+    "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "kernel.txt": "3ba4b3ec9eb09d0739b0ae63d9d637df601ed589f165f637894a665545ecb7b7",
+    "wire.json": "48b9a0f41b06f13a2e27691deda6385e882fefd6928322890ee746ae4311e2e5"
+  },
+  "utility_note": "B retains height normals; E retains the shared GPU radial-source helper used by its existing wave event path.",
+  "validation": "author/reports/l3/predecessor_regression.json"
+}

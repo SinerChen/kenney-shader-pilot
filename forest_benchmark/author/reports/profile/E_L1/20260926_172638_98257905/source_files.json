@@ -1,0 +1,106 @@
+[
+  {
+    "path": "project.godot",
+    "sha256": "f9f61f35aacb4389e14bd195bb9c620f039523cdbfc75f894cde1eff05bb1a01"
+  },
+  {
+    "path": "assets/environment.json",
+    "sha256": "24f1c50c8c422943477bc307101d4f93755876ec7049778c5bb86d359bb0f603"
+  },
+  {
+    "path": "assets/front_path_length.f32",
+    "sha256": "99500e063d4eb4bb6786a16abfbf1bcfd82b23cf3933e30859725f823d66bfae"
+  },
+  {
+    "path": "assets/metadata.json",
+    "sha256": "e2cfc825ac6470ffc1becb4c7f000439c7a7df7871d82b9f0267cdfd283ff270"
+  },
+  {
+    "path": "assets/rear_path_length.f32",
+    "sha256": "4dc08df7663d265e0c69736de43ae9e4713fabaff85f7f4502ce942b00af1d50"
+  },
+  {
+    "path": "fixture/adapter_base.gd",
+    "sha256": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c"
+  },
+  {
+    "path": "fixture/background.gdshader",
+    "sha256": "de720b742b241084ae4b3d0ec938d4b9c0975669b522ceb4bcd65aac162d9043"
+  },
+  {
+    "path": "fixture/base_stage.tscn",
+    "sha256": "5f5bc95689cf0032dd8965f3b7587ec4ded950b3cc57c4197437f0de33a4f09e"
+  },
+  {
+    "path": "fixture/bridge.gd",
+    "sha256": "5ebc54c71885353c752e29c0cc85109dc7d2fc882b2da633cb9bc09ce0437237"
+  },
+  {
+    "path": "fixture/entry.tscn",
+    "sha256": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255"
+  },
+  {
+    "path": "fixture/evidence.gd",
+    "sha256": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4"
+  },
+  {
+    "path": "fixture/runner.gd",
+    "sha256": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d"
+  },
+  {
+    "path": "fixture/visual_runner.gd",
+    "sha256": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113"
+  },
+  {
+    "path": "public/api.md",
+    "sha256": "ba93734c89888af0b6359ab922e42f39d74662c933d57196e729d33a7eb94f02"
+  },
+  {
+    "path": "public/contract.md",
+    "sha256": "528eeaa4a7ce53db7f7213a7b9f24bec6e4e8733c64ea65646b5488ad75546aa"
+  },
+  {
+    "path": "public/demo.json",
+    "sha256": "e32ef5c47a16a37e24a1ae3ca6b60115e48145f17c0847370737a82f4dd845e5"
+  },
+  {
+    "path": "public/prompt.md",
+    "sha256": "8e391c8963a9cb48a68fe2ea03425ec04e10b76fd4f7c63644e629224cda03fd"
+  },
+  {
+    "path": "public/scene_inventory.json",
+    "sha256": "274b1f437d7c3e8614ae59bfc926bc0b9e1b40c7ed4506bfdd4051aa3a261cc8"
+  },
+  {
+    "path": "public/task.json",
+    "sha256": "77a49cb543c87914abbe7217d28dbf3eabcd2d41449351a81ce3783de04dfe9a"
+  },
+  {
+    "path": "public/sample_inputs/sample.json",
+    "sha256": "b33fc369d66d0b1d0bc3db00a561e27227b038dfd6d049e764be937a92761165"
+  },
+  {
+    "path": "solution/adapter.gd",
+    "sha256": "85eef72dd05e26e7a631d4ab7a0542e407d3ce021d780ab90162c7e1b15c8da3"
+  },
+  {
+    "path": "solution/defaults.json",
+    "sha256": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6"
+  },
+  {
+    "path": "solution/display.gd",
+    "sha256": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523"
+  },
+  {
+    "path": "solution/effect.tscn",
+    "sha256": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f"
+  },
+  {
+    "path": "solution/kernel.txt",
+    "sha256": "3ba4b3ec9eb09d0739b0ae63d9d637df601ed589f165f637894a665545ecb7b7"
+  },
+  {
+    "path": "solution/wire.json",
+    "sha256": "48b9a0f41b06f13a2e27691deda6385e882fefd6928322890ee746ae4311e2e5"
+  }
+]

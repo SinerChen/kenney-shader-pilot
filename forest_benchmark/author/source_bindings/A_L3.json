@@ -1,0 +1,462 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "A_L3",
+  "status": "SOURCE_RUNTIME_ENUMERATED",
+  "source_origin": "native_snapshot",
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Scripts/Import/Tree_LOD.gd",
+    "Materials/Tree branch LOD.tres"
+  ],
+  "source_gap": "报告只读到导入脚本和 LOD 材质片段；哪些模型绑定该脚本、最终实例层级、真实切换距离及全部活动材质均待核验。300/500 只是既有报告中的脚本值，不作为运行时真值。",
+  "verified_commit": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "checkout_sha256": "45c511725960ab33bd8abc282073e459953dcc600d1ce1123c7bce5f696c8b2f",
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": "bd9e27c6994a128aaab45cdda4d372de87b91900618ba2de55c6aa29248d5b56",
+  "original_entry_scene": "res://Main.tscn",
+  "real_target_bindings": [
+    {
+      "aabb": [
+        [
+          -10.3987264633179,
+          -1.02403938770294,
+          -1.14335215091705
+        ],
+        [
+          22.3880348205566,
+          17.2288837432861,
+          1.24389803409576
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 499.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree LOD.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_bp7vo",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2 LOD2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -10.2445592880249,
+          -0.964351713657379,
+          -12.0947456359863
+        ],
+        [
+          22.3998947143555,
+          15.2030143737793,
+          23.9957809448242
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 299.0,
+      "lod_end": 500.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch LOD.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_t0504",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2 LOD1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -7.89331912994385,
+          -0.960404634475708,
+          -9.49496269226074
+        ],
+        [
+          16.8562088012695,
+          15.2829618453979,
+          18.5953598022461
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 300.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_jwrlp",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -7.29241418838501,
+          -0.709780395030975,
+          -1.24542725086212
+        ],
+        [
+          15.7901363372803,
+          12.4714756011963,
+          1.34597313404083
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 499.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree LOD.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_injh2",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1 LOD2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -8.21195697784424,
+          -0.665343344211578,
+          -9.748366355896
+        ],
+        [
+          17.1660118103027,
+          10.5623979568481,
+          19.0436534881592
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 299.0,
+      "lod_end": 500.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch LOD.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_5ojvx",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1 LOD1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -6.34841632843018,
+          -0.661536037921906,
+          -7.64337158203125
+        ],
+        [
+          13.286205291748,
+          11.7869787216187,
+          14.7987079620361
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 300.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_byexr",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "protected_runtime_properties": [
+    "original source bytes",
+    "geometry",
+    "transforms",
+    "visibility",
+    "LOD ranges",
+    "wind and alpha cutout",
+    "shared materials",
+    "camera",
+    "lighting",
+    "environment",
+    "TAA",
+    "occlusion"
+  ],
+  "authorized_runtime_bindings": [
+    {
+      "node": "Decorations-Forest/Tree_small_2/Tree small 2 LOD2",
+      "surfaces": [
+        0
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    },
+    {
+      "node": "Decorations-Forest/Tree_small_2/Tree small 2 LOD1",
+      "surfaces": [
+        0,
+        1
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    },
+    {
+      "node": "Decorations-Forest/Tree_small_2/Tree small 2",
+      "surfaces": [
+        0,
+        1
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    },
+    {
+      "node": "Decorations-Forest/Tree_small_1/Tree small 1 LOD2",
+      "surfaces": [
+        0
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    },
+    {
+      "node": "Decorations-Forest/Tree_small_1/Tree small 1 LOD1",
+      "surfaces": [
+        0,
+        1
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    },
+    {
+      "node": "Decorations-Forest/Tree_small_1/Tree small 1",
+      "surfaces": [
+        0,
+        1
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    }
+  ],
+  "source_context_keep": [
+    "original non-target source code, assets, imported resources and scene hierarchy"
+  ],
+  "new_target_solution_exclusions": [
+    "author references and cases",
+    "previous model experiments",
+    "L2 fixture stage and completed background captures"
+  ],
+  "author_normalization_patches": [
+    {
+      "path": "Main.tscn",
+      "before": "a9ac88046ad459e670d8f2699562e8d868dc82675f1c3e1ff470fc8730c96af0",
+      "after": "0318618b52ad3f49e777b108779a3885f9be995a8a4e0281acbfc52bb94b55c3",
+      "purpose": "Detach absent editor generator; keep baked meshes, instances, transforms and materials."
+    },
+    {
+      "path": "project.godot",
+      "before": "0aa6c9b95b5b61f825ce4a5cf278507e5f6d18977ec7b6fea85edc6214c65cfc",
+      "after": "324dc7beaf7ec9aee27162dabf8f0676a4902140431be57dbf96eedce8f52992",
+      "purpose": "Pin Godot 4.6 import compatibility; preserve renderer, TAA, occlusion and quality settings."
+    }
+  ],
+  "test_interventions": [],
+  "required_source_checks": [
+    "同一完整提交中至少找到一类真实具有两个可观察表示的目标树，记录所有生效表面/材质和切换区间。",
+    "确认目标逻辑根节点、参考空间、实例变换和中性发射锚点；初版锚点选在实际不受局部顶点风变形的稳定枝干区域，不能冻结全森林风动。",
+    "确认共享资源的非目标树作为对照，记录原裁切轮廓、风动、阴影及 LOD 基线。若无法找到合适目标则阻塞 native 发布。"
+  ],
+  "required_frozen_fields": [
+    "targets_and_reference_frames",
+    "effective_lod_ranges",
+    "anchor_region_validity",
+    "state_error_tolerances",
+    "representation_visual_tolerances"
+  ],
+  "license_inventory": null,
+  "evidence_files": [
+    "author/source_audit/native_runtime/result.json",
+    "author/source_audit/native_runtime/baseline.png",
+    "author/source_audit/native_runtime/godot.log"
+  ],
+  "runtime_verified": true,
+  "can_export_native_task": false,
+  "blockers": [],
+  "source_binding_scope": "Loaded instances, active materials and resources verified; full integration feasibility and calibration remain separate gates.",
+  "instance_transform_note": "Original instances have fixed positive non-uniform source scaling. Additional rigid/uniform test transforms must be distinguished from this source rest transform; public domain requires calibration.",
+  "shared_material_consumers": {
+    "res://Materials/Tree LOD.tres": 3585,
+    "res://Materials/Tree bark.tres": 7170,
+    "res://Materials/Tree branch LOD.tres": 3585,
+    "res://Materials/Tree branch.tres": 3585
+  }
+}

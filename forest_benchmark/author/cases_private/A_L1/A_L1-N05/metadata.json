@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N05",
+  "purpose": "种子变化",
+  "input_design": "换一份合法 P，同一点集合",
+  "criterion": "新状态对应新输入，不能固定贴图",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

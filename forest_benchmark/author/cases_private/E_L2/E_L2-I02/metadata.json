@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-I02",
+  "intervention": "只改前景 IOR",
+  "control": "波事件/状态固定",
+  "relation": "前景呈现变，后景 h 不变",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "front_ior"
+}

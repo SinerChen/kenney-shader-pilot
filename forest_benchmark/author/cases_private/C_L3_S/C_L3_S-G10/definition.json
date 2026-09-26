@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G10",
+  "purpose": "同提交干净重放",
+  "input_design": "清缓存并重跑时间/相机序列",
+  "criterion": "映射和结果复现，无隐含作者机器状态",
+  "observations": "源/补丁哈希、运行日志和预算",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,96 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "burn_query": {
+      "input": {
+        "P": "Array[int]",
+        "points": "Vector3[N]",
+        "time": "float",
+        "t0": "float",
+        "origin_ref": "Vector3",
+        "R0": "float",
+        "speed": "float",
+        "noise_amplitude": "float",
+        "base_frequency": "float",
+        "octaves": "int",
+        "gain": "float",
+        "lacunarity": "float",
+        "width": "float",
+        "enabled": "bool"
+      },
+      "output_fields": {
+        "noise": "float",
+        "signed_front": "float",
+        "char_fraction": "float",
+        "front_strength": "float"
+      }
+    },
+    "curl_query": {
+      "input": {
+        "P": "Array[int]",
+        "frequency": "float",
+        "epsilon": "float",
+        "drift": "Vector3",
+        "offsets": "Array[Vector3]",
+        "up_speed": "float",
+        "curl_strength": "float",
+        "points": "Vector3[N]",
+        "time": "float"
+      },
+      "output_fields": {
+        "curl": "Vector3",
+        "velocity": "Vector3"
+      }
+    },
+    "particle_step": {
+      "input": {
+        "P": "Array[int]",
+        "frequency": "float",
+        "epsilon": "float",
+        "drift": "Vector3",
+        "offsets": "Array[Vector3]",
+        "up_speed": "float",
+        "curl_strength": "float",
+        "particles": "Tuple[x:float,y:float,z:float,age:float][N]",
+        "time": "float",
+        "dt": "float",
+        "lifetime": "float"
+      },
+      "output_fields": {
+        "next_position": "Vector3",
+        "age": "float",
+        "active": "bool",
+        "cooling": "float"
+      }
+    }
+  },
+  "scene_input": {
+    "object_id": "String",
+    "points_ref": "Vector3[N]",
+    "time": "float",
+    "instance_transform": "Matrix4",
+    "anchors": "Tuple[position:Vector3,normal:Vector3][N]"
+  },
+  "scene_output": {
+    "burn_state": "Dictionary[String,GPUField]",
+    "emitter_history": "Array[Dictionary{object_id:String,anchor_id:int,birth_time:float}]",
+    "particle_state": "Dictionary[String,GPUField]",
+    "display_resources": "Dictionary[String,Resource]"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "assets/environment.json": "24f1c50c8c422943477bc307101d4f93755876ec7049778c5bb86d359bb0f603",
+  "assets/front_path_length.f32": "99500e063d4eb4bb6786a16abfbf1bcfd82b23cf3933e30859725f823d66bfae",
+  "assets/metadata.json": "e2cfc825ac6470ffc1becb4c7f000439c7a7df7871d82b9f0267cdfd283ff270",
+  "assets/rear_path_length.f32": "4dc08df7663d265e0c69736de43ae9e4713fabaff85f7f4502ce942b00af1d50",
+  "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+  "fixture/background.gdshader": "de720b742b241084ae4b3d0ec938d4b9c0975669b522ceb4bcd65aac162d9043",
+  "fixture/base_stage.tscn": "5f5bc95689cf0032dd8965f3b7587ec4ded950b3cc57c4197437f0de33a4f09e",
+  "fixture/bridge.gd": "f872c4736e9359c0e60b7ef368d5f3155401cd613dd6061b39fcdd0cc07dbc9a",
+  "fixture/entry.tscn": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255",
+  "fixture/evidence.gd": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4",
+  "fixture/runner.gd": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d",
+  "fixture/visual_runner.gd": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113",
+  "project.godot": "f9f61f35aacb4389e14bd195bb9c620f039523cdbfc75f894cde1eff05bb1a01"
+}

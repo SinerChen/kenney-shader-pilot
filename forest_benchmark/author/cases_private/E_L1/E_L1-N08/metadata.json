@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N08",
+  "purpose": "全反射",
+  "input_design": "明确 k<0",
+  "criterion": "F=1 和状态约定",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

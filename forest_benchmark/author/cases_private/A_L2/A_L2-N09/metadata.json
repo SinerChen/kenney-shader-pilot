@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N09",
+  "purpose": "关闭发射",
+  "input_design": "有存量时关闭 enable_emission",
+  "criterion": "存量继续运动，新粒子为零",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

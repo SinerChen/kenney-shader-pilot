@@ -1,0 +1,23 @@
+{
+  "finished": "2026-09-27T01:59:18+08:00",
+  "model": "gpt-6-astra",
+  "alias": "openai_astra",
+  "task_id": "A_L1",
+  "stop_reason": "model_finished",
+  "error": null,
+  "requests": 42,
+  "render_calls": 5,
+  "exhausted_limits": [],
+  "final_text": "已完成实现，计划已标记为 `completed`。\n\n**修改与新增文件**\n- `solution/adapter.gd`：状态接口、GPU 查询及目标材质绑定。\n- `solution/burn_math.gdshaderinc`：三维梯度噪声、fBM、空间灼烧前沿。\n- `solution/wood_burn.gdshader`：木纹、橙黄发亮前沿和深色焦化区域。\n- `solution/check.gd`：保留未挂载的自检脚本。\n- `solution/plan.json`：实施与验证记录。`effect.tscn` 已恢复原始结构。\n\n**验证结果**\n- 120 帧渲染观察到起燃、逐渐扩展、最终完全焦化，三个区域清晰可辨。\n- GPU 输出布局、前沿数值及禁用掩码自检通过。\n- 场景保护检查通过，最终运行日志无错误。\n\n**限制**\n未取得资源中提及的完整算法契约，梯度顺序及 fBM 归一化约定仍需外部参考测试确认；当前静态场景未实测物体运动，图案采用物体局部坐标保持附着。",
+  "model_plan_status": "completed",
+  "model_completed_steps": 4,
+  "algorithm_quality": "not_independently_evaluated",
+  "candidate_files": {
+    "adapter.gd": "685930660c939dca21af8d19136c6cb1e6bd07336bd2897b2453a49c0e6de880",
+    "burn_math.gdshaderinc": "b63944e8a67f60c04738b5120411f68c5d9d53be1695c917798d65d9d54cdf42",
+    "check.gd": "906ea0ac7cec2f46b80cd34432310bb25b6b14fcb3efd283ec222a91242964eb",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "plan.json": "61ad79acc2e4a6029850c0a669911bec67d87c339f5ac3f837e3439df109fdd0",
+    "wood_burn.gdshader": "9d7de2eb7492be553d94fa8b2aa49613d9844c4923b75b7e441c61c4a1535b47"
+  }
+}

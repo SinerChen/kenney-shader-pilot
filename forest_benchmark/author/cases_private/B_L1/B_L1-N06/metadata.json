@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N06",
+  "purpose": "重叠",
+  "input_design": "多 ID 脚印相交",
+  "criterion": "有界累加",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

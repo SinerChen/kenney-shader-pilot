@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N09",
+  "purpose": "事件/多步",
+  "input_design": "接触注水交错事件，持续推进",
+  "criterion": "去重、dt 和使用当前 d",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

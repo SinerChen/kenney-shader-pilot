@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G08",
+  "purpose": "停源与零流速",
+  "input_design": "分别关闭源/令流速零",
+  "criterion": "按前级规则存量继续/停止搬运并衰减",
+  "observations": "分项状态、衰减输出",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

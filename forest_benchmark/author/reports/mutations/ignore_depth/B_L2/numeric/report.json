@@ -1,0 +1,277 @@
+{
+  "task": "B_L2",
+  "case_task": "B_L2",
+  "pass": 7,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "B_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.509090921011838,
+          "index": [
+            4,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.29090909090909095,
+          "allowed": 0.0002581818181818182
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N06",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "B_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/4/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/6/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/8/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/10/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/12/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/14/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        }
+      ]
+    },
+    {
+      "case": "B_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/4/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/6/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/8/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/10/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/12/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/14/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/17/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/19/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/21/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/23/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/25/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        },
+        {
+          "path": "/27/wetness_field",
+          "max_error": 0.40000001192092893,
+          "index": [
+            27,
+            1
+          ],
+          "actual": 0.800000011920929,
+          "expected": 0.4,
+          "allowed": 0.00028000000000000003
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\ignore_depth\\B_L2\\numeric",
+  "scope": "numeric_only"
+}

@@ -1,0 +1,24 @@
+{
+  "water": "Main Terrain/BezierCurve_001",
+  "front_center_world": [
+    -48.34503957116981,
+    -1.7591990232467691,
+    31.20366456173361
+  ],
+  "front_size_m": [
+    1.1,
+    1.1
+  ],
+  "front_geometry": "res://assets/task_inputs/E_L3/front_geometry.tres",
+  "layers": "one front, one original water surface, opaque forest",
+  "ell": 0.32,
+  "eta_i": 1.0,
+  "eta_t": 1.33,
+  "sigma_a": [
+    0.25,
+    0.06,
+    0.03
+  ],
+  "background_inputs": "unimplemented slots; solution must supply current water and opaque content without self feedback",
+  "normal_composition": "shortest-arc rotation from chart up to n_wave applied to n_base"
+}

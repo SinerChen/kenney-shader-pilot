@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G05",
+  "purpose": "方向/速度变化",
+  "input_design": "在合法配置边界改变原云运动参数",
+  "criterion": "空间及时间响应均随原场变化",
+  "observations": "多个世界点跨时刻 density/T",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

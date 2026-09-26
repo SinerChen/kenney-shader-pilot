@@ -1,0 +1,42 @@
+{
+  "task_id": null,
+  "contract_version": "0.1",
+  "contract_sha256": null,
+  "engine_version": null,
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "effect_scene": "res://solution/effect.tscn",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/**",
+    "assets/**",
+    "public/**"
+  ],
+  "writable_paths": [
+    "solution/**",
+    "scratch/**"
+  ],
+  "authorized_runtime_bindings": null,
+  "protected_runtime_properties": null,
+  "predecessor": {
+    "condition": null,
+    "task_id": null,
+    "run_hash": null
+  },
+  "algorithms_allowed_or_forbidden": null,
+  "input_domains": null,
+  "numeric_tolerances": null,
+  "visual_rubrics": null,
+  "interaction_requirements": null,
+  "budgets": {
+    "time_s": null,
+    "tool_calls": null,
+    "public_test_calls": null,
+    "memory_mb": null,
+    "frame_time_ms": null
+  },
+  "gpu_output_formats": null,
+  "capture_settings": null,
+  "status": "DO_NOT_DEPLOY_UNTIL_FROZEN"
+}

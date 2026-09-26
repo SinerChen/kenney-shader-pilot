@@ -1,0 +1,7 @@
+{
+  "task": "C_L2",
+  "name": "double_shadow",
+  "file": "solution\\display.gd",
+  "detector": "shadow_linearity",
+  "source_occurrences": 1
+}

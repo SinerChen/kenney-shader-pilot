@@ -1,0 +1,7 @@
+{
+  "task": "E_L2",
+  "name": "hide_front",
+  "file": "solution\\display.gd",
+  "detector": "display_dependency",
+  "source_occurrences": 1
+}

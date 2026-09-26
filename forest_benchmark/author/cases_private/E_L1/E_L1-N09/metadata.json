@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N09",
+  "purpose": "零吸收/零长度",
+  "input_design": "sigma=0 或 ell=0",
+  "criterion": "A=1，不凭空衰减",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

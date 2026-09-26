@@ -1,0 +1,252 @@
+[
+  {
+    "task": "A_L1",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "A_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L1\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L1\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "A_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L1\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L1\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "material_channels",
+      "bound_target": "TargetMesh",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "A_L2",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "A_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L2\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L2\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "A_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L2\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\A_L2\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "material_channels",
+      "bound_target": "TargetMesh",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "B_L1",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "B_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L1\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L1\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "B_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L1\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L1\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "pom_hit",
+      "bound_target": "GroundPatch",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "B_L2",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "B_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L2\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L2\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "B_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L2\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\B_L2\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "pom_hit",
+      "bound_target": "GroundPatch",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "C_L1",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "C_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L1\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L1\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "C_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L1\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L1\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "cloud_transmittance",
+      "bound_target": "GroundReceiver",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "C_L2",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "C_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L2\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L2\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "C_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L2\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\C_L2\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "cloud_transmittance",
+      "bound_target": "GroundReceiver",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "D_L1",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "D_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L1\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L1\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "D_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L1\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L1\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "flow_phases",
+      "bound_target": "WaterPatch",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "D_L2",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "D_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L2\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L2\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "D_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L2\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\D_L2\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "flow_phases",
+      "bound_target": "WaterPatch",
+      "bound_uniform": "values0"
+    }
+  },
+  {
+    "task": "E_L1",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "E_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L1\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L1\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "E_L1",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L1\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L1\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "front_optical_terms",
+      "bound_target": "TransparentTarget",
+      "bound_uniform": "optical_uv"
+    }
+  },
+  {
+    "task": "E_L2",
+    "numeric": "PASS",
+    "overview": {
+      "status": "RENDERED",
+      "task": "E_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L2\\visual\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L2\\visual"
+    },
+    "oblique": {
+      "status": "RENDERED",
+      "task": "E_L2",
+      "protection": "PASS",
+      "video": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L2\\oblique\\effect.mp4",
+      "evidence": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\reports\\E_L2\\oblique"
+    },
+    "gpu_render_consistency": {
+      "status": "PASS",
+      "max_error": 0.0,
+      "source": "front_optical_terms",
+      "bound_target": "FrontTarget",
+      "bound_uniform": "optical_uv"
+    }
+  }
+]

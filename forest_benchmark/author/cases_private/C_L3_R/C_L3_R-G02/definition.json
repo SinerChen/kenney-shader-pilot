@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G02",
+  "purpose": "切片与轴向",
+  "input_design": "跨深度层、轴交换可区分的位置",
+  "criterion": "无把层当颜色/轴颠倒/二维重复的错误",
+  "observations": "各坐标样本和独立参考",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

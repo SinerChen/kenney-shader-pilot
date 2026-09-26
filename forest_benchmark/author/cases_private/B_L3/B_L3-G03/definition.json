@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G03",
+  "purpose": "跨软混合边界",
+  "input_design": "足迹横跨已标定过渡区",
+  "criterion": "状态域按最终层贡献阈值，原软混合外观仍在",
+  "observations": "m/H、印章范围、边界帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

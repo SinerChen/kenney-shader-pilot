@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N02",
+  "purpose": "均匀直流",
+  "input_design": "常量速度，多个 t",
+  "criterion": "qi 和权重",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 2
+}

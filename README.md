@@ -1,5 +1,7 @@
 # Kenney Shader Pilot
 
+[Forest Benchmark：题目、现有报告、实验记录及一个完整 L3 工程](forest_benchmark/README.md) · [上传内容说明](forest_benchmark/GITHUB_CONTENTS.md)
+
 [Repository contents and restore instructions](REPOSITORY.md)
 
 新增 [场景算法递进任务包](scene_algorithm_tasks/README.md)：依据已实现算法和现有场景编写 **5 组、15 题**，按“L1 算法正确性 → L2 效果交互 → L3 场景影响与设计作用”划分。模型基础输入为简化题面与 read/write/render 工具；本次串行 S1/P3 另有[系统 prompt 待审阅](scene_algorithm_tasks/experiment/P3.md)。模型可自行设置相机和截图帧获取真实渲染结果；固定输入输出写在题面内，内部评测材料单独保留。各题复用现有宿主，L1 拆分、L2 按需、L3 完整场景，尚未执行模型或正式效果评分，原有任务与实验保留。

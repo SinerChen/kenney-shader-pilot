@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N09",
+  "purpose": "POM 命中",
+  "input_design": "已知坡面/台形场、正视与斜视",
+  "criterion": "最早交点及误差",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 3
+}

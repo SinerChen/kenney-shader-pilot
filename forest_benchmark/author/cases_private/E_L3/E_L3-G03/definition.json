@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G03",
+  "purpose": "前景光学独立",
+  "input_design": "固定波和原河流时刻，改变允许IOR/路径",
+  "criterion": "前景按E1变化，后景状态不受影响",
+  "observations": "光学输出、相同h、前景结果",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

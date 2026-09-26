@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-I01",
+  "intervention": "深浅压痕",
+  "control": "相同 w/S，改变 d",
+  "relation": "干燥率和后续湿度按公式改变",
+  "status": "GENERATED",
+  "baseline_length": 23,
+  "intervention_name": "depth"
+}

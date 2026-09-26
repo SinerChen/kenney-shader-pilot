@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G03",
+  "purpose": "冻结状态跨越切换边界",
+  "input_design": "t 固定，相机往返跨实际边界",
+  "criterion": "仅表现精度允许改变，b/a 不重置或消失",
+  "observations": "切换两侧序列、状态缓冲",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,206 @@
+{
+  "task": "C_L2",
+  "case_task": "C_L2",
+  "pass": 1,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "C_L2-N01",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L2-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        },
+        {
+          "path": "/3",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5034146962085905,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.4965853037914095,
+          "allowed": 0.00029931706075828193
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5696967897892046,
+          "index": [
+            0,
+            5
+          ],
+          "actual": 1.0,
+          "expected": 0.43030321021079543,
+          "allowed": 0.0002860606420421591
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        },
+        {
+          "path": "/3",
+          "max_error": 0.5949148759506964,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4050851240493037,
+          "allowed": 0.00028101702480986076
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.5673367171911258,
+          "index": [
+            0,
+            6
+          ],
+          "actual": 1.0,
+          "expected": 0.4326632828088742,
+          "allowed": 0.0002865326565617749
+        },
+        {
+          "path": "/3",
+          "max_error": 0.5964593446757667,
+          "index": [
+            0,
+            7
+          ],
+          "actual": 1.0,
+          "expected": 0.4035406553242333,
+          "allowed": 0.00028070813106484665
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\fake_cloud\\C_L2\\numeric",
+  "scope": "numeric_only"
+}

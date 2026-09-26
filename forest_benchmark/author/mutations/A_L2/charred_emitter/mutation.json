@@ -1,0 +1,7 @@
+{
+  "task": "A_L2",
+  "name": "charred_emitter",
+  "file": "solution\\adapter.gd",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

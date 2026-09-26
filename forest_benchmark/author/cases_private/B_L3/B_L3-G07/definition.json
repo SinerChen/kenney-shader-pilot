@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G07",
+  "purpose": "重复事件与重置",
+  "input_design": "重放同一 ID，再 reset",
+  "criterion": "不重复压入/注水，reset 按配置复现",
+  "observations": "事件轨迹和 d/w",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

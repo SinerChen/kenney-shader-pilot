@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G02",
+  "purpose": "覆盖所有实际表示",
+  "input_design": "逐个采集核验过的表示及可见区间",
+  "criterion": "各表示按自己的基线表达同一目标状态，不能漏远景",
+  "observations": "表示 ID、参考点值、逐表示覆盖误差",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

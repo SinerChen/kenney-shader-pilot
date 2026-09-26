@@ -1,0 +1,336 @@
+{
+  "task_id": "A_L3",
+  "original_entry_scene": "res://Main.tscn",
+  "target_bindings": [
+    {
+      "aabb": [
+        [
+          -10.3987264633179,
+          -1.02403938770294,
+          -1.14335215091705
+        ],
+        [
+          22.3880348205566,
+          17.2288837432861,
+          1.24389803409576
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 499.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree LOD.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_bp7vo",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2 LOD2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -10.2445592880249,
+          -0.964351713657379,
+          -12.0947456359863
+        ],
+        [
+          22.3998947143555,
+          15.2030143737793,
+          23.9957809448242
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 299.0,
+      "lod_end": 500.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch LOD.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_t0504",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2 LOD1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -7.89331912994385,
+          -0.960404634475708,
+          -9.49496269226074
+        ],
+        [
+          16.8562088012695,
+          15.2829618453979,
+          18.5953598022461
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 300.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_2.glb::ArrayMesh_jwrlp",
+      "path": "Decorations-Forest/Tree_small_2/Tree small 2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.208845004439354,
+          0.0,
+          0.514207005500793
+        ],
+        [
+          0.0,
+          0.533999979496002,
+          0.0
+        ],
+        [
+          -0.505868017673492,
+          0.0,
+          0.205458000302315
+        ],
+        [
+          43.6020011901855,
+          -6.53800010681152,
+          -25.9069995880127
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -7.29241418838501,
+          -0.709780395030975,
+          -1.24542725086212
+        ],
+        [
+          15.7901363372803,
+          12.4714756011963,
+          1.34597313404083
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 499.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree LOD.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_injh2",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1 LOD2",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -8.21195697784424,
+          -0.665343344211578,
+          -9.748366355896
+        ],
+        [
+          17.1660118103027,
+          10.5623979568481,
+          19.0436534881592
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 299.0,
+      "lod_end": 500.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch LOD.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_5ojvx",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1 LOD1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    },
+    {
+      "aabb": [
+        [
+          -6.34841632843018,
+          -0.661536037921906,
+          -7.64337158203125
+        ],
+        [
+          13.286205291748,
+          11.7869787216187,
+          14.7987079620361
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 300.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Tree bark.tres",
+          "surface": 0
+        },
+        {
+          "active_material": "res://Materials/Tree branch.tres",
+          "surface": 1
+        }
+      ],
+      "mesh": "res://Meshes/Trees/Tree_small_1.glb::ArrayMesh_byexr",
+      "path": "Decorations-Forest/Tree_small_1/Tree small 1",
+      "scene_file": "",
+      "transform": [
+        [
+          0.544978976249695,
+          0.0,
+          -0.297722995281219
+        ],
+        [
+          0.0,
+          0.626999974250793,
+          0.0
+        ],
+        [
+          0.293408006429672,
+          0.0,
+          0.537081003189087
+        ],
+        [
+          42.1349983215332,
+          -5.56400012969971,
+          -41.5519981384277
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "source_nodes_count": 35273,
+  "source_file_manifest": "scene_files.json"
+}

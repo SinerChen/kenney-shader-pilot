@@ -1,0 +1,183 @@
+{
+  "task": "C_L2",
+  "case_task": "C_L2",
+  "pass": 2,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "C_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L2-N02",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        },
+        {
+          "path": "/3",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.18637035655598555,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8136296434440144,
+          "allowed": 0.0003627259286888029
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.27385096292630906,
+          "index": [
+            0,
+            17
+          ],
+          "actual": 1.0,
+          "expected": 0.7261490370736909,
+          "allowed": 0.0003452298074147382
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            13
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    },
+    {
+      "case": "C_L2-N09",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            8
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        },
+        {
+          "path": "/3",
+          "max_error": 0.16750938738839727,
+          "index": [
+            0,
+            17
+          ],
+          "actual": 1.0,
+          "expected": 0.8324906126116027,
+          "allowed": 0.00036649812252232056
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\omit_sun_fog\\C_L2\\numeric",
+  "scope": "numeric_only"
+}

@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "checked": "2026-09-27T01:44:43+08:00",
+  "model_api_calls": 0,
+  "runtime_tests": true,
+  "s1_candidate_inheritance": true,
+  "author_reference_injected": false,
+  "native_image_feedback": true,
+  "continuous_video": true,
+  "solution_plan_protocol": true,
+  "actual_renders": [
+    {
+      "task": "A_L1",
+      "render": true,
+      "images": 2,
+      "video": "scratch/observations/1790444635746992200/effect.mp4",
+      "camera": {
+        "basis": "[X: (-0.0, 0.0, 1.0), Y: (1.0, -0.0, 0.0), Z: (0.0, 1.0, 0.0)]",
+        "position": "(0.0, 8.0, 0.0)",
+        "requested": {
+          "look_at": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            8.0,
+            0.0
+          ]
+        }
+      },
+      "path": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\runtime\\experiment\\preflight_runs\\1790444635684143600\\test\\A_L1\\model_workspace"
+    },
+    {
+      "task": "A_L3",
+      "render": true,
+      "images": 2,
+      "video": "scratch/observations/1790444641757110000/effect.mp4",
+      "camera": {
+        "basis": "[X: (0.894427, 0.0, 0.447214), Y: (0.267261, 0.801784, -0.534523), Z: (-0.358569, 0.597614, 0.717137)]",
+        "fov": 75.0,
+        "position": "(40.0, 2.0, -20.0)",
+        "requested": {
+          "look_at": [
+            43.0,
+            -3.0,
+            -26.0
+          ],
+          "position": [
+            40.0,
+            2.0,
+            -20.0
+          ]
+        }
+      },
+      "path": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\runtime\\experiment\\preflight_runs\\1790444635684143600\\test\\A_L3\\model_workspace"
+    }
+  ]
+}

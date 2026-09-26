@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N04",
+  "purpose": "多 octave",
+  "input_design": "改变 gain/lacunarity 与 octave 数",
+  "criterion": "归一化权重、noise",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

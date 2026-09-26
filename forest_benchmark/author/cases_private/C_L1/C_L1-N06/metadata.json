@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N06",
+  "purpose": "内部起点",
+  "input_design": "查询点位于云内",
+  "criterion": "从 s=0 积分",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

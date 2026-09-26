@@ -1,0 +1,15 @@
+{
+  "task": "B_L1",
+  "status": "L1_ONLY_VALIDATED",
+  "numeric_pass": 10,
+  "visual": "RENDERED",
+  "solution_hashes": {
+    "adapter.gd": "abc143435827e05ef8310ccada90510df65a122c6843665661a0ec712f77fb43",
+    "defaults.json": "efd1e936486e14627bee88110c53865df8d2930e229b695634eaa3d49ecf7fb6",
+    "display.gd": "5287c9649ba7b1c00a07050103589069f4d837b8eef8f5976cc8b55b9ecc76c1",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "kernel.txt": "d5315a6d4b30a13fe0fcf165dc5c9892d2234985a6491639f8be5c65c8238774",
+    "wire.json": "cf1cd9133afd9fa90a409446ac32b194fee5ac3290281c3509a8e65172130487"
+  },
+  "no_new_level_algorithm": true
+}

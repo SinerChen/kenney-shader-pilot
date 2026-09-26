@@ -1,0 +1,284 @@
+{
+  "task": "A_L1",
+  "case_task": "A_L1",
+  "pass": 0,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "A_L1-N01",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.45239999890327454,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.45239999890327454,
+          "expected": 0.0,
+          "allowed": 0.0002
+        },
+        {
+          "path": "/3",
+          "max_error": 0.45239999890327454,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.45239999890327454,
+          "expected": 0.0,
+          "allowed": 0.0002
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N02",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            2,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/3",
+          "max_error": 0.8700000047683716,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/3",
+          "max_error": 0.45239999890327454,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.45239999890327454,
+          "expected": 0.0,
+          "allowed": 0.0002
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.8700000047683716,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/3",
+          "max_error": 0.8700000047683716,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/5",
+          "max_error": 0.6399999856948853,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.6399999856948853,
+          "expected": 0.0,
+          "allowed": 0.0002
+        },
+        {
+          "path": "/7",
+          "max_error": 0.8700000047683716,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.12999999523162842,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    },
+    {
+      "case": "A_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.999623130830382,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.0,
+          "expected": 0.999623130830382,
+          "allowed": 0.0003999246261660764
+        },
+        {
+          "path": "/3",
+          "max_error": 0.8999999985098839,
+          "index": [
+            1,
+            2
+          ],
+          "actual": 0.10000000149011612,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/5",
+          "max_error": 0.7999999970197678,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.20000000298023224,
+          "expected": 1.0,
+          "allowed": 0.0004
+        },
+        {
+          "path": "/7",
+          "max_error": 0.7999999970197678,
+          "index": [
+            0,
+            2
+          ],
+          "actual": 0.20000000298023224,
+          "expected": 1.0,
+          "allowed": 0.0004
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\global_black\\A_L1\\numeric",
+  "scope": "numeric_only"
+}

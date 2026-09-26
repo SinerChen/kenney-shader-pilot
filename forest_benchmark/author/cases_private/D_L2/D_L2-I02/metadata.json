@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-I02",
+  "intervention": "改实际速度",
+  "control": "反转/转弯同一输入流场",
+  "relation": "水纹表达与泡沫方向按各自定义响应",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "velocity"
+}

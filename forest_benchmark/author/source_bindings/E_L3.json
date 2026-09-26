@@ -1,0 +1,140 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "E_L3",
+  "status": "SOURCE_RUNTIME_ENUMERATED",
+  "source_origin": "native_snapshot",
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Shaders/River.tres"
+  ],
+  "source_gap": "尚未核验原材质在 Main.tscn 的活动挂载、渲染后端、透明/屏幕输入及前后层捕获能力。没有原水体实际参与时不能用新建测试平面代替 native 任务。",
+  "verified_commit": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "checkout_sha256": "45c511725960ab33bd8abc282073e459953dcc600d1ce1123c7bce5f696c8b2f",
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": "bd9e27c6994a128aaab45cdda4d372de87b91900618ba2de55c6aa29248d5b56",
+  "original_entry_scene": "res://Main.tscn",
+  "real_target_bindings": [
+    {
+      "aabb": [
+        [
+          -332.793395996094,
+          -13.2385969161987,
+          -1355.58081054688
+        ],
+        [
+          395.321807861328,
+          107.264747619629,
+          1816.94970703125
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/River.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Main Terrain.glb::ArrayMesh_wwr2p",
+      "path": "Main Terrain/BezierCurve_001",
+      "scene_file": "",
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -62.4331665039063,
+          -1.11193954944611,
+          35.4822120666504
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "protected_runtime_properties": [
+    "original source bytes",
+    "geometry",
+    "transforms",
+    "visibility",
+    "LOD ranges",
+    "wind and alpha cutout",
+    "shared materials",
+    "camera",
+    "lighting",
+    "environment",
+    "TAA",
+    "occlusion"
+  ],
+  "authorized_runtime_bindings": [
+    {
+      "node": "Main Terrain/BezierCurve_001",
+      "surfaces": [
+        0
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    }
+  ],
+  "source_context_keep": [
+    "original non-target source code, assets, imported resources and scene hierarchy"
+  ],
+  "new_target_solution_exclusions": [
+    "author references and cases",
+    "previous model experiments",
+    "L2 fixture stage and completed background captures"
+  ],
+  "author_normalization_patches": [
+    {
+      "path": "Main.tscn",
+      "before": "a9ac88046ad459e670d8f2699562e8d868dc82675f1c3e1ff470fc8730c96af0",
+      "after": "0318618b52ad3f49e777b108779a3885f9be995a8a4e0281acbfc52bb94b55c3",
+      "purpose": "Detach absent editor generator; keep baked meshes, instances, transforms and materials."
+    },
+    {
+      "path": "project.godot",
+      "before": "0aa6c9b95b5b61f825ce4a5cf278507e5f6d18977ec7b6fea85edc6214c65cfc",
+      "after": "324dc7beaf7ec9aee27162dabf8f0676a4902140431be57dbf96eedce8f52992",
+      "purpose": "Pin Godot 4.6 import compatibility; preserve renderer, TAA, occlusion and quality settings."
+    }
+  ],
+  "test_interventions": [],
+  "required_source_checks": [
+    "确认真实原水体及其屏幕读取/透明流程，在冻结后端实测哪些内容可进入前景输入。",
+    "先实现至少一份原水体+前景的合法可运行参考，支持原水体透明/流动和当前tick采集；不能以设置某API就假定可捕获。",
+    "冻结一层前景+一层原水体+不透明背景的范围、路径长度和相机域，验证无遮挡/遮挡的正确参考。",
+    "读清原水体法线空间，确认 E2 波法线能以零扰动恒等的方式组合并保持原光学。"
+  ],
+  "required_frozen_fields": [
+    "native_river_render_path",
+    "one_front_one_water_scope",
+    "input_content_capture_feasibility",
+    "normal_combination_frame",
+    "same_tick_tolerances_and_pass_budget"
+  ],
+  "license_inventory": null,
+  "evidence_files": [
+    "author/source_audit/native_runtime/result.json",
+    "author/source_audit/native_runtime/baseline.png",
+    "author/source_audit/native_runtime/godot.log"
+  ],
+  "runtime_verified": true,
+  "can_export_native_task": false,
+  "blockers": [],
+  "source_binding_scope": "Loaded instances, active materials and resources verified; full integration feasibility and calibration remain separate gates."
+}

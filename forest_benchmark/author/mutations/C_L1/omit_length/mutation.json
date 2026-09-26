@@ -1,0 +1,7 @@
+{
+  "task": "C_L1",
+  "name": "omit_length",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

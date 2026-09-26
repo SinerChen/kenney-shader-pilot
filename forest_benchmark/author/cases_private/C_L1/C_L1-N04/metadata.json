@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N04",
+  "purpose": "非均匀云",
+  "input_design": "不对称体积、多个空间点",
+  "criterion": "三维类型和坐标",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

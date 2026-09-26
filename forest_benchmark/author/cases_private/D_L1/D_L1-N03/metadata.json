@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N03",
+  "purpose": "弯曲流场",
+  "input_design": "不对称二维向量输入",
+  "criterion": "局部方向",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

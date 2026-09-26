@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-I04",
+  "intervention": "只改 curl",
+  "control": "灼烧输入和出生条件不变",
+  "relation": "轨迹变，L1 焦化/front 不变",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "curl_only"
+}

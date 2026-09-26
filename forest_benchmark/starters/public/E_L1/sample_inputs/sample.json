@@ -1,0 +1,45 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "optics_query": {
+      "input": {
+        "optical_rays": "Tuple[Ix:float,Iy:float,Iz:float,Nx:float,Ny:float,Nz:float,x:float,y:float,z:float][N]",
+        "eta_i": "float",
+        "eta_t": "float",
+        "ell": "float",
+        "sigma_a": "Vector3",
+        "view_projection": "Matrix4",
+        "texture_size": "Vector2i",
+        "color_texture": "Vector3[H,W]",
+        "reflection_color": "Vector3",
+        "fallback_color": "Vector3"
+      },
+      "output_fields": {
+        "F": "float",
+        "Tdir": "Vector3",
+        "R": "Vector3",
+        "A": "Vector3",
+        "has_transmission": "bool",
+        "background_uv": "Vector2",
+        "valid": "bool",
+        "color": "Vector3"
+      }
+    }
+  }
+}

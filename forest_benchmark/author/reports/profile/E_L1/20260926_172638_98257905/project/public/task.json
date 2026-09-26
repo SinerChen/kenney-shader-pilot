@@ -1,0 +1,108 @@
+{
+  "task_id": "E_L1",
+  "title": "透明水滴/水膜的折射与吸收",
+  "algorithm": "Snell＋精确介质 Fresnel＋Beer–Lambert",
+  "contract_version": "0.1",
+  "contract_sha256": "2e99cbb4b294e35b75b22f6a714d558e10e94bf1aed509388dc1784c04d7dafb",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/",
+    "public/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "TransparentTarget"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "task_id": null,
+    "condition": "none"
+  },
+  "queries": {
+    "optics_query": [
+      "F",
+      "Tdir.x",
+      "Tdir.y",
+      "Tdir.z",
+      "R.x",
+      "R.y",
+      "R.z",
+      "A.r",
+      "A.g",
+      "A.b",
+      "has_transmission",
+      "background_uv.x",
+      "background_uv.y",
+      "valid",
+      "color.r",
+      "color.g",
+      "color.b"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "STARTER_BUILT_RELEASE_PENDING"
+}

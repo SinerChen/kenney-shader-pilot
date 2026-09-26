@@ -1,0 +1,7 @@
+{
+  "task": "C_L1",
+  "name": "darken_ambient",
+  "file": "solution\\display.gd",
+  "detector": "ambient_preservation",
+  "source_occurrences": 1
+}

@@ -1,0 +1,26 @@
+{
+  "U": {
+    "path": "res://Shaders/Sky/perlworlnoise.tga",
+    "class": "CompressedTexture3D",
+    "size": [
+      128,
+      128,
+      128
+    ],
+    "channel": 0
+  },
+  "V": {
+    "path": "res://Shaders/Sky/weather.bmp",
+    "class": "CompressedTexture2D",
+    "size": [
+      512,
+      512
+    ],
+    "channel": 0
+  },
+  "addressing": "repeat",
+  "filter": "linear",
+  "lod": 0,
+  "data_space": "linear numerical samples",
+  "normalization": "8-bit source components / 255"
+}

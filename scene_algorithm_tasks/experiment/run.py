@@ -179,6 +179,8 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
              progress=lambda value: None, sleeper=time.sleep, now=time.time):
     out = Path(out)
     root = out / "model_workspace"
+    solution_dir = config.get("solution_dir", "effect")
+    plan_name = solution_dir + "/plan.json"
     request = read(out / "input.json")
     prompt = {"system": request["messages"][0]["content"], "user": request["messages"][1]["content"],
               "tools": request["tools"], "images": []}
@@ -227,17 +229,26 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
     def exhausted():
         return [key for key, count in counters.items() if count >= config["budget_per_task"][key]]
 
+    def pause_requested():
+        return bool(config.get("stop_file") and Path(config["stop_file"]).exists())
+
     reason, final_text, error_text = None, "", saved_error
     checkpoint()
     try:
         while True:
+            if pause_requested():
+                reason = "user_paused"
+                break
             if exhausted():
                 reason = "budget_exhausted"
                 break
             if retry_at is not None:
                 status("retry_wait", error=error_text, retry_at=retry_at)
-                while now() < retry_at:
+                while now() < retry_at and not pause_requested():
                     sleeper(min(2, max(0, retry_at - now())))
+                if pause_requested():
+                    reason = "user_paused"
+                    break
                 retry_at = None
                 checkpoint()
             if phase != "response_ready":
@@ -270,6 +281,9 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
                     usage=pending.get("usage", {}))
                 phase = "response_ready"
                 checkpoint()
+            if pause_requested():
+                reason = "user_paused"
+                break
             calls = pending.get("calls", [])
             if pending.get("finish") in ("incomplete", "length", "max_tokens", "failed", "cancelled"):
                 reason = "output_truncated"
@@ -300,9 +314,9 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
                     args = call["arguments"] if isinstance(call["arguments"], dict) else json.loads(call["arguments"])
                     if not isinstance(args, dict):
                         raise ValueError("arguments must be an object")
-                    plan_write = name == "write" and args.get("path", "").replace("\\", "/") == "effect/plan.json"
+                    plan_write = name == "write" and args.get("path", "").replace("\\", "/") == plan_name
                     if not planned and not plan_write:
-                        raise ValueError("First operation must write effect/plan.json as specified in the prompt")
+                        raise ValueError("First operation must write " + plan_name + " as specified in the prompt")
                     if plan_write:
                         validate_plan(args)
                     reply = tools.call(name, args)
@@ -329,7 +343,7 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
     finally:
         checkpoint()
         session.close()
-    plan_path = root / "effect/plan.json"
+    plan_path = root / plan_name
     try:
         plan = read(plan_path) if plan_path.exists() else {}
     except (OSError, ValueError):
@@ -340,8 +354,8 @@ def run_task(out, model, config, *, session_factory=Session, tools_factory=FileT
                     "model_plan_status": plan.get("status"),
                     "model_completed_steps": sum(step.get("status") == "passed" for step in plan.get("steps", []) if isinstance(step, dict)),
                     "algorithm_quality": "not_independently_evaluated",
-                    "candidate_files": {p.relative_to(root / "effect").as_posix(): digest(p)
-                                        for p in (root / "effect").rglob("*") if p.is_file()}})
+                    "candidate_files": {p.relative_to(root / solution_dir).as_posix(): digest(p)
+                                        for p in (root / solution_dir).rglob("*") if p.is_file()}})
     save(out / "result.json", result)
     if final_text:
         (out / "final.md").write_text(final_text, encoding="utf-8")

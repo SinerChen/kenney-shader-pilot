@@ -1,0 +1,27 @@
+Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org
+Vulkan 1.3.302 - Forward+ - Using Device #0: AMD - AMD Radeon 780M Graphics
+
+--res://solution/wood_burn.gdshader--
+   16 | uniform bool enabled = true;
+   17 | varying vec3 reference_position;
+E  18-> #include "res://solution/burn_math.gdshaderinc"
+   19 | 
+   20 | void vertex() {
+--res://solution/burn_math.gdshaderinc--
+   28 |  mix(corner(i+ivec3(0,1,1),f-vec3(0,1,1)),corner(i+ivec3(1,1,1),f-vec3(1,1,1)),u.x),u.y),u.z);
+   29 | }
+E  30-> float fbm3(vec3 p, float frequency, int octaves, float gain, float lacunarity) {
+   31 |  float sum = 0.0;
+   32 |  float amplitude = 1.0;
+SHADER ERROR: Redefinition of 'octaves'.
+   at: (null) (res://solution/burn_math.gdshaderinc:30)
+   GDScript backtrace (most recent call first):
+       [0] mount (res://solution/adapter.gd:116)
+       [1] _ready (res://fixture/bridge.gd:26)
+       [2] run (res://fixture/model_runner.gd:14)
+ERROR: Shader compilation failed.
+   at: set_code (servers/rendering/renderer_rd/forward_clustered/scene_shader_forward_clustered.cpp:181)
+   GDScript backtrace (most recent call first):
+       [0] mount (res://solution/adapter.gd:116)
+       [1] _ready (res://fixture/bridge.gd:26)
+       [2] run (res://fixture/model_runner.gd:14)

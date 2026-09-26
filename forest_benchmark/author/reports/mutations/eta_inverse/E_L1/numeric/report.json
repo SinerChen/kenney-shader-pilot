@@ -1,0 +1,227 @@
+{
+  "task": "E_L1",
+  "case_task": "E_L1",
+  "pass": 2,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "E_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "E_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.170846264634727,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.3930419087409973,
+          "expected": 0.22219564410627032,
+          "allowed": 0.00024443912882125406
+        },
+        {
+          "path": "/3",
+          "max_error": 0.5425314357059836,
+          "index": [
+            0,
+            2
+          ],
+          "actual": -0.29954034090042114,
+          "expected": -0.8420717766064048,
+          "allowed": 0.00036841435532128093
+        },
+        {
+          "path": "/5",
+          "max_error": 1.0,
+          "index": [
+            0,
+            10
+          ],
+          "actual": 0.0,
+          "expected": 1.0,
+          "allowed": 0.0
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.24626684244173158,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.1970134675502777,
+          "expected": 0.4432803099920093,
+          "allowed": 0.0002886560619984019
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.34687221812126334,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.7980000376701355,
+          "expected": 0.45112781954887216,
+          "allowed": 0.0002902255639097744
+        },
+        {
+          "path": "/3",
+          "max_error": 0.34687221812126334,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.7980000376701355,
+          "expected": 0.45112781954887216,
+          "allowed": 0.0002902255639097744
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.34687221812126334,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.7980000376701355,
+          "expected": 0.45112781954887216,
+          "allowed": 0.0002902255639097744
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.814655826398023,
+          "index": [
+            0,
+            2
+          ],
+          "actual": -0.8965454697608948,
+          "expected": -0.08188964336287174,
+          "allowed": 0.00021637792867257435
+        },
+        {
+          "path": "/3",
+          "max_error": 1.0,
+          "index": [
+            0,
+            10
+          ],
+          "actual": 1.0,
+          "expected": 0.0,
+          "allowed": 0.0
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 1.0,
+          "index": [
+            0,
+            10
+          ],
+          "actual": 1.0,
+          "expected": 0.0,
+          "allowed": 0.0
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.34687221812126334,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.7980000376701355,
+          "expected": 0.45112781954887216,
+          "allowed": 0.0002902255639097744
+        },
+        {
+          "path": "/3",
+          "max_error": 0.34687221812126334,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.7980000376701355,
+          "expected": 0.45112781954887216,
+          "allowed": 0.0002902255639097744
+        }
+      ]
+    },
+    {
+      "case": "E_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.17343610906063167,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.39900001883506775,
+          "expected": 0.22556390977443608,
+          "allowed": 0.00024511278195488726
+        },
+        {
+          "path": "/3",
+          "max_error": 0.17343610906063167,
+          "index": [
+            0,
+            1
+          ],
+          "actual": 0.39900001883506775,
+          "expected": 0.22556390977443608,
+          "allowed": 0.00024511278195488726
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\eta_inverse\\E_L1\\numeric",
+  "scope": "numeric_only"
+}

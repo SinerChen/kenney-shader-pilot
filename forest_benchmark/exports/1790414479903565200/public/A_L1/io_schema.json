@@ -1,0 +1,45 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "burn_query": {
+      "input": {
+        "P": "Array[int]",
+        "points": "Vector3[N]",
+        "time": "float",
+        "t0": "float",
+        "origin_ref": "Vector3",
+        "R0": "float",
+        "speed": "float",
+        "noise_amplitude": "float",
+        "base_frequency": "float",
+        "octaves": "int",
+        "gain": "float",
+        "lacunarity": "float",
+        "width": "float",
+        "enabled": "bool"
+      },
+      "output_fields": {
+        "noise": "float",
+        "signed_front": "float",
+        "char_fraction": "float",
+        "front_strength": "float"
+      }
+    }
+  }
+}

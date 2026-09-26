@@ -1,0 +1,2 @@
+shader_type spatial;
+void fragment(){float tile=mod(floor(UV.x*24.)+floor(UV.y*20.),2.);ALBEDO=mix(vec3(.06,.16,.22),vec3(.7,.67,.49),tile);ROUGHNESS=1.;}

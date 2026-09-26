@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-I01",
+  "intervention": "移动灼烧起点",
+  "control": "固定场与寿命，只改 origin_ref",
+  "relation": "出生锚点/时刻随前沿变，非全局发射",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "origin"
+}

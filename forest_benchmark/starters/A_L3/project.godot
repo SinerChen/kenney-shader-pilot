@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Forest Benchmark"
+run/main_scene="res://fixture/entry.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.png"
+
+[dotnet]
+
+project/assembly_name="Forest Benchmark"
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=4
+scaling_3d/mode=1
+anti_aliasing/quality/use_taa=true
+occlusion_culling/use_occlusion_culling=true
+
+[animation]
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true

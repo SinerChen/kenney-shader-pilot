@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "camera": {
+    "basis": "[X: (0.900552, 0.0, -0.434749), Y: (-0.082832, 0.981682, -0.171581), Z: (0.426785, 0.190529, 0.884055)]",
+    "position": "(2.8, 2.4, 5.8)",
+    "requested": {
+      "look_at": [
+        0.0,
+        1.15,
+        0.0
+      ],
+      "position": [
+        2.8,
+        2.4,
+        5.8
+      ]
+    }
+  },
+  "runtime_status": "RENDERED",
+  "startup": {
+    "status": "OK"
+  },
+  "video": "scratch/observations/1790445276266238000/effect.mp4",
+  "logs": [
+    "scratch/observations/1790445276266238000/import.log",
+    "scratch/observations/1790445276266238000/godot.log",
+    "scratch/observations/1790445276266238000/result.json"
+  ],
+  "observation_directory": "scratch/observations/1790445276266238000",
+  "request": {
+    "camera": {
+      "position": [
+        2.8,
+        2.4,
+        5.8
+      ],
+      "look_at": [
+        0,
+        1.15,
+        0
+      ]
+    },
+    "frames": 120,
+    "resolution": [
+      960,
+      640
+    ]
+  },
+  "candidate_files": {
+    "adapter.gd": "685930660c939dca21af8d19136c6cb1e6bd07336bd2897b2453a49c0e6de880",
+    "burn_math.gdshaderinc": "b63944e8a67f60c04738b5120411f68c5d9d53be1695c917798d65d9d54cdf42",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "wood_burn.gdshader": "d3bac56bbdb68c8ef143088e233d03bfd459b8211f8ab98509023229b3c641c5"
+  },
+  "images": [
+    {
+      "path": "scratch/observations/1790445276266238000/frame_00000.png",
+      "frame": 0,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    },
+    {
+      "path": "scratch/observations/1790445276266238000/frame_00059.png",
+      "frame": 59,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    },
+    {
+      "path": "scratch/observations/1790445276266238000/frame_00119.png",
+      "frame": 119,
+      "mime_type": "image/png",
+      "encoding": "base64"
+    }
+  ]
+}

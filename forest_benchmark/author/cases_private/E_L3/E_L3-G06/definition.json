@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G06",
+  "purpose": "零波回归",
+  "input_design": "清空h/hprev，原水纹继续",
+  "criterion": "法线合成为恒等，原光学/流动保留",
+  "observations": "n_base/n_eff、原水基线",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

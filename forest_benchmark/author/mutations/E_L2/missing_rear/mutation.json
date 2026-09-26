@@ -1,0 +1,7 @@
+{
+  "task": "E_L2",
+  "name": "missing_rear",
+  "file": "fixture\\bridge.gd",
+  "detector": "layer_current",
+  "source_occurrences": 1
+}

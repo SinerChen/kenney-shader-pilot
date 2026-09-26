@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N04",
+  "purpose": "只干燥",
+  "input_design": "D=S=0",
+  "criterion": "一步显式衰减",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

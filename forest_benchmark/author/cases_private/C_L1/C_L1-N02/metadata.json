@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N02",
+  "purpose": "均匀云",
+  "input_design": "已知长度和常密度",
+  "criterion": "解析 tau/T",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

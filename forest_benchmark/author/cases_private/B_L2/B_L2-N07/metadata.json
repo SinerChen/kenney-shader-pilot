@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N07",
+  "purpose": "零通量边界",
+  "input_design": "湿度抵达边缘",
+  "criterion": "无 wrap、无外流",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

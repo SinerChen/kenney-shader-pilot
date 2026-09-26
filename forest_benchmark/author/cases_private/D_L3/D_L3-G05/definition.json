@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G05",
+  "purpose": "水域刚体变体",
+  "input_design": "reset 前旋转/平移目标片区",
+  "criterion": "接触投影和方向按实际实例一致",
+  "observations": "世界/source chart、速度基",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

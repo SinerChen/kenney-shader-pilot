@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G07",
+  "purpose": "移动源",
+  "input_design": "水域固定、接触物体合法移动",
+  "criterion": "新源跟随，旧泡沫不瞬移",
+  "observations": "源轨迹和 f 历史",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G01",
+  "purpose": "原河流接入",
+  "input_design": "在核验水域运行流纹和泡沫",
+  "criterion": "前级核心实际进入原材质，无独立水面替身",
+  "observations": "活动材质、相位/f资源、目标帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

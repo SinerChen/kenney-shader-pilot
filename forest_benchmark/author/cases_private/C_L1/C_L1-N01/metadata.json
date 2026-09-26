@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N01",
+  "purpose": "零密度",
+  "input_design": "非零 box，但 rho=0",
+  "criterion": "tau=0,T=1",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

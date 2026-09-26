@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G06",
+  "purpose": "同资源多实例",
+  "input_design": "两棵目标不同起点/种子，一棵共享资源对照",
+  "criterion": "两目标互不串色/串发射，对照不受影响",
+  "observations": "按 object_id 对齐的 b/a 和资源影响图",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

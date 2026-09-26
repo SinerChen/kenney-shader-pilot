@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N06",
+  "purpose": "起点变化",
+  "input_design": "改变 origin_ref",
+  "criterion": "空间前沿平移，噪声约定不变",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

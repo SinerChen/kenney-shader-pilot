@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G09",
+  "purpose": "重置和资源切换",
+  "input_design": "reset 前合法选择另一资源输入，再回原输入",
+  "criterion": "无初始化缓存答案/前次状态残留",
+  "observations": "输入 hash、rho 和输出",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G10",
+  "purpose": "干净导入与预算",
+  "input_design": "从未改的源导入后运行",
+  "criterion": "转换可复现，不靠修改共享 import 或缓存",
+  "observations": "导入审计、GPU内存/帧时",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "operation": "burn_query",
+    "max_error": 1.887939279632267e-07,
+    "pass": true,
+    "shape": [
+      4,
+      4
+    ]
+  },
+  {
+    "operation": "curl_query",
+    "max_error": 9.716357629585559e-06,
+    "pass": true,
+    "shape": [
+      4,
+      6
+    ]
+  },
+  {
+    "operation": "particle_step",
+    "max_error": 2.0027160640978536e-07,
+    "pass": true,
+    "shape": [
+      3,
+      6
+    ]
+  },
+  {
+    "operation": "stamp_query",
+    "max_error": 5.528109821534115e-08,
+    "pass": true,
+    "shape": [
+      48,
+      1
+    ]
+  },
+  {
+    "operation": "pom_query",
+    "max_error": 3.1789143872806847e-08,
+    "pass": true,
+    "shape": [
+      3,
+      6
+    ]
+  },
+  {
+    "operation": "wet_step",
+    "max_error": 2.2598582505306553e-08,
+    "pass": true,
+    "shape": [
+      48,
+      2
+    ]
+  },
+  {
+    "operation": "cloud_query",
+    "max_error": 6.357828770120477e-07,
+    "pass": true,
+    "shape": [
+      4,
+      5
+    ]
+  },
+  {
+    "operation": "fog_query",
+    "max_error": 1.7625720061253958e-07,
+    "pass": true,
+    "shape": [
+      2,
+      21
+    ]
+  },
+  {
+    "operation": "flow_query",
+    "max_error": 1.5935294778168796e-07,
+    "pass": true,
+    "shape": [
+      3,
+      12
+    ]
+  },
+  {
+    "operation": "foam_step",
+    "max_error": 2.0265579214751028e-07,
+    "pass": true,
+    "shape": [
+      48,
+      2
+    ]
+  },
+  {
+    "operation": "optics_query",
+    "max_error": 5.769765376584246e-08,
+    "pass": true,
+    "shape": [
+      2,
+      17
+    ]
+  },
+  {
+    "operation": "wave_step",
+    "max_error": 1.907159732222885e-09,
+    "pass": true,
+    "shape": [
+      48,
+      1
+    ]
+  },
+  {
+    "operation": "wave_normal_query",
+    "max_error": 5.7948686293940455e-08,
+    "pass": true,
+    "shape": [
+      48,
+      3
+    ]
+  }
+]

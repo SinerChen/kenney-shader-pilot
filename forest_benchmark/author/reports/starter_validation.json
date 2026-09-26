@@ -1,0 +1,112 @@
+[
+  {
+    "task": "A_L1",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 21,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\A_L1"
+  },
+  {
+    "task": "A_L2",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 21,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\A_L2"
+  },
+  {
+    "task": "B_L1",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 20,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\B_L1"
+  },
+  {
+    "task": "B_L2",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 20,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\B_L2"
+  },
+  {
+    "task": "C_L1",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 19,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\C_L1"
+  },
+  {
+    "task": "C_L2",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 19,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\C_L2"
+  },
+  {
+    "task": "D_L1",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 21,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\D_L1"
+  },
+  {
+    "task": "D_L2",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 21,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\D_L2"
+  },
+  {
+    "task": "E_L1",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 22,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\E_L1"
+  },
+  {
+    "task": "E_L2",
+    "clean_import": "PASS",
+    "starter": "PASS",
+    "source_unchanged": true,
+    "file_audit": "PASS",
+    "runtime_protection": "PASS",
+    "export_whitelist": "PASS",
+    "export_files": 22,
+    "evidence": "author\\reports\\clean\\1790414479903565200\\E_L2"
+  }
+]

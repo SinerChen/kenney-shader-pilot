@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N07",
+  "purpose": "前沿边界",
+  "input_design": "q 接近 ±width、0",
+  "criterion": "端点和过渡，有限输出",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

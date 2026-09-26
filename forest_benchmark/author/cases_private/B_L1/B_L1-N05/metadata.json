@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N05",
+  "purpose": "尺寸",
+  "input_design": "改变长宽，中心固定",
+  "criterion": "缩放及接触范围",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 2
+}

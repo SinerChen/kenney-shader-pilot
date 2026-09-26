@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N09",
+  "purpose": "分段关系",
+  "input_design": "均匀/对齐分段路径",
+  "criterion": "T_total=T1*T2 在同积分划分下",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

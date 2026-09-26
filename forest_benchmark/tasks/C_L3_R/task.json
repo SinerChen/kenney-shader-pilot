@@ -1,0 +1,10 @@
+{
+  "task_id": "C_L3_R",
+  "title": "既有噪声资源复用与原天空保护",
+  "algorithm": "继承本链L1/L2；新增本级公开场景适配与约束",
+  "level": "L3",
+  "predecessor": "C_L2",
+  "status": "DEFINED_RELEASE_BLOCKED",
+  "contract_version": "0.2",
+  "source_origin": "native_snapshot"
+}

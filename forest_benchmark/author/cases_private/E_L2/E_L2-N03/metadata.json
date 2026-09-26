@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N03",
+  "purpose": "单扰动",
+  "input_design": "单 tick 非零 f",
+  "criterion": "dt² f 与范围",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

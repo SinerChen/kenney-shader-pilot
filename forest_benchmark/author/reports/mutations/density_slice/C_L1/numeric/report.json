@@ -1,0 +1,148 @@
+{
+  "task": "C_L1",
+  "case_task": "C_L1",
+  "pass": 4,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "C_L1-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L1-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L1-N03",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.17109398014574895,
+          "index": [
+            3,
+            3
+          ],
+          "actual": 0.27708348631858826,
+          "expected": 0.10598950617283932,
+          "allowed": 0.00022119790123456787
+        }
+      ]
+    },
+    {
+      "case": "C_L1-N04",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0801720206741009,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.7447118163108826,
+          "expected": 0.8248838369849835,
+          "allowed": 0.0003649767673969967
+        }
+      ]
+    },
+    {
+      "case": "C_L1-N05",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.0573328143959006,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.28135979175567627,
+          "expected": 0.33869260615157687,
+          "allowed": 0.00026773852123031537
+        }
+      ]
+    },
+    {
+      "case": "C_L1-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.06991592278161501,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.35362082719802856,
+          "expected": 0.28370490441641355,
+          "allowed": 0.00025674098088328273
+        }
+      ]
+    },
+    {
+      "case": "C_L1-N07",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L1-N08",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.30425712848087694,
+          "index": [
+            2,
+            3
+          ],
+          "actual": 1.2651304006576538,
+          "expected": 0.9608732721767769,
+          "allowed": 0.0003921746544353554
+        }
+      ]
+    },
+    {
+      "case": "C_L1-N09",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "C_L1-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/1",
+          "max_error": 0.14440170628961702,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.6460505723953247,
+          "expected": 0.7904522786849417,
+          "allowed": 0.00035809045573698833
+        },
+        {
+          "path": "/3",
+          "max_error": 0.1444017062896169,
+          "index": [
+            0,
+            3
+          ],
+          "actual": 0.6460505723953247,
+          "expected": 0.7904522786849416,
+          "allowed": 0.00035809045573698833
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\density_slice\\C_L1\\numeric",
+  "scope": "numeric_only"
+}

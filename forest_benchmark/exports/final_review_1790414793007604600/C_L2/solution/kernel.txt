@@ -1,0 +1,148 @@
+#version 450
+layout(local_size_x=64) in;
+layout(set=0,binding=0,std430) readonly buffer Input { float input_data[]; };
+layout(set=0,binding=1,std430) writeonly buffer Output { float output_data[]; };
+#define K_P 0
+#define K_time 1
+#define K_t0 2
+#define K_dt 3
+#define K_points 4
+#define K_origin_ref 5
+#define K_R0 6
+#define K_speed 7
+#define K_noise_amplitude 8
+#define K_base_frequency 9
+#define K_octaves 10
+#define K_gain 11
+#define K_lacunarity 12
+#define K_width 13
+#define K_enabled 14
+#define K_frequency 15
+#define K_epsilon 16
+#define K_drift 17
+#define K_offsets 18
+#define K_up_speed 19
+#define K_curl_strength 20
+#define K_lifetime 21
+#define K_particles 22
+#define K_emit_threshold 23
+#define K_enable_emission 24
+#define K_anchors 25
+#define K_instance_transform 26
+#define K_grid_size 27
+#define K_domain_min 28
+#define K_domain_size 29
+#define K_d_max 30
+#define K_depth 31
+#define K_mask_size 32
+#define K_mask 33
+#define K_contacts 34
+#define K_pom_rays 35
+#define K_wetness 36
+#define K_source 37
+#define K_diffusion 38
+#define K_lambda0 39
+#define K_beta 40
+#define K_cloud_world_to_local 41
+#define K_cloud_min 42
+#define K_cloud_max 43
+#define K_density_size 44
+#define K_density 45
+#define K_cloud_sigma 46
+#define K_cloud_steps 47
+#define K_light_dir 48
+#define K_light_rgb 49
+#define K_fog_min 50
+#define K_fog_max 51
+#define K_fog_density 52
+#define K_fog_scatter 53
+#define K_fog_absorb 54
+#define K_g 55
+#define K_view_steps 56
+#define K_view_rays 57
+#define K_uvs 58
+#define K_period 59
+#define K_phase 60
+#define K_tiling 61
+#define K_flow 62
+#define K_texture_size 63
+#define K_color_texture 64
+#define K_normal_texture 65
+#define K_normal_encoded 66
+#define K_foam 67
+#define K_sources 68
+#define K_decay 69
+#define K_eta_i 70
+#define K_eta_t 71
+#define K_ell 72
+#define K_sigma_a 73
+#define K_optical_rays 74
+#define K_view_projection 75
+#define K_reflection_color 76
+#define K_fallback_color 77
+#define K_height 78
+#define K_height_prev 79
+#define K_force 80
+#define K_wave_speed 81
+#define K_gamma 82
+#define K_front_visible 83
+#define K_rear_visible 84
+#define K_burn_visible 85
+#define K_embers_visible 86
+#define K_ambient_color 87
+#define K_direct_color 88
+#define K_dry_color 89
+#define K_wet_color 90
+#define K_dry_roughness 91
+#define K_wet_roughness 92
+#define K_wood_color 93
+#define K_char_color 94
+#define K_ember_color 95
+#define K_contact_count 96
+#define K_source_count 97
+// Independent GPU implementation. The host prepends version, bindings and field indices.
+
+float at(int key,int i) { return input_data[int(input_data[4+key])+i]; }
+float s(int key) { return at(key,0); }
+vec3 v3(int key,int i) { return vec3(at(key,i),at(key,i+1),at(key,i+2)); }
+vec4 v4(int key,int i) { return vec4(at(key,i),at(key,i+1),at(key,i+2),at(key,i+3)); }
+mat4 m4(int key) { return mat4(v4(key,0),v4(key,4),v4(key,8),v4(key,12)); }
+bool slab(vec3 o,vec3 d,vec3 lo,vec3 hi,out vec2 ab) {
+    float a=0.,b=1e30;
+    for(int axis=0;axis<3;axis++){
+        if(abs(d[axis])<1e-10){if(o[axis]<lo[axis]||o[axis]>hi[axis]) {ab=vec2(0);return false;}}
+        else {float u=(lo[axis]-o[axis])/d[axis],v=(hi[axis]-o[axis])/d[axis];a=max(a,min(u,v));b=min(b,max(u,v));}
+    }
+    ab=vec2(a,b);return b>a;
+}
+float density_at(vec3 world) {
+    vec3 q=(m4(K_cloud_world_to_local)*vec4(world,1)).xyz;
+    vec3 lo=v3(K_cloud_min,0),hi=v3(K_cloud_max,0);
+    if(any(lessThan(q,lo))||any(greaterThan(q,hi)))return 0.;
+    ivec3 size=ivec3(v3(K_density_size,0));
+    vec3 f=(q-lo)/(hi-lo)*vec3(size)-.5;
+    ivec3 b=ivec3(floor(f));f=fract(f);float value=0.;
+    for(int z=0;z<2;z++)for(int y=0;y<2;y++)for(int x=0;x<2;x++){
+        ivec3 ijk=clamp(b+ivec3(x,y,z),ivec3(0),size-1);
+        float w=(x==1?f.x:1.-f.x)*(y==1?f.y:1.-f.y)*(z==1?f.z:1.-f.z);
+        value+=w*at(K_density,(ijk.z*size.y+ijk.y)*size.x+ijk.x);
+    } return value;
+}
+vec4 cloud_at(vec3 p,out bool valid) {
+    mat4 tr=m4(K_cloud_world_to_local); vec3 L=v3(K_light_dir,0);vec2 ab;
+    valid=slab((tr*vec4(p,1)).xyz,(tr*vec4(L,0)).xyz,v3(K_cloud_min,0),v3(K_cloud_max,0),ab);
+    if(!valid)return vec4(0,0,0,1);
+    float ds=(ab.y-ab.x)/s(K_cloud_steps),sum=0.;
+    for(int i=0;i<int(s(K_cloud_steps));i++)sum+=density_at(p+(ab.x+(float(i)+.5)*ds)*L);
+    float tau=s(K_cloud_sigma)*sum*ds;
+    return vec4(ab,tau,exp(-tau));
+}
+void main() {
+    int id=int(gl_GlobalInvocationID.x),op=int(input_data[0]),rows=int(input_data[1]),channels=int(input_data[2]);
+    if(id>=rows)return;
+    int b=id*channels; float t=s(K_time),dt=s(K_dt);
+    if(op==6){
+        bool valid;vec4 value=cloud_at(v3(K_points,id*3),valid);output_data[b]=valid?1.:0.;
+        for(int i=0;i<4;i++)output_data[b+1+i]=value[i];
+    }
+}

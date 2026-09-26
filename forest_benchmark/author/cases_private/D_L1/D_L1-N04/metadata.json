@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N04",
+  "purpose": "速度变化",
+  "input_design": "不同区域速度大小",
+  "criterion": "单位与强度",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N10",
+  "purpose": "事件重放/清场",
+  "input_design": "停源、继续、reset",
+  "criterion": "无重复注入，不播放旧帧",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

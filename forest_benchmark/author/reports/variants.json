@@ -1,0 +1,157 @@
+[
+  {
+    "task": "A_L2",
+    "type": "inherited",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS"
+  },
+  {
+    "task": "B_L2",
+    "type": "inherited",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS"
+  },
+  {
+    "task": "C_L2",
+    "type": "inherited",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS"
+  },
+  {
+    "task": "D_L2",
+    "type": "inherited",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS"
+  },
+  {
+    "task": "E_L2",
+    "type": "inherited",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS"
+  },
+  {
+    "task": "A_L1",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "A_L2",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "B_L1",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "B_L2",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "C_L1",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "C_L2",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "D_L1",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "D_L2",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "E_L1",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  },
+  {
+    "task": "E_L2",
+    "type": "legal_alternative",
+    "pass": 10,
+    "total": 10,
+    "status": "PASS",
+    "differences": [
+      "32 invocations/workgroup",
+      "different noise polynomial evaluation",
+      "1024 POM coarse intervals"
+    ]
+  }
+]

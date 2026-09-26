@@ -1,0 +1,71 @@
+{
+  "task_id": "B_L3",
+  "title": "真实地形材质区域中的脚印与湿润集成",
+  "algorithm": "继承本链L1/L2；新增本级公开场景适配与约束",
+  "level": "L3",
+  "contract_version": "0.2",
+  "core_contract_version": "0.1",
+  "original_entry_scene": "res://Main.tscn",
+  "entry_scene": "res://fixture/entry.tscn",
+  "source_origin": "native_snapshot",
+  "source_commit": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_native_binding_enumerated": true,
+  "source_native_feasibility_verified": false,
+  "engine_version": "4.6.1",
+  "renderer": "Forward+",
+  "predecessor": {
+    "task_id": "B_L2",
+    "condition": "gold_predecessor_review",
+    "original_solution_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "8a3a7f082828dfca124edad59769fb66c6e58649e14b75172cac43887eb12a83",
+      "wire.json": "45654ae8503bd3493d15e58205197c4e998442e360237d5dae6b65c25cd7bc8b"
+    },
+    "migrated_solution_hashes": {
+      "adapter.gd": "85c237c3a4ca1a422f67751d11171840dd36264f290cbabc7d324463614537d6",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "8a3a7f082828dfca124edad59769fb66c6e58649e14b75172cac43887eb12a83",
+      "wire.json": "45654ae8503bd3493d15e58205197c4e998442e360237d5dae6b65c25cd7bc8b"
+    },
+    "core_operations": [
+      "stamp_query",
+      "pom_query",
+      "wet_step",
+      "wave_normal_query"
+    ]
+  },
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "Groundcover/",
+    "Materials/",
+    "Meshes/",
+    "Screenshots/",
+    "Scripts/",
+    "Shaders/",
+    "Textures/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    {
+      "node": "Main Terrain/Plane_031",
+      "surfaces": [
+        0
+      ],
+      "operation": "local surface override preserving original responsibilities"
+    }
+  ],
+  "integration_config_status": "PENDING_CALIBRATION",
+  "status": "REVIEW_ONLY_BINDING_UNIMPLEMENTED",
+  "input_files": [
+    "terrain_task.json"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "task": "B_L2",
+  "name": "style_changes_state",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

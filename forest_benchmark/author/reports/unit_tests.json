@@ -1,0 +1,16 @@
+[
+  {
+    "suite": "cpu_analytic",
+    "tests": 19,
+    "status": "PASS",
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "model_tools",
+    "tests": 10,
+    "status": "PASS",
+    "failures": 0,
+    "errors": 0
+  }
+]

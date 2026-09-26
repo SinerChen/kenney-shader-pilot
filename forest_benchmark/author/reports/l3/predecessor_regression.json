@@ -1,0 +1,110 @@
+[
+  {
+    "task": "A_L3",
+    "predecessor": "A_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "d2d0a651645c3522785b19fdf7210a839a5c036fc12c5bb4832bb733272788e2",
+      "wire.json": "4d5f8b66d4731eb39ff9371fac0f987f2826bc85efdf1ade2411de845f7d40ad"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  },
+  {
+    "task": "B_L3",
+    "predecessor": "B_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "8a3a7f082828dfca124edad59769fb66c6e58649e14b75172cac43887eb12a83",
+      "wire.json": "45654ae8503bd3493d15e58205197c4e998442e360237d5dae6b65c25cd7bc8b"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  },
+  {
+    "task": "C_L3_R",
+    "predecessor": "C_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "0e04f89b83946a6a95964d3e5ced81d6b4d56bc2ee1109394ee432664d84f9bd",
+      "wire.json": "ee95060df8633b28f1f9167892c2c25b61e01d11adec1624e1930cb2a05b5e84"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  },
+  {
+    "task": "C_L3_S",
+    "predecessor": "C_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "0e04f89b83946a6a95964d3e5ced81d6b4d56bc2ee1109394ee432664d84f9bd",
+      "wire.json": "ee95060df8633b28f1f9167892c2c25b61e01d11adec1624e1930cb2a05b5e84"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  },
+  {
+    "task": "D_L3",
+    "predecessor": "D_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "b36c101e92a61d16c1c3b6112f6ca37671f0a471b9a8877f4aebcbb91227e549",
+      "wire.json": "3320f5c44529eaf03f1fb2a32a3b420edf771600d58b8a4365c2730ac0147133"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  },
+  {
+    "task": "E_L3",
+    "predecessor": "E_L2",
+    "predecessor_hashes": {
+      "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+      "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+      "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "dfdca107bd64e640485b4cea466bb08efb53608f070ea28c37db01d20f4784c6",
+      "wire.json": "f235d96252e63ac40cb5e9f5698de05656caf6b13ba0a654e1d70c2a4ef9ab9a"
+    },
+    "core_regression_pass": 20,
+    "core_total": 20,
+    "coupling_regression_pass": 5,
+    "coupling_total": 5,
+    "status": "PASS",
+    "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N07",
+  "purpose": "临界附近",
+  "input_design": "公开范围内临界角两侧且留数值余量",
+  "criterion": "分支与有限输出",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

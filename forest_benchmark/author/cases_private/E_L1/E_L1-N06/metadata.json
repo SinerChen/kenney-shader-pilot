@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N06",
+  "purpose": "通道差异",
+  "input_design": "不同 sigma_rgb",
+  "criterion": "逐通道而非单灰度",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

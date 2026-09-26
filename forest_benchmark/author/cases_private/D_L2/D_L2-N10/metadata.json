@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N10",
+  "purpose": "分辨率/重放",
+  "input_design": "不同公开 dx/dz、reset",
+  "criterion": "物理尺度一致，按离散值比较",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 3
+}

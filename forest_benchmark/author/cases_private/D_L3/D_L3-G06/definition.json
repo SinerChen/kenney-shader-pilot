@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G06",
+  "purpose": "正轴向缩放",
+  "input_design": "reset 前改变两轴尺度",
+  "criterion": "每米速度、dx/dz、源半径仍按物理量",
+  "observations": "长度、源核、泡沫前沿",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,7 @@
+{
+  "task": "E_L1",
+  "name": "no_directional_refraction",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

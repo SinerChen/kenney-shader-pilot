@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N06",
+  "purpose": "多步轨迹",
+  "input_design": "相同初态与一串固定 dt",
+  "criterion": "累计误差在预算内",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 10
+}

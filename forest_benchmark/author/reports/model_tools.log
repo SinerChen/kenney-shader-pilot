@@ -1,0 +1,15 @@
+test_alternate_stream_rejected (test_tools.FileToolTests.test_alternate_stream_rejected) ... ok
+test_author_directory_invisible (test_tools.FileToolTests.test_author_directory_invisible) ... ok
+test_budget_ends_without_revealing_count (test_tools.FileToolTests.test_budget_ends_without_revealing_count) ... ok
+test_candidate_round_trip (test_tools.FileToolTests.test_candidate_round_trip) ... ok
+test_formal_pack_fails_closed (test_tools.FileToolTests.test_formal_pack_fails_closed) ... ok
+test_free_camera_forwarded (test_tools.FileToolTests.test_free_camera_forwarded) ... ok
+test_prompts_do_not_contain_private_labels (test_tools.FileToolTests.test_prompts_do_not_contain_private_labels) ... ok
+test_protected_write (test_tools.FileToolTests.test_protected_write) ... ok
+test_render_requires_worker (test_tools.FileToolTests.test_render_requires_worker) ... ok
+test_scratch_only (test_tools.FileToolTests.test_scratch_only) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.131s
+
+OK

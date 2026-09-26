@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G08",
+  "purpose": "云雾分离消融",
+  "input_design": "分别原云密度归零、雾密度归零",
+  "criterion": "零云不等于无雾；零雾保留云影",
+  "observations": "各自独立输出与背景",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

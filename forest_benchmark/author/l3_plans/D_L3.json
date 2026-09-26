@@ -1,0 +1,123 @@
+{
+  "task_id": "D_L3",
+  "constraint_ids": [
+    "F05"
+  ],
+  "predecessor": "D_L2",
+  "integration_groups": [
+    {
+      "id": "D_L3-G01",
+      "purpose": "原河流接入",
+      "input_design": "在核验水域运行流纹和泡沫",
+      "criterion": "前级核心实际进入原材质，无独立水面替身",
+      "observations": "活动材质、相位/f资源、目标帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G02",
+      "purpose": "固定接触与干扰物",
+      "input_design": "一个合法接触、一个离水前景物体",
+      "criterion": "只有真实接触产生源，不由屏幕邻近触发",
+      "observations": "世界距离、source_field",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G03",
+      "purpose": "改变图案参数",
+      "input_design": "同速度源事件，仅改 K/P/phi",
+      "criterion": "图案变化而源与物理 f 演化不改变",
+      "observations": "相位 UV、source 和 f 对照",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G04",
+      "purpose": "物理流场变化",
+      "input_design": "反向/改变速度但保持源和图案参数",
+      "criterion": "f 按新 m/s 运动，不把图案UV当速度",
+      "observations": "场、位移、f 多帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G05",
+      "purpose": "水域刚体变体",
+      "input_design": "reset 前旋转/平移目标片区",
+      "criterion": "接触投影和方向按实际实例一致",
+      "observations": "世界/source chart、速度基",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G06",
+      "purpose": "正轴向缩放",
+      "input_design": "reset 前改变两轴尺度",
+      "criterion": "每米速度、dx/dz、源半径仍按物理量",
+      "observations": "长度、源核、泡沫前沿",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G07",
+      "purpose": "移动源",
+      "input_design": "水域固定、接触物体合法移动",
+      "criterion": "新源跟随，旧泡沫不瞬移",
+      "observations": "源轨迹和 f 历史",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G08",
+      "purpose": "停源与零流速",
+      "input_design": "分别关闭源/令流速零",
+      "criterion": "按前级规则存量继续/停止搬运并衰减",
+      "observations": "分项状态、衰减输出",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G09",
+      "purpose": "原材质与范围保护",
+      "input_design": "关新增效果并保留配置",
+      "criterion": "原折射/透明/范围及非目标水域保持",
+      "observations": "源材质参数、保护视图",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "D_L3-G10",
+      "purpose": "重导入重置和预算",
+      "input_design": "干净导入后重放事件/变体",
+      "criterion": "无缓存坐标或场，重置清晰，预算达标",
+      "observations": "事件日志、GPU资源、导入审计",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "泡沫源跟随滚动图案 UV。",
+    "水纹UV每秒变化直接作为 m/s。",
+    "移动接触源时把旧泡沫场一起搬走。",
+    "只生成源遮罩而没有真实输运。",
+    "新建水面覆盖原水体或关闭原折射来简化任务。"
+  ],
+  "requires_frozen": [
+    "native_river_binding",
+    "surface_chart_and_metric",
+    "physical_flow_metadata",
+    "contact_validity_threshold",
+    "permitted_optical_preservation"
+  ]
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "task": "A_L1",
+    "mutation": "camera_locked",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "bound_burn_state_camera_error": 0.0
+    },
+    "faulty": {
+      "bound_burn_state_camera_error": 1.2966103553771973
+    }
+  },
+  {
+    "task": "A_L1",
+    "mutation": "fake_probe",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.012598192401960783
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "B_L2",
+    "mutation": "global_wet",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.013600297294843864
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "C_L1",
+    "mutation": "darken_ambient",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "ambient_image_mae": 0.0
+    },
+    "faulty": {
+      "ambient_image_mae": 0.01980743350580973
+    }
+  },
+  {
+    "task": "C_L2",
+    "mutation": "double_shadow",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "linear_pixel": [
+        0.2581828529215958,
+        0.2232279573168085,
+        0.162029375639111
+      ],
+      "expected": [
+        0.2588390032890793,
+        0.22301656749192594,
+        0.16153618305705003
+      ],
+      "max_error": 0.0006561503674834546,
+      "pixel": [
+        313,
+        217
+      ]
+    },
+    "faulty": {
+      "linear_pixel": [
+        0.17464740365558504,
+        0.14995978981060856,
+        0.1119324278369056
+      ],
+      "expected": [
+        0.2588390032890793,
+        0.22301656749192594,
+        0.16153618305705003
+      ],
+      "max_error": 0.08419159963349424,
+      "pixel": [
+        313,
+        217
+      ]
+    }
+  },
+  {
+    "task": "E_L1",
+    "mutation": "fake_probe",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.0048113879811183735
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "stale_background",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "missing_rear",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.02304492329339143,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "hide_front",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "image_response_mae": 0.004204866784676834
+    },
+    "faulty": {
+      "image_response_mae": 0.0
+    }
+  },
+  {
+    "task": "E_L2",
+    "mutation": "recursive_capture",
+    "status": "REJECTED",
+    "reference_pass": true,
+    "faulty_pass": false,
+    "reference": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.0006219419480755266,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 3
+      }
+    },
+    "faulty": {
+      "front_input_mae": 0.0,
+      "rear_time_mae": 0.014986343727305732,
+      "masks": {
+        "OpaqueCapture": 1,
+        "RearCapture": 7
+      }
+    }
+  }
+]

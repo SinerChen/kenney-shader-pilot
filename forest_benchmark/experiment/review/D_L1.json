@@ -1,0 +1,108 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是 Godot 效果实现者。请依据当前题面的算法、输入输出类型、输出要求和目标效果完成实现，按计划逐项推进，按需自行调用工具。\n\n## 工作范围\n\n你只有 read、write、render 三个工具。所有路径相对于当前实验目录。工作目录及工具以当前题面为准。实现和工作记录保存在 solution/，不要通过候选脚本读写这些目录之外的文件或访问网络。\n\n只使用当前实验提供的场景与资源。宿主的运行配置保持不变；观察相机由你自行选择。已存在的候选实现是本次起点，请先理解并保留其中仍适用的行为，再完成当前层的新要求。\n\n## 先规划，再逐项实现\n\n第一次回复只调用一次 write，创建 solution/plan.json，不写实现代码。将当前任务拆成 4–8 个有先后依赖、可分别观察的子任务；最后一项为当前题目目标场景中的完整效果与既有行为复查。计划应简短描述功能和可观察结果，不输出冗长推演，不机械地按文件或函数凑数。\n\nplan.json 的顶层字段为 status、active_step、steps。初始 status 为 in_progress，active_step 为第一项的 id。每项包含 id、goal、expected、counterexample、status、observations、summary、limitations：\n\n- goal：本步要实现的行为。\n- expected：预计在当前运行输入下观察到的变化。\n- counterexample：什么实际现象会否定本步判断。\n- status：pending、in_progress、passed、failed 或 inconclusive；初始仅第一项为 in_progress。\n- observations：初始为空；如有渲染观察，记录输出目录、截图路径、使用的视角和帧，以及观察结果。\n- summary、limitations：简要结论与仍未解决的问题，初始为空。\n\n每次回复最多调用一个工具。每次只推进当前子任务，必要的回归修复可以涉及已完成部分。可依据实际依赖调整尚未开始的计划，并简要记录调整原因；完成一项后更新 plan.json，再推进下一项。\n\n## 按需调用工具\n\n自行决定何时使用 read、write 或 render，以及调用顺序和次数。各子任务不要求固定工作循环，也不要求每项必须渲染。需要渲染时，自行选择相机位置、观察目标、连续帧数和分辨率。\n\n当前题目的目标入口为 fixture/entry.tscn。L1 验证单效果算法，L2 验证同组效果的交互，L3 在完整森林中完成场景接入。前一级实现仅提供算法起点，当前级的场景入口与宿主接口以工作目录中的文件为准。\n\n## 完成\n\n最后一项完成后，将 plan.json 的 status 写为 completed、active_step 写为 null，再给出不调用工具的简短最终回复：修改的文件、已实现的效果、观察结果（如有）和剩余限制。passed 和 completed 仅表示你的自评结论。\n\n若结束时仍有未解决问题，保存当前实现，将 plan.json 的 status 写为 incomplete，保留未完成项，并在最终回复中说明原因。\n"
+    },
+    {
+      "role": "user",
+      "content": "## 1. 效果与算法\n\n效果：水面纹理沿给定流场连续流动，流速和方向清晰，周期交替时没有突跳。\n\n算法：双相位 Flow Mapping、颜色与法线纹理混合。\n\n## 2. 输入输出类型\n\n以下输入输出约定用于后续的算法函数测试。测试程序将按这些接口和类型传入数据、调用算法函数，并读取返回结果进行验证。\n\n输入接口：`query(name: String, payload: Dictionary)`；状态输入：`reset(config: Dictionary)`、`advance(dt: float, events: Array[Dictionary])`。\n\n查询输出类型：`Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}`，或 `Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}`。状态输出：`get_outputs() -> Dictionary[String, Variant]`。\n\n标量存储类型为 float32，向量为浮点数组，矩阵为列主序浮点数组；N、Nx、Ny、Nz、H、W、L、Nv 为尺寸符号。二维场按 Z、X 排列，三维场按 Z、Y、X 排列，X 维最快。\n\n| 查询 | 输入字段与类型 | 输出字段与类型 |\n| --- | --- | --- |\n| `flow_query` | `grid_size: Vector2i`；`domain_min: Vector2`；`domain_size: Vector2`；`uvs: Vector2[N]`；`flow: Vector2[Nz,Nx]`；`time: float`；`period: float`；`phase: float`；`tiling: float`；`texture_size: Vector2i`；`color_texture: Vector3[H,W]`；`normal_texture: Vector3[H,W]`；`normal_encoded: bool` | `uv_phase0: Vector2`；`uv_phase1: Vector2`；`weight0: float`；`weight1: float`；`sampled_color: Vector3`；`blended_normal: Vector3` |\n\n## 可观察和修改的目录\n\n当前实验根目录：`D:/shaderagent17_s0_s1/kenney_shader_pilot/forest_benchmark/starters/D_L1`。\n\n所有路径相对于当前实验根目录。\n\n| 目录 / 文件 | 内容 |\n|---|---|\n| project.godot | 当前 Godot 工程配置 |\n| fixture/ | 当前实验场景入口与固定宿主文件 |\n| assets/ | 当前任务使用的纹理、采样数据与输入资源 |\n| solution/ | 本次需要实现或修改的效果文件 |\n| scratch/ | 临时脚本、调试材料与中间文件 |\n\n## 工具\n\n- `read(path, start_line=1, line_count=200)`：读取文本文件或列出目录。\n- `write(path, content)`：在 solution/ 或 scratch/ 内创建或覆盖文件，content 为完整文本。\n- `render(camera=..., frames=..., resolution=...)`：运行当前实现并获取渲染结果，可请求视频。\n\n## 自主渲染观察\n\n你可以自行选择观察位置、角度、距离、连续渲染帧数和图像分辨率。render 的相机参数仅用于本次观察，不改写场景相机或输入配置文件。\n\n例如，从自选位置连续观察 120 帧：\n\n```json\n{\"camera\":{\"position\":[6,4,8],\"look_at\":[0,0,0]},\"frames\":120,\"resolution\":[960,640]}\n```\n\ncamera.position 和 look_at 使用世界坐标，分别表示相机位置与观察目标。省略 camera 时使用场景相机。frames 为连续渲染帧数，使用 1–180 的整数；resolution 为 [宽,高]。\n\n每次 render 从当前文件的新场景实例开始。可以从不同位置重复观察效果，结合渲染结果和日志定位编译或运行问题。\n\n根据实现需要自行调用 read、write 和 render，调用顺序及是否渲染由你决定。完成后简要说明修改了哪些文件和实现了什么效果。\n"
+    }
+  ],
+  "tools": [
+    {
+      "name": "read",
+      "description": "Read a visible UTF-8 file, image, or directory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_count": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "write",
+      "description": "Write a UTF-8 source file in solution/ or scratch/.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "content"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "render",
+      "description": "Render the current solution. Choose an observation camera and request a video.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "frames": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 180
+          },
+          "resolution": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "camera": {
+            "type": "object",
+            "properties": {
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "look_at": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            "required": [
+              "position",
+              "look_at"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  ]
+}

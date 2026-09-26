@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N05",
+  "purpose": "深度作用",
+  "input_design": "相同 w，两个 d 区域",
+  "criterion": "lambda(d) 和深处保留更多",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

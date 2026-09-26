@@ -1,0 +1,7 @@
+{
+  "task": "B_L1",
+  "name": "wrong_pom_sign",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

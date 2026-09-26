@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N04",
+  "purpose": "介质换向",
+  "input_design": "高到低但非全反射",
+  "criterion": "方向和 eta 顺序",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

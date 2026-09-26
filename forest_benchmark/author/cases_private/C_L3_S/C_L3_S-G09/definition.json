@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G09",
+  "purpose": "原环境保护",
+  "input_design": "关新增效果但保留全部配置/资源",
+  "criterion": "天空、原表面阴影、环境光及非目标保持",
+  "observations": "原系统属性和隔离帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

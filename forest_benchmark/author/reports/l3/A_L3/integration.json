@@ -1,0 +1,61 @@
+{
+  "task": "A_L3",
+  "status": "NOT_RUN",
+  "integration_pass": null,
+  "integration_total": 10,
+  "executed_groups": 0,
+  "groups": [
+    {
+      "id": "A_L3-G01",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G02",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G03",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G04",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G05",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G06",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G07",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G08",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G09",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "A_L3-G10",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    }
+  ],
+  "source_blockers": [],
+  "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+}

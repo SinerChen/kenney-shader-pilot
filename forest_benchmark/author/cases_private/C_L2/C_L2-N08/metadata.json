@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N08",
+  "purpose": "内部相机/截断",
+  "input_design": "相机在雾内，改变 opaque_depth",
+  "criterion": "区间及光程",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

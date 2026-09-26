@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N08",
+  "purpose": "饱和",
+  "input_design": "大合法源率",
+  "criterion": "clamp，不产生负值",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

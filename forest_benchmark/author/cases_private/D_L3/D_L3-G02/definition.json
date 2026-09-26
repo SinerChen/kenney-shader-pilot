@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G02",
+  "purpose": "固定接触与干扰物",
+  "input_design": "一个合法接触、一个离水前景物体",
+  "criterion": "只有真实接触产生源，不由屏幕邻近触发",
+  "observations": "世界距离、source_field",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N02",
+  "purpose": "均匀高度",
+  "input_design": "h=h_prev=常量,f=0",
+  "criterion": "常量高度稳定",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

@@ -1,0 +1,60 @@
+{
+  "task_id": null,
+  "contract_version": "0.2",
+  "contract_sha256": null,
+  "engine_version": null,
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "effect_scene": "res://solution/effect.tscn",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/**",
+    "public/**"
+  ],
+  "writable_paths": [
+    "solution/**",
+    "scratch/**"
+  ],
+  "authorized_runtime_bindings": null,
+  "protected_runtime_properties": null,
+  "predecessor": {
+    "condition": null,
+    "task_id": null,
+    "run_hash": null,
+    "level": "L2",
+    "inheritance_context_mode": null
+  },
+  "algorithms_allowed_or_forbidden": null,
+  "input_domains": null,
+  "numeric_tolerances": null,
+  "visual_rubrics": null,
+  "interaction_requirements": null,
+  "budgets": {
+    "time_s": null,
+    "tool_calls": null,
+    "public_test_calls": null,
+    "memory_mb": null,
+    "frame_time_ms": null
+  },
+  "gpu_output_formats": null,
+  "capture_settings": null,
+  "status": "DO_NOT_DEPLOY_UNTIL_FROZEN",
+  "schema": "forest-public-l3-task/0.2",
+  "core_contract_version": "0.1",
+  "source_origin": null,
+  "source_snapshot_sha256": null,
+  "source_context_manifest": "public/source_context.json",
+  "scene_inventory": "public/scene_inventory.json",
+  "permissions_manifest": "public/permissions.json",
+  "readonly_source_file_manifest": "public/scene_files.json",
+  "default_file_access": "readonly_except_explicit_writable_and_managed_cache",
+  "integration_tolerances": null,
+  "integration_requirements": null,
+  "inherited_numeric_cases": 20,
+  "inherited_coupling_groups": 5,
+  "integration_groups": 10,
+  "legal_scene_variations": null,
+  "source_native_binding_verified": false,
+  "contract_digests": null
+}

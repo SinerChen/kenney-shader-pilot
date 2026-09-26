@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "STATIC_PACKAGE_ONLY_NOT_GODOT_OR_NUMERIC_VALIDATION",
+  "counts": {
+    "tasks": 16,
+    "l3_tasks": 6,
+    "numeric_design_groups": 100,
+    "l2_coupling_design_groups": 25,
+    "l3_integration_design_groups": 60,
+    "markdown_files": 93,
+    "json_files": 16,
+    "files": 110
+  },
+  "checks": [
+    "16 task paths, dependency graph, per-task contracts, prompt embedding and private-field checks",
+    "100 numeric / 25 L2 coupling / 60 L3 integration designs; 120+30 L3 regression executions separated",
+    "24 v0.1 public/snapshot files preserved byte-for-byte",
+    "Source, runtime and release gates remain explicitly unverified/blocked",
+    "JSON syntax, new/maintained Markdown fences and relative links",
+    "Package index coverage and SHA-256 digests"
+  ],
+  "errors": []
+}

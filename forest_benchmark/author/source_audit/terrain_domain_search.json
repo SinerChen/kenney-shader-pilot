@@ -1,0 +1,338 @@
+{
+  "candidates": [
+    {
+      "center_xz": [
+        -12,
+        -12
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.4268318786335952,
+      "center_y": -1.640243370506008
+    },
+    {
+      "center_xz": [
+        -12,
+        -6
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.3860771536560854,
+      "center_y": -1.1400009296390041
+    },
+    {
+      "center_xz": [
+        -12,
+        0
+      ],
+      "allow_fraction": 0.6190476190476191,
+      "height_range": 1.172431292114776,
+      "center_y": -0.6637625250820708
+    },
+    {
+      "center_xz": [
+        -12,
+        6
+      ],
+      "allow_fraction": 0.746031746031746,
+      "height_range": 0.8100541251775517,
+      "center_y": -0.3097609779344622
+    },
+    {
+      "center_xz": [
+        -12,
+        12
+      ],
+      "allow_fraction": 0.8571428571428571,
+      "height_range": 0.48117155345995044,
+      "center_y": -0.1105873418559855
+    },
+    {
+      "center_xz": [
+        -12,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 0.30997196028037366,
+      "center_y": -0.022432961206207146
+    },
+    {
+      "center_xz": [
+        -6,
+        -12
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.5856798492809763,
+      "center_y": -2.3299257097962496
+    },
+    {
+      "center_xz": [
+        -6,
+        -6
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.4246411766757043,
+      "center_y": -1.8384694494075993
+    },
+    {
+      "center_xz": [
+        -6,
+        0
+      ],
+      "allow_fraction": 0.14285714285714285,
+      "height_range": 1.347103082044558,
+      "center_y": -1.301714544195129
+    },
+    {
+      "center_xz": [
+        -6,
+        6
+      ],
+      "allow_fraction": 0.07936507936507936,
+      "height_range": 1.139160720250993,
+      "center_y": -0.8062824552024961
+    },
+    {
+      "center_xz": [
+        -6,
+        12
+      ],
+      "allow_fraction": 0.5238095238095238,
+      "height_range": 0.8451641833608152,
+      "center_y": -0.44444428985080425
+    },
+    {
+      "center_xz": [
+        -6,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 0.5784994231913482,
+      "center_y": -0.2292268572245722
+    },
+    {
+      "center_xz": [
+        0,
+        -12
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.8175873332448154,
+      "center_y": -3.206828146945882
+    },
+    {
+      "center_xz": [
+        0,
+        -6
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.6938925070909703,
+      "center_y": -2.4885374323190197
+    },
+    {
+      "center_xz": [
+        0,
+        0
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.50656509805752,
+      "center_y": -1.9234127534082635
+    },
+    {
+      "center_xz": [
+        0,
+        6
+      ],
+      "allow_fraction": 0.031746031746031744,
+      "height_range": 1.3645047587621337,
+      "center_y": -1.3903551111792207
+    },
+    {
+      "center_xz": [
+        0,
+        12
+      ],
+      "allow_fraction": 0.7301587301587301,
+      "height_range": 1.1792066713426008,
+      "center_y": -0.9510486058409945
+    },
+    {
+      "center_xz": [
+        0,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 0.9738197920582943,
+      "center_y": -0.6380633590302567
+    },
+    {
+      "center_xz": [
+        6,
+        -12
+      ],
+      "allow_fraction": 0.06349206349206349,
+      "height_range": 1.7904112746096423,
+      "center_y": -4.112468361400026
+    },
+    {
+      "center_xz": [
+        6,
+        -6
+      ],
+      "allow_fraction": 0.015873015873015872,
+      "height_range": 1.9843692440501108,
+      "center_y": -3.4278097761590014
+    },
+    {
+      "center_xz": [
+        6,
+        0
+      ],
+      "allow_fraction": 0.0,
+      "height_range": 1.9106541017379173,
+      "center_y": -2.739260574759738
+    },
+    {
+      "center_xz": [
+        6,
+        6
+      ],
+      "allow_fraction": 0.4126984126984127,
+      "height_range": 1.7790801733885808,
+      "center_y": -2.166745489947971
+    },
+    {
+      "center_xz": [
+        6,
+        12
+      ],
+      "allow_fraction": 0.9841269841269841,
+      "height_range": 1.629554834457314,
+      "center_y": -1.701253784652593
+    },
+    {
+      "center_xz": [
+        6,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 1.4585370223832514,
+      "center_y": -1.338280465835432
+    },
+    {
+      "center_xz": [
+        12,
+        -12
+      ],
+      "allow_fraction": 0.6666666666666666,
+      "height_range": 1.5045979872488822,
+      "center_y": -5.010757227647518
+    },
+    {
+      "center_xz": [
+        12,
+        -6
+      ],
+      "allow_fraction": 0.2698412698412698,
+      "height_range": 1.9323015773373315,
+      "center_y": -4.475943907073676
+    },
+    {
+      "center_xz": [
+        12,
+        0
+      ],
+      "allow_fraction": 0.38095238095238093,
+      "height_range": 2.1476549745746043,
+      "center_y": -3.8664666296295915
+    },
+    {
+      "center_xz": [
+        12,
+        6
+      ],
+      "allow_fraction": 0.873015873015873,
+      "height_range": 2.142915305978612,
+      "center_y": -3.283693741208968
+    },
+    {
+      "center_xz": [
+        12,
+        12
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 2.023705022285453,
+      "center_y": -2.7773688582725646
+    },
+    {
+      "center_xz": [
+        12,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 1.861127674472847,
+      "center_y": -2.3466278989939453
+    },
+    {
+      "center_xz": [
+        18,
+        -12
+      ],
+      "allow_fraction": 0.7619047619047619,
+      "height_range": 1.2719840707128016,
+      "center_y": -5.763679058755464
+    },
+    {
+      "center_xz": [
+        18,
+        -6
+      ],
+      "allow_fraction": 0.6190476190476191,
+      "height_range": 1.6832573583498283,
+      "center_y": -5.499545934970995
+    },
+    {
+      "center_xz": [
+        18,
+        0
+      ],
+      "allow_fraction": 0.5396825396825397,
+      "height_range": 2.015744042708212,
+      "center_y": -5.079136106037035
+    },
+    {
+      "center_xz": [
+        18,
+        6
+      ],
+      "allow_fraction": 0.7777777777777778,
+      "height_range": 2.1418048126251827,
+      "center_y": -4.545645945361933
+    },
+    {
+      "center_xz": [
+        18,
+        12
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 2.108517098981719,
+      "center_y": -4.010109122137612
+    },
+    {
+      "center_xz": [
+        18,
+        18
+      ],
+      "allow_fraction": 1.0,
+      "height_range": 2.008722482586672,
+      "center_y": -3.5158848057960927
+    }
+  ],
+  "selected": {
+    "center_xz": [
+      -6,
+      12
+    ],
+    "allow_fraction": 0.5238095238095238,
+    "height_range": 0.8451641833608152,
+    "center_y": -0.44444428985080425
+  },
+  "source": "Original mesh UV/UV2 and source splat/ORMH images; compressed GPU sampling tolerance is not yet calibrated."
+}

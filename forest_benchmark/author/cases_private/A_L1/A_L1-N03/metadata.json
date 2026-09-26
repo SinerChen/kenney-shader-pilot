@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N03",
+  "purpose": "单 octave",
+  "input_design": "给定 P/G 与非整数三维坐标",
+  "criterion": "noise 与 CPU 独立参考",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

@@ -1,0 +1,24 @@
+test_burn_monotone (test_reference.AnalyticTests.test_burn_monotone) ... ok
+test_cloud_uniform (test_reference.AnalyticTests.test_cloud_uniform) ... ok
+test_diffusion_conserves_without_clamp (test_reference.AnalyticTests.test_diffusion_conserves_without_clamp) ... ok
+test_event_dedup_and_reset (test_reference.AnalyticTests.test_event_dedup_and_reset) ... ok
+test_flow_anchor (test_reference.AnalyticTests.test_flow_anchor) ... ok
+test_foam_anchor (test_reference.AnalyticTests.test_foam_anchor) ... ok
+test_fog_vacuum (test_reference.AnalyticTests.test_fog_vacuum) ... ok
+test_front_anchor (test_reference.AnalyticTests.test_front_anchor) ... ok
+test_hg_isotropic (test_reference.AnalyticTests.test_hg_isotropic) ... ok
+test_input_stability (test_reference.AnalyticTests.test_input_stability) ... ok
+test_noise_lattice (test_reference.AnalyticTests.test_noise_lattice) ... ok
+test_optics_anchor (test_reference.AnalyticTests.test_optics_anchor) ... ok
+test_particle_anchor (test_reference.AnalyticTests.test_particle_anchor) ... ok
+test_pom_anchor (test_reference.AnalyticTests.test_pom_anchor) ... ok
+test_snell_angle (test_reference.AnalyticTests.test_snell_angle) ... ok
+test_stamp_saturation (test_reference.AnalyticTests.test_stamp_saturation) ... ok
+test_wave_anchor (test_reference.AnalyticTests.test_wave_anchor) ... ok
+test_wave_linear (test_reference.AnalyticTests.test_wave_linear) ... ok
+test_wet_anchor (test_reference.AnalyticTests.test_wet_anchor) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.282s
+
+OK

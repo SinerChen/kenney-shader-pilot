@@ -1,0 +1,41 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "D_L3",
+  "status": "SOURCE_UNVERIFIED",
+  "source_origin": null,
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Shaders/River.tres"
+  ],
+  "source_gap": "报告读取到 River 材质中时间偏移 UV 的片段，但未确认其 Main.tscn 挂载、目标节点、UV/变换、区域有效性和原速度含义。",
+  "verified_commit": null,
+  "checkout_sha256": null,
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": null,
+  "original_entry_scene": null,
+  "real_target_bindings": [],
+  "protected_runtime_properties": [],
+  "authorized_runtime_bindings": [],
+  "source_context_keep": [],
+  "new_target_solution_exclusions": [],
+  "author_normalization_patches": [],
+  "test_interventions": [],
+  "required_source_checks": [
+    "在冻结源工程中验证 River 真实挂载和活动材质；未挂载时禁止宣称原森林已有河段，constructed 版本另行标记。",
+    "选择可以用正交米制表面 chart 表达的真实水域片区，验证几何、有效水域和原材质数据流。",
+    "原流纹速度不能自动当物理速度；作者为本题公开给定 m/s 流场和基/单位定义，记录其为任务输入而非上游真值。",
+    "确认可在保留原折射/透明/其他材质职责时替换被考流纹子功能；选定接触对象/锚点及不接触干扰对象。"
+  ],
+  "required_frozen_fields": [
+    "native_river_binding",
+    "surface_chart_and_metric",
+    "physical_flow_metadata",
+    "contact_validity_threshold",
+    "permitted_optical_preservation"
+  ],
+  "license_inventory": null,
+  "evidence_files": [],
+  "runtime_verified": false,
+  "can_export_native_task": false
+}

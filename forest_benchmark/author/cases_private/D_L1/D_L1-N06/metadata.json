@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N06",
+  "purpose": "法线混合",
+  "input_design": "不同方向基础法线",
+  "criterion": "解码、加权、归一化",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

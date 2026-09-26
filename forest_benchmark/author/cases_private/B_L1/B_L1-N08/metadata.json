@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N08",
+  "purpose": "最大深度",
+  "input_design": "大量重叠",
+  "criterion": "饱和到 d_max，无负深度",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

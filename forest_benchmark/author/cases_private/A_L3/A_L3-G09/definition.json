@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G09",
+  "purpose": "原表示和风动保护",
+  "input_design": "关新增显示但保留提交配置，运行原风动/切换",
+  "criterion": "裁切、风动、阴影和切换机制未被改坏",
+  "observations": "原生属性、保护视图、源文件 diff",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

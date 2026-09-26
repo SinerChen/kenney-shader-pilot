@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N06",
+  "purpose": "纯吸收雾",
+  "input_design": "sigma_s=0,sigma_a>0",
+  "criterion": "无散射但有衰减",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

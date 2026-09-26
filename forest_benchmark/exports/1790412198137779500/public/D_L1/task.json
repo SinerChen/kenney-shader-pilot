@@ -1,0 +1,102 @@
+{
+  "task_id": "D_L1",
+  "title": "双相位 Flow Mapping 水纹",
+  "algorithm": "两相位流向扭曲、重置与混合",
+  "contract_version": "0.1",
+  "contract_sha256": "1888d95af13b7f1eed455b61b65777c36f869aaec6e565d2c307d5225207605d",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "WaterPatch"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "condition": "none",
+    "source_hashes": {}
+  },
+  "queries": {
+    "flow_query": [
+      "uv_phase0.x",
+      "uv_phase0.y",
+      "uv_phase1.x",
+      "uv_phase1.y",
+      "weight0",
+      "weight1",
+      "sampled_color.r",
+      "sampled_color.g",
+      "sampled_color.b",
+      "blended_normal.x",
+      "blended_normal.y",
+      "blended_normal.z"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "REVIEW_ONLY"
+}

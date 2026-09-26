@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G09",
+  "purpose": "原材质与范围保护",
+  "input_design": "关新增效果并保留配置",
+  "criterion": "原折射/透明/范围及非目标水域保持",
+  "observations": "源材质参数、保护视图",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

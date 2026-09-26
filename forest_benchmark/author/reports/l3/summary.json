@@ -1,0 +1,1575 @@
+{
+  "version": "0.2",
+  "generated": "2026-09-27T01:31:19+08:00",
+  "task_specs": 16,
+  "l3_specs": 6,
+  "native_starters": 5,
+  "l3_integration_designs": 60,
+  "l3_integration_executed": 0,
+  "predecessor_preflight_numeric": 120,
+  "predecessor_preflight_coupling": 30,
+  "l3_candidate_core_regressions": "NOT_RUN",
+  "active_l3_tasks": [],
+  "tasks": [
+    {
+      "task": "A_L3",
+      "title": "森林树木灼烧与余烬的跨表示集成",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "SOURCE_RUNTIME_ENUMERATED",
+      "source_blockers": [],
+      "predecessor_preflight": {
+        "task": "A_L3",
+        "predecessor": "A_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "d2d0a651645c3522785b19fdf7210a839a5c036fc12c5bb4832bb733272788e2",
+          "wire.json": "4d5f8b66d4731eb39ff9371fac0f987f2826bc85efdf1ade2411de845f7d40ad"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": {
+        "binding": {
+          "status": "UNIMPLEMENTED_BINDING"
+        },
+        "camera": {
+          "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+          "fov": 75.0,
+          "position": "(0.611122, 10.2933, 28.4039)",
+          "requested": null
+        },
+        "changed_source_nodes": [],
+        "detach_restored": true,
+        "effect_present": false,
+        "engine": {
+          "build": "official",
+          "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+          "hex": 263681,
+          "major": 4,
+          "minor": 6,
+          "patch": 1,
+          "status": "stable",
+          "string": "4.6.1-stable (official)",
+          "timestamp": 0
+        },
+        "frames": [
+          {
+            "file": "frame_00000.png",
+            "frame": 0,
+            "tick": 0
+          },
+          {
+            "file": "frame_00001.png",
+            "frame": 1,
+            "tick": 0
+          },
+          {
+            "file": "frame_00002.png",
+            "frame": 2,
+            "tick": 0
+          },
+          {
+            "file": "frame_00003.png",
+            "frame": 3,
+            "tick": 0
+          },
+          {
+            "file": "frame_00004.png",
+            "frame": 4,
+            "tick": 0
+          },
+          {
+            "file": "frame_00005.png",
+            "frame": 5,
+            "tick": 0
+          },
+          {
+            "file": "frame_00006.png",
+            "frame": 6,
+            "tick": 0
+          },
+          {
+            "file": "frame_00007.png",
+            "frame": 7,
+            "tick": 0
+          },
+          {
+            "file": "frame_00008.png",
+            "frame": 8,
+            "tick": 0
+          },
+          {
+            "file": "frame_00009.png",
+            "frame": 9,
+            "tick": 0
+          },
+          {
+            "file": "frame_00010.png",
+            "frame": 10,
+            "tick": 0
+          },
+          {
+            "file": "frame_00011.png",
+            "frame": 11,
+            "tick": 0
+          },
+          {
+            "file": "frame_00012.png",
+            "frame": 12,
+            "tick": 0
+          },
+          {
+            "file": "frame_00013.png",
+            "frame": 13,
+            "tick": 0
+          },
+          {
+            "file": "frame_00014.png",
+            "frame": 14,
+            "tick": 0
+          },
+          {
+            "file": "frame_00015.png",
+            "frame": 15,
+            "tick": 0
+          },
+          {
+            "file": "frame_00016.png",
+            "frame": 16,
+            "tick": 0
+          },
+          {
+            "file": "frame_00017.png",
+            "frame": 17,
+            "tick": 0
+          },
+          {
+            "file": "frame_00018.png",
+            "frame": 18,
+            "tick": 0
+          },
+          {
+            "file": "frame_00019.png",
+            "frame": 19,
+            "tick": 0
+          },
+          {
+            "file": "frame_00020.png",
+            "frame": 20,
+            "tick": 0
+          },
+          {
+            "file": "frame_00021.png",
+            "frame": 21,
+            "tick": 0
+          },
+          {
+            "file": "frame_00022.png",
+            "frame": 22,
+            "tick": 0
+          },
+          {
+            "file": "frame_00023.png",
+            "frame": 23,
+            "tick": 0
+          },
+          {
+            "file": "frame_00024.png",
+            "frame": 24,
+            "tick": 0
+          },
+          {
+            "file": "frame_00025.png",
+            "frame": 25,
+            "tick": 0
+          },
+          {
+            "file": "frame_00026.png",
+            "frame": 26,
+            "tick": 0
+          },
+          {
+            "file": "frame_00027.png",
+            "frame": 27,
+            "tick": 0
+          },
+          {
+            "file": "frame_00028.png",
+            "frame": 28,
+            "tick": 0
+          },
+          {
+            "file": "frame_00029.png",
+            "frame": 29,
+            "tick": 0
+          }
+        ],
+        "gpu": "AMD Radeon 780M Graphics",
+        "protected_node_count": 35273,
+        "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+        "source_runtime_unchanged": true,
+        "status": "NATIVE_STARTER_RENDERED",
+        "task": "A_L3",
+        "video": "author\\reports\\l3\\A_L3\\starter\\effect.mp4",
+        "seconds": 18.94133319996763,
+        "clean_import_exit": 0
+      },
+      "integration": {
+        "task": "A_L3",
+        "status": "NOT_RUN",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "A_L3-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "A_L3-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "A_L3",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "SOURCE_RUNTIME_ENUMERATED",
+        "blockers": [
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    },
+    {
+      "task": "B_L3",
+      "title": "真实地形材质区域中的脚印与湿润集成",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "SOURCE_RUNTIME_ENUMERATED",
+      "source_blockers": [],
+      "predecessor_preflight": {
+        "task": "B_L3",
+        "predecessor": "B_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "8a3a7f082828dfca124edad59769fb66c6e58649e14b75172cac43887eb12a83",
+          "wire.json": "45654ae8503bd3493d15e58205197c4e998442e360237d5dae6b65c25cd7bc8b"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": {
+        "binding": {
+          "status": "UNIMPLEMENTED_BINDING"
+        },
+        "camera": {
+          "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+          "fov": 75.0,
+          "position": "(0.611122, 10.2933, 28.4039)",
+          "requested": null
+        },
+        "changed_source_nodes": [],
+        "detach_restored": true,
+        "effect_present": false,
+        "engine": {
+          "build": "official",
+          "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+          "hex": 263681,
+          "major": 4,
+          "minor": 6,
+          "patch": 1,
+          "status": "stable",
+          "string": "4.6.1-stable (official)",
+          "timestamp": 0
+        },
+        "frames": [
+          {
+            "file": "frame_00000.png",
+            "frame": 0,
+            "tick": 0
+          },
+          {
+            "file": "frame_00001.png",
+            "frame": 1,
+            "tick": 0
+          },
+          {
+            "file": "frame_00002.png",
+            "frame": 2,
+            "tick": 0
+          },
+          {
+            "file": "frame_00003.png",
+            "frame": 3,
+            "tick": 0
+          },
+          {
+            "file": "frame_00004.png",
+            "frame": 4,
+            "tick": 0
+          },
+          {
+            "file": "frame_00005.png",
+            "frame": 5,
+            "tick": 0
+          },
+          {
+            "file": "frame_00006.png",
+            "frame": 6,
+            "tick": 0
+          },
+          {
+            "file": "frame_00007.png",
+            "frame": 7,
+            "tick": 0
+          },
+          {
+            "file": "frame_00008.png",
+            "frame": 8,
+            "tick": 0
+          },
+          {
+            "file": "frame_00009.png",
+            "frame": 9,
+            "tick": 0
+          },
+          {
+            "file": "frame_00010.png",
+            "frame": 10,
+            "tick": 0
+          },
+          {
+            "file": "frame_00011.png",
+            "frame": 11,
+            "tick": 0
+          },
+          {
+            "file": "frame_00012.png",
+            "frame": 12,
+            "tick": 0
+          },
+          {
+            "file": "frame_00013.png",
+            "frame": 13,
+            "tick": 0
+          },
+          {
+            "file": "frame_00014.png",
+            "frame": 14,
+            "tick": 0
+          },
+          {
+            "file": "frame_00015.png",
+            "frame": 15,
+            "tick": 0
+          },
+          {
+            "file": "frame_00016.png",
+            "frame": 16,
+            "tick": 0
+          },
+          {
+            "file": "frame_00017.png",
+            "frame": 17,
+            "tick": 0
+          },
+          {
+            "file": "frame_00018.png",
+            "frame": 18,
+            "tick": 0
+          },
+          {
+            "file": "frame_00019.png",
+            "frame": 19,
+            "tick": 0
+          },
+          {
+            "file": "frame_00020.png",
+            "frame": 20,
+            "tick": 0
+          },
+          {
+            "file": "frame_00021.png",
+            "frame": 21,
+            "tick": 0
+          },
+          {
+            "file": "frame_00022.png",
+            "frame": 22,
+            "tick": 0
+          },
+          {
+            "file": "frame_00023.png",
+            "frame": 23,
+            "tick": 0
+          },
+          {
+            "file": "frame_00024.png",
+            "frame": 24,
+            "tick": 0
+          },
+          {
+            "file": "frame_00025.png",
+            "frame": 25,
+            "tick": 0
+          },
+          {
+            "file": "frame_00026.png",
+            "frame": 26,
+            "tick": 0
+          },
+          {
+            "file": "frame_00027.png",
+            "frame": 27,
+            "tick": 0
+          },
+          {
+            "file": "frame_00028.png",
+            "frame": 28,
+            "tick": 0
+          },
+          {
+            "file": "frame_00029.png",
+            "frame": 29,
+            "tick": 0
+          }
+        ],
+        "gpu": "AMD Radeon 780M Graphics",
+        "protected_node_count": 35273,
+        "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+        "source_runtime_unchanged": true,
+        "status": "NATIVE_STARTER_RENDERED",
+        "task": "B_L3",
+        "video": "author\\reports\\l3\\B_L3\\starter\\effect.mp4",
+        "seconds": 18.443843699991703,
+        "clean_import_exit": 0
+      },
+      "integration": {
+        "task": "B_L3",
+        "status": "NOT_RUN",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "B_L3-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "B_L3-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "B_L3",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "SOURCE_RUNTIME_ENUMERATED",
+        "blockers": [
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    },
+    {
+      "task": "C_L3_R",
+      "title": "既有噪声资源复用与原天空保护",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "SOURCE_RUNTIME_ENUMERATED",
+      "source_blockers": [],
+      "predecessor_preflight": {
+        "task": "C_L3_R",
+        "predecessor": "C_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "0e04f89b83946a6a95964d3e5ced81d6b4d56bc2ee1109394ee432664d84f9bd",
+          "wire.json": "ee95060df8633b28f1f9167892c2c25b61e01d11adec1624e1930cb2a05b5e84"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": {
+        "binding": {
+          "status": "UNIMPLEMENTED_BINDING"
+        },
+        "camera": {
+          "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+          "fov": 75.0,
+          "position": "(0.611122, 10.2933, 28.4039)",
+          "requested": null
+        },
+        "changed_source_nodes": [],
+        "detach_restored": true,
+        "effect_present": false,
+        "engine": {
+          "build": "official",
+          "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+          "hex": 263681,
+          "major": 4,
+          "minor": 6,
+          "patch": 1,
+          "status": "stable",
+          "string": "4.6.1-stable (official)",
+          "timestamp": 0
+        },
+        "frames": [
+          {
+            "file": "frame_00000.png",
+            "frame": 0,
+            "tick": 0
+          },
+          {
+            "file": "frame_00001.png",
+            "frame": 1,
+            "tick": 0
+          },
+          {
+            "file": "frame_00002.png",
+            "frame": 2,
+            "tick": 0
+          },
+          {
+            "file": "frame_00003.png",
+            "frame": 3,
+            "tick": 0
+          },
+          {
+            "file": "frame_00004.png",
+            "frame": 4,
+            "tick": 0
+          },
+          {
+            "file": "frame_00005.png",
+            "frame": 5,
+            "tick": 0
+          },
+          {
+            "file": "frame_00006.png",
+            "frame": 6,
+            "tick": 0
+          },
+          {
+            "file": "frame_00007.png",
+            "frame": 7,
+            "tick": 0
+          },
+          {
+            "file": "frame_00008.png",
+            "frame": 8,
+            "tick": 0
+          },
+          {
+            "file": "frame_00009.png",
+            "frame": 9,
+            "tick": 0
+          },
+          {
+            "file": "frame_00010.png",
+            "frame": 10,
+            "tick": 0
+          },
+          {
+            "file": "frame_00011.png",
+            "frame": 11,
+            "tick": 0
+          },
+          {
+            "file": "frame_00012.png",
+            "frame": 12,
+            "tick": 0
+          },
+          {
+            "file": "frame_00013.png",
+            "frame": 13,
+            "tick": 0
+          },
+          {
+            "file": "frame_00014.png",
+            "frame": 14,
+            "tick": 0
+          },
+          {
+            "file": "frame_00015.png",
+            "frame": 15,
+            "tick": 0
+          },
+          {
+            "file": "frame_00016.png",
+            "frame": 16,
+            "tick": 0
+          },
+          {
+            "file": "frame_00017.png",
+            "frame": 17,
+            "tick": 0
+          },
+          {
+            "file": "frame_00018.png",
+            "frame": 18,
+            "tick": 0
+          },
+          {
+            "file": "frame_00019.png",
+            "frame": 19,
+            "tick": 0
+          },
+          {
+            "file": "frame_00020.png",
+            "frame": 20,
+            "tick": 0
+          },
+          {
+            "file": "frame_00021.png",
+            "frame": 21,
+            "tick": 0
+          },
+          {
+            "file": "frame_00022.png",
+            "frame": 22,
+            "tick": 0
+          },
+          {
+            "file": "frame_00023.png",
+            "frame": 23,
+            "tick": 0
+          },
+          {
+            "file": "frame_00024.png",
+            "frame": 24,
+            "tick": 0
+          },
+          {
+            "file": "frame_00025.png",
+            "frame": 25,
+            "tick": 0
+          },
+          {
+            "file": "frame_00026.png",
+            "frame": 26,
+            "tick": 0
+          },
+          {
+            "file": "frame_00027.png",
+            "frame": 27,
+            "tick": 0
+          },
+          {
+            "file": "frame_00028.png",
+            "frame": 28,
+            "tick": 0
+          },
+          {
+            "file": "frame_00029.png",
+            "frame": 29,
+            "tick": 0
+          }
+        ],
+        "gpu": "AMD Radeon 780M Graphics",
+        "protected_node_count": 35273,
+        "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+        "source_runtime_unchanged": true,
+        "status": "NATIVE_STARTER_RENDERED",
+        "task": "C_L3_R",
+        "video": "author\\reports\\l3\\C_L3_R\\starter\\effect.mp4",
+        "seconds": 19.043615699978545,
+        "clean_import_exit": 0
+      },
+      "integration": {
+        "task": "C_L3_R",
+        "status": "NOT_RUN",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "C_L3_R-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_R-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "C_L3_R",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "SOURCE_RUNTIME_ENUMERATED",
+        "blockers": [
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    },
+    {
+      "task": "C_L3_S",
+      "title": "既有天空驱动的云影与体积光同步",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "BLOCKED_SOURCE",
+      "source_blockers": [
+        "Original sky maps camera position with scales (0.1, 0.2, 0.1) but traces untransformed EYEDIR; a single camera-independent world-space density mapping is not established. Native mapping and clock calibration are required."
+      ],
+      "predecessor_preflight": {
+        "task": "C_L3_S",
+        "predecessor": "C_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "0e04f89b83946a6a95964d3e5ced81d6b4d56bc2ee1109394ee432664d84f9bd",
+          "wire.json": "ee95060df8633b28f1f9167892c2c25b61e01d11adec1624e1930cb2a05b5e84"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": null,
+      "integration": {
+        "task": "C_L3_S",
+        "status": "BLOCKED_SOURCE",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "C_L3_S-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "C_L3_S-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [
+          "Original sky maps camera position with scales (0.1, 0.2, 0.1) but traces untransformed EYEDIR; a single camera-independent world-space density mapping is not established. Native mapping and clock calibration are required."
+        ],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "C_L3_S",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "BLOCKED_SOURCE",
+        "blockers": [
+          "Original sky maps camera position with scales (0.1, 0.2, 0.1) but traces untransformed EYEDIR; a single camera-independent world-space density mapping is not established. Native mapping and clock calibration are required.",
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    },
+    {
+      "task": "D_L3",
+      "title": "原河流中的流纹、接触源与泡沫输运",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "SOURCE_RUNTIME_ENUMERATED",
+      "source_blockers": [],
+      "predecessor_preflight": {
+        "task": "D_L3",
+        "predecessor": "D_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "b36c101e92a61d16c1c3b6112f6ca37671f0a471b9a8877f4aebcbb91227e549",
+          "wire.json": "3320f5c44529eaf03f1fb2a32a3b420edf771600d58b8a4365c2730ac0147133"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": {
+        "binding": {
+          "status": "UNIMPLEMENTED_BINDING"
+        },
+        "camera": {
+          "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+          "fov": 75.0,
+          "position": "(0.611122, 10.2933, 28.4039)",
+          "requested": null
+        },
+        "changed_source_nodes": [],
+        "detach_restored": true,
+        "effect_present": false,
+        "engine": {
+          "build": "official",
+          "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+          "hex": 263681,
+          "major": 4,
+          "minor": 6,
+          "patch": 1,
+          "status": "stable",
+          "string": "4.6.1-stable (official)",
+          "timestamp": 0
+        },
+        "frames": [
+          {
+            "file": "frame_00000.png",
+            "frame": 0,
+            "tick": 0
+          },
+          {
+            "file": "frame_00001.png",
+            "frame": 1,
+            "tick": 0
+          },
+          {
+            "file": "frame_00002.png",
+            "frame": 2,
+            "tick": 0
+          },
+          {
+            "file": "frame_00003.png",
+            "frame": 3,
+            "tick": 0
+          },
+          {
+            "file": "frame_00004.png",
+            "frame": 4,
+            "tick": 0
+          },
+          {
+            "file": "frame_00005.png",
+            "frame": 5,
+            "tick": 0
+          },
+          {
+            "file": "frame_00006.png",
+            "frame": 6,
+            "tick": 0
+          },
+          {
+            "file": "frame_00007.png",
+            "frame": 7,
+            "tick": 0
+          },
+          {
+            "file": "frame_00008.png",
+            "frame": 8,
+            "tick": 0
+          },
+          {
+            "file": "frame_00009.png",
+            "frame": 9,
+            "tick": 0
+          },
+          {
+            "file": "frame_00010.png",
+            "frame": 10,
+            "tick": 0
+          },
+          {
+            "file": "frame_00011.png",
+            "frame": 11,
+            "tick": 0
+          },
+          {
+            "file": "frame_00012.png",
+            "frame": 12,
+            "tick": 0
+          },
+          {
+            "file": "frame_00013.png",
+            "frame": 13,
+            "tick": 0
+          },
+          {
+            "file": "frame_00014.png",
+            "frame": 14,
+            "tick": 0
+          },
+          {
+            "file": "frame_00015.png",
+            "frame": 15,
+            "tick": 0
+          },
+          {
+            "file": "frame_00016.png",
+            "frame": 16,
+            "tick": 0
+          },
+          {
+            "file": "frame_00017.png",
+            "frame": 17,
+            "tick": 0
+          },
+          {
+            "file": "frame_00018.png",
+            "frame": 18,
+            "tick": 0
+          },
+          {
+            "file": "frame_00019.png",
+            "frame": 19,
+            "tick": 0
+          },
+          {
+            "file": "frame_00020.png",
+            "frame": 20,
+            "tick": 0
+          },
+          {
+            "file": "frame_00021.png",
+            "frame": 21,
+            "tick": 0
+          },
+          {
+            "file": "frame_00022.png",
+            "frame": 22,
+            "tick": 0
+          },
+          {
+            "file": "frame_00023.png",
+            "frame": 23,
+            "tick": 0
+          },
+          {
+            "file": "frame_00024.png",
+            "frame": 24,
+            "tick": 0
+          },
+          {
+            "file": "frame_00025.png",
+            "frame": 25,
+            "tick": 0
+          },
+          {
+            "file": "frame_00026.png",
+            "frame": 26,
+            "tick": 0
+          },
+          {
+            "file": "frame_00027.png",
+            "frame": 27,
+            "tick": 0
+          },
+          {
+            "file": "frame_00028.png",
+            "frame": 28,
+            "tick": 0
+          },
+          {
+            "file": "frame_00029.png",
+            "frame": 29,
+            "tick": 0
+          }
+        ],
+        "gpu": "AMD Radeon 780M Graphics",
+        "protected_node_count": 35273,
+        "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+        "source_runtime_unchanged": true,
+        "status": "NATIVE_STARTER_RENDERED",
+        "task": "D_L3",
+        "video": "author\\reports\\l3\\D_L3\\starter\\effect.mp4",
+        "seconds": 17.47134140005801,
+        "clean_import_exit": 0
+      },
+      "integration": {
+        "task": "D_L3",
+        "status": "NOT_RUN",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "D_L3-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "D_L3-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "D_L3",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "SOURCE_RUNTIME_ENUMERATED",
+        "blockers": [
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    },
+    {
+      "task": "E_L3",
+      "title": "既有河流上涟漪与前景折射的渲染接入",
+      "spec": "SPEC_VALIDATED",
+      "source_origin": "native_snapshot",
+      "source_binding": "SOURCE_RUNTIME_ENUMERATED",
+      "source_blockers": [],
+      "predecessor_preflight": {
+        "task": "E_L3",
+        "predecessor": "E_L2",
+        "predecessor_hashes": {
+          "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+          "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+          "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+          "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+          "kernel.txt": "dfdca107bd64e640485b4cea466bb08efb53608f070ea28c37db01d20f4784c6",
+          "wire.json": "f235d96252e63ac40cb5e9f5698de05656caf6b13ba0a654e1d70c2a4ef9ab9a"
+        },
+        "core_regression_pass": 20,
+        "core_total": 20,
+        "coupling_regression_pass": 5,
+        "coupling_total": 5,
+        "status": "PASS",
+        "scope": "Sealed L2 preflight only; does not prove L3 candidate integration or L3 display regressions."
+      },
+      "starter": {
+        "binding": {
+          "status": "UNIMPLEMENTED_BINDING"
+        },
+        "camera": {
+          "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+          "fov": 75.0,
+          "position": "(0.611122, 10.2933, 28.4039)",
+          "requested": null
+        },
+        "changed_source_nodes": [],
+        "detach_restored": true,
+        "effect_present": false,
+        "engine": {
+          "build": "official",
+          "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+          "hex": 263681,
+          "major": 4,
+          "minor": 6,
+          "patch": 1,
+          "status": "stable",
+          "string": "4.6.1-stable (official)",
+          "timestamp": 0
+        },
+        "frames": [
+          {
+            "file": "frame_00000.png",
+            "frame": 0,
+            "tick": 0
+          },
+          {
+            "file": "frame_00001.png",
+            "frame": 1,
+            "tick": 0
+          },
+          {
+            "file": "frame_00002.png",
+            "frame": 2,
+            "tick": 0
+          },
+          {
+            "file": "frame_00003.png",
+            "frame": 3,
+            "tick": 0
+          },
+          {
+            "file": "frame_00004.png",
+            "frame": 4,
+            "tick": 0
+          },
+          {
+            "file": "frame_00005.png",
+            "frame": 5,
+            "tick": 0
+          },
+          {
+            "file": "frame_00006.png",
+            "frame": 6,
+            "tick": 0
+          },
+          {
+            "file": "frame_00007.png",
+            "frame": 7,
+            "tick": 0
+          },
+          {
+            "file": "frame_00008.png",
+            "frame": 8,
+            "tick": 0
+          },
+          {
+            "file": "frame_00009.png",
+            "frame": 9,
+            "tick": 0
+          },
+          {
+            "file": "frame_00010.png",
+            "frame": 10,
+            "tick": 0
+          },
+          {
+            "file": "frame_00011.png",
+            "frame": 11,
+            "tick": 0
+          },
+          {
+            "file": "frame_00012.png",
+            "frame": 12,
+            "tick": 0
+          },
+          {
+            "file": "frame_00013.png",
+            "frame": 13,
+            "tick": 0
+          },
+          {
+            "file": "frame_00014.png",
+            "frame": 14,
+            "tick": 0
+          },
+          {
+            "file": "frame_00015.png",
+            "frame": 15,
+            "tick": 0
+          },
+          {
+            "file": "frame_00016.png",
+            "frame": 16,
+            "tick": 0
+          },
+          {
+            "file": "frame_00017.png",
+            "frame": 17,
+            "tick": 0
+          },
+          {
+            "file": "frame_00018.png",
+            "frame": 18,
+            "tick": 0
+          },
+          {
+            "file": "frame_00019.png",
+            "frame": 19,
+            "tick": 0
+          },
+          {
+            "file": "frame_00020.png",
+            "frame": 20,
+            "tick": 0
+          },
+          {
+            "file": "frame_00021.png",
+            "frame": 21,
+            "tick": 0
+          },
+          {
+            "file": "frame_00022.png",
+            "frame": 22,
+            "tick": 0
+          },
+          {
+            "file": "frame_00023.png",
+            "frame": 23,
+            "tick": 0
+          },
+          {
+            "file": "frame_00024.png",
+            "frame": 24,
+            "tick": 0
+          },
+          {
+            "file": "frame_00025.png",
+            "frame": 25,
+            "tick": 0
+          },
+          {
+            "file": "frame_00026.png",
+            "frame": 26,
+            "tick": 0
+          },
+          {
+            "file": "frame_00027.png",
+            "frame": 27,
+            "tick": 0
+          },
+          {
+            "file": "frame_00028.png",
+            "frame": 28,
+            "tick": 0
+          },
+          {
+            "file": "frame_00029.png",
+            "frame": 29,
+            "tick": 0
+          }
+        ],
+        "gpu": "AMD Radeon 780M Graphics",
+        "protected_node_count": 35273,
+        "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+        "source_runtime_unchanged": true,
+        "status": "NATIVE_STARTER_RENDERED",
+        "task": "E_L3",
+        "video": "author\\reports\\l3\\E_L3\\starter\\effect.mp4",
+        "seconds": 18.059846599935554,
+        "clean_import_exit": 0
+      },
+      "integration": {
+        "task": "E_L3",
+        "status": "NOT_RUN",
+        "integration_pass": null,
+        "integration_total": 10,
+        "executed_groups": 0,
+        "groups": [
+          {
+            "id": "E_L3-G01",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G02",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G03",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G04",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G05",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G06",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G07",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G08",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G09",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          },
+          {
+            "id": "E_L3-G10",
+            "status": "NOT_RUN",
+            "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+          }
+        ],
+        "source_blockers": [],
+        "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+      },
+      "release": {
+        "task": "E_L3",
+        "status": "BLOCKED_RELEASE",
+        "source_status": "SOURCE_RUNTIME_ENUMERATED",
+        "blockers": [
+          "source_domain_and_semantics_calibration",
+          "native_positive_integration_reference",
+          "60_group_private_oracles_and_controls",
+          "candidate_core_and_coupling_regressions",
+          "runtime_protection_calibration",
+          "os_isolation",
+          "visual_calibration",
+          "budgets_frozen",
+          "asset_license_closure"
+        ]
+      },
+      "native_reference": "NOT_IMPLEMENTED"
+    }
+  ]
+}

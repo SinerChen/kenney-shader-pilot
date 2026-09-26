@@ -1,0 +1,42 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "C_L3_S",
+  "status": "SOURCE_UNVERIFIED",
+  "source_origin": null,
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Shaders/Sky/sky volumetric clouds.gdshader",
+    "Main.tscn（实际天空材质/方向光/时钟绑定待核验）"
+  ],
+  "source_gap": "只有时间/方向相关片段，完整密度函数、天空锚定策略、世界单位、云层范围、光源和时钟映射未核实。若原天空只有不可唯一映射到有限世界体积的方向性画面，不可给它虚构唯一的地面真值。",
+  "verified_commit": null,
+  "checkout_sha256": null,
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": null,
+  "original_entry_scene": null,
+  "real_target_bindings": [],
+  "protected_runtime_properties": [],
+  "authorized_runtime_bindings": [],
+  "source_context_keep": [],
+  "new_target_solution_exclusions": [],
+  "author_normalization_patches": [],
+  "test_interventions": [],
+  "required_source_checks": [
+    "读全原天空密度/变换/时间更新，证明可建立有限、世界锚定且单位明确的云场到森林映射，并记录所有参与资源/uniform。",
+    "用独立作者诊断比对原天空密度采样与世界空间查询；不以天空最终RGB倒推出唯一密度。",
+    "若原天空相机相对或无有限空间映射，native 任务阻塞；可另建明确标记的 constructed_fixture，但不可混入 native 分数。",
+    "验证可控天空时钟、方向光、雾盒及目标直接光接入；需要作者时钟桥时先作为无目标算法的归一化补丁记录并建立同样基线。"
+  ],
+  "required_frozen_fields": [
+    "native_world_mapping_proof",
+    "source_clock_protocol",
+    "world_density_grid_error",
+    "directional_light_scope",
+    "source_parameter_valid_domains"
+  ],
+  "license_inventory": null,
+  "evidence_files": [],
+  "runtime_verified": false,
+  "can_export_native_task": false
+}

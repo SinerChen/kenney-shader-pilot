@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G07",
+  "purpose": "光源方向变化",
+  "input_design": "固定密度，按公开范围改变目标方向光",
+  "criterion": "光程关系改变，不能仅改变亮度",
+  "observations": "光路 T、地面影区和雾贡献",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

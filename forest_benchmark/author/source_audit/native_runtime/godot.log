@@ -1,0 +1,51 @@
+Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org
+Vulkan 1.3.302 - Forward+ - Using Device #0: AMD - AMD Radeon 780M Graphics
+
+WARNING: res://Materials/Tree branch.tres:4 - ext_resource, invalid UID: uid://cu03iis8nxkey - using text path instead: res://Textures/Trees/Tree_Branch_BaseColor.png
+   at: load (scene/resources/resource_format_text.cpp:500)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: res://Materials/Tree branch.tres:5 - ext_resource, invalid UID: uid://d0skseaofsmrm - using text path instead: res://Textures/Trees/Tree_Branch_Normal.png
+   at: load (scene/resources/resource_format_text.cpp:500)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: res://Materials/Tree branch.tres:6 - ext_resource, invalid UID: uid://b2qt12rshwb58 - using text path instead: res://Textures/Trees/Tree_Branch_orm.png
+   at: load (scene/resources/resource_format_text.cpp:500)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: At least one surface uses an old surface format and needs to be upgraded. The upgrade happens automatically at load time every time until the mesh is saved again or re-imported. Once saved (or re-imported), this mesh will be incompatible with earlier versions of Godot.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2233)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_cdnqd uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_j4lmp uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_v1lmf uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_255vb uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_4pj7v uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_tt2p4 uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_skdrj uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)
+WARNING: A surface of res://Main.tscn::ArrayMesh_mardg uses an old surface format and needs to be upgraded.
+   at: fix_surface_compatibility (servers/rendering/rendering_server.cpp:2236)
+   GDScript backtrace (most recent call first):
+       [0] run (res://benchmark_author_probe.gd:72)

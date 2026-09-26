@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G04",
+  "purpose": "密度生成",
+  "input_design": "改变 a/b/theta 和 grid 合法尺寸",
+  "criterion": "rho_grid 按本级公式变化且非源替身",
+  "observations": "U/V 样本、rho_grid",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,123 @@
+{
+  "task_id": "A_L3",
+  "constraint_ids": [
+    "F01"
+  ],
+  "predecessor": "A_L2",
+  "integration_groups": [
+    {
+      "id": "A_L3-G01",
+      "purpose": "目标树静态接入",
+      "input_design": "近距离固定时间，至少一目标树和一非目标树",
+      "criterion": "灼烧/余烬实际进入目标材质及粒子资源；非目标保持基线",
+      "observations": "烧焦状态、实际活动材质、出生日志、目标/对照帧",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G02",
+      "purpose": "覆盖所有实际表示",
+      "input_design": "逐个采集核验过的表示及可见区间",
+      "criterion": "各表示按自己的基线表达同一目标状态，不能漏远景",
+      "observations": "表示 ID、参考点值、逐表示覆盖误差",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G03",
+      "purpose": "冻结状态跨越切换边界",
+      "input_design": "t 固定，相机往返跨实际边界",
+      "criterion": "仅表现精度允许改变，b/a 不重置或消失",
+      "observations": "切换两侧序列、状态缓冲",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G04",
+      "purpose": "正常运行时切换",
+      "input_design": "时间继续，往返并停留在过渡区",
+      "criterion": "粒子不重复出生；焦化按同一时钟继续",
+      "observations": "复合粒子 ID、birth_time、age、轨迹",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G05",
+      "purpose": "离屏后返回",
+      "input_design": "离开目标可见范围若干模拟 tick 后返回",
+      "criterion": "不可见不暂停状态/重触发事件",
+      "observations": "连续参考轨迹与返回状态",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G06",
+      "purpose": "同资源多实例",
+      "input_design": "两棵目标不同起点/种子，一棵共享资源对照",
+      "criterion": "两目标互不串色/串发射，对照不受影响",
+      "observations": "按 object_id 对齐的 b/a 和资源影响图",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G07",
+      "purpose": "仅改变余烬参数",
+      "input_design": "灼烧固定，改变 curl 或关闭新发射",
+      "criterion": "灼烧状态不改；存量连续、无新发射",
+      "observations": "核心回归与出生/运动状态",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G08",
+      "purpose": "重置与重复绑定",
+      "input_design": "相同配置 reset 重放；绑定显示接口但不 reset",
+      "criterion": "reset 可重播；纯重绑定不得重新开始",
+      "observations": "账本、对象引用、状态 hash",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G09",
+      "purpose": "原表示和风动保护",
+      "input_design": "关新增显示但保留提交配置，运行原风动/切换",
+      "criterion": "裁切、风动、阴影和切换机制未被改坏",
+      "observations": "原生属性、保护视图、源文件 diff",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    },
+    {
+      "id": "A_L3-G10",
+      "purpose": "干净重导入与预算",
+      "input_design": "清缓存导入同一源提交，再按路径运行",
+      "criterion": "效果/状态和绑定复现，未依赖缓存且符合预算",
+      "observations": "导入记录、状态证据、资源/帧耗时",
+      "status": "TO_IMPLEMENT_AND_CALIBRATE",
+      "thresholds": null,
+      "oracle_evidence": null
+    }
+  ],
+  "mutations": [
+    "只给近景 Mesh 换材质。",
+    "每个 LOD 各建独立发射器，切换时重新出生。",
+    "不可见时停止时钟，返回时 reset。",
+    "修改共享材质使非目标树一同焦化。",
+    "关闭 LOD/风动或填实 alpha 裁切来掩盖问题。"
+  ],
+  "requires_frozen": [
+    "targets_and_reference_frames",
+    "effective_lod_ranges",
+    "anchor_region_validity",
+    "state_error_tolerances",
+    "representation_visual_tolerances"
+  ]
+}

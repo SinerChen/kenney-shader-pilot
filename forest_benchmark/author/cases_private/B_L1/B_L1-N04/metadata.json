@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N04",
+  "purpose": "方向",
+  "input_design": "非对称鞋底旋转",
+  "criterion": "不能忽略角度/轴向",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 3
+}

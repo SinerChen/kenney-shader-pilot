@@ -1,0 +1,501 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "AMD Radeon 780M Graphics",
+  "responses": [
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0001.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0002.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0003.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0004.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0005.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0006.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0007.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_cloud_at_samples.8",
+        "T_cloud_at_samples.9",
+        "T_cloud_at_samples.10",
+        "T_cloud_at_samples.11",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7",
+        "T_fog_light.8",
+        "T_fog_light.9",
+        "T_fog_light.10",
+        "T_fog_light.11"
+      ],
+      "file": "gpu_0008.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        29
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0009.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0010.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7"
+      ],
+      "file": "gpu_0011.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        21
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2"
+      ],
+      "file": "gpu_0012.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        11
+      ],
+      "status": "OK",
+      "time": 0.0
+    },
+    {
+      "status": "OK"
+    },
+    {
+      "dtype": "<f4",
+      "fields": [
+        "phase",
+        "L_scatter.r",
+        "L_scatter.g",
+        "L_scatter.b",
+        "T_view",
+        "T_cloud_at_samples.0",
+        "T_cloud_at_samples.1",
+        "T_cloud_at_samples.2",
+        "T_cloud_at_samples.3",
+        "T_cloud_at_samples.4",
+        "T_cloud_at_samples.5",
+        "T_cloud_at_samples.6",
+        "T_cloud_at_samples.7",
+        "T_cloud_at_samples.8",
+        "T_cloud_at_samples.9",
+        "T_cloud_at_samples.10",
+        "T_fog_light.0",
+        "T_fog_light.1",
+        "T_fog_light.2",
+        "T_fog_light.3",
+        "T_fog_light.4",
+        "T_fog_light.5",
+        "T_fog_light.6",
+        "T_fog_light.7",
+        "T_fog_light.8",
+        "T_fog_light.9",
+        "T_fog_light.10"
+      ],
+      "file": "gpu_0013.f32",
+      "origin": "actual_gpu_readback",
+      "shape": [
+        2,
+        27
+      ],
+      "status": "OK",
+      "time": 0.0
+    }
+  ]
+}

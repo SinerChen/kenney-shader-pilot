@@ -1,0 +1,39 @@
+{
+  "target": "Main Terrain/BezierCurve_001",
+  "material": "res://Materials/River.tres",
+  "reference_origin_local": [
+    14.094805717468262,
+    -2.047151803970337,
+    -4.262520790100098
+  ],
+  "surface_axes_local": [
+    [
+      0.9999886208103971,
+      0.004770248128927707,
+      -5.461234527857498e-05
+    ],
+    [
+      6.776263578034403e-21,
+      0.011447783440890053,
+      0.9999344884516246
+    ]
+  ],
+  "normal_local": [
+    -0.004770560655742884,
+    0.9999231100082397,
+    -0.01144765317440033
+  ],
+  "reference_extent_m": [
+    4,
+    3
+  ],
+  "grid_size": [
+    48,
+    36
+  ],
+  "valid_region": "Declared rectangle lies inside an original near-horizontal river triangle.",
+  "transform_scope": "Fixed source rest transform, then positive axis scaling [0.75,1.5] and rigid transforms between resets; no shear or animated remapping.",
+  "contact_distance_m": 0.12,
+  "physical_flow_units": "m/s along normalized transformed surface axes",
+  "status": "SOURCE_GEOMETRY_MEASURED_INTEGRATION_PENDING"
+}

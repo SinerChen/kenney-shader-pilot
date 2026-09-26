@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-I04",
+  "intervention": "停源",
+  "control": "S=0",
+  "relation": "旧泡沫继续输运/衰减",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "stop_source"
+}

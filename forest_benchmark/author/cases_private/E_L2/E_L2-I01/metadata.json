@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-I01",
+  "intervention": "改波源",
+  "control": "变触发时刻和位置",
+  "relation": "前景内外均对应当前水面",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "wave_source"
+}

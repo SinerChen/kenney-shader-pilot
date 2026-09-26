@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N05",
+  "purpose": "时变场",
+  "input_design": "非零 drift",
+  "criterion": "time 在两次 RK2 采样中正确",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

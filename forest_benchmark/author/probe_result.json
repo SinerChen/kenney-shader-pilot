@@ -1,0 +1,22 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "AMD Radeon 780M Graphics",
+  "status": "GPU_READBACK_OBSERVED",
+  "values": [
+    1.25,
+    -3.5,
+    0.13533528149128,
+    0.000125000005937181
+  ],
+  "vendor": "AMD"
+}

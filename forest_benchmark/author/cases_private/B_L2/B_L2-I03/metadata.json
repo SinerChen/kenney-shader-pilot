@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-I03",
+  "intervention": "停源",
+  "control": "S 置零",
+  "relation": "继续扩散/干燥，不清零",
+  "status": "GENERATED",
+  "baseline_length": 23,
+  "intervention_name": "stop_source"
+}

@@ -1,0 +1,53 @@
+# Local caches and process state
+**/.godot/
+**/__pycache__/
+**/appdata/
+**/AppData/
+**/shader_cache/
+runs/l3_appdata/
+artifacts/
+**/checkpoint.json
+**/render_runtime/
+**/*.lock
+
+# Preserve existing evidence logs; credentials remain excluded by the root rules.
+!*.log
+
+# Publish one complete native L3 project plus task-specific overlays.
+starters/B_L3/
+starters/C_L3_R/
+starters/C_L3_S/
+starters/D_L3/
+starters/E_L3/
+author/upstream_forest/
+author/baselines/
+author/reports/l3/**/project_*/
+author/reports/public_layout/*/workspaces/*_L3*/
+exports/*/*_L3*/
+
+# Only task outputs from future L3 model workspaces, not more native copies.
+runs/**/model_workspace/Main.tscn
+runs/**/model_workspace/Groundcover/
+runs/**/model_workspace/Materials/
+runs/**/model_workspace/Meshes/
+runs/**/model_workspace/Screenshots/
+runs/**/model_workspace/Scripts/
+runs/**/model_workspace/Shaders/
+runs/**/model_workspace/Textures/
+
+# Keep the recorded experiment setup and status, without frozen project clones.
+!runtime/
+runtime/*
+!runtime/experiment/
+runtime/experiment/*
+!runtime/experiment/approval.json
+!runtime/experiment/model_tools.json
+!runtime/experiment/P3.md
+!runtime/experiment/preflight.json
+!runtime/experiment/queue.json
+!runtime/experiment/run_config.json
+!runtime/experiment/status.json
+!runtime/experiment/tests.log
+!runtime/experiment/viewer.png
+!runtime/experiment/viewer_check.json
+!runtime/experiment/worker.log

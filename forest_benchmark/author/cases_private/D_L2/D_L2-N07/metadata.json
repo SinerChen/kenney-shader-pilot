@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N07",
+  "purpose": "入流边界",
+  "input_design": "q 出域",
+  "criterion": "取0不 wrap",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

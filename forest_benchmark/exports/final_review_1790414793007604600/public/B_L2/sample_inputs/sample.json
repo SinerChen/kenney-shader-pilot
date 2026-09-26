@@ -1,0 +1,70 @@
+{
+  "kind": "input_output_types",
+  "query_input": "query(name:String, payload:Dictionary)",
+  "state_input": [
+    "reset(config:Dictionary)",
+    "advance(dt:float, events:Array[Dictionary])"
+  ],
+  "query_output": "Dictionary{status:String, device:RenderingDevice, buffer:RID, shape:Array[int], fields:Array[String]}",
+  "texture_output": "Dictionary{status:String, texture:Texture2D, shape:Array[int], fields:Array[String]}",
+  "state_output": "get_outputs() -> Dictionary[String,Variant]",
+  "layout": {
+    "scalar_storage": "float32",
+    "vector_storage": "Array[float]",
+    "matrix_storage": "column-major Array[float]",
+    "grid_axes": "[Nz,Nx], X fastest",
+    "volume_axes": "[Nz,Ny,Nx], X fastest",
+    "dimensions": "N,Nx,Ny,Nz,H,W,L,Nv are symbolic dimensions"
+  },
+  "queries": {
+    "stamp_query": {
+      "input": {
+        "grid_size": "Vector2i",
+        "domain_min": "Vector2",
+        "domain_size": "Vector2",
+        "depth": "float[Nz,Nx]",
+        "mask": "float[H,W]",
+        "mask_size": "Vector2i",
+        "contacts": "Tuple[event_id:int,cx:float,cz:float,angle:float,size_x:float,size_z:float,increment:float][N]",
+        "d_max": "float"
+      },
+      "output_fields": {
+        "depth_field": "float"
+      }
+    },
+    "pom_query": {
+      "input": {
+        "grid_size": "Vector2i",
+        "domain_min": "Vector2",
+        "domain_size": "Vector2",
+        "depth": "float[Nz,Nx]",
+        "pom_rays": "Tuple[x:float,z:float,Vx:float,Vy:float,Vz:float][N]",
+        "d_max": "float"
+      },
+      "output_fields": {
+        "valid": "bool",
+        "hit_depth": "float",
+        "hit_uv": "Vector2",
+        "hit_xz": "Vector2"
+      }
+    },
+    "wet_step": {
+      "input": {
+        "grid_size": "Vector2i",
+        "domain_min": "Vector2",
+        "domain_size": "Vector2",
+        "wetness": "float[Nz,Nx]",
+        "depth": "float[Nz,Nx]",
+        "source": "float[Nz,Nx]",
+        "dt": "float",
+        "diffusion": "float",
+        "lambda0": "float",
+        "beta": "float"
+      },
+      "output_fields": {
+        "wetness_field": "float",
+        "drying_rate_field": "float"
+      }
+    }
+  }
+}

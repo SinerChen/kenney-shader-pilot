@@ -1,0 +1,7 @@
+{
+  "task": "E_L1",
+  "name": "eta_inverse",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G05",
+  "purpose": "离屏后返回",
+  "input_design": "离开目标可见范围若干模拟 tick 后返回",
+  "criterion": "不可见不暂停状态/重触发事件",
+  "observations": "连续参考轨迹与返回状态",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

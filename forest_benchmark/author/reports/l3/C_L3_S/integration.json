@@ -1,0 +1,63 @@
+{
+  "task": "C_L3_S",
+  "status": "BLOCKED_SOURCE",
+  "integration_pass": null,
+  "integration_total": 10,
+  "executed_groups": 0,
+  "groups": [
+    {
+      "id": "C_L3_S-G01",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G02",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G03",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G04",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G05",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G06",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G07",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G08",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G09",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    },
+    {
+      "id": "C_L3_S-G10",
+      "status": "NOT_RUN",
+      "reason": "Native integration reference, concrete source-domain cases, independent oracle and tolerances have not been calibrated."
+    }
+  ],
+  "source_blockers": [
+    "Original sky maps camera position with scales (0.1, 0.2, 0.1) but traces untransformed EYEDIR; a single camera-independent world-space density mapping is not established. Native mapping and clock calibration are required."
+  ],
+  "scope": "The imported 10-group design is not an executable positive integration judge. Unexecuted groups do not count as model failures."
+}

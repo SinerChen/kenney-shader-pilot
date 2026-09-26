@@ -1,0 +1,72 @@
+[
+  {
+    "task": "A_L1",
+    "status": "REVIEW_ONLY",
+    "predecessor": "none",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\A_L1"
+  },
+  {
+    "task": "A_L2",
+    "status": "REVIEW_ONLY",
+    "predecessor": "gold_predecessor",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\A_L2"
+  },
+  {
+    "task": "B_L1",
+    "status": "REVIEW_ONLY",
+    "predecessor": "none",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\B_L1"
+  },
+  {
+    "task": "B_L2",
+    "status": "REVIEW_ONLY",
+    "predecessor": "gold_predecessor",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\B_L2"
+  },
+  {
+    "task": "C_L1",
+    "status": "REVIEW_ONLY",
+    "predecessor": "none",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\C_L1"
+  },
+  {
+    "task": "C_L2",
+    "status": "REVIEW_ONLY",
+    "predecessor": "gold_predecessor",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\C_L2"
+  },
+  {
+    "task": "D_L1",
+    "status": "REVIEW_ONLY",
+    "predecessor": "none",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\D_L1"
+  },
+  {
+    "task": "D_L2",
+    "status": "REVIEW_ONLY",
+    "predecessor": "gold_predecessor",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\D_L2"
+  },
+  {
+    "task": "E_L1",
+    "status": "REVIEW_ONLY",
+    "predecessor": "none",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\E_L1"
+  },
+  {
+    "task": "E_L2",
+    "status": "REVIEW_ONLY",
+    "predecessor": "gold_predecessor",
+    "inventory": "PASS",
+    "path": "exports\\final_review_1790414793007604600\\E_L2"
+  }
+]

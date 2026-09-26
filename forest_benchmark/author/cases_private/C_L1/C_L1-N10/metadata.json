@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N10",
+  "purpose": "整体平移/旋转",
+  "input_design": "同一场和点作对应刚体变换",
+  "criterion": "结果不变、世界长度正确",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

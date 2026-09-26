@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-I05",
+  "intervention": "关后景效果",
+  "control": "移除后景水面显示但保留标记",
+  "relation": "前景不继续显示缓存波纹，并保持 L1 光学回归",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "hide_rear"
+}

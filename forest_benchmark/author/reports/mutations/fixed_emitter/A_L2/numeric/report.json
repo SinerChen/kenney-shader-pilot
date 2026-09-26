@@ -1,0 +1,696 @@
+{
+  "task": "A_L2",
+  "case_task": "A_L2",
+  "pass": 6,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "A_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/32/particle_state",
+          "max_error": 0.7953019813527663,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.021140849217772484,
+          "expected": 0.8164428305705388,
+          "allowed": 0.00036328856611410776
+        },
+        {
+          "path": "/34/particle_state",
+          "max_error": 0.7905606648729895,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.04272643104195595,
+          "expected": 0.8332870959149454,
+          "allowed": 0.0003666574191829891
+        },
+        {
+          "path": "/36/particle_state",
+          "max_error": 0.7857450692297675,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.06477349251508713,
+          "expected": 0.8505185617448546,
+          "allowed": 0.0003701037123489709
+        },
+        {
+          "path": "/38/particle_state",
+          "max_error": 0.7808242632004971,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.08729547262191772,
+          "expected": 0.8681197358224149,
+          "allowed": 0.000373623947164483
+        },
+        {
+          "path": "/40/particle_state",
+          "max_error": 0.7757687667095343,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.11030184477567673,
+          "expected": 0.886070611485211,
+          "allowed": 0.00037721412229704224
+        },
+        {
+          "path": "/42/particle_state",
+          "max_error": 0.7705517427958174,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1337975561618805,
+          "expected": 0.9043492989576979,
+          "allowed": 0.0003808698597915396
+        },
+        {
+          "path": "/44/particle_state",
+          "max_error": 0.7651497673921541,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1577824503183365,
+          "expected": 0.9229322177104906,
+          "allowed": 0.00038458644354209814
+        },
+        {
+          "path": "/46/particle_state",
+          "max_error": 0.7595431790575088,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.18225067853927612,
+          "expected": 0.9417938575967849,
+          "allowed": 0.00038835877151935697
+        },
+        {
+          "path": "/48/particle_state",
+          "max_error": 0.7537163229988967,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.20719027519226074,
+          "expected": 0.9609065981911574,
+          "allowed": 0.0003921813196382315
+        },
+        {
+          "path": "/50/particle_state",
+          "max_error": 0.7476580954396056,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.23258285224437714,
+          "expected": 0.9802409476839827,
+          "allowed": 0.0003960481895367966
+        },
+        {
+          "path": "/52/particle_state",
+          "max_error": 0.7413625669575217,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.25840336084365845,
+          "expected": 0.9997659278011801,
+          "allowed": 0.00039995318556023605
+        },
+        {
+          "path": "/54/particle_state",
+          "max_error": 0.7348294037651482,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.28462013602256775,
+          "expected": 1.019449539787716,
+          "allowed": 0.0004038899079575432
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/11/particle_state",
+          "max_error": 0.7960440312282736,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.02082613669335842,
+          "expected": 0.816870167921632,
+          "allowed": 0.0003633740335843264
+        },
+        {
+          "path": "/13/particle_state",
+          "max_error": 0.792057529226177,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.042075417935848236,
+          "expected": 0.8341329471620252,
+          "allowed": 0.00036682658943240507
+        },
+        {
+          "path": "/15/particle_state",
+          "max_error": 0.7880060623048903,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.06376518309116364,
+          "expected": 0.851771245396054,
+          "allowed": 0.0003703542490792108
+        },
+        {
+          "path": "/17/particle_state",
+          "max_error": 0.7838551373821525,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.08590971678495407,
+          "expected": 0.8697648541671066,
+          "allowed": 0.00037395297083342134
+        },
+        {
+          "path": "/19/particle_state",
+          "max_error": 0.7795714163733864,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.10851982980966568,
+          "expected": 0.8880912461830521,
+          "allowed": 0.00037761824923661044
+        },
+        {
+          "path": "/21/particle_state",
+          "max_error": 0.7751241359172086,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.1316022127866745,
+          "expected": 0.9067263487038831,
+          "allowed": 0.00038134526974077665
+        },
+        {
+          "path": "/23/particle_state",
+          "max_error": 0.7704860731929063,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.1551588475704193,
+          "expected": 0.9256449207633256,
+          "allowed": 0.00038512898415266517
+        },
+        {
+          "path": "/25/particle_state",
+          "max_error": 0.765633784933737,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.17918652296066284,
+          "expected": 0.9448203078943999,
+          "allowed": 0.00038896406157888
+        },
+        {
+          "path": "/27/particle_state",
+          "max_error": 0.7605477818265691,
+          "index": [
+            1,
+            1
+          ],
+          "actual": 0.20367632806301117,
+          "expected": 0.9642241098895803,
+          "allowed": 0.00039284482197791607
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/5/particle_state",
+          "max_error": 0.7953019813527663,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.021140849217772484,
+          "expected": 0.8164428305705388,
+          "allowed": 0.00036328856611410776
+        },
+        {
+          "path": "/7/particle_state",
+          "max_error": 0.7905606648729895,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.04272643104195595,
+          "expected": 0.8332870959149454,
+          "allowed": 0.0003666574191829891
+        },
+        {
+          "path": "/9/particle_state",
+          "max_error": 0.7857450692297675,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.06477349251508713,
+          "expected": 0.8505185617448546,
+          "allowed": 0.0003701037123489709
+        },
+        {
+          "path": "/11/particle_state",
+          "max_error": 0.7808242632004971,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.08729547262191772,
+          "expected": 0.8681197358224149,
+          "allowed": 0.000373623947164483
+        },
+        {
+          "path": "/13/particle_state",
+          "max_error": 0.7757687667095343,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.11030184477567673,
+          "expected": 0.886070611485211,
+          "allowed": 0.00037721412229704224
+        },
+        {
+          "path": "/15/particle_state",
+          "max_error": 0.7705517427958174,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1337975561618805,
+          "expected": 0.9043492989576979,
+          "allowed": 0.0003808698597915396
+        },
+        {
+          "path": "/17/particle_state",
+          "max_error": 0.7651497673921541,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1577824503183365,
+          "expected": 0.9229322177104906,
+          "allowed": 0.00038458644354209814
+        },
+        {
+          "path": "/19/particle_state",
+          "max_error": 0.7595431790575088,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.18225067853927612,
+          "expected": 0.9417938575967849,
+          "allowed": 0.00038835877151935697
+        },
+        {
+          "path": "/21/particle_state",
+          "max_error": 0.7537163229988967,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.20719027519226074,
+          "expected": 0.9609065981911574,
+          "allowed": 0.0003921813196382315
+        },
+        {
+          "path": "/23/particle_state",
+          "max_error": 0.7476580954396056,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.23258285224437714,
+          "expected": 0.9802409476839827,
+          "allowed": 0.0003960481895367966
+        },
+        {
+          "path": "/25/particle_state",
+          "max_error": 0.7413625669575217,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.25840336084365845,
+          "expected": 0.9997659278011801,
+          "allowed": 0.00039995318556023605
+        },
+        {
+          "path": "/27/particle_state",
+          "max_error": 0.7348294037651482,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.28462013602256775,
+          "expected": 1.019449539787716,
+          "allowed": 0.0004038899079575432
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/8/particle_state",
+          "max_error": 0.7953019813527663,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.021140849217772484,
+          "expected": 0.8164428305705388,
+          "allowed": 0.00036328856611410776
+        },
+        {
+          "path": "/10/particle_state",
+          "max_error": 0.7905606648729895,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.04272643104195595,
+          "expected": 0.8332870959149454,
+          "allowed": 0.0003666574191829891
+        },
+        {
+          "path": "/12/particle_state",
+          "max_error": 0.7857450692297675,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.06477349251508713,
+          "expected": 0.8505185617448546,
+          "allowed": 0.0003701037123489709
+        },
+        {
+          "path": "/14/particle_state",
+          "max_error": 0.7808242632004971,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.08729547262191772,
+          "expected": 0.8681197358224149,
+          "allowed": 0.000373623947164483
+        },
+        {
+          "path": "/16/particle_state",
+          "max_error": 0.7757687667095343,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.11030184477567673,
+          "expected": 0.886070611485211,
+          "allowed": 0.00037721412229704224
+        },
+        {
+          "path": "/18/particle_state",
+          "max_error": 0.7705517427958174,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1337975561618805,
+          "expected": 0.9043492989576979,
+          "allowed": 0.0003808698597915396
+        },
+        {
+          "path": "/20/particle_state",
+          "max_error": 0.7651497673921541,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1577824503183365,
+          "expected": 0.9229322177104906,
+          "allowed": 0.00038458644354209814
+        },
+        {
+          "path": "/22/particle_state",
+          "max_error": 0.7595431790575088,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.18225067853927612,
+          "expected": 0.9417938575967849,
+          "allowed": 0.00038835877151935697
+        },
+        {
+          "path": "/24/particle_state",
+          "max_error": 0.7537163229988967,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.20719027519226074,
+          "expected": 0.9609065981911574,
+          "allowed": 0.0003921813196382315
+        },
+        {
+          "path": "/26/particle_state",
+          "max_error": 0.7476580954396056,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.23258285224437714,
+          "expected": 0.9802409476839827,
+          "allowed": 0.0003960481895367966
+        },
+        {
+          "path": "/28/particle_state",
+          "max_error": 0.7413625669575217,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.25840336084365845,
+          "expected": 0.9997659278011801,
+          "allowed": 0.00039995318556023605
+        },
+        {
+          "path": "/30/particle_state",
+          "max_error": 0.7348294037651482,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.28462013602256775,
+          "expected": 1.019449539787716,
+          "allowed": 0.0004038899079575432
+        },
+        {
+          "path": "/33/particle_state",
+          "max_error": 0.7953019813527663,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.021140849217772484,
+          "expected": 0.8164428305705388,
+          "allowed": 0.00036328856611410776
+        },
+        {
+          "path": "/35/particle_state",
+          "max_error": 0.7905606648729895,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.04272643104195595,
+          "expected": 0.8332870959149454,
+          "allowed": 0.0003666574191829891
+        },
+        {
+          "path": "/37/particle_state",
+          "max_error": 0.7857450692297675,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.06477349251508713,
+          "expected": 0.8505185617448546,
+          "allowed": 0.0003701037123489709
+        },
+        {
+          "path": "/39/particle_state",
+          "max_error": 0.7808242632004971,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.08729547262191772,
+          "expected": 0.8681197358224149,
+          "allowed": 0.000373623947164483
+        },
+        {
+          "path": "/41/particle_state",
+          "max_error": 0.7757687667095343,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.11030184477567673,
+          "expected": 0.886070611485211,
+          "allowed": 0.00037721412229704224
+        },
+        {
+          "path": "/43/particle_state",
+          "max_error": 0.7705517427958174,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1337975561618805,
+          "expected": 0.9043492989576979,
+          "allowed": 0.0003808698597915396
+        },
+        {
+          "path": "/45/particle_state",
+          "max_error": 0.7651497673921541,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.1577824503183365,
+          "expected": 0.9229322177104906,
+          "allowed": 0.00038458644354209814
+        },
+        {
+          "path": "/47/particle_state",
+          "max_error": 0.7595431790575088,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.18225067853927612,
+          "expected": 0.9417938575967849,
+          "allowed": 0.00038835877151935697
+        },
+        {
+          "path": "/49/particle_state",
+          "max_error": 0.7537163229988967,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.20719027519226074,
+          "expected": 0.9609065981911574,
+          "allowed": 0.0003921813196382315
+        },
+        {
+          "path": "/51/particle_state",
+          "max_error": 0.7476580954396056,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.23258285224437714,
+          "expected": 0.9802409476839827,
+          "allowed": 0.0003960481895367966
+        },
+        {
+          "path": "/53/particle_state",
+          "max_error": 0.7413625669575217,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.25840336084365845,
+          "expected": 0.9997659278011801,
+          "allowed": 0.00039995318556023605
+        },
+        {
+          "path": "/55/particle_state",
+          "max_error": 0.7348294037651482,
+          "index": [
+            2,
+            1
+          ],
+          "actual": 0.28462013602256775,
+          "expected": 1.019449539787716,
+          "allowed": 0.0004038899079575432
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\fixed_emitter\\A_L2\\numeric",
+  "scope": "numeric_only"
+}

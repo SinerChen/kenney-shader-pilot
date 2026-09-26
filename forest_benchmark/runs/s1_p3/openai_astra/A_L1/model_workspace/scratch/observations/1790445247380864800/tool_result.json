@@ -1,0 +1,37 @@
+{
+  "ok": false,
+  "errors": [
+    "Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org\r\nVulkan 1.3.302 - Forward+ - Using Device #0: AMD - AMD Radeon 780M Graphics\r\n\r\n--res://solution/wood_burn.gdshader--\r\n   16 | uniform bool enabled = true;\r\n   17 | varying vec3 reference_position;\r\nE  18-> #include \"res://solution/burn_math.gdshaderinc\"\r\n   19 | \r\n   20 | void vertex() {\r\n--res://solution/burn_math.gdshaderinc--\r\n   28 |  mix(corner(i+ivec3(0,1,1),f-vec3(0,1,1)),corner(i+ivec3(1,1,1),f-vec3(1,1,1)),u.x),u.y),u.z);\r\n   29 | }\r\nE  30-> float fbm3(vec3 p, float frequency, int octaves, float gain, float lacunarity) {\r\n   31 |  float sum = 0.0;\r\n   32 |  float amplitude = 1.0;\r\nSHADER ERROR: Redefinition of 'octaves'.\r\n   at: (null) (res://solution/burn_math.gdshaderinc:30)\r\n   GDScript backtrace (most recent call first):\r\n       [0] mount (res://solution/adapter.gd:116)\r\n       [1] _ready (res://fixture/bridge.gd:26)\r\n       [2] run (res://fixture/model_runner.gd:14)\r\nERROR: Shader compilation failed.\r\n   at: set_code (servers/rendering/renderer_rd/forward_clustered/scene_shader_forward_clustered.cpp:181)\r\n   GDScript backtrace (most recent call first):\r\n       [0] mount (res://solution/adapter.gd:116)\r\n       [1] _ready (res://fixture/bridge.gd:26)\r\n       [2] run (res://fixture/model_runner.gd:14)\r\n"
+  ],
+  "logs": [
+    "scratch/observations/1790445247380864800/godot.log",
+    "scratch/observations/1790445247380864800/import.log"
+  ],
+  "observation_directory": "scratch/observations/1790445247380864800",
+  "request": {
+    "camera": {
+      "position": [
+        2.8,
+        2.4,
+        5.8
+      ],
+      "look_at": [
+        0,
+        1.15,
+        0
+      ]
+    },
+    "frames": 120,
+    "resolution": [
+      960,
+      640
+    ]
+  },
+  "candidate_files": {
+    "adapter.gd": "685930660c939dca21af8d19136c6cb1e6bd07336bd2897b2453a49c0e6de880",
+    "burn_math.gdshaderinc": "68dea816de82c9da7f86dc92a351018982086f06a437d366ba035118292423c9",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "wood_burn.gdshader": "d3bac56bbdb68c8ef143088e233d03bfd459b8211f8ab98509023229b3c641c5"
+  },
+  "images": []
+}

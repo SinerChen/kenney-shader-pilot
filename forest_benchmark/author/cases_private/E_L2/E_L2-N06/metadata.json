@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N06",
+  "purpose": "阻尼",
+  "input_design": "改变 gamma",
+  "criterion": "按离散格式，不强制逐点单调",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

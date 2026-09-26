@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-I03",
+  "intervention": "静水",
+  "control": "v=0",
+  "relation": "停止搬运，源/衰减仍生效",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "still_water"
+}

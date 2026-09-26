@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G06",
+  "purpose": "相机独立性",
+  "input_design": "冻结原场只移动相机",
+  "criterion": "世界锚定阴影不跟屏幕，雾按视角合法变化",
+  "observations": "世界查询、原视图/新视图",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

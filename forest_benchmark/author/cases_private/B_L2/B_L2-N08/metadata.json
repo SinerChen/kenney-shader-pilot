@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N08",
+  "purpose": "源饱和",
+  "input_design": "强合法 source",
+  "criterion": "w<=1，非源区域正确",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

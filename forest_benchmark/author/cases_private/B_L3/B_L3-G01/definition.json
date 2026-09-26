@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G01",
+  "purpose": "允许层内部",
+  "input_design": "泥土内部施加接触及水源事件",
+  "criterion": "d/w/POM 均真实生效，不能通过不做效果保护禁区",
+  "observations": "有效层权重、d/w、POM、局部画面",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

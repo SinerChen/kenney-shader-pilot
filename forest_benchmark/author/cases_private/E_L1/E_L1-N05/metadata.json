@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N05",
+  "purpose": "路径长度",
+  "input_design": "固定 sigma，改变 ell",
+  "criterion": "按指数吸收",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 2
+}

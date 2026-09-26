@@ -1,0 +1,189 @@
+{
+  "keys_order": [
+    "P",
+    "time",
+    "t0",
+    "dt",
+    "points",
+    "origin_ref",
+    "R0",
+    "speed",
+    "noise_amplitude",
+    "base_frequency",
+    "octaves",
+    "gain",
+    "lacunarity",
+    "width",
+    "enabled",
+    "frequency",
+    "epsilon",
+    "drift",
+    "offsets",
+    "up_speed",
+    "curl_strength",
+    "lifetime",
+    "particles",
+    "emit_threshold",
+    "enable_emission",
+    "anchors",
+    "instance_transform",
+    "grid_size",
+    "domain_min",
+    "domain_size",
+    "d_max",
+    "depth",
+    "mask_size",
+    "mask",
+    "contacts",
+    "pom_rays",
+    "wetness",
+    "source",
+    "diffusion",
+    "lambda0",
+    "beta",
+    "cloud_world_to_local",
+    "cloud_min",
+    "cloud_max",
+    "density_size",
+    "density",
+    "cloud_sigma",
+    "cloud_steps",
+    "light_dir",
+    "light_rgb",
+    "fog_min",
+    "fog_max",
+    "fog_density",
+    "fog_scatter",
+    "fog_absorb",
+    "g",
+    "view_steps",
+    "view_rays",
+    "uvs",
+    "period",
+    "phase",
+    "tiling",
+    "flow",
+    "texture_size",
+    "color_texture",
+    "normal_texture",
+    "normal_encoded",
+    "foam",
+    "sources",
+    "decay",
+    "eta_i",
+    "eta_t",
+    "ell",
+    "sigma_a",
+    "optical_rays",
+    "view_projection",
+    "reflection_color",
+    "fallback_color",
+    "height",
+    "height_prev",
+    "force",
+    "wave_speed",
+    "gamma",
+    "front_visible",
+    "rear_visible",
+    "burn_visible",
+    "embers_visible",
+    "ambient_color",
+    "direct_color",
+    "dry_color",
+    "wet_color",
+    "dry_roughness",
+    "wet_roughness",
+    "wood_color",
+    "char_color",
+    "ember_color",
+    "contact_count",
+    "source_count"
+  ],
+  "operations": {
+    "flow_query": [
+      "uv_phase0.x",
+      "uv_phase0.y",
+      "uv_phase1.x",
+      "uv_phase1.y",
+      "weight0",
+      "weight1",
+      "sampled_color.r",
+      "sampled_color.g",
+      "sampled_color.b",
+      "blended_normal.x",
+      "blended_normal.y",
+      "blended_normal.z"
+    ],
+    "foam_step": [
+      "foam_field",
+      "source_field"
+    ]
+  },
+  "query_rows": {
+    "burn_query": [
+      "points",
+      3
+    ],
+    "curl_query": [
+      "points",
+      3
+    ],
+    "particle_step": [
+      "particles",
+      4
+    ],
+    "pom_query": [
+      "pom_rays",
+      5
+    ],
+    "cloud_query": [
+      "points",
+      3
+    ],
+    "fog_query": [
+      "view_rays",
+      7
+    ],
+    "flow_query": [
+      "uvs",
+      2
+    ],
+    "optics_query": [
+      "optical_rays",
+      9
+    ]
+  },
+  "fields_by_operation": {
+    "flow_query": [
+      "color_texture",
+      "domain_size",
+      "dt",
+      "flow",
+      "grid_size",
+      "normal_encoded",
+      "normal_texture",
+      "period",
+      "phase",
+      "texture_size",
+      "tiling",
+      "time",
+      "uvs"
+    ],
+    "foam_step": [
+      "decay",
+      "domain_min",
+      "domain_size",
+      "dt",
+      "flow",
+      "foam",
+      "grid_size",
+      "source_count",
+      "sources",
+      "time"
+    ]
+  },
+  "opcodes": {
+    "flow_query": 8,
+    "foam_step": 9
+  }
+}

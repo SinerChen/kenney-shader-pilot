@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N03",
+  "purpose": "斜入射",
+  "input_design": "一般角度",
+  "criterion": "Snell/Fresnel",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 3
+}

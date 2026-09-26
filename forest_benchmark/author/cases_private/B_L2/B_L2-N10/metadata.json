@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N10",
+  "purpose": "停源重置",
+  "input_design": "停止 S 后继续；再 reset",
+  "criterion": "自然演化和无历史残留",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

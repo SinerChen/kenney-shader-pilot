@@ -1,0 +1,167 @@
+{
+  "Decorations-Forest/Tree_small_1/Tree small 1": [
+    {
+      "color": {
+        "file": "geometry_3_0_color.bin",
+        "length": 4175,
+        "type": "PackedColorArray"
+      },
+      "indices": {
+        "file": "geometry_3_0_indices.bin",
+        "length": 8880,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_3_0_normals.bin",
+        "length": 4175,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_3_0_uv.bin",
+        "length": 4175,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_3_0_vertices.bin",
+        "length": 4175,
+        "type": "PackedVector3Array"
+      }
+    },
+    {
+      "color": {
+        "file": "geometry_3_1_color.bin",
+        "length": 1449,
+        "type": "PackedColorArray"
+      },
+      "indices": {
+        "file": "geometry_3_1_indices.bin",
+        "length": 3654,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_3_1_normals.bin",
+        "length": 1449,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_3_1_uv.bin",
+        "length": 1449,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_3_1_vertices.bin",
+        "length": 1449,
+        "type": "PackedVector3Array"
+      }
+    }
+  ],
+  "Decorations-Forest/Tree_small_2/Tree small 2": [
+    {
+      "color": {
+        "file": "geometry_2_0_color.bin",
+        "length": 4540,
+        "type": "PackedColorArray"
+      },
+      "indices": {
+        "file": "geometry_2_0_indices.bin",
+        "length": 9744,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_2_0_normals.bin",
+        "length": 4540,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_2_0_uv.bin",
+        "length": 4540,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_2_0_vertices.bin",
+        "length": 4540,
+        "type": "PackedVector3Array"
+      }
+    },
+    {
+      "color": {
+        "file": "geometry_2_1_color.bin",
+        "length": 1116,
+        "type": "PackedColorArray"
+      },
+      "indices": {
+        "file": "geometry_2_1_indices.bin",
+        "length": 2808,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_2_1_normals.bin",
+        "length": 1116,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_2_1_uv.bin",
+        "length": 1116,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_2_1_vertices.bin",
+        "length": 1116,
+        "type": "PackedVector3Array"
+      }
+    }
+  ],
+  "Main Terrain/BezierCurve_001": [
+    {
+      "indices": {
+        "file": "geometry_1_0_indices.bin",
+        "length": 1530,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_1_0_normals.bin",
+        "length": 344,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_1_0_uv.bin",
+        "length": 344,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_1_0_vertices.bin",
+        "length": 344,
+        "type": "PackedVector3Array"
+      }
+    }
+  ],
+  "Main Terrain/Plane_031": [
+    {
+      "indices": {
+        "file": "geometry_0_0_indices.bin",
+        "length": 24576,
+        "type": "PackedInt32Array"
+      },
+      "normals": {
+        "file": "geometry_0_0_normals.bin",
+        "length": 4225,
+        "type": "PackedVector3Array"
+      },
+      "uv": {
+        "file": "geometry_0_0_uv.bin",
+        "length": 4225,
+        "type": "PackedVector2Array"
+      },
+      "uv2": {
+        "file": "geometry_0_0_uv2.bin",
+        "length": 4225,
+        "type": "PackedVector2Array"
+      },
+      "vertices": {
+        "file": "geometry_0_0_vertices.bin",
+        "length": 4225,
+        "type": "PackedVector3Array"
+      }
+    }
+  ]
+}

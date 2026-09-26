@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_R-G07",
+  "purpose": "源消费者保护",
+  "input_design": "关新增效果但保留所有派生资源/配置",
+  "criterion": "原天空和共享消费者保持基线",
+  "observations": "原材质/导入 hash、天空帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_R.json",
+  "runtime_input": null,
+  "oracle": null
+}

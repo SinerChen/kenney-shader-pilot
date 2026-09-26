@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-N02",
+  "purpose": "纯上升",
+  "input_design": "curl_strength=0",
+  "criterion": "线性位置、单位/方向",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 1
+}

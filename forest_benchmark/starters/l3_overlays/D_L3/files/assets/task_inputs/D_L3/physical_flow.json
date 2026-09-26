@@ -1,0 +1,14 @@
+{
+  "file": "physical_flow.bin",
+  "shape": [
+    36,
+    48,
+    2
+  ],
+  "dtype": "<f4",
+  "units": "m/s",
+  "channels": [
+    "axis_0",
+    "axis_1"
+  ]
+}

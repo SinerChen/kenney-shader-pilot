@@ -1,0 +1,7 @@
+{
+  "task": "B_L2",
+  "name": "ignore_depth",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

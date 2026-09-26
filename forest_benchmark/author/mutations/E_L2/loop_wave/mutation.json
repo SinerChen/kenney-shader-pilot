@@ -1,0 +1,7 @@
+{
+  "task": "E_L2",
+  "name": "loop_wave",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

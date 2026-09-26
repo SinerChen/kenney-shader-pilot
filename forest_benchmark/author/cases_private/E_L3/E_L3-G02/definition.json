@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G02",
+  "purpose": "波事件联动",
+  "input_design": "改变扰动位置/触发时刻",
+  "criterion": "前景内外都响应同一真实波状态",
+  "observations": "h/n、原水面结果和前景帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

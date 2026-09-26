@@ -1,0 +1,5 @@
+config_version=5
+[application]
+config/name="Forest author probes"
+[rendering]
+renderer/rendering_method="gl_compatibility"

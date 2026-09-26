@@ -1,0 +1,13 @@
+{
+  "id": "C_L3_S-G02",
+  "purpose": "原时钟正常推进",
+  "input_design": "按固定 dt 推进原天空",
+  "criterion": "云影/雾受光同源、同tick更新",
+  "observations": "密度、T_cloud、L_scatter 序列",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/C_L3_S.json",
+  "runtime_input": null,
+  "oracle": null
+}

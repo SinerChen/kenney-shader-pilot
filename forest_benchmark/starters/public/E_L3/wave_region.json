@@ -1,0 +1,13 @@
+{
+  "chart": "river_domain.json",
+  "dt": 0.016666666666666666,
+  "wave_speed": 0.65,
+  "gamma": 0.35,
+  "initial_height": 0.0,
+  "initial_previous_height": 0.0,
+  "normal_frame": "river chart",
+  "amplitude_domain_m": [
+    -0.1,
+    0.1
+  ]
+}

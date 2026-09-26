@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N01",
+  "purpose": "零流速",
+  "input_design": "v=0",
+  "criterion": "静态纹理、同坐标",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 2
+}

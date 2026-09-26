@@ -1,0 +1,96 @@
+{
+  "task_id": "C_L1",
+  "title": "三维云密度驱动的地面云影",
+  "algorithm": "体积范围求交＋密度光程积分＋Beer–Lambert",
+  "contract_version": "0.1",
+  "contract_sha256": "391371697a3a22522417e677b40fef9f5482e7daf913ef611056632071633f1b",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/",
+    "public/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "GroundReceiver"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "task_id": null,
+    "condition": "none"
+  },
+  "queries": {
+    "cloud_query": [
+      "valid_interval",
+      "s0",
+      "s1",
+      "optical_depth",
+      "transmittance"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "STARTER_BUILT_RELEASE_PENDING"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N05",
+  "purpose": "斜方向光",
+  "input_design": "不与轴平行的 L",
+  "criterion": "区间长度与透射",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

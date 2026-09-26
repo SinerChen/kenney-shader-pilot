@@ -1,0 +1,9 @@
+{
+  "id": "B_L2-N03",
+  "purpose": "只扩散",
+  "input_design": "lambda0=S=0，局部非零初场",
+  "criterion": "五点算子",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

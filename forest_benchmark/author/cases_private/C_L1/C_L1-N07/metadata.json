@@ -1,0 +1,9 @@
+{
+  "id": "C_L1-N07",
+  "purpose": "未命中",
+  "input_design": "点/方向不穿云体",
+  "criterion": "空区间契约",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 1
+}

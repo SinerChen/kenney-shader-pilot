@@ -1,0 +1,17 @@
+{
+  "task": "E_L3",
+  "scope": "Public fixed development example; required behavior follows the contract, native reference validation is pending.",
+  "reset_overrides": {
+    "initial_height": 0,
+    "initial_previous_height": 0
+  },
+  "advance": {
+    "dt": 0.016666666666666666,
+    "events": []
+  },
+  "required_output": {
+    "wave_height": "48 x 36 float32 zeros",
+    "normal_composition": "n_final equals current original n_base at each sampled river point"
+  },
+  "note": "Backgrounds must still be current captures; zero wave does not remove original optical properties."
+}

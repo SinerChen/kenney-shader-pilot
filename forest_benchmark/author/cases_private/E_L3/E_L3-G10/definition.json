@@ -1,0 +1,13 @@
+{
+  "id": "E_L3-G10",
+  "purpose": "重启重导入与预算",
+  "input_design": "干净导入后持续多帧/重置",
+  "criterion": "无缓存答案/旧RID，内存与额外pass在预算内",
+  "observations": "实际资源、同步日志、CPU/GPU统计",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/E_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

@@ -1,0 +1,1122 @@
+{
+  "version": "0.1",
+  "scope": "author-side specification, not executable benchmark",
+  "task_count": 10,
+  "new_numeric_cases_designed": 100,
+  "interaction_groups_designed": 25,
+  "active_l3_tasks": [],
+  "tasks": [
+    {
+      "task_id": "A_L1",
+      "title": "程序灼烧与焦化",
+      "level": "L1",
+      "chain": "A",
+      "predecessor": null,
+      "constraint_ids": [
+        "F01"
+      ],
+      "algorithm": "三维梯度噪声/fBM＋空间阈值前沿",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 0,
+      "interaction_groups": 0,
+      "author_spec": "01_算法实现与测试/A_L1.md",
+      "scene_spec": "02_场景文件与资源/A_L1.md",
+      "public_contract": "03_测试模型Prompt/公开契约/A_L1.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/A_L1.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "A_L1-N01",
+          "purpose": "禁用/未触达",
+          "input_design": "enabled=false 及半径尚未触达全部采样点",
+          "criterion": "b/a 均为零；不改基础材质",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N02",
+          "purpose": "无噪声前沿",
+          "input_design": "noise_amplitude=0，跨越球形前沿取点",
+          "criterion": "q、b、a 与解析值",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N03",
+          "purpose": "单 octave",
+          "input_design": "给定 P/G 与非整数三维坐标",
+          "criterion": "noise 与 CPU 独立参考",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N04",
+          "purpose": "多 octave",
+          "input_design": "改变 gain/lacunarity 与 octave 数",
+          "criterion": "归一化权重、noise",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N05",
+          "purpose": "种子变化",
+          "input_design": "换一份合法 P，同一点集合",
+          "criterion": "新状态对应新输入，不能固定贴图",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N06",
+          "purpose": "起点变化",
+          "input_design": "改变 origin_ref",
+          "criterion": "空间前沿平移，噪声约定不变",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N07",
+          "purpose": "前沿边界",
+          "input_design": "q 接近 ±width、0",
+          "criterion": "端点和过渡，有限输出",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N08",
+          "purpose": "窄前沿/负坐标",
+          "input_design": "最小公开 width、负位置",
+          "criterion": "索引环绕和过渡精度",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N09",
+          "purpose": "重置复现",
+          "input_design": "同 config 两次 reset/query",
+          "criterion": "相同状态，不受前次运行污染",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L1-N10",
+          "purpose": "时间与参考系",
+          "input_design": "固定噪声、多个时间；只改变相机",
+          "criterion": "b 单调、不因相机漂移",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": []
+    },
+    {
+      "task_id": "A_L2",
+      "title": "灼烧前沿驱动的旋涡余烬",
+      "level": "L2",
+      "chain": "A",
+      "predecessor": "A_L1",
+      "constraint_ids": [
+        "F01"
+      ],
+      "algorithm": "Curl Noise＋中点 RK2＋粒子生命周期",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 10,
+      "interaction_groups": 5,
+      "author_spec": "01_算法实现与测试/A_L2.md",
+      "scene_spec": "02_场景文件与资源/A_L2.md",
+      "public_contract": "03_测试模型Prompt/公开契约/A_L2.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/A_L2.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "A_L2-N01",
+          "purpose": "零速度场",
+          "input_design": "curl_strength=up_speed=0",
+          "criterion": "位置不变、年龄增加",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N02",
+          "purpose": "纯上升",
+          "input_design": "curl_strength=0",
+          "criterion": "线性位置、单位/方向",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N03",
+          "purpose": "旋度分量",
+          "input_design": "固定 P/offset/epsilon，非对称采样点",
+          "criterion": "三个 curl 分量符号和次序",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N04",
+          "purpose": "差分步长",
+          "input_design": "同场改变 epsilon",
+          "criterion": "符合指定离散算子",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N05",
+          "purpose": "时变场",
+          "input_design": "非零 drift",
+          "criterion": "time 在两次 RK2 采样中正确",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N06",
+          "purpose": "多步轨迹",
+          "input_design": "相同初态与一串固定 dt",
+          "criterion": "累计误差在预算内",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N07",
+          "purpose": "出生资格",
+          "input_design": "锚点跨阈值，含禁用阶段",
+          "criterion": "合法源、唯一 ID、不提前消耗资格",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N08",
+          "purpose": "死亡/冷却",
+          "input_design": "age 跨 lifetime",
+          "criterion": "边界 active/cooling",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N09",
+          "purpose": "关闭发射",
+          "input_design": "有存量时关闭 enable_emission",
+          "criterion": "存量继续运动，新粒子为零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-N10",
+          "purpose": "reset 与重放",
+          "input_design": "运行、reset、重复事件",
+          "criterion": "不残留 emitted/粒子状态",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": [
+        {
+          "id": "A_L2-I01",
+          "intervention": "移动灼烧起点",
+          "control": "固定场与寿命，只改 origin_ref",
+          "relation": "出生锚点/时刻随前沿变，非全局发射",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-I02",
+          "intervention": "改变传播速度",
+          "control": "相同锚点及噪声",
+          "relation": "出生时序变化；不只是加快粒子动画",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-I03",
+          "intervention": "停止发射",
+          "control": "已有粒子存活时关闭源",
+          "relation": "出生计数停止，存量继续运动",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-I04",
+          "intervention": "只改 curl",
+          "control": "灼烧输入和出生条件不变",
+          "relation": "轨迹变，L1 焦化/front 不变",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "A_L2-I05",
+          "intervention": "分离显示",
+          "control": "分别关余烬可见性/灼烧美术显示，保持算法",
+          "relation": "状态依赖保留，不靠可见像素触发出生",
+          "status": "TO_IMPLEMENT"
+        }
+      ]
+    },
+    {
+      "task_id": "B_L1",
+      "title": "持久化脚印压痕与 POM",
+      "level": "L1",
+      "chain": "B",
+      "predecessor": null,
+      "constraint_ids": [
+        "F02"
+      ],
+      "algorithm": "投影印章＋有界高度累积＋视差遮蔽映射",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 0,
+      "interaction_groups": 0,
+      "author_spec": "01_算法实现与测试/B_L1.md",
+      "scene_spec": "02_场景文件与资源/B_L1.md",
+      "public_contract": "03_测试模型Prompt/公开契约/B_L1.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/B_L1.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "B_L1-N01",
+          "purpose": "无事件",
+          "input_design": "全零初场，无 contact",
+          "criterion": "depth=0，POM 基准命中",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N02",
+          "purpose": "单印章",
+          "input_design": "轴对齐单接触",
+          "criterion": "shape、depth 和单位",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N03",
+          "purpose": "位置",
+          "input_design": "平移印章",
+          "criterion": "位置和非目标区域不变",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N04",
+          "purpose": "方向",
+          "input_design": "非对称鞋底旋转",
+          "criterion": "不能忽略角度/轴向",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N05",
+          "purpose": "尺寸",
+          "input_design": "改变长宽，中心固定",
+          "criterion": "缩放及接触范围",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N06",
+          "purpose": "重叠",
+          "input_design": "多 ID 脚印相交",
+          "criterion": "有界累加",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N07",
+          "purpose": "地面边缘",
+          "input_design": "印章跨出域",
+          "criterion": "裁切、不 wrap",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N08",
+          "purpose": "最大深度",
+          "input_design": "大量重叠",
+          "criterion": "饱和到 d_max，无负深度",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N09",
+          "purpose": "POM 命中",
+          "input_design": "已知坡面/台形场、正视与斜视",
+          "criterion": "最早交点及误差",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L1-N10",
+          "purpose": "持续性/去重",
+          "input_design": "同 ID 重发、无事件推进",
+          "criterion": "不重复踩踏、不丢失状态",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": []
+    },
+    {
+      "task_id": "B_L2",
+      "title": "压痕约束的湿润扩散与干燥",
+      "level": "L2",
+      "chain": "B",
+      "predecessor": "B_L1",
+      "constraint_ids": [
+        "F02"
+      ],
+      "algorithm": "二维扩散＋源项＋深度相关干燥",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 10,
+      "interaction_groups": 5,
+      "author_spec": "01_算法实现与测试/B_L2.md",
+      "scene_spec": "02_场景文件与资源/B_L2.md",
+      "public_contract": "03_测试模型Prompt/公开契约/B_L2.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/B_L2.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "B_L2-N01",
+          "purpose": "零初场零源",
+          "input_design": "w=0,S=0",
+          "criterion": "保持零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N02",
+          "purpose": "只注水",
+          "input_design": "D=lambda0=0",
+          "criterion": "dt*S 和夹紧",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N03",
+          "purpose": "只扩散",
+          "input_design": "lambda0=S=0，局部非零初场",
+          "criterion": "五点算子",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N04",
+          "purpose": "只干燥",
+          "input_design": "D=S=0",
+          "criterion": "一步显式衰减",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N05",
+          "purpose": "深度作用",
+          "input_design": "相同 w，两个 d 区域",
+          "criterion": "lambda(d) 和深处保留更多",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N06",
+          "purpose": "各向网格",
+          "input_design": "dx!=dz",
+          "criterion": "不能把像素间隔当一米",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N07",
+          "purpose": "零通量边界",
+          "input_design": "湿度抵达边缘",
+          "criterion": "无 wrap、无外流",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N08",
+          "purpose": "源饱和",
+          "input_design": "强合法 source",
+          "criterion": "w<=1，非源区域正确",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N09",
+          "purpose": "事件/多步",
+          "input_design": "接触注水交错事件，持续推进",
+          "criterion": "去重、dt 和使用当前 d",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-N10",
+          "purpose": "停源重置",
+          "input_design": "停止 S 后继续；再 reset",
+          "criterion": "自然演化和无历史残留",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": [
+        {
+          "id": "B_L2-I01",
+          "intervention": "深浅压痕",
+          "control": "相同 w/S，改变 d",
+          "relation": "干燥率和后续湿度按公式改变",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-I02",
+          "intervention": "只换注水位置",
+          "control": "固定接触深度和历史",
+          "relation": "湿痕起点变，脚印不被移动",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-I03",
+          "intervention": "停源",
+          "control": "S 置零",
+          "relation": "继续扩散/干燥，不清零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-I04",
+          "intervention": "关扩散",
+          "control": "D=0",
+          "relation": "无邻域传播，源/干燥仍工作",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "B_L2-I05",
+          "intervention": "关干燥",
+          "control": "lambda0=0",
+          "relation": "无蒸发项，保持前级深度",
+          "status": "TO_IMPLEMENT"
+        }
+      ]
+    },
+    {
+      "task_id": "C_L1",
+      "title": "三维云密度驱动的地面云影",
+      "level": "L1",
+      "chain": "C",
+      "predecessor": null,
+      "constraint_ids": [
+        "F03",
+        "F04"
+      ],
+      "algorithm": "体积范围求交＋密度光程积分＋Beer–Lambert",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 0,
+      "interaction_groups": 0,
+      "author_spec": "01_算法实现与测试/C_L1.md",
+      "scene_spec": "02_场景文件与资源/C_L1.md",
+      "public_contract": "03_测试模型Prompt/公开契约/C_L1.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/C_L1.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "C_L1-N01",
+          "purpose": "零密度",
+          "input_design": "非零 box，但 rho=0",
+          "criterion": "tau=0,T=1",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N02",
+          "purpose": "均匀云",
+          "input_design": "已知长度和常密度",
+          "criterion": "解析 tau/T",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N03",
+          "purpose": "分层密度",
+          "input_design": "沿一轴不同层值",
+          "criterion": "分段中点采样",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N04",
+          "purpose": "非均匀云",
+          "input_design": "不对称体积、多个空间点",
+          "criterion": "三维类型和坐标",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N05",
+          "purpose": "斜方向光",
+          "input_design": "不与轴平行的 L",
+          "criterion": "区间长度与透射",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N06",
+          "purpose": "内部起点",
+          "input_design": "查询点位于云内",
+          "criterion": "从 s=0 积分",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N07",
+          "purpose": "未命中",
+          "input_design": "点/方向不穿云体",
+          "criterion": "空区间契约",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N08",
+          "purpose": "平行边界",
+          "input_design": "一轴或两轴方向分量为零",
+          "criterion": "稳定 slab 判定",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N09",
+          "purpose": "分段关系",
+          "input_design": "均匀/对齐分段路径",
+          "criterion": "T_total=T1*T2 在同积分划分下",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L1-N10",
+          "purpose": "整体平移/旋转",
+          "input_design": "同一场和点作对应刚体变换",
+          "criterion": "结果不变、世界长度正确",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": []
+    },
+    {
+      "task_id": "C_L2",
+      "title": "云遮光约束的薄雾与体积光",
+      "level": "L2",
+      "chain": "C",
+      "predecessor": "C_L1",
+      "constraint_ids": [
+        "F03",
+        "F04"
+      ],
+      "algorithm": "视线积分＋单次散射＋HG 相函数",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 10,
+      "interaction_groups": 5,
+      "author_spec": "01_算法实现与测试/C_L2.md",
+      "scene_spec": "02_场景文件与资源/C_L2.md",
+      "public_contract": "03_测试模型Prompt/公开契约/C_L2.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/C_L2.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "C_L2-N01",
+          "purpose": "无雾",
+          "input_design": "rho_f=0",
+          "criterion": "L=0,T_view=1，云影仍在",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N02",
+          "purpose": "无云",
+          "input_design": "rho_cloud=0",
+          "criterion": "T_cloud=1，雾仍受光",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N03",
+          "purpose": "无太阳",
+          "input_design": "light_rgb=0",
+          "criterion": "目标散射为零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N04",
+          "purpose": "各向同性",
+          "input_design": "g=0",
+          "criterion": "phase=1/(4pi)",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N05",
+          "purpose": "方向分布",
+          "input_design": "正/负 g，多个视角",
+          "criterion": "HG 符号/归一化形式",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N06",
+          "purpose": "纯吸收雾",
+          "input_design": "sigma_s=0,sigma_a>0",
+          "criterion": "无散射但有衰减",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N07",
+          "purpose": "均匀介质",
+          "input_design": "均匀云/雾和规定分段",
+          "criterion": "源项/视线合成",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N08",
+          "purpose": "内部相机/截断",
+          "input_design": "相机在雾内，改变 opaque_depth",
+          "criterion": "区间及光程",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N09",
+          "purpose": "极薄介质",
+          "input_design": "k_f 接近零",
+          "criterion": "稳定极限，无 NaN",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-N10",
+          "purpose": "采样与状态",
+          "input_design": "改变 N/Nv/云变换",
+          "criterion": "按离散定义响应，不独立噪声",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": [
+        {
+          "id": "C_L2-I01",
+          "intervention": "清云",
+          "control": "rho_cloud=0",
+          "relation": "地面云影消失，雾太阳照明仍在",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-I02",
+          "intervention": "清雾",
+          "control": "rho_f=0",
+          "relation": "体积贡献消失，云影不消失",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-I03",
+          "intervention": "移动云",
+          "control": "固定雾/相机，只改云相位或变换",
+          "relation": "地面与雾内受光共同响应",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-I04",
+          "intervention": "只动相机",
+          "control": "云场/光源不变",
+          "relation": "世界云影锚定，散射可随视角变化",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "C_L2-I05",
+          "intervention": "关太阳",
+          "control": "light_rgb=0",
+          "relation": "太阳贡献消失，非授权环境贡献保持",
+          "status": "TO_IMPLEMENT"
+        }
+      ]
+    },
+    {
+      "task_id": "D_L1",
+      "title": "双相位 Flow Mapping 水纹",
+      "level": "L1",
+      "chain": "D",
+      "predecessor": null,
+      "constraint_ids": [
+        "F05"
+      ],
+      "algorithm": "两相位流向扭曲、重置与混合",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 0,
+      "interaction_groups": 0,
+      "author_spec": "01_算法实现与测试/D_L1.md",
+      "scene_spec": "02_场景文件与资源/D_L1.md",
+      "public_contract": "03_测试模型Prompt/公开契约/D_L1.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/D_L1.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "D_L1-N01",
+          "purpose": "零流速",
+          "input_design": "v=0",
+          "criterion": "静态纹理、同坐标",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N02",
+          "purpose": "均匀直流",
+          "input_design": "常量速度，多个 t",
+          "criterion": "qi 和权重",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N03",
+          "purpose": "弯曲流场",
+          "input_design": "不对称二维向量输入",
+          "criterion": "局部方向",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N04",
+          "purpose": "速度变化",
+          "input_design": "不同区域速度大小",
+          "criterion": "单位与强度",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N05",
+          "purpose": "相位中段",
+          "input_design": "两相位均有贡献",
+          "criterion": "混合权重和颜色",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N06",
+          "purpose": "法线混合",
+          "input_design": "不同方向基础法线",
+          "criterion": "解码、加权、归一化",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N07",
+          "purpose": "重置窗口",
+          "input_design": "t 在相位重置前后",
+          "criterion": "最终结果连续，不误判内部 q",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N08",
+          "purpose": "边界寻址",
+          "input_design": "负 q、跨整数",
+          "criterion": "repeat 采样",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N09",
+          "purpose": "权重/周期",
+          "input_design": "多个 phi，固定流场",
+          "criterion": "权重和为1、周期一致",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L1-N10",
+          "purpose": "长时间",
+          "input_design": "多周期输入，范围受公开浮点域限制",
+          "criterion": "无累计状态漂移",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": []
+    },
+    {
+      "task_id": "D_L2",
+      "title": "固定接触源的泡沫输运",
+      "level": "L2",
+      "chain": "D",
+      "predecessor": "D_L1",
+      "constraint_ids": [
+        "F05"
+      ],
+      "algorithm": "半拉格朗日平流＋固定源项＋衰减",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 10,
+      "interaction_groups": 5,
+      "author_spec": "01_算法实现与测试/D_L2.md",
+      "scene_spec": "02_场景文件与资源/D_L2.md",
+      "public_contract": "03_测试模型Prompt/公开契约/D_L2.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/D_L2.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "D_L2-N01",
+          "purpose": "空场",
+          "input_design": "f=0,S=0",
+          "criterion": "保持零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N02",
+          "purpose": "静水有源",
+          "input_design": "v=0,decay=0",
+          "criterion": "dt*S 和空间核",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N03",
+          "purpose": "纯平移",
+          "input_design": "均匀 v,S=decay=0",
+          "criterion": "回溯方向与插值",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N04",
+          "purpose": "曲线流",
+          "input_design": "非均匀速度",
+          "criterion": "局部 v(s) 回溯",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N05",
+          "purpose": "衰减",
+          "input_design": "v=S=0",
+          "criterion": "exp(-decay*dt)",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N06",
+          "purpose": "源位置/尺寸",
+          "input_design": "多个 source/radius/rate",
+          "criterion": "世界锚点和核半径",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N07",
+          "purpose": "入流边界",
+          "input_design": "q 出域",
+          "criterion": "取0不 wrap",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N08",
+          "purpose": "饱和",
+          "input_design": "大合法源率",
+          "criterion": "clamp，不产生负值",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N09",
+          "purpose": "停源/移源",
+          "input_design": "多步移动后关闭",
+          "criterion": "旧状态不跟源瞬移",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-N10",
+          "purpose": "分辨率/重放",
+          "input_design": "不同公开 dx/dz、reset",
+          "criterion": "物理尺度一致，按离散值比较",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": [
+        {
+          "id": "D_L2-I01",
+          "intervention": "只改图案",
+          "control": "改变 K/phi/P，固定真实速度及源",
+          "relation": "锚点/泡沫状态不随图案参数漂移",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-I02",
+          "intervention": "改实际速度",
+          "control": "反转/转弯同一输入流场",
+          "relation": "水纹表达与泡沫方向按各自定义响应",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-I03",
+          "intervention": "静水",
+          "control": "v=0",
+          "relation": "停止搬运，源/衰减仍生效",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-I04",
+          "intervention": "停源",
+          "control": "S=0",
+          "relation": "旧泡沫继续输运/衰减",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "D_L2-I05",
+          "intervention": "移动源",
+          "control": "固定既有 f，改变 source",
+          "relation": "新源位置改变，旧 f 不瞬移",
+          "status": "TO_IMPLEMENT"
+        }
+      ]
+    },
+    {
+      "task_id": "E_L1",
+      "title": "透明水滴/水膜的折射与吸收",
+      "level": "L1",
+      "chain": "E",
+      "predecessor": null,
+      "constraint_ids": [
+        "F06"
+      ],
+      "algorithm": "Snell＋精确介质 Fresnel＋Beer–Lambert",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 0,
+      "interaction_groups": 0,
+      "author_spec": "01_算法实现与测试/E_L1.md",
+      "scene_spec": "02_场景文件与资源/E_L1.md",
+      "public_contract": "03_测试模型Prompt/公开契约/E_L1.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/E_L1.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "E_L1-N01",
+          "purpose": "相同介质",
+          "input_design": "eta_i=eta_t",
+          "criterion": "F=0、Tdir=I",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N02",
+          "purpose": "法向入射",
+          "input_design": "I=-N，两个不同 eta",
+          "criterion": "解析 F 与方向",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N03",
+          "purpose": "斜入射",
+          "input_design": "一般角度",
+          "criterion": "Snell/Fresnel",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N04",
+          "purpose": "介质换向",
+          "input_design": "高到低但非全反射",
+          "criterion": "方向和 eta 顺序",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N05",
+          "purpose": "路径长度",
+          "input_design": "固定 sigma，改变 ell",
+          "criterion": "按指数吸收",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N06",
+          "purpose": "通道差异",
+          "input_design": "不同 sigma_rgb",
+          "criterion": "逐通道而非单灰度",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N07",
+          "purpose": "临界附近",
+          "input_design": "公开范围内临界角两侧且留数值余量",
+          "criterion": "分支与有限输出",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N08",
+          "purpose": "全反射",
+          "input_design": "明确 k<0",
+          "criterion": "F=1 和状态约定",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N09",
+          "purpose": "零吸收/零长度",
+          "input_design": "sigma=0 或 ell=0",
+          "criterion": "A=1，不凭空衰减",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L1-N10",
+          "purpose": "方向变换/投影",
+          "input_design": "I/N 作相同旋转，含合法/越界投影",
+          "criterion": "F 不变、方向协变、valid 正确",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": []
+    },
+    {
+      "task_id": "E_L2",
+      "title": "交互涟漪与前景折射的正确组合",
+      "level": "L2",
+      "chain": "E",
+      "predecessor": "E_L1",
+      "constraint_ids": [
+        "F06"
+      ],
+      "algorithm": "高度场波动方程＋高度法线＋双效果渲染依赖",
+      "status": "SPEC_ONLY_RUNTIME_NOT_RUN",
+      "formal_numeric_cases": 10,
+      "inherited_numeric_cases": 10,
+      "interaction_groups": 5,
+      "author_spec": "01_算法实现与测试/E_L2.md",
+      "scene_spec": "02_场景文件与资源/E_L2.md",
+      "public_contract": "03_测试模型Prompt/公开契约/E_L2.md",
+      "assembled_model_prompt": "03_测试模型Prompt/任务/E_L2.md",
+      "upstream_required_for_l1_l2": false,
+      "cases": [
+        {
+          "id": "E_L2-N01",
+          "purpose": "静止",
+          "input_design": "h=h_prev=0,f=0",
+          "criterion": "保持零",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N02",
+          "purpose": "均匀高度",
+          "input_design": "h=h_prev=常量,f=0",
+          "criterion": "常量高度稳定",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N03",
+          "purpose": "单扰动",
+          "input_design": "单 tick 非零 f",
+          "criterion": "dt² f 与范围",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N04",
+          "purpose": "对称传播",
+          "input_design": "对称初场与等距网格",
+          "criterion": "方向对称和相位",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N05",
+          "purpose": "多扰动",
+          "input_design": "小幅输入、不截断",
+          "criterion": "线性叠加",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N06",
+          "purpose": "阻尼",
+          "input_design": "改变 gamma",
+          "criterion": "按离散格式，不强制逐点单调",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N07",
+          "purpose": "反射边界",
+          "input_design": "波达到边缘",
+          "criterion": "ghost 和反射",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N08",
+          "purpose": "非方网格",
+          "input_design": "dx!=dz",
+          "criterion": "真实空间尺度",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N09",
+          "purpose": "法线",
+          "input_design": "已知小坡度 h",
+          "criterion": "轴向、符号、归一化",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-N10",
+          "purpose": "事件重放/清场",
+          "input_design": "停源、继续、reset",
+          "criterion": "无重复注入，不播放旧帧",
+          "status": "TO_IMPLEMENT"
+        }
+      ],
+      "coupling": [
+        {
+          "id": "E_L2-I01",
+          "intervention": "改波源",
+          "control": "变触发时刻和位置",
+          "relation": "前景内外均对应当前水面",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-I02",
+          "intervention": "只改前景 IOR",
+          "control": "波事件/状态固定",
+          "relation": "前景呈现变，后景 h 不变",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-I03",
+          "intervention": "清波状态",
+          "control": "重置 h/hprev",
+          "relation": "水面回基态，前景无残留动画",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-I04",
+          "intervention": "移开前景",
+          "control": "保持后景运行",
+          "relation": "水面继续正确，不依赖遮罩才计算",
+          "status": "TO_IMPLEMENT"
+        },
+        {
+          "id": "E_L2-I05",
+          "intervention": "关后景效果",
+          "control": "移除后景水面显示但保留标记",
+          "relation": "前景不继续显示缓存波纹，并保持 L1 光学回归",
+          "status": "TO_IMPLEMENT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "B_L1-N02",
+  "purpose": "单印章",
+  "input_design": "轴对齐单接触",
+  "criterion": "shape、depth 和单位",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 483,
+  "variant_count": 1
+}

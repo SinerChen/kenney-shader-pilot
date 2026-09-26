@@ -1,0 +1,13 @@
+{
+  "id": "D_L3-G04",
+  "purpose": "物理流场变化",
+  "input_design": "反向/改变速度但保持源和图案参数",
+  "criterion": "f 按新 m/s 运动，不把图案UV当速度",
+  "observations": "场、位移、f 多帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/D_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

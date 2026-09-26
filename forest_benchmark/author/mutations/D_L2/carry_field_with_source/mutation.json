@@ -1,0 +1,7 @@
+{
+  "task": "D_L2",
+  "name": "carry_field_with_source",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

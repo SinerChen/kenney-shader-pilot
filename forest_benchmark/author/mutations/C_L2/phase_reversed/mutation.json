@@ -1,0 +1,7 @@
+{
+  "task": "C_L2",
+  "name": "phase_reversed",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

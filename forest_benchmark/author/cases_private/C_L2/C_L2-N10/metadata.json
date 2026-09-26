@@ -1,0 +1,9 @@
+{
+  "id": "C_L2-N10",
+  "purpose": "采样与状态",
+  "input_design": "改变 N/Nv/云变换",
+  "criterion": "按离散定义响应，不独立噪声",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 484,
+  "variant_count": 2
+}

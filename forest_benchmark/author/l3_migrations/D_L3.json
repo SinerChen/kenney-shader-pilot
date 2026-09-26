@@ -1,0 +1,22 @@
+{
+  "predecessor": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\author\\sealed_l2\\D_L2",
+  "condition": "gold_predecessor_review",
+  "before": {
+    "adapter.gd": "171019ed2ad44b908e18bbecb4ba73e39b44e42453e36a3ded582ff377287c2f",
+    "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+    "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "kernel.txt": "b36c101e92a61d16c1c3b6112f6ca37671f0a471b9a8877f4aebcbb91227e549",
+    "wire.json": "3320f5c44529eaf03f1fb2a32a3b420edf771600d58b8a4365c2730ac0147133"
+  },
+  "after": {
+    "adapter.gd": "85c237c3a4ca1a422f67751d11171840dd36264f290cbabc7d324463614537d6",
+    "defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+    "display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "kernel.txt": "b36c101e92a61d16c1c3b6112f6ca37671f0a471b9a8877f4aebcbb91227e549",
+    "wire.json": "3320f5c44529eaf03f1fb2a32a3b420edf771600d58b8a4365c2730ac0147133"
+  },
+  "patch": "Append empty bind/detach only; no L3 algorithm. Predecessor source first restricted to its chain and required utility helpers.",
+  "scene_capture_fixture_inherited": false
+}

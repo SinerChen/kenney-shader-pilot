@@ -1,0 +1,9 @@
+{
+  "id": "D_L2-N09",
+  "purpose": "停源/移源",
+  "input_design": "多步移动后关闭",
+  "criterion": "旧状态不跟源瞬移",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 1
+}

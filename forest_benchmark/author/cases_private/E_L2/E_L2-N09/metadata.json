@@ -1,0 +1,9 @@
+{
+  "id": "E_L2-N09",
+  "purpose": "法线",
+  "input_design": "已知小坡度 h",
+  "criterion": "轴向、符号、归一化",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "id": "D_L1-N09",
+  "purpose": "权重/周期",
+  "input_design": "多个 phi，固定流场",
+  "criterion": "权重和为1、周期一致",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 485,
+  "variant_count": 4
+}

@@ -1,0 +1,7 @@
+{
+  "task": "A_L2",
+  "name": "euler",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

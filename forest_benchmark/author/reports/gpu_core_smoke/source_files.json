@@ -1,0 +1,10 @@
+{
+  "fixture/adapter_base.gd": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c",
+  "fixture/runner.gd": "40a8224ad02a63720a5230723dabae70bc1a8a8f83c73e15ca2f5823ce510f98",
+  "project.godot": "aec025fd3a8baea7ab9222467ccc933fe2e4b8dcceddb56c8f32e8f121057f8d",
+  "solution/adapter.gd": "0acdb24975fac6758762b7696c01727aca8d11d2c586ceddfb71014342043137",
+  "solution/defaults.json": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6",
+  "solution/display.gd": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523",
+  "solution/kernel.txt": "3ba4b3ec9eb09d0739b0ae63d9d637df601ed589f165f637894a665545ecb7b7",
+  "solution/wire.json": "48b9a0f41b06f13a2e27691deda6385e882fefd6928322890ee746ae4311e2e5"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G01",
+  "purpose": "目标树静态接入",
+  "input_design": "近距离固定时间，至少一目标树和一非目标树",
+  "criterion": "灼烧/余烬实际进入目标材质及粒子资源；非目标保持基线",
+  "observations": "烧焦状态、实际活动材质、出生日志、目标/对照帧",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

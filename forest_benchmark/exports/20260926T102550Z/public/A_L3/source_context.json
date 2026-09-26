@@ -1,0 +1,786 @@
+{
+  "source_origin": "native_snapshot",
+  "commit": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "files": [
+    {
+      "path": "Asset Credits.txt",
+      "role": "source_context"
+    },
+    {
+      "path": "dummy.tscn",
+      "role": "source_context"
+    },
+    {
+      "path": "Groundcover/Forest plants test.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Groundcover/Forest plants.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Groundcover/Groundcover.txt",
+      "role": "source_context"
+    },
+    {
+      "path": "icon.png",
+      "role": "source_context"
+    },
+    {
+      "path": "icon.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "LICENSE",
+      "role": "source_context"
+    },
+    {
+      "path": "Main.tscn",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/dry_branches_medium_01.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/fern_02.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/River.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/rock_moss_set_01.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/rock_moss_set_02.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Terrain 1.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Terrain 2.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Tree bark.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Tree branch LOD.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Tree branch.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Materials/Tree LOD.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Main Terrain.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Main Terrain.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_a.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_a.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_b.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_b.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_c.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_c.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_d.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/fern_02_d.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass1.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass1.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass2.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass2.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass3.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass3.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass4.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass4.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass5.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass5.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass6.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass6.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass7.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass7.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass8.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Plants/Grass8.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock01.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock01.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock02.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock02.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock03.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock03.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock04.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock04.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock05.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock05.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock06.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_01_rock06.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock07.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock07.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock08.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock08.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock09.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock09.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock10.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock10.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock11.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock11.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock12.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock12.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock13.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Rocks/rock_moss_set_02_rock13.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_a.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_a.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_b.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_b.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_c.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/dry_branches_medium_01_c.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree big 1.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree big 1.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_big_2.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_big_2.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_med_1.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_med_1.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_med_2.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_med_2.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_small_1.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_small_1.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_small_2.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_small_2.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_tall_1.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_tall_1.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_tall_2.glb",
+      "role": "source_context"
+    },
+    {
+      "path": "Meshes/Trees/Tree_tall_2.glb.import",
+      "role": "source_context"
+    },
+    {
+      "path": "project.godot",
+      "role": "source_context"
+    },
+    {
+      "path": "README.md",
+      "role": "source_context"
+    },
+    {
+      "path": "Screenshots/1.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Screenshots/1.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Scripts/Import/Tree_LOD.gd",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Blend4 vcol.gdshader",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Blend8 splat.gdshader",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Plant.gdshader",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/River.tres",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/perlworlnoise.tga",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/perlworlnoise.tga.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/sky volumetric clouds.gdshader",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/weather.bmp",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/weather.bmp.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/worlnoise.bmp",
+      "role": "source_context"
+    },
+    {
+      "path": "Shaders/Sky/worlnoise.bmp.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_diff_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_diff_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_nor_gl_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_rough_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/fern_02_rough_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_BaseColor.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_BaseColor.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_Dry_BaseColor.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_Dry_BaseColor.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_Normal.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_Normal.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_ORM.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Plants/Grass_ORM.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_diff_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_diff_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_nor_gl_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_rough_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_01_rough_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_diff_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_diff_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_nor_gl_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_rough_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Rocks/rock_moss_set_02_rough_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Splat map 1.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Splat map 1.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Splat map 2.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Splat map 2.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_color.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_color.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_normal.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_normal.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_ormh.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain1_ormh.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_color.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_color.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_normal.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_normal.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_ormh.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Terrain/terrain2_ormh.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_arm_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_arm_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_diff_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_diff_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_nor_gl_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_01_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_arm_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_arm_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_diff_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_diff_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_nor_gl_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/bark_brown_02_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_arm_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_arm_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_diff_4k.jpg",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_diff_4k.jpg.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_nor_gl_4k.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/dry_branches_medium_01_nor_gl_4k.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_BaseColor.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_BaseColor.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_BaseColor.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_BaseColor.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_Normal.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_Normal.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_orm.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_LOD_orm.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_Normal.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_Normal.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_orm.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_Branch_orm.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_BaseColor.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_BaseColor.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_Normal.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_Normal.png.import",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_orm.png",
+      "role": "source_context"
+    },
+    {
+      "path": "Textures/Trees/Tree_LOD_orm.png.import",
+      "role": "source_context"
+    }
+  ],
+  "normalization": [
+    {
+      "path": "Main.tscn",
+      "before": "a9ac88046ad459e670d8f2699562e8d868dc82675f1c3e1ff470fc8730c96af0",
+      "after": "0318618b52ad3f49e777b108779a3885f9be995a8a4e0281acbfc52bb94b55c3",
+      "purpose": "Detach absent editor generator; keep baked meshes, instances, transforms and materials."
+    },
+    {
+      "path": "project.godot",
+      "before": "0aa6c9b95b5b61f825ce4a5cf278507e5f6d18977ec7b6fea85edc6214c65cfc",
+      "after": "324dc7beaf7ec9aee27162dabf8f0676a4902140431be57dbf96eedce8f52992",
+      "purpose": "Pin Godot 4.6 import compatibility; preserve renderer, TAA, occlusion and quality settings."
+    }
+  ],
+  "excluded": [
+    "author/",
+    ".git/",
+    "previous runs",
+    "L2 capture fixture"
+  ]
+}

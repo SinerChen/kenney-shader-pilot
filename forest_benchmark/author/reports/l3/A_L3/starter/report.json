@@ -1,0 +1,186 @@
+{
+  "binding": {
+    "status": "UNIMPLEMENTED_BINDING"
+  },
+  "camera": {
+    "basis": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0)]",
+    "fov": 75.0,
+    "position": "(0.611122, 10.2933, 28.4039)",
+    "requested": null
+  },
+  "changed_source_nodes": [],
+  "detach_restored": true,
+  "effect_present": false,
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "frames": [
+    {
+      "file": "frame_00000.png",
+      "frame": 0,
+      "tick": 0
+    },
+    {
+      "file": "frame_00001.png",
+      "frame": 1,
+      "tick": 0
+    },
+    {
+      "file": "frame_00002.png",
+      "frame": 2,
+      "tick": 0
+    },
+    {
+      "file": "frame_00003.png",
+      "frame": 3,
+      "tick": 0
+    },
+    {
+      "file": "frame_00004.png",
+      "frame": 4,
+      "tick": 0
+    },
+    {
+      "file": "frame_00005.png",
+      "frame": 5,
+      "tick": 0
+    },
+    {
+      "file": "frame_00006.png",
+      "frame": 6,
+      "tick": 0
+    },
+    {
+      "file": "frame_00007.png",
+      "frame": 7,
+      "tick": 0
+    },
+    {
+      "file": "frame_00008.png",
+      "frame": 8,
+      "tick": 0
+    },
+    {
+      "file": "frame_00009.png",
+      "frame": 9,
+      "tick": 0
+    },
+    {
+      "file": "frame_00010.png",
+      "frame": 10,
+      "tick": 0
+    },
+    {
+      "file": "frame_00011.png",
+      "frame": 11,
+      "tick": 0
+    },
+    {
+      "file": "frame_00012.png",
+      "frame": 12,
+      "tick": 0
+    },
+    {
+      "file": "frame_00013.png",
+      "frame": 13,
+      "tick": 0
+    },
+    {
+      "file": "frame_00014.png",
+      "frame": 14,
+      "tick": 0
+    },
+    {
+      "file": "frame_00015.png",
+      "frame": 15,
+      "tick": 0
+    },
+    {
+      "file": "frame_00016.png",
+      "frame": 16,
+      "tick": 0
+    },
+    {
+      "file": "frame_00017.png",
+      "frame": 17,
+      "tick": 0
+    },
+    {
+      "file": "frame_00018.png",
+      "frame": 18,
+      "tick": 0
+    },
+    {
+      "file": "frame_00019.png",
+      "frame": 19,
+      "tick": 0
+    },
+    {
+      "file": "frame_00020.png",
+      "frame": 20,
+      "tick": 0
+    },
+    {
+      "file": "frame_00021.png",
+      "frame": 21,
+      "tick": 0
+    },
+    {
+      "file": "frame_00022.png",
+      "frame": 22,
+      "tick": 0
+    },
+    {
+      "file": "frame_00023.png",
+      "frame": 23,
+      "tick": 0
+    },
+    {
+      "file": "frame_00024.png",
+      "frame": 24,
+      "tick": 0
+    },
+    {
+      "file": "frame_00025.png",
+      "frame": 25,
+      "tick": 0
+    },
+    {
+      "file": "frame_00026.png",
+      "frame": 26,
+      "tick": 0
+    },
+    {
+      "file": "frame_00027.png",
+      "frame": 27,
+      "tick": 0
+    },
+    {
+      "file": "frame_00028.png",
+      "frame": 28,
+      "tick": 0
+    },
+    {
+      "file": "frame_00029.png",
+      "frame": 29,
+      "tick": 0
+    }
+  ],
+  "gpu": "AMD Radeon 780M Graphics",
+  "protected_node_count": 35273,
+  "scope": "Blank inherited starter verification only; this is not a positive L3 integration result.",
+  "source_runtime_unchanged": true,
+  "status": "NATIVE_STARTER_RENDERED",
+  "task": "A_L3",
+  "video": "author\\reports\\l3\\A_L3\\starter\\effect.mp4",
+  "seconds": 18.94133319996763,
+  "clean_import_exit": 0
+}

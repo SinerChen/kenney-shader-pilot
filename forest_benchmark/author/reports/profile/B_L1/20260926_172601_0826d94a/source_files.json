@@ -1,0 +1,98 @@
+[
+  {
+    "path": "project.godot",
+    "sha256": "d03aefe05246bf23778da46c8c1dc740a8a6ddf31c52571aae79752da33b7a26"
+  },
+  {
+    "path": "assets/metadata.json",
+    "sha256": "29e60e4bd936e3b718f069a9bd035411184248c93b9c4f2fa6b4cc0b859feb3b"
+  },
+  {
+    "path": "assets/sole_mask.f32",
+    "sha256": "6cd34e213868539e78df886778c41e9e72d66a3be892893de6adfcecff45be12"
+  },
+  {
+    "path": "assets/sole_mask.png",
+    "sha256": "421c28931c2805f2bb62bf8e830c3e8cf1d14a401378cbbb45e12301ff85f9dd"
+  },
+  {
+    "path": "fixture/adapter_base.gd",
+    "sha256": "c0c627a8792f10cdd8b19d0e79900ec5109c07cc6b8a1af9db92d9a7dccaff2c"
+  },
+  {
+    "path": "fixture/base_stage.tscn",
+    "sha256": "8509dc56b0d9b1c286566b10db0e39b94a2a369ca555d234101617c15374541c"
+  },
+  {
+    "path": "fixture/bridge.gd",
+    "sha256": "5ebc54c71885353c752e29c0cc85109dc7d2fc882b2da633cb9bc09ce0437237"
+  },
+  {
+    "path": "fixture/entry.tscn",
+    "sha256": "2f2d814318324e7672a329506f3fdff0e0798e8d7dd2ef2bce21e02e211aa255"
+  },
+  {
+    "path": "fixture/evidence.gd",
+    "sha256": "c2c65a38c24e95ebe3b22e8f881b345da9095d84822660674abba158c5b2d2a4"
+  },
+  {
+    "path": "fixture/runner.gd",
+    "sha256": "ac7586a4149f4a06cbe7e4528e8bf37a4fe20c35d1edab02b34d9683e08d557d"
+  },
+  {
+    "path": "fixture/visual_runner.gd",
+    "sha256": "a2a287f399f35d398e2f2d3575a40a31a69212d3c53f5e400b833ad6f70fd113"
+  },
+  {
+    "path": "public/api.md",
+    "sha256": "ba93734c89888af0b6359ab922e42f39d74662c933d57196e729d33a7eb94f02"
+  },
+  {
+    "path": "public/contract.md",
+    "sha256": "b08f93d01e7422ff0cdc985a87ee28148b7f2ce86c3a52ebe731708b3506d3de"
+  },
+  {
+    "path": "public/demo.json",
+    "sha256": "0b7d475055601ac995d2ccb8d43e513c4cff74322e56ae29b61ec2e5dc5196ec"
+  },
+  {
+    "path": "public/prompt.md",
+    "sha256": "684170733045ad2591017cd1e7733bb4f2199faecb2075e0e35d95f35467f109"
+  },
+  {
+    "path": "public/scene_inventory.json",
+    "sha256": "6988a490d1e834fb39e948a7032e5323b625da2a62e1a6fa3fe329aed3ad7e89"
+  },
+  {
+    "path": "public/task.json",
+    "sha256": "1465ef7753eeef6cd91d3c218ee75cc2d0c46355e77b183ee06b6f244fa9de7d"
+  },
+  {
+    "path": "public/sample_inputs/sample.json",
+    "sha256": "3c4d2245b54292ecc3f55ac1996f90ab289ce4ce2c5dc7774fd86cecd8210d36"
+  },
+  {
+    "path": "solution/adapter.gd",
+    "sha256": "85eef72dd05e26e7a631d4ab7a0542e407d3ce021d780ab90162c7e1b15c8da3"
+  },
+  {
+    "path": "solution/defaults.json",
+    "sha256": "48ea591225f5b1d4bb6a11547651aac4cc31f4f61fc381a94c0c751c7f18b2b6"
+  },
+  {
+    "path": "solution/display.gd",
+    "sha256": "bdafd64f6a632f6ad23abab19f6b42f04221d0f1ce357c3d55937d5d01140523"
+  },
+  {
+    "path": "solution/effect.tscn",
+    "sha256": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f"
+  },
+  {
+    "path": "solution/kernel.txt",
+    "sha256": "3ba4b3ec9eb09d0739b0ae63d9d637df601ed589f165f637894a665545ecb7b7"
+  },
+  {
+    "path": "solution/wire.json",
+    "sha256": "48b9a0f41b06f13a2e27691deda6385e882fefd6928322890ee746ae4311e2e5"
+  }
+]

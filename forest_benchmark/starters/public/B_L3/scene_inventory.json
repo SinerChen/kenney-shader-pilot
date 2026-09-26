@@ -1,0 +1,60 @@
+{
+  "task_id": "B_L3",
+  "original_entry_scene": "res://Main.tscn",
+  "target_bindings": [
+    {
+      "aabb": [
+        [
+          -99.5633239746094,
+          -6.45185852050781,
+          -100.027069091797
+        ],
+        [
+          200.000152587891,
+          17.8591690063477,
+          200.000152587891
+        ]
+      ],
+      "class": "MeshInstance3D",
+      "layers": 1,
+      "lod_begin": 0.0,
+      "lod_end": 0.0,
+      "lod_fade_mode": 0,
+      "material_override": null,
+      "materials": [
+        {
+          "active_material": "res://Materials/Terrain 1.tres",
+          "surface": 0
+        }
+      ],
+      "mesh": "res://Meshes/Main Terrain.glb::ArrayMesh_is7dc",
+      "path": "Main Terrain/Plane_031",
+      "scene_file": "",
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.436755150556564,
+          -2.76233506202698,
+          0.0269892662763596
+        ]
+      ],
+      "visible": true
+    }
+  ],
+  "source_nodes_count": 35273,
+  "source_file_manifest": "scene_files.json"
+}

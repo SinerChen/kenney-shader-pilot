@@ -1,0 +1,34 @@
+{
+  "task": "A_L3",
+  "scope": "Public fixed development example; required behavior follows the contract, native reference validation is pending.",
+  "reset_overrides": {
+    "R0": 0,
+    "speed": 0,
+    "noise_amplitude": 0
+  },
+  "objects": [
+    "tree_1",
+    "tree_2"
+  ],
+  "query": {
+    "name": "burn_state",
+    "points_ref": [
+      [
+        20,
+        20,
+        20
+      ]
+    ],
+    "t": 0
+  },
+  "required_output": {
+    "b": [
+      0
+    ],
+    "a": [
+      0
+    ],
+    "emitter_history": []
+  },
+  "note": "For each object independently, with no advance and no previous particles."
+}

@@ -1,0 +1,20 @@
+{
+  "engine": {
+    "build": "official",
+    "hash": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+    "hex": 263681,
+    "major": 4,
+    "minor": 6,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.6.1-stable (official)",
+    "timestamp": 0
+  },
+  "gpu": "AMD Radeon 780M Graphics",
+  "responses": [
+    {
+      "error": "Implement reset(config)",
+      "status": "NOT_IMPLEMENTED"
+    }
+  ]
+}

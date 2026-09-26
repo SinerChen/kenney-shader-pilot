@@ -1,0 +1,7 @@
+{
+  "task": "D_L1",
+  "name": "bad_weights",
+  "file": "solution\\kernel.txt",
+  "detector": "numeric",
+  "source_occurrences": 1
+}

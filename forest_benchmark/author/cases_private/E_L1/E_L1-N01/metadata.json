@@ -1,0 +1,9 @@
+{
+  "id": "E_L1-N01",
+  "purpose": "相同介质",
+  "input_design": "eta_i=eta_t",
+  "criterion": "F=0、Tdir=I",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 486,
+  "variant_count": 1
+}

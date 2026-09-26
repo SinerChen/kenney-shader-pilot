@@ -1,0 +1,9 @@
+{
+  "id": "A_L2-I02",
+  "intervention": "改变传播速度",
+  "control": "相同锚点及噪声",
+  "relation": "出生时序变化；不只是加快粒子动画",
+  "status": "GENERATED",
+  "baseline_length": 22,
+  "intervention_name": "speed"
+}

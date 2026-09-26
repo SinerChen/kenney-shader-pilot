@@ -1,0 +1,11 @@
+{
+  "tool_tests": {
+    "command": "python -m unittest discover -s forest_benchmark/tests -p test_*.py -v",
+    "passed": 18
+  },
+  "cpu_analytic_tests": {
+    "command": "python forest_benchmark/author/test_reference.py",
+    "passed": 19
+  },
+  "recorded_session": "2026-09-26"
+}

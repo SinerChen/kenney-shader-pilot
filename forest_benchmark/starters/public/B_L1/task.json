@@ -1,0 +1,99 @@
+{
+  "task_id": "B_L1",
+  "title": "持久化脚印压痕与 POM",
+  "algorithm": "投影印章＋有界高度累积＋视差遮蔽映射",
+  "contract_version": "0.1",
+  "contract_sha256": "751a4f7b9775f24c626fccd7a5ebfc03c3bcf877cdf1234a582a8038de988173",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "GroundPatch"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "task_id": null,
+    "condition": "none"
+  },
+  "queries": {
+    "stamp_query": [
+      "depth_field"
+    ],
+    "pom_query": [
+      "valid",
+      "hit_depth",
+      "hit_uv.x",
+      "hit_uv.y",
+      "hit_xz.x",
+      "hit_xz.z"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "STARTER_BUILT_RELEASE_PENDING"
+}

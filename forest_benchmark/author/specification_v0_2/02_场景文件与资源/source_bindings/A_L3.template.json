@@ -1,0 +1,41 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "A_L3",
+  "status": "SOURCE_UNVERIFIED",
+  "source_origin": null,
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Scripts/Import/Tree_LOD.gd",
+    "Materials/Tree branch LOD.tres"
+  ],
+  "source_gap": "报告只读到导入脚本和 LOD 材质片段；哪些模型绑定该脚本、最终实例层级、真实切换距离及全部活动材质均待核验。300/500 只是既有报告中的脚本值，不作为运行时真值。",
+  "verified_commit": null,
+  "checkout_sha256": null,
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": null,
+  "original_entry_scene": null,
+  "real_target_bindings": [],
+  "protected_runtime_properties": [],
+  "authorized_runtime_bindings": [],
+  "source_context_keep": [],
+  "new_target_solution_exclusions": [],
+  "author_normalization_patches": [],
+  "test_interventions": [],
+  "required_source_checks": [
+    "同一完整提交中至少找到一类真实具有两个可观察表示的目标树，记录所有生效表面/材质和切换区间。",
+    "确认目标逻辑根节点、参考空间、实例变换和中性发射锚点；初版锚点选在实际不受局部顶点风变形的稳定枝干区域，不能冻结全森林风动。",
+    "确认共享资源的非目标树作为对照，记录原裁切轮廓、风动、阴影及 LOD 基线。若无法找到合适目标则阻塞 native 发布。"
+  ],
+  "required_frozen_fields": [
+    "targets_and_reference_frames",
+    "effective_lod_ranges",
+    "anchor_region_validity",
+    "state_error_tolerances",
+    "representation_visual_tolerances"
+  ],
+  "license_inventory": null,
+  "evidence_files": [],
+  "runtime_verified": false,
+  "can_export_native_task": false
+}

@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G06",
+  "purpose": "非方网格和视角",
+  "input_design": "公开 dx!=dz，改变斜视角",
+  "criterion": "扩散尺度/POM chart 正确，不用纹理像素当米",
+  "observations": "数值场、表面命中与画面",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

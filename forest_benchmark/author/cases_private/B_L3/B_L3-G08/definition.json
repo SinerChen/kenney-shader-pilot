@@ -1,0 +1,13 @@
+{
+  "id": "B_L3-G08",
+  "purpose": "材质输入变体",
+  "input_design": "在 reset 前选另一合法原层分布",
+  "criterion": "适配真实数据，不使用一张写死允许遮罩",
+  "observations": "原数据 hash、m/H 和覆盖变化",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/B_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

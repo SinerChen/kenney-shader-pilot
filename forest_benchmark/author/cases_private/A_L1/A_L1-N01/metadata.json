@@ -1,0 +1,9 @@
+{
+  "id": "A_L1-N01",
+  "purpose": "禁用/未触达",
+  "input_design": "enabled=false 及半径尚未触达全部采样点",
+  "criterion": "b/a 均为零；不改基础材质",
+  "status": "GENERATED_CPU_REFERENCE",
+  "private_seed": 482,
+  "variant_count": 2
+}

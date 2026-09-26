@@ -1,0 +1,125 @@
+{
+  "task_id": "E_L2",
+  "title": "交互涟漪与前景折射的正确组合",
+  "algorithm": "高度场波动方程＋高度法线＋双效果渲染依赖",
+  "contract_version": "0.1",
+  "contract_sha256": "a3ec487a657e323d9ef5f5a1c5aec9dc6c5017ce437f29a66af394a7cba541bd",
+  "engine_version": "4.6.1.stable.official.14d19694e",
+  "renderer": "Forward+",
+  "entry_scene": "res://fixture/entry.tscn",
+  "adapter": "res://solution/adapter.gd",
+  "readonly_paths": [
+    "project.godot",
+    "fixture/",
+    "assets/"
+  ],
+  "writable_paths": [
+    "solution/",
+    "scratch/"
+  ],
+  "authorized_runtime_bindings": [
+    "FrontTarget",
+    "RearWater"
+  ],
+  "protected_runtime_properties": [
+    "geometry",
+    "node transforms",
+    "visibility",
+    "camera",
+    "light",
+    "environment",
+    "non-target materials"
+  ],
+  "predecessor": {
+    "condition": "gold_predecessor",
+    "task_id": "E_L1",
+    "source_hashes": {
+      "adapter.gd": "5c44a8a118466224323ea29a4fc3ebf3df753503c20f8fc9240ea12449437342",
+      "defaults.json": "683dea71c43018ae8afc54538bbf15a4814c155ff4635b52ce400686bb4d3e0f",
+      "display.gd": "375b511d7f8eb79e92b003fc0a32aa4cc98525fb99c451ea9caffe0826ff7723",
+      "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+      "kernel.txt": "5ba71867ded47c8a6c5ebd29823f0a6de90fb8a6dadfda8d7302fb4ade2a9c8c",
+      "wire.json": "dcc6a24dd034f1c349e7fbe357cfd621d26c5e3c4e70528c5a298320fda612d1"
+    },
+    "context": "code plus brief handoff; no conversation or private scores"
+  },
+  "queries": {
+    "optics_query": [
+      "F",
+      "Tdir.x",
+      "Tdir.y",
+      "Tdir.z",
+      "R.x",
+      "R.y",
+      "R.z",
+      "A.r",
+      "A.g",
+      "A.b",
+      "has_transmission",
+      "background_uv.x",
+      "background_uv.y",
+      "valid",
+      "color.r",
+      "color.g",
+      "color.b"
+    ],
+    "wave_step": [
+      "height"
+    ],
+    "wave_normal_query": [
+      "normal.x",
+      "normal.y",
+      "normal.z"
+    ]
+  },
+  "numeric_tolerances": {
+    "atol": 0.0002,
+    "rtol": 0.0002,
+    "booleans": "exact",
+    "status": "PROVISIONAL_PENDING_CONTROLS"
+  },
+  "input_limits": {
+    "grid_axis": [
+      2,
+      128
+    ],
+    "cloud_steps": [
+      1,
+      128
+    ],
+    "view_steps": [
+      1,
+      128
+    ],
+    "octaves": [
+      1,
+      8
+    ],
+    "time_abs_max": 120.0,
+    "finite_values_only": true
+  },
+  "capture_settings": {
+    "width": 640,
+    "height": 360,
+    "fps": 15,
+    "duration_s": 6,
+    "author_camera": {
+      "position": [
+        3.5,
+        3.1,
+        5.0
+      ],
+      "look_at": [
+        0.0,
+        0.65,
+        0.0
+      ]
+    },
+    "debug_camera": "freely chosen through render",
+    "simulation_dt": 0.06666666666666667,
+    "exposure": 1.0,
+    "tonemapper": "linear",
+    "aa": "disabled"
+  },
+  "status": "REVIEW_ONLY"
+}

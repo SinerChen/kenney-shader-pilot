@@ -1,0 +1,13 @@
+{
+  "id": "A_L3-G08",
+  "purpose": "重置与重复绑定",
+  "input_design": "相同配置 reset 重放；绑定显示接口但不 reset",
+  "criterion": "reset 可重播；纯重绑定不得重新开始",
+  "observations": "账本、对象引用、状态 hash",
+  "status": "DESIGNED_NOT_CALIBRATED",
+  "thresholds": null,
+  "oracle_evidence": null,
+  "source_binding": "author/source_bindings/A_L3.json",
+  "runtime_input": null,
+  "oracle": null
+}

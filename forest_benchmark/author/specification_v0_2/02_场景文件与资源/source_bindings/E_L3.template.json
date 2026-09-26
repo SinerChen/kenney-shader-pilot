@@ -1,0 +1,41 @@
+{
+  "schema": "forest-l3-source-binding/0.2",
+  "task_id": "E_L3",
+  "status": "SOURCE_UNVERIFIED",
+  "source_origin": null,
+  "repo": "https://github.com/Rytelier/Godot-4-forest-benchmark",
+  "prior_audit_commit_hint": "ac523ed97ca1719f517cd3968f3ff49d76274baa",
+  "source_hints": [
+    "Shaders/River.tres"
+  ],
+  "source_gap": "尚未核验原材质在 Main.tscn 的活动挂载、渲染后端、透明/屏幕输入及前后层捕获能力。没有原水体实际参与时不能用新建测试平面代替 native 任务。",
+  "verified_commit": null,
+  "checkout_sha256": null,
+  "normalized_baseline_sha256": null,
+  "engine_binary_sha256": null,
+  "original_entry_scene": null,
+  "real_target_bindings": [],
+  "protected_runtime_properties": [],
+  "authorized_runtime_bindings": [],
+  "source_context_keep": [],
+  "new_target_solution_exclusions": [],
+  "author_normalization_patches": [],
+  "test_interventions": [],
+  "required_source_checks": [
+    "确认真实原水体及其屏幕读取/透明流程，在冻结后端实测哪些内容可进入前景输入。",
+    "先实现至少一份原水体+前景的合法可运行参考，支持原水体透明/流动和当前tick采集；不能以设置某API就假定可捕获。",
+    "冻结一层前景+一层原水体+不透明背景的范围、路径长度和相机域，验证无遮挡/遮挡的正确参考。",
+    "读清原水体法线空间，确认 E2 波法线能以零扰动恒等的方式组合并保持原光学。"
+  ],
+  "required_frozen_fields": [
+    "native_river_render_path",
+    "one_front_one_water_scope",
+    "input_content_capture_feasibility",
+    "normal_combination_frame",
+    "same_tick_tolerances_and_pass_budget"
+  ],
+  "license_inventory": null,
+  "evidence_files": [],
+  "runtime_verified": false,
+  "can_export_native_task": false
+}

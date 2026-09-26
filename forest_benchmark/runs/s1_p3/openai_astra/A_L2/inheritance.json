@@ -1,0 +1,11 @@
+{
+  "parent": "D:\\shaderagent17_s0_s1\\kenney_shader_pilot\\forest_benchmark\\runs\\s1_p3\\openai_astra\\A_L1",
+  "author_reference_injected": false,
+  "files": {
+    "adapter.gd": "685930660c939dca21af8d19136c6cb1e6bd07336bd2897b2453a49c0e6de880",
+    "burn_math.gdshaderinc": "b63944e8a67f60c04738b5120411f68c5d9d53be1695c917798d65d9d54cdf42",
+    "check.gd": "906ea0ac7cec2f46b80cd34432310bb25b6b14fcb3efd283ec222a91242964eb",
+    "effect.tscn": "2bef9ad718a9c09377c827d43189c7267cbbf544203c7cecc13496a75214dc2f",
+    "wood_burn.gdshader": "9d7de2eb7492be553d94fa8b2aa49613d9844c4923b75b7e441c61c4a1535b47"
+  }
+}

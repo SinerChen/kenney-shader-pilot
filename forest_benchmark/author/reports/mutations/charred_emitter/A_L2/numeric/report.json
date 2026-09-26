@@ -1,0 +1,1380 @@
+{
+  "task": "A_L2",
+  "case_task": "A_L2",
+  "pass": 6,
+  "total": 10,
+  "status": "FAIL",
+  "groups": [
+    {
+      "case": "A_L2-N01",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N02",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N03",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N04",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N05",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N06",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/32/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/32/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/32/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/32/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/34/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/34/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/34/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/34/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/36/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/36/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/36/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/36/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/38/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/38/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/38/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/38/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/40/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/40/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/40/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/40/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/42/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/42/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/42/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/42/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/44/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/44/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/44/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/44/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/46/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/46/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/46/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/46/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/48/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/48/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/48/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/48/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/50/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/50/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/50/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/50/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/52/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/52/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/52/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/52/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/54/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/54/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/54/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/54/emitted",
+          "error": "array length mismatch"
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N07",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/11/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            2,
+            6
+          ]
+        },
+        {
+          "path": "/11/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/11/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/11/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            2,
+            6
+          ]
+        },
+        {
+          "path": "/13/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/15/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/17/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/19/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/21/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/23/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/25/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/27/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/emitted",
+          "error": "array length mismatch"
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N08",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case": "A_L2-N09",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/5/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/5/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/5/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/5/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/7/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/7/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/7/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/7/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/9/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/9/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/9/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/9/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/11/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/11/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/11/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/11/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/13/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/13/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/15/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/15/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/17/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/17/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/19/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/19/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/21/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/21/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/23/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/23/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/25/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/25/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/27/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/27/emitted",
+          "error": "array length mismatch"
+        }
+      ]
+    },
+    {
+      "case": "A_L2-N10",
+      "status": "FAIL",
+      "errors": [
+        {
+          "path": "/8/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/8/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/8/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/8/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/10/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/10/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/10/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/10/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/12/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/12/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/12/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/12/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/14/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/14/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/14/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/14/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/16/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/16/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/16/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/16/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/18/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/18/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/18/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/18/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/20/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/20/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/20/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/20/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/22/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/22/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/22/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/22/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/24/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/24/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/24/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/24/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/26/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/26/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/26/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/26/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/28/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/28/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/28/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/28/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/30/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/30/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/30/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/30/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/33/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/33/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/33/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/33/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/35/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/35/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/35/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/35/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/37/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/37/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/37/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/37/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/39/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/39/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/39/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/39/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/41/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "path": "/41/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/41/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/41/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/43/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/43/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/43/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/43/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/45/particle_state",
+          "shape": [
+            1,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/45/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/45/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/45/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/47/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/47/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/47/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/47/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/49/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/49/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/49/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/49/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/51/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/51/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/51/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/51/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/53/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/53/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/53/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/53/emitted",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/55/particle_state",
+          "shape": [
+            2,
+            6
+          ],
+          "expected_shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "path": "/55/birth_log",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/55/particle_ids",
+          "error": "array length mismatch"
+        },
+        {
+          "path": "/55/emitted",
+          "error": "array length mismatch"
+        }
+      ]
+    }
+  ],
+  "tolerance": {
+    "atol": 0.0002,
+    "rtol": 0.0002
+  },
+  "evidence": "author\\reports\\mutations\\charred_emitter\\A_L2\\numeric",
+  "scope": "numeric_only"
+}
